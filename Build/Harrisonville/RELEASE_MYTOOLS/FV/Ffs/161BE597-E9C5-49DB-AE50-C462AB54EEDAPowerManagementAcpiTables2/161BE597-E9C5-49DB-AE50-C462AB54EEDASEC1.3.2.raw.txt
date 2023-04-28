@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\161BE597-E9C5-49DB-AE50-C462AB54EEDAPowerManagementAcpiTables2\161BE597-E9C5-49DB-AE50-C462AB54EEDASEC1.3.2.raw d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\DenvertonPkg\Cpu\PowerManagement\AcpiTables\PowerManagementAcpiTables\OUTPUT\Ssdt\ApIst.aml

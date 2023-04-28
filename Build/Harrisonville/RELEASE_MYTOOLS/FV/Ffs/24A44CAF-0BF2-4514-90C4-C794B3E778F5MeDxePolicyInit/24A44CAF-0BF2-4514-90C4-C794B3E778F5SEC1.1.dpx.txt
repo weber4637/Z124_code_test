@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\24A44CAF-0BF2-4514-90C4-C794B3E778F5MeDxePolicyInit\24A44CAF-0BF2-4514-90C4-C794B3E778F5SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\HarrisonvillePkg\Me\Policy\Dxe\MeDxePolicyInit\OUTPUT\MeDxePolicyInit.depex

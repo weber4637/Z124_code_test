@@ -1,0 +1,36 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = EnhancePeiVariable
+  FILE_GUID                      = E03E6451-297A-4FE9-B1F7-639B70327C52
+  MODULE_TYPE                    = PEIM
+  VERSION_STRING                 = 1.0
+  PI_SPECIFICATION_VERSION       = 0x0001000A
+  ENTRY_POINT                    = EnhancePeiVariableEntry
+
+[Sources]
+  ../AmiModulePkg/EnhancePeiVariable/EnhancePeiVariable.c
+  ../AmiModulePkg/EnhancePeiVariable/EnhancePeiVariable.h
+  ../AmiModulePkg/EnhancePeiVariable/CacheVariablePei/CacheVariablePei.c
+  ../AmiModulePkg/EnhancePeiVariable/CacheVariablePei/CacheVariablePei.h
+  ../AmiModulePkg\NVRAM/NvramRead.c
+ ../AmiModulePkg\EnhancePeiVariable/GetVarFromStdDefault/GetVarFromStdDefaultPei.c
+ ../AmiModulePkg\EnhancePeiVariable/GetVarFromStdDefault/GetVarFromStdDefault.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  AmiModulePkg/AmiModulePkg.dec
+  AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+
+[LibraryClasses]
+  PeimEntryPoint
+  PeiServicesLib
+  HobLib
+  AmiPeiLib
+
+[Ppis]
+  gEfiPeiReadOnlyVariable2PpiGuid
+  gEfiPeiMemoryDiscoveredPpiGuid
+
+[Depex]
+  TRUE
+

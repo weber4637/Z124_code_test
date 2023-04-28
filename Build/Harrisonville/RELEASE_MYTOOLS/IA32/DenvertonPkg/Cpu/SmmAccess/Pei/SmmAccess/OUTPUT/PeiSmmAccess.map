@@ -1,0 +1,33 @@
+ PeiSmmAccess
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000003cdH .text                   CODE
+ 0002:00000000 00000020H .data                   DATA
+ 0002:00000020 00000000H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000000b       _SmmAccessDriverEntryPoint 0000024b f   PeiSmmAccess:SmmAccessDriver.obj
+ 0001:0000016a       _Open                      000003aa f   PeiSmmAccess:SmmAccessDriver.obj
+ 0001:000001e1       _Close                     00000421 f   PeiSmmAccess:SmmAccessDriver.obj
+ 0001:00000235       _Lock                      00000475 f   PeiSmmAccess:SmmAccessDriver.obj
+ 0001:00000288       _GetCapabilities           000004c8 f   PeiSmmAccess:SmmAccessDriver.obj
+ 0001:000002bc       _CopyMem                   000004fc f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000002db       _GetHobList                0000051b f   PeiHobLib:HobLib.obj
+ 0001:000002f5       _GetNextHob                00000535 f   PeiHobLib:HobLib.obj
+ 0001:00000322       _CompareGuid               00000562 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00000353       _GetPeiServicesTablePointer 00000593 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000370       _InternalMemCopyMem        000005b0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000003b0       _InternalMemZeroMem        000005f0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gEfiSmmPeiSmramMemoryReserveGuid 00000620     PeiSmmAccess:AutoGen.obj
+ 0002:00000010       _gPeiSmmAccessPpiGuid      00000630     PeiSmmAccess:AutoGen.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

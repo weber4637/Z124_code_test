@@ -1,0 +1,2 @@
+BEGIN { i = 0 }{ IfrList[$0] = 1 } 
+END { for (item in IfrList) IfrList2[i++] = item; n = asort(IfrList2); for (i = 1; i <= n; i++) print "IFR_DIR_LIST+= -i"IfrList2[i] }

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_SMM_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\750890A6-7ACF-4f4f-81BD-B400C2BEA95AAcpiModeEnable\750890A6-7ACF-4f4f-81BD-B400C2BEA95ASEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiChipsetModulePkg\SB\AcpiModeEnable\AcpiModeEnable\OUTPUT\AcpiModeEnable.depex

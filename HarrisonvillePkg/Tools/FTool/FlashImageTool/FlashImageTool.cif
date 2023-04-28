@@ -1,0 +1,18 @@
+<component>
+	name = "FlashImageTool"
+	category = ModulePart
+	LocalRoot = "HarrisonvillePkg\Tools\FTool\FlashImageTool\"
+	RefName = "HarrisonvillePkg.Tools.FTool.FlashImageTool"
+[files]
+"data\fit_dnv_aspencove.data"	
+"data\fit_dnv_bigbugcreek.data"		
+"data\fit_dnv_cormoranlake.data"	
+"data\fit_dnv_harcuvar.data"
+"data\fit_dnv_nano.data"
+"data\fit_dnv_ostrichbay.data"	
+"data\fit_dnv_ostrichpeak.data"
+"data\fit_dnv_pinelake.data"	
+"data\fit_harrisonville_fs.data"
+"data\fit_dnv_birdkey.data"	
+"spsFITc.exe"	
+<endComponent>

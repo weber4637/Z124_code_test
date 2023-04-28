@@ -1,0 +1,59 @@
+TOKEN
+    Name  = "Sps_SUPPORT"
+    Value  = "1"
+    Help  = "Switch for Enabling Sps support in the project"
+    TokenType = Boolean
+    Master = Yes
+End
+
+TOKEN
+    Name  = "SpsAcpiHooks_SUPPORT"
+    Value  = "1"
+    Help  = "Main switch to enable SpsAcpiHooks support in Project"
+    TokenType = Boolean
+End
+
+TOKEN
+    Name  = "SpsAcpiSsdt_SUPPORT"
+    Value  = "1"
+    Help  = "Main switch to enable SpsAcpiSsdt support in Project"
+    TokenType = Boolean
+End
+
+INFComponent
+    Name  = "SpsAcpiHooks"
+    File  = "Acpi/SpsAcpiHooks.inf"
+    Package  = "DenvertonPkg"
+    ModuleTypes  = "DXE_DRIVER"
+    Token = "SpsAcpiHooks_SUPPORT" "=" "1"
+End
+
+INFComponent
+    Name  = "SpsAcpiSsdt"
+    File  = "Acpi/SpsAcpiSsdt.inf"
+    Package  = "DenvertonPkg"
+    ModuleTypes  = "USER_DEFINED"
+    Token = "SpsAcpiSsdt_SUPPORT" "=" "1"
+End
+
+TOKEN
+    Name  = "SpsDxeFsp_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable SpsDxeFsp support in Project"
+    TokenType = Boolean
+End
+
+INFComponent
+    Name  = "SpsDxeFsp"
+    File  = "DxeFsp/SpsDxeFsp.inf"
+    Package  = "DenvertonPkg"
+    ModuleTypes  = "DXE_DRIVER"
+    Token = "SpsDxeFsp_INF_SUPPORT" "=" "1"
+End
+
+LibraryMapping
+    Class  = "PcdLib"
+    Instance  = "MdePkg.DxePcdLib"
+    Override  = "DenvertonPkg.SpsDxeFsp"
+    Token = "SpsDxeFsp_INF_SUPPORT" "=" "1"
+End

@@ -1,0 +1,120 @@
+ TrEEPei
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000c11dH .text                   CODE
+ 0002:00000000 000000dcH .data                   DATA
+ 0002:000000e0 00000286H .rdata                  DATA
+ 0002:00000368 0000000eH .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000002c       _TrEETisPeiInit            0000026c f   TrEEPei:TrEEPei.obj
+ 0001:00000075       _GetAllDigestValues        000002b5 f   TrEEPei:TrEEPei.obj
+ 0001:000001ef       _Tpm2GetCapability         0000042f f   TrEEPei:TrEEPei.obj
+ 0001:000002a0       _Tpm2GetCapabilityManufactureID 000004e0 f   TrEEPei:TrEEPei.obj
+ 0001:000002dc       _Tpm2GetCapabilityMaxCommandResponseSize 0000051c f   TrEEPei:TrEEPei.obj
+ 0001:00000347       _TreeGetCapability         00000587 f   TrEEPei:TrEEPei.obj
+ 0001:00000430       _TrEECRBPeiTransmit        00000670 f   TrEEPei:TrEEPei.obj
+ 0001:00000468       _TrEETisPeiTransmit        000006a8 f   TrEEPei:TrEEPei.obj
+ 0001:000004d9       _SelectAndLockInterface    00000719 f   TrEEPei:TrEEPei.obj
+ 0001:00000533       _PeiTrEEExtend             00000773 f   TrEEPei:TrEEPei.obj
+ 0001:00000697       _TrEEPeiGetDigestNonBIOSAlg 000008d7 f   TrEEPei:TrEEPei.obj
+ 0001:000007a1       _TrEEPeiHashLogExtentEventInternal 000009e1 f   TrEEPei:TrEEPei.obj
+ 0001:00000b7e       _AmiPeiHashInitInterface   00000dbe f   TrEEPei:TrEEPei.obj
+ 0001:00000c4b       _AmiPeiHashUpdateInterface 00000e8b f   TrEEPei:TrEEPei.obj
+ 0001:00000d25       _AmiPeiHashCompleteInterface 00000f65 f   TrEEPei:TrEEPei.obj
+ 0001:00000e19       _AmiPeiHashAllInterface    00001059 f   TrEEPei:TrEEPei.obj
+ 0001:00000e3f       _TrEEHashLogExtentEvent    0000107f f   TrEEPei:TrEEPei.obj
+ 0001:00000ed5       _TreeGetEventLog           00001115 f   TrEEPei:TrEEPei.obj
+ 0001:00000f1c       _TrEEPeiEntry              0000115c f   TrEEPei:TrEEPei.obj
+ 0001:0000112b       _Tpm2HashSequenceStart     0000136b f   TrEEPei:Tpm2Sequences.obj
+ 0001:000011c6       _CopyAuthSessionCommand    00001406 f   TrEEPei:Tpm2Sequences.obj
+ 0001:000011e7       _Tpm2SequenceUpdate        00001427 f   TrEEPei:Tpm2Sequences.obj
+ 0001:000012de       _Tpm2SequenceComplete      0000151e f   TrEEPei:Tpm2Sequences.obj
+ 0001:00001409       _CopyMem                   00001649 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:0000142b       _SetMem                    0000166b f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:0000143f       _GetPeiServicesTablePointer 0000167f f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00001459       _SwapBytes16               00001699 f   BaseLib:SwapBytes16.obj
+ 0001:00001467       _SwapBytes32               000016a7 f   BaseLib:SwapBytes32.obj
+ 0001:00001480       _RShiftU64                 000016c0 f   BaseLib:RShiftU64.obj
+ 0001:000014a4       _LShiftU64                 000016e4 f   BaseLib:LShiftU64.obj
+ 0001:0000152d       _MicroSecondDelay          0000176d f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:00001562       _FixedDelay                000017a2 f   TisLib12x32:TpmLib.obj
+ 0001:000015d9       _TisReleaseLocality        00001819 f   TisLib12x32:TpmLib.obj
+ 0001:0000165b       _TisPrepareSendCommand     0000189b f   TisLib12x32:TpmLib.obj
+ 0001:000016ab       _TisSendCommand            000018eb f   TisLib12x32:TpmLib.obj
+ 0001:0000173c       _TisReceiveResponse        0000197c f   TisLib12x32:TpmLib.obj
+ 0001:000017ce       _TpmLibPassThrough         00001a0e f   TisLib12x32:TpmLib.obj
+ 0001:0000187e       _TcgCommonCopyMem          00001abe f   TisLib12x32:TcgCommon12.obj
+ 0001:000018af       _SHA1HashAll               00001aef f   TisLib12x32:TcgCommon12.obj
+ 0001:000018ef       _SHA2HashAll               00001b2f f   TisLib12x32:TcgCommon12.obj
+ 0001:0000193b       _TpmPeiReportStatusCode    00001b7b f   TpmReportStatusCodeWrapperLibPei:TpmReportStatusCodeWrapperLibPei.obj
+ 0001:0000194f       _IsTcmSupportType          00001b8f f   AmiTcmlib:AmiTcmlib.obj
+ 0001:0000197f       _CrbMmioReadBuffer8        00001bbf f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:000019c0       _CrbMmioWriteBuffer8       00001c00 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001a08       _IsPTP                     00001c48 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001a33       _GetCurrentInterfaceType   00001c73 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001a7f       _CrbSupported              00001cbf f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001ad8       _FIFOSupported             00001d18 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001b0a       _dTPMCrbLocality0Granted   00001d4a f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001b4e       _dTPMCrbSetLocality        00001d8e f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001ba6       _dTPMCrbWaitStrtClr        00001de6 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001bf7       _isTPMIdle                 00001e37 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001c1c       _dTPMCrbSetReqReadyState   00001e5c f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001c91       _dTPMCrbSetReqIdleState    00001ed1 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001d06       _CrbSend                   00001f46 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001de1       _CrbReceive                00002021 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001eee       _CrbSubmitCmd              0000212e f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00001f98       _DivU64x32                 000021d8 f   BaseLib:DivU64x32.obj
+ 0001:00001fb5       _MmioRead8                 000021f5 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00001fb8       _MmioWrite8                000021f8 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00001fbb       _InternalReportStatusCode  000021fb f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001fe6       _PttHciSend                00002226 f   PttHciDeviceNullLib:PttHciLibNull.obj
+ 0001:00001fe6       _PttHciReceive             00002226 f   PttHciDeviceNullLib:PttHciLibNull.obj
+ 0001:00001fec       _PttHciPresenceCheck       0000222c f   PttHciDeviceNullLib:PttHciLibNull.obj
+ 0001:00001ff0       _InternalMemCopyMem        00002230     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00002030       _InternalMemSetMem         00002270     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00002050       _InternalMemZeroMem        00002290     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002070       _InternalMemSetMem32       000022b0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00002090       _InternalMemSetMem64       000022d0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000020b0       _sha512_init               000022f0 f   ShaLib:sha512.obj
+ 0001:00002170       _sha512_process            000023b0 f   ShaLib:sha512.obj
+ 0001:00003a00       _sha512_done               00003c40 f   ShaLib:sha512.obj
+ 0001:00003d50       _sha256_init               00003f90 f   ShaLib:sha256.obj
+ 0001:00003dc0       _sha256_process            00004000 f   ShaLib:sha256.obj
+ 0001:00009190       _sha256_done               000093d0 f   ShaLib:sha256.obj
+ 0001:000095c0       _sha384_init               00009800 f   ShaLib:sha384.obj
+ 0001:00009680       _sha384_done               000098c0 f   ShaLib:sha384.obj
+ 0001:000096e0       _sha384_vector             00009920 f   ShaLib:sha384.obj
+ 0001:00009750       _SHA1Init                  00009990 f   ShaLib:sha1.obj
+ 0001:000097a0       _SHA1Update                000099e0 f   ShaLib:sha1.obj
+ 0001:0000bf80       _SHA1Final                 0000c1c0 f   ShaLib:sha1.obj
+ 0001:0000c0c0       __aullshr                  0000c300 f   ShaLib:IA32math.obj
+ 0001:0000c0e0       __allshl                   0000c320 f   ShaLib:IA32math.obj
+ 0001:0000c100       _InternalMemCompareMem     0000c340     BaseMemoryLibRepStr:CompareMem.obj
+ 0002:00000000       _gEfiCallerIdGuid          0000c360     TrEEPei:AutoGen.obj
+ 0002:00000010       _gEfiTcgTreeLogHobGuid     0000c370     TrEEPei:AutoGen.obj
+ 0002:00000020       _gAmiTreePpiGuid           0000c380     TrEEPei:AutoGen.obj
+ 0002:00000030       _AmiPeiHashInterfaceProtocolGuid 0000c390     TrEEPei:AutoGen.obj
+ 0002:00000040       _gAmiHashLogExtendExGuid   0000c3a0     TrEEPei:AutoGen.obj
+ 0002:00000050       _gTcgPeiPolicyGuid         0000c3b0     TrEEPei:AutoGen.obj
+ 0002:00000060       _TCMSupportedArray         0000c3c0     AmiTcmlib:AmiTcmlib.obj
+ 0002:00000360       ??_C@_01LOCGONAA@?$AA?$AA@ 0000c6c0     ShaLib:sha1.obj
+ 0002:00000364       ??_C@_01IFKFHFEL@?$IA?$AA@ 0000c6c4     ShaLib:sha1.obj
+ 0002:00000370       _TcgLog                    0000c6d0     TrEEPei:TrEEPei.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000014cd       _InternalAcpiDelay         0000170d f    CIL library: CIL module
+ 0001:0000157c       _CheckStsBit               000017bc f    CIL library: CIL module
+ 0001:000015a5       _ReadBurstCount            000017e5 f    CIL library: CIL module
+ 0001:000022e0       _sha512_compress           00002520 f   ShaLib:sha512.obj
+ 0001:00003f00       _sha256_compress           00004140 f   ShaLib:sha256.obj
+ 0001:000098a0       _SHA1Transform             00009ae0 f   ShaLib:sha1.obj

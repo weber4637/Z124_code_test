@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\9B3ADA4F-AE56-4c24-8DEA-F03B7558AE50PcdPeim\PEIPcdDataBaseSec.raw d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\IA32\MdeModulePkg\Universal\PCD\Pei\Pcd\OUTPUT\PEIPcdDataBase.raw

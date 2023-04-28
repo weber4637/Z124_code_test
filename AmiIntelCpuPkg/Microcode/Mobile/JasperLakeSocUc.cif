@@ -1,0 +1,9 @@
+<component>
+	name = "Soc JasperLake uCode Patches (906CX)"
+	category = ModulePart
+	LocalRoot = "AmiIntelCpuPkg\Microcode\Mobile\"
+	RefName = "JasperLakeSocUc"
+[files]
+"JasperLakeSocUc.sdl"
+"M01906C0_00000007.pdb"	= "SOC MICROCODE UPDATES"
+<endComponent>

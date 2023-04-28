@@ -1,0 +1,266 @@
+ NvramSmm
+
+ Timestamp is 6448e7ed (Wed Apr 26 16:59:25 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00006dbcH .text                   CODE
+ 0002:00000000 00000ae8H .data                   DATA
+ 0002:00000af0 0000052eH .rdata                  DATA
+ 0002:00001020 00000600H .bss                    DATA
+ 0003:00000000 00000480H .pdata                  DATA
+ 0004:00000000 00000424H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000090       ProcessLibraryConstructorList 0000000000000330 f   NvramSmm:AutoGen.obj
+ 0001:000001e8       NvramAllocatePages         0000000000000488 f   NvramSmm:NvramSmm.obj
+ 0001:00000234       SmmSetVariable             00000000000004d4 f   NvramSmm:NvramSmm.obj
+ 0001:0000025c       SmmReadyToLockCallback     00000000000004fc f   NvramSmm:NvramSmm.obj
+ 0001:00000300       NvramSmmInit               00000000000005a0 f   NvramSmm:NvramSmm.obj
+ 0001:000005bc       DummyUpdateRoutine         000000000000085c f   NvramSmm:NvramDxeCommon.obj
+ 0001:000005c0       MemBeginGarbageCollection  0000000000000860 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000668       DummyEndGarbageCollection  0000000000000908 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000668       DummyCheckStore            0000000000000908 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000668       DummyReinitialize          0000000000000908 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000668       DummyVirtualFixup          0000000000000908 f   NvramSmm:NvramDxeCommon.obj
+ 0001:0000066c       MemErase                   000000000000090c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000688       MemProgram                 0000000000000928 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000006a0       NvProgram                  0000000000000940 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000006fc       NvBufferAllocate           000000000000099c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000760       NvBufferFree               0000000000000a00 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000007a4       NvErase                    0000000000000a44 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000008d4       HybridEnableWrites         0000000000000b74 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000008e8       HybridDisableWrites        0000000000000b88 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000008fc       HybridErase                0000000000000b9c f   NvramSmm:NvramDxeCommon.obj
+ 0001:000009b8       HybridProgram              0000000000000c58 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000a3c       HybridInterfaceVirtualFixup 0000000000000cdc f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000b34       ReadNvramStoreState        0000000000000dd4 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000ba8       HybridInterfaceCheckStore  0000000000000e48 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000c7c       HybridInterfaceReinitialize 0000000000000f1c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000e58       FindVariableGetSetRecords  00000000000010f8 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00000fa8       RecoverFromFlashUpdateFailure 0000000000001248 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001028       GetVarAuthExtFlags         00000000000012c8 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000010bc       CreateVariableEx           000000000000135c f   NvramSmm:NvramDxeCommon.obj
+ 0001:0000158c       UpdateVariable             000000000000182c f   NvramSmm:NvramDxeCommon.obj
+ 0001:000018b4       CopyVariable               0000000000001b54 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001a04       VarInSdlList               0000000000001ca4 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001ab4       VarNotInStdVarList         0000000000001d54 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001b24       VarNotInEfiGlobalVarList   0000000000001dc4 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001c78       DispatchFilterFunctionList 0000000000001f18 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001cd8       IsDefaultVarStoreVariable  0000000000001f78 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001d70       NvramResetFilter           0000000000002010 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001df0       KeepVarsWithDefaults       0000000000002090 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001ef4       KeepVarsInPreservedList    0000000000002194 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001f08       KeepVarsInPersistentList   00000000000021a8 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001f1c       UpdateHandlerGetVariable   00000000000021bc f   NvramSmm:NvramDxeCommon.obj
+ 0001:00001f68       UpdateHandlerCopyVariable  0000000000002208 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00002040       DispatchStoreCopyHandlerList 00000000000022e0 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000020a0       DispatchUpdateHandlerList  0000000000002340 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000020b4       DispatchCleanupHandlerList 0000000000002354 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000020c8       CopyBootOptions            0000000000002368 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000021c4       CopyVariables              0000000000002464 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00002310       CopyVarStoreToMemStore     00000000000025b0 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00002390       GetFfsFileStateAddressAndValue 0000000000002630 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000023e8       CheckTheHeader             0000000000002688 f   NvramSmm:NvramDxeCommon.obj
+ 0001:0000244c       BeginGarbageCollection     00000000000026ec f   NvramSmm:NvramDxeCommon.obj
+ 0001:000025f8       EndGarbageCollection       0000000000002898 f   NvramSmm:NvramDxeCommon.obj
+ 0001:0000270c       UpdateVarstore             00000000000029ac f   NvramSmm:NvramDxeCommon.obj
+ 0001:000027bc       NvResetConfiguration       0000000000002a5c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00002a9c       IsStoreOk                  0000000000002d3c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00002b08       CheckStore                 0000000000002da8 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00002ccc       DxeGetVariable             0000000000002f6c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00002dd8       CheckOnSetVariable         0000000000003078 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00002f7c       ValidateDefaultVarStoreVariable 000000000000321c f   NvramSmm:NvramDxeCommon.obj
+ 0001:000031ec       DxeSetVariable             000000000000348c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00003900       DxeGetVariableWrapper      0000000000003ba0 f   NvramSmm:NvramDxeCommon.obj
+ 0001:000039d0       DxeGetNextVariableNameWrapper 0000000000003c70 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00003ad8       DxeRequestToLock           0000000000003d78 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00003bf0       CheckLockedVarList         0000000000003e90 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00003cb4       DxeSetVariableWrapper      0000000000003f54 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00003d7c       InitTmpVolatileStore       000000000000401c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00003dfc       EnumerateStore             000000000000409c f   NvramSmm:NvramDxeCommon.obj
+ 0001:00003ed0       UpdateNestedVarstores      0000000000004170 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00003f9c       VarStoreDiscovery          000000000000423c f   NvramSmm:NvramDxeCommon.obj
+ 0001:000040e8       QueryVariableInfo          0000000000004388 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00004204       AmiNvramUpdateProtocolUpdateNvram 00000000000044a4 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00004330       AmiNvramUpdateProtocolMigrateNvram 00000000000045d0 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00004710       InitNonVolatileVarStore    00000000000049b0 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00004988       NvramInitialize            0000000000004c28 f   NvramSmm:NvramDxeCommon.obj
+ 0001:00004b68       CheckForMorVariables       0000000000004e08 f   NvramSmm:NvramSmi.obj
+ 0001:00004d98       SetVariableSmmHandler      0000000000005038 f   NvramSmm:NvramSmi.obj
+ 0001:00004e80       NvramSmmCommunicationHandler 0000000000005120 f   NvramSmm:NvramSmi.obj
+ 0001:000050fc       NvGetDataNvar              000000000000539c f   NvramSmm:NvramRead.obj
+ 0001:0000515c       NvCalculateNvarChecksum    00000000000053fc f   NvramSmm:NvramRead.obj
+ 0001:000051b4       NvGetData                  0000000000005454 f   NvramSmm:NvramRead.obj
+ 0001:0000522c       NvIsVariable               00000000000054cc f   NvramSmm:NvramRead.obj
+ 0001:000052d0       NvGetNextNvar              0000000000005570 f   NvramSmm:NvramRead.obj
+ 0001:0000534c       NvGetFirstValid            00000000000055ec f   NvramSmm:NvramRead.obj
+ 0001:000053ac       NvVarEq                    000000000000564c f   NvramSmm:NvramRead.obj
+ 0001:0000549c       NvFindVariable             000000000000573c f   NvramSmm:NvramRead.obj
+ 0001:00005530       NvGetAttributesFromNvar    00000000000057d0 f   NvramSmm:NvramRead.obj
+ 0001:0000559c       NvGetVariableFromNvar      000000000000583c f   NvramSmm:NvramRead.obj
+ 0001:00005644       NvGetVariable              00000000000058e4 f   NvramSmm:NvramRead.obj
+ 0001:000056e4       NvGetNameFromNvar          0000000000005984 f   NvramSmm:NvramRead.obj
+ 0001:00005800       NvGetNextVariableNvar      0000000000005aa0 f   NvramSmm:NvramRead.obj
+ 0001:00005928       NvGetNextVariableName      0000000000005bc8 f   NvramSmm:NvramRead.obj
+ 0001:000059a4       NvResetInfoBuffer          0000000000005c44 f   NvramSmm:NvramRead.obj
+ 0001:00005a20       NvGetDefaultsInfo          0000000000005cc0 f   NvramSmm:NvramRead.obj
+ 0001:00005a8c       NvGetNextVariableName2     0000000000005d2c f   NvramSmm:NvramRead.obj
+ 0001:00005e74       GetFvHeaderSize            0000000000006114 f   NvramSmm:NvramRead.obj
+ 0001:00005ec8       GetNvramFfsFileState       0000000000006168 f   NvramSmm:NvramRead.obj
+ 0001:00005f00       IsMainNvramStoreValid      00000000000061a0 f   NvramSmm:NvramRead.obj
+ 0001:00005f7c       InternalAssertJumpBuffer   000000000000621c f   BaseLib:SetJump.obj
+ 0001:00005f80       BufferInSmram              0000000000006220 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005fc4       InternalAllocatePool       0000000000006264 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005ff4       FreePool                   0000000000006294 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000602c       MemCmp                     00000000000062cc f   AmiDxeLib:Memory.obj
+ 0001:000060a4       GetEfiConfigurationTable   0000000000006344 f   AmiDxeLib:EfiLib.obj
+ 0001:000060fc       LibInitStatusCodePtr       000000000000639c f   AmiDxeLib:EfiLib.obj
+ 0001:00006180       LibReportStatusCode        0000000000006420 f   AmiDxeLib:EfiLib.obj
+ 0001:000061f8       TraceGetAmiDebugServicesProtocolInstance 0000000000006498 f   AmiDxeLib:EfiLib.obj
+ 0001:000062dc       GetSmstConfigurationTable  000000000000657c f   AmiDxeLib:EfiLib.obj
+ 0001:0000633c       InitAmiSmmLib              00000000000065dc f   AmiDxeLib:EfiLib.obj
+ 0001:00006428       ItoaHelper                 00000000000066c8 f   AmiDxeLib:StdLibC.obj
+ 0001:0000649c       StrtolEx                   000000000000673c f   AmiDxeLib:StdLibC.obj
+ 0001:00006564       GetStatusCodeString        0000000000006804 f   AmiDxeLib:StdLibC.obj
+ 0001:0000664c       Swprintf                   00000000000068ec f   AmiDxeLib:StdLibC.obj
+ 0001:00006674       Swprintf_s_va_list         0000000000006914 f   AmiDxeLib:StdLibC.obj
+ 0001:00006ac8       Swprintf_s                 0000000000006d68 f   AmiDxeLib:StdLibC.obj
+ 0001:00006af0       SetJump                    0000000000006d90     BaseLib:SetJump.obj
+ 0001:00006b80       InternalLongJump           0000000000006e20     BaseLib:LongJump.obj
+ 0001:00006c00       InternalMemZeroMem         0000000000006ea0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00006c20       CPULib_CpuID               0000000000006ec0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00006c60       memset                     0000000000006f00     AmiDxeLib:MemSet.obj
+ 0001:00006c6e       MemSetAsm                  0000000000006f0e f   AmiDxeLib:MemSet.obj
+ 0001:00006cc0       MemCpyAsm                  0000000000006f60 f   AmiDxeLib:MemCpy.obj
+ 0001:00006cc0       memcpy                     0000000000006f60     AmiDxeLib:MemCpy.obj
+ 0001:00006d70       GetCpuTimer                0000000000007010 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00006d80       InternalMemCopyMem         0000000000007020     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gEfiGlobalVariableGuid     0000000000007060     NvramSmm:AutoGen.obj
+ 0002:00000010       gEfiHobListGuid            0000000000007070     NvramSmm:AutoGen.obj
+ 0002:00000020       gAmiNvramSmmCommunicationGuid 0000000000007080     NvramSmm:AutoGen.obj
+ 0002:00000030       gEfiImageSecurityDatabaseGuid 0000000000007090     NvramSmm:AutoGen.obj
+ 0002:00000040       gEfiHardwareErrorVariableGuid 00000000000070a0     NvramSmm:AutoGen.obj
+ 0002:00000050       gEfiDxeServicesTableGuid   00000000000070b0     NvramSmm:AutoGen.obj
+ 0002:00000060       gEfiFirmwareVolume2ProtocolGuid 00000000000070c0     NvramSmm:AutoGen.obj
+ 0002:00000070       gEfiSmmVariableProtocolGuid 00000000000070d0     NvramSmm:AutoGen.obj
+ 0002:00000080       gEfiSmmReadyToLockProtocolGuid 00000000000070e0     NvramSmm:AutoGen.obj
+ 0002:00000090       gAmiSmmNvramUpdateProtocolGuid 00000000000070f0     NvramSmm:AutoGen.obj
+ 0002:000000a0       gEfiSmmBase2ProtocolGuid   0000000000007100     NvramSmm:AutoGen.obj
+ 0002:000000b0       gAmiSmmDebugServiceProtocolGuid 0000000000007110     NvramSmm:AutoGen.obj
+ 0002:000000c0       gEfiSmmAccess2ProtocolGuid 0000000000007120     NvramSmm:AutoGen.obj
+ 0002:000000d0       gAmiDebugServiceProtocolGuid 0000000000007130     NvramSmm:AutoGen.obj
+ 0002:000000e0       gAmiSmmBufferValidationProtocolGuid 0000000000007140     NvramSmm:AutoGen.obj
+ 0002:0000010f       LockEnforcementIsActive    000000000000716f     NvramSmm:NvramSmm.obj
+ 0002:00000110       EfiErrorStatus             0000000000007170     AmiDxeLib:StdLibC.obj
+ 0002:00000450       PiErrorStatus              00000000000074b0     AmiDxeLib:StdLibC.obj
+ 0002:000004a0       AmiErrorStatus             0000000000007500     AmiDxeLib:StdLibC.obj
+ 0002:000004e0       EfiWarningStatus           0000000000007540     AmiDxeLib:StdLibC.obj
+ 0002:00000550       PiWarningStatus            00000000000075b0     AmiDxeLib:StdLibC.obj
+ 0002:00000598       EfiUnknown                 00000000000075f8     AmiDxeLib:StdLibC.obj
+ 0002:000005a8       FlashDeviceBase            0000000000007608     AmiDxeLib:Tokens.obj
+ 0002:00000688       NvramCleanupFilterFunctions 00000000000076e8     NvramSmm:NvramDxeCommon.obj
+ 0002:000006a8       NvramUpdateFilterFunctions 0000000000007708     NvramSmm:NvramDxeCommon.obj
+ 0002:000006b8       NvramCleanupHandlerFunctions 0000000000007718     NvramSmm:NvramDxeCommon.obj
+ 0002:000006c8       NvramUpdateHandlerFunctions 0000000000007728     NvramSmm:NvramDxeCommon.obj
+ 0002:000006e0       gPersistentSdlVarLst       0000000000007740     NvramSmm:NvramDxeCommon.obj
+ 0002:000007f0       gStdEfiVarList             0000000000007850     NvramSmm:NvramDxeCommon.obj
+ 0002:00000940       gStdEfiVarListWildCard     00000000000079a0     NvramSmm:NvramDxeCommon.obj
+ 0002:000009a0       MemInterface               0000000000007a00     NvramSmm:NvramDxeCommon.obj
+ 0002:00000a78       AmiNvramUpdate             0000000000007ad8     NvramSmm:NvramDxeCommon.obj
+ 0002:00000a88       SmmVariable                0000000000007ae8     NvramSmm:NvramSmm.obj
+ 0002:00000aa8       SmmVariableWithLockSupport 0000000000007b08     NvramSmm:NvramSmm.obj
+ 0002:00000ad8       SmmRsTableGuid             0000000000007b38     AmiDxeLib:EfiLib.obj
+ 0002:00000af0       FlashBlockSize             0000000000007b50     AmiDxeLib:Tokens.obj
+ 0002:00000af4       FlashEmptyNext             0000000000007b54     AmiDxeLib:Tokens.obj
+ 0002:00000af8       FlashEmpty                 0000000000007b58     AmiDxeLib:Tokens.obj
+ 0002:00000b00       NvramSize                  0000000000007b60     AmiDxeLib:Tokens.obj
+ 0002:00000b08       NvramChecksumSupport       0000000000007b68     AmiDxeLib:Tokens.obj
+ 0002:00000b10       AmiDefaultsVariableGuid    0000000000007b70     NvramSmm:NvramRead.obj
+ 0002:00000b20       MfgDefaults                0000000000007b80     NvramSmm:NvramRead.obj
+ 0002:00000b38       StdDefaults                0000000000007b98     NvramSmm:NvramRead.obj
+ 0002:00000b50       AmiNvramHobGuid            0000000000007bb0     NvramSmm:NvramRead.obj
+ 0002:00000b64       _gUefiDriverRevision       0000000000007bc4     NvramSmm:AutoGen.obj
+ 0002:00000b68       ??_C@_1BK@GEAJJJD@?$AAN?$AAv?$AAr?$AAa?$AAm?$AAM?$AAa?$AAi?$AAl?$AAB?$AAo?$AAx?$AA?$AA@ 0000000000007bc8     NvramSmm:NvramSmm.obj
+ 0002:00000b88       ??_C@_1CK@HCBNNKKL@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAR?$AAe?$AAc?$AAo?$AAv?$AAe?$AAr?$AAy?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$AA@ 0000000000007be8     NvramSmm:NvramDxeCommon.obj
+ 0002:00000bb8       ??_C@_1BI@MBBMOIDH@?$AAS?$AAy?$AAs?$AAP?$AAr?$AAe?$AAp?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$AA@ 0000000000007c18     NvramSmm:NvramDxeCommon.obj
+ 0002:00000bd0       ??_C@_1BA@IPANLHEB@?$AAK?$AAe?$AAy?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$AA@ 0000000000007c30     NvramSmm:NvramDxeCommon.obj
+ 0002:00000be0       ??_C@_1BG@MOHEKDIO@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$AA@ 0000000000007c40     NvramSmm:NvramDxeCommon.obj
+ 0002:00000bf8       ??_C@_1BC@DEGCMEDF@?$AAB?$AAo?$AAo?$AAt?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$AA@ 0000000000007c58     NvramSmm:NvramDxeCommon.obj
+ 0002:00000c10       ??_C@_1BM@MDLAABPK@?$AAO?$AAs?$AAI?$AAn?$AAd?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?$AA@ 0000000000007c70     NvramSmm:NvramDxeCommon.obj
+ 0002:00000c30       ??_C@_1CO@MENFEBKM@?$AAO?$AAs?$AAI?$AAn?$AAd?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 0000000000007c90     NvramSmm:NvramDxeCommon.obj
+ 0002:00000c60       ??_C@_1CA@BOALBJHG@?$AAH?$AAw?$AAE?$AAr?$AAr?$AAR?$AAe?$AAc?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AA?$AA@ 0000000000007cc0     NvramSmm:NvramDxeCommon.obj
+ 0002:00000c80       ??_C@_1BK@CHMLNGLH@?$AAS?$AAy?$AAs?$AAP?$AAr?$AAe?$AAp?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000007ce0     NvramSmm:NvramDxeCommon.obj
+ 0002:00000ca0       ??_C@_1BI@PDMCFEDG@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000007d00     NvramSmm:NvramDxeCommon.obj
+ 0002:00000cb8       ??_C@_1CE@BKEAGEIL@?$AAB?$AAo?$AAo?$AAt?$AAO?$AAp?$AAt?$AAi?$AAo?$AAn?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AA?$AA@ 0000000000007d18     NvramSmm:NvramDxeCommon.obj
+ 0002:00000ce0       ??_C@_1BI@LBNGELID@?$AAB?$AAo?$AAo?$AAt?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AA?$AA@ 0000000000007d40     NvramSmm:NvramDxeCommon.obj
+ 0002:00000cf8       ??_C@_1BC@HGEHGBBD@?$AAB?$AAo?$AAo?$AAt?$AAN?$AAe?$AAx?$AAt?$AA?$AA@ 0000000000007d58     NvramSmm:NvramDxeCommon.obj
+ 0002:00000d10       ??_C@_1BE@CHCFCNKI@?$AAB?$AAo?$AAo?$AAt?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000007d70     NvramSmm:NvramDxeCommon.obj
+ 0002:00000d28       ??_C@_1BE@JFPOEAHF@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv?$AA?$AA@ 0000000000007d88     NvramSmm:NvramDxeCommon.obj
+ 0002:00000d40       ??_C@_1BE@INNAKDAF@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv?$AA?$AA@ 0000000000007da0     NvramSmm:NvramDxeCommon.obj
+ 0002:00000d58       ??_C@_1BC@OBFMLJLI@?$AAC?$AAo?$AAn?$AAI?$AAn?$AAD?$AAe?$AAv?$AA?$AA@ 0000000000007db8     NvramSmm:NvramDxeCommon.obj
+ 0002:00000d70       ??_C@_1O@JOJMCOJC@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt?$AA?$AA@ 0000000000007dd0     NvramSmm:NvramDxeCommon.obj
+ 0002:00000d80       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 0000000000007de0     NvramSmm:NvramDxeCommon.obj
+ 0002:00000da0       ??_C@_1CE@GLBFGNOF@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AAC?$AAo?$AAd?$AAe?$AAs?$AA?$AA@ 0000000000007e00     NvramSmm:NvramDxeCommon.obj
+ 0002:00000dc8       ??_C@_1BA@BKONPLFM@?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$AA@ 0000000000007e28     NvramSmm:NvramDxeCommon.obj
+ 0002:00000dd8       ??_C@_19BALNHBBC@?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 0000000000007e38     NvramSmm:NvramDxeCommon.obj
+ 0002:00000de8       ??_C@_1BE@PMKNNMNM@?$AAL?$AAa?$AAn?$AAg?$AAC?$AAo?$AAd?$AAe?$AAs?$AA?$AA@ 0000000000007e48     NvramSmm:NvramDxeCommon.obj
+ 0002:00000e00       ??_C@_1CK@HEPBNGNI@?$AAO?$AAr?$AAi?$AAF?$AAb?$AAo?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000007e60     NvramSmm:NvramDxeCommon.obj
+ 0002:00000e30       ??_C@_1CE@HJFPEMJP@?$AAF?$AAb?$AAo?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000007e90     NvramSmm:NvramDxeCommon.obj
+ 0002:00000e58       ??_C@_1BK@LJNGGOJK@?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000007eb8     NvramSmm:NvramDxeCommon.obj
+ 0002:00000e78       ??_C@_1O@MJHLOIFA@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt?$AA?$AA@ 0000000000007ed8     NvramSmm:NvramDxeCommon.obj
+ 0002:00000e88       ??_C@_1M@NFPEGKHA@?$AAC?$AAo?$AAn?$AAI?$AAn?$AA?$AA@ 0000000000007ee8     NvramSmm:NvramDxeCommon.obj
+ 0002:00000e98       ??_C@_1CA@LPOPLAJF@?$AAS?$AAe?$AAc?$AAu?$AAr?$AAe?$AAB?$AAo?$AAo?$AAt?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000007ef8     NvramSmm:NvramDxeCommon.obj
+ 0002:00000eb8       ??_C@_13BBDEGPLJ@?$AA?$CK?$AA?$AA@ 0000000000007f18     NvramSmm:NvramDxeCommon.obj
+ 0002:00000ebc       ??_C@_15OKGIJJH@?$AAP?$AAK?$AA?$AA@ 0000000000007f1c     NvramSmm:NvramDxeCommon.obj
+ 0002:00000ec8       ??_C@_17PNKKLKMO@?$AAK?$AAE?$AAK?$AA?$AA@ 0000000000007f28     NvramSmm:NvramDxeCommon.obj
+ 0002:00000ed0       ??_C@_1BC@NAPILJKH@?$AAB?$AAo?$AAo?$AAt?$AA?$CF?$AA0?$AA4?$AAX?$AA?$AA@ 0000000000007f30     NvramSmm:NvramDxeCommon.obj
+ 0002:00000ee8       ??_C@_1BC@IONJEEFP@?$AAH?$AAw?$AAE?$AAr?$AAr?$AAR?$AAe?$AAc?$AA?$AA@ 0000000000007f48     NvramSmm:NvramDxeCommon.obj
+ 0002:00000f00       ??_C@_1EE@GADHGNAI@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAO?$AAv?$AAe?$AAr?$AAw?$AAr?$AAi?$AAt?$AAe?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAL?$AAo?$AAc@ 0000000000007f60     NvramSmm:NvramSmi.obj
+ 0002:00000f48       ??_C@_1DM@KHNCPJJB@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAO?$AAv?$AAe?$AAr?$AAw?$AAr?$AAi?$AAt?$AAe?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$AA@ 0000000000007fa8     NvramSmm:NvramSmi.obj
+ 0002:00000f88       ??_C@_0M@LCCONGAO@EFI_SUCCESS?$AA@ 0000000000007fe8     AmiDxeLib:StdLibC.obj
+ 0002:00000fa0       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 0000000000008000     AmiDxeLib:StdLibC.obj
+ 0002:00001008       ??_C@_1O@PMJNFNEJ@?$AA?$CF?$AAS?$AA?$CI?$AA?$CF?$AAX?$AA?$CJ?$AA?$AA@ 0000000000008068     AmiDxeLib:StdLibC.obj
+ 0002:00001018       ??_C@_15MAOEGKJF@?$AA?$CF?$AAS?$AA?$AA@ 0000000000008078     AmiDxeLib:StdLibC.obj
+ 0002:00001120       GetVariableHookList        0000000000008180     NvramSmm:NvramDxeCommon.obj
+ 0002:00001128       SetVariableHookList        0000000000008188     NvramSmm:NvramDxeCommon.obj
+ 0002:00001130       GetNextVarNameHookList     0000000000008190     NvramSmm:NvramDxeCommon.obj
+ 0002:00001139       SmmLocked                  0000000000008199     NvramSmm:NvramDxeCommon.obj
+ 0002:0000113a       NvramDriverAllocationMask  000000000000819a     NvramSmm:NvramDxeCommon.obj
+ 0002:0000113b       gMorLock                   000000000000819b     NvramSmm:NvramSmi.obj
+ 0002:0000113c       MorLockCheckIsActive       000000000000819c     NvramSmm:NvramSmi.obj
+ 0002:00001140       gDescriptor                00000000000081a0     NvramSmm:NvramDxeCommon.obj
+ 0002:00001178       gPreservedSdlVarLst        00000000000081d8     NvramSmm:NvramDxeCommon.obj
+ 0002:00001190       gStdSecurityDbVarList      00000000000081f0     NvramSmm:NvramDxeCommon.obj
+ 0002:000011a0       UpdataHandlerSourceStore   0000000000008200     NvramSmm:NvramDxeCommon.obj
+ 0002:000011a8       UpdateHandlerDestinationStore 0000000000008208     NvramSmm:NvramDxeCommon.obj
+ 0002:000011b0       gNvramLockVarBuffer        0000000000008210     NvramSmm:NvramDxeCommon.obj
+ 0002:000011b8       VarSmiHandle               0000000000008218     NvramSmm:NvramSmi.obj
+ 0002:000011c0       gMorKey                    0000000000008220     NvramSmm:NvramSmi.obj
+ 0002:000011c8       gImageHandle               0000000000008228     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000011d0       gST                        0000000000008230     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000011d8       gBS                        0000000000008238     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000011e0       gRT                        0000000000008240     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000011e8       gSmst                      0000000000008248     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00001230       SmmAmiBufferValidationLibValidationProtocol 0000000000008290     SmmAmiBufferValidationLib:SmmAmiBufferValidationLib.obj
+ 0002:00001238       gDS                        0000000000008298     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00001240       pST                        00000000000082a0     AmiDxeLib:EfiLib.obj
+ 0002:00001248       pBS                        00000000000082a8     AmiDxeLib:EfiLib.obj
+ 0002:00001250       pRS                        00000000000082b0     AmiDxeLib:EfiLib.obj
+ 0002:00001258       pSmmBase                   00000000000082b8     AmiDxeLib:EfiLib.obj
+ 0002:00001260       pSmst                      00000000000082c0     AmiDxeLib:EfiLib.obj
+ 0002:00001268       TheImageHandle             00000000000082c8     AmiDxeLib:EfiLib.obj
+ 0002:00001270       mSmramRanges               00000000000082d0     <common>
+ 0002:00001278       mSmramRangeCount           00000000000082d8     <common>
+ 0002:00001280       mPerformanceMeasurementEnabled 00000000000082e0     <common>
+ 0002:000012a0       HybridInterface            0000000000008300     <common>
+ 0002:00001320       VarStoreInfo               0000000000008380     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

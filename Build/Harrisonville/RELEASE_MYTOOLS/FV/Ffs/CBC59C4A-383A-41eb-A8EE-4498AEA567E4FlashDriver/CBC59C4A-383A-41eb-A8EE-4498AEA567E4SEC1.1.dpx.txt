@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\CBC59C4A-383A-41eb-A8EE-4498AEA567E4FlashDriver\CBC59C4A-383A-41eb-A8EE-4498AEA567E4SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\FlashDriver\FlashDriver\OUTPUT\FlashDriver.depex

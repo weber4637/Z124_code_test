@@ -1,0 +1,130 @@
+ SmbiosDmiEdit
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00002ffaH .text                   CODE
+ 0002:00000000 00000720H .data                   DATA
+ 0002:00000720 000000d8H .rdata                  DATA
+ 0002:00000800 00000220H .bss                    DATA
+ 0003:00000000 0000018cH .pdata                  DATA
+ 0004:00000000 00000190H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000fc       SmbiosDmiEditSupportInstall 000000000000039c f   SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0001:00000234       InSmmFunction              00000000000004d4 f   SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0001:000003e0       GetSmbiosPointers          0000000000000680 f   SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0001:00000548       SmiHandler                 00000000000007e8 f   SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0001:00000a44       WriteToFlash               0000000000000ce4 f   SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0001:00000aa0       UpdateSmbiosTable          0000000000000d40 f   SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0001:00000ff4       WriteOnceStatusInit        0000000000001294 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000010a0       isWriteOnce                0000000000001340 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000011d8       GetSmbiosV2Info            0000000000001478 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00001334       GetSmbiosV3Info            00000000000015d4 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000014a0       GetStructureByHandle       0000000000001740 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00001510       GetStructureByHandleThenUpdateHandle 00000000000017b0 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000015a4       GetSmbiosV2Structure       0000000000001844 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00001684       GetSmbiosV3Structure       0000000000001924 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:0000176c       GetStructureLength         0000000000001a0c f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000017c0       GetInstanceByTypeHandle    0000000000001a60 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00001834       GetRemainingStructuresSize 0000000000001ad4 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000018a8       GetNumberOfStructures      0000000000001b48 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:0000190c       GetLargestStructureSize    0000000000001bac f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:0000195c       UpdateSmbiosTableHeader    0000000000001bfc f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00001a78       DeleteString               0000000000001d18 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00001b3c       UpdateStrings              0000000000001ddc f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00001eac       DynamicUpdateType12        000000000000214c f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00001eac       DynamicUpdateType11        000000000000214c f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00002044       GetInputDataInfo           00000000000022e4 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000020ac       SetType0                   000000000000234c f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:0000216c       SetType1                   000000000000240c f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00002314       SetType2                   00000000000025b4 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000023e0       SetType3                   0000000000002680 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:0000259c       SetType11                  000000000000283c f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00002688       SetType12                  0000000000002928 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00002774       PnPFn52AddStructure        0000000000002a14 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000028f4       PnPFn52DeleteStructure     0000000000002b94 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:000029e4       SetSmbiosStructure         0000000000002c84 f   SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0001:00002b8c       InternalAssertJumpBuffer   0000000000002e2c f   BaseLib:SetJump.obj
+ 0001:00002b90       MemCmp                     0000000000002e30 f   AmiDxeLib:Memory.obj
+ 0001:00002c0c       LibInitStatusCodePtr       0000000000002eac f   AmiDxeLib:EfiLib.obj
+ 0001:00002c50       TraceGetAmiDebugServicesProtocolInstance 0000000000002ef0 f   AmiDxeLib:EfiLib.obj
+ 0001:00002d34       GetSmstConfigurationTable  0000000000002fd4 f   AmiDxeLib:EfiLib.obj
+ 0001:00002d90       SetJump                    0000000000003030     BaseLib:SetJump.obj
+ 0001:00002e20       InternalLongJump           00000000000030c0     BaseLib:LongJump.obj
+ 0001:00002ea0       CPULib_CpuID               0000000000003140 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00002ee0       memset                     0000000000003180     AmiDxeLib:MemSet.obj
+ 0001:00002eee       MemSetAsm                  000000000000318e f   AmiDxeLib:MemSet.obj
+ 0001:00002f40       MemCpyAsm                  00000000000031e0 f   AmiDxeLib:MemCpy.obj
+ 0001:00002f40       memcpy                     00000000000031e0     AmiDxeLib:MemCpy.obj
+ 0001:00002ff0       GetCpuTimer                0000000000003290 f   AmiDxeLib:GetCpuTimer.obj
+ 0002:00000000       gAmiSmbiosNvramGuid        00000000000032a0     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000010       gEfiSmmSwDispatch2ProtocolGuid 00000000000032b0     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000020       gEfiSmmBase2ProtocolGuid   00000000000032c0     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000030       gAmiSmbiosFlashDataProtocolGuid 00000000000032d0     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000040       gEfiSmiFlashProtocolGuid   00000000000032e0     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000050       gFlashSmmProtocolGuid      00000000000032f0     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000060       gAmiSmmDebugServiceProtocolGuid 0000000000003300     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000070       gAmiDebugServiceProtocolGuid 0000000000003310     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000080       gAmiSmmBufferValidationProtocolGuid 0000000000003320     SmbiosDmiEdit:AutoGen.obj
+ 0002:000000b0       EfiErrorStatus             0000000000003350     AmiDxeLib:StdLibC.obj
+ 0002:000003f0       PiErrorStatus              0000000000003690     AmiDxeLib:StdLibC.obj
+ 0002:00000440       AmiErrorStatus             00000000000036e0     AmiDxeLib:StdLibC.obj
+ 0002:00000480       EfiWarningStatus           0000000000003720     AmiDxeLib:StdLibC.obj
+ 0002:000004f0       PiWarningStatus            0000000000003790     AmiDxeLib:StdLibC.obj
+ 0002:00000538       EfiUnknown                 00000000000037d8     AmiDxeLib:StdLibC.obj
+ 0002:000005f8       AfriEntryPointTable        0000000000003898     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000618       AfriV3EntryPointTable      00000000000038b8     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000630       StringType_0               00000000000038d0     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000640       StringType_1               00000000000038e0     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000658       StringType_2               00000000000038f8     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000670       StringType_3               0000000000003910     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000688       StringType_4               0000000000003928     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:000006a0       StringType_22              0000000000003940     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:000006b8       StringType_39              0000000000003958     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:000006d0       StringTable                0000000000003970     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000708       WriteOnceTable             00000000000039a8     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000710       SmmRsTableGuid             00000000000039b0     AmiDxeLib:EfiLib.obj
+ 0002:00000720       _gUefiDriverRevision       00000000000039c0     SmbiosDmiEdit:AutoGen.obj
+ 0002:00000728       ??_C@_1CM@MCNBJDGN@?$AAS?$AAm?$AAb?$AAi?$AAo?$AAs?$AAE?$AAn?$AAt?$AAr?$AAy?$AAP?$AAo?$AAi?$AAn?$AAt?$AAT?$AAa?$AAb?$AAl?$AAe?$AA?$AA@ 00000000000039c8     SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0002:00000758       ??_C@_1DA@DDGMOLMD@?$AAS?$AAm?$AAb?$AAi?$AAo?$AAs?$AAV?$AA3?$AAE?$AAn?$AAt?$AAr?$AAy?$AAP?$AAo?$AAi?$AAn?$AAt?$AAT?$AAa?$AAb?$AAl?$AAe?$AA?$AA@ 00000000000039f8     SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0002:00000788       ??_C@_1CC@BFKIOHIG@?$AAM?$AAa?$AAx?$AAi?$AAm?$AAu?$AAm?$AAT?$AAa?$AAb?$AAl?$AAe?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 0000000000003a28     SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0002:000007b0       ??_C@_1CI@KMIJILCO@?$AAS?$AAm?$AAb?$AAi?$AAo?$AAs?$AAS?$AAc?$AAr?$AAa?$AAt?$AAc?$AAh?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?$AA@ 0000000000003a50     SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0002:000007d8       ??_C@_1CA@ENFDPPPE@?$AAW?$AAr?$AAi?$AAt?$AAe?$AAO?$AAn?$AAc?$AAe?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?$AA@ 0000000000003a78     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000900       mFlash                     0000000000003ba0     SmbiosDmiEdit:SmbiosDmiEdit.obj
+ 0002:00000910       SmbiosTableSize            0000000000003bb0     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000918       SmbiosTableEntryPoint      0000000000003bb8     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000920       Smb2xTablePhysAddress      0000000000003bc0     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000928       SmbiosV3TableEntryPoint    0000000000003bc8     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000930       Smb3xTablePhysAddress      0000000000003bd0     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000938       ScratchBufferPtr           0000000000003bd8     SmbiosDmiEdit:SmbiosDmiEditFunc.obj
+ 0002:00000940       gImageHandle               0000000000003be0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000948       gST                        0000000000003be8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000950       gBS                        0000000000003bf0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000958       gSmst                      0000000000003bf8     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:000009a0       SmmAmiBufferValidationLibValidationProtocol 0000000000003c40     SmmAmiBufferValidationLib:SmmAmiBufferValidationLib.obj
+ 0002:000009a8       pST                        0000000000003c48     AmiDxeLib:EfiLib.obj
+ 0002:000009b0       pBS                        0000000000003c50     AmiDxeLib:EfiLib.obj
+ 0002:000009b8       pRS                        0000000000003c58     AmiDxeLib:EfiLib.obj
+ 0002:000009c0       pSmmBase                   0000000000003c60     AmiDxeLib:EfiLib.obj
+ 0002:000009c8       pSmst                      0000000000003c68     AmiDxeLib:EfiLib.obj
+ 0002:000009d0       TheImageHandle             0000000000003c70     AmiDxeLib:EfiLib.obj
+ 0002:000009d8       mPerformanceMeasurementEnabled 0000000000003c78     <common>
+ 0002:000009e0       SmbiosTableEnd             0000000000003c80     <common>
+ 0002:000009e8       SmbiosTable                0000000000003c88     <common>
+ 0002:000009f0       gFlashData                 0000000000003c90     <common>
+ 0002:000009f8       StructurePtr               0000000000003c98     <common>
+ 0002:00000a00       MaximumBufferSize          0000000000003ca0     <common>
+ 0002:00000a04       gFlashDataSize             0000000000003ca4     <common>
+ 0002:00000a08       mSmst                      0000000000003ca8     <common>
+ 0002:00000a10       mSmiFlash                  0000000000003cb0     <common>
+ 0002:00000a18       mSmbiosFlashDataProtocol   0000000000003cb8     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

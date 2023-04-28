@@ -1,0 +1,55 @@
+ WheaElog
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000e12H .text                   CODE
+ 0002:00000000 00000250H .data                   DATA
+ 0002:00000250 00000004H .rdata                  DATA
+ 0002:00000260 0000016cH .bss                    DATA
+ 0003:00000000 00000054H .pdata                  DATA
+ 0004:00000000 00000084H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f8       WheaErstInit               0000000000000358 f   WheaElog:WheaElog.obj
+ 0001:00000428       DeleteMarkedErrorRecord    0000000000000688 f   WheaElog:WheaElog.obj
+ 0001:000005d8       ClearErrorRecord           0000000000000838 f   WheaElog:WheaElog.obj
+ 0001:00000744       ErstWriteErrorRecord       00000000000009a4 f   WheaElog:WheaElog.obj
+ 0001:000008ec       ErstReadErrorRecord        0000000000000b4c f   WheaElog:WheaElog.obj
+ 0001:00000c14       ErstSWSMIHandler           0000000000000e74 f   WheaElog:WheaElog.obj
+ 0001:00000c68       InternalAssertJumpBuffer   0000000000000ec8 f   BaseLib:SetJump.obj
+ 0001:00000c70       SetJump                    0000000000000ed0     BaseLib:SetJump.obj
+ 0001:00000d00       InternalLongJump           0000000000000f60     BaseLib:LongJump.obj
+ 0001:00000d80       InternalMemCopyMem         0000000000000fe0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000dc0       InternalMemSetMem          0000000000001020     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000de0       InternalMemSetMem32        0000000000001040     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000e00       InternalMemSetMem64        0000000000001060     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiSmmBase2ProtocolGuid   0000000000001080     WheaElog:AutoGen.obj
+ 0002:00000010       gEfiWheaSupportProtocolGuid 0000000000001090     WheaElog:AutoGen.obj
+ 0002:00000020       gEfiSmmSwDispatch2ProtocolGuid 00000000000010a0     WheaElog:AutoGen.obj
+ 0002:00000030       gFlashSmmProtocolGuid      00000000000010b0     WheaElog:AutoGen.obj
+ 0002:00000040       gAmiSmmBufferValidationProtocolGuid 00000000000010c0     WheaElog:AutoGen.obj
+ 0002:00000050       mERST                      00000000000010d0     WheaElog:WheaElog.obj
+ 0002:00000250       _gUefiDriverRevision       00000000000012d0     WheaElog:AutoGen.obj
+ 0002:00000360       mSwDispatch                00000000000013e0     WheaElog:WheaElog.obj
+ 0002:00000368       mSmst                      00000000000013e8     WheaElog:WheaElog.obj
+ 0002:00000370       Flash                      00000000000013f0     WheaElog:WheaElog.obj
+ 0002:00000378       mTotalErrorRecord          00000000000013f8     WheaElog:WheaElog.obj
+ 0002:00000388       gImageHandle               0000000000001408     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000390       gST                        0000000000001410     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000398       gBS                        0000000000001418     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000003a0       gSmst                      0000000000001420     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:000003a8       SmmAmiBufferValidationLibValidationProtocol 0000000000001428     SmmAmiBufferValidationLib:SmmAmiBufferValidationLib.obj
+ 0002:000003b0       mPersistentStoreBufferPtr  0000000000001430     <common>
+ 0002:000003b8       mElarPtr                   0000000000001438     <common>
+ 0002:000003c0       mErstReg                   0000000000001440     <common>
+ 0002:000003c8       mFreeSpaceInPersistentStore 0000000000001448     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

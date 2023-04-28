@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\2EE72E7C-FB9E-4318-B888-33A315C7A91DPpmPolicy\2EE72E7C-FB9E-4318-B888-33A315C7A91DSEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\HarrisonvillePkg\Cpu\Dxe\PpmPolicy\PpmPolicy\OUTPUT\PpmPolicy.efi

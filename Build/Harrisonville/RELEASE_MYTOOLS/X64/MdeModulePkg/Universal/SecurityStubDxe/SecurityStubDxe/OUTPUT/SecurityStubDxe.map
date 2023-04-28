@@ -1,0 +1,97 @@
+ SecurityStubDxe
+
+ Timestamp is 6448e7ed (Wed Apr 26 16:59:25 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001ed2H .text                   CODE
+ 0002:00000000 000001a0H .data                   DATA
+ 0002:000001a0 00000008H .rdata                  DATA
+ 0002:000001a8 00000088H .bss                    DATA
+ 0003:00000000 00000144H .pdata                  DATA
+ 0004:00000000 0000013cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000e8       SecurityStubAuthenticateState 0000000000000388 f   SecurityStubDxe:SecurityStub.obj
+ 0001:0000018c       Security2StubAuthenticate  000000000000042c f   SecurityStubDxe:SecurityStub.obj
+ 0001:000001b4       InternalEmptyFunction      0000000000000454 f   UefiLib:UefiLib.obj
+ 0001:000001b8       ExecuteSecurityHandlers    0000000000000458 f   DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0001:00000364       RegisterSecurity2Handler   0000000000000604 f   DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0001:00000440       ExecuteSecurity2Handlers   00000000000006e0 f   DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0001:0000050c       AmiImageTypeLibLocateInterface 00000000000007ac f   DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0001:00000598       AmiImageTypeLibFvDevicePathHandler 0000000000000838 f   DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0001:0000062c       AmiImageTypeLibRelativeOffsetDevicePathHandler 00000000000008cc f   DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0001:000006a0       AmiImageTypeLibMemMapDevicePathHandler 0000000000000940 f   DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0001:000006d0       AmiImageTypeLibFileDevicePathHandler 0000000000000970 f   DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0001:00000728       AmiImageTypeLibEmbeddedApplicationHandler 00000000000009c8 f   DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0001:000007ac       AmiImageTypeLibMacDevicePathHandler 0000000000000a4c f   DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0001:000007b4       AmiImageTypeLibSmmReadyToLockCallBack 0000000000000a54 f   DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0001:0000081c       AmiConnectPolicyHandler    0000000000000abc f   DxeAmiConnectPolicyLib:DxeAmiConnectPolicyLib.obj
+ 0001:000008a0       ImageRead                  0000000000000b40 f   DxeTpmMeasureBootLib:DxeTpmMeasureBootLib.obj
+ 0001:000008c4       DxeTpmMeasureBootPEHandler 0000000000000b64 f   DxeTpmMeasureBootLib:DxeTpmMeasureBootLib.obj
+ 0001:00000aa0       DxeTpmMeasureBootHandler   0000000000000d40 f   DxeTpmMeasureBootLib:DxeTpmMeasureBootLib.obj
+ 0001:00000c10       RegisterTpmMeasurementCallback 0000000000000eb0 f   DxeTpmMeasureBootLib:DxeTpmMeasureBootLib.obj
+ 0001:00000c24       InternalAllocatePool       0000000000000ec4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000c54       InternalAllocateCopyPool   0000000000000ef4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000c98       InternalReallocatePool     0000000000000f38 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d28       IsDevicePathValid          0000000000000fc8 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00000d54       GetDevicePathSize          0000000000000ff4 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00000d9c       DuplicateDevicePath        000000000000103c f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00000dc4       AppendDevicePath           0000000000001064 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00000ea8       EfiCreateEventReadyToBootEx 0000000000001148 f   UefiLib:UefiNotTiano.obj
+ 0001:00000f14       GetFileBufferByFilePath    00000000000011b4 f   DxeServicesLib:DxeServicesLib.obj
+ 0001:00001488       PeCoffLoaderGetPeHeader    0000000000001728 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00001a68       PeCoffLoaderGetImageInfo   0000000000001d08 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00001e20       InternalMemCopyMem         00000000000020c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001e60       InternalMemZeroMem         0000000000002100     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001e80       InternalMemSetMem          0000000000002120     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001ea0       InternalMemSetMem32        0000000000002140     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001ec0       InternalMemSetMem64        0000000000002160     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiEventReadyToBootGuid   0000000000002180     SecurityStubDxe:AutoGen.obj
+ 0002:00000010       gEfiFileInfoGuid           0000000000002190     SecurityStubDxe:AutoGen.obj
+ 0002:00000020       gEfiSecurityArchProtocolGuid 00000000000021a0     SecurityStubDxe:AutoGen.obj
+ 0002:00000030       gEfiSecurity2ArchProtocolGuid 00000000000021b0     SecurityStubDxe:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 00000000000021c0     SecurityStubDxe:AutoGen.obj
+ 0002:00000050       gEfiFirmwareVolume2ProtocolGuid 00000000000021d0     SecurityStubDxe:AutoGen.obj
+ 0002:00000060       gEfiLoadFileProtocolGuid   00000000000021e0     SecurityStubDxe:AutoGen.obj
+ 0002:00000070       gEfiLoadFile2ProtocolGuid  00000000000021f0     SecurityStubDxe:AutoGen.obj
+ 0002:00000080       gEfiSimpleFileSystemProtocolGuid 0000000000002200     SecurityStubDxe:AutoGen.obj
+ 0002:00000090       gEfiPciIoProtocolGuid      0000000000002210     SecurityStubDxe:AutoGen.obj
+ 0002:000000a0       gEfiBlockIoProtocolGuid    0000000000002220     SecurityStubDxe:AutoGen.obj
+ 0002:000000b0       gEfiBlockIo2ProtocolGuid   0000000000002230     SecurityStubDxe:AutoGen.obj
+ 0002:000000c0       gEfiDxeSmmReadyToLockProtocolGuid 0000000000002240     SecurityStubDxe:AutoGen.obj
+ 0002:000000d0       gAmiBdsConnectPolicyProtocolGuid 0000000000002250     SecurityStubDxe:AutoGen.obj
+ 0002:000000e0       gEfiTcgPlatformProtocolGuid 0000000000002260     SecurityStubDxe:AutoGen.obj
+ 0002:000000f0       gEfiDiskIoProtocolGuid     0000000000002270     SecurityStubDxe:AutoGen.obj
+ 0002:00000100       gEfiDevicePathToTextProtocolGuid 0000000000002280     SecurityStubDxe:AutoGen.obj
+ 0002:00000120       DevicePathHandler          00000000000022a0     DxeAmiImageTypeLib:DxeAmiImageTypeLib.obj
+ 0002:00000190       mSecurityStub              0000000000002310     SecurityStubDxe:SecurityStub.obj
+ 0002:00000198       mSecurity2Stub             0000000000002318     SecurityStubDxe:SecurityStub.obj
+ 0002:000001a0       _gUefiDriverRevision       0000000000002320     SecurityStubDxe:AutoGen.obj
+ 0002:000001a4       mUefiDevicePathLibEndDevicePath 0000000000002324     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:000001a8       mSecurityArchProtocolHandle 0000000000002328     SecurityStubDxe:SecurityStub.obj
+ 0002:000001b0       gImageHandle               0000000000002330     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001b8       gST                        0000000000002338     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001c0       gBS                        0000000000002340     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001c8       gRT                        0000000000002348     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000001d0       mCurrentAuthOperation      0000000000002350     DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0002:000001d4       mNumberOfSecurityHandler   0000000000002354     DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0002:000001d8       mMaxNumberOfSecurityHandler 0000000000002358     DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0002:000001dc       mCurrentAuthOperation2     000000000000235c     DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0002:000001e0       mSecurityTable             0000000000002360     DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0002:000001e8       mNumberOfSecurity2Handler  0000000000002368     DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0002:000001ec       mMaxNumberOfSecurity2Handler 000000000000236c     DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0002:000001f0       mSecurity2Table            0000000000002370     DxeSecurityManagementLib:DxeSecurityManagementLib.obj
+ 0002:000001fd       mMeasureGptTableFlag       000000000000237d     DxeTpmMeasureBootLib:DxeTpmMeasureBootLib.obj
+ 0002:00000210       AmiConnectPolicyLibAmiBdsConnectPolicy 0000000000002390     DxeAmiConnectPolicyLib:DxeAmiConnectPolicyLib.obj
+ 0002:00000218       TcgPlatform                0000000000002398     DxeTpmMeasureBootLib:DxeTpmMeasureBootLib.obj
+ 0002:00000228       ReadyToBootEvent           00000000000023a8     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

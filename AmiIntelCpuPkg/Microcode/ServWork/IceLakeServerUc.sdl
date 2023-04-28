@@ -1,0 +1,56 @@
+TOKEN
+    Name  = "SERVWORK_606AX"
+    Value = "0"
+    Help  = "Intel(R) IceLake"
+    TokenType = Boolean
+    Master = Yes
+End
+
+TOKEN
+    Name  = "SERVWORK_M97606A0"
+    Value  = "1"
+    Help  = "Intel(R) IceLake A-0 Stepping(606A0)"
+    TokenType = Boolean
+    Token = "NON_PRODUCTION_MICROCODE" "=" "1"
+End
+
+TOKEN
+    Name  = "SERVWORK_M87606A4"
+    Value  = "1"
+    Help  = "Intel(R) IceLake L-0 Stepping(606A4)"
+    TokenType = Boolean
+    Token = "NON_PRODUCTION_MICROCODE" "=" "1"
+End
+
+TOKEN
+    Name  = "SERVWORK_M87606A5"
+    Value  = "1"
+    Help  = "Intel(R) IceLake C-0 Stepping(606A5)"
+    TokenType = Boolean
+    Token = "NON_PRODUCTION_MICROCODE" "=" "1"
+End
+
+
+ELINK
+    Name  = "$(MICROCODE_SERVWORK_DIR)/M97606A0_00000028.pdb"
+    Parent  = "MICROCODE_FILES"
+    Help  = "Intel(R) IceLake A-0 Stepping(606A0)"
+    Token = "SERVWORK_M97606A0" "=" "1"
+    InvokeOrder = AfterParent
+End
+
+ELINK
+    Name  = "$(MICROCODE_SERVWORK_DIR)/M87606A4_0B000019.pdb"
+    Parent  = "MICROCODE_FILES"
+    Help  = "Intel(R) IceLake L-0 Stepping(606A4)"
+    Token = "SERVWORK_M87606A4" "=" "1"
+    InvokeOrder = AfterParent
+End
+
+ELINK
+    Name  = "$(MICROCODE_SERVWORK_DIR)/M87606A5_0C000007.pdb"
+    Parent  = "MICROCODE_FILES"
+    Help  = "Intel(R) IceLake C-0 Stepping(606A5)"
+    Token = "SERVWORK_M87606A5" "=" "1"
+    InvokeOrder = AfterParent
+End

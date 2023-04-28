@@ -1,0 +1,47 @@
+#***********************************************************************
+#*                                                                     *
+#*   Copyright (c) 1985-2019, American Megatrends International LLC.   *
+#*                                                                     *
+#*      All rights reserved. Subject to AMI licensing agreement.       *
+#*                                                                     *
+#***********************************************************************
+#***********************************************************************
+
+[Defines]
+    INF_VERSION                     = 0x00010005
+    VERSION_STRING                  = 1.0
+    FILE_GUID                       = e90a7b5e-37b2-43e4-b281-4c8e349045e9
+    MODULE_TYPE                     = DXE_SMM_DRIVER
+    PI_SPECIFICATION_VERSION        = 0x0001000A
+    BASE_NAME                       = ReFlashSmm
+    ENTRY_POINT                     = ReFlashSmmEntry
+
+[Sources]
+    ReFlash.h
+    ReFlashSmm.c
+    
+[Packages]
+    AmiModulePkg/AmiModulePkg.dec
+    MdePkg/MdePkg.dec
+    MdeModulePkg/MdeModulePkg.dec # Denverton AptioV override - EIP#484333
+    
+[LibraryClasses]
+    UefiDriverEntryPoint
+    UefiBootServicesTableLib
+    SmmServicesTableLib
+    DebugLib
+    AmiBufferValidationLib
+    HobLib # Denverton AptioV override - EIP#484333
+    
+[Protocols]
+    gAmiSmmNvramUpdateProtocolGuid
+    gEdkiiSmmReadyToBootProtocolGuid # Denverton AptioV override  - EIP#484333
+    
+[Guids]
+    
+[Pcd]
+
+[Depex]
+    TRUE
+    
+[BuildOptions]

@@ -1,0 +1,639 @@
+ Bds
+
+ Timestamp is 6448e7ed (Wed Apr 26 16:59:25 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000f4acH .text                   CODE
+ 0002:00000000 00001590H .data                   DATA
+ 0002:00001590 000018a2H .rdata                  DATA
+ 0002:00002e40 000002c0H .bss                    DATA
+ 0003:00000000 0000093cH .pdata                  DATA
+ 0004:00000000 000007c8H .xdata                  DATA
+ 0005:00000000 00000060H .rsrc$01                DATA
+ 0005:00000060 000001c0H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000004c       ProcessLibraryConstructorList 000000000000032c f   Bds:AutoGen.obj
+ 0001:00000198       ProcessLibraryDestructorList 0000000000000478 f   Bds:AutoGen.obj
+ 0001:000001fc       ProcessModuleEntryPointList 00000000000004dc f   Bds:AutoGen.obj
+ 0001:000002f8       ConnectDevicePath          00000000000005d8 f   Bds:Bds.obj
+ 0001:0000040c       AddDevicePath              00000000000006ec f   Bds:Bds.obj
+ 0001:000004b0       GetPciHandlesByClass       0000000000000790 f   Bds:Bds.obj
+ 0001:000005ec       SetVariableWithNewAttributes 00000000000008cc f   Bds:Bds.obj
+ 0001:0000068c       ConnectEverything          000000000000096c f   Bds:Bds.obj
+ 0001:000007c8       ShadowAllLegacyOptionRoms  0000000000000aa8 f   Bds:Bds.obj
+ 0001:000007fc       ReadyToBoot                0000000000000adc f   Bds:Bds.obj
+ 0001:0000089c       BootLegacy                 0000000000000b7c f   Bds:Bds.obj
+ 0001:000009d8       BootEfi                    0000000000000cb8 f   Bds:Bds.obj
+ 0001:00000b40       RunDrivers                 0000000000000e20 f   Bds:Bds.obj
+ 0001:00000d78       RunSysPrepApps             0000000000001058 f   Bds:Bds.obj
+ 0001:00000f30       FwLoadFile                 0000000000001210 f   Bds:Bds.obj
+ 0001:0000105c       InstallFwLoadFile          000000000000133c f   Bds:Bds.obj
+ 0001:000010e8       SignalProtocolEvent        00000000000013c8 f   Bds:Bds.obj
+ 0001:00001130       SaveFpdtDataOnLegacyBoot   0000000000001410 f   Bds:Bds.obj
+ 0001:000011ec       DummyFunction              00000000000014cc f   AmiDxeLib:EfiLib.obj
+ 0001:000011f0       SignalConnectDriversEvent  00000000000014d0 f   Bds:Bds.obj
+ 0001:0000135c       ConnectRootBridgeHandles   000000000000163c f   Bds:Bds.obj
+ 0001:00001410       ConnectRootBridgeHandlesBeforeEndOfDxe 00000000000016f0 f   Bds:Bds.obj
+ 0001:00001418       ReportConnectConOutProgressCode 00000000000016f8 f   Bds:Bds.obj
+ 0001:0000143c       ConnectVgaConOut           000000000000171c f   Bds:Bds.obj
+ 0001:00001598       ConnecConsoleVariable      0000000000001878 f   Bds:Bds.obj
+ 0001:000015f8       InstallConsoleStartedProtocol 00000000000018d8 f   Bds:Bds.obj
+ 0001:0000167c       ConnectConOutVariable      000000000000195c f   Bds:Bds.obj
+ 0001:00001688       InstallConOutStartedProtocol 0000000000001968 f   Bds:Bds.obj
+ 0001:0000169c       ReportConnectConInProgressCode 000000000000197c f   Bds:Bds.obj
+ 0001:000016c0       ConnectUsbControllers      00000000000019a0 f   Bds:Bds.obj
+ 0001:00001738       StartUsbControllers        0000000000001a18 f   Bds:Bds.obj
+ 0001:00001740       ConnectUsbConIn            0000000000001a20 f   Bds:Bds.obj
+ 0001:00001748       ConnectConInVariable       0000000000001a28 f   Bds:Bds.obj
+ 0001:00001754       InstallConInStartedProtocol 0000000000001a34 f   Bds:Bds.obj
+ 0001:00001768       ConInAvailabilityBeep      0000000000001a48 f   Bds:Bds.obj
+ 0001:0000178c       InitConVars                0000000000001a6c f   Bds:Bds.obj
+ 0001:00001904       UpdateMemoryUsageInformationDefault 0000000000001be4 f   Bds:Bds.obj
+ 0001:00001a30       SaveMemoryTypeInformation  0000000000001d10 f   Bds:Bds.obj
+ 0001:00001ca4       RegisterMemoryTypeInformationUpdateCallback 0000000000001f84 f   Bds:Bds.obj
+ 0001:00001d94       CallTheDispatcher          0000000000002074 f   Bds:Bds.obj
+ 0001:00001dc8       SignalAllDriversConnectedEvent 00000000000020a8 f   Bds:Bds.obj
+ 0001:00001dd4       HandoffToTse               00000000000020b4 f   Bds:Bds.obj
+ 0001:00001e90       BdsEntry                   0000000000002170 f   Bds:Bds.obj
+ 0001:00001f74       ReadBootOptionAndBoot      0000000000002254 f   Bds:Bds.obj
+ 0001:00002104       RecoverTheMemoryAbove4Gb   00000000000023e4 f   Bds:Bds.obj
+ 0001:000021e0       PerformCapsuleVariableCleanup 00000000000024c0 f   Bds:Bds.obj
+ 0001:0000225c       UpdateEsrtFmpEntries       000000000000253c f   Bds:Bds.obj
+ 0001:00002290       BootManagerPolicyConnectDevicePath 0000000000002570 f   Bds:Bds.obj
+ 0001:00002380       ConnectNetworkDevices      0000000000002660 f   Bds:Bds.obj
+ 0001:00002480       BootManagerPolicyConnectDeviceClass 0000000000002760 f   Bds:Bds.obj
+ 0001:00002548       FindConnectPolicyDescriptor 0000000000002828 f   Bds:Bds.obj
+ 0001:000025d0       AmiBdsConnectPolicyGetDevicePathPolicy 00000000000028b0 f   Bds:Bds.obj
+ 0001:000026d8       AmiBdsConnectPolicySetDevicePathPolicy 00000000000029b8 f   Bds:Bds.obj
+ 0001:000027d8       AmiBdsConnectPolicySetDeviceClassPolicy 0000000000002ab8 f   Bds:Bds.obj
+ 0001:00002828       AmiBdsConnectPolicyPciIoCallback 0000000000002b08 f   Bds:Bds.obj
+ 0001:00002974       IsShellBootOption          0000000000002c54 f   Bds:BdsBoard.obj
+ 0001:000029c8       SetBootOptionTags          0000000000002ca8 f   Bds:BdsBoard.obj
+ 0001:00002ae8       SetBootOptionPriorities    0000000000002dc8 f   Bds:BdsBoard.obj
+ 0001:00002bc8       ApplyOrphanBootOptionPolicy 0000000000002ea8 f   Bds:BdsBoard.obj
+ 0001:00002c30       PreProcessBootOptions      0000000000002f10 f   Bds:BdsBoard.obj
+ 0001:00002c78       PostProcessBootOptions     0000000000002f58 f   Bds:BdsBoard.obj
+ 0001:00002db0       ConstructBootOptionNamePrefixDefault 0000000000003090 f   Bds:BdsBoard.obj
+ 0001:00002e20       ConstructBootOptionNameSuffixDefault 0000000000003100 f   Bds:BdsBoard.obj
+ 0001:00002f00       SortList                   00000000000031e0 f   Bds:BootOptions.obj
+ 0001:000030a8       CompareTagThenPriority     0000000000003388 f   Bds:BootOptions.obj
+ 0001:000030e4       ComparePriorityThenBootOptionNumber 00000000000033c4 f   Bds:BootOptions.obj
+ 0001:0000311c       CreateBootOption           00000000000033fc f   Bds:BootOptions.obj
+ 0001:00003180       DeleteBootOption           0000000000003460 f   Bds:BootOptions.obj
+ 0001:0000320c       CreateBootDevice           00000000000034ec f   Bds:BootOptions.obj
+ 0001:00003288       DeleteBootDevice           0000000000003568 f   Bds:BootOptions.obj
+ 0001:000032cc       CreateBootOptionsFromNvramOption 00000000000035ac f   Bds:BootOptions.obj
+ 0001:0000344c       ReadBootOptions            000000000000372c f   Bds:BootOptions.obj
+ 0001:000036a4       MaskFilePathList           0000000000003984 f   Bds:BootOptions.obj
+ 0001:00003710       UnmaskOrphanDevices        00000000000039f0 f   Bds:BootOptions.obj
+ 0001:000037b4       BuildLegacyDevOrderBuffer  0000000000003a94 f   Bds:BootOptions.obj
+ 0001:000038a8       MaskOrphanDevices          0000000000003b88 f   Bds:BootOptions.obj
+ 0001:00003968       CollectProtocolDevices     0000000000003c48 f   Bds:BootOptions.obj
+ 0001:000039c8       CollectBootDevices         0000000000003ca8 f   Bds:BootOptions.obj
+ 0001:00003ae0       FilterBootDeviceList       0000000000003dc0 f   Bds:BootOptions.obj
+ 0001:00003b60       LocateDevicePathTest       0000000000003e40 f   Bds:BootOptions.obj
+ 0001:00003bdc       PartitionDevicePathTest    0000000000003ebc f   Bds:BootOptions.obj
+ 0001:00003cac       GetDevicePathSubtype       0000000000003f8c f   Bds:BootOptions.obj
+ 0001:00003ce8       GetLastDevicePathNodeOfType 0000000000003fc8 f   Bds:BootOptions.obj
+ 0001:00003d1c       IsUsbDp                    0000000000003ffc f   Bds:BootOptions.obj
+ 0001:00003d78       UsbClassDevicePathTest     0000000000004058 f   Bds:BootOptions.obj
+ 0001:00003e00       UriDevicePathTest          00000000000040e0 f   Bds:BootOptions.obj
+ 0001:00003e98       BbsDevicePathTest          0000000000004178 f   Bds:BootOptions.obj
+ 0001:00003ed4       GetBbsDeviceInstance       00000000000041b4 f   Bds:BootOptions.obj
+ 0001:00003f94       AmiBbsDevicePathTest       0000000000004274 f   Bds:BootOptions.obj
+ 0001:0000403c       MatchUefiFloppyDrive       000000000000431c f   Bds:BootOptions.obj
+ 0001:00004070       MatchBootOptionsToDevices  0000000000004350 f   Bds:BootOptions.obj
+ 0001:0000427c       DeleteUnmatchedUefiHddBootDevices 000000000000455c f   Bds:BootOptions.obj
+ 0001:000042fc       GetPhysicalBlockIoHandle   00000000000045dc f   Bds:BootOptions.obj
+ 0001:00004478       GetPhysicalNetworkCardHandle 0000000000004758 f   Bds:BootOptions.obj
+ 0001:00004644       ConstructBootOptionNameByHandle 0000000000004924 f   Bds:BootOptions.obj
+ 0001:00004844       ConstructBootOptionNameByBbsDescription 0000000000004b24 f   Bds:BootOptions.obj
+ 0001:000048b8       DevicePathToNameString     0000000000004b98 f   Bds:BootOptions.obj
+ 0001:00004a58       ConstructBootOptionNameByHandleDevicePath 0000000000004d38 f   Bds:BootOptions.obj
+ 0001:00004ab0       ConstructBootOptionNameByFilePathList 0000000000004d90 f   Bds:BootOptions.obj
+ 0001:00004acc       ConstructBootOptionName    0000000000004dac f   Bds:BootOptions.obj
+ 0001:00004bf8       ConstructAtaBootOptionNameBySerialNumber 0000000000004ed8 f   Bds:BootOptions.obj
+ 0001:00004cf4       ConstructUsbBootOptionNameBySerialNumber 0000000000004fd4 f   Bds:BootOptions.obj
+ 0001:00004de8       ConstructNvmeBootOptionNameBySerialNumber 00000000000050c8 f   Bds:BootOptions.obj
+ 0001:00004fa8       ConstructInternalBootOptionName 0000000000005288 f   Bds:BootOptions.obj
+ 0001:0000501c       AmiDeviceNameDevicePathTest 00000000000052fc f   Bds:BootOptions.obj
+ 0001:000050f0       AddDevicePathToFilePathList 00000000000053d0 f   Bds:BootOptions.obj
+ 0001:0000519c       BuildEfiFilePath           000000000000547c f   Bds:BootOptions.obj
+ 0001:00005214       BuildLegacyFilePath        00000000000054f4 f   Bds:BootOptions.obj
+ 0001:00005264       BuildLegacyLocationFilePath 0000000000005544 f   Bds:BootOptions.obj
+ 0001:0000532c       BuildNameFilePath          000000000000560c f   Bds:BootOptions.obj
+ 0001:00005410       BuildBootOptionFilePath    00000000000056f0 f   Bds:BootOptions.obj
+ 0001:0000545c       CreateBootOptionsForNewBootDevices 000000000000573c f   Bds:BootOptions.obj
+ 0001:000054e8       PackBootOption             00000000000057c8 f   Bds:BootOptions.obj
+ 0001:00005564       SaveBootOptions            0000000000005844 f   Bds:BootOptions.obj
+ 0001:000057fc       UpdateBootOptionVariables  0000000000005adc f   Bds:BootOptions.obj
+ 0001:000058a4       FindNextHobByGuid          0000000000005b84 f   AmiDxeLib:Misc.obj
+ 0001:00005940       GetEfiConfigurationTable   0000000000005c20 f   AmiDxeLib:EfiLib.obj
+ 0001:000059a0       LibInitStatusCodePtr       0000000000005c80 f   AmiDxeLib:EfiLib.obj
+ 0001:00005a24       LibReportStatusCode        0000000000005d04 f   AmiDxeLib:EfiLib.obj
+ 0001:00005a98       FindDeviceName             0000000000005d78 f   AmiDxeLib:EfiLib.obj
+ 0001:00005cd4       GetControllerName          0000000000005fb4 f   AmiDxeLib:EfiLib.obj
+ 0001:00005dec       Malloc                     00000000000060cc f   AmiDxeLib:EfiLib.obj
+ 0001:00005e18       MallocZ                    00000000000060f8 f   AmiDxeLib:EfiLib.obj
+ 0001:00005e58       IsValidDevicePath          0000000000006138 f   AmiDxeLib:EfiLib.obj
+ 0001:00005ec0       DPLength                   00000000000061a0 f   AmiDxeLib:EfiLib.obj
+ 0001:00005f04       DPAddNode                  00000000000061e4 f   AmiDxeLib:EfiLib.obj
+ 0001:00005fdc       DPCopy                     00000000000062bc f   AmiDxeLib:EfiLib.obj
+ 0001:00006024       DPGetLastNode              0000000000006304 f   AmiDxeLib:EfiLib.obj
+ 0001:00006058       GetEfiVariable             0000000000006338 f   AmiDxeLib:EfiLib.obj
+ 0001:00006118       RegisterProtocolCallback   00000000000063f8 f   AmiDxeLib:EfiLib.obj
+ 0001:00006170       LibGetDxeSvcTbl            0000000000006450 f   AmiDxeLib:EfiLib.obj
+ 0001:000061c0       MemCmp                     00000000000064a0 f   AmiDxeLib:Memory.obj
+ 0001:00006238       ItoaHelper                 0000000000006518 f   AmiDxeLib:StdLibC.obj
+ 0001:000062ac       StrtolEx                   000000000000658c f   AmiDxeLib:StdLibC.obj
+ 0001:00006374       Wcsupr                     0000000000006654 f   AmiDxeLib:StdLibC.obj
+ 0001:000063a4       GetStatusCodeString        0000000000006684 f   AmiDxeLib:StdLibC.obj
+ 0001:0000648c       Swprintf                   000000000000676c f   AmiDxeLib:StdLibC.obj
+ 0001:000064b4       Swprintf_s_va_list         0000000000006794 f   AmiDxeLib:StdLibC.obj
+ 0001:000068bc       Swprintf_s                 0000000000006b9c f   AmiDxeLib:StdLibC.obj
+ 0001:000068dc       HiiLibGetPlatformLanguageInternal 0000000000006bbc f   AmiDxeLib:HiiUtilities.obj
+ 0001:00006950       StringToChar16             0000000000006c30 f   AmiDxeLib:HiiUtilities.obj
+ 0001:00006afc       StringToBlock              0000000000006ddc f   AmiDxeLib:HiiUtilities.obj
+ 0001:00007568       HiiLibGetString            0000000000007848 f   AmiDxeLib:HiiUtilities.obj
+ 0001:000076b8       SignalExitPmAuthProtocolEvent 0000000000007998 f   SbCspDxeLib:SbCspDxeLib.obj
+ 0001:00007704       StrNoCaseCmp               00000000000079e4 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00007760       GetHDDPort                 0000000000007a40 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:0000788c       GetGptPartitionHandle      0000000000007b6c f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:000079d4       CompareHddDevicePath       0000000000007cb4 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00007a88       CreateTargetEfiOsBootOption 0000000000007d68 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00007f88       CreateBootOptionsByMap     0000000000008268 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00008048       CreateEfiOsBootOptions     0000000000008328 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00008138       CreateEfiOsBootOption      0000000000008418 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:000081e8       RemoveAmiMaskDevicePath    00000000000084c8 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:000082ac       GetSimpleBootOptions       000000000000858c f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00008470       AdjustEfiOsBootOrder       0000000000008750 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:0000884c       IsMatchedBootOptionByNameMap 0000000000008b2c f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00008944       CheckUefiOsBootOptionByUefiBootFile 0000000000008c24 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00008968       CheckUefiOsBootOptionByMap 0000000000008c48 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:000089cc       EfiOsName_NormalizeBootOptions 0000000000008cac f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00008b04       AdjustNewUefiOsOptionPriority 0000000000008de4 f   EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0001:00008c54       CreateBootOptionsByPriorityMap 0000000000008f34 f   EobonPriorityMap:EobonPriorityMap.obj
+ 0001:00008cec       RemoveBootOptionByPriorityMap 0000000000008fcc f   EobonPriorityMap:EobonPriorityMap.obj
+ 0001:00009074       CheckUefiOsBootOptionByPriorityMap 0000000000009354 f   EobonPriorityMap:EobonPriorityMap.obj
+ 0001:000090f0       ConnectSio                 00000000000093d0 f   SioBdsPlugin:SioBdsPlugin.obj
+ 0001:0000915c       CompareTagThenBbsIndex     000000000000943c f   TseDefaultBootOrder:TseDefaultBootOrder.obj
+ 0001:0000915c       FBO_CompareTagThenBbsIndex 000000000000943c f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000918c       SetDefaultTseBootOrder     000000000000946c f   TseDefaultBootOrder:TseDefaultBootOrder.obj
+ 0001:0000938c       CsmPolicyDriverLoaded      000000000000966c f   CsmPolicy:CsmPolicy.obj
+ 0001:0000938c       CsmPolicyGetDriverPath     000000000000966c f   CsmPolicy:CsmPolicy.obj
+ 0001:00009398       CsmPolicyFilter            0000000000009678 f   CsmPolicy:CsmPolicy.obj
+ 0001:000093cc       CheckOpRomExecution        00000000000096ac f   CsmPolicy:CsmPolicy.obj
+ 0001:00009440       DisconnectUefiGop          0000000000009720 f   CsmPolicy:CsmPolicy.obj
+ 0001:0000960c       ProcessOpRom               00000000000098ec f   CsmPolicy:CsmPolicy.obj
+ 0001:000096d8       LocateHandlesCallback      00000000000099b8 f   CsmPolicy:CsmPolicy.obj
+ 0001:00009758       AddHandle                  0000000000009a38 f   CsmPolicy:CsmPolicy.obj
+ 0001:000097e0       ProceedToBootCallback      0000000000009ac0 f   CsmPolicy:CsmPolicy.obj
+ 0001:000097e8       CsmPolicyInit              0000000000009ac8 f   CsmPolicy:CsmPolicy.obj
+ 0001:00009960       CheckUefiOpRomPolicy       0000000000009c40 f   CsmPolicy:CsmPolicy.obj
+ 0001:0000996c       CheckUefiOpRomPolicyByPciHandle 0000000000009c4c f   CsmPolicy:CsmPolicy.obj
+ 0001:00009a54       CsmPolicyGetDriver         0000000000009d34 f   CsmPolicy:CsmPolicy.obj
+ 0001:00009c24       CollectUsbBbsDevices       0000000000009f04 f   UsbBbs:UsbBbs.obj
+ 0001:00009c58       SearchDevMapByType         0000000000009f38 f   FixedBootOrder:FboSetOrder.obj
+ 0001:00009c8c       FboGetUefiTagWithDp        0000000000009f6c f   FixedBootOrder:FboSetOrder.obj
+ 0001:00009e6c       FboGetLegacyTagWithBbsIdx  000000000000a14c f   FixedBootOrder:FboSetOrder.obj
+ 0001:00009ee4       IsUSBkeyByHandle           000000000000a1c4 f   FixedBootOrder:FboSetOrder.obj
+ 0001:00009f44       FBO_GetBbsEntryDeviceType  000000000000a224 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000a10c       BuildUEFIDevOrder          000000000000a3ec f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000a730       BuildFboLegacyDevOrder     000000000000aa10 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000a91c       FBO_SetDefaultUEFIDevOrder 000000000000abfc f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000aac0       SetLegacyBootOptionPriority 000000000000ada0 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000abb4       SetUefiBootOptionPriority  000000000000ae94 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000acdc       GetDevByBootOrderSequence  000000000000afbc f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000ad6c       FBO_UpdateBootListPriority 000000000000b04c f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000b094       CreateOldBootOrder         000000000000b374 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000b114       FBO_AdjustWtgPriority      000000000000b3f4 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000b3fc       SyncFBOwithBootOrderAndOption 000000000000b6dc f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000bd04       FBO_RedfishSetData         000000000000bfe4 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000bf48       FBO_RedfishGetData         000000000000c228 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000c240       FBO_Sync_Protocol_Install  000000000000c520 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000c310       FBO_Init                   000000000000c5f0 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000c580       FboSyncBootOptionsFromDevOrder 000000000000c860 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000c940       FboAdjustEthernetDefaultPriority 000000000000cc20 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000cb00       FboSetLegacyDeviceType     000000000000cde0 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000cd58       FboUpdateBoTagDeviceType   000000000000d038 f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000ce2c       Fbo_CheckForNewDevice      000000000000d10c f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000cefc       AdjustSetupData            000000000000d1dc f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000cf4c       FboSetupSizeCheck          000000000000d22c f   FixedBootOrder:FboSetOrder.obj
+ 0001:0000cff0       DefaultFixedBootOrder_Init 000000000000d2d0 f   DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0001:0000d100       GetHddPort                 000000000000d3e0 f   DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0001:0000d1e0       GetDevInformByBootOptionList 000000000000d4c0 f   DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0001:0000d38c       FBO_AdjustDeviceName       000000000000d66c f   DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0001:0000d400       FBO_SetBootOptionTags      000000000000d6e0 f   DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0001:0000d4f0       GetTagByDriveType          000000000000d7d0 f   DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0001:0000d5dc       GetUefiBootOptionTag       000000000000d8bc f   DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0001:0000d7e4       ConstructGroupNameByFBO    000000000000dac4 f   DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0001:0000d96c       FboBuildDefaultSceOrder    000000000000dc4c f   FboSce:FboSce.obj
+ 0001:0000dbc0       FboSceBuildDefault         000000000000dea0 f   FboSce:FboSce.obj
+ 0001:0000dbc8       ExamineFixedBootIndex      000000000000dea8 f   FboSce:FboSce.obj
+ 0001:0000dc3c       FboSyncVarFromSce          000000000000df1c f   FboSce:FboSce.obj
+ 0001:0000e104       FboSyncWithSce             000000000000e3e4 f   FboSce:FboSce.obj
+ 0001:0000e220       FboSceCheck                000000000000e500 f   FboSce:FboSce.obj
+ 0001:0000e364       InternalAllocatePool       000000000000e644 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000e394       AllocateZeroPool           000000000000e674 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000e3c0       UnicodeSPrint              000000000000e6a0 f   BasePrintLib:PrintLib.obj
+ 0001:0000e3f4       BasePrintLibFillBuffer     000000000000e6d4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000e428       BasePrintLibSPrintMarker   000000000000e708 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000f2a4       BasePrintLibSPrint         000000000000f584 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000f2d0       GetCpuTimer                000000000000f5b0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:0000f2e0       CPULib_CpuID               000000000000f5c0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:0000f320       memset                     000000000000f600     AmiDxeLib:MemSet.obj
+ 0001:0000f32e       MemSetAsm                  000000000000f60e f   AmiDxeLib:MemSet.obj
+ 0001:0000f380       memcpy                     000000000000f660     AmiDxeLib:MemCpy.obj
+ 0001:0000f380       MemCpyAsm                  000000000000f660 f   AmiDxeLib:MemCpy.obj
+ 0001:0000f430       InternalMemCompareMem      000000000000f710     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:0000f450       InternalMemZeroMem         000000000000f730     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:0000f470       InternalMemCopyMem         000000000000f750     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gEfiMemoryTypeInformationGuid 000000000000f7a0     Bds:AutoGen.obj
+ 0002:00000010       gEfiEndOfDxeEventGroupGuid 000000000000f7b0     Bds:AutoGen.obj
+ 0002:00000020       gEfiGlobalVariableGuid     000000000000f7c0     Bds:AutoGen.obj
+ 0002:00000030       gEfiCapsuleVendorGuid      000000000000f7d0     Bds:AutoGen.obj
+ 0002:00000040       gEfiBootManagerPolicyConsoleGuid 000000000000f7e0     Bds:AutoGen.obj
+ 0002:00000050       gEfiBootManagerPolicyNetworkGuid 000000000000f7f0     Bds:AutoGen.obj
+ 0002:00000060       gEfiBootManagerPolicyConnectAllGuid 000000000000f800     Bds:AutoGen.obj
+ 0002:00000070       gEfiDiskInfoIdeInterfaceGuid 000000000000f810     Bds:AutoGen.obj
+ 0002:00000080       gEfiDiskInfoAhciInterfaceGuid 000000000000f820     Bds:AutoGen.obj
+ 0002:00000090       gAmiGlobalVariableGuid     000000000000f830     Bds:AutoGen.obj
+ 0002:000000a0       gAmiCsmThunkDriverGuid     000000000000f840     Bds:AutoGen.obj
+ 0002:000000b0       gEfiBdsArchProtocolGuid    000000000000f850     Bds:AutoGen.obj
+ 0002:000000c0       gEfiLoadFileProtocolGuid   000000000000f860     Bds:AutoGen.obj
+ 0002:000000d0       gEfiPciRootBridgeIoProtocolGuid 000000000000f870     Bds:AutoGen.obj
+ 0002:000000e0       gEfiPciIoProtocolGuid      000000000000f880     Bds:AutoGen.obj
+ 0002:000000f0       gEfiBlockIoProtocolGuid    000000000000f890     Bds:AutoGen.obj
+ 0002:00000100       gEfiFirmwareVolume2ProtocolGuid 000000000000f8a0     Bds:AutoGen.obj
+ 0002:00000110       gEfiSimpleFileSystemProtocolGuid 000000000000f8b0     Bds:AutoGen.obj
+ 0002:00000120       gEfiDevicePathProtocolGuid 000000000000f8c0     Bds:AutoGen.obj
+ 0002:00000130       gEfiLegacyBiosProtocolGuid 000000000000f8d0     Bds:AutoGen.obj
+ 0002:00000140       gEfiDiskInfoProtocolGuid   000000000000f8e0     Bds:AutoGen.obj
+ 0002:00000150       gEfiUsbIoProtocolGuid      000000000000f8f0     Bds:AutoGen.obj
+ 0002:00000160       gEfiDxeSmmReadyToLockProtocolGuid 000000000000f900     Bds:AutoGen.obj
+ 0002:00000170       gEfiAcpiS3SaveProtocolGuid 000000000000f910     Bds:AutoGen.obj
+ 0002:00000180       gEfiBootManagerPolicyProtocolGuid 000000000000f920     Bds:AutoGen.obj
+ 0002:00000190       gAmiBdsConnectPolicyProtocolGuid 000000000000f930     Bds:AutoGen.obj
+ 0002:000001a0       gAmiOptionRomPolicyProtocolGuid 000000000000f940     Bds:AutoGen.obj
+ 0002:000001b0       gEsrtManagementProtocolGuid 000000000000f950     Bds:AutoGen.obj
+ 0002:000001c0       gAmiCsmOpromPolicyProtocolGuid 000000000000f960     Bds:AutoGen.obj
+ 0002:000001d0       gEfiNvmExpressPassThruProtocolGuid 000000000000f970     Bds:AutoGen.obj
+ 0002:000001e0       gEfiLoadedImageProtocolGuid 000000000000f980     Bds:AutoGen.obj
+ 0002:000001f0       gExitPmAuthProtocolGuid    000000000000f990     Bds:AutoGen.obj
+ 0002:00000200       gEfiDriverBindingProtocolGuid 000000000000f9a0     Bds:AutoGen.obj
+ 0002:00000210       gAmiOpromPolicyProtocolGuid 000000000000f9b0     Bds:AutoGen.obj
+ 0002:00000220       gEfiPlatformDriverOverrideProtocolGuid 000000000000f9c0     Bds:AutoGen.obj
+ 0002:00000230       gEfiBusSpecificDriverOverrideProtocolGuid 000000000000f9d0     Bds:AutoGen.obj
+ 0002:00000240       gEfiGraphicsOutputProtocolGuid 000000000000f9e0     Bds:AutoGen.obj
+ 0002:00000250       gBdsAllDriversConnectedProtocolGuid 000000000000f9f0     Bds:AutoGen.obj
+ 0002:00000260       gEfiUsbProtocolGuid        000000000000fa00     Bds:AutoGen.obj
+ 0002:00000270       FixedLegacyBootOptionTags  000000000000fa10     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:000002de       NormalizeBootOptionName    000000000000fa7e     Bds:BdsBoard.obj
+ 0002:000002df       NormalizeBootOptionDevicePath 000000000000fa7f     Bds:BdsBoard.obj
+ 0002:000002e0       FBOUefiDevMapData          000000000000fa80     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00000330       FBOLegacyDevMapData        000000000000fad0     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00000380       FBODualDevMapData          000000000000fb20     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00000418       gSATA                      000000000000fbb8     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00000428       gFixedBootOrderGuid        000000000000fbc8     FixedBootOrder:FboSetOrder.obj
+ 0002:00000438       gFixedBootOrderBdsProtocol 000000000000fbd8     FixedBootOrder:FboSetOrder.obj
+ 0002:00000470       CsmPolicySetupData         000000000000fc10     CsmPolicy:CsmPolicy.obj
+ 0002:00000478       AmiOpRomPolicyProtocol     000000000000fc18     CsmPolicy:CsmPolicy.obj
+ 0002:00000488       AmiOpRomPolicyByPciHandleProtocol 000000000000fc28     CsmPolicy:CsmPolicy.obj
+ 0002:00000498       FileNamePriorityMapCount   000000000000fc38     EobonPriorityMap:EobonPriorityMap.obj
+ 0002:000004a0       FileNamePriorityMaps       000000000000fc40     EobonPriorityMap:EobonPriorityMap.obj
+ 0002:000004e0       CreateEfiOsBootOptionsFuncPtr 000000000000fc80     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:000004e8       CreateEfiOsBootOptionFunctions 000000000000fc88     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00000500       CreateTargetEfiOsBootOptionFuncPtr 000000000000fca0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00000508       AdjustEfiOsBootOrderFunctions 000000000000fca8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00000518       CheckUefiOsBootOptionFunctions 000000000000fcb8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00000538       DefaultLanguageCode        000000000000fcd8     AmiDxeLib:Tokens.obj
+ 0002:00000540       FILE_NAME_MAPS             000000000000fce0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00000798       AmiErrorStatus             000000000000ff38     AmiDxeLib:StdLibC.obj
+ 0002:000007d0       EfiErrorStatus             000000000000ff70     AmiDxeLib:StdLibC.obj
+ 0002:00000b10       PiErrorStatus              00000000000102b0     AmiDxeLib:StdLibC.obj
+ 0002:00000b60       EfiWarningStatus           0000000000010300     AmiDxeLib:StdLibC.obj
+ 0002:00000bd0       PiWarningStatus            0000000000010370     AmiDxeLib:StdLibC.obj
+ 0002:00000c18       EfiUnknown                 00000000000103b8     AmiDxeLib:StdLibC.obj
+ 0002:00000ce8       AmiBbsDevicePathGuid       0000000000010488     Bds:BootOptions.obj
+ 0002:00000cf8       AmiMaskedDevicePathGuid    0000000000010498     Bds:BootOptions.obj
+ 0002:00000d08       AmiDeviceNameDevicePathGuid 00000000000104a8     Bds:BootOptions.obj
+ 0002:00000d18       LegacyDevOrderGuid         00000000000104b8     Bds:BootOptions.obj
+ 0002:00000d28       BootOptionList             00000000000104c8     Bds:BootOptions.obj
+ 0002:00000d30       BootDeviceList             00000000000104d0     Bds:BootOptions.obj
+ 0002:00000ea4       BootOptionSupport          0000000000010644     Bds:BdsBoard.obj
+ 0002:00000ea8       BbsDevTypeNameToken        0000000000010648     Bds:BdsBoard.obj
+ 0002:00000eb8       DpStrings                  0000000000010658     Bds:BdsBoard.obj
+ 0002:00000ed0       BeforeBootProtocolGuid     0000000000010670     Bds:BdsBoard.obj
+ 0002:00000ee0       BeforeLegacyBootProtocolGuid 0000000000010680     Bds:BdsBoard.obj
+ 0002:00000ef0       ShellDp                    0000000000010690     Bds:BdsBoard.obj
+ 0002:00000f08       LegacyBootOptionTags       00000000000106a8     Bds:BdsBoard.obj
+ 0002:00000f28       BootOptionTagPriorities    00000000000106c8     Bds:BdsBoard.obj
+ 0002:00000f70       DpMatchingFunction         0000000000010710     Bds:BdsBoard.obj
+ 0002:00000fb0       MatchingFunction           0000000000010750     Bds:BdsBoard.obj
+ 0002:00000fc0       FilteringFunction          0000000000010760     Bds:BdsBoard.obj
+ 0002:00000fd0       BuildNameFunctions         0000000000010770     Bds:BdsBoard.obj
+ 0002:00001000       BuildFilePathFunctions     00000000000107a0     Bds:BdsBoard.obj
+ 0002:00001028       ConstructBootOptionNamePrefix 00000000000107c8     Bds:BdsBoard.obj
+ 0002:00001030       ConstructBootOptionNameSuffix 00000000000107d0     Bds:BdsBoard.obj
+ 0002:00001038       GetBbsEntryDeviceType      00000000000107d8     Bds:BdsBoard.obj
+ 0002:00001040       BdsControlFlowFunctions    00000000000107e0     Bds:BdsBoard.obj
+ 0002:00001248       FirmwareVendorString       00000000000109e8     Bds:BdsBoard.obj
+ 0002:00001250       BdsControlFlowFunctionNames 00000000000109f0     Bds:BdsBoard.obj
+ 0002:00001460       OsIndicationsSupported     0000000000010c00     Bds:BdsBoard.obj
+ 0002:00001468       UpdateMemoryUsageInformation 0000000000010c08     Bds:BdsBoard.obj
+ 0002:00001470       EfiVariableGuid            0000000000010c10     Bds:Bds.obj
+ 0002:00001480       AmiPostMgrProtocolGuid     0000000000010c20     Bds:Bds.obj
+ 0002:00001490       ConInStartedProtocolGuid   0000000000010c30     Bds:Bds.obj
+ 0002:000014a0       ConOutStartedProtocolGuid  0000000000010c40     Bds:Bds.obj
+ 0002:000014b0       BdsAllDriversConnectedProtocolGuid 0000000000010c50     Bds:Bds.obj
+ 0002:000014c0       BdsConnectDriversProtocolGuid 0000000000010c60     Bds:Bds.obj
+ 0002:000014d0       BDS                        0000000000010c70     Bds:Bds.obj
+ 0002:000014d8       FwLoadFileInterface        0000000000010c78     Bds:Bds.obj
+ 0002:000014e0       FwLoadFileDp               0000000000010c80     Bds:Bds.obj
+ 0002:000014f8       BootManagerPolicy          0000000000010c98     Bds:Bds.obj
+ 0002:00001510       ConnectPolicyList          0000000000010cb0     Bds:Bds.obj
+ 0002:00001520       BdsConnectPolicy           0000000000010cc0     Bds:Bds.obj
+ 0002:00001570       guidDevicePath             0000000000010d10     AmiDxeLib:EfiLib.obj
+ 0002:00001580       guidDxeSvcTbl              0000000000010d20     AmiDxeLib:EfiLib.obj
+ 0002:00001590       _gPcd_FixedAtBuild_PcdShellFile 0000000000010d30     Bds:AutoGen.obj
+ 0002:000015a0       GuidPattern                0000000000010d40     AmiDxeLib:HiiUtilities.obj
+ 0002:000015b0       NamePattern                0000000000010d50     AmiDxeLib:HiiUtilities.obj
+ 0002:000015c0       PathPattern                0000000000010d60     AmiDxeLib:HiiUtilities.obj
+ 0002:000015d0       OffsetPattern              0000000000010d70     AmiDxeLib:HiiUtilities.obj
+ 0002:000015e0       ValuePattern               0000000000010d80     AmiDxeLib:HiiUtilities.obj
+ 0002:000015f0       DefaultTimeout             0000000000010d90     Bds:BdsBoard.obj
+ 0002:000015f4       FirmwareRevision           0000000000010d94     Bds:BdsBoard.obj
+ 0002:000015f8       _gUefiDriverRevision       0000000000010d98     Bds:AutoGen.obj
+ 0002:00001600       ??_C@_1BI@LBNGELID@?$AAB?$AAo?$AAo?$AAt?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AA?$AA@ 0000000000010da0     Bds:Bds.obj
+ 0002:00001618       ??_C@_1CM@POLGBFKG@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAB?$AAO?$AAO?$AAT?$AA?2?$AAB?$AAO?$AAO?$AAT?$AAX?$AA6?$AA4?$AA?4?$AAE?$AAF?$AAI?$AA?$AA@ 0000000000010db8     Bds:Bds.obj
+ 0002:00001648       ??_C@_1BI@PDMCFEDG@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000010de8     Bds:Bds.obj
+ 0002:00001660       ??_C@_1BG@CKOONOBM@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$CF?$AA0?$AA4?$AAX?$AA?$AA@ 0000000000010e00     Bds:Bds.obj
+ 0002:00001678       ??_C@_1BK@CHMLNGLH@?$AAS?$AAy?$AAs?$AAP?$AAr?$AAe?$AAp?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000010e18     Bds:Bds.obj
+ 0002:00001698       ??_C@_1BI@CFIGJFKF@?$AAS?$AAy?$AAs?$AAP?$AAr?$AAe?$AAp?$AA?$CF?$AA0?$AA4?$AAX?$AA?$AA@ 0000000000010e38     Bds:Bds.obj
+ 0002:000016b0       ??_C@_1BG@JEGAFCNI@?$AAS?$AAe?$AAc?$AAu?$AAr?$AAe?$AAB?$AAo?$AAo?$AAt?$AA?$AA@ 0000000000010e50     Bds:Bds.obj
+ 0002:000016c8       ??_C@_1O@MJHLOIFA@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt?$AA?$AA@ 0000000000010e68     Bds:Bds.obj
+ 0002:000016d8       ??_C@_1BE@INNAKDAF@?$AAC?$AAo?$AAn?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv?$AA?$AA@ 0000000000010e78     Bds:Bds.obj
+ 0002:000016f0       ??_C@_1M@NFPEGKHA@?$AAC?$AAo?$AAn?$AAI?$AAn?$AA?$AA@ 0000000000010e90     Bds:Bds.obj
+ 0002:00001700       ??_C@_1BC@OBFMLJLI@?$AAC?$AAo?$AAn?$AAI?$AAn?$AAD?$AAe?$AAv?$AA?$AA@ 0000000000010ea0     Bds:Bds.obj
+ 0002:00001718       ??_C@_1BE@JFPOEAHF@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt?$AAD?$AAe?$AAv?$AA?$AA@ 0000000000010eb8     Bds:Bds.obj
+ 0002:00001730       ??_C@_1O@JOJMCOJC@?$AAE?$AAr?$AAr?$AAO?$AAu?$AAt?$AA?$AA@ 0000000000010ed0     Bds:Bds.obj
+ 0002:00001740       ??_C@_1DM@LNDPMHHI@?$AAP?$AAr?$AAe?$AAv?$AAi?$AAo?$AAu?$AAs?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAT?$AAy?$AAp?$AAe?$AAI?$AAn?$AAf?$AAo?$AAr?$AAm?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 0000000000010ee0     Bds:Bds.obj
+ 0002:00001780       ??_C@_1CM@OLBNONPD@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAT?$AAy?$AAp?$AAe?$AAI?$AAn?$AAf?$AAo?$AAr?$AAm?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 0000000000010f20     Bds:Bds.obj
+ 0002:000017b0       ??_C@_1CE@BKEAGEIL@?$AAB?$AAo?$AAo?$AAt?$AAO?$AAp?$AAt?$AAi?$AAo?$AAn?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AA?$AA@ 0000000000010f50     Bds:Bds.obj
+ 0002:000017d8       ??_C@_1CO@MENFEBKM@?$AAO?$AAs?$AAI?$AAn?$AAd?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?$AA@ 0000000000010f78     Bds:Bds.obj
+ 0002:00001808       ??_C@_1BA@BKONPLFM@?$AAT?$AAi?$AAm?$AAe?$AAo?$AAu?$AAt?$AA?$AA@ 0000000000010fa8     Bds:Bds.obj
+ 0002:00001818       ??_C@_1BE@CHCFCNKI@?$AAB?$AAo?$AAo?$AAt?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000010fb8     Bds:Bds.obj
+ 0002:00001830       ??_C@_1BC@NAPILJKH@?$AAB?$AAo?$AAo?$AAt?$AA?$CF?$AA0?$AA4?$AAX?$AA?$AA@ 0000000000010fd0     Bds:Bds.obj
+ 0002:00001848       ??_C@_1BC@HAMKBGJJ@?$AAB?$AAo?$AAo?$AAt?$AA?$CF?$AA0?$AA4?$AAx?$AA?$AA@ 0000000000010fe8     Bds:Bds.obj
+ 0002:00001860       ??_C@_1CE@KAHHLODK@?$AAC?$AAa?$AAp?$AAs?$AAu?$AAl?$AAe?$AAU?$AAp?$AAd?$AAa?$AAt?$AAe?$AAD?$AAa?$AAt?$AAa?$AA?$AA@ 0000000000011000     Bds:Bds.obj
+ 0002:00001884       ??_C@_15GANGMFKL@?$AA?$CF?$AAs?$AA?$AA@ 0000000000011024     Bds:Bds.obj
+ 0002:00001890       ??_C@_19HEPLDNLP@?$AA?$CF?$AAs?$AA?$CF?$AAd?$AA?$AA@ 0000000000011030     Bds:Bds.obj
+ 0002:000018a0       ??_C@_1CI@GLMAIHPI@?$AAA?$AAm?$AAe?$AAr?$AAi?$AAc?$AAa?$AAn?$AA?5?$AAM?$AAe?$AAg?$AAa?$AAt?$AAr?$AAe?$AAn?$AAd?$AAs?$AA?$AA@ 0000000000011040     Bds:BdsBoard.obj
+ 0002:000018c8       ??_C@_04PFOHOKJK@?5?5?5?5?$AA@ 0000000000011068     Bds:BdsBoard.obj
+ 0002:000018d0       ??_C@_0BG@PMDDDLLA@ReadBootOptionAndBoot?$AA@ 0000000000011070     Bds:BdsBoard.obj
+ 0002:000018e8       ??_C@_0N@IFELCHBN@HandoffToTse?$AA@ 0000000000011088     Bds:BdsBoard.obj
+ 0002:000018f8       ??_C@_0BJ@FDAMNJJA@RecoverTheMemoryAbove4Gb?$AA@ 0000000000011098     Bds:BdsBoard.obj
+ 0002:00001918       ??_C@_0BF@EAGCMKJN@UpdateEsrtFmpEntries?$AA@ 00000000000110b8     Bds:BdsBoard.obj
+ 0002:00001930       ??_C@_0BO@GEGOBDAP@PerformCapsuleVariableCleanup?$AA@ 00000000000110d0     Bds:BdsBoard.obj
+ 0002:00001950       ??_C@_0BC@JPNIAGAH@CallTheDispatcher?$AA@ 00000000000110f0     Bds:BdsBoard.obj
+ 0002:00001968       ??_C@_0BD@FGLFHMFC@CreateOldBootOrder?$AA@ 0000000000011108     Bds:BdsBoard.obj
+ 0002:00001980       ??_C@_0BK@CACJNABH@FBO_Sync_Protocol_Install?$AA@ 0000000000011120     Bds:BdsBoard.obj
+ 0002:000019a0       ??_C@_0BA@KHOMDAPH@SaveBootOptions?$AA@ 0000000000011140     Bds:BdsBoard.obj
+ 0002:000019b0       ??_C@_0BD@MANLCJPD@FboSceBuildDefault?$AA@ 0000000000011150     Bds:BdsBoard.obj
+ 0002:000019c8       ??_C@_0BF@LADBKLFM@FBO_AdjustDeviceName?$AA@ 0000000000011168     Bds:BdsBoard.obj
+ 0002:000019e0       ??_C@_0BL@EGNECPF@FBO_SetDefaultUEFIDevOrder?$AA@ 0000000000011180     Bds:BdsBoard.obj
+ 0002:00001a00       ??_C@_0BH@IHOONNOE@SetDefaultTseBootOrder?$AA@ 00000000000111a0     Bds:BdsBoard.obj
+ 0002:00001a18       ??_C@_0BH@OKDIFEIM@FboSetLegacyDeviceType?$AA@ 00000000000111b8     Bds:BdsBoard.obj
+ 0002:00001a30       ??_C@_0BC@LICEJBBN@MaskOrphanDevices?$AA@ 00000000000111d0     Bds:BdsBoard.obj
+ 0002:00001a48       ??_C@_0BH@LNEMFKEB@PostProcessBootOptions?$AA@ 00000000000111e8     Bds:BdsBoard.obj
+ 0002:00001a60       ??_C@_0BL@NGDGCAOB@FBO_UpdateBootListPriority?$AA@ 0000000000011200     Bds:BdsBoard.obj
+ 0002:00001a80       ??_C@_0BO@MNECANMP@AdjustNewUefiOsOptionPriority?$AA@ 0000000000011220     Bds:BdsBoard.obj
+ 0002:00001aa0       ??_C@_0BI@PKODHJLL@SetBootOptionPriorities?$AA@ 0000000000011240     Bds:BdsBoard.obj
+ 0002:00001ab8       ??_C@_0BG@IEPEIDKG@PreProcessBootOptions?$AA@ 0000000000011258     Bds:BdsBoard.obj
+ 0002:00001ad0       ??_C@_0BP@FBFMMFOK@EfiOsName_NormalizeBootOptions?$AA@ 0000000000011270     Bds:BdsBoard.obj
+ 0002:00001af0       ??_C@_0BG@HGCAAGPJ@FBO_SetBootOptionTags?$AA@ 0000000000011290     Bds:BdsBoard.obj
+ 0002:00001b08       ??_C@_0BG@GLKCFEDD@Fbo_CheckForNewDevice?$AA@ 00000000000112a8     Bds:BdsBoard.obj
+ 0002:00001b20       ??_C@_0CD@KHEKGJGG@CreateBootOptionsForNewBootDevic@ 00000000000112c0     Bds:BdsBoard.obj
+ 0002:00001b48       ??_C@_0CB@KFCLPLCH@FboAdjustEthernetDefaultPriority@ 00000000000112e8     Bds:BdsBoard.obj
+ 0002:00001b70       ??_C@_0M@FPPLGGEH@FboSceCheck?$AA@ 0000000000011310     Bds:BdsBoard.obj
+ 0002:00001b80       ??_C@_0BP@DMJMMCFI@FboSyncBootOptionsFromDevOrder?$AA@ 0000000000011320     Bds:BdsBoard.obj
+ 0002:00001ba0       ??_C@_0CC@IEJEBDLJ@DeleteUnmatchedUefiHddBootDevice@ 0000000000011340     Bds:BdsBoard.obj
+ 0002:00001bc8       ??_C@_0BK@EHCCEKPA@MatchBootOptionsToDevices?$AA@ 0000000000011368     Bds:BdsBoard.obj
+ 0002:00001be8       ??_C@_0BG@ECDLGKL@CreateEfiOsBootOption?$AA@ 0000000000011388     Bds:BdsBoard.obj
+ 0002:00001c00       ??_C@_0BF@HCIAMEKJ@FilterBootDeviceList?$AA@ 00000000000113a0     Bds:BdsBoard.obj
+ 0002:00001c18       ??_C@_0BD@JFIBLPKC@CollectBootDevices?$AA@ 00000000000113b8     Bds:BdsBoard.obj
+ 0002:00001c30       ??_C@_0BF@KFHAJAJL@CollectUsbBbsDevices?$AA@ 00000000000113d0     Bds:BdsBoard.obj
+ 0002:00001c48       ??_C@_0BE@IMOJCKGL@UnmaskOrphanDevices?$AA@ 00000000000113e8     Bds:BdsBoard.obj
+ 0002:00001c60       ??_C@_0BG@MMBHGIID@FBO_AdjustWtgPriority?$AA@ 0000000000011400     Bds:BdsBoard.obj
+ 0002:00001c78       ??_C@_0BJ@EILDJHDF@FboUpdateBoTagDeviceType?$AA@ 0000000000011418     Bds:BdsBoard.obj
+ 0002:00001c98       ??_C@_0BA@FNBBILCM@ReadBootOptions?$AA@ 0000000000011438     Bds:BdsBoard.obj
+ 0002:00001ca8       ??_C@_08BCBCBNKL@FBO_Init?$AA@ 0000000000011448     Bds:BdsBoard.obj
+ 0002:00001cb8       ??_C@_0BF@FNJKEH@AdjustEfiOsBootOrder?$AA@ 0000000000011458     Bds:BdsBoard.obj
+ 0002:00001cd0       ??_C@_0BK@JFBCIELK@UpdateBootOptionVariables?$AA@ 0000000000011470     Bds:BdsBoard.obj
+ 0002:00001cf0       ??_C@_0BL@LFGGIFMM@DefaultFixedBootOrder_Init?$AA@ 0000000000011490     Bds:BdsBoard.obj
+ 0002:00001d10       ??_C@_0BC@FHJNNOGC@InstallFwLoadFile?$AA@ 00000000000114b0     Bds:BdsBoard.obj
+ 0002:00001d28       ??_C@_0BO@OAIPLGDG@SignalExitPmAuthProtocolEvent?$AA@ 00000000000114c8     Bds:BdsBoard.obj
+ 0002:00001d48       ??_C@_0BP@MCKDJINP@SignalAllDriversConnectedEvent?$AA@ 00000000000114e8     Bds:BdsBoard.obj
+ 0002:00001d68       ??_C@_0BK@PIPJJIKG@ShadowAllLegacyOptionRoms?$AA@ 0000000000011508     Bds:BdsBoard.obj
+ 0002:00001d88       ??_C@_0P@FHNKFCHE@RunSysPrepApps?$AA@ 0000000000011528     Bds:BdsBoard.obj
+ 0002:00001d98       ??_C@_0M@CEEDBPIC@InitConVars?$AA@ 0000000000011538     Bds:BdsBoard.obj
+ 0002:00001da8       ??_C@_0L@OALNOJMO@RunDrivers?$AA@ 0000000000011548     Bds:BdsBoard.obj
+ 0002:00001db8       ??_C@_0BC@JNBOGFJK@ConnectEverything?$AA@ 0000000000011558     Bds:BdsBoard.obj
+ 0002:00001dd0       ??_C@_0BG@FDDBPDFE@ConInAvailabilityBeep?$AA@ 0000000000011570     Bds:BdsBoard.obj
+ 0002:00001de8       ??_C@_0BM@NOIEBHCG@InstallConInStartedProtocol?$AA@ 0000000000011588     Bds:BdsBoard.obj
+ 0002:00001e08       ??_C@_0BF@OKEGKEHF@ConnectConInVariable?$AA@ 00000000000115a8     Bds:BdsBoard.obj
+ 0002:00001e20       ??_C@_0BA@PMCDJFNG@ConnectUsbConIn?$AA@ 00000000000115c0     Bds:BdsBoard.obj
+ 0002:00001e30       ??_C@_0BP@FOPCFBDD@ReportConnectConInProgressCode?$AA@ 00000000000115d0     Bds:BdsBoard.obj
+ 0002:00001e50       ??_C@_0BN@IBCNCPHB@InstallConOutStartedProtocol?$AA@ 00000000000115f0     Bds:BdsBoard.obj
+ 0002:00001e70       ??_C@_0BG@IIANIOJB@ConnectConOutVariable?$AA@ 0000000000011610     Bds:BdsBoard.obj
+ 0002:00001e88       ??_C@_0BB@IFJDFEFG@ConnectVgaConOut?$AA@ 0000000000011628     Bds:BdsBoard.obj
+ 0002:00001ea0       ??_C@_0CA@CEOHCNPM@ReportConnectConOutProgressCode?$AA@ 0000000000011640     Bds:BdsBoard.obj
+ 0002:00001ec0       ??_C@_0CM@GLDFHHII@RegisterMemoryTypeInformationUpd@ 0000000000011660     Bds:BdsBoard.obj
+ 0002:00001ef0       ??_C@_0BJ@JIIKGKEI@ConnectRootBridgeHandles?$AA@ 0000000000011690     Bds:BdsBoard.obj
+ 0002:00001f10       ??_C@_0BK@LNEIMEHJ@SignalConnectDriversEvent?$AA@ 00000000000116b0     Bds:BdsBoard.obj
+ 0002:00001f30       ??_C@_0L@INJJPJIN@ConnectSio?$AA@ 00000000000116d0     Bds:BdsBoard.obj
+ 0002:00001f40       ??_C@_0BE@OELCDNKE@StartUsbControllers?$AA@ 00000000000116e0     Bds:BdsBoard.obj
+ 0002:00001f58       ??_C@_0CH@DAMEPEHI@ConnectRootBridgeHandlesBeforeEn@ 00000000000116f8     Bds:BdsBoard.obj
+ 0002:00001f80       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000011720     Bds:BdsBoard.obj
+ 0002:00001f90       ??_C@_1O@IFIJMGPM@?$AAU?$AAE?$AAF?$AAI?$AA?3?$AA?5?$AA?$AA@ 0000000000011730     Bds:BdsBoard.obj
+ 0002:00001fa0       ??_C@_1BA@OJICGADD@?$AA?0?$AA?5?$AA?$CF?$AAs?$AA?5?$AA?$CF?$AAd?$AA?$AA@ 0000000000011740     Bds:BdsBoard.obj
+ 0002:00001fb0       ??_C@_1BO@GJCMAFOA@?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011750     Bds:BootOptions.obj
+ 0002:00001fd0       ??_C@_1CE@JCOKHMIK@?$AAO?$AAl?$AAd?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011770     Bds:BootOptions.obj
+ 0002:00001ff8       ??_C@_19BECFKCKA@?$AAI?$AAP?$AA4?$AA?5?$AA?$AA@ 0000000000011798     Bds:BootOptions.obj
+ 0002:00002008       ??_C@_19FJONADKL@?$AAI?$AAP?$AA6?$AA?5?$AA?$AA@ 00000000000117a8     Bds:BootOptions.obj
+ 0002:00002018       ??_C@_1M@HPGKIEFJ@?$AAH?$AAT?$AAT?$AAP?$AA?5?$AA?$AA@ 00000000000117b8     Bds:BootOptions.obj
+ 0002:00002028       ??_C@_19NMAFMNFD@?$AAP?$AAX?$AAE?$AA?5?$AA?$AA@ 00000000000117c8     Bds:BootOptions.obj
+ 0002:00002038       ??_C@_1O@JBBHAGJJ@?$AA?$CF?$AAs?$AA?$CF?$AAs?$AA?$CF?$AAs?$AA?$AA@ 00000000000117d8     Bds:BootOptions.obj
+ 0002:00002048       ??_C@_1BO@FIDGLJKL@?$AAU?$AAn?$AAk?$AAn?$AAo?$AAw?$AAn?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$AA@ 00000000000117e8     Bds:BootOptions.obj
+ 0002:00002068       ??_C@_15JKMGFKLP@?$AA?$CF?$AAa?$AA?$AA@ 0000000000011808     Bds:BootOptions.obj
+ 0002:00002070       ??_C@_05JJLPJMLG@en?9US?$AA@ 0000000000011810     AmiDxeLib:EfiLib.obj
+ 0002:00002078       ??_C@_02LFNMGJAP@en?$AA@   0000000000011818     AmiDxeLib:EfiLib.obj
+ 0002:0000207c       ??_C@_03LKLGDMJI@eng?$AA@  000000000001181c     AmiDxeLib:EfiLib.obj
+ 0002:00002080       ??_C@_1BM@NLEJAKHM@?$AAF?$AAP?$AAD?$AAT?$AA_?$AAV?$AAo?$AAl?$AAa?$AAt?$AAi?$AAl?$AAe?$AA?$AA@ 0000000000011820     AmiDxeLib:EfiLib.obj
+ 0002:000020a0       ??_C@_0M@LCCONGAO@EFI_SUCCESS?$AA@ 0000000000011840     AmiDxeLib:StdLibC.obj
+ 0002:000020b0       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 0000000000011850     AmiDxeLib:StdLibC.obj
+ 0002:000020f0       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 0000000000011890     AmiDxeLib:StdLibC.obj
+ 0002:00002158       ??_C@_1O@PMJNFNEJ@?$AA?$CF?$AAS?$AA?$CI?$AA?$CF?$AAX?$AA?$CJ?$AA?$AA@ 00000000000118f8     AmiDxeLib:StdLibC.obj
+ 0002:00002168       ??_C@_15MAOEGKJF@?$AA?$CF?$AAS?$AA?$AA@ 0000000000011908     AmiDxeLib:StdLibC.obj
+ 0002:00002170       ??_C@_1O@JONPFMKD@?$AAV?$AAA?$AAL?$AAU?$AAE?$AA?$DN?$AA?$AA@ 0000000000011910     AmiDxeLib:HiiUtilities.obj
+ 0002:00002180       ??_C@_1BA@HDPFBAGC@?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA?$AA@ 0000000000011920     AmiDxeLib:HiiUtilities.obj
+ 0002:00002190       ??_C@_1M@PJAPFKED@?$AAP?$AAA?$AAT?$AAH?$AA?$DN?$AA?$AA@ 0000000000011930     AmiDxeLib:HiiUtilities.obj
+ 0002:000021a0       ??_C@_1M@MDEMFNHP@?$AAN?$AAA?$AAM?$AAE?$AA?$DN?$AA?$AA@ 0000000000011940     AmiDxeLib:HiiUtilities.obj
+ 0002:000021b0       ??_C@_1M@DPLGJLCD@?$AAG?$AAU?$AAI?$AAD?$AA?$DN?$AA?$AA@ 0000000000011950     AmiDxeLib:HiiUtilities.obj
+ 0002:000021c0       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 0000000000011960     AmiDxeLib:HiiUtilities.obj
+ 0002:000021e0       ??_C@_1CC@KHCIBBEI@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA0?$AA?$CG?$AAW?$AAI?$AAD?$AAT?$AAH?$AA?$DN?$AA?$AA@ 0000000000011980     AmiDxeLib:HiiUtilities.obj
+ 0002:00002208       ??_C@_1CG@KPEBDNIC@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA0?$AA?$CG?$AAW?$AAI?$AAD?$AAT?$AAH?$AA?$DN?$AA?$CF?$AAx?$AA?$AA@ 00000000000119a8     AmiDxeLib:HiiUtilities.obj
+ 0002:00002230       ??_C@_1BA@HGPHMJN@?$AAU?$AAE?$AAF?$AAI?$AA?5?$AAO?$AAS?$AA?$AA@ 00000000000119d0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002240       ??_C@_1O@JCDKOAA@?$AAd?$AAe?$AAb?$AAi?$AAa?$AAn?$AA?$AA@ 00000000000119e0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002250       ??_C@_1DA@BMJEMKFE@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAd?$AAe?$AAb?$AAi?$AAa?$AAn?$AA?2?$AAg?$AAr?$AAu?$AAb?$AAx?$AA6?$AA4?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 00000000000119f0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002280       ??_C@_1BC@OHKLGIPA@?$AAo?$AAp?$AAe?$AAn?$AAs?$AAu?$AAs?$AAe?$AA?$AA@ 0000000000011a20     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002298       ??_C@_1DE@OHGMKENN@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAo?$AAp?$AAe?$AAn?$AAs?$AAu?$AAs?$AAe?$AA?2?$AAg?$AAr?$AAu?$AAb?$AAx?$AA6?$AA4?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011a38     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:000022d0       ??_C@_1O@GDOPPMFG@?$AAC?$AAe?$AAn?$AAt?$AAO?$AAS?$AA?$AA@ 0000000000011a70     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:000022e0       ??_C@_1DA@OEAPELJC@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAC?$AAe?$AAn?$AAt?$AAo?$AAs?$AA?2?$AAs?$AAh?$AAi?$AAm?$AAx?$AA6?$AA4?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011a80     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002310       ??_C@_1O@DDHJALNG@?$AAF?$AAe?$AAd?$AAo?$AAr?$AAa?$AA?$AA@ 0000000000011ab0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002320       ??_C@_1DA@COEPFCGF@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAF?$AAe?$AAd?$AAo?$AAr?$AAa?$AA?2?$AAs?$AAh?$AAi?$AAm?$AAx?$AA6?$AA4?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011ac0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002350       ??_C@_1CK@PFNFBEOH@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAR?$AAe?$AAd?$AAh?$AAa?$AAt?$AA?2?$AAs?$AAh?$AAi?$AAm?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011af0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002380       ??_C@_1CK@PMJJCJHL@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAR?$AAe?$AAd?$AAh?$AAa?$AAt?$AA?2?$AAg?$AAr?$AAu?$AAb?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011b20     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:000023b0       ??_C@_1CI@HGBBBIBF@?$AAR?$AAe?$AAd?$AAH?$AAa?$AAt?$AA?5?$AAB?$AAo?$AAo?$AAt?$AA?5?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAr?$AA?$AA@ 0000000000011b50     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:000023d8       ??_C@_1CM@NMMEOHE@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAR?$AAe?$AAd?$AAh?$AAa?$AAt?$AA?2?$AAe?$AAl?$AAi?$AAl?$AAo?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011b78     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002408       ??_C@_1O@JNLCEKKL@?$AAu?$AAb?$AAu?$AAn?$AAt?$AAu?$AA?$AA@ 0000000000011ba8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002418       ??_C@_1DA@OOIBKAKN@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAU?$AAb?$AAu?$AAn?$AAt?$AAu?$AA?2?$AAs?$AAh?$AAi?$AAm?$AAx?$AA6?$AA4?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011bb8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002448       ??_C@_1CE@NGHOBNLP@?$AAS?$AAu?$AAs?$AAe?$AA?5?$AAB?$AAo?$AAo?$AAt?$AA?5?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAr?$AA?$AA@ 0000000000011be8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002470       ??_C@_1CI@HFNJFBGF@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAS?$AAu?$AAs?$AAe?$AA?2?$AAe?$AAl?$AAi?$AAl?$AAo?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011c10     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002498       ??_C@_1CK@MMPKMOGO@?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AAs?$AA?5?$AAB?$AAo?$AAo?$AAt?$AA?5?$AAM?$AAa?$AAn?$AAa?$AAg?$AAe?$AAr?$AA?$AA@ 0000000000011c38     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:000024d0       ??_C@_1EC@LNDFLFLH@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?2?$AAB?$AAo?$AAo?$AAt?$AA?2?$AAb?$AAo?$AAo?$AAt?$AAm?$AAg?$AAf?$AAw?$AA?4?$AAe?$AAf?$AAi@ 0000000000011c70     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002518       ??_C@_1BK@NOOIKDOI@?$AA?$CF?$AAs?$AA?5?$AA?$CI?$AAP?$AA?$CF?$AAd?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?$CJ?$AA?$AA@ 0000000000011cb8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002538       ??_C@_1BA@ENINOPGK@?$AA?$CF?$AAs?$AA?5?$AA?$CI?$AA?$CF?$AAs?$AA?$CJ?$AA?$AA@ 0000000000011cd8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002548       ??_C@_1BK@LJNGGOJK@?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011ce8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002568       ??_C@_1CA@COFLMIAA@?$AAN?$AAe?$AAw?$AAO?$AAp?$AAt?$AAi?$AAo?$AAn?$AAP?$AAo?$AAl?$AAi?$AAc?$AAy?$AA?$AA@ 0000000000011d08     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002588       ??_C@_1O@BFAHIMEK@?$AAs?$AAl?$AAe?$AAs?$AA1?$AA2?$AA?$AA@ 0000000000011d28     EobonPriorityMap:EobonPriorityMap.obj
+ 0002:00002598       ??_C@_1DA@HGNMABMD@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAs?$AAl?$AAe?$AAs?$AA1?$AA2?$AA?2?$AAg?$AAr?$AAu?$AAb?$AAx?$AA6?$AA4?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011d38     EobonPriorityMap:EobonPriorityMap.obj
+ 0002:000025c8       ??_C@_1CE@FEOFPIGC@?$AAs?$AAl?$AAe?$AAs?$AA1?$AA2?$AA?9?$AAs?$AAe?$AAc?$AAu?$AAr?$AAe?$AAb?$AAo?$AAo?$AAt?$AA?$AA@ 0000000000011d68     EobonPriorityMap:EobonPriorityMap.obj
+ 0002:000025f0       ??_C@_1CK@NHDKKLHI@?$AA?2?$AAE?$AAF?$AAI?$AA?2?$AAs?$AAl?$AAe?$AAs?$AA1?$AA2?$AA?2?$AAs?$AAh?$AAi?$AAm?$AA?4?$AAe?$AAf?$AAi?$AA?$AA@ 0000000000011d90     EobonPriorityMap:EobonPriorityMap.obj
+ 0002:00002620       ??_C@_1CM@JLCGPFOE@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011dc0     TseDefaultBootOrder:TseDefaultBootOrder.obj
+ 0002:00002650       ??_C@_1CC@HAKLCOOF@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAB?$AAo?$AAo?$AAt?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011df0     TseDefaultBootOrder:TseDefaultBootOrder.obj
+ 0002:00002678       ??_C@_1CA@IHDKJNCK@?$AAO?$AAr?$AAi?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011e18     FixedBootOrder:FboSetOrder.obj
+ 0002:00002698       ??_C@_1DI@DMHJLPGC@?$AAU?$AAS?$AAB?$AA?5?$AAE?$AAn?$AAt?$AAr?$AAy?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AAs?$AA?5?$AAT?$AAo?$AA?5?$AAG?$AAo?$AA?$AA@ 0000000000011e38     FixedBootOrder:FboSetOrder.obj
+ 0002:000026d0       ??_C@_1CE@HJFPEMJP@?$AAF?$AAb?$AAo?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011e70     FixedBootOrder:FboSetOrder.obj
+ 0002:000026f8       ??_C@_1CK@HEPBNGNI@?$AAO?$AAr?$AAi?$AAF?$AAb?$AAo?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011e98     FixedBootOrder:FboSetOrder.obj
+ 0002:00002728       ??_C@_1CI@CJMFPEMF@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011ec8     FixedBootOrder:FboSetOrder.obj
+ 0002:00002750       ??_C@_1BK@LDFNLNIE@?$AAO?$AAl?$AAd?$AAB?$AAo?$AAo?$AAt?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011ef0     FixedBootOrder:FboSetOrder.obj
+ 0002:00002770       ??_C@_1EM@KMDJPMPI@?$AAU?$AAS?$AAB?$AA?5?$AAE?$AAn?$AAt?$AAr?$AAy?$AA?5?$AAf?$AAo?$AAr?$AA?5?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AAs?$AA?5?$AAT?$AAo?$AA?5?$AAG?$AAo?$AA?5?$AAL?$AAo?$AAg?$AAo@ 0000000000011f10     FixedBootOrder:FboSetOrder.obj
+ 0002:000027c0       ??_C@_1CI@KCFLNDLA@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAB?$AAo?$AAo?$AAt?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAi?$AAe?$AAs?$AA?$AA@ 0000000000011f60     FixedBootOrder:FboSetOrder.obj
+ 0002:000027e8       ??_C@_1CA@GKGKDGHI@?$AAW?$AAt?$AAg?$AAU?$AAe?$AAf?$AAi?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA?$AA@ 0000000000011f88     FixedBootOrder:FboSetOrder.obj
+ 0002:00002808       ??_C@_1CK@KEMEDOMH@?$AAP?$AAr?$AAe?$AAs?$AAe?$AAr?$AAv?$AAe?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000011fa8     FixedBootOrder:FboSetOrder.obj
+ 0002:00002838       ??_C@_1CE@BJEKNNBA@?$AAA?$AAm?$AAi?$AAE?$AAm?$AAa?$AAI?$AAn?$AAd?$AAi?$AAc?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?$AA@ 0000000000011fd8     FixedBootOrder:FboSetOrder.obj
+ 0002:00002860       ??_C@_1CK@POBMGCOC@?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AAS?$AAk?$AAi?$AAp?$AAF?$AAb?$AAo?$AAM?$AAo?$AAd?$AAu?$AAl?$AAe?$AA?$AA@ 0000000000012000     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00002890       ??_C@_1BA@BDOMDLGJ@?$AAU?$AAS?$AAB?$AA?5?$AAH?$AAD?$AAD?$AA?$AA@ 0000000000012030     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:000028a0       ??_C@_1O@DIIKKJFH@?$AAU?$AAS?$AAB?$AA?5?$AAC?$AAD?$AA?$AA@ 0000000000012040     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:000028b0       ??_C@_1BG@KIJNEHEK@?$AAU?$AAS?$AAB?$AA?5?$AAF?$AAl?$AAo?$AAp?$AAp?$AAy?$AA?$AA@ 0000000000012050     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:000028c8       ??_C@_1BA@PEEMGAGN@?$AAU?$AAS?$AAB?$AA?5?$AAK?$AAE?$AAY?$AA?$AA@ 0000000000012068     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:000028d8       ??_C@_1BI@MEEBLOIO@?$AAH?$AAa?$AAr?$AAd?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AA1?$AA?$AA@ 0000000000012078     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:000028f0       ??_C@_1BI@NGPEBBGA@?$AAH?$AAa?$AAr?$AAd?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AA2?$AA?$AA@ 0000000000012090     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00002908       ??_C@_1BI@GOEIHGAF@?$AAH?$AAa?$AAr?$AAd?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AA3?$AA?$AA@ 00000000000120a8     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00002920       ??_C@_1BI@PDJPEOLM@?$AAH?$AAa?$AAr?$AAd?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AA4?$AA?$AA@ 00000000000120c0     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00002938       ??_C@_1BI@ELCDCJNJ@?$AAH?$AAa?$AAr?$AAd?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AA5?$AA?$AA@ 00000000000120d8     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00002950       ??_C@_19BAEDOLGG@?$AAN?$AAV?$AAM?$AAE?$AA?$AA@ 00000000000120f0     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00002960       ??_C@_1CE@PPJAGKLA@?$AAF?$AAb?$AAo?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAS?$AAc?$AAe?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000012100     FboSce:FboSce.obj
+ 0002:00002988       ??_C@_1CA@GGGLLILH@?$AAF?$AAb?$AAo?$AAU?$AAe?$AAf?$AAi?$AAS?$AAc?$AAe?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 0000000000012128     FboSce:FboSce.obj
+ 0002:000029a8       ??_C@_1BE@FPBNPMKH@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAB?$AAo?$AAo?$AAt?$AA?$AA@ 0000000000012148     FboSce:FboSce.obj
+ 0002:000029c0       ??_C@_0BB@MFGDFIJM@Compromised?5Data?$AA@ 0000000000012160     BasePrintLib:PrintLibInternal.obj
+ 0002:000029d8       ??_C@_0BB@KFJAMCOC@Invalid?5Language?$AA@ 0000000000012178     BasePrintLib:PrintLibInternal.obj
+ 0002:000029f0       ??_C@_0M@FKGOBENP@End?5of?5File?$AA@ 0000000000012190     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a00       ??_C@_0O@GLPDOMCP@Reserved?5?$CI30?$CJ?$AA@ 00000000000121a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a10       ??_C@_0O@NMJOLAMF@Reserved?5?$CI29?$CJ?$AA@ 00000000000121b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a20       ??_C@_0N@JEJDHPO@End?5of?5Media?$AA@ 00000000000121c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a30       ??_C@_09BOMAGJEG@CRC?5Error?$AA@ 00000000000121d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a40       ??_C@_0BD@KHMPCIOG@Security?5Violation?$AA@ 00000000000121e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a58       ??_C@_0BF@EHOBGFMI@Incompatible?5Version?$AA@ 00000000000121f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a70       ??_C@_0P@NCJHBCLM@Protocol?5Error?$AA@ 0000000000012210     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a80       ??_C@_0L@DJKNJKHM@TFTP?5Error?$AA@ 0000000000012220     BasePrintLib:PrintLibInternal.obj
+ 0002:00002a90       ??_C@_0L@LKIFCMNO@ICMP?5Error?$AA@ 0000000000012230     BasePrintLib:PrintLibInternal.obj
+ 0002:00002aa0       ??_C@_07LCKDCBKK@Aborted?$AA@ 0000000000012240     BasePrintLib:PrintLibInternal.obj
+ 0002:00002aa8       ??_C@_0BA@IGIBFFPH@Already?5started?$AA@ 0000000000012248     BasePrintLib:PrintLibInternal.obj
+ 0002:00002ab8       ??_C@_0M@DCJFAFHJ@Not?5started?$AA@ 0000000000012258     BasePrintLib:PrintLibInternal.obj
+ 0002:00002ac8       ??_C@_08PAFJCNGP@Time?5out?$AA@ 0000000000012268     BasePrintLib:PrintLibInternal.obj
+ 0002:00002ad8       ??_C@_0L@IFPBNFC@No?5mapping?$AA@ 0000000000012278     BasePrintLib:PrintLibInternal.obj
+ 0002:00002ae8       ??_C@_0M@ENKCBFEP@No?5Response?$AA@ 0000000000012288     BasePrintLib:PrintLibInternal.obj
+ 0002:00002af8       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 0000000000012298     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b08       ??_C@_09CFCBFJND@Not?5Found?$AA@ 00000000000122a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b18       ??_C@_0O@JNCJKCCD@Media?5changed?$AA@ 00000000000122b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b28       ??_C@_08KEGAJDNN@No?5Media?$AA@ 00000000000122c8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b38       ??_C@_0M@HDLEPOFA@Volume?5Full?$AA@ 00000000000122d8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b48       ??_C@_0P@EIOJGIF@Volume?5Corrupt?$AA@ 00000000000122e8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b58       ??_C@_0BB@GOILNEAA@Out?5of?5Resources?$AA@ 00000000000122f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b70       ??_C@_0BA@LNEDDFNB@Write?5Protected?$AA@ 0000000000012310     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b80       ??_C@_0N@HHEABDHO@Device?5Error?$AA@ 0000000000012320     BasePrintLib:PrintLibInternal.obj
+ 0002:00002b90       ??_C@_09NKFGCIPN@Not?5Ready?$AA@ 0000000000012330     BasePrintLib:PrintLibInternal.obj
+ 0002:00002ba0       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small?$AA@ 0000000000012340     BasePrintLib:PrintLibInternal.obj
+ 0002:00002bb8       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size?$AA@ 0000000000012358     BasePrintLib:PrintLibInternal.obj
+ 0002:00002bc8       ??_C@_0M@BEECMOIL@Unsupported?$AA@ 0000000000012368     BasePrintLib:PrintLibInternal.obj
+ 0002:00002bd8       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter?$AA@ 0000000000012378     BasePrintLib:PrintLibInternal.obj
+ 0002:00002bf0       ??_C@_0L@PLPBEPPC@Load?5Error?$AA@ 0000000000012390     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c00       ??_C@_0BD@IFJNJCCO@Warning?5Stale?5Data?$AA@ 00000000000123a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c18       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small?$AA@ 00000000000123b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c38       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure?$AA@ 00000000000123d8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c50       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure?$AA@ 00000000000123f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c68       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph?$AA@ 0000000000012408     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c80       ??_C@_07PBILKAFL@Success?$AA@ 0000000000012420     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c88       mHexStr                    0000000000012428     BasePrintLib:PrintLibInternal.obj
+ 0002:00002ca0       mStatusString              0000000000012440     BasePrintLib:PrintLibInternal.obj
+ 0002:00002dd8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO?$AA@ 0000000000012578     BasePrintLib:PrintLibInternal.obj
+ 0002:00002de8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO?$AA@ 0000000000012588     BasePrintLib:PrintLibInternal.obj
+ 0002:00002df8       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO?$AA@ 0000000000012598     BasePrintLib:PrintLibInternal.obj
+ 0002:00002e08       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d?$AA@ 00000000000125a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00002e24       ??_C@_04JIMNDDED@?$CF08X?$AA@ 00000000000125c4     BasePrintLib:PrintLibInternal.obj
+ 0002:00002e2c       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 00000000000125cc     BasePrintLib:PrintLibInternal.obj
+ 0002:00002e30       ??_C@_01LIIJDEN@?$AN?$AA@  00000000000125d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002e54       NetworkClassConnectPolicy  00000000000125f4     Bds:Bds.obj
+ 0002:00002e68       LpcHandle                  0000000000012608     Bds:Bds.obj
+ 0002:00002e70       LpcDevicePath              0000000000012610     Bds:Bds.obj
+ 0002:00002e78       ThisImageHandle            0000000000012618     Bds:Bds.obj
+ 0002:00002e80       HiiHandle                  0000000000012620     Bds:BootOptions.obj
+ 0002:00002e88       gImageHandle               0000000000012628     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002e90       gST                        0000000000012630     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002e98       gBS                        0000000000012638     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002ed4       gBdsSkipFBOModule          0000000000012674     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00002f18       NewEfiOsOptionDpList       00000000000126b8     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002f20       NewEfiOsOptionDpListCount  00000000000126c0     EfiOsBootOptionNames:EfiOsBootOrder.obj
+ 0002:00002f30       gLocateHanedlesPolicyEvent 00000000000126d0     CsmPolicy:CsmPolicy.obj
+ 0002:00002f38       gProceedToBootPolicyEvent  00000000000126d8     CsmPolicy:CsmPolicy.obj
+ 0002:00002f40       gPolicyEvent               00000000000126e0     CsmPolicy:CsmPolicy.obj
+ 0002:00002f48       OemCheckUefiOpromPolicyList 00000000000126e8     CsmPolicy:CsmPolicy.obj
+ 0002:00002f58       BusSpecific                00000000000126f8     CsmPolicy:CsmPolicy.obj
+ 0002:00002f60       pFBOLegacyDevMap           0000000000012700     FixedBootOrder:FboSetOrder.obj
+ 0002:00002f68       pFBOUefiDevMap             0000000000012708     FixedBootOrder:FboSetOrder.obj
+ 0002:00002f70       FboChangeDeviceNameFuncs   0000000000012710     DefaultFixedBootOrder:DefaultFixedBootOrder.obj
+ 0002:00002f78       pST                        0000000000012718     AmiDxeLib:EfiLib.obj
+ 0002:00002f80       pBS                        0000000000012720     AmiDxeLib:EfiLib.obj
+ 0002:00002f88       pRS                        0000000000012728     AmiDxeLib:EfiLib.obj
+ 0002:00002f90       pSmst                      0000000000012730     AmiDxeLib:EfiLib.obj
+ 0002:00002f98       pDxe                       0000000000012738     AmiDxeLib:EfiLib.obj
+ 0002:00002fa0       TheImageHandle             0000000000012740     AmiDxeLib:EfiLib.obj
+ 0002:00002fc0       SetupData                  0000000000012760     <common>
+ 0002:00003060       NonThunkHandles            0000000000012800     <common>
+ 0002:00003080       ThunkHandles               0000000000012820     <common>
+ 0002:00003098       CurrentCsmState            0000000000012838     <common>
+ 0002:000030a0       DriverBindingRegistration  0000000000012840     <common>
+ 0002:000030c0       BootDeviceListStructure    0000000000012860     <common>
+ 0002:000030e0       BootOptionListStructure    0000000000012880     <common>
+ 0002:000030f8       AmiBdsConnectPolicyPciIoCallbackRegistration 0000000000012898     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000011ec       DummyEndOfDxeEventCallback 00000000000014cc f    CIL library: CIL module
+ 0001:00006b7c       FindDeviceHandle           0000000000006e5c f    CIL library: CIL module
+ 0001:00006cf4       HiiAccessExtractConfig     0000000000006fd4 f    CIL library: CIL module
+ 0001:0000703c       HiiAccessRouteConfig       000000000000731c f    CIL library: CIL module
+ 0001:000072c4       FindBestLanguage           00000000000075a4 f    CIL library: CIL module
+ 0001:000073f4       GetSupportedLanguages      00000000000076d4 f    CIL library: CIL module
+ 0001:000074b4       GetAnyLanguageString       0000000000007794 f    CIL library: CIL module
+ 0001:0000938c       HiiAccessFormCallback      000000000000966c f    CIL library: CIL module

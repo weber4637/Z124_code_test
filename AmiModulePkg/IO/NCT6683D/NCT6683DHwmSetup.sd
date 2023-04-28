@@ -1,0 +1,271 @@
+//**********************************************************************
+//**********************************************************************
+//**                                                                  **
+//**        (C)Copyright 1985-2013, American Megatrends, Inc.         **
+//**                                                                  **
+//**                       All Rights Reserved.                       **
+//**                                                                  **
+//**      5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093        **
+//**                                                                  **
+//**                       Phone: (770)-246-8600                      **
+//**                                                                  **
+//**********************************************************************
+//**********************************************************************
+//<AMI_FHDR_START>
+//
+// Name:  <NCT6683DHwmSetup.sd>
+//
+// Description: SIO Form Template, Setup screen definition file
+//
+//<AMI_FHDR_END>
+//**********************************************************************
+
+#ifdef SETUP_DATA_DEFINITION
+/***********************************************************/
+/* Put NVRAM data definitions here.
+/* For example:    UINT8 Data1;
+/* These definitions will be converted by the build process
+/* to a definitions of SETUP_DATA fields.
+/***********************************************************/
+        UINT8           NCT6683DSmartFanMode;           //G160-004(11)
+        UINT8           NCT6683DFanManualDuty;          //G160-004(11)
+        UINT8           NCT6683DThermalOff;             //G160-004(11)
+        UINT8           NCT6683DThermalStart;           //G160-004(11)
+        UINT8           NCT6683DThermalTarget;          //G160-004(11)
+        UINT8           NCT6683DFanStartDuty;           //G160-004(11)
+#endif //SETUP_DATA_DEFINITION
+
+//-------------------------------------------------------------------------
+//Select Top level menu itmem (forset) for you pages
+//-------------------------------------------------------------------------
+#ifdef ADVANCED_FORM_SET
+
+//-------------------------------------------------------------------------
+//If you need any additional type definitions add them here
+//-------------------------------------------------------------------------
+#ifdef FORM_SET_TYPEDEF
+    #include "Token.h"
+#endif
+
+//-------------------------------------------------------------------------
+//If you need custom varstore's define them here
+//-------------------------------------------------------------------------
+#ifdef FORM_SET_VARSTORE
+#endif
+
+//-------------------------------------------------------------------------
+//Define controls to be added to the top level page of the formset
+//-------------------------------------------------------------------------
+#ifdef FORM_SET_ITEM
+#endif
+
+//-------------------------------------------------------------------------
+//Define goto commands for the forms defined in this file
+//-------------------------------------------------------------------------
+#ifdef FORM_SET_GOTO
+
+    #if NCT6683D_HWM_PRESENT
+    goto HMM_CONFIG_FORM_ID,
+    prompt  = STRING_TOKEN(STR_NCT6683D_HMM_CONFIGURATION),
+    help    = STRING_TOKEN(STR_NCT6683D_HMM_CONFIGURATION_HELP);
+    #endif
+
+#endif
+
+//-------------------------------------------------------------------------
+// Define forms
+//-------------------------------------------------------------------------
+#ifdef FORM_SET_FORM
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////Define HWM formset form////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    #if NCT6683D_HWM_PRESENT
+    //Define HWM formset form
+    form formid = AUTO_ID(HMM_CONFIG_FORM_ID),
+        title = STRING_TOKEN(STR_NCT6683D_HMM_CONFIGURATION);
+     
+        SUBTITLE(STRING_TOKEN(STR_PC_HEALTH))
+     
+        SEPARATOR
+        //
+        // System Temperature1
+        #if EFI_SPECIFICATION_VERSION>0x20000
+        INTERACTIVE_TEXT(STRING_TOKEN(STR_EMPTY), STRING_TOKEN(STR_HWM1_SYSTEM_TEMP1), STRING_TOKEN(STR_HWM1_SYSTEM_TEMP1_VALUE),  AUTO_ID(NCT6683D_INTERACTIVE_KEY))
+        #else
+        text
+        help   = STRING_TOKEN(STR_EMPTY),
+        text   = STRING_TOKEN(STR_HWM1_SYSTEM_TEMP1),
+        text   = STRING_TOKEN(STR_HWM1_SYSTEM_TEMP1_VALUE),
+        flags  = INTERACTIVE,
+        key    = NCT6683D_INTERACTIVE_KEY;
+        #endif
+
+        suppressif HIDE_UNUSED_ITEMS;   //Z121-001(2)
+        HWM1_TEXT_TEMP2
+        HWM1_TEXT_TEMP3
+//Z121-001(2)        suppressif HIDE_UNUSED_ITEMS;   //G160-004(11)
+        HWM1_TEXT_TEMP4
+        
+        #if INTEL_AMD_PLATFORM
+        //
+        // PECI Agent 1 Temperature
+        text
+        help   = STRING_TOKEN(STR_EMPTY),
+        text   = STRING_TOKEN(STR_NCT6683D_PECI_TEMP1),
+        text   = STRING_TOKEN(STR_NCT6683D_PECI_TEMP1_VALUE),
+        flags  = 0,
+        key    = 0;
+        //
+        // PCH Temperature
+        text
+        help   = STRING_TOKEN(STR_EMPTY),
+        text   = STRING_TOKEN(STR_NCT6683D_PCH_TEMP1),
+        text   = STRING_TOKEN(STR_NCT6683D_PCH_TEMP1_VALUE),
+        flags  = 0,
+        key    = 0;
+        #endif
+        endif;                          //G160-004(11)
+                
+        HWM1_TEXT_FAN1_SPEED
+        suppressif HIDE_UNUSED_ITEMS;   //Z121-001(2)
+        HWM1_TEXT_FAN2_SPEED
+//Z121-001(2)        
+        HWM1_TEXT_FAN3_SPEED
+        endif;                          //G160-004(11)
+                
+        //
+        // VIN0
+        text\
+        help   = STRING_TOKEN(STR_EMPTY),\
+        text   = STRING_TOKEN(STR_NCT6683D_HMM_VIN0),\
+        text   = STRING_TOKEN(STR_NCT6683D_HMM_VIN0_VALUE),\
+        flags  = 0,\
+        key    = 0; 
+        HWM1_TEXT_VIN1
+        HWM1_TEXT_VIN2
+        HWM1_TEXT_VIN3
+        HWM1_TEXT_VIN4
+        suppressif HIDE_UNUSED_ITEMS;   //G160-004(11)
+        HWM1_TEXT_VIN5
+        HWM1_TEXT_VIN6
+        HWM1_TEXT_VIN8
+        HWM1_TEXT_VIN9
+        HWM1_TEXT_VIN10
+        
+        //
+        // Vin11
+        text
+        help   = STRING_TOKEN(STR_EMPTY),
+        text   = STRING_TOKEN(STR_NCT6683D_HMM_VIN11),
+        text   = STRING_TOKEN(STR_NCT6683D_HMM_VIN11_VALUE),
+        flags  = 0,
+        key    = 0;   
+        //
+        // Vin12
+        text
+        help   = STRING_TOKEN(STR_EMPTY),
+        text   = STRING_TOKEN(STR_NCT6683D_HMM_VIN12),
+        text   = STRING_TOKEN(STR_NCT6683D_HMM_VIN12_VALUE),
+        flags  = 0,
+        key    = 0;  
+        //
+        // Vin13
+        text
+        help   = STRING_TOKEN(STR_EMPTY),
+        text   = STRING_TOKEN(STR_NCT6683D_HMM_VIN13),
+        text   = STRING_TOKEN(STR_NCT6683D_HMM_VIN13_VALUE),
+        flags  = 0,
+        key    = 0;  
+        
+        HWM1_TEXT_VBAT
+        HWM1_TEXT_VCC3V
+        HWM1_TEXT_VSB3V
+        endif;                          //G160-004(11)
+
+//G160-004(11) - start
+        suppressif HIDE_UNUSED_ITEMS;   //G160-004(23)
+        SEPARATOR
+        
+//G160-004(21)  Set "Smart Fan" item default value is "Enable".
+        oneof varid = SETUP_DATA.NCT6683DSmartFanMode,
+		prompt      = STRING_TOKEN(STR_NCT6683D_SMARTFAN_MODE),
+		help        = STRING_TOKEN(STR_NCT6683D_SMARTFAN_MODE_HELP),
+		option text = STRING_TOKEN(STR_DISABLED), value = 0, flags = RESET_REQUIRED;
+		option text = STRING_TOKEN(STR_ENABLED), value = 1, flags = DEFAULT | MANUFACTURING | RESET_REQUIRED;
+	endoneof;
+
+	suppressif  ideqvallist SETUP_DATA.NCT6683DSmartFanMode == 1;
+	numeric varid = SETUP_DATA.NCT6683DFanManualDuty,
+        	prompt    = STRING_TOKEN(STR_NCT6683D_FAN_MANUAL_DUTY),
+        	help      = STRING_TOKEN(STR_NCT6683D_FAN_MANUAL_DUTY_HELP),
+        	minimum   = 0,
+        	maximum   = 255,
+        	step      = 1,
+        	default   = 255,
+        endnumeric;
+        endif;
+	
+	suppressif  ideqvallist SETUP_DATA.NCT6683DSmartFanMode == 0;
+	numeric varid = SETUP_DATA.NCT6683DThermalOff,
+        	prompt    = STRING_TOKEN(STR_NCT6683D_THERMAL_OFF),
+        	help      = STRING_TOKEN(STR_NCT6683D_THERMAL_OFF_HELP),
+        	minimum   = 0,
+        	maximum   = 127,
+        	step      = 1,
+        	default   = 0,
+        endnumeric;
+	
+//G160-004(21)  Set "Fan Start Temperature" item default value is "55".
+	numeric varid = SETUP_DATA.NCT6683DThermalStart,
+        	prompt    = STRING_TOKEN(STR_NCT6683D_THERMAL_START),
+        	help      = STRING_TOKEN(STR_NCT6683D_THERMAL_START_HELP),
+        	minimum   = 0,
+        	maximum   = 127,
+        	step      = 1,
+        	default   = 55,
+        endnumeric;
+        
+//G160-004(21)  Set "Fan Full Speed Temperature" item default value is "75".
+	numeric varid = SETUP_DATA.NCT6683DThermalTarget,
+        	prompt    = STRING_TOKEN(STR_NCT6683D_THERMAL_TARGET),
+        	help      = STRING_TOKEN(STR_NCT6683D_THERMAL_TARGET_HELP),
+        	minimum   = 0,
+        	maximum   = 127,
+        	step      = 1,
+        	default   = 75,
+        endnumeric;
+        
+//G160-004(21)  Set "Fan Start Duty" item default value is "125".
+	numeric varid = SETUP_DATA.NCT6683DFanStartDuty,
+        	prompt    = STRING_TOKEN(STR_NCT6683D_FAN_START_DUTY),
+        	help      = STRING_TOKEN(STR_NCT6683D_FAN_START_DUTY_HELP),
+        	minimum   = 0,
+        	maximum   = 255,
+        	step      = 1,
+        	default   = 125,
+        endnumeric;
+        endif;
+        endif;                          //G160-004(23)
+//G160-004(11) - end
+
+    endform;//HWM form
+    #endif//End of #if NCT6683D_HWM_PRESENT
+
+#endif //FORM_SET_FORM
+
+#endif//ADVANCED_FORM_SET
+
+//**********************************************************************
+//**********************************************************************
+//**                                                                  **
+//**        (C)Copyright 1985-2013, American Megatrends, Inc.         **
+//**                                                                  **
+//**                       All Rights Reserved.                       **
+//**                                                                  **
+//**      5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093        **
+//**                                                                  **
+//**                       Phone: (770)-246-8600                      **
+//**                                                                  **
+//**********************************************************************
+//**********************************************************************

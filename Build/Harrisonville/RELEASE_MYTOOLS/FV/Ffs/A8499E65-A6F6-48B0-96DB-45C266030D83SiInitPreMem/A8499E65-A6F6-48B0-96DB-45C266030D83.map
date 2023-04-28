@@ -1,0 +1,220 @@
+ SiInitPreMem
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00005fcfH .text                   CODE
+ 0002:00000000 00001e38H .data                   DATA
+ 0002:00001e38 0000010fH .rdata                  DATA
+ 0002:00001f48 00000001H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000026       _SiInitPreMemOnPolicy      00000266 f   SiInitPreMem:SiInitPreMem.obj
+ 0001:000000ad       _SiInitPrePolicy           000002ed f   SiInitPreMem:SiInitPreMem.obj
+ 0001:00000124       _PeiServicesInstallPpi     00000364 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000136       _PeiServicesLocatePpi      00000376 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000155       _PeiServicesGetBootMode    00000395 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000167       _PeiServicesCreateHob      000003a7 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000182       _PmcStPgGetHob             000003c2 f   StPgIpInitLib:PchPmcStPg.obj
+ 0001:000001a3       _PmcStPgEnableFunction     000003e3 f   StPgIpInitLib:PchPmcStPg.obj
+ 0001:000001de       _PmcStPgDisableFunction    0000041e f   StPgIpInitLib:PchPmcStPg.obj
+ 0001:0000028c       _MicroSecondDelay          000004cc f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:000002ab       _PchDciConfiguration       000004eb f   PeiPchInitLib:PchInitPreMem.obj
+ 0001:00000356       _PchMiscInit               00000596 f   PeiPchInitLib:PchInitPreMem.obj
+ 0001:000003c9       _PchHpetInit               00000609 f   PeiPchInitLib:PchInitPreMem.obj
+ 0001:0000045b       _PchOnPolicyInstalled      0000069b f   PeiPchInitLib:PchInitPreMem.obj
+ 0001:0000063e       _PchEarlyInit              0000087e f   PeiPchInitLib:PchInitPreMem.obj
+ 0001:0000073e       _PchInitPreMem             0000097e f   PeiPchInitLib:PchInitPreMem.obj
+ 0001:0000096f       _PchShowInfomation         00000baf f   PeiPchInitLib:PchInitPreMem.obj
+ 0001:000009da       _PchInitPrePolicy          00000c1a f   PeiPchInitLib:PchInitPreMem.obj
+ 0001:00000a90       _XhciIpIsXhciPresent       00000cd0 f   PeiPchInitLib:PchUsb.obj
+ 0001:00000aaf       _ConfigureXhciPreMem       00000cef f   PeiPchInitLib:PchUsb.obj
+ 0001:00000b8d       _XhciHcInit                00000dcd f   PeiPchInitLib:PchUsb.obj
+ 0001:000010fb       _XhciPortDisableOverride   0000133b f   PeiPchInitLib:PchUsb.obj
+ 0001:000011ee       _Usb2AfeProgramming        0000142e f   PeiPchInitLib:PchUsb.obj
+ 0001:00001f8f       _XhciOverCurrentMapping    000021cf f   PeiPchInitLib:PchUsb.obj
+ 0001:00002013       _SmbusExecute              00002253 f   PeiPchInitLib:PchSmbus.obj
+ 0001:00002046       _InitializePchSmbus        00002286 f   PeiPchInitLib:PchSmbus.obj
+ 0001:000020c1       _InitializePeiPrivate      00002301 f   PeiPchInitLib:PchSmbus.obj
+ 0001:00002167       _SmbusArpDevice            000023a7 f   PeiPchInitLib:PchSmbus.obj
+ 0001:000021cc       _SmbusGetArpMap            0000240c f   PeiPchInitLib:PchSmbus.obj
+ 0001:000021f8       _SmbusNotify               00002438 f   PeiPchInitLib:PchSmbus.obj
+ 0001:0000227b       _CheckNotification         000024bb f   PeiPchInitLib:PchSmbus.obj
+ 0001:0000235d       _PchSmbusArpEnableInstallDataHob 0000259d f   PeiPchInitLib:PchSmbus.obj
+ 0001:000023b0       _ProgramSataTestMode       000025f0 f   PeiPchInitLib:PchSata.obj
+ 0001:00002426       _ConfigurePchSataAhci      00002666 f   PeiPchInitLib:PchSata.obj
+ 0001:000027a0       _DisablePchHSataController 000029e0 f   PeiPchInitLib:PchSata.obj
+ 0001:00002925       _ConfigurePchHSata         00002b65 f   PeiPchInitLib:PchSata.obj
+ 0001:00002b2d       _PchHsioChipsetInitProg    00002d6d f   PeiPchInitLib:PchHsio.obj
+ 0001:00002c00       _PchLosPhyModeCheck        00002e40 f   PeiPchInitLib:PchHsio.obj
+ 0001:00002cee       _PchHsioRxTxEqPolicyProg   00002f2e f   PeiPchInitLib:PchHsio.obj
+ 0001:000031fa       _PchHsioCommonProg         0000343a f   PeiPchInitLib:PchHsio.obj
+ 0001:0000343d       _PchHsioBiosProg           0000367d f   PeiPchInitLib:PchHsio.obj
+ 0001:00003464       _TraceHubManagePowerGateControl 000036a4 f   PeiPchInitLib:PchTraceHub.obj
+ 0001:000034eb       _Reset                     0000372b f   PeiPchInitLib:PchReset.obj
+ 0001:000034fe       _ResetEndOfPei             0000373e f   PeiPchInitLib:PchReset.obj
+ 0001:000035c3       _PchDelayResetEndOfPei     00003803 f   PeiPchInitLib:PchReset.obj
+ 0001:000035e9       _IsWakeFromS3_S4           00003829 f   PeiPchInitLib:Wdt.obj
+ 0001:00003631       _WdtPeiEntryPoint          00003871 f   PeiPchInitLib:Wdt.obj
+ 0001:0000370e       _WdtPchResetCallback       0000394e f   PeiPchInitLib:Wdt.obj
+ 0001:00003716       _SmbusGetUdidGeneral       00003956 f   PeiPchInitLib:PchSmbusArp.obj
+ 0001:00003812       _SmbusAssignAddress        00003a52 f   PeiPchInitLib:PchSmbusArp.obj
+ 0001:000038b0       _SmbusFullArp              00003af0 f   PeiPchInitLib:PchSmbusArp.obj
+ 0001:00003957       _SmbusDirectedArp          00003b97 f   PeiPchInitLib:PchSmbusArp.obj
+ 0001:000039d9       _GetNextAvailableAddress   00003c19 f   PeiPchInitLib:PchSmbusArp.obj
+ 0001:00003a15       _IsAddressAvailable        00003c55 f   PeiPchInitLib:PchSmbusArp.obj
+ 0001:00003a90       _HsioLaneWrite32           00003cd0 f   PeiPchInitLib:PchHsioLaneLib.obj
+ 0001:00003aa7       _HsioLaneAndThenOr32       00003ce7 f   PeiPchInitLib:PchHsioLaneLib.obj
+ 0001:00003ad8       _PeiHeciHsioMsg            00003d18 f   HeciMsgPeiLib:HeciMsgPeiLib.obj
+ 0001:00003b61       _GetPeiServicesTablePointer 00003da1 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00003b7b       _PchGetSkuStr              00003dbb f   PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0001:00003c0e       _PchStepping               00003e4e f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00003d70       _IsPchSupported            00003fb0 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00003e7d       _GetPchSeries              000040bd f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00003f6c       _GetPchGeneration          000041ac f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:0000405b       _GetPchMaxSataPortNum      0000429b f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:000040cd       _PchPcrWriteMmioCheck      0000430d f   PeiDxeSmmPchPcrLib:PchPcrLib.obj
+ 0001:00004283       _PchPcrAndThenOr32         000044c3 f   PeiDxeSmmPchPcrLib:PchPcrLib.obj
+ 0001:000042bd       _PchPcrAndThenOr8          000044fd f   PeiDxeSmmPchPcrLib:PchPcrLib.obj
+ 0001:000042f5       _PchAcpiBaseGet            00004535 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:00004330       _PchPwrmBaseSet            00004570 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:00004394       _PchPwrmBaseGet            000045d4 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:000043ca       _PchLpcGenIoRangeGet       0000460a f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:0000441b       _PchRevealP2sb             0000465b f   PeiDxeSmmPchP2sbLib:PchP2sbLib.obj
+ 0001:00004441       _AllocatePool              00004681 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004467       _AllocateZeroPool          000046a7 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004482       _GetHobList                000046c2 f   PeiHobLib:HobLib.obj
+ 0001:0000449c       _GetNextHob                000046dc f   PeiHobLib:HobLib.obj
+ 0001:000044c9       _GetFirstGuidHob           00004709 f   PeiHobLib:HobLib.obj
+ 0001:000044f8       _InternalPeiCreateHob      00004738 f   PeiHobLib:HobLib.obj
+ 0001:0000451b       _BuildResourceDescriptorHob 0000475b f   PeiHobLib:HobLib.obj
+ 0001:0000455f       _BuildGuidHob              0000479f f   PeiHobLib:HobLib.obj
+ 0001:0000458f       _BuildMemoryAllocationHob  000047cf f   PeiHobLib:HobLib.obj
+ 0001:000045dc       _CompareGuid               0000481c f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00004600       _CopyMem                   00004840 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00004618       _MultU64x32                00004858 f   BaseLib:MultU64x32.obj
+ 0001:00004632       _DivU64x32                 00004872 f   BaseLib:DivU64x32.obj
+ 0001:0000464f       _RShiftU64                 0000488f f   BaseLib:RShiftU64.obj
+ 0001:0000466b       _LShiftU64                 000048ab f   BaseLib:LShiftU64.obj
+ 0001:00004687       _InternalSafeStringIsOverlap 000048c7 f   BaseLib:SafeString.obj
+ 0001:000046a5       _AsciiStrnLenS             000048e5 f   BaseLib:SafeString.obj
+ 0001:000046bf       _AsciiStrCpyS              000048ff f   BaseLib:SafeString.obj
+ 0001:0000471e       _AsciiStrLen               0000495e f   BaseLib:String.obj
+ 0001:0000472c       _CpuDeadLoop               0000496c f   BaseLib:CpuDeadLoop.obj
+ 0001:00004740       _PchSbiExecution           00004980 f   PeiDxeSmmPchSbiAccessLib:PchSbiAccessLib.obj
+ 0001:0000475e       _PchSbiExecutionEx         0000499e f   PeiDxeSmmPchSbiAccessLib:PchSbiAccessLib.obj
+ 0001:000048a4       _GetGpioPadMode            00004ae4 f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:0000491e       _GpioGetGroupInfoTable     00004b5e f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:0000493a       _GpioIsCorrectPadForThisChipset 00004b7a f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:0000496b       _GpioGetPadOwnership       00004bab f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:000049d7       _PchGetLaneInfo            00004c17 f   PeiDxeSmmPchHsioLib:PchHsioLib.obj
+ 0001:00004b47       _PchGetSataLaneNum         00004d87 f   PeiDxeSmmPchHsioLib:PchHsioLib.obj
+ 0001:00004d6b       _PchGetPcieLaneNum         00004fab f   PeiDxeSmmPchHsioLib:PchHsioLib.obj
+ 0001:00004f23       _HsioGetLane               00005163 f   PeiDxeSmmPchHsioLib:PchHsioLib.obj
+ 0001:00004f55       _WdtGetAddress             00005195 f   PeiDxeSmmPchWdtCommonLib:WdtCommon.obj
+ 0001:00004f6a       _WdtReloadAndStart         000051aa f   PeiDxeSmmPchWdtCommonLib:WdtCommon.obj
+ 0001:00004fcb       _WdtDisable                0000520b f   PeiDxeSmmPchWdtCommonLib:WdtCommon.obj
+ 0001:00004fe8       _WdtCheckStatus            00005228 f   PeiDxeSmmPchWdtCommonLib:WdtCommon.obj
+ 0001:00004ff7       _WdtAllowKnownReset        00005237 f   PeiDxeSmmPchWdtCommonLib:WdtCommon.obj
+ 0001:0000501b       _IsWdtRequired             0000525b f   PeiDxeSmmPchWdtCommonLib:WdtCommon.obj
+ 0001:0000502d       _IsWdtEnabled              0000526d f   PeiDxeSmmPchWdtCommonLib:WdtCommon.obj
+ 0001:0000503c       _SpiProtocolConstructor    0000527c f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:000051bf       _SpiProtocolFlashRead      000053ff f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:000051df       _SpiProtocolFlashWrite     0000541f f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:000051ff       _SpiProtocolFlashErase     0000543f f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:0000521e       _SpiProtocolFlashReadSfdp  0000545e f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:00005258       _SpiProtocolFlashReadJedecId 00005498 f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:0000528d       _SpiProtocolFlashWriteStatus 000054cd f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:000052aa       _SpiProtocolFlashReadStatus 000054ea f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:000052c7       _SpiProtocolGetRegionAddress 00005507 f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:00005333       _SpiProtocolReadPchSoftStrap 00005573 f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:0000537f       _SpiProtocolReadCpuSoftStrap 000055bf f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:000053cb       _SendSpiCmd                0000560b f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:00005710       _WaitForSpiCycleComplete   00005950 f   BasePchSpiCommonLib:SpiCommon.obj
+ 0001:000057a0       _SmbusIoWrite              000059e0 f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:000057be       _AcquireBus                000059fe f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:00005806       _SmbusExec                 00005a46 f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:00005d5e       _PchReset                  00005f9e f   BasePchResetCommonLib:PchResetCommon.obj
+ 0001:00005e2e       _TraceHubDisablePunitMgs   0000606e f   BaseTraceHubInitLibNull:BaseTraceHubInitLibNull.obj
+ 0001:00005f10       _InternalMemZeroMem        00006150     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00005f30       _InternalMemCopyMem        00006170     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00005f70       _InternalMemSetMem         000061b0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00005f90       _InternalMemSetMem32       000061d0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00005fb0       _InternalMemSetMem64       000061f0     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gPchPmcStPgHobGuid        00006220     SiInitPreMem:AutoGen.obj
+ 0002:00000010       _gEfiSmbusArpMapGuid       00006230     SiInitPreMem:AutoGen.obj
+ 0002:00000020       _gPchChipsetInitHobGuid    00006240     SiInitPreMem:AutoGen.obj
+ 0002:00000030       _gWdtHobGuid               00006250     SiInitPreMem:AutoGen.obj
+ 0002:00000040       _gPchPolicyPpiGuid         00006260     SiInitPreMem:AutoGen.obj
+ 0002:00000050       _gSiPolicyPpiGuid          00006270     SiInitPreMem:AutoGen.obj
+ 0002:00000060       _gPeiMePlatformPolicyPpiGuid 00006280     SiInitPreMem:AutoGen.obj
+ 0002:00000070       _gWdtPpiGuid               00006290     SiInitPreMem:AutoGen.obj
+ 0002:00000080       _gPchResetPpiGuid          000062a0     SiInitPreMem:AutoGen.obj
+ 0002:00000090       _gPchResetCallbackPpiGuid  000062b0     SiInitPreMem:AutoGen.obj
+ 0002:000000a0       _gPchSpiPpiGuid            000062c0     SiInitPreMem:AutoGen.obj
+ 0002:000000b0       _gEfiPeiSmbus2PpiGuid      000062d0     SiInitPreMem:AutoGen.obj
+ 0002:000000c0       _gEfiEndOfPeiSignalPpiGuid 000062e0     SiInitPreMem:AutoGen.obj
+ 0002:000000d0       _gPchResetEndOfPeiTypeGuid 000062f0     SiInitPreMem:AutoGen.obj
+ 0002:000000e0       _gHsuartIpPolicyPpiGuid    00006300     SiInitPreMem:AutoGen.obj
+ 0002:000000f0       _gHeciPpiGuid              00006310     SiInitPreMem:AutoGen.obj
+ 0002:000005d8       _mPchLpSataPortResetToGpioMap 000067f8     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000005f0       _mPchHSataPortResetToGpioMap 00006810     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000630       _mPchLpSataDevSlpPinToGpioMap 00006850     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000648       _mPchHSataDevSlpPinToGpioMap 00006868     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000908       _PchLpRprDidTable          00006b28     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000920       _PchHRprDidTable           00006b40     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000948       _PchHHsio_A0               00006b68     PeiPchInitLib:PchHHsioAx.obj
+ 0002:00000ba0       _PchHHsio_B0               00006dc0     PeiPchInitLib:PchHHsioAx.obj
+ 0002:00000cb8       _mPchDelayResetNotifyList  00006ed8     PeiPchInitLib:PchReset.obj
+ 0002:00000cc8       _PchHChipsetInitTable_A0   00006ee8     PeiPchInitLib:PchHHsioAx.obj
+ 0002:00001248       _PchHChipsetInitTable_B0   00007468     PeiPchInitLib:PchHHsioAx.obj
+ 0002:00001c00       _mSteppingStrs             00007e20     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001c60       _mSeriesStrs               00007e80     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001c78       _mSkuStrs                  00007e98     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001d38       _mPchStepping              00007f58     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00001d3c       _mIsPchSupported           00007f5c     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00001d40       _mPchSeries                00007f60     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00001d44       _mPchGeneration            00007f64     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00001d48       _mPchHGpioGroupInfo        00007f68     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00001e38       ??_C@_0BB@OBNGGOLN@?$CIU?$CJ?5Premium?5?5SKU?$AA@ 00008058     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001e4c       ??_C@_0BA@DJPMGLLB@?$CIY?$CJ?5Premium?5SKU?$AA@ 0000806c     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001e5c       ??_C@_0N@MFEECFPI@?$CIU?$CJ?5Base?5SKU?$AA@ 0000807c     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001e6c       ??_C@_06JNLBDEAJ@QMS170?$AA@ 0000808c     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001e74       ??_C@_05LLKABAIH@HM170?$AA@ 00008094     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001e7c       ??_C@_05JPHJEDNE@QM170?$AA@ 0000809c     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001e84       ??_C@_0BF@LFIKGMPG@Super?5SKU?5?$CIUnlocked?$CJ?$AA@ 000080a4     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001e9c       ??_C@_05JCIBEAPA@CM236?$AA@ 000080bc     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001ea4       ??_C@_04LHPBBFOJ@C232?$AA@ 000080c4     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001eac       ??_C@_04NDJNNAON@C236?$AA@ 000080cc     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001eb4       ??_C@_0M@IPNDKHBK@Unfused?5SKU?$AA@ 000080d4     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001ec0       ??_C@_04KOJPINIH@B150?$AA@ 000080e0     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001ec8       ??_C@_04IJNPGANF@Q150?$AA@ 000080e8     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001ed0       ??_C@_04IKFLLELL@Q170?$AA@ 000080f0     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001ed8       ??_C@_04PNILIFKK@Z170?$AA@ 000080f8     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001ee0       ??_C@_04OHKLEBEI@H170?$AA@ 00008100     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001ee8       ??_C@_04ODCGDNPK@H110?$AA@ 00008108     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001ef0       ??_C@_0BD@KGBPEMIJ@Super?5SKU?5?$CIlocked?$CJ?$AA@ 00008110     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f04       ??_C@_09GECMDGDI@Super?5SKU?$AA@ 00008124     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f10       ??_C@_0L@IBFHEHMK@SKL?5PCH?9LP?$AA@ 00008130     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f1c       ??_C@_09OGFGJDCE@SKL?5PCH?9H?$AA@ 0000813c     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f28       ??_C@_02LEDPBCMG@C1?$AA@   00008148     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f2c       ??_C@_02LBHAAEED@D1?$AA@   0000814c     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f30       ??_C@_02KIGLDFAC@D0?$AA@   00008150     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f34       ??_C@_02KNCECDIH@C0?$AA@   00008154     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f38       ??_C@_02LFPNHIPB@B1?$AA@   00008158     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f3c       ??_C@_02KMOGEJLA@B0?$AA@   0000815c     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f40       ??_C@_02LHLLMGKI@A1?$AA@   00008160     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f44       ??_C@_02KOKAPHOJ@A0?$AA@   00008164     PeiDxeSmmPchInfoLib:PchInfoStrLib.obj
+ 0002:00001f48       _mAllowExpectedReset       00008168     PeiDxeSmmPchWdtCommonLib:WdtCommon.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000217       _InternalAcpiDelay         00000457 f    CIL library: CIL module
+ 0001:0000406f       _PchPcrRead                000042af f    CIL library: CIL module
+ 0001:00004212       _PchPcrWrite               00004452 f    CIL library: CIL module

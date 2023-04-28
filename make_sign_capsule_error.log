@@ -1,0 +1,7 @@
+
+WARNING!!! Missing RSA private key FWpriv=Keys\FW\priKey to sign BIOS image.
+
+WARNING!!! Missing RSA public key FWpub=Keys\FW\pubKey to verify Signed BIOS updates.
+           Platform Key FFS file (FV_BB) is filled with the Dummy Key as a placeholder.
+WARNING!!! Flash updates are blocked in 'AMIROM.fd' BIOS image
+           unless the Platform Key FFS(FV_BB) is updated with the valid Key.

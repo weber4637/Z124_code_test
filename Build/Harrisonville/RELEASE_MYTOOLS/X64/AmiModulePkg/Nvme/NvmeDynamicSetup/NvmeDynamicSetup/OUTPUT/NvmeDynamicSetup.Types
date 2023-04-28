@@ -1,0 +1,288 @@
+typedef struct {
+  UINT8 Numlock;
+  UINT8 NEXCOM_MINI_PCIE1;
+  UINT8 NEXCOM_MINI_PCIE2;
+  UINT8 NEXCOM_4G_LTE;
+  UINT8 TpmEnable;
+  UINT8 TpmOperation;
+  UINT8 TpmEnaDisable;
+  UINT8 TpmActDeact;
+  UINT8 TpmOwnedUnowned;
+  UINT8 TpmSupport;
+  UINT8 TcgSupportEnabled;
+  UINT8 TcmSupportEnabled;
+  UINT8 TpmHrdW;
+  UINT8 TpmAuthenticate;
+  UINT8 SuppressTcg;
+  UINT8 TpmError;
+  UINT8 Tpm20Device;
+  UINT8 Tcg2SpecVersion;
+  UINT8 PlatformHierarchy;
+  UINT8 StorageHierarchy;
+  UINT8 EndorsementHierarchy;
+  UINT8 InterfaceSel;
+  UINT8 DeviceType;
+  UINT8 PhRandomization;
+  UINT8 Sha1Supported;
+  UINT8 Sha256Supported;
+  UINT8 Sha384Supported;
+  UINT8 Sha512Supported;
+  UINT8 SM3Supported;
+  UINT8 Sha1;
+  UINT8 Sha256;
+  UINT8 Sha384;
+  UINT8 Sha512;
+  UINT8 SM3;
+  UINT8 ForceTpmEnable;
+  UINT8 PpiSpecVersion;
+  UINT8 AcpiAuto;
+  UINT16 AcpiSleepState;
+  UINT8 AcpiLockLegacyRes;
+  UINT8 AcpiHibernate;
+  UINT8 S3ResumeVideoRepost;
+  UINT8 ForceToAcpi1;
+  UINT8 BootSecWp;
+  UINT8 NCT6683DSmartFanMode;
+  UINT8 NCT6683DFanManualDuty;
+  UINT8 NCT6683DThermalOff;
+  UINT8 NCT6683DThermalStart;
+  UINT8 NCT6683DThermalTarget;
+  UINT8 NCT6683DFanStartDuty;
+  UINT8 RtcWakeType;
+  UINT8 FixedTimeHour;
+  UINT8 FixedTimeMin;
+  UINT8 FixedTimeSec;
+  UINT8 DynamicMinIncrease;
+  UINT8 BaudRate[1];
+  UINT8 DataBits[1];
+  UINT8 Parity[1];
+  UINT8 StopBits[1];
+  UINT8 FlowControl[1];
+  UINT8 ConsoleRedirectionEnable[1];
+  UINT8 TerminalType[1];
+  UINT8 VtUtf8[1];
+  UINT8 RecorderMode[1];
+  UINT8 Resolution[1];
+  UINT8 LegacyOsResolution;
+  UINT8 PuttyFunctionKeyPad[1];
+  UINT8 RedirectionAfterBiosPost;
+  UINT8 AcpiSpcrConsoleRedirectionEnable;
+  UINT8 AcpiSpcrPort;
+  UINT8 AcpiSpcrTerminalType;
+  UINT8 AcpiSpcrBaudRate;
+  UINT8 AcpiSpcrFlowControl;
+  UINT8 AcpiSpcrSetupDummyVar;
+  UINT8 DebuggerConsoleRedirectionEnable;
+  UINT8 DebuggerTerminalType;
+  UINT8 ComPortforLegacy;
+  UINT8 DBGPEnable;
+  UINT8 DBG2Enable;
+  UINT8 Above4gDecode;
+  UINT8 SriovSupport;
+  UINT8 BmeDmaMitigation;
+  UINT8 PciLatency;
+  UINT8 VgaPallete;
+  UINT8 PerrEnable;
+  UINT8 SerrEnable;
+  UINT8 PciXLatency;
+  UINT8 RelaxedOrdering;
+  UINT8 ExtTagField;
+  UINT8 NoSnoop;
+  UINT8 MaxPayload;
+  UINT8 MaxReadRequest;
+  UINT8 AspmMode;
+  UINT8 ExtendedSynch;
+  UINT8 LnkTrRetry;
+  UINT16 LnkTrTimeout;
+  UINT8 LnkDisable;
+  UINT8 S3PciExpressScripts;
+  UINT8 DontResetVcMapping;
+  UINT8 ComplTimeOut;
+  UINT8 AriFwd;
+  UINT8 AtomOpReq;
+  UINT8 AtomOpEgressBlk;
+  UINT8 IDOReq;
+  UINT8 IDOCompl;
+  UINT8 LtrReport;
+  UINT8 E2ETlpPrBlk;
+  UINT8 LnkSpeed;
+  UINT8 DeEmphasis;
+  UINT8 ClockPm;
+  UINT8 ComplSos;
+  UINT8 HwAutoWidth;
+  UINT8 HwAutoSpeed;
+  UINT8 HotPlugEnable;
+  UINT8 BusPadd;
+  UINT8 IoPadd;
+  UINT8 Mmio32Padd;
+  UINT8 Mmio32PfPadd;
+  UINT16 Mmio64Padd;
+  UINT16 Mmio64PfPadd;
+  UINT8 CsmSupport;
+  UINT8 ExpansionCardText;
+  UINT8 I19Trap;
+  UINT8 ZipEmulation;
+  UINT8 KeepGA20Active;
+  UINT8 BootOptionFilter;
+  UINT8 PxeOpRom;
+  UINT8 MassStorageOpRom;
+  UINT8 VideoOpRom;
+  UINT8 OldOpRom;
+} SETUP_DATA;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 HardDiskCount;
+  UINT16 CDROMCount;
+  UINT16 FloppyCount;
+  UINT16 NetworkCount;
+  UINT16 BevCount;
+} LEGACY_DEV_LIST;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 SetupSaveState;
+} SETUP_SAVE_STATE_INFO;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 GroupCount;
+} LEGACY_DEV_INFO;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 DeviceCount;
+} LEGACY_GROUP_INFO;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT8 Access;
+} SYSTEM_ACCESS;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 BootCount;
+} BOOT_MANAGER;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 BootCount;
+} BOOT_NOW_COUNT;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Option;
+} DEL_BOOT_OPTION;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} AMI_CALLBACK;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} TIMEOUT;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} BOOT_ORDER;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} LEGACY_DEV_ORDER;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} LANGUAGE;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} LANGUAGE_CODES;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} EFI_SHELL;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 PageCount;
+} DYNAMIC_PAGE_COUNT;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 GroupCount;
+} DYNAMIC_PAGE_GROUP_COUNT;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 DeviceCount;
+} DYNAMIC_PAGE_DEVICE_COUNT;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 NonDeviceClassCount;
+  UINT16 DiscDeviceClassCount;
+  UINT16 VideoDeviceClassCount;
+  UINT16 NetworkDeviceClassCount;
+  UINT16 InputDeviceClassCount;
+  UINT16 OnBoardDeviceClassCount;
+  UINT16 OtherDeviceClassCount;
+} DYNAMIC_PAGE_GROUP_CLASS_COUNT;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} OEMTSEVAR;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Enable;
+} DRIVER_HEALTH_ENABLE;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 DrvHandleCount;
+} DRIVER_HEALTH;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 DrvHealthCtrlCnt;
+} DRIVER_HEALTH_CTRL_COUNT;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 DriverCount;
+} DRIVER_MANAGER;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Value;
+} DRIVER_ORDER;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Option;
+} DEL_DRIVER_OPTION;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 ErrorCount;
+  UINT16 ErrorFunction;
+} ERROR_MANAGER;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Label[20];
+  UINT16 FsCount;
+  UINT16 SelFs;
+  UINT16 Path[120];
+} NEW_BOOT_OPTION;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Label[20];
+  UINT16 FsCount;
+  UINT16 SelFs;
+  UINT16 DriverPath[120];
+} NEW_DRIVER_OPTION;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Count;
+} USER_DEFAULTS;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 Count;
+  UINT16 Supported;
+  UINT16 Enabled;
+  UINT16 Locked;
+  UINT16 Frozen;
+  UINT16 UserPasswordStatus;
+  UINT16 MasterPasswordStatus;
+  UINT16 ShowMaster;
+  UINT16 IDEUserPassword[32];
+  UINT16 IDEMasterPassword[32];
+} IDE_SECURITY_CONFIG;  // ADDED FROM GENERIC DEFINITIONS
+
+typedef struct {
+  UINT16 UserPassword[20];
+  UINT16 AdminPassword[20];
+  UINT8 AMISilentBoot;
+} AMITSESETUP;  // ADDED FROM GENERIC DEFINITIONS
+

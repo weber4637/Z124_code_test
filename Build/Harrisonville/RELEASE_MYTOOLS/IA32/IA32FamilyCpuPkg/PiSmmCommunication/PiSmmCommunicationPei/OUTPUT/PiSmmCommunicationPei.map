@@ -1,0 +1,41 @@
+ PiSmmCommunicationPei
+
+ Timestamp is 6448e7cf (Wed Apr 26 16:58:55 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000003adH .text                   CODE
+ 0002:00000000 00000050H .data                   DATA
+ 0002:00000050 00000000H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000005       _InternalSmstGetVendorTableByGuid 00000245 f   PiSmmCommunicationPei:PiSmmCommunicationPei.obj
+ 0001:0000008e       _InitCommunicationContext  000002ce f   PiSmmCommunicationPei:PiSmmCommunicationPei.obj
+ 0001:000000cb       _Communicate               0000030b f   PiSmmCommunicationPei:PiSmmCommunicationPei.obj
+ 0001:0000016d       _PiSmmCommunicationPeiEntryPoint 000003ad f   PiSmmCommunicationPei:PiSmmCommunicationPei.obj
+ 0001:000001f1       _GetHobList                00000431 f   PeiHobLib:HobLib.obj
+ 0001:0000020b       _GetNextHob                0000044b f   PeiHobLib:HobLib.obj
+ 0001:00000238       _GetFirstGuidHob           00000478 f   PeiHobLib:HobLib.obj
+ 0001:0000026e       _InternalPeiCreateHob      000004ae f   PeiHobLib:HobLib.obj
+ 0001:00000296       _BuildGuidHob              000004d6 f   PeiHobLib:HobLib.obj
+ 0001:000002b1       _CopyMem                   000004f1 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000002c9       _CopyGuid                  00000509 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000002ed       _CompareGuid               0000052d f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00000311       _PeiServicesLocatePpi      00000551 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:0000032c       _GetPeiServicesTablePointer 0000056c f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000350       _InternalMemCopyMem        00000590     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000390       _InternalMemZeroMem        000005d0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gEfiAcpiVariableGuid      00000600     PiSmmCommunicationPei:AutoGen.obj
+ 0002:00000010       _gEfiPeiSmmCommunicationPpiGuid 00000610     PiSmmCommunicationPei:AutoGen.obj
+ 0002:00000020       _gPeiSmmAccessPpiGuid      00000620     PiSmmCommunicationPei:AutoGen.obj
+ 0002:00000030       _gPeiSmmControlPpiGuid     00000630     PiSmmCommunicationPei:AutoGen.obj
+ 0002:00000040       _mSmmCommunicationPpi      00000640     PiSmmCommunicationPei:PiSmmCommunicationPei.obj
+ 0002:00000044       _mPpiList                  00000644     PiSmmCommunicationPei:PiSmmCommunicationPei.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

@@ -1,0 +1,82 @@
+ CpuPei
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001b5fH .text                   CODE
+ 0002:00000000 00000080H .data                   DATA
+ 0002:00000080 00000084H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000005       _CpuPeimInit               00000245 f   CpuPei:CpuPeim.obj
+ 0001:00000081       _SecPlatformInformation    000002c1 f   CpuPei:Bist.obj
+ 0001:0000010f       _BuildBistAndCpuInfoHob    0000034f f   CpuPei:Bist.obj
+ 0001:0000025f       _PeiSetCacheAttributes     0000049f f   CpuPei:Cache.obj
+ 0001:00000280       _PeiResetCacheAttributes   000004c0 f   CpuPei:Cache.obj
+ 0001:000002fb       _AsmCpuid                  0000053b f   BaseLib:CpuId.obj
+ 0001:00000332       _CopyMem                   00000572 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:0000034a       _CompareGuid               0000058a f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:0000037b       _GetHobList                000005bb f   PeiHobLib:HobLib.obj
+ 0001:00000395       _GetNextHob                000005d5 f   PeiHobLib:HobLib.obj
+ 0001:000003c2       _InternalPeiCreateHob      00000602 f   PeiHobLib:HobLib.obj
+ 0001:000003eb       _BuildResourceDescriptorHob 0000062b f   PeiHobLib:HobLib.obj
+ 0001:0000042c       _BuildGuidDataHob          0000066c f   PeiHobLib:HobLib.obj
+ 0001:0000046d       _BuildMemoryAllocationHob  000006ad f   PeiHobLib:HobLib.obj
+ 0001:000004b7       _GetVariableMtrrCount      000006f7 f   MtrrLib:MtrrLib.obj
+ 0001:000004d9       _GetFirmwareVariableMtrrCountWorker 00000719 f   MtrrLib:MtrrLib.obj
+ 0001:000004f8       _MtrrGetDefaultMemoryTypeWorker 00000738 f   MtrrLib:MtrrLib.obj
+ 0001:0000050b       _PreMtrrChange             0000074b f   MtrrLib:MtrrLib.obj
+ 0001:00000554       _PostMtrrChangeEnableCache 00000794 f   MtrrLib:MtrrLib.obj
+ 0001:00000582       _MtrrGetFixedMtrrWorker    000007c2 f   MtrrLib:MtrrLib.obj
+ 0001:000005b5       _MtrrGetVariableMtrrWorker 000007f5 f   MtrrLib:MtrrLib.obj
+ 0001:00000623       _ProgramFixedMtrr          00000863 f   MtrrLib:MtrrLib.obj
+ 0001:00000763       _MtrrGetMemoryAttributeInVariableMtrrWorker 000009a3 f   MtrrLib:MtrrLib.obj
+ 0001:000007ef       _CheckMemoryAttributeOverlap 00000a2f f   MtrrLib:MtrrLib.obj
+ 0001:00000840       _CombineMemoryAttribute    00000a80 f   MtrrLib:MtrrLib.obj
+ 0001:00000a04       _Power2MaxMemory           00000c44 f   MtrrLib:MtrrLib.obj
+ 0001:00000a7c       _GetMtrrNumberAndDirection 00000cbc f   MtrrLib:MtrrLib.obj
+ 0001:00000b5b       _InvalidateMtrr            00000d9b f   MtrrLib:MtrrLib.obj
+ 0001:00000b88       _ProgramVariableMtrr       00000dc8 f   MtrrLib:MtrrLib.obj
+ 0001:00000bcb       _GetMemoryCacheTypeFromMtrrType 00000e0b f   MtrrLib:MtrrLib.obj
+ 0001:00000c16       _MtrrLibInitializeMtrrMask 00000e56 f   MtrrLib:MtrrLib.obj
+ 0001:00000c85       _MtrrPrecedence            00000ec5 f   MtrrLib:MtrrLib.obj
+ 0001:00000d25       _MtrrGetMemoryAttributeByAddressWorker 00000f65 f   MtrrLib:MtrrLib.obj
+ 0001:00000ee0       _MtrrDebugPrintAllMtrrsWorker 00001120 f   MtrrLib:MtrrLib.obj
+ 0001:000011c8       _MtrrSetMemoryAttributeWorker 00001408 f   MtrrLib:MtrrLib.obj
+ 0001:000017e6       _MtrrSetVariableMtrrWorker 00001a26 f   MtrrLib:MtrrLib.obj
+ 0001:0000184d       _MtrrSetFixedMtrrWorker    00001a8d f   MtrrLib:MtrrLib.obj
+ 0001:0000188a       _IsMtrrSupported           00001aca f   MtrrLib:MtrrLib.obj
+ 0001:000018e3       _InternalReportStatusCode  00001b23 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000190e       _GetPeiServicesTablePointer 00001b4e f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00001928       _LowBitSet64               00001b68 f   BaseLib:LowBitSet64.obj
+ 0001:0000196a       _BitFieldRead64            00001baa f   BaseLib:BitField.obj
+ 0001:00001998       _BitFieldOr64              00001bd8 f   BaseLib:BitField.obj
+ 0001:000019d3       _BitFieldAnd64             00001c13 f   BaseLib:BitField.obj
+ 0001:00001a0e       _BitFieldAndThenOr64       00001c4e f   BaseLib:BitField.obj
+ 0001:00001a32       _AsmMsrBitFieldWrite64     00001c72 f   BaseLib:X86Msr.obj
+ 0001:00001a67       _RShiftU64                 00001ca7 f   BaseLib:RShiftU64.obj
+ 0001:00001a83       _LShiftU64                 00001cc3 f   BaseLib:LShiftU64.obj
+ 0001:00001aa0       _InternalMemCopyMem        00001ce0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001ae0       _InternalMemZeroMem        00001d20     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001b00       _InternalMemSetMem         00001d40     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001b20       _InternalMemSetMem32       00001d60     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001b40       _InternalMemSetMem64       00001d80     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gEfiCallerIdGuid          00001da0     CpuPei:AutoGen.obj
+ 0002:00000010       _gEfiHtBistHobGuid         00001db0     CpuPei:AutoGen.obj
+ 0002:00000020       _gEfiPeiMasterBootModePpiGuid 00001dc0     CpuPei:AutoGen.obj
+ 0002:00000030       _gEfiSecPlatformInformationPpiGuid 00001dd0     CpuPei:AutoGen.obj
+ 0002:00000040       _gPeiCachePpiGuid          00001de0     CpuPei:AutoGen.obj
+ 0002:00000050       _mCachePpi                 00001df0     CpuPei:Cache.obj
+ 0002:00000058       _mSecPlatformInformationPpi 00001df8     CpuPei:Bist.obj
+ 0002:0000005c       _mPeiSecPlatformInformationPpi 00001dfc     CpuPei:Bist.obj
+ 0002:00000068       _mPpiList                  00001e08     CpuPei:CpuPeim.obj
+ 0002:00000080       _mMtrrLibFixedMtrrTable    00001e20     MtrrLib:MtrrLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

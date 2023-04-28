@@ -1,0 +1,154 @@
+AMIBIOS Setup Script Processor
+Version 3.42 (AMISSP Language Version 2)
+Copyright (C) 1995-2004 American Megatrends, Inc.
+Build: Jul  1 2010 16:10:42
+
+Input files:
+  Build/SspFileList.txt (Setup Engine Template Definitions)
+
+                                 CMOS  CMOS CMOS  Default Failsafe                    
+Question                         Token Reg. Mask  Value   Value    Managed CkSum Fixed
+--------------------------------------------------------------------------------------
+CMOS_CHECKSUM_HIGH               8200h 40h  00FFh 0000h   0000h    Yes     No    Yes
+	(Input file: AmiCompatibilityPkg//CmosManager/CmosBoard.ssp)
+
+CMOS_CHECKSUM_LOW                8208h 41h  00FFh 0000h   0000h    Yes     No    Yes
+	(Input file: AmiCompatibilityPkg//CmosManager/CmosBoard.ssp)
+
+CMOS_API_BYTE3                   8210h 42h  00FFh x       x        No      x     Yes
+	(Input file: AmiCompatibilityPkg//CmosManager/CmosBoard.ssp)
+
+CMOS_API_BYTE2                   8218h 43h  00FFh x       x        No      x     Yes
+	(Input file: AmiCompatibilityPkg//CmosManager/CmosBoard.ssp)
+
+CMOS_API_BYTE1                   8220h 44h  00FFh x       x        No      x     Yes
+	(Input file: AmiCompatibilityPkg//CmosManager/CmosBoard.ssp)
+
+CMOS_API_BYTE0                   8228h 45h  00FFh x       x        No      x     Yes
+	(Input file: AmiCompatibilityPkg//CmosManager/CmosBoard.ssp)
+
+CMOS_5G_4G_FLAG                  8280h 50h  00FFh 00FFh   0000h    Yes     No    Yes
+	(Input file: AmiCompatibilityPkg//CmosManager/CmosBoard.ssp)
+
+CMOS_MGR_BATTERY_BAD             1230h 46h  0001h x       x        No      x     No 
+	(Input file: AmiCompatibilityPkg//CmosManager/Template.ssp)
+
+CMOS_MGR_CHECKSUM_BAD            1231h 46h  0002h x       x        No      x     No 
+	(Input file: AmiCompatibilityPkg//CmosManager/Template.ssp)
+
+CMOS_MGR_DEFAULTS_LOADED         1232h 46h  0004h x       x        No      x     No 
+	(Input file: AmiCompatibilityPkg//CmosManager/Template.ssp)
+
+CMOS_MGR_FIRST_BOOT_DETECTED     1233h 46h  0008h x       x        No      x     No 
+	(Input file: AmiCompatibilityPkg//CmosManager/Template.ssp)
+
+--------------------------------------------------------------------------------------
+
+
+CMOS Map by Location
+
+
+                                 CMOS  CMOS CMOS  Default Failsafe                    
+Question                         Token Reg. Mask  Value   Value    Managed CkSum Fixed
+--------------------------------------------------------------------------------------
+CMOS_CHECKSUM_HIGH               8200h 40h  00FFh 0000h   0000h    Yes     No    Yes
+CMOS_CHECKSUM_LOW                8208h 41h  00FFh 0000h   0000h    Yes     No    Yes
+CMOS_API_BYTE3                   8210h 42h  00FFh x       x        No      x     Yes
+CMOS_API_BYTE2                   8218h 43h  00FFh x       x        No      x     Yes
+CMOS_API_BYTE1                   8220h 44h  00FFh x       x        No      x     Yes
+CMOS_API_BYTE0                   8228h 45h  00FFh x       x        No      x     Yes
+CMOS_MGR_BATTERY_BAD             1230h 46h  0001h x       x        No      x     No 
+CMOS_MGR_CHECKSUM_BAD            1231h 46h  0002h x       x        No      x     No 
+CMOS_MGR_DEFAULTS_LOADED         1232h 46h  0004h x       x        No      x     No 
+CMOS_MGR_FIRST_BOOT_DETECTED     1233h 46h  0008h x       x        No      x     No 
+CMOS_5G_4G_FLAG                  8280h 50h  00FFh 00FFh   0000h    Yes     No    Yes
+--------------------------------------------------------------------------------------
+
+Set systax 'StorageType = ROM' tokens:
+
+                                 CMOS  CMOS CMOS  Default Failsafe                    
+Question                         Token Reg. Mask  Value   Value    Managed CkSum Fixed
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+String Tokens:
+
+                                 CMOS  CMOS CMOS  CMOS
+Question                         Token Reg. Mask  Bytes Managed CkSum Fixed
+---------------------------------------------------------------------------
+Not Available.---------------------------------------------------------------------------
+
+Redefined tokens:
+
+                                 CMOS  CMOS CMOS  Default Failsafe                    
+Question                         Token Reg. Mask  Value   Value    Managed CkSum Fixed
+--------------------------------------------------------------------------------------
+Not available.--------------------------------------------------------------------------------------
+
+
+Used storage address map:
+
+00:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+10:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+20:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+30:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+40:  FF FF FF FF FF FF 0F 00 - 00 00 00 00 00 00 00 00
+50:  FF
+------------------------------------------------------------------------------
+
+Fixed CMOS address map:
+
+00:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+10:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+20:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+30:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+40:  FF FF FF FF FF FF 00 00 - 00 00 00 00 00 00 00 00
+50:  FF
+------------------------------------------------------------------------------
+
+Checksummed CMOS address map:
+
+00:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+10:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+20:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+30:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+40:  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00
+50:  00
+------------------------------------------------------------------------------
+
+
+CMOS addresses excluded from checksum:
+
+40h 41h 47h 48h 49h 4Ah 4Bh 4Ch 4Dh 4Eh 4Fh 50h 
+------------------------------------------------------------------------------
+
+
+CMOS addresses excluded from managed:
+
+42h 43h 44h 45h 46h 
+------------------------------------------------------------------------------
+
+
+Last storage address used     = 050h
+First storage address in CMOS = 040h
+Last storage address in CMOS  = 050h
+Last storage address in ROM   = 050h
+
+
+Total QUESTION numbers           : 11
+Total External Function  numbers : 0
+Total Control  Function  numbers : 0
+
+;***************************************************************************
+;***************************************************************************
+;**                                                                       **
+;**           (C)Copyright 1985-2008, American Megatrends, Inc.           **
+;**                                                                       **
+;**                          All Rights Reserved.                         **
+;**                                                                       **
+;**         5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093          **
+;**                                                                       **
+;**                          Phone: (770)-246-8600                        **
+;**                                                                       **
+;***************************************************************************
+;***************************************************************************

@@ -1,0 +1,31 @@
+ NbPei
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001e2H .text                   CODE
+ 0002:00000000 00000080H .data                   DATA
+ 0002:00000080 00000000H .rdata                  DATA
+ 0002:00000080 00000004H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000000c       _NbPeiInit                 0000024c f   NbPei:NbPei.obj
+ 0001:000000ba       _ProgramNbSubId            000002fa f   NbPei:NbPei.obj
+ 0001:0000018a       _NbPeiInitAfterMemInstalled 000003ca f   NbPei:NbPei.obj
+ 0001:000001cc       _ProgramNbRegBeforeEndofPei 0000040c f   NbPei:NbPei.obj
+ 0002:00000000       _gAmiPeiNbCustomPpiGuid    00000440     NbPei:AutoGen.obj
+ 0002:00000010       _gAmiPeiNbInitPolicyGuid   00000450     NbPei:AutoGen.obj
+ 0002:00000020       _gEfiEndOfPeiSignalPpiGuid 00000460     NbPei:AutoGen.obj
+ 0002:00000030       _gEfiPeiMemoryDiscoveredPpiGuid 00000470     NbPei:AutoGen.obj
+ 0002:00000040       _gAmiPeiPciTableInitPpiGuid 00000480     NbPei:AutoGen.obj
+ 0002:00000050       _stNBH2P_PCIInitTable      00000490     NbPei:NbPeiBoard.obj
+ 0002:00000058       _wNBH2P_PCIInitTableSize   00000498     NbPei:NbPeiBoard.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

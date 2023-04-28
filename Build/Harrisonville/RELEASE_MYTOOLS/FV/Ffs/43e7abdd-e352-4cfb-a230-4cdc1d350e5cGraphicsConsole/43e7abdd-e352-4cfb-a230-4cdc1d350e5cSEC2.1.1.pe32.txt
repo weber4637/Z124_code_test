@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\43e7abdd-e352-4cfb-a230-4cdc1d350e5cGraphicsConsole\43e7abdd-e352-4cfb-a230-4cdc1d350e5cSEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\Console\GraphicsConsole\GraphicsConsole\OUTPUT\GraphicsConsole.efi

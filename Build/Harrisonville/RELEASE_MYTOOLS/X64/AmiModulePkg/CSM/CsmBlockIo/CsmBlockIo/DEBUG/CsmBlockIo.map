@@ -1,0 +1,93 @@
+ CsmBlockIo
+
+ Timestamp is 6448e7f6 (Wed Apr 26 16:59:34 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000250aH .text                   CODE
+ 0002:00000000 00000678H .data                   DATA
+ 0002:00000680 00000062H .rdata                  DATA
+ 0002:000006e8 000000b0H .bss                    DATA
+ 0003:00000000 000000ccH .pdata                  DATA
+ 0004:00000000 00000114H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000b0       CsmBlockIoSupported        0000000000000350 f   CsmBlockIo:CsmBlockIo.obj
+ 0001:00000288       CsmBlockIoStart            0000000000000528 f   CsmBlockIo:CsmBlockIo.obj
+ 0001:00000990       CsmBlockIoStop             0000000000000c30 f   CsmBlockIo:CsmBlockIo.obj
+ 0001:00000ba4       BuildDevicePath            0000000000000e44 f   CsmBlockIo:CsmBlockIo.obj
+ 0001:00000e94       CsmBlockIoComebackFromLegacyBoot 0000000000001134 f   CsmBlockIo:CsmBlockIo.obj
+ 0001:00000ef0       CsmBlockIoComponentNameGetDriverName 0000000000001190 f   CsmBlockIo:CsmBlockIoComponentName.obj
+ 0001:00000f00       CsmBlockIoComponentNameGetControllerName 00000000000011a0 f   CsmBlockIo:CsmBlockIoComponentName.obj
+ 0001:00000f0c       InitBlockIo                00000000000011ac f   CsmBlockIo:CsmInt13.obj
+ 0001:00001068       GetInt13DeviceParameters   0000000000001308 f   CsmBlockIo:CsmInt13.obj
+ 0001:00001150       GetInt13Extensions         00000000000013f0 f   CsmBlockIo:CsmInt13.obj
+ 0001:00001220       GetDriveParameters         00000000000014c0 f   CsmBlockIo:CsmInt13.obj
+ 0001:000014cc       CsmBlockIoFlushBlocks      000000000000176c f   CsmBlockIo:CsmInt13.obj
+ 0001:000014d0       CsmBlockIoReset            0000000000001770 f   CsmBlockIo:CsmInt13.obj
+ 0001:0000157c       Edd11CsmReadBlocks         000000000000181c f   CsmBlockIo:CsmInt13.obj
+ 0001:00001854       Edd11CsmWriteBlocks        0000000000001af4 f   CsmBlockIo:CsmInt13.obj
+ 0001:00001b48       LegacyCsmReadBlocks        0000000000001de8 f   CsmBlockIo:CsmInt13.obj
+ 0001:00001e84       LegacyCsmWriteBlocks       0000000000002124 f   CsmBlockIo:CsmInt13.obj
+ 0001:000021ec       PatchHwInterrupt           000000000000248c f   CsmBlockIo:CsmInt13.obj
+ 0001:00002218       Malloc                     00000000000024b8 f   AmiDxeLib:EfiLib.obj
+ 0001:00002244       DPLength                   00000000000024e4 f   AmiDxeLib:EfiLib.obj
+ 0001:00002288       DPAddNode                  0000000000002528 f   AmiDxeLib:EfiLib.obj
+ 0001:00002360       DPCopy                     0000000000002600 f   AmiDxeLib:EfiLib.obj
+ 0001:000023b0       CPULib_CpuID               0000000000002650 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000023f0       memset                     0000000000002690     AmiDxeLib:MemSet.obj
+ 0001:000023fe       MemSetAsm                  000000000000269e f   AmiDxeLib:MemSet.obj
+ 0001:00002450       memcpy                     00000000000026f0     AmiDxeLib:MemCpy.obj
+ 0001:00002450       MemCpyAsm                  00000000000026f0 f   AmiDxeLib:MemCpy.obj
+ 0001:00002500       GetCpuTimer                00000000000027a0 f   AmiDxeLib:GetCpuTimer.obj
+ 0002:00000000       gAmiCsmThunkDriverGuid     00000000000027c0     CsmBlockIo:AutoGen.obj
+ 0002:00000010       gEfiLegacyBiosProtocolGuid 00000000000027d0     CsmBlockIo:AutoGen.obj
+ 0002:00000020       gEfiPciIoProtocolGuid      00000000000027e0     CsmBlockIo:AutoGen.obj
+ 0002:00000030       gEfiLegacyBiosExtProtocolGuid 00000000000027f0     CsmBlockIo:AutoGen.obj
+ 0002:00000040       gEfiBlockIoProtocolGuid    0000000000002800     CsmBlockIo:AutoGen.obj
+ 0002:00000050       gEfiDriverBindingProtocolGuid 0000000000002810     CsmBlockIo:AutoGen.obj
+ 0002:00000060       gEfiIdeControllerInitProtocolGuid 0000000000002820     CsmBlockIo:AutoGen.obj
+ 0002:00000070       gEfiLegacy8259ProtocolGuid 0000000000002830     CsmBlockIo:AutoGen.obj
+ 0002:00000080       gEfiComponentNameProtocolGuid 0000000000002840     CsmBlockIo:AutoGen.obj
+ 0002:00000090       gEfiDevicePathProtocolGuid 0000000000002850     CsmBlockIo:AutoGen.obj
+ 0002:000000a0       EfiErrorStatus             0000000000002860     AmiDxeLib:StdLibC.obj
+ 0002:000003e0       PiErrorStatus              0000000000002ba0     AmiDxeLib:StdLibC.obj
+ 0002:00000430       AmiErrorStatus             0000000000002bf0     AmiDxeLib:StdLibC.obj
+ 0002:00000470       EfiWarningStatus           0000000000002c30     AmiDxeLib:StdLibC.obj
+ 0002:000004e0       PiWarningStatus            0000000000002ca0     AmiDxeLib:StdLibC.obj
+ 0002:00000528       EfiUnknown                 0000000000002ce8     AmiDxeLib:StdLibC.obj
+ 0002:00000608       gCsmBlockIoDriverName      0000000000002dc8     CsmBlockIo:CsmBlockIoComponentName.obj
+ 0002:00000610       gCsmBlockIoComponentName   0000000000002dd0     CsmBlockIo:CsmBlockIoComponentName.obj
+ 0002:00000628       gCsmBlockIoDriverBinding   0000000000002de8     CsmBlockIo:CsmBlockIo.obj
+ 0002:00000658       gOnboardRaidGuid           0000000000002e18     CsmBlockIo:CsmBlockIo.obj
+ 0002:00000668       gLTEBGuid                  0000000000002e28     CsmBlockIo:CsmBlockIo.obj
+ 0002:00000680       _gUefiDriverRevision       0000000000002e40     CsmBlockIo:AutoGen.obj
+ 0002:00000684       ??_C@_05CJAFALDK@ATAPI?$AA@ 0000000000002e44     CsmBlockIo:CsmBlockIo.obj
+ 0002:0000068c       ??_C@_03HPMEOHJD@ATA?$AA@  0000000000002e4c     CsmBlockIo:CsmBlockIo.obj
+ 0002:00000690       ??_C@_04IAIOCOIP@SCSI?$AA@ 0000000000002e50     CsmBlockIo:CsmBlockIo.obj
+ 0002:00000698       ??_C@_03IONNGCBN@USB?$AA@  0000000000002e58     CsmBlockIo:CsmBlockIo.obj
+ 0002:0000069c       ??_C@_04NHJCODHD@1394?$AA@ 0000000000002e5c     CsmBlockIo:CsmBlockIo.obj
+ 0002:000006a4       ??_C@_05BBPEFMDN@FIBRE?$AA@ 0000000000002e64     CsmBlockIo:CsmBlockIo.obj
+ 0002:000006ac       ??_C@_03LKLGDMJI@eng?$AA@  0000000000002e6c     CsmBlockIo:CsmBlockIoComponentName.obj
+ 0002:000006b0       ??_C@_1DC@DBFKKHDG@?$AAA?$AAM?$AAI?$AA?5?$AAC?$AAS?$AAM?$AA?5?$AAB?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAI?$AA?1?$AAO?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000002e70     CsmBlockIo:CsmBlockIoComponentName.obj
+ 0002:000006e8       mCurrentUsers              0000000000002ea8     CsmBlockIo:CsmBlockIo.obj
+ 0002:000006f0       mRealModeBuffer            0000000000002eb0     CsmBlockIo:CsmBlockIo.obj
+ 0002:000006f8       gImageHandle               0000000000002eb8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000700       gST                        0000000000002ec0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000708       gBS                        0000000000002ec8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000758       pST                        0000000000002f18     AmiDxeLib:EfiLib.obj
+ 0002:00000760       pBS                        0000000000002f20     AmiDxeLib:EfiLib.obj
+ 0002:00000768       pRS                        0000000000002f28     AmiDxeLib:EfiLib.obj
+ 0002:00000770       TheImageHandle             0000000000002f30     AmiDxeLib:EfiLib.obj
+ 0002:00000778       gTempHwIntSav              0000000000002f38     <common>
+ 0002:00000780       mDriveParameterBuffer      0000000000002f40     <common>
+ 0002:00000788       mEDDTransferBuffer         0000000000002f48     <common>
+ 0002:00000790       mEDDPacketBuffer           0000000000002f50     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

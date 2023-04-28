@@ -1,0 +1,19 @@
+<component>
+	name = "SuperI/O - NCT6776"
+	category = IO
+	LocalRoot = "AmiModulePkg\IO\NCT6776\"
+	RefName = "NCT6776"
+[INF]
+"NCT6776DxeInit.inf"
+"NCT6776PeiInit.inf"
+"NCT6776PlatformHookSerialPortLib.inf"
+[files]
+"NCT6776.sdl"
+"NCT6776.mak"
+"NCT6776.chm"
+[parts]
+"NCT6776Asl"
+"NCT6776Setup"
+"NCT6776HwMonitor"
+<endComponent>
+

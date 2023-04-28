@@ -1,0 +1,46 @@
+ NetworkStackSetupScreen
+
+ Timestamp is 6448e7f4 (Wed Apr 26 16:59:32 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000250H .text                   CODE
+ 0002:00000000 00000578H .data                   DATA
+ 0002:00000580 00000028H .rdata                  DATA
+ 0002:000005b0 00000089H .bss                    DATA
+ 0003:00000000 00000018H .pdata                  DATA
+ 0004:00000000 00000014H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       ProcessModuleEntryPointList 0000000000000288 f   NetworkStackSetupScreen:AutoGen.obj
+ 0001:000000f0       GetCpuTimer                0000000000000350 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000100       CPULib_CpuID               0000000000000360 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000140       memset                     00000000000003a0     AmiDxeLib:MemSet.obj
+ 0001:0000014e       MemSetAsm                  00000000000003ae f   AmiDxeLib:MemSet.obj
+ 0001:000001a0       memcpy                     0000000000000400     AmiDxeLib:MemCpy.obj
+ 0001:000001a0       MemCpyAsm                  0000000000000400 f   AmiDxeLib:MemCpy.obj
+ 0002:00000000       gEfiNetworkStackSetupGuid  00000000000004c0     NetworkStackSetupScreen:AutoGen.obj
+ 0002:00000010       EfiErrorStatus             00000000000004d0     AmiDxeLib:StdLibC.obj
+ 0002:00000350       PiErrorStatus              0000000000000810     AmiDxeLib:StdLibC.obj
+ 0002:000003a0       AmiErrorStatus             0000000000000860     AmiDxeLib:StdLibC.obj
+ 0002:000003e0       EfiWarningStatus           00000000000008a0     AmiDxeLib:StdLibC.obj
+ 0002:00000450       PiWarningStatus            0000000000000910     AmiDxeLib:StdLibC.obj
+ 0002:00000498       EfiUnknown                 0000000000000958     AmiDxeLib:StdLibC.obj
+ 0002:00000580       _gUefiDriverRevision       0000000000000a40     NetworkStackSetupScreen:AutoGen.obj
+ 0002:00000588       ??_C@_1CA@BCMJNMNL@?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AAS?$AAt?$AAa?$AAc?$AAk?$AAV?$AAa?$AAr?$AA?$AA@ 0000000000000a48     NetworkStackSetupScreen:NetworkStackSetupScreen.obj
+ 0002:000005b0       gImageHandle               0000000000000a70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005b8       gST                        0000000000000a78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005c0       gBS                        0000000000000a80     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000610       pST                        0000000000000ad0     AmiDxeLib:EfiLib.obj
+ 0002:00000618       pBS                        0000000000000ad8     AmiDxeLib:EfiLib.obj
+ 0002:00000620       pRS                        0000000000000ae0     AmiDxeLib:EfiLib.obj
+ 0002:00000628       TheImageHandle             0000000000000ae8     AmiDxeLib:EfiLib.obj
+ 0002:00000630       mNetworkStackData          0000000000000af0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

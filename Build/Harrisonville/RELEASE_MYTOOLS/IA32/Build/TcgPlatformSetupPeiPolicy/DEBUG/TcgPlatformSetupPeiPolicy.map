@@ -1,0 +1,27 @@
+ TcgPlatformSetupPeiPolicy
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000027dH .text                   CODE
+ 0002:00000000 00000054H .data                   DATA
+ 0002:00000054 0000000cH .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000000c       _getTcgPeiPolicy           0000024c f   TcgPlatformSetupPeiPolicy:TcgPlatformSetupPeiPolicy.obj
+ 0001:0000010a       _TcgPlatformSetupPeiPolicyEntryPoint 0000034a f   TcgPlatformSetupPeiPolicy:TcgPlatformSetupPeiPolicy.obj
+ 0001:00000260       _InternalMemCompareMem     000004a0     BaseMemoryLibRepStr:CompareMem.obj
+ 0002:00000000       _gSetupVariableGuid        000004c0     TcgPlatformSetupPeiPolicy:AutoGen.obj
+ 0002:00000010       _TcgPeiPolicyHobGuid       000004d0     TcgPlatformSetupPeiPolicy:AutoGen.obj
+ 0002:00000020       _gTcgPeiPolicyGuid         000004e0     TcgPlatformSetupPeiPolicy:AutoGen.obj
+ 0002:00000030       _gEfiPeiReadOnlyVariable2PpiGuid 000004f0     TcgPlatformSetupPeiPolicy:AutoGen.obj
+ 0002:00000054       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 00000514     TcgPlatformSetupPeiPolicy:TcgPlatformSetupPeiPolicy.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

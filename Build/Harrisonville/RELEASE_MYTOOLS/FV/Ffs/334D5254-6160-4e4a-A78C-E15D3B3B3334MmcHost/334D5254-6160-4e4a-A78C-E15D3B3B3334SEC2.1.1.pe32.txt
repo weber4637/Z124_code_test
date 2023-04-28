@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\334D5254-6160-4e4a-A78C-E15D3B3B3334MmcHost\334D5254-6160-4e4a-A78C-E15D3B3B3334SEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\DenvertonPkg\SouthCluster\SDControllerDxe\MmcHostDxe\OUTPUT\MmcHost.efi

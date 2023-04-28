@@ -1,0 +1,66 @@
+ DiskIoDxe
+
+ Timestamp is 6448e7ed (Wed Apr 26 16:59:25 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000017cdH .text                   CODE
+ 0002:00000000 00000178H .data                   DATA
+ 0002:00000178 00000048H .rdata                  DATA
+ 0002:000001c0 00000020H .bss                    DATA
+ 0003:00000000 000000fcH .pdata                  DATA
+ 0004:00000000 000000e4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000088       DiskIoDriverBindingSupported 0000000000000328 f   DiskIoDxe:DiskIo.obj
+ 0001:000000f4       DiskIoDriverBindingStart   0000000000000394 f   DiskIoDxe:DiskIo.obj
+ 0001:0000030c       DiskIoDriverBindingStop    00000000000005ac f   DiskIoDxe:DiskIo.obj
+ 0001:000004f4       DiskIoDestroySubtask       0000000000000794 f   DiskIoDxe:DiskIo.obj
+ 0001:000005fc       DiskIo2OnReadWriteComplete 000000000000089c f   DiskIoDxe:DiskIo.obj
+ 0001:000006a8       DiskIoCreateSubtask        0000000000000948 f   DiskIoDxe:DiskIo.obj
+ 0001:00000784       DiskIoCreateSubtaskList    0000000000000a24 f   DiskIoDxe:DiskIo.obj
+ 0001:00000c80       DiskIo2Cancel              0000000000000f20 f   DiskIoDxe:DiskIo.obj
+ 0001:00000d10       DiskIo2RemoveCompletedTask 0000000000000fb0 f   DiskIoDxe:DiskIo.obj
+ 0001:00000dbc       DiskIo2ReadWriteDisk       000000000000105c f   DiskIoDxe:DiskIo.obj
+ 0001:00001210       DiskIo2ReadDiskEx          00000000000014b0 f   DiskIoDxe:DiskIo.obj
+ 0001:00001244       DiskIo2WriteDiskEx         00000000000014e4 f   DiskIoDxe:DiskIo.obj
+ 0001:00001278       DiskIo2OnFlushComplete     0000000000001518 f   DiskIoDxe:DiskIo.obj
+ 0001:000012bc       DiskIo2FlushDiskEx         000000000000155c f   DiskIoDxe:DiskIo.obj
+ 0001:000013bc       DiskIoReadDisk             000000000000165c f   DiskIoDxe:DiskIo.obj
+ 0001:000013ec       DiskIoWriteDisk            000000000000168c f   DiskIoDxe:DiskIo.obj
+ 0001:0000141c       DiskIoComponentNameGetDriverName 00000000000016bc f   DiskIoDxe:ComponentName.obj
+ 0001:000015f0       DiskIoComponentNameGetControllerName 0000000000001890 f   DiskIoDxe:ComponentName.obj
+ 0001:000015fc       InternalAllocateAlignedPages 000000000000189c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000016fc       InternalAllocatePool       000000000000199c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000172c       InternalAllocateCopyPool   00000000000019cc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001770       InternalMemCopyMem         0000000000001a10     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000017b0       InternalMemZeroMem         0000000000001a50     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gEfiDiskIoProtocolGuid     0000000000001a80     DiskIoDxe:AutoGen.obj
+ 0002:00000010       gEfiDiskIo2ProtocolGuid    0000000000001a90     DiskIoDxe:AutoGen.obj
+ 0002:00000020       gEfiBlockIoProtocolGuid    0000000000001aa0     DiskIoDxe:AutoGen.obj
+ 0002:00000030       gEfiBlockIo2ProtocolGuid   0000000000001ab0     DiskIoDxe:AutoGen.obj
+ 0002:00000040       gEfiDriverBindingProtocolGuid 0000000000001ac0     DiskIoDxe:AutoGen.obj
+ 0002:00000050       gEfiComponentNameProtocolGuid 0000000000001ad0     DiskIoDxe:AutoGen.obj
+ 0002:00000060       gEfiComponentName2ProtocolGuid 0000000000001ae0     DiskIoDxe:AutoGen.obj
+ 0002:00000070       gDiskIoDriverBinding       0000000000001af0     DiskIoDxe:DiskIo.obj
+ 0002:000000a0       gDiskIoPrivateDataTemplate 0000000000001b20     DiskIoDxe:DiskIo.obj
+ 0002:00000128       gDiskIoComponentName       0000000000001ba8     DiskIoDxe:ComponentName.obj
+ 0002:00000140       gDiskIoComponentName2      0000000000001bc0     DiskIoDxe:ComponentName.obj
+ 0002:00000158       mDiskIoDriverNameTable     0000000000001bd8     DiskIoDxe:ComponentName.obj
+ 0002:00000178       _gUefiDriverRevision       0000000000001bf8     DiskIoDxe:AutoGen.obj
+ 0002:00000180       ??_C@_1DA@GMFAKFNA@?$AAG?$AAe?$AAn?$AAe?$AAr?$AAi?$AAc?$AA?5?$AAD?$AAi?$AAs?$AAk?$AA?5?$AAI?$AA?1?$AAO?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000001c00     DiskIoDxe:ComponentName.obj
+ 0002:000001b0       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000001c30     DiskIoDxe:ComponentName.obj
+ 0002:000001b8       ??_C@_02LFNMGJAP@en?$AA@   0000000000001c38     DiskIoDxe:ComponentName.obj
+ 0002:000001bc       ??_C@_03LKLGDMJI@eng?$AA@  0000000000001c3c     DiskIoDxe:ComponentName.obj
+ 0002:000001c0       gImageHandle               0000000000001c40     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001c8       gST                        0000000000001c48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001d0       gBS                        0000000000001c50     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001d8       gRT                        0000000000001c58     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

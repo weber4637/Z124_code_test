@@ -1,0 +1,77 @@
+ SaInit
+
+ Timestamp is 6448e7f1 (Wed Apr 26 16:59:29 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000014f2H .text                   CODE
+ 0002:00000000 0000012cH .data                   DATA
+ 0002:00000130 00000004H .rdata                  DATA
+ 0002:00000140 00000111H .bss                    DATA
+ 0003:00000000 000000ccH .pdata                  DATA
+ 0004:00000000 000000b0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000090       ProcessModuleEntryPointList 0000000000000330 f   SaInit:AutoGen.obj
+ 0001:00000168       SaEndOfDxeCallback         0000000000000408 f   SaInit:SaInit.obj
+ 0001:000001e0       SaMiscellaneousRegisters   0000000000000480 f   SaInit:SaInit.obj
+ 0001:0000033c       UpdateDRHD                 00000000000005dc f   SaInit:VTd.obj
+ 0001:000004e0       DmarTableUpdate            0000000000000780 f   SaInit:VTd.obj
+ 0001:000007c4       UpdateDmarEndOfDxe         0000000000000a64 f   SaInit:VTd.obj
+ 0001:000009bc       VtdInit                    0000000000000c5c f   SaInit:VTd.obj
+ 0001:00000a88       LegacyRegionManipulation   0000000000000d28 f   SaInit:LegacyRegion.obj
+ 0001:00000cb4       LegacyRegionDecode         0000000000000f54 f   SaInit:LegacyRegion.obj
+ 0001:00000cf0       LegacyRegionBootLock       0000000000000f90 f   SaInit:LegacyRegion.obj
+ 0001:00000d0c       LegacyRegionLock           0000000000000fac f   SaInit:LegacyRegion.obj
+ 0001:00000d28       LegacyRegionUnlock         0000000000000fc8 f   SaInit:LegacyRegion.obj
+ 0001:00000d44       LegacyRegionGetInfo        0000000000000fe4 f   SaInit:LegacyRegion.obj
+ 0001:00000d6c       Imr1ConfigOnExitBootServicies 000000000000100c f   SaInit:LegacyRegion.obj
+ 0001:00000dd8       LegacyRegionInstall        0000000000001078 f   SaInit:LegacyRegion.obj
+ 0001:0000121c       PchPcrAndThenOr32          00000000000014bc f   PeiDxeSmmPchPcrLib:PchPcrLib.obj
+ 0001:000012bc       GetPchSeries               000000000000155c f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:000013d8       EfiGetSystemConfigurationTable 0000000000001678 f   UefiLib:UefiLib.obj
+ 0001:00001440       InternalMemCopyMem         00000000000016e0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001480       InternalMemSetMem          0000000000001720     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000014a0       InternalMemZeroMem         0000000000001740     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000014c0       InternalMemSetMem32        0000000000001760     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000014e0       InternalMemSetMem64        0000000000001780     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gSaAcpiTableStorageGuid    00000000000017a0     SaInit:AutoGen.obj
+ 0002:00000010       gEfiEndOfDxeEventGroupGuid 00000000000017b0     SaInit:AutoGen.obj
+ 0002:00000020       gSaDataHobGuid             00000000000017c0     SaInit:AutoGen.obj
+ 0002:00000030       gEfiEventExitBootServicesGuid 00000000000017d0     SaInit:AutoGen.obj
+ 0002:00000040       gEfiDxeServicesTableGuid   00000000000017e0     SaInit:AutoGen.obj
+ 0002:00000050       gEfiHobListGuid            00000000000017f0     SaInit:AutoGen.obj
+ 0002:00000060       gEfiAcpiTableProtocolGuid  0000000000001800     SaInit:AutoGen.obj
+ 0002:00000070       gEfiFirmwareVolume2ProtocolGuid 0000000000001810     SaInit:AutoGen.obj
+ 0002:00000080       gEfiLegacyRegion2ProtocolGuid 0000000000001820     SaInit:AutoGen.obj
+ 0002:00000090       gEfiS3SaveStateProtocolGuid 0000000000001830     SaInit:AutoGen.obj
+ 0002:000000bc       mDevEnMap                  000000000000185c     SaInit:VTd.obj
+ 0002:000000c0       PchLpRprDidTable           0000000000001860     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000000d8       PchHRprDidTable            0000000000001878     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000100       mLegacyRegion2             00000000000018a0     SaInit:LegacyRegion.obj
+ 0002:00000128       mPchSeries                 00000000000018c8     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00000130       _gUefiDriverRevision       00000000000018d0     SaInit:AutoGen.obj
+ 0002:00000148       mLegacyRegion2Handle       00000000000018e8     SaInit:LegacyRegion.obj
+ 0002:00000150       gImageHandle               00000000000018f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000158       gST                        00000000000018f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000160       gBS                        0000000000001900     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000168       gRT                        0000000000001908     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000178       gDS                        0000000000001918     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000180       mHobList                   0000000000001920     DxeHobLib:HobLib.obj
+ 0002:00000188       S3SaveState                0000000000001928     DxeS3BootScriptLibS3SaveStateProtocol:S3BootScriptLibS3SaveStateProtocol.obj
+ 0002:000001a0       mLegacyRegionDescriptor    0000000000001940     <common>
+ 0002:00000230       mImrMap                    00000000000019d0     <common>
+ 0002:00000240       mMchBar                    00000000000019e0     <common>
+ 0002:00000248       mSaDataHob                 00000000000019e8     <common>
+ 0002:00000250       mInterruptRemappingSupport 00000000000019f0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00001054       PchPcrWrite                00000000000012f4 f    CIL library: CIL module
+ 0001:00001264       PchP2sbCfgGet              0000000000001504 f    CIL library: CIL module

@@ -1,0 +1,52 @@
+ SmiFlashDxe
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000004a2H .text                   CODE
+ 0002:00000000 00000568H .data                   DATA
+ 0002:00000570 00000018H .rdata                  DATA
+ 0002:00000588 000000b0H .bss                    DATA
+ 0003:00000000 00000030H .pdata                  DATA
+ 0004:00000000 00000024H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000001000 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000cc       ProcessModuleEntryPointList 00000000000010cc f   SmiFlashDxe:AutoGen.obj
+ 0001:000001f4       AmiDebugLibExitBsNotifyEvent 00000000000011f4 f   RuntimeAmiDebugLib:RuntimeAmiDebugLib.obj
+ 0001:00000200       AmiDebugLibVirtualNotifyEvent 0000000000001200 f   RuntimeAmiDebugLib:RuntimeAmiDebugLib.obj
+ 0001:00000228       MemCmp                     0000000000001228 f   AmiDxeLib:Memory.obj
+ 0001:000002a4       GetEfiConfigurationTable   00000000000012a4 f   AmiDxeLib:EfiLib.obj
+ 0001:000002f0       CPULib_CpuID               00000000000012f0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000330       memset                     0000000000001330     AmiDxeLib:MemSet.obj
+ 0001:0000033e       MemSetAsm                  000000000000133e f   AmiDxeLib:MemSet.obj
+ 0001:00000390       MemCpyAsm                  0000000000001390 f   AmiDxeLib:MemCpy.obj
+ 0001:00000390       memcpy                     0000000000001390     AmiDxeLib:MemCpy.obj
+ 0001:00000440       GetCpuTimer                0000000000001440 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000450       InternalMemSetMem          0000000000001450     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000470       InternalMemSetMem32        0000000000001470     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000490       InternalMemSetMem64        0000000000001490     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       EfiErrorStatus             0000000000002000     AmiDxeLib:StdLibC.obj
+ 0002:00000340       PiErrorStatus              0000000000002340     AmiDxeLib:StdLibC.obj
+ 0002:00000390       AmiErrorStatus             0000000000002390     AmiDxeLib:StdLibC.obj
+ 0002:000003d0       EfiWarningStatus           00000000000023d0     AmiDxeLib:StdLibC.obj
+ 0002:00000440       PiWarningStatus            0000000000002440     AmiDxeLib:StdLibC.obj
+ 0002:00000488       EfiUnknown                 0000000000002488     AmiDxeLib:StdLibC.obj
+ 0002:00000570       _gUefiDriverRevision       0000000000002570     SmiFlashDxe:AutoGen.obj
+ 0002:00000578       ??_C@_1BA@CFEGMBCH@?$AAS?$AAF?$AAP?$AAF?$AAR?$AAE?$AAC?$AA?$AA@ 0000000000002578     SmiFlashDxe:SmiFlashDxe.obj
+ 0002:00000588       SMIFlashNotInSmm           0000000000002588     SmiFlashDxe:SmiFlashDxe.obj
+ 0002:00000590       gImageHandle               0000000000002590     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000598       gST                        0000000000002598     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005a0       gBS                        00000000000025a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000618       pST                        0000000000002618     AmiDxeLib:EfiLib.obj
+ 0002:00000620       pBS                        0000000000002620     AmiDxeLib:EfiLib.obj
+ 0002:00000628       pRS                        0000000000002628     AmiDxeLib:EfiLib.obj
+ 0002:00000630       TheImageHandle             0000000000002630     AmiDxeLib:EfiLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

@@ -1,0 +1,65 @@
+ EnhancePeiVariable
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000ce9H .text                   CODE
+ 0002:00000000 000000a0H .data                   DATA
+ 0002:000000a0 0000006cH .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000033       _CacheVariableMemoryDiscoveredCallback 00000273 f   EnhancePeiVariable:CacheVariablePei.obj
+ 0001:00000077       _CacheVariablePeiEntry     000002b7 f   EnhancePeiVariable:CacheVariablePei.obj
+ 0001:0000027a       _GetVarMemoryDiscoveredCallback 000004ba f   EnhancePeiVariable:GetVarFromStdDefaultPei.obj
+ 0001:000002a4       _GetVarFromStdDefaultHook  000004e4 f   EnhancePeiVariable:GetVarFromStdDefaultPei.obj
+ 0001:0000030a       _GetVarFromStdDefaultPeiEntry 0000054a f   EnhancePeiVariable:GetVarFromStdDefaultPei.obj
+ 0001:000004b3       _NvGetGuid                 000006f3 f   EnhancePeiVariable:NvramRead.obj
+ 0001:000004ce       _NvCalculateNvarChecksum   0000070e f   EnhancePeiVariable:NvramRead.obj
+ 0001:0000051c       _NvGetData                 0000075c f   EnhancePeiVariable:NvramRead.obj
+ 0001:000005b3       _NvIsVariable              000007f3 f   EnhancePeiVariable:NvramRead.obj
+ 0001:00000633       _NvGetNextValid            00000873 f   EnhancePeiVariable:NvramRead.obj
+ 0001:000006ae       _NvGetFirstValid           000008ee f   EnhancePeiVariable:NvramRead.obj
+ 0001:000006dc       _NvVarEq                   0000091c f   EnhancePeiVariable:NvramRead.obj
+ 0001:0000077f       _NvFindVariable            000009bf f   EnhancePeiVariable:NvramRead.obj
+ 0001:000007b9       _NvGetAttributesFromNvar   000009f9 f   EnhancePeiVariable:NvramRead.obj
+ 0001:00000814       _NvGetVariableFromNvar     00000a54 f   EnhancePeiVariable:NvramRead.obj
+ 0001:0000087a       _NvGetVariable             00000aba f   EnhancePeiVariable:NvramRead.obj
+ 0001:000008cd       _NvInitInfoBuffer          00000b0d f   EnhancePeiVariable:NvramRead.obj
+ 0001:00000922       _NvGetVariable2            00000b62 f   EnhancePeiVariable:NvramRead.obj
+ 0001:00000979       _CompareGuid               00000bb9 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:0000099d       _StrSize                   00000bdd f   BaseLib:String.obj
+ 0001:000009b2       _GetHobList                00000bf2 f   PeiHobLib:HobLib.obj
+ 0001:000009cc       _GetNextHob                00000c0c f   PeiHobLib:HobLib.obj
+ 0001:000009f9       _GetFirstGuidHob           00000c39 f   PeiHobLib:HobLib.obj
+ 0001:00000a2f       _InternalPeiCreateHob      00000c6f f   PeiHobLib:HobLib.obj
+ 0001:00000a57       _BuildGuidHob              00000c97 f   PeiHobLib:HobLib.obj
+ 0001:00000a84       _PeiServicesLocatePpi      00000cc4 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000aa0       _MemCmp                    00000ce0 f   AmiPeiLib:Memory.obj
+ 0001:00000afb       _GetPeiServicesTablePointer 00000d3b f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000b20       _memset                    00000d60     AmiPeiLib:MemSet.obj
+ 0001:00000b2a       _MemSetAsm                 00000d6a f   AmiPeiLib:MemSet.obj
+ 0001:00000b80       _memcpy                    00000dc0     AmiPeiLib:MemCpy.obj
+ 0001:00000b80       _MemCpyAsm                 00000dc0 f   AmiPeiLib:MemCpy.obj
+ 0001:00000b80       _MemCpy32                  00000dc0     AmiPeiLib:MemCpy.obj
+ 0001:00000c20       _EnableLongMode            00000e60 f   AmiPeiLib:EnableLongMode.obj
+ 0001:00000c90       _InternalMemZeroMem        00000ed0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000cb0       _InternalMemCopyMem        00000ef0     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       _gEfiPeiReadOnlyVariable2PpiGuid 00000f40     EnhancePeiVariable:AutoGen.obj
+ 0002:00000010       _gEfiPeiMemoryDiscoveredPpiGuid 00000f50     EnhancePeiVariable:AutoGen.obj
+ 0002:0000005c       _VariableToBeCachedList    00000f9c     EnhancePeiVariable:CacheVariablePei.obj
+ 0002:000000a0       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 00000fe0     EnhancePeiVariable:CacheVariablePei.obj
+ 0002:000000ac       ??_C@_1BI@MADBMCPM@?$AAS?$AAt?$AAd?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAs?$AA?$AA@ 00000fec     EnhancePeiVariable:GetVarFromStdDefaultPei.obj
+ 0002:000000c4       _FlashEmpty                00001004     AmiPeiLib:Tokens.obj
+ 0002:000000c8       _FlashEmptyNext            00001008     AmiPeiLib:Tokens.obj
+ 0002:000000cc       _AmiDefaultsVariableGuid   0000100c     EnhancePeiVariable:NvramRead.obj
+ 0002:000000dc       _MfgDefaults               0000101c     EnhancePeiVariable:NvramRead.obj
+ 0002:000000f4       _StdDefaults               00001034     EnhancePeiVariable:NvramRead.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

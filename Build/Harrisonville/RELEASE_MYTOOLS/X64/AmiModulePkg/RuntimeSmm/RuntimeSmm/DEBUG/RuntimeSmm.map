@@ -1,0 +1,60 @@
+ RuntimeSmm
+
+ Timestamp is 6448e7f6 (Wed Apr 26 16:59:34 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000730H .text                   CODE
+ 0002:00000000 000005a8H .data                   DATA
+ 0002:000005b0 00000004H .rdata                  DATA
+ 0002:000005c0 00000199H .bss                    DATA
+ 0003:00000000 00000048H .pdata                  DATA
+ 0004:00000000 00000038H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c4       DummySmmRtFunction         0000000000000344 f   RuntimeSmm:RuntimeSmm.obj
+ 0001:000000d0       RuntimeSmmInitialize       0000000000000350 f   RuntimeSmm:RuntimeSmm.obj
+ 0001:00000188       RuntimeEntry               0000000000000408 f   RuntimeSmm:RuntimeSmm.obj
+ 0001:000002c0       InternalAssertJumpBuffer   0000000000000540 f   BaseLib:SetJump.obj
+ 0001:000002c4       LibInitStatusCodePtr       0000000000000544 f   AmiDxeLib:EfiLib.obj
+ 0001:00000308       TraceGetAmiDebugServicesProtocolInstance 0000000000000588 f   AmiDxeLib:EfiLib.obj
+ 0001:000003ec       GetSmstConfigurationTable  000000000000066c f   AmiDxeLib:EfiLib.obj
+ 0001:00000444       MemCmp                     00000000000006c4 f   AmiDxeLib:Memory.obj
+ 0001:000004c0       SetJump                    0000000000000740     BaseLib:SetJump.obj
+ 0001:00000550       InternalLongJump           00000000000007d0     BaseLib:LongJump.obj
+ 0001:000005d0       GetCpuTimer                0000000000000850 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:000005e0       CPULib_CpuID               0000000000000860 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000620       memset                     00000000000008a0     AmiDxeLib:MemSet.obj
+ 0001:0000062e       MemSetAsm                  00000000000008ae f   AmiDxeLib:MemSet.obj
+ 0001:00000680       MemCpyAsm                  0000000000000900 f   AmiDxeLib:MemCpy.obj
+ 0001:00000680       memcpy                     0000000000000900     AmiDxeLib:MemCpy.obj
+ 0002:00000000       gEfiSmmBase2ProtocolGuid   00000000000009c0     RuntimeSmm:AutoGen.obj
+ 0002:00000010       gAmiSmmDebugServiceProtocolGuid 00000000000009d0     RuntimeSmm:AutoGen.obj
+ 0002:00000020       gAmiDebugServiceProtocolGuid 00000000000009e0     RuntimeSmm:AutoGen.obj
+ 0002:00000030       EfiErrorStatus             00000000000009f0     AmiDxeLib:StdLibC.obj
+ 0002:00000370       PiErrorStatus              0000000000000d30     AmiDxeLib:StdLibC.obj
+ 0002:000003c0       AmiErrorStatus             0000000000000d80     AmiDxeLib:StdLibC.obj
+ 0002:00000400       EfiWarningStatus           0000000000000dc0     AmiDxeLib:StdLibC.obj
+ 0002:00000470       PiWarningStatus            0000000000000e30     AmiDxeLib:StdLibC.obj
+ 0002:000004b8       EfiUnknown                 0000000000000e78     AmiDxeLib:StdLibC.obj
+ 0002:00000598       SmmRsTableGuid             0000000000000f58     AmiDxeLib:EfiLib.obj
+ 0002:000005b0       _gUefiDriverRevision       0000000000000f70     RuntimeSmm:AutoGen.obj
+ 0002:000006c0       gImageHandle               0000000000001080     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006c8       gST                        0000000000001088     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006d0       gBS                        0000000000001090     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006d8       gSmst                      0000000000001098     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000728       pST                        00000000000010e8     AmiDxeLib:EfiLib.obj
+ 0002:00000730       pBS                        00000000000010f0     AmiDxeLib:EfiLib.obj
+ 0002:00000738       pRS                        00000000000010f8     AmiDxeLib:EfiLib.obj
+ 0002:00000740       pSmmBase                   0000000000001100     AmiDxeLib:EfiLib.obj
+ 0002:00000748       pSmst                      0000000000001108     AmiDxeLib:EfiLib.obj
+ 0002:00000750       TheImageHandle             0000000000001110     AmiDxeLib:EfiLib.obj
+ 0002:00000758       mPerformanceMeasurementEnabled 0000000000001118     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

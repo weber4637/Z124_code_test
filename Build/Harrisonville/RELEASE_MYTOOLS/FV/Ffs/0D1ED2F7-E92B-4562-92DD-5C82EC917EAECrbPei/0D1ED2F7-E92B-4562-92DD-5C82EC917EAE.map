@@ -1,0 +1,37 @@
+ CrbPei
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000002fdH .text                   CODE
+ 0002:00000000 00000044H .data                   DATA
+ 0002:00000048 00000020H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000005       _CrbPeiGetChipsetVendorNo  00000245 f   CrbPei:CrbPei.obj
+ 0001:000000c2       _CrbPeiGetCpuId            00000302 f   CrbPei:CrbPei.obj
+ 0001:0000010c       _CrbPeiGetNorthBridgePciId 0000034c f   CrbPei:CrbPei.obj
+ 0001:00000131       _CrbPeiGetSouthBridgePciId 00000371 f   CrbPei:CrbPei.obj
+ 0001:0000015d       _CrbPeiGetProjectId        0000039d f   CrbPei:CrbPei.obj
+ 0001:00000163       _CrbPeiGetBiosRevision     000003a3 f   CrbPei:CrbPei.obj
+ 0001:00000167       _CrbPeiInit                000003a7 f   CrbPei:CrbPei.obj
+ 0001:0000025b       _GetPeiServicesTablePointer 0000049b f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000280       _InternalMemCompareMem     000004c0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000002a0       _InternalMemCopyMem        000004e0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000002e0       _InternalMemZeroMem        00000520     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gAmiPeiCrbInfoPpiGuid     00000540     CrbPei:AutoGen.obj
+ 0002:00000010       _gEfiPeiReadOnlyVariable2PpiGuid 00000550     CrbPei:AutoGen.obj
+ 0002:00000020       _gAmiCrbInforPpi           00000560     CrbPei:CrbPei.obj
+ 0002:00000048       _ProjectTag                00000588     CrbPei:CrbPei.obj
+ 0002:00000050       ??_C@_04MOGBOKAO@letnI@    00000590     CrbPei:CrbPei.obj
+ 0002:00000058       ??_C@_02DDCBEDLP@DMA@      00000598     CrbPei:CrbPei.obj
+ 0002:0000005c       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000059c     CrbPei:CrbPei.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

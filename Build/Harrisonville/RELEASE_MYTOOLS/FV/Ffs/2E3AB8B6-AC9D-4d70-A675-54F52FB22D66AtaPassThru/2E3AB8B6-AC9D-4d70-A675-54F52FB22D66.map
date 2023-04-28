@@ -1,0 +1,59 @@
+ AtaPassThru
+
+ Timestamp is 6448e7f6 (Wed Apr 26 16:59:34 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000f8aH .text                   CODE
+ 0002:00000000 00000598H .data                   DATA
+ 0002:000005a0 00000004H .rdata                  DATA
+ 0002:000005a8 00000098H .bss                    DATA
+ 0003:00000000 00000084H .pdata                  DATA
+ 0004:00000000 00000084H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c0       InstallAtaPassThru         0000000000000340 f   AtaPassThru:AtaPassThru.obj
+ 0001:000002c8       StopAtaPassThruSupport     0000000000000548 f   AtaPassThru:AtaPassThru.obj
+ 0001:00000334       CountAhciDrives            00000000000005b4 f   AtaPassThru:AtaPassThru.obj
+ 0001:000003b4       GetAhciAsbStatus           0000000000000634 f   AtaPassThru:AtaPassThru.obj
+ 0001:000004c0       PassThru                   0000000000000740 f   AtaPassThru:AtaPassThru.obj
+ 0001:0000097c       GetNextPort                0000000000000bfc f   AtaPassThru:AtaPassThru.obj
+ 0001:00000a50       GetNextDevice              0000000000000cd0 f   AtaPassThru:AtaPassThru.obj
+ 0001:00000b60       BuildDevicePath            0000000000000de0 f   AtaPassThru:AtaPassThru.obj
+ 0001:00000ca4       GetDevice                  0000000000000f24 f   AtaPassThru:AtaPassThru.obj
+ 0001:00000d2c       ResetPort                  0000000000000fac f   AtaPassThru:AtaPassThru.obj
+ 0001:00000db0       ResetDevice                0000000000001030 f   AtaPassThru:AtaPassThru.obj
+ 0001:00000e30       CPULib_CpuID               00000000000010b0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000e70       memset                     00000000000010f0     AmiDxeLib:MemSet.obj
+ 0001:00000e7e       MemSetAsm                  00000000000010fe f   AmiDxeLib:MemSet.obj
+ 0001:00000ed0       MemCpyAsm                  0000000000001150 f   AmiDxeLib:MemCpy.obj
+ 0001:00000ed0       memcpy                     0000000000001150     AmiDxeLib:MemCpy.obj
+ 0001:00000f80       GetCpuTimer                0000000000001200 f   AmiDxeLib:GetCpuTimer.obj
+ 0002:00000000       gAmiAhciBusProtocolGuid    0000000000001220     AtaPassThru:AutoGen.obj
+ 0002:00000010       gAmiAtaPassThruInitProtocolGuid 0000000000001230     AtaPassThru:AutoGen.obj
+ 0002:00000020       gEfiAtaPassThruProtocolGuid 0000000000001240     AtaPassThru:AutoGen.obj
+ 0002:00000030       EfiErrorStatus             0000000000001250     AmiDxeLib:StdLibC.obj
+ 0002:00000370       PiErrorStatus              0000000000001590     AmiDxeLib:StdLibC.obj
+ 0002:000003c0       AmiErrorStatus             00000000000015e0     AmiDxeLib:StdLibC.obj
+ 0002:00000400       EfiWarningStatus           0000000000001620     AmiDxeLib:StdLibC.obj
+ 0002:00000470       PiWarningStatus            0000000000001690     AmiDxeLib:StdLibC.obj
+ 0002:000004b8       EfiUnknown                 00000000000016d8     AmiDxeLib:StdLibC.obj
+ 0002:000005a0       _gUefiDriverRevision       00000000000017c0     AtaPassThru:AutoGen.obj
+ 0002:000005a8       gImageHandle               00000000000017c8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005b0       gST                        00000000000017d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005b8       gBS                        00000000000017d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000608       pST                        0000000000001828     AmiDxeLib:EfiLib.obj
+ 0002:00000610       pBS                        0000000000001830     AmiDxeLib:EfiLib.obj
+ 0002:00000618       pRS                        0000000000001838     AmiDxeLib:EfiLib.obj
+ 0002:00000620       TheImageHandle             0000000000001840     AmiDxeLib:EfiLib.obj
+ 0002:00000628       gAtaPassThruInitProtocol   0000000000001848     <common>
+ 0002:00000630       Mode                       0000000000001850     <common>
+ 0002:00000638       AtaPassThruInterface       0000000000001858     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

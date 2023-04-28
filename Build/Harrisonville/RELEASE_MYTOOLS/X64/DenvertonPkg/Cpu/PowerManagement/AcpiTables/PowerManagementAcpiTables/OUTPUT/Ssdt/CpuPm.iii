@@ -1,0 +1,2551 @@
+#line 1 "d:\\bios\\z124-002\\z124-002\\Build\\Harrisonville\\RELEASE_MYTOOLS\\X64\\DenvertonPkg\\Cpu\\PowerManagement\\AcpiTables\\PowerManagementAcpiTables\\OUTPUT\\Ssdt\\CpuPm.i"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DefinitionBlock (
+  "CPUPM.aml",
+  "SSDT",
+  0x02,
+  "PmRef",
+  "CpuPm",
+  0x3000
+  )
+{
+  External(\_PR.CPU0, DeviceObj)
+  External(\_PR.CPU1, DeviceObj)
+  External(\_PR.CPU2, DeviceObj)
+  External(\_PR.CPU3, DeviceObj)
+  External(\_PR.CPU4, DeviceObj)
+  External(\_PR.CPU5, DeviceObj)
+  External(\_PR.CPU6, DeviceObj)
+  External(\_PR.CPU7, DeviceObj)
+  External(\_PR.CPU8, DeviceObj)
+  External(\_PR.CPU9, DeviceObj)
+  External(\_PR.CPUA, DeviceObj)
+  External(\_PR.CPUB, DeviceObj)
+  External(\_PR.CPUC, DeviceObj)
+  External(\_PR.CPUD, DeviceObj)
+  External(\_PR.CPUE, DeviceObj)
+  External(\_PR.CPUF, DeviceObj)
+  External(SMIF)
+  External(\_PR.CPU0._PPC, IntObj)
+
+
+  
+  
+  
+  
+  
+  Name(PETE, 0) 
+  Name(PSLM, Package(){0,0,0,0,0,0,0,0}) 
+  Name(TSLM, Package(){0,0,0,0,0,0,0,0}) 
+#line 95 "d:\\bios\\z124-002\\z124-002\\Build\\Harrisonville\\RELEASE_MYTOOLS\\X64\\DenvertonPkg\\Cpu\\PowerManagement\\AcpiTables\\PowerManagementAcpiTables\\OUTPUT\\Ssdt\\CpuPm.i"
+
+Scope(\)
+{
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  Name(SSDT,Package()
+  {
+    "CPU0IST ", 0x80000000, 0x80000000,
+    "APIST   ", 0x80000000, 0x80000000,
+    "CPU0CST ", 0x80000000, 0x80000000,
+    "APCST   ", 0x80000000, 0x80000000
+  })
+      
+      
+      
+      
+
+  Name(CFGD, 0x80000000)
+
+  Name(\PDC0,0x80000000)  
+  Name(\PDC1,0x80000000)  
+  Name(\PDC2,0x80000000)  
+  Name(\PDC3,0x80000000)  
+  Name(\PDC4,0x80000000)  
+  Name(\PDC5,0x80000000)  
+  Name(\PDC6,0x80000000)  
+  Name(\PDC7,0x80000000)  
+  Name(\PDC8,0x80000000)  
+  Name(\PDC9,0x80000000)  
+  Name(\PDCA,0x80000000)  
+  Name(\PDCB,0x80000000)  
+  Name(\PDCC,0x80000000)  
+  Name(\PDCD,0x80000000)  
+  Name(\PDCE,0x80000000)  
+  Name(\PDCF,0x80000000)  
+
+  Name(\SDTL,0x00)        
+  
+  
+  
+  
+  
+  
+
+}
+
+Scope(\_PR.CPU0)
+{
+  
+  
+  
+  Name(HI0,0)    
+  Name(HC0,0)    
+  Name(TCNT,4)
+
+  Method(_PDC,1)
+  {
+    
+    
+    
+    Store(CPDC(Arg0), Local0)
+    
+    
+    
+    GCAP(Local0)
+  }
+
+  Method(_OSC, 4)
+  {
+    
+    
+    
+    Store(COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+    
+    
+    
+    GCAP(Local0)
+    
+    
+    
+    Return (Local0)
+  }
+
+  
+  
+  
+  
+  
+  
+  Method(CPDC,1)
+  {
+    CreateDwordField (Arg0, 0, REVS)
+    CreateDwordField (Arg0, 4, SIZE)
+
+    
+    
+    
+    Store (SizeOf (Arg0), Local0)
+
+    
+    
+    
+    Store (Subtract (Local0, 8), Local1)
+
+    
+    
+    
+    CreateField (Arg0, 64, Multiply (Local1, 8), TEMP)
+
+    
+    
+    
+    
+    
+    Name (STS0, Buffer () {0x00, 0x00, 0x00, 0x00})
+
+    
+    
+    
+    
+    Concatenate (STS0, TEMP, Local2)
+
+    Return(COSC (ToUUID("4077A616-290C-47BE-9EBD-D87058713953"), REVS, SIZE, Local2))
+  }
+
+  
+  
+  
+  
+  Method(COSC, 4)
+  {
+    
+    
+    
+    CreateDWordField(Arg3, 0, STS0)
+    
+    
+    
+    CreateDwordField(Arg3, 4, CAP0)
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    CreateDwordField(Arg0, 0x0, IID0)
+    CreateDwordField(Arg0, 0x4, IID1)
+    CreateDwordField(Arg0, 0x8, IID2)
+    CreateDwordField(Arg0, 0xC, IID3)
+    
+    
+    
+    Name(UID0, ToUUID("4077A616-290C-47BE-9EBD-D87058713953"))
+    CreateDwordField(UID0, 0x0, EID0)
+    CreateDwordField(UID0, 0x4, EID1)
+    CreateDwordField(UID0, 0x8, EID2)
+    CreateDwordField(UID0, 0xC, EID3)
+    
+    
+    
+    If(LNot(LAnd(LAnd(LEqual(IID0, EID0),LEqual(IID1, EID1)),LAnd(LEqual(IID2, EID2),LEqual(IID3, EID3)))))
+    {
+      
+      
+      
+      Store (0x6, STS0)
+      Return (Arg3)
+    }
+
+    If(LNot(LEqual(Arg1,1)))
+    {
+      
+      
+      
+      Store (0xA, STS0)
+      Return (Arg3)
+    }
+
+    Return (Arg3)
+  }
+
+  
+  
+  
+  Method(GCAP, 1)
+  {
+    
+
+    
+    
+    
+    CreateDWordField(Arg0, 0, STS0)
+    
+    
+    
+    CreateDwordField(Arg0, 4, CAP0)
+
+    
+    
+    
+    
+    If(LOr(LEqual(STS0,0x6),LEqual(STS0,0xA)))
+    {
+      Return()
+    }
+
+    
+    
+    
+    
+    if (And(STS0, 1))
+    {
+      And(CAP0, 0xBFF, CAP0)
+      Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    Or(And(PDC0, 0x7FFFFFFF), CAP0, PDC0)
+
+    
+    
+    
+    If(And(CFGD, 0x222))
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      If(LAnd(LAnd(And(CFGD, 0x01000000),And(PDC0,0x0018)),LNot(And(SDTL,0x02))))
+      {
+        
+        
+        
+        Or(SDTL, 0x02, SDTL)
+
+        OperationRegion(CST0,SystemMemory,DeRefOf(Index(SSDT,7)),DeRefOf(Index(SSDT,8)))
+        Load(CST0, HC0)  
+      }
+    }
+
+
+
+
+
+
+If(And(CFGD,0x01))
+{
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    If(LAnd(LAnd(And(CFGD, 0x01000000),LEqual(And(PDC0, 0x0009), 0x0009)),LNot(And(SDTL,0x01))))
+    {
+      
+      
+      
+      Or(SDTL, 0x01, SDTL)
+
+      OperationRegion(IST0,SystemMemory,DeRefOf(Index(SSDT,1)),DeRefOf(Index(SSDT,2)))
+      Load(IST0, HI0)  
+    }
+}
+
+    Return ()
+  }
+}
+
+
+Scope(\_PR.CPU1)
+{
+  
+  
+  
+  Name(HI1,0)    
+  Name(HC1,0)    
+  Name(HW1,0)    
+
+  Method(_PDC,1)
+  {
+    
+    
+    
+    Store(\_PR.CPU0.CPDC(Arg0), Local0)
+    GCAP(Local0)
+  }
+
+  Method(_OSC, 4)
+  {
+    
+    
+    
+    Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+    GCAP(Local0)
+    Return (Local0)
+  }
+
+  
+  
+  
+  Method(GCAP, 1)
+  {
+    
+    
+    
+    CreateDWordField(Arg0, 0, STS1)
+    
+    
+    
+    CreateDwordField(Arg0, 4, CAP1)
+    
+    
+    
+    
+    If(LOr(LEqual(STS1,0x6),LEqual(STS1,0xA)))
+    {
+      Return()
+    }
+
+    
+    
+    
+    
+    if (And(STS1, 1))
+    {
+      And(CAP1, 0xBFF, CAP1)
+      Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    Or(And(PDC1, 0x7FFFFFFF), CAP1, PDC1)
+
+    
+    
+    
+    
+    
+    
+    
+    
+    If(LEqual(And(PDC1, 0x0009), 0x0009))
+    {
+      APPT()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    If(And(PDC1,0x0018))
+    {
+      APCT()
+    }
+
+    Store (PDC1, PDC0)
+
+    Return()
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  Method(APCT, 0, Serialized)
+  {
+    If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+    {
+      
+      
+      
+      Or(SDTL, 0x20, SDTL)
+      
+      
+      
+      OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+      Load(CST1, HC1)
+    }
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  Method(APPT, 0, Serialized)
+  {
+    If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+    {
+      
+      
+      
+      Or(SDTL, 0x10, SDTL)
+
+      OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+      Load(IST1, HI1)  
+    }
+  }
+}  
+
+
+Scope(\_PR.CPU2)
+{
+  
+  
+  
+  Name(HI1,0)        
+  Name(HC1,0)        
+  Method(_PDC,1)
+  {
+    
+    
+    
+    Store(\_PR.CPU0.CPDC(Arg0), Local0)
+    GCAP(Local0)
+  }
+
+  Method(_OSC, 4)
+  {
+    
+    
+    
+    Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+    GCAP(Local0)
+    Return (Local0)
+  }
+
+  
+  
+  
+  Method(GCAP,1)
+  {
+    
+    CreateDWordField(Arg0, 0, STS2)
+
+    
+    CreateDwordField(Arg0, 4, CAP2)
+
+    
+    
+    
+    
+    If(LOr(LEqual(STS2,0x6),LEqual(STS2,0xA)))
+    {
+      Return()
+    }
+
+    
+    
+    
+    
+    if (And(STS2, 1))
+    {
+      And(CAP2, 0xBFF, CAP2)
+      Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    Or(And(PDC2, 0x7FFFFFFF), CAP2, PDC2)
+    
+    
+    
+    
+    
+    
+    
+    
+    If(LEqual(And(PDC2, 0x0009), 0x0009))
+    {
+      APPT()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    If(And(PDC2,0x0018))
+    {
+      APCT()
+    }
+
+    Store (PDC2, PDC0)
+    Return()
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  Method(APCT, 0, Serialized)
+  {
+    If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+    {
+      
+      
+      
+      Or(SDTL, 0x20, SDTL)
+      
+      
+      
+      OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+      Load(CST1, HC1)
+    }
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  Method(APPT, 0, Serialized)
+  {
+    If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+    {
+      
+      
+      
+      Or(SDTL, 0x10, SDTL)
+
+      OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+      Load(IST1, HI1)    
+    }
+  }
+}  
+
+Scope(\_PR.CPU3)
+{
+  
+  
+  
+  Name(HI1,0)        
+  Name(HC1,0)        
+  Method(_PDC,1)
+  {
+    
+    
+    
+    Store(\_PR.CPU0.CPDC(Arg0), Local0)
+    GCAP(Local0)
+  }
+
+  Method(_OSC, 4)
+  {
+    
+    
+    
+    Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+    GCAP(Local0)
+    Return (Local0)
+  }
+
+  
+  
+  
+  Method(GCAP,1)
+  {
+    
+    CreateDWordField(Arg0, 0, STS3)
+
+    
+    CreateDwordField(Arg0, 4, CAP3)
+
+    
+    
+    
+    
+    If(LOr(LEqual(STS3,0x6),LEqual(STS3,0xA)))
+    {
+      Return()
+    }
+
+    
+    
+    
+    
+    if (And(STS3, 1))
+    {
+      And(CAP3, 0xBFF, CAP3)
+      Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    Or(And(PDC3, 0x7FFFFFFF), CAP3, PDC3)
+    
+    
+    
+    
+    
+    
+    
+    
+    If(LEqual(And(PDC3, 0x0009), 0x0009))
+    {
+      APPT()
+    }
+    
+    
+    
+    
+    
+    
+    
+    If(And(PDC3,0x0018))
+    {
+      APCT()
+    }
+
+    Store (PDC3, PDC0)
+    Return()
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  Method(APCT, 0, Serialized)
+  {
+      If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+      {
+          
+          
+          
+          Or(SDTL, 0x20, SDTL)
+          
+          
+          
+          OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+          Load(CST1, HC1)
+      }
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  Method(APPT, 0, Serialized)
+  {
+      If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+      {
+          
+          
+          
+          Or(SDTL, 0x10, SDTL)
+
+          OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+          Load(IST1, HI1)    
+      }
+  }
+} 
+Scope(\_PR.CPU4)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STS4)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAP4)
+        
+        
+        
+        
+        If(LOr(LEqual(STS4,0x6),LEqual(STS4,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STS4, 1))
+        {
+            And(CAP4, 0xBFF, CAP4)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDC4, 0x7FFFFFFF), CAP4, PDC4)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDC4, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDC4,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPU5)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STS5)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAP5)
+        
+        
+        
+        
+        If(LOr(LEqual(STS5,0x6),LEqual(STS5,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STS5, 1))
+        {
+            And(CAP5, 0xBFF, CAP5)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDC5, 0x7FFFFFFF), CAP5, PDC5)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDC5, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDC5,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPU6)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STS6)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAP6)
+        
+        
+        
+        
+        If(LOr(LEqual(STS6,0x6),LEqual(STS6,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STS6, 1))
+        {
+            And(CAP6, 0xBFF, CAP6)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDC6, 0x7FFFFFFF), CAP6, PDC6)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDC6, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDC6,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPU7)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STS7)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAP7)
+        
+        
+        
+        
+        If(LOr(LEqual(STS7,0x6),LEqual(STS7,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STS7, 1))
+        {
+            And(CAP7, 0xBFF, CAP7)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDC7, 0x7FFFFFFF), CAP7, PDC7)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDC7, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDC7,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPU8)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STS8)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAP8)
+        
+        
+        
+        
+        If(LOr(LEqual(STS8,0x6),LEqual(STS8,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STS8, 1))
+        {
+            And(CAP8, 0xBFF, CAP8)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDC8, 0x7FFFFFFF), CAP8, PDC8)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDC8, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDC8,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPU9)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STS9)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAP9)
+        
+        
+        
+        
+        If(LOr(LEqual(STS9,0x6),LEqual(STS9,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STS9, 1))
+        {
+            And(CAP9, 0xBFF, CAP9)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDC9, 0x7FFFFFFF), CAP9, PDC9)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDC9, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDC9,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPUA)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STSA)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAPA)
+        
+        
+        
+        
+        If(LOr(LEqual(STSA,0x6),LEqual(STSA,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STSA, 1))
+        {
+            And(CAPA, 0xBFF, CAPA)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDCA, 0x7FFFFFFF), CAPA, PDCA)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDCA, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDCA,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPUB)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STSB)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAPB)
+        
+        
+        
+        
+        If(LOr(LEqual(STSB,0x6),LEqual(STSB,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STSB, 1))
+        {
+            And(CAPB, 0xBFF, CAPB)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDCB, 0x7FFFFFFF), CAPB, PDCB)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDCB, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDCB,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPUC)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STSC)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAPC)
+        
+        
+        
+        
+        If(LOr(LEqual(STSC,0x6),LEqual(STSC,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STSC, 1))
+        {
+            And(CAPC, 0xBFF, CAPC)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDCC, 0x7FFFFFFF), CAPC, PDCC)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDCC, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDCC,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPUD)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STSD)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAPD)
+        
+        
+        
+        
+        If(LOr(LEqual(STSD,0x6),LEqual(STSD,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STSD, 1))
+        {
+            And(CAPD, 0xBFF, CAPD)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDCD, 0x7FFFFFFF), CAPD, PDCD)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDCD, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDCD,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPUE)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STSE)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAPE)
+        
+        
+        
+        
+        If(LOr(LEqual(STSE,0x6),LEqual(STSE,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STSE, 1))
+        {
+            And(CAPE, 0xBFF, CAPE)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDCE, 0x7FFFFFFF), CAPE, PDCE)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDCE, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDCE,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+
+Scope(\_PR.CPUF)
+{
+    
+    
+    
+    Name(HI1,0)        
+    Name(HC1,0)        
+
+    Method(_PDC,1)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.CPDC(Arg0), Local0)
+        GCAP(Local0)
+        
+    }
+
+    Method(_OSC, 4)
+    {
+        
+        
+        
+        Store(\_PR.CPU0.COSC(Arg0, Arg1, Arg2, Arg3), Local0)
+        GCAP(Local0)
+        Return (Local0)
+    }
+
+    
+    
+    
+    Method(GCAP, 1)
+    {
+        
+        
+        
+        CreateDWordField(Arg0, 0, STSF)
+        
+        
+        
+        CreateDwordField(Arg0, 4, CAPF)
+        
+        
+        
+        
+        If(LOr(LEqual(STSF,0x6),LEqual(STSF,0xA)))
+        {
+            Return()
+        }
+
+        
+        
+        
+        
+        if (And(STSF, 1))
+        {
+            And(CAPF, 0xBFF, CAPF)
+            Return()
+        }
+
+        
+        
+        
+        
+        
+        
+        Or(And(PDCF, 0x7FFFFFFF), CAPF, PDCF)
+
+        
+        
+        
+        
+        
+        
+        
+        
+        If(LEqual(And(PDCF, 0x0009), 0x0009))
+        {
+            APPT()
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        If(And(PDCF,0x0018))
+        {
+            APCT()
+        }
+
+        Return()
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APCT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x222),LNot(And(SDTL,0x20))))
+        {
+            
+            
+            
+            Or(SDTL, 0x20, SDTL)
+            
+            
+            
+            OperationRegion(CST1,SystemMemory,DeRefOf(Index(SSDT,10)),DeRefOf(Index(SSDT,11)))
+            Load(CST1, HC1)
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    Method(APPT, 0, Serialized)
+    {
+        If(LAnd(And(CFGD,0x01),LNot(And(SDTL,0x10))))
+        {
+            
+            
+            
+            Or(SDTL, 0x10, SDTL)
+
+            OperationRegion(IST1,SystemMemory,DeRefOf(Index(SSDT,4)),DeRefOf(Index(SSDT,5)))
+            Load(IST1, HI1)    
+        }
+    }
+}    
+} 
+

@@ -1,0 +1,100 @@
+ CmosPei
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000018cdH .text                   CODE
+ 0002:00000000 00000114H .data                   DATA
+ 0002:00000118 0000005eH .rdata                  DATA
+ 0002:00000178 00000008H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000002b       _CreateCmosDataHob         0000026b f   CmosPei:CmosManagerPei.obj
+ 0001:000001a6       _CmosManagerAfterMemoryEntry 000003e6 f   CmosPei:CmosManagerPei.obj
+ 0001:0000020b       _ManagerInterfaceInitializeCallout 0000044b f   CmosPei:CmosManagerPei.obj
+ 0001:000002f4       _CmosManagerPeiEntry       00000534 f   CmosPei:CmosManagerPei.obj
+ 0001:0000048f       _GetCmosAccessInterface    000006cf f   CmosPei:CmosManager.obj
+ 0001:000004b1       _CmosManagerCheckStatus    000006f1 f   CmosPei:CmosManager.obj
+ 0001:000004c7       _CmosManagerCheckAnyStatus 00000707 f   CmosPei:CmosManager.obj
+ 0001:000004d9       _CmosManagerSetClearStatus 00000719 f   CmosPei:CmosManager.obj
+ 0001:0000057f       _CmosManagerSetStatus      000007bf f   CmosPei:CmosManager.obj
+ 0001:00000594       _CmosManagerClearStatus    000007d4 f   CmosPei:CmosManager.obj
+ 0001:000005a9       _CmosConfigureManager      000007e9 f   CmosPei:CmosManager.obj
+ 0001:00000657       _SaveApiPointerToCmos      00000897 f   CmosPei:CmosManager.obj
+ 0001:000006ba       _GetApiPointerFromCmos     000008fa f   CmosPei:CmosManager.obj
+ 0001:00000714       _InstallCmosAccessInterface 00000954 f   CmosPei:CmosManager.obj
+ 0001:00000755       _InitializeCmosManagerInterface 00000995 f   CmosPei:CmosManager.obj
+ 0001:0000080a       _NewCmosManagerInterface   00000a4a f   CmosPei:CmosManager.obj
+ 0001:00000975       _CmosFindToken             00000bb5 f   CmosPei:CmosAccess.obj
+ 0001:000009a4       _CmosGetTokenFromRegister  00000be4 f   CmosPei:CmosAccess.obj
+ 0001:00000a03       _CmosBankReadWrite         00000c43 f   CmosPei:CmosAccess.obj
+ 0001:00000aba       _CmosPhysicalReadWrite     00000cfa f   CmosPei:CmosAccess.obj
+ 0001:00000b6a       _CmosBufferReadWrite       00000daa f   CmosPei:CmosAccess.obj
+ 0001:00000c2d       _CmosReadWrite             00000e6d f   CmosPei:CmosAccess.obj
+ 0001:00000cc0       _CmosReadWriteEncodedToken 00000f00 f   CmosPei:CmosAccess.obj
+ 0001:00000d72       _CmosRead                  00000fb2 f   CmosPei:CmosAccess.obj
+ 0001:00000de1       _ReadCmosStatusBytes       00001021 f   CmosPei:CmosAccess.obj
+ 0001:00000f4a       _ReadChecksum              0000118a f   CmosPei:CmosAccess.obj
+ 0001:00000f74       _WriteChecksum             000011b4 f   CmosPei:CmosAccess.obj
+ 0001:00000fc2       _UpdateBatteryStatus       00001202 f   CmosPei:CmosAccess.obj
+ 0001:00001001       _SynchronizeLegacyStatusRegisters 00001241 f   CmosPei:CmosAccess.obj
+ 0001:0000107f       _CalculateUpdatedCheckSum  000012bf f   CmosPei:CmosAccess.obj
+ 0001:00001134       _CalculateChecksum         00001374 f   CmosPei:CmosAccess.obj
+ 0001:00001211       _CmosWrite                 00001451 f   CmosPei:CmosAccess.obj
+ 0001:0000128d       _LoadOptimalDefaults       000014cd f   CmosPei:CmosAccess.obj
+ 0001:00001491       _CmosSetDateTime           000016d1 f   CmosPei:CmosAccess.obj
+ 0001:00001556       _CmosGetDateTime           00001796 f   CmosPei:CmosAccess.obj
+ 0001:000015cc       _MemSet                    0000180c f   AmiPeiLib:Memory.obj
+ 0001:000015e0       _ReadWriteStandardRange    00001820 f   AmiCspLibPei:CmosBoardPei.obj
+ 0001:00001633       _CmosMgrBatteryIsGood      00001873 f   AmiCspLibPei:CmosBoardPei.obj
+ 0001:00001633       _CmosIsUsable              00001873 f   AmiCspLibPei:CmosBoardPei.obj
+ 0001:00001644       _CmosMgrIsFirstBoot        00001884 f   AmiCspLibPei:CmosBoardPei.obj
+ 0001:000016d5       _ReadWriteCmosBank2        00001915 f   AmiCspLibPei:SbGeneric.obj
+ 0001:000016d8       _SbGetRtcPowerStatus       00001918 f   AmiCspLibPei:SbGeneric.obj
+ 0001:000016d8       _CmosMgrIsColdBoot         00001918 f   AmiCspLibPei:CmosBoardPei.obj
+ 0001:000016d8       _CmosMgrIsBsp              00001918 f   AmiCspLibPei:CmosBoardPei.obj
+ 0001:000016db       _GetPeiServicesTablePointer 0000191b f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00001700       _memset                    00001940     AmiPeiLib:MemSet.obj
+ 0001:0000170a       _MemSetAsm                 0000194a f   AmiPeiLib:MemSet.obj
+ 0001:00001760       _memcpy                    000019a0     AmiPeiLib:MemCpy.obj
+ 0001:00001760       _MemCpyAsm                 000019a0 f   AmiPeiLib:MemCpy.obj
+ 0001:00001760       _MemCpy32                  000019a0     AmiPeiLib:MemCpy.obj
+ 0001:00001800       _EnableLongMode            00001a40 f   AmiPeiLib:EnableLongMode.obj
+ 0001:00001870       _InternalMemCopyMem        00001ab0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000018b0       _InternalMemZeroMem        00001af0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gEfiPeiReadOnlyVariable2PpiGuid 00001b20     CmosPei:AutoGen.obj
+ 0002:00000010       _gEfiPeiMemoryDiscoveredPpiGuid 00001b30     CmosPei:AutoGen.obj
+ 0002:00000020       _gAmiCmosAccessPpiGuid     00001b40     CmosPei:AutoGen.obj
+ 0002:00000030       _gPirqRegistersSave        00001b50     AmiCspLibPei:SbGeneric.obj
+ 0002:00000050       _RRegs                     00001b70     AmiCspLibPei:SbGeneric.obj
+ 0002:00000060       _gCmosTokenTable           00001b80     CmosPei:CmosTables.obj
+ 0002:00000078       _gCmosOptimalDefaultTable  00001b98     CmosPei:CmosTables.obj
+ 0002:00000094       _gIsFirstBoot              00001bb4     CmosPei:CmosManagerPei.obj
+ 0002:0000009c       _gIsBsp                    00001bbc     CmosPei:CmosManagerPei.obj
+ 0002:000000a4       _gIsColdBoot               00001bc4     CmosPei:CmosManagerPei.obj
+ 0002:000000ac       _gCmosIsUsable             00001bcc     CmosPei:CmosManagerPei.obj
+ 0002:000000b4       _gCmosBatteryIsGood        00001bd4     CmosPei:CmosManagerPei.obj
+ 0002:000000c0       _gCmosBank                 00001be0     CmosPei:CmosManagerPei.obj
+ 0002:000000e4       _gCmosBankCount            00001c04     CmosPei:CmosManagerPei.obj
+ 0002:000000e8       _gCmosDataHobInstalledGuid 00001c08     CmosPei:CmosManagerPei.obj
+ 0002:000000f8       _gCmosAccessGuid           00001c18     CmosPei:CmosManagerPei.obj
+ 0002:00000118       _gFirstManagedRegister     00001c38     CmosPei:CmosTables.obj
+ 0002:00000119       _gLastManagedRegister      00001c39     CmosPei:CmosTables.obj
+ 0002:0000011c       _gCmosTokenTableSize       00001c3c     CmosPei:CmosTables.obj
+ 0002:00000120       _gCmosOptimalDefaultTableSize 00001c40     CmosPei:CmosTables.obj
+ 0002:00000124       _gCmosNoCheckSumTable      00001c44     CmosPei:CmosTables.obj
+ 0002:00000140       _gCmosNoCheckSumTableSize  00001c60     CmosPei:CmosTables.obj
+ 0002:00000144       _gUnmanagedTable           00001c64     CmosPei:CmosTables.obj
+ 0002:00000150       _gUnmanagedTableSize       00001c70     CmosPei:CmosTables.obj
+ 0002:00000154       ??_C@_1CC@NDMOAINP@?$AAM?$AAo?$AAn?$AAo?$AAt?$AAo?$AAn?$AAi?$AAc?$AAC?$AAo?$AAu?$AAn?$AAt?$AAe?$AAr?$AA?$AA@ 00001c74     AmiCspLibPei:CmosBoardPei.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000143c       _CmosMgrReadRtcIndex       0000167c f    CIL library: CIL module
+ 0001:00001466       _CmosMgrWriteRtcIndex      000016a6 f    CIL library: CIL module

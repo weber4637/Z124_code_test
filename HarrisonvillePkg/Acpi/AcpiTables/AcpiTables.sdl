@@ -1,0 +1,25 @@
+TOKEN
+	Name  = "AcpiTablesDxe_SUPPORT"
+	Value  = "1"
+	Help  = "Main switch to enable AcpiTablesDxe support in Project"
+	TokenType = Boolean
+	Master = Yes	
+End
+
+# Denverton AptioV Override Start - EIP#471482
+TOKEN
+    Name  = "AERC"
+    Value  = "0"
+    Help  = "_OSC: Advanced Error Reporting Control"
+    TokenType = Integer
+    TargetASL = Yes
+End
+# Denverton AptioV Override End - EIP#471482
+
+INFComponent
+	Name  = "AcpiTablesDxe"
+	File  = "AcpiTables.inf"
+	Package  = "HarrisonvillePkg"
+	ModuleTypes  = "USER_DEFINED"
+End
+

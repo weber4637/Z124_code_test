@@ -1,0 +1,104 @@
+ PchInitDxe
+
+ Timestamp is 6448e7f1 (Wed Apr 26 16:59:29 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000023d2H .text                   CODE
+ 0002:00000000 0000093cH .data                   DATA
+ 0002:00000940 00000004H .rdata                  DATA
+ 0002:00000948 00000090H .bss                    DATA
+ 0003:00000000 0000015cH .pdata                  DATA
+ 0004:00000000 000000f4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000bc       PchOnPciEnumComplete       000000000000035c f   PchInitDxe:PchInitUefi.obj
+ 0001:00000144       HsUartConfigure            00000000000003e4 f   PchInitDxe:PchInitUefi.obj
+ 0001:000001f8       PchInitEntryPointUefi      0000000000000498 f   PchInitDxe:PchInitUefi.obj
+ 0001:000005b4       PchOnBootToOsUefi          0000000000000854 f   PchInitDxe:PchInitUefi.obj
+ 0001:0000069c       PchOnExitBootServicesUefi  000000000000093c f   PchInitDxe:PchInitUefi.obj
+ 0001:000006c0       PchOnReadyToBootUefi       0000000000000960 f   PchInitDxe:PchInitUefi.obj
+ 0001:00000710       PchOnEndOfDxeUefi          00000000000009b0 f   PchInitDxe:PchInitUefi.obj
+ 0001:00000728       ProcessAllLocks            00000000000009c8 f   PchInitDxe:PchInit.obj
+ 0001:00000f0c       ProcessAllLocksCallback    00000000000011ac f   PchInitDxe:PchInit.obj
+ 0001:00000f14       PchOnEndOfDxe              00000000000011b4 f   PchInitDxe:PchInit.obj
+ 0001:0000110c       IsXhcRootPortReset         00000000000013ac f   PchInitDxe:PchUsbPrecondition.obj
+ 0001:000012dc       XhciPrecondition           000000000000157c f   PchInitDxe:PchUsbPrecondition.obj
+ 0001:000014c8       PchAcpiOnEndOfDxe          0000000000001768 f   PchInitDxe:PchAcpi.obj
+ 0001:00001520       ConfigureScc               00000000000017c0 f   PchInitDxe:PchScc.obj
+ 0001:000016d8       ConfigurePchSataOnEndOfDxe 0000000000001978 f   PchInitDxe:PchSataDxe.obj
+ 0001:000018cc       PchStepping                0000000000001b6c f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00001a8c       GetPchSeries               0000000000001d2c f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00001d70       PchPcrAndThenOr32          0000000000002010 f   PeiDxeSmmPchPcrLib:PchPcrLib.obj
+ 0001:00001db8       PchAcpiBaseGet             0000000000002058 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:00001dec       PchPwrmBaseGet             000000000000208c f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:00001e1c       InternalAllocatePool       00000000000020bc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001e4c       AllocateZeroPool           00000000000020ec f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001e78       InternalAllocateCopyPool   0000000000002118 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001ebc       EfiGetSystemConfigurationTable 000000000000215c f   UefiLib:UefiLib.obj
+ 0001:00001f20       InternalEmptyFunction      00000000000021c0 f   UefiLib:UefiLib.obj
+ 0001:00001f24       EfiCreateEventLegacyBootEx 00000000000021c4 f   UefiLib:UefiNotTiano.obj
+ 0001:00001f6c       EfiCreateEventReadyToBootEx 000000000000220c f   UefiLib:UefiNotTiano.obj
+ 0001:00001fb0       GetFirstGuidHob            0000000000002250 f   DxeHobLib:HobLib.obj
+ 0001:00001ff4       S3BootScriptSaveMemWrite   0000000000002294 f   DxeS3BootScriptLibS3SaveStateProtocol:S3BootScriptLibS3SaveStateProtocol.obj
+ 0001:00002084       MicroSecondDelay           0000000000002324 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:000020b8       InitializeAslUpdateLib     0000000000002358 f   DxeAslUpdateLib:DxeAslUpdateLib.obj
+ 0001:000020fc       UpdateNameAslCode          000000000000239c f   DxeAslUpdateLib:DxeAslUpdateLib.obj
+ 0001:00002228       LocateAcpiTableBySignature 00000000000024c8 f   DxeAslUpdateLib:DxeAslUpdateLib.obj
+ 0001:000022f0       InternalMemCopyMem         0000000000002590     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00002330       InternalMemZeroMem         00000000000025d0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002350       CpuPause                   00000000000025f0     BaseLib:CpuPause.obj
+ 0001:00002360       InternalMemCompareMem      0000000000002600     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00002380       InternalMemSetMem          0000000000002620     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000023a0       InternalMemSetMem32        0000000000002640     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000023c0       InternalMemSetMem64        0000000000002660     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiEndOfDxeEventGroupGuid 0000000000002680     PchInitDxe:AutoGen.obj
+ 0002:00000010       gSiPolicyHobGuid           0000000000002690     PchInitDxe:AutoGen.obj
+ 0002:00000020       gPchPolicyHobGuid          00000000000026a0     PchInitDxe:AutoGen.obj
+ 0002:00000030       gEfiEventReadyToBootGuid   00000000000026b0     PchInitDxe:AutoGen.obj
+ 0002:00000040       gEfiEventLegacyBootGuid    00000000000026c0     PchInitDxe:AutoGen.obj
+ 0002:00000050       gEfiHobListGuid            00000000000026d0     PchInitDxe:AutoGen.obj
+ 0002:00000060       gEfiDxeServicesTableGuid   00000000000026e0     PchInitDxe:AutoGen.obj
+ 0002:00000070       gPchInfoProtocolGuid       00000000000026f0     PchInitDxe:AutoGen.obj
+ 0002:00000080       gPchNvsAreaProtocolGuid    0000000000002700     PchInitDxe:AutoGen.obj
+ 0002:00000090       gEfiAcpiTableProtocolGuid  0000000000002710     PchInitDxe:AutoGen.obj
+ 0002:000000a0       gEfiPciEnumerationCompleteProtocolGuid 0000000000002720     PchInitDxe:AutoGen.obj
+ 0002:000000b0       gEfiGlobalNvsAreaProtocolGuid 0000000000002730     PchInitDxe:AutoGen.obj
+ 0002:000000c0       gEfiS3SaveStateProtocolGuid 0000000000002740     PchInitDxe:AutoGen.obj
+ 0002:000000d0       gEfiAcpiSdtProtocolGuid    0000000000002750     PchInitDxe:AutoGen.obj
+ 0002:00000348       mPchLpSataPortResetToGpioMap 00000000000029c8     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000360       mPchHSataPortResetToGpioMap 00000000000029e0     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000003a0       mPchLpSataDevSlpPinToGpioMap 0000000000002a20     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000003b8       PchLpRprDidTable           0000000000002a38     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000003d0       mPchHSataDevSlpPinToGpioMap 0000000000002a50     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000678       PchHRprDidTable            0000000000002cf8     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000928       HsUartBdfs                 0000000000002fa8     PchInitDxe:PchInitUefi.obj
+ 0002:00000934       mPchStepping               0000000000002fb4     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00000938       mPchSeries                 0000000000002fb8     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00000940       _gUefiDriverRevision       0000000000002fc0     PchInitDxe:AutoGen.obj
+ 0002:00000948       PortSCxUsb2Base            0000000000002fc8     PchInitDxe:PchUsbPrecondition.obj
+ 0002:00000950       mPrivatePreConditionList   0000000000002fd0     PchInitDxe:PchUsbPrecondition.obj
+ 0002:00000958       PchUsbRPortsRstDoneFlag    0000000000002fd8     PchInitDxe:PchUsbPrecondition.obj
+ 0002:00000960       LastRPortResetTicks        0000000000002fe0     PchInitDxe:PchUsbPrecondition.obj
+ 0002:00000968       gImageHandle               0000000000002fe8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000970       gST                        0000000000002ff0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000978       gBS                        0000000000002ff8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000980       gRT                        0000000000003000     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000988       mHobList                   0000000000003008     DxeHobLib:HobLib.obj
+ 0002:00000990       S3SaveState                0000000000003010     DxeS3BootScriptLibS3SaveStateProtocol:S3BootScriptLibS3SaveStateProtocol.obj
+ 0002:00000998       gDS                        0000000000003018     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:000009b8       mPchNvsAreaProtocol        0000000000003038     <common>
+ 0002:000009c0       mSiPolicyHob               0000000000003040     <common>
+ 0002:000009c8       mPchPolicyHob              0000000000003048     <common>
+ 0002:000009d0       mImageHandle               0000000000003050     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00001ba8       PchPcrWrite                0000000000001e48 f    CIL library: CIL module
+ 0001:00002028       InternalAcpiDelay          00000000000022c8 f    CIL library: CIL module

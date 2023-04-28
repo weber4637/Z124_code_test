@@ -1,0 +1,18 @@
+<component>
+	name = "NCT6683D"
+	category = IO
+	LocalRoot = "AmiModulePkg\IO\NCT6683D\"
+	RefName = "NCT6683D"
+[INF]
+"NCT6683DDxeInit.inf"
+"NCT6683DPeiInit.inf"
+"NCT6683DPlatformHookSerialPortLib.inf"
+[files]
+"NCT6683D.sdl"
+"NCT6683D.mak"
+"NCT6683D.chm"
+[parts]
+"NCT6683DAsl"
+"NCT6683DSetup"
+"NCT6683DHwMonitor"
+<endComponent>

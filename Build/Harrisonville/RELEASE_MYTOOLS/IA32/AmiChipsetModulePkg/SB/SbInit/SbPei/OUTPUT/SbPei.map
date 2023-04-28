@@ -1,0 +1,48 @@
+ SbPei
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000006bdH .text                   CODE
+ 0002:00000000 00000150H .data                   DATA
+ 0002:00000150 00000000H .rdata                  DATA
+ 0002:00000150 0000000cH .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000000c       _SbPeiInit                 0000024c f   SbPei:SbPei.obj
+ 0001:00000107       _ProgramSbSubId            00000347 f   SbPei:SbPei.obj
+ 0001:00000583       _SbPeiInitAfterMemInstalled 000007c3 f   SbPei:SbPei.obj
+ 0001:000005c5       _ProgramSbRegBeforeEndofPei 00000805 f   SbPei:SbPei.obj
+ 0001:000005db       _SbPeiEnableAtaChannelForRecovery 0000081b f   SbPei:SbPei.obj
+ 0001:000005de       _SbPeiActivateSmi          0000081e f   SbPei:SbPei.obj
+ 0001:00000602       _SbPeiDeactivateSmi        00000842 f   SbPei:SbPei.obj
+ 0001:00000611       _GetPcdPpiPointer          00000851 f   PeiPcdLib:PeiPcdLib.obj
+ 0001:00000624       _PeiServicesLocatePpi      00000864 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000640       _GetPeiServicesTablePointer 00000880 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000660       _InternalMemCopyMem        000008a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000006a0       _InternalMemZeroMem        000008e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gAmiCmosBadHobGuid        00000900     SbPei:AutoGen.obj
+ 0002:00000010       _gAmiPeiSbInitPolicyGuid   00000910     SbPei:AutoGen.obj
+ 0002:00000020       _gAmiPeiPciTableInitPpiGuid 00000920     SbPei:AutoGen.obj
+ 0002:00000030       _gEfiPeiMasterBootModePpiGuid 00000930     SbPei:AutoGen.obj
+ 0002:00000040       _gEfiPeiBootInRecoveryModePpiGuid 00000940     SbPei:AutoGen.obj
+ 0002:00000050       _gPeiSmmControlPpiGuid     00000950     SbPei:AutoGen.obj
+ 0002:00000060       _gPeiAtaControllerPpiGuid  00000960     SbPei:AutoGen.obj
+ 0002:00000070       _gEfiEndOfPeiSignalPpiGuid 00000970     SbPei:AutoGen.obj
+ 0002:00000080       _gAmiPeiSbCustomPpiGuid    00000980     SbPei:AutoGen.obj
+ 0002:00000090       _gEfiPeiSmbus2PpiGuid      00000990     SbPei:AutoGen.obj
+ 0002:000000a0       _gPcdPpiGuid               000009a0     SbPei:AutoGen.obj
+ 0002:000000b0       _gPirqRegistersSave        000009b0     AmiCspLibPei:SbGeneric.obj
+ 0002:000000d0       _RRegs                     000009d0     AmiCspLibPei:SbGeneric.obj
+ 0002:000000e0       _wSBH2P_PCIInitTableSize   000009e0     SbPei:SbPeiBoard.obj
+ 0002:000000e4       _DefaultGpioTable          000009e4     SbPei:SbPei.obj
+ 0002:00000150       _stSBH2P_PCIInitTable      00000a50     SbPei:SbPeiBoard.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

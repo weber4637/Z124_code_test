@@ -1,0 +1,8 @@
+<component>
+    name = "FboSyncProtocol"
+    category = ModulePart
+    LocalRoot = "AmiModulePkg\Include\Protocol\"
+    RefName = "FboSyncProtocol"
+[files]
+"FboSyncProtocol.h"
+<endComponent>

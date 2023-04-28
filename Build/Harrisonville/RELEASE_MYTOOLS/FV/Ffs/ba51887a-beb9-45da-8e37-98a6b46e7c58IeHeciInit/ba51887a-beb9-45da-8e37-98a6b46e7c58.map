@@ -1,0 +1,55 @@
+ IeHeciInit
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000e8fH .text                   CODE
+ 0002:00000000 00000034H .data                   DATA
+ 0002:00000038 00000000H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000081       _HeciInitialize            000002c1 f   IeHeciInit:IeHeciInit.obj
+ 0001:000000a9       _HeciReadMsg               000002e9 f   IeHeciInit:IeHeciInit.obj
+ 0001:00000152       _HeciSendMsg               00000392 f   IeHeciInit:IeHeciInit.obj
+ 0001:00000247       _HeciSendwAck              00000487 f   IeHeciInit:IeHeciInit.obj
+ 0001:0000027c       _HeciMemoryInitDoneNotify  000004bc f   IeHeciInit:IeHeciInit.obj
+ 0001:000002fd       _ConfigureHeciDevice       0000053d f   IeHeciInit:IeHeciInit.obj
+ 0001:0000031f       _ConfigureHeciDevices      0000055f f   IeHeciInit:IeHeciInit.obj
+ 0001:00000416       _AllocatePool              00000656 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000043e       _RShiftU64                 0000067e f   BaseLib:RShiftU64.obj
+ 0001:00000462       _LShiftU64                 000006a2 f   BaseLib:LShiftU64.obj
+ 0001:000004a4       _PchPcrWriteMmioCheck      000006e4 f   PeiDxeSmmPchPcrLib:PchPcrLib.obj
+ 0001:0000061f       _PchPcrAndThenOr32         0000085f f   PeiDxeSmmPchPcrLib:PchPcrLib.obj
+ 0001:00000647       _PeiServicesLocatePpi      00000887 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:000006c2       _MicroSecondDelay          00000902 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:000006dd       _HeciInit                  0000091d f   IeHeciCoreLib:IeHeciCore.obj
+ 0001:000007f8       _HeciQueReset              00000a38 f   IeHeciCoreLib:IeHeciCore.obj
+ 0001:000008c5       _HeciMsgSend               00000b05 f   IeHeciCoreLib:IeHeciCore.obj
+ 0001:000009d7       _HeciMsgRecv               00000c17 f   IeHeciCoreLib:IeHeciCore.obj
+ 0001:00000baf       _HeciMbarRead              00000def f   IeHeciCoreLib:IeHeciCore.obj
+ 0001:00000c37       _IeIsEnabled               00000e77 f   IePeiPolicyUpdateLib:IePeiPlatformPolicyUpdate.obj
+ 0001:00000c79       _GetPeiServicesTablePointer 00000eb9 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000c93       _GetPchSeries              00000ed3 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00000d82       _MultU64x32                00000fc2 f   BaseLib:MultU64x32.obj
+ 0001:00000daa       _DivU64x32                 00000fea f   BaseLib:DivU64x32.obj
+ 0001:00000dd0       _InternalMemCopyMem        00001010     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000e10       _InternalMemZeroMem        00001050     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000e30       _InternalMemSetMem         00001070     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000e50       _InternalMemSetMem32       00001090     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000e70       _InternalMemSetMem64       000010b0     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gPeiIeHeciPpiGuid         000010e0     IeHeciInit:AutoGen.obj
+ 0002:00000010       _gPeiIePlatformPolicyPpiGuid 000010f0     IeHeciInit:AutoGen.obj
+ 0002:00000020       _gPchSpiPpiGuid            00001100     IeHeciInit:AutoGen.obj
+ 0002:00000030       _mPchSeries                00001110     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000048b       _PchPcrRead                000006cb f    CIL library: CIL module
+ 0001:000005e9       _PchPcrWrite               00000829 f    CIL library: CIL module
+ 0001:00000662       _InternalAcpiDelay         000008a2 f    CIL library: CIL module

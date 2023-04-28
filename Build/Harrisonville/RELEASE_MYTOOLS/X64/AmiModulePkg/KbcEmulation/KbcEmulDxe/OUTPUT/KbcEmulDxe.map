@@ -1,0 +1,64 @@
+ KbcEmulDxe
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000005b0H .text                   CODE
+ 0002:00000000 000005d8H .data                   DATA
+ 0002:000005e0 0000001eH .rdata                  DATA
+ 0002:00000600 00000098H .bss                    DATA
+ 0003:00000000 0000006cH .pdata                  DATA
+ 0004:00000000 00000074H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       ProcessModuleEntryPointList 00000000000002c8 f   KbcEmulDxe:AutoGen.obj
+ 0001:00000128       Get6064SmiTrapStatus       00000000000003c8 f   KbcEmulDxe:KbcEmulDxe.obj
+ 0001:000001b4       NonSmmEmulation6064TrapEnable 0000000000000454 f   KbcEmulDxe:KbcEmulDxe.obj
+ 0001:000001bc       NonSmmEmulation6064TrapDisable 000000000000045c f   KbcEmulDxe:KbcEmulDxe.obj
+ 0001:000001c4       KbcEmulationFeature        0000000000000464 f   KbcEmulDxe:KbcEmulDxe.obj
+ 0001:000001cc       NonSmmTrapEnable           000000000000046c f   KbcEmulDxe:KbcEmulDxe.obj
+ 0001:000002a4       NonSmmValidateUhc          0000000000000544 f   KbcUhciDxe:KbcUhciDxe.obj
+ 0001:000002ec       NonSmmWriteLegKeyReg       000000000000058c f   KbcUhciDxe:KbcUhciDxe.obj
+ 0001:000002ec       NonSmmClearLegKeyStatusReg 000000000000058c f   KbcUhciDxe:KbcUhciDxe.obj
+ 0001:00000340       NonSmmDwordWriteIO         00000000000005e0 f   KbcEmulDxe:KbcEmulDxeLib.obj
+ 0001:00000374       NonSmmReadPCIConfig        0000000000000614 f   KbcEmulDxe:KbcEmulDxeLib.obj
+ 0001:000003d4       NonSmmWordWritePCIConfig   0000000000000674 f   KbcEmulDxe:KbcEmulDxeLib.obj
+ 0001:00000450       GetCpuTimer                00000000000006f0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000460       CPULib_CpuID               0000000000000700 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000004a0       memset                     0000000000000740     AmiDxeLib:MemSet.obj
+ 0001:000004ae       MemSetAsm                  000000000000074e f   AmiDxeLib:MemSet.obj
+ 0001:00000500       MemCpyAsm                  00000000000007a0 f   AmiDxeLib:MemCpy.obj
+ 0001:00000500       memcpy                     00000000000007a0     AmiDxeLib:MemCpy.obj
+ 0002:00000000       gEfiCpuIo2ProtocolGuid     0000000000000860     KbcEmulDxe:AutoGen.obj
+ 0002:00000010       gNonSmmEmul6064TrapProtocolGuid 0000000000000870     KbcEmulDxe:AutoGen.obj
+ 0002:00000028       Uhci_Hc_Array              0000000000000888     KbcUhciDxe:KbcUhciDxe.obj
+ 0002:00000038       Uhci_Hc_Array_Size         0000000000000898     KbcUhciDxe:KbcUhciDxe.obj
+ 0002:00000040       EfiErrorStatus             00000000000008a0     AmiDxeLib:StdLibC.obj
+ 0002:00000380       PiErrorStatus              0000000000000be0     AmiDxeLib:StdLibC.obj
+ 0002:000003d0       AmiErrorStatus             0000000000000c30     AmiDxeLib:StdLibC.obj
+ 0002:00000410       EfiWarningStatus           0000000000000c70     AmiDxeLib:StdLibC.obj
+ 0002:00000480       PiWarningStatus            0000000000000ce0     AmiDxeLib:StdLibC.obj
+ 0002:000004c8       EfiUnknown                 0000000000000d28     AmiDxeLib:StdLibC.obj
+ 0002:000005a8       gEfiSetupGuid              0000000000000e08     KbcEmulDxe:KbcEmulDxe.obj
+ 0002:000005b8       NonSmmEmulation6064Trap    0000000000000e18     KbcEmulDxe:KbcEmulDxe.obj
+ 0002:000005e0       _gUefiDriverRevision       0000000000000e40     KbcEmulDxe:AutoGen.obj
+ 0002:000005e8       ??_C@_1BG@LLAOJLM@?$AAU?$AAs?$AAb?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AA?$AA@ 0000000000000e48     KbcEmulDxe:KbcEmulDxe.obj
+ 0002:00000600       KbcPresent                 0000000000000e60     KbcEmulDxe:KbcEmulDxe.obj
+ 0002:00000608       EmulationTrapHandle        0000000000000e68     KbcEmulDxe:KbcEmulDxe.obj
+ 0002:00000610       gImageHandle               0000000000000e70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000618       gST                        0000000000000e78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000620       gBS                        0000000000000e80     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000670       pST                        0000000000000ed0     AmiDxeLib:EfiLib.obj
+ 0002:00000678       pBS                        0000000000000ed8     AmiDxeLib:EfiLib.obj
+ 0002:00000680       pRS                        0000000000000ee0     AmiDxeLib:EfiLib.obj
+ 0002:00000688       TheImageHandle             0000000000000ee8     AmiDxeLib:EfiLib.obj
+ 0002:00000690       CpuIo                      0000000000000ef0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

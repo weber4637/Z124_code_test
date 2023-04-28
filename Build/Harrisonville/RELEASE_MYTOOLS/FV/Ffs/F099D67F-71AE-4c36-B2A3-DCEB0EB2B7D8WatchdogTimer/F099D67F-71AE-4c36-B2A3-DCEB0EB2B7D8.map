@@ -1,0 +1,44 @@
+ WatchdogTimer
+
+ Timestamp is 6448e7f9 (Wed Apr 26 16:59:37 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000023dH .text                   CODE
+ 0002:00000000 00000048H .data                   DATA
+ 0002:00000050 00000004H .rdata                  DATA
+ 0002:00000058 00000048H .bss                    DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 00000010H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000078       WatchdogTimerDriverExpires 0000000000000318 f   WatchdogTimer:WatchdogTimer.obj
+ 0001:000000d4       WatchdogTimerDriverRegisterHandler 0000000000000374 f   WatchdogTimer:WatchdogTimer.obj
+ 0001:0000010c       WatchdogTimerDriverSetTimerPeriod 00000000000003ac f   WatchdogTimer:WatchdogTimer.obj
+ 0001:00000134       WatchdogTimerDriverGetTimerPeriod 00000000000003d4 f   WatchdogTimer:WatchdogTimer.obj
+ 0001:00000154       InternalReportStatusCode   00000000000003f4 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000001e0       InternalMemCopyMem         0000000000000480     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000220       InternalMemZeroMem         00000000000004c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gEfiCallerIdGuid           00000000000004e0     WatchdogTimer:AutoGen.obj
+ 0002:00000010       gEfiWatchdogTimerArchProtocolGuid 00000000000004f0     WatchdogTimer:AutoGen.obj
+ 0002:00000020       gEfiStatusCodeRuntimeProtocolGuid 0000000000000500     WatchdogTimer:AutoGen.obj
+ 0002:00000030       mWatchdogTimer             0000000000000510     WatchdogTimer:WatchdogTimer.obj
+ 0002:00000050       _gUefiDriverRevision       0000000000000530     WatchdogTimer:AutoGen.obj
+ 0002:00000058       mWatchdogTimerHandle       0000000000000538     WatchdogTimer:WatchdogTimer.obj
+ 0002:00000060       mWatchdogTimerPeriod       0000000000000540     WatchdogTimer:WatchdogTimer.obj
+ 0002:00000068       mWatchdogTimerNotifyFunction 0000000000000548     WatchdogTimer:WatchdogTimer.obj
+ 0002:00000070       gImageHandle               0000000000000550     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000078       gST                        0000000000000558     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000080       gBS                        0000000000000560     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000088       gRT                        0000000000000568     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000090       mReportStatusCodeLibStatusCodeProtocol 0000000000000570     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000098       mWatchdogTimerEvent        0000000000000578     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

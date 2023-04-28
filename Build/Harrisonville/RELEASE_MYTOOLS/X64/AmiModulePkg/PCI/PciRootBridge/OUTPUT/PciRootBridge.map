@@ -1,0 +1,162 @@
+ PciRootBridge
+
+ Timestamp is 6448e7f3 (Wed Apr 26 16:59:31 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000433cH .text                   CODE
+ 0002:00000000 00000670H .data                   DATA
+ 0002:00000670 000000f3H .rdata                  DATA
+ 0002:00000768 00000160H .bss                    DATA
+ 0003:00000000 000002b8H .pdata                  DATA
+ 0004:00000000 00000248H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       InitializePCIHostBridge    00000000000002c8 f   PciRootBridge:PciHostBridge.obj
+ 0001:00000870       RbReadyToBoot              0000000000000b10 f   PciRootBridge:PciHostBridge.obj
+ 0001:000009a4       ConvertMemoryMap           0000000000000c44 f   PciRootBridge:PciHostBridge.obj
+ 0001:00000ad0       GetRbByHandle              0000000000000d70 f   PciRootBridge:PciHostBridge.obj
+ 0001:00000b08       GetResources               0000000000000da8 f   PciRootBridge:PciHostBridge.obj
+ 0001:00000c04       SetResources               0000000000000ea4 f   PciRootBridge:PciHostBridge.obj
+ 0001:00000d9c       AllocateResources          000000000000103c f   PciRootBridge:PciHostBridge.obj
+ 0001:0000106c       HbResAllocNotifyPhase      000000000000130c f   PciRootBridge:PciHostBridge.obj
+ 0001:000011d4       HbResAllocGetNextRootBridge 0000000000001474 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001298       HbResAllocGetAllocAttributes 0000000000001538 f   PciRootBridge:PciHostBridge.obj
+ 0001:000012f0       HbResAllocStartBusEnumeration 0000000000001590 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001340       HbResAllocSetBusNumbers    00000000000015e0 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001398       HbResAllocSubmitResources  0000000000001638 f   PciRootBridge:PciHostBridge.obj
+ 0001:000014b8       HbResAllocGetProposedResources 0000000000001758 f   PciRootBridge:PciHostBridge.obj
+ 0001:000014fc       HbResAllocPreprocessController 000000000000179c f   PciRootBridge:PciHostBridge.obj
+ 0001:00001528       SetTmr                     00000000000017c8 f   PciRootBridge:PciHostBridge.obj
+ 0001:000015a4       PollMem                    0000000000001844 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001704       PollIo                     00000000000019a4 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001860       PciMemRead                 0000000000001b00 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001958       PciMemWrite                0000000000001bf8 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001a50       PciIoRead                  0000000000001cf0 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001b74       PciIoWrite                 0000000000001e14 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001c4c       PciCopyMem                 0000000000001eec f   PciRootBridge:PciHostBridge.obj
+ 0001:00001d30       PciRead                    0000000000001fd0 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001d64       PciWrite                   0000000000002004 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001d98       Map                        0000000000002038 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001df4       Unmap                      0000000000002094 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001e08       AllocateBuffer             00000000000020a8 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001e84       FreeBuffer                 0000000000002124 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001e94       Flush                      0000000000002134 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001e98       GetAttributes              0000000000002138 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001ed0       SetAttributes              0000000000002170 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001f14       Configuration              00000000000021b4 f   PciRootBridge:PciHostBridge.obj
+ 0001:00001f40       GetPcdProtocol             00000000000021e0 f   DxePcdLib:DxePcdLib.obj
+ 0001:00001f7c       reallocItemLst             000000000000221c f   AmiDxeLib:AcpiRes.obj
+ 0001:00002024       InsertItemLst              00000000000022c4 f   AmiDxeLib:AcpiRes.obj
+ 0001:000020b8       DeleteItemLst              0000000000002358 f   AmiDxeLib:AcpiRes.obj
+ 0001:00002124       AppendItemLst              00000000000023c4 f   AmiDxeLib:AcpiRes.obj
+ 0001:00002168       GetAslObj                  0000000000002408 f   AmiDxeLib:AcpiRes.obj
+ 0001:00002394       UpdateAslNameBuffer        0000000000002634 f   AmiDxeLib:AcpiRes.obj
+ 0001:0000240c       UpdateAslNameOfDevice      00000000000026ac f   AmiDxeLib:AcpiRes.obj
+ 0001:00002478       LibGetDsdt                 0000000000002718 f   AmiDxeLib:AcpiRes.obj
+ 0001:0000255c       MemCmp                     00000000000027fc f   AmiDxeLib:Memory.obj
+ 0001:000025d8       GetEfiConfigurationTable   0000000000002878 f   AmiDxeLib:EfiLib.obj
+ 0001:00002624       LibInitStatusCodePtr       00000000000028c4 f   AmiDxeLib:EfiLib.obj
+ 0001:000026a8       LibReportStatusCode        0000000000002948 f   AmiDxeLib:EfiLib.obj
+ 0001:0000271c       Malloc                     00000000000029bc f   AmiDxeLib:EfiLib.obj
+ 0001:00002748       MallocZ                    00000000000029e8 f   AmiDxeLib:EfiLib.obj
+ 0001:00002788       GetEfiVariable             0000000000002a28 f   AmiDxeLib:EfiLib.obj
+ 0001:00002838       LibGetDxeSvcTbl            0000000000002ad8 f   AmiDxeLib:EfiLib.obj
+ 0001:00002888       DummyFunction              0000000000002b28 f   AmiDxeLib:EfiLib.obj
+ 0001:0000288c       ItoaHelper                 0000000000002b2c f   AmiDxeLib:StdLibC.obj
+ 0001:00002900       StrtolEx                   0000000000002ba0 f   AmiDxeLib:StdLibC.obj
+ 0001:000029c8       GetStatusCodeString        0000000000002c68 f   AmiDxeLib:StdLibC.obj
+ 0001:00002ab0       Swprintf                   0000000000002d50 f   AmiDxeLib:StdLibC.obj
+ 0001:00002ad8       Swprintf_s_va_list         0000000000002d78 f   AmiDxeLib:StdLibC.obj
+ 0001:00002f2c       Swprintf_s                 00000000000031cc f   AmiDxeLib:StdLibC.obj
+ 0001:00002f4c       AmiSdlInitBoardInfo        00000000000031ec f   AmiSdlLib:AmiSdlLib.obj
+ 0001:00002fa0       AmiSdlFindIndexRecord      0000000000003240 f   AmiSdlLib:AmiSdlLib.obj
+ 0001:00002ffc       AmiSdlFindRecordIndex      000000000000329c f   AmiSdlLib:AmiSdlLib.obj
+ 0001:0000307c       AmiSdlPciGetChildsOfParentIndex 000000000000331c f   AmiSdlLib:AmiSdlLib.obj
+ 0001:000031a4       AmiSdlReserveCspResources  0000000000003444 f   AmiSdlLib:AmiSdlLib.obj
+ 0001:00003460       SortRbSdlData              0000000000003700 f   AmiPciBusLib:AmiPciBusLib.obj
+ 0001:00003530       AmiPciGetSetupData         00000000000037d0 f   AmiPciBusLib:AmiPciBusLib.obj
+ 0001:0000365c       AmiPciLibLaunchInitRoutine 00000000000038fc f   AmiPciBusLib:AmiPciBusLib.obj
+ 0001:000038f8       CreateNbAcpiTables         0000000000003b98 f   AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0001:00003ae0       HbCspAdjustMemoryMmioOverlap 0000000000003d80 f   AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0001:00003cbc       HbCspAllocateResources     0000000000003f5c f   AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0001:00004004       RootBridgeIoPciRW          00000000000042a4 f   AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0001:000041a0       CPULib_CpuID               0000000000004440 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000041e0       memset                     0000000000004480     AmiDxeLib:MemSet.obj
+ 0001:000041ee       MemSetAsm                  000000000000448e f   AmiDxeLib:MemSet.obj
+ 0001:00004240       MemCpyAsm                  00000000000044e0 f   AmiDxeLib:MemCpy.obj
+ 0001:00004240       memcpy                     00000000000044e0     AmiDxeLib:MemCpy.obj
+ 0001:000042f0       GetCpuTimer                0000000000004590 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00004300       InternalMemCopyMem         00000000000045a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gAmiGlobalVariableGuid     00000000000045e0     PciRootBridge:AutoGen.obj
+ 0002:00000010       gEfiPciRootBridgeIoProtocolGuid 00000000000045f0     PciRootBridge:AutoGen.obj
+ 0002:00000020       gEfiDevicePathProtocolGuid 0000000000004600     PciRootBridge:AutoGen.obj
+ 0002:00000030       gEfiPciHostBridgeResourceAllocationProtocolGuid 0000000000004610     PciRootBridge:AutoGen.obj
+ 0002:00000040       gAmiPciSmmHandoffProtocolGuid 0000000000004620     PciRootBridge:AutoGen.obj
+ 0002:00000050       gPcdProtocolGuid           0000000000004630     PciRootBridge:AutoGen.obj
+ 0002:00000060       gAmiBoardInfo2ProtocolGuid 0000000000004640     PciRootBridge:AutoGen.obj
+ 0002:00000070       gAmiBoardPciInitProtocolGuid 0000000000004650     PciRootBridge:AutoGen.obj
+ 0002:00000080       gEfiAcpiTableProtocolGuid  0000000000004660     PciRootBridge:AutoGen.obj
+ 0002:00000090       gMemoryCeilingVariable     0000000000004670     AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0002:000000a8       gPciSetupGuid              0000000000004688     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:000000e0       EfiErrorStatus             00000000000046c0     AmiDxeLib:StdLibC.obj
+ 0002:00000420       PiErrorStatus              0000000000004a00     AmiDxeLib:StdLibC.obj
+ 0002:00000470       AmiErrorStatus             0000000000004a50     AmiDxeLib:StdLibC.obj
+ 0002:000004b0       EfiWarningStatus           0000000000004a90     AmiDxeLib:StdLibC.obj
+ 0002:00000520       PiWarningStatus            0000000000004b00     AmiDxeLib:StdLibC.obj
+ 0002:00000568       EfiUnknown                 0000000000004b48     AmiDxeLib:StdLibC.obj
+ 0002:00000660       guidDxeSvcTbl              0000000000004c40     AmiDxeLib:EfiLib.obj
+ 0002:00000670       Io32support                0000000000004c50     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:00000671       LaunchCommonRoutineFirst   0000000000004c51     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:00000672       DontUpdateRbResAsl         0000000000004c52     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:00000673       DontUpdatePebs             0000000000004c53     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:00000674       LaunchInitRoutinePriority  0000000000004c54     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:00000678       DontUpdateRbUidAsl         0000000000004c58     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:0000067c       _gUefiDriverRevision       0000000000004c5c     PciRootBridge:AutoGen.obj
+ 0002:00000680       ??_C@_04JEBDJDCG@_UID?$AA@ 0000000000004c60     PciRootBridge:PciHostBridge.obj
+ 0002:00000688       ??_C@_0M@LCCONGAO@EFI_SUCCESS?$AA@ 0000000000004c68     AmiDxeLib:StdLibC.obj
+ 0002:000006a0       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 0000000000004c80     AmiDxeLib:StdLibC.obj
+ 0002:00000708       ??_C@_1O@PMJNFNEJ@?$AA?$CF?$AAS?$AA?$CI?$AA?$CF?$AAX?$AA?$CJ?$AA?$AA@ 0000000000004ce8     AmiDxeLib:StdLibC.obj
+ 0002:00000718       ??_C@_15MAOEGKJF@?$AA?$CF?$AAS?$AA?$AA@ 0000000000004cf8     AmiDxeLib:StdLibC.obj
+ 0002:00000720       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000004d00     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:00000730       ??_C@_1CE@MGFKACED@?$AAH?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AAR?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?$CI?$AA?$CF?$AAa?$AA?$CJ?$AAB?$AAS?$AAH?$AA?$AA@ 0000000000004d10     AmiPciBusLib:AmiPciBusLib.obj
+ 0002:00000754       ??_C@_05EIDOHKKE@ALASKA@   0000000000004d34     AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0002:0000075c       ??_C@_06GNNNPKFB@A?5M?5I?5?$AA@ 0000000000004d3c     AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0002:00000768       gAmiPciSmmHandoffHandle    0000000000004d48     PciRootBridge:PciHostBridge.obj
+ 0002:00000770       gAmiPciSmmHandoff          0000000000004d50     PciRootBridge:PciHostBridge.obj
+ 0002:00000780       gHostBrgPrivateData        0000000000004d60     PciRootBridge:PciHostBridge.obj
+ 0002:00000788       gHostBrgCount              0000000000004d68     PciRootBridge:PciHostBridge.obj
+ 0002:00000790       TmpBot                     0000000000004d70     PciRootBridge:PciHostBridge.obj
+ 0002:000007b0       TmpTop                     0000000000004d90     PciRootBridge:PciHostBridge.obj
+ 0002:000007d0       gPciInitProtocol           0000000000004db0     PciRootBridge:PciHostBridge.obj
+ 0002:000007d8       gImageHandle               0000000000004db8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000007e0       gST                        0000000000004dc0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000007e8       gBS                        0000000000004dc8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000007f0       mPcd                       0000000000004dd0     DxePcdLib:DxePcdLib.obj
+ 0002:000007f8       mPiPcd                     0000000000004dd8     DxePcdLib:DxePcdLib.obj
+ 0002:00000800       mPcdInfo                   0000000000004de0     DxePcdLib:DxePcdLib.obj
+ 0002:00000808       mPiPcdInfo                 0000000000004de8     DxePcdLib:DxePcdLib.obj
+ 0002:00000858       gAmiBoardInfo2Protocol     0000000000004e38     AmiSdlLib:AmiSdlLib.obj
+ 0002:00000860       gSdlPciData                0000000000004e40     AmiSdlLib:AmiSdlLib.obj
+ 0002:00000868       gSdlSioData                0000000000004e48     AmiSdlLib:AmiSdlLib.obj
+ 0002:00000870       mAcpiEvent                 0000000000004e50     AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0002:00000878       mAcpiReg                   0000000000004e58     AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0002:00000880       gMcfgTableKey              0000000000004e60     AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0002:00000888       gAcpiTableProtocol         0000000000004e68     AmiPciAccessCspBaseLibOverride:AmiPciAccessCspBaseLibOverride.obj
+ 0002:00000890       pST                        0000000000004e70     AmiDxeLib:EfiLib.obj
+ 0002:00000898       pBS                        0000000000004e78     AmiDxeLib:EfiLib.obj
+ 0002:000008a0       pRS                        0000000000004e80     AmiDxeLib:EfiLib.obj
+ 0002:000008a8       pSmst                      0000000000004e88     AmiDxeLib:EfiLib.obj
+ 0002:000008b0       pDxe                       0000000000004e90     AmiDxeLib:EfiLib.obj
+ 0002:000008b8       TheImageHandle             0000000000004e98     AmiDxeLib:EfiLib.obj
+ 0002:000008c0       gPciCommonSetup            0000000000004ea0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00003a44       AmiPciAccessCspBaseLibSetVariableWithNewAttributes 0000000000003ce4 f    CIL library: CIL module

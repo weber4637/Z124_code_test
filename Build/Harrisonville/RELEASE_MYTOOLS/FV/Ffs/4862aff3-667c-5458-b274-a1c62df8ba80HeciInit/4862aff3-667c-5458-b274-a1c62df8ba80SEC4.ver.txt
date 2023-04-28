@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\4862aff3-667c-5458-b274-a1c62df8ba80HeciInit\4862aff3-667c-5458-b274-a1c62df8ba80SEC4.ver

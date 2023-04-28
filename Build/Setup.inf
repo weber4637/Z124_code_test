@@ -1,0 +1,149 @@
+## @file
+#   The [Sources] section for this file is auto-generated from ELINKs:
+#   SETUP_DEFINITIONS, SETUP_FORMSETS, SetupStringFiles, and SetupCallbackFiles
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Setup
+  FILE_GUID                      = 899407D7-99FE-43d8-9A21-79EC328CAC21
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = SetupEntry
+#
+#  This flag specifies whether HII resource section is generated into PE image.
+#
+  UEFI_HII_RESOURCE_SECTION      = TRUE
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[Sources]
+  ../AmiCompatibilityPkg\Setup/Setup.c
+  ../AmiCompatibilityPkg\Setup/SetupHiiAccess.c
+  ../AmiCompatibilityPkg\Setup/Setup.uni
+  ../AmiCompatibilityPkg\Setup/Setup.vfr
+  ../AmiCompatibilityPkg\Setup/SetupLibrary.c
+  ../AmiCompatibilityPkg\Setup/SetupPrivate.h
+
+  ../AmiCompatibilityPkg/Setup/AmiBiosInfo.sd
+ ../AmiCompatibilityPkg/Setup/AmiTse.sd
+ ../AmiModulePkg/FixedBootOrder/DefaultFixedBootOrder/FboSetupPages.sd
+ ../AmiModulePkg/TCG2/Common/Setup/TcgSetup.sd
+ ../AmiModulePkg/ACPI/ACPI.sd
+ ../AmiModulePkg/BootSectorWriteProtect/BootSectorWriteProtect.sd
+ ../AmiModulePkg/IO/NCT6683D/NCT6683DSetup.sd
+ ../AmiModulePkg/IO/NCT6683D/NCT6683DHwmSetup.sd
+ ../AmiModulePkg/GenericSio/SioStaticSetup.sd
+ ../AmiModulePkg/RtcWake/RTCWakeup.sd
+ ../AmiModulePkg/Terminal/Terminal.sd
+ ../AmiChipsetModulePkg/NB/NbSetup/Nb.sd
+ ../AmiTsePkg/EDK/MiniSetup/TseAdvanced/AddDelBootDrvOpts.sd
+ ../AmiModulePkg/DbgTables/DebugPortTables.sd
+ ../AmiModulePkg/PCI/PciStaticSetup.sd
+ ../AmiNetworkPkg/UefiNetworkStack/Common/NetworkStackSetupScreen/NetworkStackSetupScreen.sd
+ ../AmiModulePkg/CSM/CsmPolicy/Csm.sd
+ ../AmiModulePkg/Nvme/NvmeDynamicSetup/NvmeDynamicSetup.sd
+ ../AmiModulePkg/Usb/Setup/Usb.sd
+ ../Build/DefaultFixedBootOrder.sd
+ ../AmiCompatibilityPkg/Setup/DynamicPages.sd
+
+  ../AmiModulePkg/IO/NCT6683D/NCT6683DSetup.uni
+ ../AmiModulePkg/IO/NCT6683D/NCT6683DHwmSetup.uni
+ ../AmiChipsetModulePkg/NB/NbSetup/Nb.uni
+ ../AmiTsePkg/EDK/MiniSetup/TseAdvanced/AddDelBootDrvOpts.uni
+ ../AmiModulePkg/ACPI/ACPI.uni
+ ../AmiModulePkg/DbgTables/DebugPortTables.uni
+ ../AmiModulePkg/GenericSio/SioStaticSetup.uni
+ ../AmiModulePkg/PCI/PciStaticSetup.uni
+ ../AmiModulePkg/Terminal/Terminal.uni
+ ../AmiNetworkPkg/UefiNetworkStack/Common/NetworkStackSetupScreen/NetworkStackSetupScreen.uni
+ ../AmiModulePkg/BootSectorWriteProtect/BootSectorWriteProtect.uni
+ ../AmiModulePkg/CSM/CsmPolicy/Csm.uni
+ ../AmiModulePkg/Nvme/NvmeDynamicSetup/NvmeDynamicSetup.uni
+ ../AmiModulePkg/Ofbd/Meud/Setup/Meud.uni
+ ../AmiModulePkg/RtcWake/RTCWakeup.uni
+ ../AmiModulePkg/TCG2/Common/Setup/TcgSetup.uni
+ ../AmiModulePkg/Usb/Setup/Usb.uni
+ ../AmiModulePkg/FixedBootOrder/DefaultFixedBootOrder/DefaultFixedBootOrder.uni
+
+	../AmiModulePkg/IO/NCT6683D/NCT6683DSetup.c
+ ../AmiModulePkg/IO/NCT6683D/NCT6683DHwmSetup.c
+ ../AmiChipsetModulePkg/NB/NbSetup/NbSetup.c
+ ../AmiModulePkg/GenericSio/SioStaticSetup.c
+ ../AmiModulePkg/PCI/PciStaticSetup.c
+ ../AmiModulePkg/Terminal/InitTerminalStrings.c
+ ../AmiModulePkg/CSM/CsmPolicy/CsmSetup.c
+ ../AmiModulePkg/Ofbd/Meud/Setup/InitMeudString.c
+ ../AmiModulePkg/TCG2/Common/Setup/TcgSetup.c
+ ../AmiModulePkg/Usb/Setup/UsbSetup.c
+ ../AmiModulePkg/FixedBootOrder/FixedBootOrder.c
+
+
+[Packages]
+  AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+  AmiModulePkg/AmiModulePkg.dec
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  AmiTsePkg/AmiTsePkg.dec
+  AmiChipsetPkg/AmiChipsetPkg.dec
+ DenvertonPkg\SystemAgent\Mrc\Mmrc\ProjectData\DNV\Pei\MemoryInit.dec
+ DenvertonPkg/SiPkg.dec
+ AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+ AmiNetworkPkg/AmiNetworkPkg.dec
+ AmiTcgPkg/AmiTcgPkg.dec
+
+
+[LibraryClasses]
+  AmiDxeLib
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  DxeServicesTableLib
+  DevicePathLib
+  HiiLib
+  BaseLib
+  PrintLib
+  UefiLib
+  DebugLib
+
+  HobLib
+
+
+[Protocols]
+  gEfiHiiPackageListProtocolGuid    ## CONSUMES
+  gEfiHiiStringProtocolGuid    ## CONSUMES
+  gEfiHiiDatabaseProtocolGuid    ## CONSUMES
+  gEfiLoadedImageDevicePathProtocolGuid ## CONSUMES
+  gEfiDevicePathProtocolGuid            ## CONSUMES
+  gEfiHiiConfigAccessProtocolGuid  	    ## PRODUCES
+  gEfiHiiConfigRoutingProtocolGuid      ## CONSUMES
+
+  gEfiGraphicsOutputProtocolGuid
+ gEfiBlockIoProtocolGuid
+ gEfiDevicePathProtocolGuid
+ gEfiBootManagerPolicyProtocolGuid
+ gEfiPciIoProtocolGuid
+
+[Guids]
+  gEfiGlobalVariableGuid    ## CONSUMES
+  gAmiTseSetupEnterGuid
+  gEfiMemoryConfigDataGuid
+ gTcgInternalflagGuid
+ gEfiGlobalVariableGuid
+
+
+[Pcd]
+
+  
+
+
+[Depex]
+  gAmiConInStartedProtocolGuid
+
+[BuildOptions]
+  *_*_*_BUILD_FLAGS=-s
+

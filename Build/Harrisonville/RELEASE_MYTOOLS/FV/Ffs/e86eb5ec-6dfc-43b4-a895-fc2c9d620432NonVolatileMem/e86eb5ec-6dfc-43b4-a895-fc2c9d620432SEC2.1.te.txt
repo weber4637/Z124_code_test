@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_TE -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\e86eb5ec-6dfc-43b4-a895-fc2c9d620432NonVolatileMem\e86eb5ec-6dfc-43b4-a895-fc2c9d620432SEC2.1.te d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\e86eb5ec-6dfc-43b4-a895-fc2c9d620432NonVolatileMem\e86eb5ec-6dfc-43b4-a895-fc2c9d620432Te.raw

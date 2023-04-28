@@ -1,0 +1,338 @@
+ Ip6Dxe
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00010802H .text                   CODE
+ 0002:00000000 00001218H .data                   DATA
+ 0002:00001220 000005c2H .rdata                  DATA
+ 0002:00001800 000000a0H .bss                    DATA
+ 0003:00000000 00000888H .pdata                  DATA
+ 0004:00000000 00000788H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _DriverUnloadHandler       00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000018c       _ModuleEntryPoint          000000000000042c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001e4       ProcessLibraryConstructorList 0000000000000484 f   Ip6Dxe:AutoGen.obj
+ 0001:000002bc       ProcessModuleEntryPointList 000000000000055c f   Ip6Dxe:AutoGen.obj
+ 0001:000003a0       IpSec2InstalledCallback    0000000000000640 f   Ip6Dxe:Ip6Driver.obj
+ 0001:000003bc       Ip6DriverBindingSupported  000000000000065c f   Ip6Dxe:Ip6Driver.obj
+ 0001:00000434       Ip6CleanService            00000000000006d4 f   Ip6Dxe:Ip6Driver.obj
+ 0001:00000788       Ip6CreateService           0000000000000a28 f   Ip6Dxe:Ip6Driver.obj
+ 0001:00000cd4       Ip6DriverBindingStart      0000000000000f74 f   Ip6Dxe:Ip6Driver.obj
+ 0001:00000ed4       Ip6DestroyChildEntryInHandleBuffer 0000000000001174 f   Ip6Dxe:Ip6Driver.obj
+ 0001:00000f2c       Ip6DriverBindingStop       00000000000011cc f   Ip6Dxe:Ip6Driver.obj
+ 0001:00001178       Ip6ServiceBindingCreateChild 0000000000001418 f   Ip6Dxe:Ip6Driver.obj
+ 0001:000012e8       Ip6ServiceBindingDestroyChild 0000000000001588 f   Ip6Dxe:Ip6Driver.obj
+ 0001:000014a0       Ip6BuildEfiNeighborCache   0000000000001740 f   Ip6Dxe:Ip6Nd.obj
+ 0001:0000157c       Ip6BuildPrefixTable        000000000000181c f   Ip6Dxe:Ip6Nd.obj
+ 0001:0000163c       Ip6CreatePrefixListEntry   00000000000018dc f   Ip6Dxe:Ip6Nd.obj
+ 0001:000017a0       Ip6DestroyPrefixListEntry  0000000000001a40 f   Ip6Dxe:Ip6Nd.obj
+ 0001:0000186c       Ip6FindPrefixListEntry     0000000000001b0c f   Ip6Dxe:Ip6Nd.obj
+ 0001:000018e8       Ip6CleanPrefixListTable    0000000000001b88 f   Ip6Dxe:Ip6Nd.obj
+ 0001:0000193c       Ip6OnArpResolved           0000000000001bdc f   Ip6Dxe:Ip6Nd.obj
+ 0001:00001b68       Ip6CreateNeighborEntry     0000000000001e08 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00001c60       Ip6FindNeighborEntry       0000000000001f00 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00001cf0       Ip6FreeNeighborEntry       0000000000001f90 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00001e94       Ip6CreateDefaultRouter     0000000000002134 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00001f74       Ip6DestroyDefaultRouter    0000000000002214 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00001fdc       Ip6FindDefaultRouter       000000000000227c f   Ip6Dxe:Ip6Nd.obj
+ 0001:00002038       Ip6OnDADFinished           00000000000022d8 f   Ip6Dxe:Ip6Nd.obj
+ 0001:000022d0       Ip6FindDADEntry            0000000000002570 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00002368       Ip6SendRouterSolicit       0000000000002608 f   Ip6Dxe:Ip6Nd.obj
+ 0001:0000247c       Ip6SendNeighborAdvertise   000000000000271c f   Ip6Dxe:Ip6Nd.obj
+ 0001:00002618       Ip6SendNeighborSolicit     00000000000028b8 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00002850       Ip6ProcessNeighborSolicit  0000000000002af0 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00002ba4       Ip6ProcessNeighborAdvertise 0000000000002e44 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00002f08       Ip6ProcessRouterAdvertise  00000000000031a8 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00003618       Ip6ProcessRedirect         00000000000038b8 f   Ip6Dxe:Ip6Nd.obj
+ 0001:0000398c       Ip6AddNeighbor             0000000000003c2c f   Ip6Dxe:Ip6Nd.obj
+ 0001:00003a78       Ip6NdFasterTimerTicking    0000000000003d18 f   Ip6Dxe:Ip6Nd.obj
+ 0001:00004018       Ip6CandidateSource         00000000000042b8 f   Ip6Dxe:Ip6Output.obj
+ 0001:0000415c       Ip6SelectSourceAddress     00000000000043fc f   Ip6Dxe:Ip6Output.obj
+ 0001:0000435c       Ip6SelectInterface         00000000000045fc f   Ip6Dxe:Ip6Output.obj
+ 0001:00004408       Ip6SysPacketSent           00000000000046a8 f   Ip6Dxe:Ip6Output.obj
+ 0001:00004410       Ip6PrependHead             00000000000046b0 f   Ip6Dxe:Ip6Output.obj
+ 0001:00004540       Ip6Output                  00000000000047e0 f   Ip6Dxe:Ip6Output.obj
+ 0001:00004e18       Ip6CancelPacketFragments   00000000000050b8 f   Ip6Dxe:Ip6Output.obj
+ 0001:00004e2c       Ip6CancelFrames            00000000000050cc f   Ip6Dxe:Ip6Output.obj
+ 0001:00004fa8       Ip6BuildEfiAddressList     0000000000005248 f   Ip6Dxe:Ip6Common.obj
+ 0001:0000508c       Ip6SetToAllNodeMulticast   000000000000532c f   Ip6Dxe:Ip6Common.obj
+ 0001:000050c8       Ip6CreateInterfaceID       0000000000005368 f   Ip6Dxe:Ip6Common.obj
+ 0001:0000516c       Ip6CreateLinkLocalAddr     000000000000540c f   Ip6Dxe:Ip6Common.obj
+ 0001:000052b4       Ip6CreateSNMulticastAddr   0000000000005554 f   Ip6Dxe:Ip6Common.obj
+ 0001:00005304       Ip6DestroyChildEntryByAddr 00000000000055a4 f   Ip6Dxe:Ip6Common.obj
+ 0001:00005354       Ip6RemoveAddr              00000000000055f4 f   Ip6Dxe:Ip6Common.obj
+ 0001:000054b0       Ip6IsSNMulticastAddr       0000000000005750 f   Ip6Dxe:Ip6Common.obj
+ 0001:000054f8       Ip6IsOneOfSetAddress       0000000000005798 f   Ip6Dxe:Ip6Common.obj
+ 0001:000055e4       Ip6GetMulticastMac         0000000000005884 f   Ip6Dxe:Ip6Common.obj
+ 0001:0000562c       Ip6FreeAssembleEntry       00000000000058cc f   Ip6Dxe:Ip6Input.obj
+ 0001:000056a0       Ip6OnFreeFragments         0000000000005940 f   Ip6Dxe:Ip6Input.obj
+ 0001:000056a8       Ip6TrimPacket              0000000000005948 f   Ip6Dxe:Ip6Input.obj
+ 0001:0000571c       Ip6Reassemble              00000000000059bc f   Ip6Dxe:Ip6Input.obj
+ 0001:00005af0       Ip6IpSecFree               0000000000005d90 f   Ip6Dxe:Ip6Input.obj
+ 0001:00005b28       Ip6IpSecProcessPacket      0000000000005dc8 f   Ip6Dxe:Ip6Input.obj
+ 0001:00005f84       Ip6PreProcessPacket        0000000000006224 f   Ip6Dxe:Ip6Input.obj
+ 0001:00006364       Ip6AcceptFrame             0000000000006604 f   Ip6Dxe:Ip6Input.obj
+ 0001:00006580       Ip6OnRecyclePacket         0000000000006820 f   Ip6Dxe:Ip6Input.obj
+ 0001:00006620       Ip6WrapRxData              00000000000068c0 f   Ip6Dxe:Ip6Input.obj
+ 0001:00006714       Ip6InstanceFrameAcceptable 00000000000069b4 f   Ip6Dxe:Ip6Input.obj
+ 0001:000068fc       Ip6InstanceDeliverPacket   0000000000006b9c f   Ip6Dxe:Ip6Input.obj
+ 0001:00006b08       Ip6Demultiplex             0000000000006da8 f   Ip6Dxe:Ip6Input.obj
+ 0001:00006d60       Ip6SentPacketTicking       0000000000007000 f   Ip6Dxe:Ip6Input.obj
+ 0001:00006da8       Ip6ComponentNameGetDriverName 0000000000007048 f   Ip6Dxe:ComponentName.obj
+ 0001:00006ddc       UpdateName                 000000000000707c f   Ip6Dxe:ComponentName.obj
+ 0001:0000701c       Ip6ComponentNameGetControllerName 00000000000072bc f   Ip6Dxe:ComponentName.obj
+ 0001:00007148       Ip6CancelInstanceFrame     00000000000073e8 f   Ip6Dxe:Ip6If.obj
+ 0001:00007150       Ip6SetAddress              00000000000073f0 f   Ip6Dxe:Ip6If.obj
+ 0001:00007354       Ip6CreateInterface         00000000000075f4 f   Ip6Dxe:Ip6If.obj
+ 0001:0000747c       Ip6CleanInterface          000000000000771c f   Ip6Dxe:Ip6If.obj
+ 0001:00007584       Ip6RecycleFrame            0000000000007824 f   Ip6Dxe:Ip6If.obj
+ 0001:00007594       Ip6OnFrameReceivedDpc      0000000000007834 f   Ip6Dxe:Ip6If.obj
+ 0001:00007668       Ip6OnFrameReceived         0000000000007908 f   Ip6Dxe:Ip6If.obj
+ 0001:00007684       Ip6OnFrameSentDpc          0000000000007924 f   Ip6Dxe:Ip6If.obj
+ 0001:000076dc       Ip6OnFrameSent             000000000000797c f   Ip6Dxe:Ip6If.obj
+ 0001:000076f8       Ip6SendFrame               0000000000007998 f   Ip6Dxe:Ip6If.obj
+ 0001:000079fc       Ip6TimerTicking            0000000000007c9c f   Ip6Dxe:Ip6If.obj
+ 0001:00007cbc       Ip6ConfigOnPolicyChanged   0000000000007f5c f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00007e38       Ip6ConfigStartStatefulAutoConfig 00000000000080d8 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:000080c4       Ip6ConfigSignalEvent       0000000000008364 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:000080e0       Ip6ConfigReadConfigData    0000000000008380 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:000082c0       Ip6ConfigWriteConfigData   0000000000008560 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00008418       Ip6ConfigGetIfInfo         00000000000086b8 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00008524       Ip6ConfigSetAltIfId        00000000000087c4 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:0000856c       Ip6ConfigSetPolicy         000000000000880c f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:000086bc       Ip6ConfigSetDadXmits       000000000000895c f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:000086ec       Ip6ManualAddrDadCallback   000000000000898c f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00008978       Ip6ConfigSetMaunualAddress 0000000000008c18 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00008ddc       Ip6ConfigSetGateway        000000000000907c f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009044       Ip6ConfigSetDnsServer      00000000000092e4 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009278       Ip6ConfigParseDhcpReply    0000000000009518 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:000094a0       Ip6ConfigSetStatefulAddrCallback 0000000000009740 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009544       Ip6ConfigOnDhcp6Event      00000000000097e4 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009704       Ip6ConfigOnDhcp6Reply      00000000000099a4 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:0000970c       Ip6ConfigOnDhcp6SbInstalled 00000000000099ac f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:0000973c       EfiIp6ConfigSetData        00000000000099dc f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009890       EfiIp6ConfigGetData        0000000000009b30 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:000099a8       EfiIp6ConfigRegisterDataNotify 0000000000009c48 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009a84       EfiIp6ConfigUnregisterDataNotify 0000000000009d24 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009b70       Ip6ConfigInitInstance      0000000000009e10 f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009edc       Ip6ConfigDestroyDhcp6      000000000000a17c f   Ip6Dxe:Ip6ConfigImpl.obj
+ 0001:00009f98       EfiIp6GetModeData          000000000000a238 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000a26c       Ip6IsValidAddress          000000000000a50c f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000a2cc       Ip6InitProtocol            000000000000a56c f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000a3a0       Ip6ConfigProtocol          000000000000a640 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000a58c       Ip6CleanProtocol           000000000000a82c f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000a64c       Ip6ServiceConfigMnp        000000000000a8ec f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000a6f8       EfiIp6Configure            000000000000a998 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000a894       EfiIp6Groups               000000000000ab34 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000a94c       EfiIp6Routes               000000000000abec f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000aa78       EfiIp6Neighbors            000000000000ad18 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000abe4       Ip6TokenExist              000000000000ae84 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000ac04       Ip6FreeTxToken             000000000000aea4 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000acb4       Ip6OnPacketSent            000000000000af54 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000acc8       EfiIp6Transmit             000000000000af68 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000b128       EfiIp6Receive              000000000000b3c8 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000b22c       Ip6CancelTxTokens          000000000000b4cc f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000b288       Ip6CancelRxTokens          000000000000b528 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000b310       Ip6Cancel                  000000000000b5b0 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000b3e0       EfiIp6Cancel               000000000000b680 f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000b45c       EfiIp6Poll                 000000000000b6fc f   Ip6Dxe:Ip6Impl.obj
+ 0001:0000b4b0       Ip6CreateMldEntry          000000000000b750 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000b53c       Ip6FindMldEntry            000000000000b7dc f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000b598       Ip6SendMldReport           000000000000b838 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000b758       Ip6SendMldDone             000000000000b9f8 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000b910       Ip6InitMld                 000000000000bbb0 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000b9dc       Ip6RemoveGroup             000000000000bc7c f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000ba94       Ip6JoinGroup               000000000000bd34 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000bb94       Ip6LeaveGroup              000000000000be34 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000bcb8       Ip6Groups                  000000000000bf58 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000be98       Ip6UpdateDelayTimer        000000000000c138 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000bf14       Ip6ProcessMldQuery         000000000000c1b4 f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000c06c       Ip6ProcessMldReport        000000000000c30c f   Ip6Dxe:Ip6Mld.obj
+ 0001:0000c13c       Ip6CreateRouteEntry        000000000000c3dc f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c1cc       Ip6FindRouteEntry          000000000000c46c f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c240       Ip6CreateRouteCacheEntry   000000000000c4e0 f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c2e8       Ip6FindRouteCache          000000000000c588 f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c39c       Ip6BuildEfiRouteTable      000000000000c63c f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c518       Ip6CleanRouteTable         000000000000c7b8 f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c618       Ip6AddRoute                000000000000c8b8 f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c6fc       Ip6DelRoute                000000000000c99c f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c870       Ip6Route                   000000000000cb10 f   Ip6Dxe:Ip6Route.obj
+ 0001:0000c9b4       Ip6IsOptionValid           000000000000cc54 f   Ip6Dxe:Ip6Option.obj
+ 0001:0000ca7c       Ip6IsNDOptionValid         000000000000cd1c f   Ip6Dxe:Ip6Option.obj
+ 0001:0000cac8       Ip6IsExtsValid             000000000000cd68 f   Ip6Dxe:Ip6Option.obj
+ 0001:0000ceb4       Ip6FillHopByHop            000000000000d154 f   Ip6Dxe:Ip6Option.obj
+ 0001:0000cf08       Ip6FillFragmentHeader      000000000000d1a8 f   Ip6Dxe:Ip6Option.obj
+ 0001:0000d12c       Ip6IcmpReplyEcho           000000000000d3cc f   Ip6Dxe:Ip6Icmp.obj
+ 0001:0000d288       Ip6ProcessPacketTooBig     000000000000d528 f   Ip6Dxe:Ip6Icmp.obj
+ 0001:0000d388       Ip6ProcessIcmpInformation  000000000000d628 f   Ip6Dxe:Ip6Icmp.obj
+ 0001:0000d4a4       Ip6IcmpHandle              000000000000d744 f   Ip6Dxe:Ip6Icmp.obj
+ 0001:0000d5b0       Ip6IsAnycast               000000000000d850 f   Ip6Dxe:Ip6Icmp.obj
+ 0001:0000d6e8       Ip6SendIcmpError           000000000000d988 f   Ip6Dxe:Ip6Icmp.obj
+ 0001:0000d938       InternalAllocatePool       000000000000dbd8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000d968       AllocateZeroPool           000000000000dc08 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000d994       InternalAllocateCopyPool   000000000000dc34 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000d9d8       UnicodeSPrint              000000000000dc78 f   BasePrintLib:PrintLib.obj
+ 0001:0000da0c       BasePrintLibFillBuffer     000000000000dcac f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000da40       BasePrintLibConvertValueToString 000000000000dce0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000dbfc       BasePrintLibSPrintMarker   000000000000de9c f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000ea78       BasePrintLibSPrint         000000000000ed18 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000ea9c       EfiGetSystemConfigurationTable 000000000000ed3c f   UefiLib:UefiLib.obj
+ 0001:0000eb00       EfiCreateProtocolNotifyEvent 000000000000eda0 f   UefiLib:UefiLib.obj
+ 0001:0000eb5c       LookupUnicodeString2       000000000000edfc f   UefiLib:UefiLib.obj
+ 0001:0000ece8       AddUnicodeString2          000000000000ef88 f   UefiLib:UefiLib.obj
+ 0001:0000efb8       NetIp6IsValidUnicast       000000000000f258 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000efe4       NetIp6IsLinkLocalAddr      000000000000f284 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f00c       NetIp6IsNetEqual           000000000000f2ac f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f0a4       NetRandomInitSeed          000000000000f344 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f1ec       NetDestroyLinkList         000000000000f48c f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f28c       NetMapClean                000000000000f52c f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f310       NetMapAllocItem            000000000000f5b0 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f384       NetMapInsertTail           000000000000f624 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f3e8       NetMapIterate              000000000000f688 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f444       NetLibGetSnpHandle         000000000000f6e4 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f50c       NetLibGetVlanId            000000000000f7ac f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f554       NetLibGetMacString         000000000000f7f4 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f754       NetLibIp6ToStr             000000000000f9f4 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000f914       NetbufAllocStruct          000000000000fbb4 f   DxeNetLib:NetBuffer.obj
+ 0001:0000f9b8       NetbufAlloc                000000000000fc58 f   DxeNetLib:NetBuffer.obj
+ 0001:0000fa50       NetbufFreeVector           000000000000fcf0 f   DxeNetLib:NetBuffer.obj
+ 0001:0000fad0       NetbufFree                 000000000000fd70 f   DxeNetLib:NetBuffer.obj
+ 0001:0000fafc       NetbufDuplicate            000000000000fd9c f   DxeNetLib:NetBuffer.obj
+ 0001:0000fb90       NetbufGetByte              000000000000fe30 f   DxeNetLib:NetBuffer.obj
+ 0001:0000fbec       NetbufGetFragmentFree      000000000000fe8c f   DxeNetLib:NetBuffer.obj
+ 0001:0000fbf4       NetbufGetFragment          000000000000fe94 f   DxeNetLib:NetBuffer.obj
+ 0001:0000fef4       NetbufFromExt              0000000000010194 f   DxeNetLib:NetBuffer.obj
+ 0001:0001005c       NetbufBuildExt             00000000000102fc f   DxeNetLib:NetBuffer.obj
+ 0001:000100b4       NetbufFromBufList          0000000000010354 f   DxeNetLib:NetBuffer.obj
+ 0001:00010188       NetbufAllocSpace           0000000000010428 f   DxeNetLib:NetBuffer.obj
+ 0001:000102c8       NetbufTrim                 0000000000010568 f   DxeNetLib:NetBuffer.obj
+ 0001:0001037c       NetbufCopy                 000000000001061c f   DxeNetLib:NetBuffer.obj
+ 0001:000104d8       NetblockChecksum           0000000000010778 f   DxeNetLib:NetBuffer.obj
+ 0001:0001051c       NetbufChecksum             00000000000107bc f   DxeNetLib:NetBuffer.obj
+ 0001:000105a0       NetIp6PseudoHeadChecksum   0000000000010840 f   DxeNetLib:NetBuffer.obj
+ 0001:00010660       StrCpyS                    0000000000010900 f   BaseLib:SafeString.obj
+ 0001:000106f4       DevicePathFromHandle       0000000000010994 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00010730       InternalMemZeroMem         00000000000109d0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00010750       InternalMemCompareMem      00000000000109f0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00010770       InternalMemCopyMem         0000000000010a10     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000107b0       InternalMemSetMem          0000000000010a50     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000107d0       InternalMemSetMem32        0000000000010a70     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000107f0       InternalMemSetMem64        0000000000010a90     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiNetworkStackSetupGuid  0000000000010ac0     Ip6Dxe:AutoGen.obj
+ 0002:00000010       gEfiSmbiosTableGuid        0000000000010ad0     Ip6Dxe:AutoGen.obj
+ 0002:00000020       gEfiSmbios3TableGuid       0000000000010ae0     Ip6Dxe:AutoGen.obj
+ 0002:00000030       gEfiManagedNetworkServiceBindingProtocolGuid 0000000000010af0     Ip6Dxe:AutoGen.obj
+ 0002:00000040       gEfiManagedNetworkProtocolGuid 0000000000010b00     Ip6Dxe:AutoGen.obj
+ 0002:00000050       gEfiArpServiceBindingProtocolGuid 0000000000010b10     Ip6Dxe:AutoGen.obj
+ 0002:00000060       gEfiIp6ServiceBindingProtocolGuid 0000000000010b20     Ip6Dxe:AutoGen.obj
+ 0002:00000070       gEfiIp6ProtocolGuid        0000000000010b30     Ip6Dxe:AutoGen.obj
+ 0002:00000080       gEfiIp6ConfigProtocolGuid  0000000000010b40     Ip6Dxe:AutoGen.obj
+ 0002:00000090       gEfiDhcp6ServiceBindingProtocolGuid 0000000000010b50     Ip6Dxe:AutoGen.obj
+ 0002:000000a0       gEfiDhcp6ProtocolGuid      0000000000010b60     Ip6Dxe:AutoGen.obj
+ 0002:000000b0       gEfiIpSec2ProtocolGuid     0000000000010b70     Ip6Dxe:AutoGen.obj
+ 0002:000000c0       gEfiDevicePathProtocolGuid 0000000000010b80     Ip6Dxe:AutoGen.obj
+ 0002:000000d0       gEfiDriverBindingProtocolGuid 0000000000010b90     Ip6Dxe:AutoGen.obj
+ 0002:000000e0       gEfiHiiFontProtocolGuid    0000000000010ba0     Ip6Dxe:AutoGen.obj
+ 0002:000000f0       gEfiComponentNameProtocolGuid 0000000000010bb0     Ip6Dxe:AutoGen.obj
+ 0002:00000100       gEfiComponentName2ProtocolGuid 0000000000010bc0     Ip6Dxe:AutoGen.obj
+ 0002:00000110       gEfiHiiStringProtocolGuid  0000000000010bd0     Ip6Dxe:AutoGen.obj
+ 0002:00000120       gEfiHiiImageProtocolGuid   0000000000010be0     Ip6Dxe:AutoGen.obj
+ 0002:00000130       gEfiHiiDatabaseProtocolGuid 0000000000010bf0     Ip6Dxe:AutoGen.obj
+ 0002:00000140       gEfiHiiConfigRoutingProtocolGuid 0000000000010c00     Ip6Dxe:AutoGen.obj
+ 0002:00000150       gEfiLoadedImageProtocolGuid 0000000000010c10     Ip6Dxe:AutoGen.obj
+ 0002:00000160       gEfiSimpleNetworkProtocolGuid 0000000000010c20     Ip6Dxe:AutoGen.obj
+ 0002:00000170       gEfiDpcProtocolGuid        0000000000010c30     Ip6Dxe:AutoGen.obj
+ 0002:00000180       mIp6SupportedIcmp          0000000000010c40     Ip6Dxe:Ip6Icmp.obj
+ 0002:000001b0       mEfiIp6ProtocolTemplete    0000000000010c70     Ip6Dxe:Ip6Impl.obj
+ 0002:000001f8       mIp6ConfigInstanceList     0000000000010cb8     Ip6Dxe:Ip6ConfigImpl.obj
+ 0002:00000208       gIp6DriverBinding          0000000000010cc8     Ip6Dxe:Ip6Driver.obj
+ 0002:00000240       Ip6DxeStrings              0000000000010d00     Ip6Dxe:AutoGen.obj
+ 0002:000011c8       gIp6ComponentName          0000000000011c88     Ip6Dxe:ComponentName.obj
+ 0002:000011e0       gIp6ComponentName2         0000000000011ca0     Ip6Dxe:ComponentName.obj
+ 0002:000011f8       mIp6DriverNameTable        0000000000011cb8     Ip6Dxe:ComponentName.obj
+ 0002:00001220       _gUefiDriverRevision       0000000000011ce0     Ip6Dxe:AutoGen.obj
+ 0002:00001228       ??_C@_1CA@BCMJNMNL@?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AAS?$AAt?$AAa?$AAc?$AAk?$AAV?$AAa?$AAr?$AA?$AA@ 0000000000011ce8     Ip6Dxe:Ip6Driver.obj
+ 0002:00001248       ??_C@_1DG@FEHELHPD@?$AAI?$AAP?$AA6?$AA?5?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AA?5?$AAS?$AAe?$AAr?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000011d08     Ip6Dxe:ComponentName.obj
+ 0002:00001280       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000011d40     Ip6Dxe:ComponentName.obj
+ 0002:00001288       ??_C@_02LFNMGJAP@en?$AA@   0000000000011d48     Ip6Dxe:ComponentName.obj
+ 0002:0000128c       ??_C@_03LKLGDMJI@eng?$AA@  0000000000011d4c     Ip6Dxe:ComponentName.obj
+ 0002:00001290       ??_C@_1DC@CPAOJNHM@?$AAI?$AAP?$AAv?$AA6?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAi?$AAo?$AAn?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?$DN?$AA?$CF?$AAs?$AA?0?$AA?5?$AA?$AA@ 0000000000011d50     Ip6Dxe:ComponentName.obj
+ 0002:000012c8       ??_C@_1CO@JHCOJBAN@?$AAD?$AAe?$AAs?$AAt?$AAi?$AAn?$AAa?$AAt?$AAi?$AAo?$AAn?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?$DN?$AA?$CF?$AAs?$AA?$CJ?$AA?$AA@ 0000000000011d88     Ip6Dxe:ComponentName.obj
+ 0002:000012f8       ??_C@_1CE@CIBCMJLB@?$AAI?$AAP?$AAv?$AA6?$AA?$CI?$AAN?$AAo?$AAt?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AAe?$AAd?$AA?$CJ?$AA?$AA@ 0000000000011db8     Ip6Dxe:ComponentName.obj
+ 0002:00001320       ??_C@_1BC@INEGJICE@?$AAI?$AAP?$AAv?$AA6?$AA?$CI?$AA?$CF?$AAr?$AA?$CJ?$AA?$AA@ 0000000000011de0     Ip6Dxe:ComponentName.obj
+ 0002:00001338       ??_C@_0BB@MFGDFIJM@Compromised?5Data?$AA@ 0000000000011df8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001350       ??_C@_0BB@KFJAMCOC@Invalid?5Language?$AA@ 0000000000011e10     BasePrintLib:PrintLibInternal.obj
+ 0002:00001368       ??_C@_0M@FKGOBENP@End?5of?5File?$AA@ 0000000000011e28     BasePrintLib:PrintLibInternal.obj
+ 0002:00001378       ??_C@_0O@GLPDOMCP@Reserved?5?$CI30?$CJ?$AA@ 0000000000011e38     BasePrintLib:PrintLibInternal.obj
+ 0002:00001388       ??_C@_0O@NMJOLAMF@Reserved?5?$CI29?$CJ?$AA@ 0000000000011e48     BasePrintLib:PrintLibInternal.obj
+ 0002:00001398       ??_C@_0N@JEJDHPO@End?5of?5Media?$AA@ 0000000000011e58     BasePrintLib:PrintLibInternal.obj
+ 0002:000013a8       ??_C@_09BOMAGJEG@CRC?5Error?$AA@ 0000000000011e68     BasePrintLib:PrintLibInternal.obj
+ 0002:000013b8       ??_C@_0BD@KHMPCIOG@Security?5Violation?$AA@ 0000000000011e78     BasePrintLib:PrintLibInternal.obj
+ 0002:000013d0       ??_C@_0BF@EHOBGFMI@Incompatible?5Version?$AA@ 0000000000011e90     BasePrintLib:PrintLibInternal.obj
+ 0002:000013e8       ??_C@_0P@NCJHBCLM@Protocol?5Error?$AA@ 0000000000011ea8     BasePrintLib:PrintLibInternal.obj
+ 0002:000013f8       ??_C@_0L@DJKNJKHM@TFTP?5Error?$AA@ 0000000000011eb8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001408       ??_C@_0L@LKIFCMNO@ICMP?5Error?$AA@ 0000000000011ec8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001418       ??_C@_07LCKDCBKK@Aborted?$AA@ 0000000000011ed8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001420       ??_C@_0BA@IGIBFFPH@Already?5started?$AA@ 0000000000011ee0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001430       ??_C@_0M@DCJFAFHJ@Not?5started?$AA@ 0000000000011ef0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001440       ??_C@_08PAFJCNGP@Time?5out?$AA@ 0000000000011f00     BasePrintLib:PrintLibInternal.obj
+ 0002:00001450       ??_C@_0L@IFPBNFC@No?5mapping?$AA@ 0000000000011f10     BasePrintLib:PrintLibInternal.obj
+ 0002:00001460       ??_C@_0M@ENKCBFEP@No?5Response?$AA@ 0000000000011f20     BasePrintLib:PrintLibInternal.obj
+ 0002:00001470       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 0000000000011f30     BasePrintLib:PrintLibInternal.obj
+ 0002:00001480       ??_C@_09CFCBFJND@Not?5Found?$AA@ 0000000000011f40     BasePrintLib:PrintLibInternal.obj
+ 0002:00001490       ??_C@_0O@JNCJKCCD@Media?5changed?$AA@ 0000000000011f50     BasePrintLib:PrintLibInternal.obj
+ 0002:000014a0       ??_C@_08KEGAJDNN@No?5Media?$AA@ 0000000000011f60     BasePrintLib:PrintLibInternal.obj
+ 0002:000014b0       ??_C@_0M@HDLEPOFA@Volume?5Full?$AA@ 0000000000011f70     BasePrintLib:PrintLibInternal.obj
+ 0002:000014c0       ??_C@_0P@EIOJGIF@Volume?5Corrupt?$AA@ 0000000000011f80     BasePrintLib:PrintLibInternal.obj
+ 0002:000014d0       ??_C@_0BB@GOILNEAA@Out?5of?5Resources?$AA@ 0000000000011f90     BasePrintLib:PrintLibInternal.obj
+ 0002:000014e8       ??_C@_0BA@LNEDDFNB@Write?5Protected?$AA@ 0000000000011fa8     BasePrintLib:PrintLibInternal.obj
+ 0002:000014f8       ??_C@_0N@HHEABDHO@Device?5Error?$AA@ 0000000000011fb8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001508       ??_C@_09NKFGCIPN@Not?5Ready?$AA@ 0000000000011fc8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001518       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small?$AA@ 0000000000011fd8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001530       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size?$AA@ 0000000000011ff0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001540       ??_C@_0M@BEECMOIL@Unsupported?$AA@ 0000000000012000     BasePrintLib:PrintLibInternal.obj
+ 0002:00001550       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter?$AA@ 0000000000012010     BasePrintLib:PrintLibInternal.obj
+ 0002:00001568       ??_C@_0L@PLPBEPPC@Load?5Error?$AA@ 0000000000012028     BasePrintLib:PrintLibInternal.obj
+ 0002:00001578       ??_C@_0BD@IFJNJCCO@Warning?5Stale?5Data?$AA@ 0000000000012038     BasePrintLib:PrintLibInternal.obj
+ 0002:00001590       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small?$AA@ 0000000000012050     BasePrintLib:PrintLibInternal.obj
+ 0002:000015b0       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure?$AA@ 0000000000012070     BasePrintLib:PrintLibInternal.obj
+ 0002:000015c8       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure?$AA@ 0000000000012088     BasePrintLib:PrintLibInternal.obj
+ 0002:000015e0       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph?$AA@ 00000000000120a0     BasePrintLib:PrintLibInternal.obj
+ 0002:000015f8       ??_C@_07PBILKAFL@Success?$AA@ 00000000000120b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001600       mHexStr                    00000000000120c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001610       mStatusString              00000000000120d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001748       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO?$AA@ 0000000000012208     BasePrintLib:PrintLibInternal.obj
+ 0002:00001758       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO?$AA@ 0000000000012218     BasePrintLib:PrintLibInternal.obj
+ 0002:00001768       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 0000000000012228     BasePrintLib:PrintLibInternal.obj
+ 0002:000017a0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO?$AA@ 0000000000012260     BasePrintLib:PrintLibInternal.obj
+ 0002:000017b0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d?$AA@ 0000000000012270     BasePrintLib:PrintLibInternal.obj
+ 0002:000017cc       ??_C@_04JIMNDDED@?$CF08X?$AA@ 000000000001228c     BasePrintLib:PrintLibInternal.obj
+ 0002:000017d4       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 0000000000012294     BasePrintLib:PrintLibInternal.obj
+ 0002:000017d8       ??_C@_01LIIJDEN@?$AN?$AA@  0000000000012298     BasePrintLib:PrintLibInternal.obj
+ 0002:000017dc       ??_C@_15LHNHECKK@?$AA?$CF?$AAx?$AA?$AA@ 000000000001229c     DxeNetLib:DxeNetLib.obj
+ 0002:00001800       mIpSec2Installed           00000000000122c0     Ip6Dxe:Ip6Driver.obj
+ 0002:00001808       mIpSec                     00000000000122c8     Ip6Dxe:Ip6Impl.obj
+ 0002:00001810       gImageHandle               00000000000122d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001818       gST                        00000000000122d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001820       gBS                        00000000000122e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001828       gRT                        00000000000122e8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001830       gHiiFont                   00000000000122f0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001838       gHiiString                 00000000000122f8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001840       gHiiImage                  0000000000012300     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001848       gHiiDatabase               0000000000012308     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001850       gHiiConfigRouting          0000000000012310     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001860       gIp6ControllerNameTable    0000000000012320     Ip6Dxe:ComponentName.obj
+ 0002:00001868       mDpc                       0000000000012328     <common>
+ 0002:00001870       mIp6Id                     0000000000012330     <common>
+ 0002:00001880       mZeroMacAddress            0000000000012340     <common>
+
+ entry point at        0001:0000018c
+
+ Static symbols
+

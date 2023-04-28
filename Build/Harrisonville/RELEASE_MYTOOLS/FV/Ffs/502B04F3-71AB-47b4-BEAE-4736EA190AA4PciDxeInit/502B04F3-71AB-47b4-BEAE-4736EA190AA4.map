@@ -1,0 +1,64 @@
+ PciDxeInit
+
+ Timestamp is 6448e7f3 (Wed Apr 26 16:59:31 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000420H .text                   CODE
+ 0002:00000000 00000650H .data                   DATA
+ 0002:00000650 0000001eH .rdata                  DATA
+ 0002:00000670 00000138H .bss                    DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 0000002cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000078       Func0                      0000000000000318 f   PciDxeInit:PciDxeInit.obj
+ 0001:00000168       CspNbPciInitPciRoot        0000000000000408 f   NbPciDxeInitLib:NbPciDxeInitLib.obj
+ 0001:000001a0       CspSbPciInitLpcBridge      0000000000000440 f   SbPciDxeInitLib:SbPciDxeInitLib.obj
+ 0001:000001e0       PciPortSkipDeviceInit      0000000000000480 f   SbPciDxeInitLib:SbPciDxeInitLib.obj
+ 0001:0000022c       InitPciPortSettings        00000000000004cc f   SbPciDxeInitLib:SbPciDxeInitLib.obj
+ 0001:000002c0       GetCpuTimer                0000000000000560 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:000002d0       CPULib_CpuID               0000000000000570 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000310       memset                     00000000000005b0     AmiDxeLib:MemSet.obj
+ 0001:0000031e       MemSetAsm                  00000000000005be f   AmiDxeLib:MemSet.obj
+ 0001:00000370       memcpy                     0000000000000610     AmiDxeLib:MemCpy.obj
+ 0001:00000370       MemCpyAsm                  0000000000000610 f   AmiDxeLib:MemCpy.obj
+ 0002:00000000       gAmiBoardPciInitProtocolGuid 00000000000006c0     PciDxeInit:AutoGen.obj
+ 0002:00000020       EfiErrorStatus             00000000000006e0     AmiDxeLib:StdLibC.obj
+ 0002:00000360       PiErrorStatus              0000000000000a20     AmiDxeLib:StdLibC.obj
+ 0002:000003b0       AmiErrorStatus             0000000000000a70     AmiDxeLib:StdLibC.obj
+ 0002:000003f0       EfiWarningStatus           0000000000000ab0     AmiDxeLib:StdLibC.obj
+ 0002:00000460       PiWarningStatus            0000000000000b20     AmiDxeLib:StdLibC.obj
+ 0002:000004a8       EfiUnknown                 0000000000000b68     AmiDxeLib:StdLibC.obj
+ 0002:00000588       PciInitLocalProtocol       0000000000000c48     PciDxeInit:PciDxeInit.obj
+ 0002:000005c0       gBigList                   0000000000000c80     PciDxeInit:PciDxeInit.obj
+ 0002:00000648       gPciInitProtocolPtr        0000000000000d08     PciDxeInit:PciDxeInit.obj
+ 0002:00000650       _gUefiDriverRevision       0000000000000d10     PciDxeInit:AutoGen.obj
+ 0002:00000658       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000000d18     SbPciDxeInitLib:SbPciDxeInitLib.obj
+ 0002:00000670       gPciInitHandle             0000000000000d30     PciDxeInit:PciDxeInit.obj
+ 0002:00000678       gGetSetupData              0000000000000d38     PciDxeInit:PciDxeInit.obj
+ 0002:00000688       gSkipDevice                0000000000000d48     PciDxeInit:PciDxeInit.obj
+ 0002:00000698       gProgramDevice             0000000000000d58     PciDxeInit:PciDxeInit.obj
+ 0002:000006a8       gSetAspm                   0000000000000d68     PciDxeInit:PciDxeInit.obj
+ 0002:000006b8       gSetLnkSpeed               0000000000000d78     PciDxeInit:PciDxeInit.obj
+ 0002:000006c8       gQueryDevice               0000000000000d88     PciDxeInit:PciDxeInit.obj
+ 0002:000006d8       gAttributes                0000000000000d98     PciDxeInit:PciDxeInit.obj
+ 0002:000006e8       gGetOptRom                 0000000000000da8     PciDxeInit:PciDxeInit.obj
+ 0002:000006f8       gInitLink                  0000000000000db8     PciDxeInit:PciDxeInit.obj
+ 0002:00000708       gReadyBoot                 0000000000000dc8     PciDxeInit:PciDxeInit.obj
+ 0002:00000718       gHpUpdPadding              0000000000000dd8     PciDxeInit:PciDxeInit.obj
+ 0002:00000728       gImageHandle               0000000000000de8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000730       gST                        0000000000000df0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000738       gBS                        0000000000000df8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000788       pST                        0000000000000e48     AmiDxeLib:EfiLib.obj
+ 0002:00000790       pBS                        0000000000000e50     AmiDxeLib:EfiLib.obj
+ 0002:00000798       pRS                        0000000000000e58     AmiDxeLib:EfiLib.obj
+ 0002:000007a0       TheImageHandle             0000000000000e60     AmiDxeLib:EfiLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

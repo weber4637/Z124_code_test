@@ -1,0 +1,107 @@
+ FlashSmiDxe
+
+ Timestamp is 6448e7f6 (Wed Apr 26 16:59:34 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001143H .text                   CODE
+ 0002:00000000 00000608H .data                   DATA
+ 0002:00000610 00000004H .rdata                  DATA
+ 0002:00000618 00000178H .bss                    DATA
+ 0003:00000000 000000e4H .pdata                  DATA
+ 0004:00000000 00000084H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000001000 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000ac       ProcessLibraryConstructorList 00000000000010ac f   FlashSmiDxe:AutoGen.obj
+ 0001:00000254       ProcessLibraryDestructorList 0000000000001254 f   FlashSmiDxe:AutoGen.obj
+ 0001:000002c8       SmmCommunicationReady      00000000000012c8 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:000002f8       GenerateFlashSmi           00000000000012f8 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:00000338       FlashDriverUpdateSmi       0000000000001338 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:000004b0       FlashDriverWriteSmi        00000000000014b0 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:00000628       FlashDriverEraseSmi        0000000000001628 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:00000740       FlashDriverWriteEnableSmi  0000000000001740 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:00000824       FlashDriverWriteDisableSmi 0000000000001824 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:00000908       FlashSmiConnectDrivers     0000000000001908 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:000009d4       FlashSmiReadyToBoot        00000000000019d4 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:00000a44       FlashSmiVirtualFixup       0000000000001a44 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:00000a74       FlashSmiDxeFunction        0000000000001a74 f   FlashSmiDxe:FlashSmiDxe.obj
+ 0001:00000c74       AmiDebugLibExitBsNotifyEvent 0000000000001c74 f   RuntimeAmiDebugLib:RuntimeAmiDebugLib.obj
+ 0001:00000c80       AmiDebugLibVirtualNotifyEvent 0000000000001c80 f   RuntimeAmiDebugLib:RuntimeAmiDebugLib.obj
+ 0001:00000ca8       RuntimeLibExitBootServicesEvent 0000000000001ca8 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000cb0       RuntimeLibVirtualNotifyEvent 0000000000001cb0 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000cd4       DxeRuntimePciExpressLibVirtualNotify 0000000000001cd4 f   DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0001:00000d40       MemCmp                     0000000000001d40 f   AmiDxeLib:Memory.obj
+ 0001:00000dbc       GetEfiConfigurationTable   0000000000001dbc f   AmiDxeLib:EfiLib.obj
+ 0001:00000e08       RegisterProtocolCallback   0000000000001e08 f   AmiDxeLib:EfiLib.obj
+ 0001:00000e60       DummyFunction              0000000000001e60 f   AmiDxeLib:EfiLib.obj
+ 0001:00000e64       BeginCriticalSection       0000000000001e64 f   AmiCriticalSectionCompatLib:AmiCriticalSectionCompatLib.obj
+ 0001:00000ed0       EndCriticalSection         0000000000001ed0 f   AmiCriticalSectionCompatLib:AmiCriticalSectionCompatLib.obj
+ 0001:00000f20       CPULib_CpuID               0000000000001f20 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000f60       memset                     0000000000001f60     AmiDxeLib:MemSet.obj
+ 0001:00000f6e       MemSetAsm                  0000000000001f6e f   AmiDxeLib:MemSet.obj
+ 0001:00000fc0       memcpy                     0000000000001fc0     AmiDxeLib:MemCpy.obj
+ 0001:00000fc0       MemCpyAsm                  0000000000001fc0 f   AmiDxeLib:MemCpy.obj
+ 0001:00001070       GetCpuTimer                0000000000002070 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00001080       InternalMemSetMem          0000000000002080     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000010a0       InternalMemCopyMem         00000000000020a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000010e0       InternalMemSetMem32        00000000000020e0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001100       InternalMemSetMem64        0000000000002100     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00001120       InternalMemZeroMem         0000000000002120     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001140       AsmWbinvd                  0000000000002140     BaseLib:Wbinvd.obj
+ 0002:00000000       gEfiEventExitBootServicesGuid 0000000000003000     FlashSmiDxe:AutoGen.obj
+ 0002:00000010       gEfiEventVirtualAddressChangeGuid 0000000000003010     FlashSmiDxe:AutoGen.obj
+ 0002:00000020       gEfiDxeServicesTableGuid   0000000000003020     FlashSmiDxe:AutoGen.obj
+ 0002:00000030       gFlashProtocolGuid         0000000000003030     FlashSmiDxe:AutoGen.obj
+ 0002:00000040       gEfiSmmCommunicationProtocolGuid 0000000000003040     FlashSmiDxe:AutoGen.obj
+ 0002:00000050       gPirqRegistersSave         0000000000003050     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000070       RRegs                      0000000000003070     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000088       AmiErrorStatus             0000000000003088     AmiDxeLib:StdLibC.obj
+ 0002:000000c0       EfiErrorStatus             00000000000030c0     AmiDxeLib:StdLibC.obj
+ 0002:00000400       PiErrorStatus              0000000000003400     AmiDxeLib:StdLibC.obj
+ 0002:00000450       EfiWarningStatus           0000000000003450     AmiDxeLib:StdLibC.obj
+ 0002:000004c0       PiWarningStatus            00000000000034c0     AmiDxeLib:StdLibC.obj
+ 0002:00000508       EfiUnknown                 0000000000003508     AmiDxeLib:StdLibC.obj
+ 0002:000005e8       mFlashSmiGuid              00000000000035e8     FlashSmiDxe:FlashSmiDxe.obj
+ 0002:000005f8       mBdsConnectDriversProtocolGuid 00000000000035f8     FlashSmiDxe:FlashSmiDxe.obj
+ 0002:00000610       _gUefiDriverRevision       0000000000003610     FlashSmiDxe:AutoGen.obj
+ 0002:00000618       mCommunicateHeader         0000000000003618     FlashSmiDxe:FlashSmiDxe.obj
+ 0002:00000620       mFlashSmiBuffer            0000000000003620     FlashSmiDxe:FlashSmiDxe.obj
+ 0002:00000628       mFlash                     0000000000003628     FlashSmiDxe:FlashSmiDxe.obj
+ 0002:00000630       mSmmCommunicate            0000000000003630     FlashSmiDxe:FlashSmiDxe.obj
+ 0002:00000638       gFlSmiRtBuff               0000000000003638     FlashSmiDxe:FlashSmiDxe.obj
+ 0002:00000640       gImageHandle               0000000000003640     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000648       gST                        0000000000003648     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000650       gBS                        0000000000003650     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000658       gRT                        0000000000003658     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000688       mEfiGoneVirtual            0000000000003688     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000689       mEfiAtRuntime              0000000000003689     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000690       gDS                        0000000000003690     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000698       mDxeRuntimePciExpressLibVirtualNotifyEvent 0000000000003698     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:000006a0       mDxeRuntimePciExpressLibPciExpressBaseAddress 00000000000036a0     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:000006a8       mDxeRuntimePciExpressLibNumberOfRuntimeRanges 00000000000036a8     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:000006b0       mDxeRuntimePciExpressLibRegistrationTable 00000000000036b0     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:00000708       mPcd                       0000000000003708     DxePcdLib:DxePcdLib.obj
+ 0002:00000710       mPiPcd                     0000000000003710     DxePcdLib:DxePcdLib.obj
+ 0002:00000718       mPcdInfo                   0000000000003718     DxePcdLib:DxePcdLib.obj
+ 0002:00000720       mPiPcdInfo                 0000000000003720     DxePcdLib:DxePcdLib.obj
+ 0002:00000728       pST                        0000000000003728     AmiDxeLib:EfiLib.obj
+ 0002:00000730       pBS                        0000000000003730     AmiDxeLib:EfiLib.obj
+ 0002:00000738       pRS                        0000000000003738     AmiDxeLib:EfiLib.obj
+ 0002:00000740       TheImageHandle             0000000000003740     AmiDxeLib:EfiLib.obj
+ 0002:00000748       mInternalRT                0000000000003748     <common>
+ 0002:00000750       mEfiVirtualNotifyEvent     0000000000003750     <common>
+ 0002:00000758       mEfiExitBootServicesEvent  0000000000003758     <common>
+ 0002:00000760       mSavedWriteEnable          0000000000003760     <common>
+ 0002:00000768       mSavedFlashUpdate          0000000000003768     <common>
+ 0002:00000770       mSavedFlashWrite           0000000000003770     <common>
+ 0002:00000778       mSavedWriteDisable         0000000000003778     <common>
+ 0002:00000780       mFlashSmiCs                0000000000003780     <common>
+ 0002:00000788       mSavedFlashErase           0000000000003788     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

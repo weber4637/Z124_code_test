@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\BAE7599F-3C6B-43b7-BDF0-9CE07AA91AA6CpuIoDxe\BAE7599F-3C6B-43b7-BDF0-9CE07AA91AA6SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\IntelFrameworkModulePkg\Universal\CpuIoDxe\CpuIoDxe\OUTPUT\CpuIoDxe.depex

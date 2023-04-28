@@ -1,0 +1,188 @@
+ SecCore
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000203fH .text                   CODE
+ 0002:00000000 0000004cH _TEXT_REALMODE          CODE
+ 0003:00000000 0000061cH _TEXT_PROTECTED_MODE    CODE
+ 0004:00000000 000000f0H .data                   DATA
+ 0004:000000f0 00000842H .rdata                  DATA
+ 0004:00000934 00000000H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       _SecStartup                00000280 f   SecCore:SecMain.obj
+ 0001:000000f7       _SecStartupPhase2          00000377 f   SecCore:SecMain.obj
+ 0001:000001c8       _SecTemporaryRamDone       00000448 f   SecCore:SecMain.obj
+ 0001:000001e3       _FindImageBase             00000463 f   SecCore:FindPeiCore.obj
+ 0001:0000035b       _FindAndReportEntryPoints  000005db f   SecCore:FindPeiCore.obj
+ 0001:00000405       _CpuDeadLoop               00000685 f   BaseLib:CpuDeadLoop.obj
+ 0001:00000419       _CopyMem                   00000699 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00000431       _PeCoffLoaderGetPdbPointer 000006b1 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:00000544       _SecPlatformMain           000007c4 f   PlatformSecLib:PlatformSecLib.obj
+ 0001:00000547       _SecPlatformInformation    000007c7 f   PlatformSecLib:PlatformSecLib.obj
+ 0001:00000592       _SecPlatformDisableTemporaryMemory 00000812 f   PlatformSecLib:PlatformSecLib.obj
+ 0001:0000061a       _CommonExceptionHandler    0000089a f   SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0001:0000062f       _InitializeCpuExceptionHandlers 000008af f   SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0001:0000069d       _DumpCpuContent            0000091d f   SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0001:00000863       _InternalPrintMessage      00000ae3 f   SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:000008a4       _FindModuleImageBase       00000b24 f   SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0001:0000095c       _LShiftU64                 00000bdc f   BaseLib:LShiftU64.obj
+ 0001:00000980       _AsciiVSPrint              00000c00 f   BasePrintLib:PrintLib.obj
+ 0001:0000099c       _BasePrintLibFillBuffer    00000c1c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000009c8       _BasePrintLibValueToString 00000c48 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00000a0c       _BasePrintLibSPrintMarker  00000c8c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000013b6       _BasePrintLibSPrint        00001636 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000013d8       _SerialPortInitialize      00001658 f   BaseSerialPortLib16550Override:BaseSerialPortLib16550.obj
+ 0001:000014dd       _SerialPortWrite           0000175d f   BaseSerialPortLib16550Override:BaseSerialPortLib16550.obj
+ 0001:00001555       _LocalApicBaseAddressMsrSupported 000017d5 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001584       _GetLocalApicBaseAddress   00001804 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:000015b2       _ReadLocalApicReg          00001832 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:000015e7       _GetApicMode               00001867 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001611       _GetInitialApicId          00001891 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001665       _GetApicId                 000018e5 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00001691       _AsmCpuidEx                00001911 f   BaseLib:CpuIdEx.obj
+ 0001:000016d9       _AsmCpuid                  00001959 f   BaseLib:CpuId.obj
+ 0001:00001710       _PciCf8Read16              00001990 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001768       _PciCf8Write16             000019e8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:000017c5       _PciCf8Read32              00001a45 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000180c       _PciCf8Write32             00001a8c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001859       _AmiSioLibSetLpcGenericDecoding 00001ad9 f   AmiIoDecodeLib:AmiIoDecodeLib.obj
+ 0001:0000191d       _AmiSioLibSetLpcDeviceDecoding 00001b9d f   AmiIoDecodeLib:AmiIoDecodeLib.obj
+ 0001:00001c10       _InitializeFloatingPointUnits 00001e90 f   BaseUefiCpuLib:InitializeFpu.obj
+ 0001:00001c40       _InternalMemCopyMem        00001ec0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001c80       _InternalMemZeroMem        00001f00     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001e05       _CommonInterruptEntry      00002085 f   SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00001fab       _AsmGetTemplateAddressMap  0000222b f   SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00001fc9       _AsmVectorNumFixup         00002249 f   SecPeiCpuExceptionHandlerLib:ExceptionHandlerAsm.obj
+ 0001:00001fe0       _InternalMemSetMem         00002260     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00002000       _InternalMemSetMem32       00002280     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00002020       _InternalMemSetMem64       000022a0     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       __ModuleEntryPoint         000022c0 f   PlatformSecLib:Flat32.obj
+ 0003:00000010       _ProtectedModeSECStart     00002330 f   PlatformSecLib:Flat32.obj
+ 0003:00000054       _ProtectedModeEntryPoint   00002374 f   PlatformSecLib:Flat32.obj
+ 0003:00000059       _FindMicrocode             00002379 f   PlatformSecLib:Flat32.obj
+ 0003:0000055a       _StartUpAp                 0000287a f   PlatformSecLib:Flat32.obj
+ 0003:000005d0       _BootGDTtable              000028f0     PlatformSecLib:Flat32.obj
+ 0004:00000000       _NCT6683DSerialPortDebugDecodeTable 00002940     NCT6683DPlatformHookSerialPortLib:NCT6683DPlatformHookSerialPortLib.obj
+ 0004:00000010       _NCT6683DSerialPortDebugInitTable 00002950     NCT6683DPlatformHookSerialPortLib:NCT6683DPlatformHookSerialPortLib.obj
+ 0004:0000004c       _gSecTemporaryRamDonePpi   0000298c     SecCore:SecMain.obj
+ 0004:00000050       _mExceptionNameStr         00002990     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000000a4       _mSecPlatformInformationPpi 000029e4     SecCore:SecMain.obj
+ 0004:000000a8       __gPcd_BinaryPatch_PcdSerialRegisterBase 000029e8     SecCore:AutoGen.obj
+ 0004:000000b0       _mPeiSecPlatformInformationPpi 000029f0     SecCore:SecMain.obj
+ 0004:000000c8       _mIdtEntryTemplate         00002a08     SecCore:SecMain.obj
+ 0004:000000d0       _gEfiSecPlatformInformationPpiGuid 00002a10     SecCore:AutoGen.obj
+ 0004:000000e0       _gEfiTemporaryRamDonePpiGuid 00002a20     SecCore:AutoGen.obj
+ 0004:000000f8       __gPcd_FixedAtBuild_PcdPciExpressBaseAddress 00002a38     SecCore:AutoGen.obj
+ 0004:00000100       __gPcd_FixedAtBuild_PcdNemCodeCacheBase 00002a40     SecCore:AutoGen.obj
+ 0004:00000104       __gPcd_FixedAtBuild_PcdNemCodeCacheSize 00002a44     SecCore:AutoGen.obj
+ 0004:00000108       __gPcd_FixedAtBuild_PcdTemporaryRamBase 00002a48     SecCore:AutoGen.obj
+ 0004:0000010c       __gPcd_FixedAtBuild_PcdTemporaryRamSize 00002a4c     SecCore:AutoGen.obj
+ 0004:00000110       _mErrorCodeFlag            00002a50     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000114       _mExceptionReservedStr     00002a54     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000120       _mImageAlignSize           00002a60     SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0004:00000124       _mDoFarReturnFlag          00002a64     SecPeiCpuExceptionHandlerLib:SecPeiCpuException.obj
+ 0004:00000128       ??_C@_0DO@MEOHCPPN@?$CB?$CB?$CB?$CB?5IA32?5Exception?5Type?5?9?5?$CF02x?$CI@ 00002a68     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:00000168       ??_C@_0CI@NKLDPKAD@EIP?5?5?9?5?$CF08x?0?5CS?5?5?9?5?$CF08x?0?5EFLAGS?5@ 00002aa8     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:00000190       ??_C@_0BG@JHGLJFHC@ExceptionData?5?9?5?$CF08x?6?$AA@ 00002ad0     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:000001a8       ??_C@_0DB@FMPNNDEO@EAX?5?5?9?5?$CF08x?0?5ECX?5?9?5?$CF08x?0?5EDX?5?9?5?$CF@ 00002ae8     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:000001dc       ??_C@_0DB@GOHIBENB@ESP?5?5?9?5?$CF08x?0?5EBP?5?9?5?$CF08x?0?5ESI?5?9?5?$CF@ 00002b1c     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:00000210       ??_C@_0DM@BMBDNIHA@DS?5?5?5?9?5?$CF08x?0?5ES?5?5?9?5?$CF08x?0?5FS?5?5?9?5?$CF@ 00002b50     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:0000024c       ??_C@_0DB@OPBOKNIL@CR0?5?5?9?5?$CF08x?0?5CR2?5?9?5?$CF08x?0?5CR3?5?9?5?$CF@ 00002b8c     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:00000280       ??_C@_0DB@HEDGBNAC@DR0?5?5?9?5?$CF08x?0?5DR1?5?9?5?$CF08x?0?5DR2?5?9?5?$CF@ 00002bc0     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:000002b4       ??_C@_0BJ@OHAFIKJJ@DR6?5?5?9?5?$CF08x?0?5DR7?5?9?5?$CF08x?6?$AA@ 00002bf4     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:000002d0       ??_C@_0CE@GGJFCGLD@GDTR?5?9?5?$CF08x?5?$CF08x?0?5IDTR?5?9?5?$CF08x?5?$CF0@ 00002c10     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:000002f4       ??_C@_0BI@PCABENM@LDTR?5?9?5?$CF08x?0?5TR?5?9?5?$CF08x?6?$AA@ 00002c34     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:0000030c       ??_C@_0BF@PKJCLEOB@FXSAVE_STATE?5?9?5?$CF08x?6?$AA@ 00002c4c     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:00000324       ??_C@_0CJ@JPJFODGL@?5?$CIImageBase?$DN?$CF08x?0?5EntryPoint?$DN?$CF08@ 00002c64     SecPeiCpuExceptionHandlerLib:ArchExceptionHandler.obj
+ 0004:00000350       ??_C@_0BF@MIEADEIE@?$CDVE?5?9?5Virtualization?$AA@ 00002c90     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000368       ??_C@_0BK@IKBNPED@?$CDXM?5?9?5SIMD?5floating?9point?$AA@ 00002ca8     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000384       ??_C@_0BE@CIGFNHHH@?$CDMC?5?9?5Machine?9Check?$AA@ 00002cc4     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000398       ??_C@_0BG@JJECJFKO@?$CDAC?5?9?5Alignment?5Check?$AA@ 00002cd8     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000003b0       ??_C@_0CD@DAPDALEP@?$CDMF?5?9?5x87?5FPU?5Floating?9Point?5Err@ 00002cf0     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000003d4       ??_C@_08NKCLJDKG@Reserved?$AA@ 00002d14     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000003e0       ??_C@_0BB@CJKCEJGM@?$CDPF?5?9?5Page?9Fault?$AA@ 00002d20     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000003f4       ??_C@_0BJ@OPPOMNHK@?$CDGP?5?9?5General?5Protection?$AA@ 00002d34     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000410       ??_C@_0BI@DKNGHJJN@?$CDSS?5?9?5Stack?5Fault?5Fault?$AA@ 00002d50     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000428       ??_C@_0BK@CJDBEANG@?$CDNP?5?9?5Segment?5Not?5Present?$AA@ 00002d68     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000444       ??_C@_0BC@NJGFAHLO@?$CDTS?5?9?5Invalid?5TSS?$AA@ 00002d84     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000458       ??_C@_0BM@LFJODCLN@Coprocessor?5Segment?5Overrun?$AA@ 00002d98     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000474       ??_C@_0BD@POLKFCFP@?$CDDF?5?9?5Double?5Fault?$AA@ 00002db4     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000488       ??_C@_0BL@HAMCGOMD@?$CDNM?5?9?5Device?5Not?5Available?$AA@ 00002dc8     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000004a4       ??_C@_0BF@PAJDEHLF@?$CDUD?5?9?5Invalid?5Opcode?$AA@ 00002de4     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000004bc       ??_C@_0BL@FGFNPPKN@?$CDBR?5?9?5BOUND?5Range?5Exceeded?$AA@ 00002dfc     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000004d8       ??_C@_0P@BBLCINEF@?$CDOF?5?9?5Overflow?$AA@ 00002e18     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000004e8       ??_C@_0BB@ONIBFOGK@?$CDBP?5?9?5Breakpoint?$AA@ 00002e28     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:000004fc       ??_C@_0O@PELAMGDH@NMI?5Interrupt?$AA@ 00002e3c     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:0000050c       ??_C@_0M@BENGJJME@?$CDDB?5?9?5Debug?$AA@ 00002e4c     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000518       ??_C@_0BD@PANICNEP@?$CDDE?5?9?5Divide?5Error?$AA@ 00002e58     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:0000052c       ??_C@_0BE@EGLGKPAE@?$CB?$CB?$CB?$CB?5Find?5PE?5image?5?$AA@ 00002e6c     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000540       ??_C@_0BE@EPFNAPHO@?$CB?$CB?$CB?$CB?5Find?5TE?5image?5?$AA@ 00002e80     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000554       ??_C@_02ECNOPIAA@?$CFa?$AA@ 00002e94     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000558       ??_C@_09KCCBLILG@?$CINo?5PDB?$CJ?5?$AA@ 00002e98     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000564       ??_C@_0CJ@NIJFIMND@?$CB?$CB?$CB?$CB?5Can?8t?5find?5image?5informatio@ 00002ea4     SecPeiCpuExceptionHandlerLib:CpuExceptionCommon.obj
+ 0004:00000590       ??_C@_0BB@MFGDFIJM@Compromised?5Data?$AA@ 00002ed0     BasePrintLib:PrintLibInternal.obj
+ 0004:000005a4       ??_C@_0BB@KFJAMCOC@Invalid?5Language?$AA@ 00002ee4     BasePrintLib:PrintLibInternal.obj
+ 0004:000005b8       ??_C@_0M@FKGOBENP@End?5of?5File?$AA@ 00002ef8     BasePrintLib:PrintLibInternal.obj
+ 0004:000005c4       ??_C@_0O@GLPDOMCP@Reserved?5?$CI30?$CJ?$AA@ 00002f04     BasePrintLib:PrintLibInternal.obj
+ 0004:000005d4       ??_C@_0O@NMJOLAMF@Reserved?5?$CI29?$CJ?$AA@ 00002f14     BasePrintLib:PrintLibInternal.obj
+ 0004:000005e4       ??_C@_0N@JEJDHPO@End?5of?5Media?$AA@ 00002f24     BasePrintLib:PrintLibInternal.obj
+ 0004:000005f4       ??_C@_09BOMAGJEG@CRC?5Error?$AA@ 00002f34     BasePrintLib:PrintLibInternal.obj
+ 0004:00000600       ??_C@_0BD@KHMPCIOG@Security?5Violation?$AA@ 00002f40     BasePrintLib:PrintLibInternal.obj
+ 0004:00000614       ??_C@_0BF@EHOBGFMI@Incompatible?5Version?$AA@ 00002f54     BasePrintLib:PrintLibInternal.obj
+ 0004:0000062c       ??_C@_0P@NCJHBCLM@Protocol?5Error?$AA@ 00002f6c     BasePrintLib:PrintLibInternal.obj
+ 0004:0000063c       ??_C@_0L@DJKNJKHM@TFTP?5Error?$AA@ 00002f7c     BasePrintLib:PrintLibInternal.obj
+ 0004:00000648       ??_C@_0L@LKIFCMNO@ICMP?5Error?$AA@ 00002f88     BasePrintLib:PrintLibInternal.obj
+ 0004:00000654       ??_C@_07LCKDCBKK@Aborted?$AA@ 00002f94     BasePrintLib:PrintLibInternal.obj
+ 0004:0000065c       ??_C@_0BA@IGIBFFPH@Already?5started?$AA@ 00002f9c     BasePrintLib:PrintLibInternal.obj
+ 0004:0000066c       ??_C@_0M@DCJFAFHJ@Not?5started?$AA@ 00002fac     BasePrintLib:PrintLibInternal.obj
+ 0004:00000678       ??_C@_08PAFJCNGP@Time?5out?$AA@ 00002fb8     BasePrintLib:PrintLibInternal.obj
+ 0004:00000684       ??_C@_0L@IFPBNFC@No?5mapping?$AA@ 00002fc4     BasePrintLib:PrintLibInternal.obj
+ 0004:00000690       ??_C@_0M@ENKCBFEP@No?5Response?$AA@ 00002fd0     BasePrintLib:PrintLibInternal.obj
+ 0004:0000069c       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 00002fdc     BasePrintLib:PrintLibInternal.obj
+ 0004:000006ac       ??_C@_09CFCBFJND@Not?5Found?$AA@ 00002fec     BasePrintLib:PrintLibInternal.obj
+ 0004:000006b8       ??_C@_0O@JNCJKCCD@Media?5changed?$AA@ 00002ff8     BasePrintLib:PrintLibInternal.obj
+ 0004:000006c8       ??_C@_08KEGAJDNN@No?5Media?$AA@ 00003008     BasePrintLib:PrintLibInternal.obj
+ 0004:000006d4       ??_C@_0M@HDLEPOFA@Volume?5Full?$AA@ 00003014     BasePrintLib:PrintLibInternal.obj
+ 0004:000006e0       ??_C@_0P@EIOJGIF@Volume?5Corrupt?$AA@ 00003020     BasePrintLib:PrintLibInternal.obj
+ 0004:000006f0       ??_C@_0BB@GOILNEAA@Out?5of?5Resources?$AA@ 00003030     BasePrintLib:PrintLibInternal.obj
+ 0004:00000704       ??_C@_0BA@LNEDDFNB@Write?5Protected?$AA@ 00003044     BasePrintLib:PrintLibInternal.obj
+ 0004:00000714       ??_C@_0N@HHEABDHO@Device?5Error?$AA@ 00003054     BasePrintLib:PrintLibInternal.obj
+ 0004:00000724       ??_C@_09NKFGCIPN@Not?5Ready?$AA@ 00003064     BasePrintLib:PrintLibInternal.obj
+ 0004:00000730       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small?$AA@ 00003070     BasePrintLib:PrintLibInternal.obj
+ 0004:00000744       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size?$AA@ 00003084     BasePrintLib:PrintLibInternal.obj
+ 0004:00000754       ??_C@_0M@BEECMOIL@Unsupported?$AA@ 00003094     BasePrintLib:PrintLibInternal.obj
+ 0004:00000760       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter?$AA@ 000030a0     BasePrintLib:PrintLibInternal.obj
+ 0004:00000774       ??_C@_0L@PLPBEPPC@Load?5Error?$AA@ 000030b4     BasePrintLib:PrintLibInternal.obj
+ 0004:00000780       ??_C@_0BD@IFJNJCCO@Warning?5Stale?5Data?$AA@ 000030c0     BasePrintLib:PrintLibInternal.obj
+ 0004:00000794       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small?$AA@ 000030d4     BasePrintLib:PrintLibInternal.obj
+ 0004:000007b0       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure?$AA@ 000030f0     BasePrintLib:PrintLibInternal.obj
+ 0004:000007c8       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure?$AA@ 00003108     BasePrintLib:PrintLibInternal.obj
+ 0004:000007e0       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph?$AA@ 00003120     BasePrintLib:PrintLibInternal.obj
+ 0004:000007f8       ??_C@_07PBILKAFL@Success?$AA@ 00003138     BasePrintLib:PrintLibInternal.obj
+ 0004:00000800       _mHexStr                   00003140     BasePrintLib:PrintLibInternal.obj
+ 0004:00000810       _mStatusString             00003150     BasePrintLib:PrintLibInternal.obj
+ 0004:000008ac       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO?$AA@ 000031ec     BasePrintLib:PrintLibInternal.obj
+ 0004:000008bc       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO?$AA@ 000031fc     BasePrintLib:PrintLibInternal.obj
+ 0004:000008c8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 00003208     BasePrintLib:PrintLibInternal.obj
+ 0004:000008fc       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO?$AA@ 0000323c     BasePrintLib:PrintLibInternal.obj
+ 0004:00000908       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d?$AA@ 00003248     BasePrintLib:PrintLibInternal.obj
+ 0004:00000924       ??_C@_04JIMNDDED@?$CF08X?$AA@ 00003264     BasePrintLib:PrintLibInternal.obj
+ 0004:0000092c       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 0000326c     BasePrintLib:PrintLibInternal.obj
+ 0004:00000930       ??_C@_01LIIJDEN@?$AN?$AA@  00003270     BasePrintLib:PrintLibInternal.obj
+
+ entry point at        0002:00000000
+
+ Static symbols
+
+ 0003:0000015f       _UpdateMicrocode           0000247f f   PlatformSecLib:Flat32.obj
+ 0003:0000019a       _PlatformInitialization    000024ba f   PlatformSecLib:Flat32.obj
+ 0003:00000376       _VeryEarlyMicrocodeUpdate  00002696 f   PlatformSecLib:Flat32.obj
+ 0003:00000378       _InitializeNEM             00002698 f   PlatformSecLib:Flat32.obj
+ 0003:00000515       _EstablishStack            00002835 f   PlatformSecLib:Flat32.obj
+ 0003:0000051a       _CallPeiCoreEntryPoint     0000283a f   PlatformSecLib:Flat32.obj
+ 0003:00000574       _CheckValidCMOS            00002894 f   PlatformSecLib:Flat32.obj

@@ -1,0 +1,78 @@
+ PcRtc
+
+ Timestamp is 6448e7f0 (Wed Apr 26 16:59:28 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001792H .text                   CODE
+ 0002:00000000 00000050H .data                   DATA
+ 0002:00000050 00000022H .rdata                  DATA
+ 0002:00000080 000000c0H .bss                    DATA
+ 0003:00000000 000000f0H .pdata                  DATA
+ 0004:00000000 000000acH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          0000000000001000 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c0       ProcessLibraryConstructorList 00000000000010c0 f   PcRtc:AutoGen.obj
+ 0001:00000270       ProcessLibraryDestructorList 0000000000001270 f   PcRtc:AutoGen.obj
+ 0001:000002e0       PcRtcEfiGetTime            00000000000012e0 f   PcRtc:PcRtcEntry.obj
+ 0001:000002ec       PcRtcEfiSetTime            00000000000012ec f   PcRtc:PcRtcEntry.obj
+ 0001:0000030c       PcRtcEfiGetWakeupTime      000000000000130c f   PcRtc:PcRtcEntry.obj
+ 0001:00000318       PcRtcEfiSetWakeupTime      0000000000001318 f   PcRtc:PcRtcEntry.obj
+ 0001:00000324       PcRtcInit                  0000000000001324 f   PcRtc:PcRtc.obj
+ 0001:000006e4       PcRtcGetTime               00000000000016e4 f   PcRtc:PcRtc.obj
+ 0001:00000874       PcRtcSetTime               0000000000001874 f   PcRtc:PcRtc.obj
+ 0001:00000af0       PcRtcGetWakeupTime         0000000000001af0 f   PcRtc:PcRtc.obj
+ 0001:00000d00       PcRtcSetWakeupTime         0000000000001d00 f   PcRtc:PcRtc.obj
+ 0001:00000fec       ConvertRtcTimeToEfiTime    0000000000001fec f   PcRtc:PcRtc.obj
+ 0001:000011c0       RtcWaitToUpdate            00000000000021c0 f   PcRtc:PcRtc.obj
+ 0001:00001248       RtcTimeFieldsValid         0000000000002248 f   PcRtc:PcRtc.obj
+ 0001:00001344       IsLeapYear                 0000000000002344 f   PcRtc:PcRtc.obj
+ 0001:0000139c       ConvertEfiTimeToRtcTime    000000000000239c f   PcRtc:PcRtc.obj
+ 0001:000014fc       AmiDebugLibExitBsNotifyEvent 00000000000024fc f   RuntimeAmiDebugLib:RuntimeAmiDebugLib.obj
+ 0001:00001508       AmiDebugLibVirtualNotifyEvent 0000000000002508 f   RuntimeAmiDebugLib:RuntimeAmiDebugLib.obj
+ 0001:00001530       RuntimeLibExitBootServicesEvent 0000000000002530 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00001538       RuntimeLibVirtualNotifyEvent 0000000000002538 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000015b8       EfiAcquireLock             00000000000025b8 f   UefiLib:UefiLib.obj
+ 0001:000015e4       InternalGetReportStatusCode 00000000000025e4 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001644       ReportStatusCodeLibVirtualAddressChange 0000000000002644 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000166c       ReportStatusCodeLibExitBootServices 000000000000266c f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001684       ReportStatusCode           0000000000002684 f   RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000016d0       InternalMemCopyMem         00000000000026d0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001710       InternalMemZeroMem         0000000000002710     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001730       CpuPause                   0000000000002730     BaseLib:CpuPause.obj
+ 0001:00001740       InternalMemSetMem          0000000000002740     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001760       InternalMemSetMem32        0000000000002760     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001780       InternalMemSetMem64        0000000000002780     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiCallerIdGuid           0000000000003000     PcRtc:AutoGen.obj
+ 0002:00000010       gEfiEventExitBootServicesGuid 0000000000003010     PcRtc:AutoGen.obj
+ 0002:00000020       gEfiEventVirtualAddressChangeGuid 0000000000003020     PcRtc:AutoGen.obj
+ 0002:00000030       gEfiRealTimeClockArchProtocolGuid 0000000000003030     PcRtc:AutoGen.obj
+ 0002:00000040       gEfiStatusCodeRuntimeProtocolGuid 0000000000003040     PcRtc:AutoGen.obj
+ 0002:00000050       _gUefiDriverRevision       0000000000003050     PcRtc:AutoGen.obj
+ 0002:00000058       ??_C@_17JDGAGJBP@?$AAR?$AAT?$AAC?$AA?$AA@ 0000000000003058     PcRtc:PcRtc.obj
+ 0002:00000060       ??_C@_1BC@MKOBNGFO@?$AAR?$AAT?$AAC?$AAA?$AAL?$AAA?$AAR?$AAM?$AA?$AA@ 0000000000003060     PcRtc:PcRtc.obj
+ 0002:00000080       mHandle                    0000000000003080     PcRtc:PcRtcEntry.obj
+ 0002:00000088       gImageHandle               0000000000003088     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000090       gST                        0000000000003090     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000098       gBS                        0000000000003098     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000a0       gRT                        00000000000030a0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000000d0       mEfiGoneVirtual            00000000000030d0     UefiRuntimeLib:RuntimeLib.obj
+ 0002:000000d1       mEfiAtRuntime              00000000000030d1     UefiRuntimeLib:RuntimeLib.obj
+ 0002:000000d2       mHaveExitedBootServices    00000000000030d2     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000000d8       mReportStatusCodeLibStatusCodeProtocol 00000000000030d8     RuntimeDxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000000e0       mReportStatusCodeLibExitBootServicesEvent 00000000000030e0     <common>
+ 0002:000000e8       mReportStatusCodeLibVirtualAddressChangeEvent 00000000000030e8     <common>
+ 0002:000000f0       mInternalRT                00000000000030f0     <common>
+ 0002:000000f8       mEfiVirtualNotifyEvent     00000000000030f8     <common>
+ 0002:00000100       mEfiExitBootServicesEvent  0000000000003100     <common>
+ 0002:00000120       mModuleGlobal              0000000000003120     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000155c       InternalAcpiDelay          000000000000255c f    CIL library: CIL module

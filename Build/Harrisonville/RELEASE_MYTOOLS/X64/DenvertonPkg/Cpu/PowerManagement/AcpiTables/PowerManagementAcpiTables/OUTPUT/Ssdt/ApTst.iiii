@@ -1,0 +1,1015 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                      
+
+
+DefinitionBlock(
+  "APTST.aml",
+  "SSDT",
+  0x02,
+  "PmRef",
+  "ApTst",
+  0x3000
+  )
+{
+  External(\_PR.CPU1, DeviceObj)
+  External(\_PR.CPU2, DeviceObj)
+  External(\_PR.CPU3, DeviceObj)
+  External(\_PR.CPU4, DeviceObj)
+  External(\_PR.CPU5, DeviceObj)
+  External(\_PR.CPU6, DeviceObj)
+  External(\_PR.CPU7, DeviceObj)
+  External(\_PR.CPU0._PTC)
+  External(\_PR.CPU0._TSS)
+  External(PDC0)
+  External(CFGD)
+        External(TCNT)
+  External(\_PR.CPU8, DeviceObj)
+  External(\_PR.CPU9, DeviceObj)
+  External(\_PR.CPUA, DeviceObj)
+  External(\_PR.CPUB, DeviceObj)
+  External(\_PR.CPUC, DeviceObj)
+  External(\_PR.CPUD, DeviceObj)
+  External(\_PR.CPUE, DeviceObj)
+  External(\_PR.CPUF, DeviceObj)
+  External(MPEN)
+  External(\_PR.CPU0._TPC)
+        
+
+  Scope(\_PR.CPU1)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          1,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+
+  Scope(\_PR.CPU2)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          2,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+
+  Scope(\_PR.CPU3)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          3,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPU4)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          4,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPU5)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          5,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPU6)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          6,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPU7)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          7,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+  Scope(\_PR.CPU8)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          8,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPU9)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          9,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPUA)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          10,             
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPUB)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          11,              
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPUC)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          12,             
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPUD)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          13,             
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPUE)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          14,             
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+
+  Scope(\_PR.CPUF)
+  {
+    Method(_TPC, 0)
+    {
+      Return(\_PR.CPU0._TPC)
+    }
+
+    
+    
+    
+    Method(_PTC, 0)
+    {
+      Return(\_PR.CPU0._PTC)
+    }
+
+    Method(_TSS, 0)
+    {
+      Return(\_PR.CPU0._TSS)
+    }
+
+    
+    
+    
+    Method(_TSD, 0)
+    {
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      If(LNot(And(PDC0,4)))
+      {
+        Return(Package(){ 
+          Package(){
+            5,            
+            0,            
+            0,            
+            0xFD,         
+            TCNT          
+          }
+        })
+      }
+      Return(Package(){   
+        Package(){
+          5,              
+          0,              
+          15,             
+          0xFC,           
+          1               
+        }
+      })
+    }
+  }  
+} 
+

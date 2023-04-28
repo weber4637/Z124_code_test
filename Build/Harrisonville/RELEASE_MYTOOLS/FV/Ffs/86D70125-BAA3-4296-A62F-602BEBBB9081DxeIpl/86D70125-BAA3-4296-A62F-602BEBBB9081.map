@@ -1,0 +1,108 @@
+ DxeIpl
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000019dfH .text                   CODE
+ 0002:00000000 00000150H .data                   DATA
+ 0002:00000150 000000f6H .rdata                  DATA
+ 0002:00000248 00000004H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000030       _PeimInitializeDxeIpl      00000270 f   DxeIpl:DxeLoad.obj
+ 0001:00000098       _InstallIplPermanentMemoryPpis 000002d8 f   DxeIpl:DxeLoad.obj
+ 0001:00000105       _ValidateMemoryTypeInfoVariable 00000345 f   DxeIpl:DxeLoad.obj
+ 0001:00000138       _CustomGuidedSectionExtract 00000378 f   DxeIpl:DxeLoad.obj
+ 0001:000001f0       _DxeIplDecompress          00000430 f   DxeIpl:DxeLoad.obj
+ 0001:00000310       _UpdateStackHob            00000550 f   DxeIpl:DxeLoad.obj
+ 0001:0000036e       _S3Resume                  000005ae f   DxeIpl:AmiDxeIpl.obj
+ 0001:000003aa       _ProcessRecoveryAndBootOnFlashUpdate 000005ea f   DxeIpl:AmiDxeIpl.obj
+ 0001:00000467       _PublishMemoryInformationHob 000006a7 f   DxeIpl:AmiDxeIpl.obj
+ 0001:00000573       _AmiDxeIplEntry            000007b3 f   DxeIpl:AmiDxeIpl.obj
+ 0001:000006ea       _HandOffToDxeCore          0000092a f   DxeIpl:DxeLoadFunc.obj
+ 0001:0000077c       _CreateIdentityMappingPageTables 000009bc f   DxeIpl:VirtualMemory.obj
+ 0001:00000933       _GetPeiServicesTablePointer 00000b73 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:0000094d       _CpuDeadLoop               00000b8d f   BaseLib:CpuDeadLoop.obj
+ 0001:00000961       _AsmCpuid                  00000ba1 f   BaseLib:CpuId.obj
+ 0001:00000998       _LShiftU64                 00000bd8 f   BaseLib:LShiftU64.obj
+ 0001:000009b4       _GetHobList                00000bf4 f   PeiHobLib:HobLib.obj
+ 0001:000009ce       _GetNextHob                00000c0e f   PeiHobLib:HobLib.obj
+ 0001:000009fc       _GetNextGuidHob            00000c3c f   PeiHobLib:HobLib.obj
+ 0001:00000a29       _GetBootModeHob            00000c69 f   PeiHobLib:HobLib.obj
+ 0001:00000a43       _InternalPeiCreateHob      00000c83 f   PeiHobLib:HobLib.obj
+ 0001:00000a6c       _BuildModuleHob            00000cac f   PeiHobLib:HobLib.obj
+ 0001:00000af5       _BuildGuidHob              00000d35 f   PeiHobLib:HobLib.obj
+ 0001:00000b25       _BuildMemoryAllocationHob  00000d65 f   PeiHobLib:HobLib.obj
+ 0001:00000b73       _PeiServicesInstallPpi     00000db3 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000b85       _PeiServicesLocatePpi      00000dc5 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000ba2       _PeiServicesFfsFindNextVolume 00000de2 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000bb9       _CopyMem                   00000df9 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00000bd8       _CompareGuid               00000e18 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00000bfc       _InternalAllocatePages     00000e3c f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000c2b       _AllocatePool              00000e6b f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000c51       _PeiGetExtractGuidedSectionHandlerInfo 00000e91 f   PeiExtractGuidedSectionLib:PeiExtractGuidedSectionLib.obj
+ 0001:00000cea       _ExtractGuidedSectionRegisterHandlers 00000f2a f   PeiExtractGuidedSectionLib:PeiExtractGuidedSectionLib.obj
+ 0001:00000dd3       _ExtractGuidedSectionGetInfo 00001013 f   PeiExtractGuidedSectionLib:PeiExtractGuidedSectionLib.obj
+ 0001:00000e5c       _ExtractGuidedSectionDecode 0000109c f   PeiExtractGuidedSectionLib:PeiExtractGuidedSectionLib.obj
+ 0001:00000ee5       _FillBuf                   00001125 f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:00000f5f       _GetBits                   0000119f f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:00000f77       _MakeTable                 000011b7 f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:0000120e       _DecodeP                   0000144e f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:0000127d       _ReadPTLen                 000014bd f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:000013a5       _ReadCLen                  000015e5 f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:0000151f       _DecodeC                   0000175f f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:000015e3       _Decode                    00001823 f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:00001674       _UefiDecompressGetInfo     000018b4 f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:000016a7       _UefiTianoDecompress       000018e7 f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:00001752       _TianoDecompressGetInfo    00001992 f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:000017d1       _TianoDecompress           00001a11 f   BaseUefiTianoDecompressLib:BaseUefiTianoCustomDecompressLib.obj
+ 0001:00001842       _InternalReportStatusCode  00001a82 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000188d       _SetMem                    00001acd f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:000018b0       _InternalX86EnablePaging64 00001af0     BaseLib:EnablePaging64.obj
+ 0001:00001900       _InternalMemCopyMem        00001b40     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001940       _InternalMemZeroMem        00001b80     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001960       _InternalMemSetMem16       00001ba0     BaseMemoryLibRepStr:SetMem16.obj
+ 0001:00001980       _InternalMemSetMem         00001bc0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000019a0       _InternalMemSetMem32       00001be0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000019c0       _InternalMemSetMem64       00001c00     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gEfiCallerIdGuid          00001c20     DxeIpl:AutoGen.obj
+ 0002:00000010       _gEfiMemoryTypeInformationGuid 00001c30     DxeIpl:AutoGen.obj
+ 0002:00000020       _gAmiRecoveryImageHobGuid  00001c40     DxeIpl:AutoGen.obj
+ 0002:00000030       _gAmiGlobalVariableGuid    00001c50     DxeIpl:AutoGen.obj
+ 0002:00000040       _gEfiHobMemoryAllocStackGuid 00001c60     DxeIpl:AutoGen.obj
+ 0002:00000050       _gEfiHobMemoryAllocModuleGuid 00001c70     DxeIpl:AutoGen.obj
+ 0002:00000060       _gTianoCustomDecompressGuid 00001c80     DxeIpl:AutoGen.obj
+ 0002:00000070       _gEfiDxeIplPpiGuid         00001c90     DxeIpl:AutoGen.obj
+ 0002:00000080       _gEfiPeiDecompressPpiGuid  00001ca0     DxeIpl:AutoGen.obj
+ 0002:00000090       _gEfiEndOfPeiSignalPpiGuid 00001cb0     DxeIpl:AutoGen.obj
+ 0002:000000a0       _gEfiPeiReadOnlyVariable2PpiGuid 00001cc0     DxeIpl:AutoGen.obj
+ 0002:000000b0       _gEfiPeiLoadFilePpiGuid    00001cd0     DxeIpl:AutoGen.obj
+ 0002:000000c0       _gEfiPeiS3Resume2PpiGuid   00001ce0     DxeIpl:AutoGen.obj
+ 0002:000000d0       _gEfiPeiRecoveryModulePpiGuid 00001cf0     DxeIpl:AutoGen.obj
+ 0002:000000e0       _gEfiPeiMemoryDiscoveredPpiGuid 00001d00     DxeIpl:AutoGen.obj
+ 0002:000000f0       _gAmiReadyToLoadDxeCorePpiGuid 00001d10     DxeIpl:AutoGen.obj
+ 0002:00000100       _DefaultMemoryTypeInformationPtr 00001d20     DxeIpl:AmiDxeIpl.obj
+ 0002:00000104       _DefaultMemoryTypeInformationSize 00001d24     DxeIpl:AmiDxeIpl.obj
+ 0002:00000108       _gGdtEntries               00001d28     DxeIpl:DxeLoadFunc.obj
+ 0002:00000150       _ReadyToLoadDxeCorePpiDesc 00001d70     DxeIpl:AmiDxeIpl.obj
+ 0002:0000015c       _mDxeIplPpi                00001d7c     DxeIpl:DxeLoad.obj
+ 0002:00000160       _DefaultMemoryTypeInformation 00001d80     DxeIpl:AmiDxeIpl.obj
+ 0002:000001a0       _mDxeIplPpiList            00001dc0     DxeIpl:DxeLoad.obj
+ 0002:000001ac       _mCustomGuidedSectionExtractionPpi 00001dcc     DxeIpl:DxeLoad.obj
+ 0002:000001b0       _mDecompressPpi            00001dd0     DxeIpl:DxeLoad.obj
+ 0002:000001b4       _mDecompressPpiList        00001dd4     DxeIpl:DxeLoad.obj
+ 0002:000001c0       _gEndOfPeiSignalPpi        00001de0     DxeIpl:DxeLoad.obj
+ 0002:000001cc       _mMemoryDiscoveredNotifyList 00001dec     DxeIpl:DxeLoad.obj
+ 0002:000001d8       ??_C@_1CM@OLBNONPD@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAT?$AAy?$AAp?$AAe?$AAI?$AAn?$AAf?$AAo?$AAr?$AAm?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 00001df8     DxeIpl:DxeLoad.obj
+ 0002:00000204       ??_C@_1DM@LNDPMHHI@?$AAP?$AAr?$AAe?$AAv?$AAi?$AAo?$AAu?$AAs?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAT?$AAy?$AAp?$AAe?$AAI?$AAn?$AAf?$AAo?$AAr?$AAm?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 00001e24     DxeIpl:AmiDxeIpl.obj
+ 0002:00000240       _gGdt                      00001e60     DxeIpl:DxeLoadFunc.obj
+ 0002:00000248       _PageTableCreationFunctionPtr 00001e68     DxeIpl:VirtualMemory.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

@@ -1,0 +1,408 @@
+ Setup
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000b40cH .text                   CODE
+ 0002:00000000 00000bb0H .data                   DATA
+ 0002:00000bb0 00000fcfH .rdata                  DATA
+ 0002:00001b80 000004a0H .bss                    DATA
+ 0003:00000000 0000048cH .pdata                  DATA
+ 0004:00000000 00000558H .xdata                  DATA
+ 0005:00000000 00000060H .rsrc$01                DATA
+ 0005:00000060 00013c00H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000002c       ProcessLibraryConstructorList 000000000000030c f   Setup:AutoGen.obj
+ 0001:0000010c       InitString                 00000000000003ec f   Setup:Setup.obj
+ 0001:00000230       InitSystemVersionString    0000000000000510 f   Setup:Setup.obj
+ 0001:000003ac       RegisterSetupItems         000000000000068c f   Setup:Setup.obj
+ 0001:0000041c       InitLanguages              00000000000006fc f   Setup:Setup.obj
+ 0001:000005d8       SetupNotificationFunction  00000000000008b8 f   Setup:Setup.obj
+ 0001:00000834       SetupEntry                 0000000000000b14 f   Setup:Setup.obj
+ 0001:00000a98       HiiAccessExtractConfigWrapper 0000000000000d78 f   Setup:Setup.obj
+ 0001:00000aa0       HiiAccessRouteConfigWrapper 0000000000000d80 f   Setup:Setup.obj
+ 0001:00000aa8       CallbackFunction           0000000000000d88 f   Setup:Setup.obj
+ 0001:00000bb4       InitCsmStrings             0000000000000e94 f   Setup:CsmSetup.obj
+ 0001:00000bf0       IsLegacyVideo              0000000000000ed0 f   Setup:CsmSetup.obj
+ 0001:00000d68       CsmPolicyLaunchCallback    0000000000001048 f   Setup:CsmSetup.obj
+ 0001:00000df8       GetAndUpdatePECI1          00000000000010d8 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00000e78       GetAndUpdatePCHTemp        0000000000001158 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00000ed0       GetSystemTemp1             00000000000011b0 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00000f28       GetSystemTemp2             0000000000001208 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00000f80       GetSystemTemp3             0000000000001260 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00000fd8       GetSystemTemp4             00000000000012b8 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00001030       GetAndUpdateFan1Speed      0000000000001310 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00001094       GetAndUpdateFan2Speed      0000000000001374 f   Setup:NCT6683DHwmSetup.obj
+ 0001:000010f8       GetAndUpdateFan3Speed      00000000000013d8 f   Setup:NCT6683DHwmSetup.obj
+ 0001:0000115c       GetAndUpdateVIN0Voltage    000000000000143c f   Setup:NCT6683DHwmSetup.obj
+ 0001:000011a0       GetAndUpdateVIN1Voltage    0000000000001480 f   Setup:NCT6683DHwmSetup.obj
+ 0001:000011e4       GetAndUpdateVIN2Voltage    00000000000014c4 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00001244       GetAndUpdateVIN3Voltage    0000000000001524 f   Setup:NCT6683DHwmSetup.obj
+ 0001:000012a4       GetAndUpdateVIN4Voltage    0000000000001584 f   Setup:NCT6683DHwmSetup.obj
+ 0001:000012fc       GetAndUpdateVIN5Voltage    00000000000015dc f   Setup:NCT6683DHwmSetup.obj
+ 0001:00001354       GetAndUpdateVIN6Voltage    0000000000001634 f   Setup:NCT6683DHwmSetup.obj
+ 0001:000013ac       GetAndUpdateVIN8Voltage    000000000000168c f   Setup:NCT6683DHwmSetup.obj
+ 0001:00001404       GetAndUpdateVIN9Voltage    00000000000016e4 f   Setup:NCT6683DHwmSetup.obj
+ 0001:0000145c       GetAndUpdateVIN10Voltage   000000000000173c f   Setup:NCT6683DHwmSetup.obj
+ 0001:000014b4       GetAndUpdateVIN11Voltage   0000000000001794 f   Setup:NCT6683DHwmSetup.obj
+ 0001:0000150c       GetAndUpdateVIN12Voltage   00000000000017ec f   Setup:NCT6683DHwmSetup.obj
+ 0001:00001564       GetAndUpdateVIN13Voltage   0000000000001844 f   Setup:NCT6683DHwmSetup.obj
+ 0001:000015bc       GetAndUpdateVCC3Voltage    000000000000189c f   Setup:NCT6683DHwmSetup.obj
+ 0001:00001614       GetAndUpdateVSB3Voltage    00000000000018f4 f   Setup:NCT6683DHwmSetup.obj
+ 0001:0000166c       GetAndUpdateVBATVoltage    000000000000194c f   Setup:NCT6683DHwmSetup.obj
+ 0001:000016c4       NCT6683D_HWM_CallBack      00000000000019a4 f   Setup:NCT6683DHwmSetup.obj
+ 0001:00001734       SioSetupStringsInit        0000000000001a14 f   Setup:SioStaticSetup.obj
+ 0001:000018e8       HHMEfiValueToString        0000000000001bc8 f   Setup:SioStaticSetup.obj
+ 0001:000019e4       AdjustString               0000000000001cc4 f   Setup:SioStaticSetup.obj
+ 0001:00001b74       HHMCommon                  0000000000001e54 f   Setup:SioStaticSetup.obj
+ 0001:00001da4       GetConnectedDevices        0000000000002084 f   Setup:UsbSetup.obj
+ 0001:0000289c       GetMassDeviceName          0000000000002b7c f   Setup:UsbSetup.obj
+ 0001:00002938       InitUSBStrings             0000000000002c18 f   Setup:UsbSetup.obj
+ 0001:00002ca0       UpdateUSBStrings           0000000000002f80 f   Setup:UsbSetup.obj
+ 0001:00003350       HiiAccessExtractConfig     0000000000003630 f   Setup:SetupHiiAccess.obj
+ 0001:000036f8       HiiAccessRouteConfig       00000000000039d8 f   Setup:SetupHiiAccess.obj
+ 0001:000039f0       InitPciBusStrings          0000000000003cd0 f   Setup:PciStaticSetup.obj
+ 0001:00003a2c       GetHiiMapDataCount         0000000000003d0c f   Setup:FixedBootOrder.obj
+ 0001:00003a5c       SearchHiiMapByType         0000000000003d3c f   Setup:FixedBootOrder.obj
+ 0001:00003aa0       CompareHddDevicePath       0000000000003d80 f   Setup:FixedBootOrder.obj
+ 0001:00003b8c       IsDevicePathMatch          0000000000003e6c f   Setup:FixedBootOrder.obj
+ 0001:00003c08       ChangeLegacyDeviceOptionName 0000000000003ee8 f   Setup:FixedBootOrder.obj
+ 0001:00003c90       ChangeUefiDeviceOptionName 0000000000003f70 f   Setup:FixedBootOrder.obj
+ 0001:00003d0c       FBO_AdjustGroupName        0000000000003fec f   Setup:FixedBootOrder.obj
+ 0001:00004080       NewStringWithFirstFoundLanguage 0000000000004360 f   Setup:FixedBootOrder.obj
+ 0001:000041b8       GetUEFIBootName            0000000000004498 f   Setup:FixedBootOrder.obj
+ 0001:00004218       UpdateDeviceHiiString      00000000000044f8 f   Setup:FixedBootOrder.obj
+ 0001:00004510       SyncLegacyStringWithGroupFormHii 00000000000047f0 f   Setup:FixedBootOrder.obj
+ 0001:000045d4       SyncUefiStringWithGroupFormHii 00000000000048b4 f   Setup:FixedBootOrder.obj
+ 0001:00004698       AdjustLegacyDevOrder       0000000000004978 f   Setup:FixedBootOrder.obj
+ 0001:000047a4       GetLegacyDescriptionFromBootOption 0000000000004a84 f   Setup:FixedBootOrder.obj
+ 0001:000049cc       InitFboLegacyHiiString     0000000000004cac f   Setup:FixedBootOrder.obj
+ 0001:00004c80       InitFboUefiHiiString       0000000000004f60 f   Setup:FixedBootOrder.obj
+ 0001:00004f6c       UpdateLegacyDeviceHiiString 000000000000524c f   Setup:FixedBootOrder.obj
+ 0001:000051ac       UpdateUefiDeviceHiiString  000000000000548c f   Setup:FixedBootOrder.obj
+ 0001:000053d4       FboExchangeGroup           00000000000056b4 f   Setup:FixedBootOrder.obj
+ 0001:00005678       FixedBootOrderFormCallBack 0000000000005958 f   Setup:FixedBootOrder.obj
+ 0001:000056d0       InitLegacyGroupDefault     00000000000059b0 f   Setup:FixedBootOrder.obj
+ 0001:00005b60       InitUefiGroupDefault       0000000000005e40 f   Setup:FixedBootOrder.obj
+ 0001:0000601c       InitialLegacyDevHiiToken   00000000000062fc f   Setup:FixedBootOrder.obj
+ 0001:00006238       InitialUefiDevHiiToken     0000000000006518 f   Setup:FixedBootOrder.obj
+ 0001:0000644c       load_default_string        000000000000672c f   Setup:FixedBootOrder.obj
+ 0001:0000646c       load_previous_string       000000000000674c f   Setup:FixedBootOrder.obj
+ 0001:000066e0       SyncFixedBootPriorities    00000000000069c0 f   Setup:FixedBootOrder.obj
+ 0001:00006770       UpdateFirstDeviceNameInSetup 0000000000006a50 f   Setup:FixedBootOrder.obj
+ 0001:00006b2c       UpdateDeviceNameInSetup    0000000000006e0c f   Setup:FixedBootOrder.obj
+ 0001:00006b84       FboStringInitNotify        0000000000006e64 f   Setup:FixedBootOrder.obj
+ 0001:00007234       FixedBootOrderStringInit   0000000000007514 f   Setup:FixedBootOrder.obj
+ 0001:000073d4       ReflashFixedBootOrderString 00000000000076b4 f   Setup:FixedBootOrder.obj
+ 0001:000073e8       InitNbStrings              00000000000076c8 f   Setup:NbSetup.obj
+ 0001:000074e4       InitTerminalStrings        00000000000077c4 f   Setup:InitTerminalStrings.obj
+ 0001:000075d0       InitTcgStrings             00000000000078b0 f   Setup:TcgSetup.obj
+ 0001:00007e30       OemInitNCT6683DSetupStrings 0000000000008110 f   Setup:NCT6683DSetup.obj
+ 0001:00007e34       StrCat                     0000000000008114 f   BaseLib:String.obj
+ 0001:00007e80       AsciiStrnCmp               0000000000008160 f   BaseLib:String.obj
+ 0001:00007eb4       StrCpyS                    0000000000008194 f   BaseLib:SafeString.obj
+ 0001:00007f48       UnicodeSPrint              0000000000008228 f   BasePrintLib:PrintLib.obj
+ 0001:00007f7c       BasePrintLibFillBuffer     000000000000825c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00007fb0       BasePrintLibSPrintMarker   0000000000008290 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00008e2c       BasePrintLibSPrint         000000000000910c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00008e50       GetDevicePathSize          0000000000009130 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00008e98       AppendDevicePath           0000000000009178 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00008fa8       AppendDevicePathNode       0000000000009288 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00009090       IsDevicePathValid          0000000000009370 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:000090bc       EfiGetSystemConfigurationTable 000000000000939c f   UefiLib:UefiLib.obj
+ 0001:00009120       GetVariable2               0000000000009400 f   UefiLib:UefiLib.obj
+ 0001:00009200       Malloc                     00000000000094e0 f   AmiDxeLib:EfiLib.obj
+ 0001:0000922c       MallocZ                    000000000000950c f   AmiDxeLib:EfiLib.obj
+ 0001:0000926c       DPLength                   000000000000954c f   AmiDxeLib:EfiLib.obj
+ 0001:000092b0       GetEfiVariable             0000000000009590 f   AmiDxeLib:EfiLib.obj
+ 0001:00009370       RegisterProtocolCallback   0000000000009650 f   AmiDxeLib:EfiLib.obj
+ 0001:000093c8       ItoaHelper                 00000000000096a8 f   AmiDxeLib:StdLibC.obj
+ 0001:0000943c       ItowEx                     000000000000971c f   AmiDxeLib:StdLibC.obj
+ 0001:0000948c       StrtolEx                   000000000000976c f   AmiDxeLib:StdLibC.obj
+ 0001:00009564       Wcsupr                     0000000000009844 f   AmiDxeLib:StdLibC.obj
+ 0001:00009594       Sprintf                    0000000000009874 f   AmiDxeLib:StdLibC.obj
+ 0001:000095bc       GetStatusCodeString        000000000000989c f   AmiDxeLib:StdLibC.obj
+ 0001:000096a4       Sprintf_s_va_list          0000000000009984 f   AmiDxeLib:StdLibC.obj
+ 0001:00009a8c       Sprintf_s                  0000000000009d6c f   AmiDxeLib:StdLibC.obj
+ 0001:00009aac       Swprintf                   0000000000009d8c f   AmiDxeLib:StdLibC.obj
+ 0001:00009ad4       Swprintf_s_va_list         0000000000009db4 f   AmiDxeLib:StdLibC.obj
+ 0001:00009e98       Swprintf_s                 000000000000a178 f   AmiDxeLib:StdLibC.obj
+ 0001:00009eb8       HiiLibGetPlatformLanguageInternal 000000000000a198 f   AmiDxeLib:HiiUtilities.obj
+ 0001:00009f2c       StringToChar16             000000000000a20c f   AmiDxeLib:HiiUtilities.obj
+ 0001:0000a0d8       StringToBlock              000000000000a3b8 f   AmiDxeLib:HiiUtilities.obj
+ 0001:0000a90c       FboCallback                000000000000abec f   Setup:FixedBootOrder.obj
+ 0001:0000abbc       HiiLibGetString            000000000000ae9c f   AmiDxeLib:HiiUtilities.obj
+ 0001:0000ad08       HiiLibGetBrowserData       000000000000afe8 f   AmiDxeLib:HiiUtilities.obj
+ 0001:0000ae8c       HiiLibSetBrowserData       000000000000b16c f   AmiDxeLib:HiiUtilities.obj
+ 0001:0000b08c       MemCmp                     000000000000b36c f   AmiDxeLib:Memory.obj
+ 0001:0000b104       HiiGetSupportedLanguages   000000000000b3e4 f   UefiHiiLib:HiiLanguage.obj
+ 0001:0000b190       InternalAllocatePool       000000000000b470 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b1c0       AllocateZeroPool           000000000000b4a0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b1ec       InternalAllocateCopyPool   000000000000b4cc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000b230       InternalMemCompareMem      000000000000b510     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:0000b250       GetCpuTimer                000000000000b530 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:0000b260       CPULib_CpuID               000000000000b540 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:0000b2a0       memset                     000000000000b580     AmiDxeLib:MemSet.obj
+ 0001:0000b2ae       MemSetAsm                  000000000000b58e f   AmiDxeLib:MemSet.obj
+ 0001:0000b300       memcpy                     000000000000b5e0     AmiDxeLib:MemCpy.obj
+ 0001:0000b300       MemCpyAsm                  000000000000b5e0 f   AmiDxeLib:MemCpy.obj
+ 0001:0000b3b0       InternalMemZeroMem         000000000000b690     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:0000b3d0       InternalMemCopyMem         000000000000b6b0     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gEfiGlobalVariableGuid     000000000000b700     Setup:AutoGen.obj
+ 0002:00000010       gAmiTseSetupEnterGuid      000000000000b710     Setup:AutoGen.obj
+ 0002:00000020       gEfiMemoryConfigDataGuid   000000000000b720     Setup:AutoGen.obj
+ 0002:00000030       gTcgInternalflagGuid       000000000000b730     Setup:AutoGen.obj
+ 0002:00000040       gEfiDxeServicesTableGuid   000000000000b740     Setup:AutoGen.obj
+ 0002:00000050       gEfiHobListGuid            000000000000b750     Setup:AutoGen.obj
+ 0002:00000060       gEfiHiiPackageListProtocolGuid 000000000000b760     Setup:AutoGen.obj
+ 0002:00000070       gEfiHiiStringProtocolGuid  000000000000b770     Setup:AutoGen.obj
+ 0002:00000080       gEfiHiiDatabaseProtocolGuid 000000000000b780     Setup:AutoGen.obj
+ 0002:00000090       gEfiLoadedImageDevicePathProtocolGuid 000000000000b790     Setup:AutoGen.obj
+ 0002:000000a0       gEfiDevicePathProtocolGuid 000000000000b7a0     Setup:AutoGen.obj
+ 0002:000000b0       gEfiHiiConfigAccessProtocolGuid 000000000000b7b0     Setup:AutoGen.obj
+ 0002:000000c0       gEfiHiiConfigRoutingProtocolGuid 000000000000b7c0     Setup:AutoGen.obj
+ 0002:000000d0       gEfiGraphicsOutputProtocolGuid 000000000000b7d0     Setup:AutoGen.obj
+ 0002:000000e0       gEfiBootManagerPolicyProtocolGuid 000000000000b7e0     Setup:AutoGen.obj
+ 0002:000000f0       gEfiPciIoProtocolGuid      000000000000b7f0     Setup:AutoGen.obj
+ 0002:00000100       gEfiHiiFontProtocolGuid    000000000000b800     Setup:AutoGen.obj
+ 0002:00000110       gEfiHiiImageProtocolGuid   000000000000b810     Setup:AutoGen.obj
+ 0002:00000120       DefaultLanguageCode        000000000000b820     AmiDxeLib:Tokens.obj
+ 0002:000002b0       EfiErrorStatus             000000000000b9b0     AmiDxeLib:StdLibC.obj
+ 0002:000005f0       PiErrorStatus              000000000000bcf0     AmiDxeLib:StdLibC.obj
+ 0002:00000640       AmiErrorStatus             000000000000bd40     AmiDxeLib:StdLibC.obj
+ 0002:00000680       EfiWarningStatus           000000000000bd80     AmiDxeLib:StdLibC.obj
+ 0002:000006f0       PiWarningStatus            000000000000bdf0     AmiDxeLib:StdLibC.obj
+ 0002:00000738       EfiUnknown                 000000000000be38     AmiDxeLib:StdLibC.obj
+ 0002:00000744       gTotalSioSerialPorts       000000000000be44     Setup:InitTerminalStrings.obj
+ 0002:00000800       gSioSerialPortStrRef       000000000000bf00     Setup:InitTerminalStrings.obj
+ 0002:00000818       gPciSerialPortStrRef       000000000000bf18     Setup:InitTerminalStrings.obj
+ 0002:00000820       gTerminalVarGuid           000000000000bf20     Setup:InitTerminalStrings.obj
+ 0002:00000830       FixedBootOrderGuid         000000000000bf30     Setup:FixedBootOrder.obj
+ 0002:00000840       DefaultLegacyDevOrderGuid  000000000000bf40     Setup:FixedBootOrder.obj
+ 0002:00000850       InitLegacyGroup            000000000000bf50     Setup:FixedBootOrder.obj
+ 0002:00000858       InitUefiGroup              000000000000bf58     Setup:FixedBootOrder.obj
+ 0002:00000860       FboSetupPageInform         000000000000bf60     Setup:FixedBootOrder.obj
+ 0002:00000870       FBOHiiMapData              000000000000bf70     Setup:FixedBootOrder.obj
+ 0002:00000990       STR_TABLE_LIST             000000000000c090     Setup:SioStaticSetup.obj
+ 0002:000009d0       NCT6683DExternalFunList    000000000000c0d0     Setup:NCT6683DHwmSetup.obj
+ 0002:00000aa0       gAmiCsmThunkDriverGuid     000000000000c1a0     Setup:CsmSetup.obj
+ 0002:00000bb0       GuidPattern                000000000000c2b0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000bc0       NamePattern                000000000000c2c0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000bd0       PathPattern                000000000000c2d0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000be0       OffsetPattern              000000000000c2e0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000bf0       ValuePattern               000000000000c2f0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000c40       _gUefiDriverRevision       000000000000c340     Setup:AutoGen.obj
+ 0002:00000c48       ??_C@_1CI@GLMAIHPI@?$AAA?$AAm?$AAe?$AAr?$AAi?$AAc?$AAa?$AAn?$AA?5?$AAM?$AAe?$AAg?$AAa?$AAt?$AAr?$AAe?$AAn?$AAd?$AAs?$AA?$AA@ 000000000000c348     Setup:Setup.obj
+ 0002:00000c70       ??_C@_15GANGMFKL@?$AA?$CF?$AAs?$AA?$AA@ 000000000000c370     Setup:Setup.obj
+ 0002:00000c78       ??_C@_1BA@MLBMEHAO@?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AA0?$AA2?$AAd?$AA?$AA@ 000000000000c378     Setup:Setup.obj
+ 0002:00000c88       ??_C@_1M@NPAMAEKD@?$AAZ?$AA1?$AA2?$AA4?$AA?9?$AA?$AA@ 000000000000c388     Setup:Setup.obj
+ 0002:00000c98       ??_C@_1BO@KBBPCBED@?$AA?$CF?$AAs?$AA?5?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AA0?$AA2?$AAd?$AA?5?$AAx?$AA6?$AA4?$AA?$AA@ 000000000000c398     Setup:Setup.obj
+ 0002:00000cb8       ??_C@_1BC@KGDNFGO@?$AA1?$AA6?$AA?3?$AA5?$AA8?$AA?3?$AA2?$AA4?$AA?$AA@ 000000000000c3b8     Setup:Setup.obj
+ 0002:00000cd0       ??_C@_1BG@GELOEBCI@?$AA0?$AA4?$AA?1?$AA2?$AA6?$AA?1?$AA2?$AA0?$AA2?$AA3?$AA?$AA@ 000000000000c3d0     Setup:Setup.obj
+ 0002:00000ce8       ??_C@_1M@MOFLFCEC@?$AA?$CF?$AAs?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 000000000000c3e8     Setup:Setup.obj
+ 0002:00000cf8       ??_C@_1CK@JCHIPMFI@?$AAU?$AAE?$AAF?$AAI?$AA?5?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?$DL?$AA?5?$AAP?$AAI?$AA?5?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?$AA@ 000000000000c3f8     Setup:Setup.obj
+ 0002:00000d24       ??_C@_15KNBIKKIN@?$AA?$CF?$AAd?$AA?$AA@ 000000000000c424     Setup:Setup.obj
+ 0002:00000d2c       ??_C@_05JJLPJMLG@en?9US?$AA@ 000000000000c42c     Setup:Setup.obj
+ 0002:00000d38       ??_C@_1CM@HINKMGKE@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAs?$AAt?$AAL?$AAa?$AAn?$AAg?$AAC?$AAo?$AAd?$AAe?$AAs?$AA?$AA@ 000000000000c438     Setup:Setup.obj
+ 0002:00000d68       ??_C@_1CE@GLBFGNOF@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AAC?$AAo?$AAd?$AAe?$AAs?$AA?$AA@ 000000000000c468     Setup:Setup.obj
+ 0002:00000d90       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 000000000000c490     Setup:Setup.obj
+ 0002:00000db0       ??_C@_1BE@CHLHHAGH@?$AA?$CF?$AA0?$AA2?$AAx?$AA?4?$AA?$CF?$AA0?$AA2?$AAx?$AA?$AA@ 000000000000c4b0     Setup:CsmSetup.obj
+ 0002:00000dd0       ??_C@_1JM@JAHNKEMD@?$AAV?$AAi?$AAd?$AAe?$AAo?$AA?5?$AAi?$AAs?$AA?5?$AAi?$AAn?$AA?5?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AA?5?$AAm?$AAo?$AAd?$AAe?$AA?4?$AA?5?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AA?5@ 000000000000c4d0     Setup:CsmSetup.obj
+ 0002:00000e70       ??_C@_1BK@BPENMONG@?$AA?5?$AAW?$AAa?$AAr?$AAn?$AAi?$AAn?$AAg?$AA?$CB?$AA?$CB?$AA?$CB?$AA?5?$AA?$AA@ 000000000000c570     Setup:CsmSetup.obj
+ 0002:00000e90       ??_C@_1DA@KNBNONIF@?$AAI?$AAO?$AA?$DN?$AA?$CF?$AAX?$AAh?$AA?$DL?$AA?5?$AAI?$AAR?$AAQ?$AA?$DN?$AA?$CF?$AAd?$AA?$DL?$AA?5?$AAD?$AAM?$AAA?$AA?$DN?$AA?$CF?$AAd?$AA?$DL?$AA?$AA@ 000000000000c590     Setup:SioStaticSetup.obj
+ 0002:00000ec0       ??_C@_1CA@KLICBFDL@?$AAI?$AAO?$AA?$DN?$AA?$CF?$AAX?$AAh?$AA?$DL?$AA?5?$AAD?$AAM?$AAA?$AA?$DN?$AA?$CF?$AAd?$AA?$DL?$AA?$AA@ 000000000000c5c0     Setup:SioStaticSetup.obj
+ 0002:00000ee0       ??_C@_1CA@JOPGDCAE@?$AAI?$AAO?$AA?$DN?$AA?$CF?$AAX?$AAh?$AA?$DL?$AA?5?$AAI?$AAR?$AAQ?$AA?$DN?$AA?$CF?$AAd?$AA?$DL?$AA?$AA@ 000000000000c5e0     Setup:SioStaticSetup.obj
+ 0002:00000f00       ??_C@_1BA@JBNAOKBD@?$AAI?$AAO?$AA?$DN?$AA?$CF?$AAX?$AAh?$AA?$DL?$AA?$AA@ 000000000000c600     Setup:SioStaticSetup.obj
+ 0002:00000f10       ??_C@_19CBNLOIPF@?$AA?5?$AAR?$AAP?$AAM?$AA?$AA@ 000000000000c610     Setup:SioStaticSetup.obj
+ 0002:00000f1c       ??_C@_15KHPHALBE@?$AA?5?$AAV?$AA?$AA@ 000000000000c61c     Setup:SioStaticSetup.obj
+ 0002:00000f24       ??_C@_15MADAKMLJ@?$AA?5?$AAC?$AA?$AA@ 000000000000c624     Setup:SioStaticSetup.obj
+ 0002:00000f2c       ??_C@_15ELOONFKJ@?$AA?3?$AA?5?$AA?$AA@ 000000000000c62c     Setup:SioStaticSetup.obj
+ 0002:00000f38       ??_C@_1BK@CKLOJIJC@?$AA?3?$AA?5?$AAN?$AA?1?$AAA?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$AA@ 000000000000c638     Setup:SioStaticSetup.obj
+ 0002:00000f58       ??_C@_1BG@BEBGFBEJ@?$AA?3?$AA?5?$AAN?$AA?1?$AAA?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$AA@ 000000000000c658     Setup:SioStaticSetup.obj
+ 0002:00000f70       ??_C@_1M@FLNELCMH@?$AAD?$AAr?$AAi?$AAv?$AAe?$AA?$AA@ 000000000000c670     Setup:UsbSetup.obj
+ 0002:00000f80       ??_C@_1BC@NCPFOOPJ@?$AAK?$AAe?$AAy?$AAb?$AAo?$AAa?$AAr?$AAd?$AA?$AA@ 000000000000c680     Setup:UsbSetup.obj
+ 0002:00000f98       ??_C@_1M@GPPEDHNJ@?$AAM?$AAo?$AAu?$AAs?$AAe?$AA?$AA@ 000000000000c698     Setup:UsbSetup.obj
+ 0002:00000fa8       ??_C@_1M@IBLKNOBA@?$AAP?$AAo?$AAi?$AAn?$AAt?$AA?$AA@ 000000000000c6a8     Setup:UsbSetup.obj
+ 0002:00000fb8       ??_C@_19DKANNKMM@?$AAM?$AAi?$AAc?$AAe?$AA?$AA@ 000000000000c6b8     Setup:UsbSetup.obj
+ 0002:00000fc8       ??_C@_1CC@FBMFAGGG@?$AAS?$AAm?$AAa?$AAr?$AAt?$AAC?$AAa?$AAr?$AAd?$AA?5?$AAR?$AAe?$AAa?$AAd?$AAe?$AAr?$AA?$AA@ 000000000000c6c8     Setup:UsbSetup.obj
+ 0002:00000ff0       ??_C@_19NGOAGMKI@?$AAU?$AAH?$AAC?$AAI?$AA?$AA@ 000000000000c6f0     Setup:UsbSetup.obj
+ 0002:00001000       ??_C@_19OGGMHNIJ@?$AAO?$AAH?$AAC?$AAI?$AA?$AA@ 000000000000c700     Setup:UsbSetup.obj
+ 0002:00001010       ??_C@_19PBEOONEA@?$AAE?$AAH?$AAC?$AAI?$AA?$AA@ 000000000000c710     Setup:UsbSetup.obj
+ 0002:00001020       ??_C@_19CDBOOHBI@?$AAX?$AAH?$AAC?$AAI?$AA?$AA@ 000000000000c720     Setup:UsbSetup.obj
+ 0002:0000102c       ??_C@_15JOGBDECP@?$AA?0?$AA?5?$AA?$AA@ 000000000000c72c     Setup:UsbSetup.obj
+ 0002:00001034       ??_C@_13HOIJIPNN@?$AA?5?$AA?$AA@ 000000000000c734     Setup:UsbSetup.obj
+ 0002:00001038       ??_C@_1BG@ONCHAAKF@?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAN?$AAo?$AAn?$AAe?$AA?$AA@ 000000000000c738     Setup:UsbSetup.obj
+ 0002:00001050       ??_C@_02ECNOPIAA@?$CFa?$AA@ 000000000000c750     Setup:UsbSetup.obj
+ 0002:00001058       ??_C@_19MNDKMKJC@?$AA?$CF?$AA0?$AA2?$AAd?$AA?$AA@ 000000000000c758     Setup:UsbSetup.obj
+ 0002:00001068       ??_C@_1CA@DNAOKGEP@?$AAU?$AAs?$AAb?$AAM?$AAa?$AAs?$AAs?$AAD?$AAe?$AAv?$AAV?$AAa?$AAl?$AAi?$AAd?$AA?$AA@ 000000000000c768     Setup:UsbSetup.obj
+ 0002:00001088       ??_C@_1BM@GFGDMPO@?$AAU?$AAs?$AAb?$AAM?$AAa?$AAs?$AAs?$AAD?$AAe?$AAv?$AAN?$AAu?$AAm?$AA?$AA@ 000000000000c788     Setup:UsbSetup.obj
+ 0002:000010a8       ??_C@_1CC@MFNBFOGL@?$AAU?$AAs?$AAb?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AAN?$AAu?$AAm?$AA?$AA@ 000000000000c7a8     Setup:UsbSetup.obj
+ 0002:000010d0       ??_C@_1O@JONPFMKD@?$AAV?$AAA?$AAL?$AAU?$AAE?$AA?$DN?$AA?$AA@ 000000000000c7d0     Setup:SetupHiiAccess.obj
+ 0002:000010e0       ??_C@_1BA@HDPFBAGC@?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA?$AA@ 000000000000c7e0     Setup:SetupHiiAccess.obj
+ 0002:000010f0       ??_C@_1M@PJAPFKED@?$AAP?$AAA?$AAT?$AAH?$AA?$DN?$AA?$AA@ 000000000000c7f0     Setup:SetupHiiAccess.obj
+ 0002:00001100       ??_C@_1M@MDEMFNHP@?$AAN?$AAA?$AAM?$AAE?$AA?$DN?$AA?$AA@ 000000000000c800     Setup:SetupHiiAccess.obj
+ 0002:00001110       ??_C@_1M@DPLGJLCD@?$AAG?$AAU?$AAI?$AAD?$AA?$DN?$AA?$AA@ 000000000000c810     Setup:SetupHiiAccess.obj
+ 0002:00001120       ??_C@_1CC@KHCIBBEI@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA0?$AA?$CG?$AAW?$AAI?$AAD?$AAT?$AAH?$AA?$DN?$AA?$AA@ 000000000000c820     Setup:SetupHiiAccess.obj
+ 0002:00001148       ??_C@_1CG@KPEBDNIC@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA0?$AA?$CG?$AAW?$AAI?$AAD?$AAT?$AAH?$AA?$DN?$AA?$CF?$AAx?$AA?$AA@ 000000000000c848     Setup:SetupHiiAccess.obj
+ 0002:00001170       ??_C@_1BK@FLMNMHDD@?$AA?$CF?$AAX?$AA?4?$AA?$CF?$AA0?$AA2?$AAd?$AA?4?$AA?$CF?$AA0?$AA2?$AAd?$AA?$AA@ 000000000000c870     Setup:PciStaticSetup.obj
+ 0002:00001190       ??_C@_1CC@BOHBCIAM@?$AAF?$AAb?$AAo?$AAG?$AAr?$AAo?$AAu?$AAp?$AAN?$AAa?$AAm?$AAe?$AAD?$AAa?$AAt?$AAa?$AA?$AA@ 000000000000c890     Setup:FixedBootOrder.obj
+ 0002:000011b8       ??_C@_1BC@NAPILJKH@?$AAB?$AAo?$AAo?$AAt?$AA?$CF?$AA0?$AA4?$AAX?$AA?$AA@ 000000000000c8b8     Setup:FixedBootOrder.obj
+ 0002:000011d0       ??_C@_1M@CDCAHPKB@?$AA?$CF?$AAs?$AA?3?$AA?$CF?$AAs?$AA?$AA@ 000000000000c8d0     Setup:FixedBootOrder.obj
+ 0002:000011e0       ??_C@_1BO@KNFFHKNF@?$AAF?$AAb?$AAo?$AAG?$AAf?$AAH?$AAi?$AAi?$AAH?$AAa?$AAn?$AAd?$AAl?$AAe?$AA?$AA@ 000000000000c8e0     Setup:FixedBootOrder.obj
+ 0002:00001200       ??_C@_1DA@OONKOLPN@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAG?$AAf?$AAH?$AAi?$AAi?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAD?$AAa?$AAt?$AAa?$AA?$AA@ 000000000000c900     Setup:FixedBootOrder.obj
+ 0002:00001230       ??_C@_1CM@JCDMIPAC@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAG?$AAf?$AAH?$AAi?$AAi?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAD?$AAa?$AAt?$AAa?$AA?$AA@ 000000000000c930     Setup:FixedBootOrder.obj
+ 0002:00001260       ??_C@_1CE@HJFPEMJP@?$AAF?$AAb?$AAo?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 000000000000c960     Setup:FixedBootOrder.obj
+ 0002:00001288       ??_C@_1BE@CHCFCNKI@?$AAB?$AAo?$AAo?$AAt?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 000000000000c988     Setup:FixedBootOrder.obj
+ 0002:000012a0       ??_C@_1CK@HEPBNGNI@?$AAO?$AAr?$AAi?$AAF?$AAb?$AAo?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 000000000000c9a0     Setup:FixedBootOrder.obj
+ 0002:000012d0       ??_C@_1CM@FLIHEJFI@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAH?$AAi?$AAi?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAD?$AAa?$AAt?$AAa?$AA?$AA@ 000000000000c9d0     Setup:FixedBootOrder.obj
+ 0002:000012fc       ??_C@_15JKMGFKLP@?$AA?$CF?$AAa?$AA?$AA@ 000000000000c9fc     Setup:FixedBootOrder.obj
+ 0002:00001308       ??_C@_1CA@IHDKJNCK@?$AAO?$AAr?$AAi?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 000000000000ca08     Setup:FixedBootOrder.obj
+ 0002:00001328       ??_C@_1CI@NKCMEPHL@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAH?$AAi?$AAi?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAD?$AAa?$AAt?$AAa?$AA?$AA@ 000000000000ca28     Setup:FixedBootOrder.obj
+ 0002:00001350       ??_C@_1CC@MBBHKFHC@?$AAF?$AAb?$AAo?$AAN?$AAe?$AAw?$AAO?$AAp?$AAN?$AAa?$AAm?$AAe?$AAL?$AAi?$AAs?$AAt?$AA?$AA@ 000000000000ca50     Setup:FixedBootOrder.obj
+ 0002:00001378       ??_C@_1CM@JLCGPFOE@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAL?$AAe?$AAg?$AAa?$AAc?$AAy?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 000000000000ca78     Setup:FixedBootOrder.obj
+ 0002:000013a8       ??_C@_1CI@CJMFPEMF@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 000000000000caa8     Setup:FixedBootOrder.obj
+ 0002:000013d0       ??_C@_1CI@KCFLNDLA@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAB?$AAo?$AAo?$AAt?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAi?$AAe?$AAs?$AA?$AA@ 000000000000cad0     Setup:FixedBootOrder.obj
+ 0002:000013f8       ??_C@_1BK@LJNGGOJK@?$AAU?$AAe?$AAf?$AAi?$AAD?$AAe?$AAv?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 000000000000caf8     Setup:FixedBootOrder.obj
+ 0002:00001418       ??_C@_1CK@POBMGCOC@?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AAS?$AAk?$AAi?$AAp?$AAF?$AAb?$AAo?$AAM?$AAo?$AAd?$AAu?$AAl?$AAe?$AA?$AA@ 000000000000cb18     Setup:FixedBootOrder.obj
+ 0002:00001448       ??_C@_1BO@IGDJBJKB@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAB?$AAo?$AAo?$AAt?$AAG?$AAr?$AAo?$AAu?$AAp?$AA?$AA@ 000000000000cb48     Setup:FixedBootOrder.obj
+ 0002:00001468       ??_C@_1BE@FPBNPMKH@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAB?$AAo?$AAo?$AAt?$AA?$AA@ 000000000000cb68     Setup:FixedBootOrder.obj
+ 0002:00001480       ??_C@_1CE@BEACHAMC@?$AAF?$AAi?$AAx?$AAe?$AAd?$AAB?$AAo?$AAo?$AAt?$AAO?$AAr?$AAd?$AAe?$AAr?$AAH?$AAi?$AAi?$AA?$AA@ 000000000000cb80     Setup:FixedBootOrder.obj
+ 0002:000014a8       ??_C@_1BM@FMMGINLB@?$AA?$CF?$AA4?$AAd?$AA?5?$AAM?$AAB?$AA?5?$AA?$CI?$AAD?$AAD?$AAR?$AA4?$AA?$CJ?$AA?$AA@ 000000000000cba8     Setup:NbSetup.obj
+ 0002:000014c8       ??_C@_1BM@IKJPGOKM@?$AA?$CF?$AA4?$AAd?$AA?5?$AAM?$AAB?$AA?5?$AA?$CI?$AAD?$AAD?$AAR?$AA2?$AA?$CJ?$AA?$AA@ 000000000000cbc8     Setup:NbSetup.obj
+ 0002:000014e8       ??_C@_1CE@BAGJHINC@?$AAT?$AAe?$AAr?$AAm?$AAi?$AAn?$AAa?$AAl?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AAV?$AAa?$AAr?$AA?$AA@ 000000000000cbe8     Setup:InitTerminalStrings.obj
+ 0002:00001510       ??_C@_1BI@MJHDJIGO@?$AA?5?$AA?$CI?$AAD?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AAd?$AA?$CJ?$AA?$AA@ 000000000000cc10     Setup:InitTerminalStrings.obj
+ 0002:00001528       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 000000000000cc28     Setup:TcgSetup.obj
+ 0002:00001534       ??_C@_15MAOEGKJF@?$AA?$CF?$AAS?$AA?$AA@ 000000000000cc34     Setup:TcgSetup.obj
+ 0002:00001540       ??_C@_1BE@DDBBKGGK@?$AAP?$AAC?$AAR?$AAB?$AAi?$AAt?$AAm?$AAa?$AAp?$AA?$AA@ 000000000000cc40     Setup:TcgSetup.obj
+ 0002:00001558       ??_C@_1M@FEDALNGH@?$AAS?$AAH?$AAA?$AA?9?$AA1?$AA?$AA@ 000000000000cc58     Setup:TcgSetup.obj
+ 0002:00001568       ??_C@_1BA@PJDLDKKK@?$AA?0?$AAS?$AAH?$AAA?$AA2?$AA5?$AA6?$AA?$AA@ 000000000000cc68     Setup:TcgSetup.obj
+ 0002:00001578       ??_C@_1O@HECGKAIN@?$AAS?$AAH?$AAA?$AA2?$AA5?$AA6?$AA?$AA@ 000000000000cc78     Setup:TcgSetup.obj
+ 0002:00001588       ??_C@_1BA@CDAGOBGB@?$AA?0?$AAS?$AAH?$AAA?$AA3?$AA8?$AA4?$AA?$AA@ 000000000000cc88     Setup:TcgSetup.obj
+ 0002:00001598       ??_C@_1O@KOBLHLEG@?$AAS?$AAH?$AAA?$AA3?$AA8?$AA4?$AA?$AA@ 000000000000cc98     Setup:TcgSetup.obj
+ 0002:000015a8       ??_C@_1BA@OHANOGPC@?$AA?0?$AAS?$AAH?$AAA?$AA5?$AA1?$AA2?$AA?$AA@ 000000000000cca8     Setup:TcgSetup.obj
+ 0002:000015b8       ??_C@_1O@GKBAHMNF@?$AAS?$AAH?$AAA?$AA5?$AA1?$AA2?$AA?$AA@ 000000000000ccb8     Setup:TcgSetup.obj
+ 0002:000015c8       ??_C@_19MDOFMOAP@?$AA?0?$AAS?$AAM?$AA3?$AA?$AA@ 000000000000ccc8     Setup:TcgSetup.obj
+ 0002:000015d8       ??_C@_17BACMJKEO@?$AAS?$AAM?$AA3?$AA?$AA@ 000000000000ccd8     Setup:TcgSetup.obj
+ 0002:000015e0       ??_C@_1CK@JONIOFBN@?$AA?5?$AA?5?$AAF?$AAi?$AAr?$AAm?$AAw?$AAa?$AAr?$AAe?$AA?5?$AAV?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AA?$AA@ 000000000000cce0     Setup:TcgSetup.obj
+ 0002:00001610       ??_C@_1M@NDGNLFMH@?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?$AA@ 000000000000cd10     Setup:TcgSetup.obj
+ 0002:00001620       ??_C@_1BG@LLKHIDIA@?$AA?5?$AA?5?$AAV?$AAe?$AAn?$AAd?$AAo?$AAr?$AA?3?$AA?5?$AA?$AA@ 000000000000cd20     Setup:TcgSetup.obj
+ 0002:00001638       ??_C@_0BB@MFGDFIJM@Compromised?5Data?$AA@ 000000000000cd38     BasePrintLib:PrintLibInternal.obj
+ 0002:00001650       ??_C@_0BB@KFJAMCOC@Invalid?5Language?$AA@ 000000000000cd50     BasePrintLib:PrintLibInternal.obj
+ 0002:00001668       ??_C@_0M@FKGOBENP@End?5of?5File?$AA@ 000000000000cd68     BasePrintLib:PrintLibInternal.obj
+ 0002:00001678       ??_C@_0O@GLPDOMCP@Reserved?5?$CI30?$CJ?$AA@ 000000000000cd78     BasePrintLib:PrintLibInternal.obj
+ 0002:00001688       ??_C@_0O@NMJOLAMF@Reserved?5?$CI29?$CJ?$AA@ 000000000000cd88     BasePrintLib:PrintLibInternal.obj
+ 0002:00001698       ??_C@_0N@JEJDHPO@End?5of?5Media?$AA@ 000000000000cd98     BasePrintLib:PrintLibInternal.obj
+ 0002:000016a8       ??_C@_09BOMAGJEG@CRC?5Error?$AA@ 000000000000cda8     BasePrintLib:PrintLibInternal.obj
+ 0002:000016b8       ??_C@_0BD@KHMPCIOG@Security?5Violation?$AA@ 000000000000cdb8     BasePrintLib:PrintLibInternal.obj
+ 0002:000016d0       ??_C@_0BF@EHOBGFMI@Incompatible?5Version?$AA@ 000000000000cdd0     BasePrintLib:PrintLibInternal.obj
+ 0002:000016e8       ??_C@_0P@NCJHBCLM@Protocol?5Error?$AA@ 000000000000cde8     BasePrintLib:PrintLibInternal.obj
+ 0002:000016f8       ??_C@_0L@DJKNJKHM@TFTP?5Error?$AA@ 000000000000cdf8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001708       ??_C@_0L@LKIFCMNO@ICMP?5Error?$AA@ 000000000000ce08     BasePrintLib:PrintLibInternal.obj
+ 0002:00001718       ??_C@_07LCKDCBKK@Aborted?$AA@ 000000000000ce18     BasePrintLib:PrintLibInternal.obj
+ 0002:00001720       ??_C@_0BA@IGIBFFPH@Already?5started?$AA@ 000000000000ce20     BasePrintLib:PrintLibInternal.obj
+ 0002:00001730       ??_C@_0M@DCJFAFHJ@Not?5started?$AA@ 000000000000ce30     BasePrintLib:PrintLibInternal.obj
+ 0002:00001740       ??_C@_08PAFJCNGP@Time?5out?$AA@ 000000000000ce40     BasePrintLib:PrintLibInternal.obj
+ 0002:00001750       ??_C@_0L@IFPBNFC@No?5mapping?$AA@ 000000000000ce50     BasePrintLib:PrintLibInternal.obj
+ 0002:00001760       ??_C@_0M@ENKCBFEP@No?5Response?$AA@ 000000000000ce60     BasePrintLib:PrintLibInternal.obj
+ 0002:00001770       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 000000000000ce70     BasePrintLib:PrintLibInternal.obj
+ 0002:00001780       ??_C@_09CFCBFJND@Not?5Found?$AA@ 000000000000ce80     BasePrintLib:PrintLibInternal.obj
+ 0002:00001790       ??_C@_0O@JNCJKCCD@Media?5changed?$AA@ 000000000000ce90     BasePrintLib:PrintLibInternal.obj
+ 0002:000017a0       ??_C@_08KEGAJDNN@No?5Media?$AA@ 000000000000cea0     BasePrintLib:PrintLibInternal.obj
+ 0002:000017b0       ??_C@_0M@HDLEPOFA@Volume?5Full?$AA@ 000000000000ceb0     BasePrintLib:PrintLibInternal.obj
+ 0002:000017c0       ??_C@_0P@EIOJGIF@Volume?5Corrupt?$AA@ 000000000000cec0     BasePrintLib:PrintLibInternal.obj
+ 0002:000017d0       ??_C@_0BB@GOILNEAA@Out?5of?5Resources?$AA@ 000000000000ced0     BasePrintLib:PrintLibInternal.obj
+ 0002:000017e8       ??_C@_0BA@LNEDDFNB@Write?5Protected?$AA@ 000000000000cee8     BasePrintLib:PrintLibInternal.obj
+ 0002:000017f8       ??_C@_0N@HHEABDHO@Device?5Error?$AA@ 000000000000cef8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001808       ??_C@_09NKFGCIPN@Not?5Ready?$AA@ 000000000000cf08     BasePrintLib:PrintLibInternal.obj
+ 0002:00001818       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small?$AA@ 000000000000cf18     BasePrintLib:PrintLibInternal.obj
+ 0002:00001830       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size?$AA@ 000000000000cf30     BasePrintLib:PrintLibInternal.obj
+ 0002:00001840       ??_C@_0M@BEECMOIL@Unsupported?$AA@ 000000000000cf40     BasePrintLib:PrintLibInternal.obj
+ 0002:00001850       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter?$AA@ 000000000000cf50     BasePrintLib:PrintLibInternal.obj
+ 0002:00001868       ??_C@_0L@PLPBEPPC@Load?5Error?$AA@ 000000000000cf68     BasePrintLib:PrintLibInternal.obj
+ 0002:00001878       ??_C@_0BD@IFJNJCCO@Warning?5Stale?5Data?$AA@ 000000000000cf78     BasePrintLib:PrintLibInternal.obj
+ 0002:00001890       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small?$AA@ 000000000000cf90     BasePrintLib:PrintLibInternal.obj
+ 0002:000018b0       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure?$AA@ 000000000000cfb0     BasePrintLib:PrintLibInternal.obj
+ 0002:000018c8       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure?$AA@ 000000000000cfc8     BasePrintLib:PrintLibInternal.obj
+ 0002:000018e0       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph?$AA@ 000000000000cfe0     BasePrintLib:PrintLibInternal.obj
+ 0002:000018f8       ??_C@_07PBILKAFL@Success?$AA@ 000000000000cff8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001900       mHexStr                    000000000000d000     BasePrintLib:PrintLibInternal.obj
+ 0002:00001910       mStatusString              000000000000d010     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a48       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO?$AA@ 000000000000d148     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a58       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO?$AA@ 000000000000d158     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a68       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 000000000000d168     BasePrintLib:PrintLibInternal.obj
+ 0002:00001aa0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO?$AA@ 000000000000d1a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001ab0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d?$AA@ 000000000000d1b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001acc       ??_C@_04JIMNDDED@?$CF08X?$AA@ 000000000000d1cc     BasePrintLib:PrintLibInternal.obj
+ 0002:00001ad4       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 000000000000d1d4     BasePrintLib:PrintLibInternal.obj
+ 0002:00001ad8       ??_C@_01LIIJDEN@?$AN?$AA@  000000000000d1d8     BasePrintLib:PrintLibInternal.obj
+ 0002:00001adc       mUefiDevicePathLibEndDevicePath 000000000000d1dc     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00001ae0       ??_C@_0M@LCCONGAO@EFI_SUCCESS?$AA@ 000000000000d1e0     AmiDxeLib:StdLibC.obj
+ 0002:00001aec       ??_C@_06DCBEJCPP@?$CFs?$CI?$CFX?$CJ?$AA@ 000000000000d1ec     AmiDxeLib:StdLibC.obj
+ 0002:00001af4       ??_C@_02DKCKIIND@?$CFs?$AA@ 000000000000d1f4     AmiDxeLib:StdLibC.obj
+ 0002:00001b00       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 000000000000d200     AmiDxeLib:StdLibC.obj
+ 0002:00001b68       ??_C@_1O@PMJNFNEJ@?$AA?$CF?$AAS?$AA?$CI?$AA?$CF?$AAX?$AA?$CJ?$AA?$AA@ 000000000000d268     AmiDxeLib:StdLibC.obj
+ 0002:00001b78       ??_C@_06PLDEFKP@x?9UEFI?$AA@ 000000000000d278     UefiHiiLib:HiiString.obj
+ 0002:00001b80       ThisImageHandle            000000000000d280     Setup:Setup.obj
+ 0002:00001b88       CallbackParametersPtr      000000000000d288     Setup:Setup.obj
+ 0002:00001b91       LoadedDefault              000000000000d291     Setup:FixedBootOrder.obj
+ 0002:00001b92       gHiiSkipFBOModule          000000000000d292     Setup:FixedBootOrder.obj
+ 0002:00001b94       HddCount                   000000000000d294     Setup:FixedBootOrder.obj
+ 0002:00001b98       BbsTable                   000000000000d298     Setup:FixedBootOrder.obj
+ 0002:00001ba0       BbsCount                   000000000000d2a0     Setup:FixedBootOrder.obj
+ 0002:00001ba8       pHiiString                 000000000000d2a8     Setup:FixedBootOrder.obj
+ 0002:00001bb0       pFBODualDevMap             000000000000d2b0     Setup:FixedBootOrder.obj
+ 0002:00001bb8       pFBOLegacyDevMap           000000000000d2b8     Setup:FixedBootOrder.obj
+ 0002:00001bc0       pFBOUefiDevMap             000000000000d2c0     Setup:FixedBootOrder.obj
+ 0002:00001bc8       pFBOHiiMap                 000000000000d2c8     Setup:FixedBootOrder.obj
+ 0002:00001bd0       UefiMapped                 000000000000d2d0     Setup:FixedBootOrder.obj
+ 0002:00001bd8       LegacyMapped               000000000000d2d8     Setup:FixedBootOrder.obj
+ 0002:00001be0       gImageHandle               000000000000d2e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001be8       gST                        000000000000d2e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001bf0       gBS                        000000000000d2f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001bf8       gRT                        000000000000d2f8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001c00       gHiiFont                   000000000000d300     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001c08       gHiiString                 000000000000d308     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001c10       gHiiImage                  000000000000d310     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001c18       gHiiDatabase               000000000000d318     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001c20       gHiiConfigRouting          000000000000d320     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00001c98       gDS                        000000000000d398     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00001ca0       mUefiFormBrowser2          000000000000d3a0     UefiHiiLib:HiiLib.obj
+ 0002:00001ca8       mHobList                   000000000000d3a8     DxeHobLib:HobLib.obj
+ 0002:00001cb0       pST                        000000000000d3b0     AmiDxeLib:EfiLib.obj
+ 0002:00001cb8       pBS                        000000000000d3b8     AmiDxeLib:EfiLib.obj
+ 0002:00001cc0       pRS                        000000000000d3c0     AmiDxeLib:EfiLib.obj
+ 0002:00001cc8       TheImageHandle             000000000000d3c8     AmiDxeLib:EfiLib.obj
+ 0002:00001cd0       gTerminalSerialSupport     000000000000d3d0     <common>
+ 0002:00001cd8       HddInfo                    000000000000d3d8     <common>
+ 0002:00001ce0       TypeUefiDeviceOptions      000000000000d3e0     <common>
+ 0002:00001e40       TypeLegacyDeviceCount      000000000000d540     <common>
+ 0002:00001e60       TypeLegacyDeviceOptions    000000000000d560     <common>
+ 0002:00001fa8       FixedBoot_HiiHandle        000000000000d6a8     <common>
+ 0002:00001fc0       TypeUefiDeviceCount        000000000000d6c0     <common>
+ 0002:00001fe0       AmiExtractConfigList       000000000000d6e0     <common>
+ 0002:00001ff0       AmiRouteConfigList         000000000000d6f0     <common>
+ 0002:00002000       AmiCallbackList            000000000000d700     <common>
+ 0002:00002010       AmiStringInitializationList 000000000000d710     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00002f90       CheckIfHexDigit            0000000000003270 f   AmiDxeLib:HiiUtilities.obj
+ 0001:00002fc4       StringToBlock              00000000000032a4 f   AmiDxeLib:HiiUtilities.obj
+ 0001:00003044       StringToChar16             0000000000003324 f   AmiDxeLib:HiiUtilities.obj
+ 0001:000031cc       FindDeviceHandle           00000000000034ac f    CIL library: CIL module
+ 0001:0000a158       FindDeviceHandle           000000000000a438 f    CIL library: CIL module
+ 0001:0000a2d0       StripValuePattern          000000000000a5b0 f    CIL library: CIL module
+ 0001:0000a3a8       HiiAccessExtractConfig     000000000000a688 f   Setup:SetupHiiAccess.obj
+ 0001:0000a684       HiiAccessRouteConfig       000000000000a964 f   Setup:SetupHiiAccess.obj
+ 0001:0000a90c       HiiAccessFormCallback      000000000000abec f    CIL library: CIL module
+ 0001:0000a918       FindBestLanguage           000000000000abf8 f    CIL library: CIL module
+ 0001:0000aa48       GetSupportedLanguages      000000000000ad28 f    CIL library: CIL module
+ 0001:0000ab08       GetAnyLanguageString       000000000000ade8 f    CIL library: CIL module

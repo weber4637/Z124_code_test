@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\ecebcb00-d9c8-11e4-af3d-8cdcd426c973HttpBootDxe\HttpBootDxeOffset.raw d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\ecebcb00-d9c8-11e4-af3d-8cdcd426c973HttpBootDxe\HttpBootDxe.offset

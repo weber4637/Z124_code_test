@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\BB65942B-521F-4ec3-BAF9-A92540CF60D2SataController\BB65942B-521F-4ec3-BAF9-A92540CF60D2SEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\DenvertonPkg\SouthCluster\SataController\Dxe\SataController\OUTPUT\SataController.efi

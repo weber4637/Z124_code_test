@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\3611a41a-7930-4d73-9f14-ea405e0e8137NonVolatileMemDxe\3611a41a-7930-4d73-9f14-ea405e0e8137SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\HarrisonvillePkg\Platform\NonVolatileMem\Dxe\NonVolatileMemDxe\OUTPUT\NonVolatileMemDxe.depex

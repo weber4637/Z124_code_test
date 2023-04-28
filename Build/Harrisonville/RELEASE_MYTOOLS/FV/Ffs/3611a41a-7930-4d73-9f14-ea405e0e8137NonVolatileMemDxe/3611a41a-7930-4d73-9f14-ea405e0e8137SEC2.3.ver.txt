@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\3611a41a-7930-4d73-9f14-ea405e0e8137NonVolatileMemDxe\3611a41a-7930-4d73-9f14-ea405e0e8137SEC2.3.ver

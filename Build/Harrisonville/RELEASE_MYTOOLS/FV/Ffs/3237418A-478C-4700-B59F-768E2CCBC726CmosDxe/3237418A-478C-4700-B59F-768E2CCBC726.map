@@ -1,0 +1,96 @@
+ CmosDxe
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001f1cH .text                   CODE
+ 0002:00000000 00000648H .data                   DATA
+ 0002:00000650 00000004H .rdata                  DATA
+ 0002:00000658 000000b0H .bss                    DATA
+ 0003:00000000 0000018cH .pdata                  DATA
+ 0004:00000000 0000014cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       ProcessModuleEntryPointList 00000000000002c8 f   CmosDxe:AutoGen.obj
+ 0001:0000017c       InitializeCmosTablesFromHob 000000000000041c f   CmosDxe:CmosManagerDxe.obj
+ 0001:00000334       ClearCmosBasedStatus       00000000000005d4 f   CmosDxe:CmosManagerDxe.obj
+ 0001:000003d4       GetCmosAccessInterface     0000000000000674 f   CmosDxe:CmosManager.obj
+ 0001:00000408       CmosManagerCheckStatus     00000000000006a8 f   CmosDxe:CmosManager.obj
+ 0001:00000418       CmosManagerCheckAnyStatus  00000000000006b8 f   CmosDxe:CmosManager.obj
+ 0001:00000424       CmosManagerSetClearStatus  00000000000006c4 f   CmosDxe:CmosManager.obj
+ 0001:000004ec       CmosManagerSetStatus       000000000000078c f   CmosDxe:CmosManager.obj
+ 0001:000004f8       CmosManagerClearStatus     0000000000000798 f   CmosDxe:CmosManager.obj
+ 0001:000005b0       CmosConfigureManager       0000000000000850 f   CmosDxe:CmosManager.obj
+ 0001:000006a8       SaveApiPointerToCmos       0000000000000948 f   CmosDxe:CmosManager.obj
+ 0001:00000730       GetApiPointerFromCmos      00000000000009d0 f   CmosDxe:CmosManager.obj
+ 0001:000007bc       InstallCmosAccessInterface 0000000000000a5c f   CmosDxe:CmosManager.obj
+ 0001:0000082c       InitializeCmosManagerInterface 0000000000000acc f   CmosDxe:CmosManager.obj
+ 0001:00000940       NewCmosManagerInterface    0000000000000be0 f   CmosDxe:CmosManager.obj
+ 0001:00000bb4       CmosGetTokenFromRegister   0000000000000e54 f   CmosDxe:CmosAccess.obj
+ 0001:00000c30       CmosBankReadWrite          0000000000000ed0 f   CmosDxe:CmosAccess.obj
+ 0001:00000d0c       CmosPhysicalReadWrite      0000000000000fac f   CmosDxe:CmosAccess.obj
+ 0001:00000e14       CmosBufferReadWrite        00000000000010b4 f   CmosDxe:CmosAccess.obj
+ 0001:00000f28       CmosReadWrite              00000000000011c8 f   CmosDxe:CmosAccess.obj
+ 0001:00001010       CmosReadWriteEncodedToken  00000000000012b0 f   CmosDxe:CmosAccess.obj
+ 0001:00001100       CmosRead                   00000000000013a0 f   CmosDxe:CmosAccess.obj
+ 0001:000011d0       ReadCmosStatusBytes        0000000000001470 f   CmosDxe:CmosAccess.obj
+ 0001:0000137c       ReadChecksum               000000000000161c f   CmosDxe:CmosAccess.obj
+ 0001:000013bc       WriteChecksum              000000000000165c f   CmosDxe:CmosAccess.obj
+ 0001:00001428       SynchronizeLegacyStatusRegisters 00000000000016c8 f   CmosDxe:CmosAccess.obj
+ 0001:000014e0       CalculateUpdatedCheckSum   0000000000001780 f   CmosDxe:CmosAccess.obj
+ 0001:000015d0       CalculateChecksum          0000000000001870 f   CmosDxe:CmosAccess.obj
+ 0001:000016f4       CmosWrite                  0000000000001994 f   CmosDxe:CmosAccess.obj
+ 0001:000017c0       LoadOptimalDefaults        0000000000001a60 f   CmosDxe:CmosAccess.obj
+ 0001:00001a48       CmosSetDateTime            0000000000001ce8 f   CmosDxe:CmosAccess.obj
+ 0001:00001b74       CmosGetDateTime            0000000000001e14 f   CmosDxe:CmosAccess.obj
+ 0001:00001c1c       GetEfiConfigurationTable   0000000000001ebc f   AmiDxeLib:EfiLib.obj
+ 0001:00001c70       DummyFunction              0000000000001f10 f   AmiDxeLib:EfiLib.obj
+ 0001:00001c74       MemCmp                     0000000000001f14 f   AmiDxeLib:Memory.obj
+ 0001:00001ce8       ReadWriteStandardRange     0000000000001f88 f   AmiCspLibDxe:CmosBoard.obj
+ 0001:00001d40       CmosMgrBatteryIsGood       0000000000001fe0 f   AmiCspLibDxe:CmosBoard.obj
+ 0001:00001d40       CmosIsUsable               0000000000001fe0 f   AmiCspLibDxe:CmosBoard.obj
+ 0001:00001d58       CmosMgrIsFirstBoot         0000000000001ff8 f   AmiCspLibDxe:CmosBoard.obj
+ 0001:00001d5c       ReadWriteCmosBank2         0000000000001ffc f   AmiCspLibDxe:SbGeneric.obj
+ 0001:00001d60       CmosMgrIsBsp               0000000000002000 f   AmiCspLibDxe:CmosBoard.obj
+ 0001:00001d60       CmosMgrIsColdBoot          0000000000002000 f   AmiCspLibDxe:CmosBoard.obj
+ 0001:00001d60       SbGetRtcPowerStatus        0000000000002000 f   AmiCspLibDxe:SbGeneric.obj
+ 0001:00001d70       GetCpuTimer                0000000000002010 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00001d80       CPULib_CpuID               0000000000002020 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00001dc0       memset                     0000000000002060     AmiDxeLib:MemSet.obj
+ 0001:00001dce       MemSetAsm                  000000000000206e f   AmiDxeLib:MemSet.obj
+ 0001:00001e20       MemCpyAsm                  00000000000020c0 f   AmiDxeLib:MemCpy.obj
+ 0001:00001e20       memcpy                     00000000000020c0     AmiDxeLib:MemCpy.obj
+ 0001:00001ed0       AsmWbinvd                  0000000000002170     BaseLib:Wbinvd.obj
+ 0001:00001ee0       InternalMemCopyMem         0000000000002180     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gAmiCmosAccessDxeProtocolGuid 00000000000021c0     CmosDxe:AutoGen.obj
+ 0002:00000010       gPirqRegistersSave         00000000000021d0     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000030       RRegs                      00000000000021f0     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000040       EfiErrorStatus             0000000000002200     AmiDxeLib:StdLibC.obj
+ 0002:00000380       PiErrorStatus              0000000000002540     AmiDxeLib:StdLibC.obj
+ 0002:000003d0       AmiErrorStatus             0000000000002590     AmiDxeLib:StdLibC.obj
+ 0002:00000410       EfiWarningStatus           00000000000025d0     AmiDxeLib:StdLibC.obj
+ 0002:00000480       PiWarningStatus            0000000000002640     AmiDxeLib:StdLibC.obj
+ 0002:000004c8       EfiUnknown                 0000000000002688     AmiDxeLib:StdLibC.obj
+ 0002:00000650       _gUefiDriverRevision       0000000000002810     CmosDxe:AutoGen.obj
+ 0002:00000660       gImageHandle               0000000000002820     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000668       gST                        0000000000002828     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000670       gBS                        0000000000002830     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006c8       mPcd                       0000000000002888     DxePcdLib:DxePcdLib.obj
+ 0002:000006d0       mPiPcd                     0000000000002890     DxePcdLib:DxePcdLib.obj
+ 0002:000006d8       mPcdInfo                   0000000000002898     DxePcdLib:DxePcdLib.obj
+ 0002:000006e0       mPiPcdInfo                 00000000000028a0     DxePcdLib:DxePcdLib.obj
+ 0002:000006e8       pST                        00000000000028a8     AmiDxeLib:EfiLib.obj
+ 0002:000006f0       pBS                        00000000000028b0     AmiDxeLib:EfiLib.obj
+ 0002:000006f8       pRS                        00000000000028b8     AmiDxeLib:EfiLib.obj
+ 0002:00000700       TheImageHandle             00000000000028c0     AmiDxeLib:EfiLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000019c8       CmosMgrReadRtcIndex        0000000000001c68 f    CIL library: CIL module
+ 0001:00001a00       CmosMgrWriteRtcIndex       0000000000001ca0 f    CIL library: CIL module

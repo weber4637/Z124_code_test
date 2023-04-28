@@ -1,0 +1,86 @@
+ AhciSmm
+
+ Timestamp is 6448e7f1 (Wed Apr 26 16:59:29 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001d20H .text                   CODE
+ 0002:00000000 000005b8H .data                   DATA
+ 0002:000005c0 00000004H .rdata                  DATA
+ 0002:000005e0 00000240H .bss                    DATA
+ 0003:00000000 00000114H .pdata                  DATA
+ 0004:00000000 00000168H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c4       SmmStall                   0000000000000344 f   AhciSmm:AhciSmm.obj
+ 0001:00000120       WaitForMemSet              00000000000003a0 f   AhciSmm:AhciSmm.obj
+ 0001:00000198       WaitForMemClear            0000000000000418 f   AhciSmm:AhciSmm.obj
+ 0001:00000208       WaitforCommandComplete     0000000000000488 f   AhciSmm:AhciSmm.obj
+ 0001:00000338       StartController            00000000000005b8 f   AhciSmm:AhciSmm.obj
+ 0001:000003e8       HandlePortComReset         0000000000000668 f   AhciSmm:AhciSmm.obj
+ 0001:00000610       GeneratePortReset          0000000000000890 f   AhciSmm:AhciSmm.obj
+ 0001:00000818       StopController             0000000000000a98 f   AhciSmm:AhciSmm.obj
+ 0001:000009f0       ReadytoAcceptCmd           0000000000000c70 f   AhciSmm:AhciSmm.obj
+ 0001:00000a4c       BuildCommandList           0000000000000ccc f   AhciSmm:AhciSmm.obj
+ 0001:00000ab8       BuildAtapiCMD              0000000000000d38 f   AhciSmm:AhciSmm.obj
+ 0001:00000b0c       BuildPRDT                  0000000000000d8c f   AhciSmm:AhciSmm.obj
+ 0001:00000bac       BuildCommandFIS            0000000000000e2c f   AhciSmm:AhciSmm.obj
+ 0001:00000c64       ReadWritePMPort            0000000000000ee4 f   AhciSmm:AhciSmm.obj
+ 0001:00000df4       AhciSmmExecuteDmaDataCommand 0000000000001074 f   AhciSmm:AhciSmm.obj
+ 0001:00000f5c       AhciSmmExecutePioDataCommand 00000000000011dc f   AhciSmm:AhciSmm.obj
+ 0001:000010a0       AhciSmmExecuteNonDataCommand 0000000000001320 f   AhciSmm:AhciSmm.obj
+ 0001:0000117c       HandleAtapiError           00000000000013fc f   AhciSmm:AhciSmm.obj
+ 0001:00001320       AhciSmmExecutePacketCommand 00000000000015a0 f   AhciSmm:AhciSmm.obj
+ 0001:000014c8       AhciSmmInitPortOnS3Resume  0000000000001748 f   AhciSmm:AhciSmm.obj
+ 0001:0000160c       InSmmFunction              000000000000188c f   AhciSmm:AhciSmm.obj
+ 0001:0000176c       AhciSmmDriverEntryPoint    00000000000019ec f   AhciSmm:AhciSmm.obj
+ 0001:000018b0       InternalAssertJumpBuffer   0000000000001b30 f   BaseLib:SetJump.obj
+ 0001:000018b4       LibInitStatusCodePtr       0000000000001b34 f   AmiDxeLib:EfiLib.obj
+ 0001:000018f8       TraceGetAmiDebugServicesProtocolInstance 0000000000001b78 f   AmiDxeLib:EfiLib.obj
+ 0001:000019dc       GetSmstConfigurationTable  0000000000001c5c f   AmiDxeLib:EfiLib.obj
+ 0001:00001a34       MemCmp                     0000000000001cb4 f   AmiDxeLib:Memory.obj
+ 0001:00001ab0       SetJump                    0000000000001d30     BaseLib:SetJump.obj
+ 0001:00001b40       InternalLongJump           0000000000001dc0     BaseLib:LongJump.obj
+ 0001:00001bc0       GetCpuTimer                0000000000001e40 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00001bd0       CPULib_CpuID               0000000000001e50 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00001c10       memset                     0000000000001e90     AmiDxeLib:MemSet.obj
+ 0001:00001c1e       MemSetAsm                  0000000000001e9e f   AmiDxeLib:MemSet.obj
+ 0001:00001c70       memcpy                     0000000000001ef0     AmiDxeLib:MemCpy.obj
+ 0001:00001c70       MemCpyAsm                  0000000000001ef0 f   AmiDxeLib:MemCpy.obj
+ 0002:00000000       gEfiSmmBase2ProtocolGuid   0000000000001fa0     AhciSmm:AutoGen.obj
+ 0002:00000010       gAmiAhciSmmProtocolGuid    0000000000001fb0     AhciSmm:AutoGen.obj
+ 0002:00000020       gAmiSmmDebugServiceProtocolGuid 0000000000001fc0     AhciSmm:AutoGen.obj
+ 0002:00000030       gAmiDebugServiceProtocolGuid 0000000000001fd0     AhciSmm:AutoGen.obj
+ 0002:00000040       EfiErrorStatus             0000000000001fe0     AmiDxeLib:StdLibC.obj
+ 0002:00000380       PiErrorStatus              0000000000002320     AmiDxeLib:StdLibC.obj
+ 0002:000003d0       AmiErrorStatus             0000000000002370     AmiDxeLib:StdLibC.obj
+ 0002:00000410       EfiWarningStatus           00000000000023b0     AmiDxeLib:StdLibC.obj
+ 0002:00000480       PiWarningStatus            0000000000002420     AmiDxeLib:StdLibC.obj
+ 0002:000004c8       EfiUnknown                 0000000000002468     AmiDxeLib:StdLibC.obj
+ 0002:000005a8       SmmRsTableGuid             0000000000002548     AmiDxeLib:EfiLib.obj
+ 0002:000005c0       _gUefiDriverRevision       0000000000002560     AhciSmm:AutoGen.obj
+ 0002:000006e0       gPortReset                 0000000000002680     AhciSmm:AhciSmm.obj
+ 0002:000006e8       SenseData                  0000000000002688     AhciSmm:AhciSmm.obj
+ 0002:000006f0       PciExpressBaseAddress      0000000000002690     AhciSmm:AhciSmm.obj
+ 0002:000006f8       gImageHandle               0000000000002698     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000700       gST                        00000000000026a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000708       gBS                        00000000000026a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000710       gSmst                      00000000000026b0     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000758       pST                        00000000000026f8     AmiDxeLib:EfiLib.obj
+ 0002:00000760       pBS                        0000000000002700     AmiDxeLib:EfiLib.obj
+ 0002:00000768       pRS                        0000000000002708     AmiDxeLib:EfiLib.obj
+ 0002:00000770       pSmmBase                   0000000000002710     AmiDxeLib:EfiLib.obj
+ 0002:00000778       pSmst                      0000000000002718     AmiDxeLib:EfiLib.obj
+ 0002:00000780       TheImageHandle             0000000000002720     AmiDxeLib:EfiLib.obj
+ 0002:00000788       mPerformanceMeasurementEnabled 0000000000002728     <common>
+ 0002:00000790       gCommandListBaseAddress    0000000000002730     <common>
+ 0002:000007a0       AhciSmm                    0000000000002740     <common>
+ 0002:00000818       gFisBaseAddress            00000000000027b8     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

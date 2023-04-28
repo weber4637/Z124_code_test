@@ -1,0 +1,35 @@
+ TimestampDxe
+
+ Timestamp is 6448e7ed (Wed Apr 26 16:59:25 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000143H .text                   CODE
+ 0002:00000000 00000020H .data                   DATA
+ 0002:00000020 00000004H .rdata                  DATA
+ 0002:00000028 00000038H .bss                    DATA
+ 0003:00000000 00000018H .pdata                  DATA
+ 0004:00000000 00000008H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000009c       TimestampDriverGetTimestamp 000000000000033c f   TimestampDxe:TimestampDxe.obj
+ 0001:000000cc       TimestampDriverGetProperties 000000000000036c f   TimestampDxe:TimestampDxe.obj
+ 0001:00000100       InternalMemCopyMem         00000000000003a0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000140       CpuPause                   00000000000003e0     BaseLib:CpuPause.obj
+ 0002:00000000       gEfiTimestampProtocolGuid  0000000000000400     TimestampDxe:AutoGen.obj
+ 0002:00000010       mTimestamp                 0000000000000410     TimestampDxe:TimestampDxe.obj
+ 0002:00000020       _gUefiDriverRevision       0000000000000420     TimestampDxe:AutoGen.obj
+ 0002:00000028       mTimerLibStartValue        0000000000000428     TimestampDxe:TimestampDxe.obj
+ 0002:00000030       mTimerLibEndValue          0000000000000430     TimestampDxe:TimestampDxe.obj
+ 0002:00000038       mTimestampProperties       0000000000000438     TimestampDxe:TimestampDxe.obj
+ 0002:00000048       gImageHandle               0000000000000448     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000050       gST                        0000000000000450     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000058       gBS                        0000000000000458     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

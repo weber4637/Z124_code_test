@@ -1,0 +1,226 @@
+ Tcg2Dxe
+
+ Timestamp is 6448e7f9 (Wed Apr 26 16:59:37 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000d33cH .text                   CODE
+ 0002:00000000 000002b8H .data                   DATA
+ 0002:000002c0 000003aeH .rdata                  DATA
+ 0002:00000670 00000168H .bss                    DATA
+ 0003:00000000 000004c8H .pdata                  DATA
+ 0004:00000000 00000394H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000084       TrEEDxeGetDigestNonBIOSAlg 0000000000000324 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000001d4       GetAllDigestValues         0000000000000474 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000045c       GetTcgSpecVersion          00000000000006fc f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000494       IsTpm20Device              0000000000000734 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000004e4       Tpm2GetCapability          0000000000000784 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000600       Tpm2GetCapabilityManufactureID 00000000000008a0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000694       Tpm2GetCapabilityMaxCommandResponseSize 0000000000000934 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000007bc       Tpm2GetCapabilitySupportedAlg 0000000000000a5c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000008bc       PttHciSend                 0000000000000b5c f   PttHciDeviceNullLib:PttHciLibNull.obj
+ 0001:000008bc       PttHciReceive              0000000000000b5c f   PttHciDeviceNullLib:PttHciLibNull.obj
+ 0001:000008bc       Tpm20ComponentNameGetControllerName2 0000000000000b5c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000008bc       Tpm20DriverBindingStop     0000000000000b5c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000008bc       Tpm20ComponentNameGetControllerName 0000000000000b5c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000008c8       Tpm20ComponentNameGetDriverName2 0000000000000b68 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000008c8       Tpm20ComponentNameGetDriverName 0000000000000b68 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000091c       Tpm20DriverBindingSupported 0000000000000bbc f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000958       Tpm20DriverBindingStart    0000000000000bf8 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000095c       OverwriteSystemMemory      0000000000000bfc f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000a70       ReadMORValue               0000000000000d10 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000b08       Tpm2GetCapabilityCapPCRS   0000000000000da8 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000d48       TPM2ResetSystemWorkAround  0000000000000fe8 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000e10       DoResetNow                 00000000000010b0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00000e30       Tpm2AllocatePCR            00000000000010d0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000132c       EfiTreeGetActivePcrs       00000000000015cc f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000134c       EfiTreeGetResultOfSetActivePcrs 00000000000015ec f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000013d8       EfiTreeSetActivePcrs       0000000000001678 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000146c       TreeGetCapability          000000000000170c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000193c       TreeGetEventLog            0000000000001bdc f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001a7c       InternalTcg20CommonExtend  0000000000001d1c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00001df0       TpmHashLogExtendEventI     0000000000002090 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000026ec       TreeHashLogExtendEvent     000000000000298c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002880       TreeSubmitCommand          0000000000002b20 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002a98       TrEEUpdateTpmDeviceASL     0000000000002d38 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00002c88       MeasureCertificate         0000000000002f28 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00003100       FindandMeasureSecureBootCertificate 00000000000033a0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000032c8       MeasureTeImage             0000000000003568 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00003cb0       AmiDxeHashInitInterface    0000000000003f50 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00003e70       AmiDxeHashUpdateInterface  0000000000004110 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00004084       AmiDxeHashCompleteInterface 0000000000004324 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00004368       AmiDxeHashAllInterface     0000000000004608 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000043b4       MeasurePeImage             0000000000004654 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000053b8       MeasureHandoffTables       0000000000005658 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000053d0       TreeMeasurePeImage         0000000000005670 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00005dfc       InternalMeasureAction      000000000000609c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00005dfc       InternalMeasureGpt         000000000000609c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00005e04       TrEEOnReadyToBoot          00000000000060a4 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00005e18       InstallTrEEProtocol        00000000000060b8 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00005fe8       TreeDxeEntry               0000000000006288 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00006458       GetNextSMLEvent            00000000000066f8 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000064e0       GetSize_TpmpHa             0000000000006780 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000065dc       GetSize_TpmlDigestValues   000000000000687c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00006688       ExtraSha1FromTpmHa         0000000000006928 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:0000676c       ExtractSingleTcpaEventFromTcgEVENT2 0000000000006a0c f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:00006940       TransferTcgEvent2ToTcpaEvent 0000000000006be0 f   Tcg2Dxe:Tcg2Dxe.obj
+ 0001:000069f0       Tpm2HashSequenceStart      0000000000006c90 f   Tcg2Dxe:Tpm2Sequences.obj
+ 0001:00006b44       CopyAuthSessionCommand     0000000000006de4 f   Tcg2Dxe:Tpm2Sequences.obj
+ 0001:00006c38       Tpm2SequenceUpdate         0000000000006ed8 f   Tcg2Dxe:Tpm2Sequences.obj
+ 0001:00006e28       Tpm2SequenceComplete       00000000000070c8 f   Tcg2Dxe:Tpm2Sequences.obj
+ 0001:0000706c       CompareMem                 000000000000730c f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:00007088       CopyMem                    0000000000007328 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000070a8       SetMem                     0000000000007348 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:000070c0       StrLen                     0000000000007360 f   BaseLib:String.obj
+ 0001:000070d8       AsciiStriCmp               0000000000007378 f   BaseLib:String.obj
+ 0001:00007134       SwapBytes16                00000000000073d4 f   BaseLib:SwapBytes16.obj
+ 0001:00007144       SwapBytes32                00000000000073e4 f   BaseLib:SwapBytes32.obj
+ 0001:00007160       InternalAllocatePool       0000000000007400 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00007190       AllocateZeroPool           0000000000007430 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000071bc       InternalAllocateCopyPool   000000000000745c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00007200       FreePool                   00000000000074a0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000720c       GetDevicePathSize          00000000000074ac f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00007254       AppendDevicePath           00000000000074f4 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00007364       IsDevicePathValid          0000000000007604 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00007390       EfiGetSystemConfigurationTable 0000000000007630 f   UefiLib:UefiLib.obj
+ 0001:000073f4       InternalEmptyFunction      0000000000007694 f   UefiLib:UefiLib.obj
+ 0001:000073f8       EfiCreateEventReadyToBootEx 0000000000007698 f   UefiLib:UefiNotTiano.obj
+ 0001:000074b4       MicroSecondDelay           0000000000007754 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:00007a0c       sha512_init                0000000000007cac f   ShaLib:sha512.obj
+ 0001:00007a90       sha512_process             0000000000007d30 f   ShaLib:sha512.obj
+ 0001:00007b78       sha512_done                0000000000007e18 f   ShaLib:sha512.obj
+ 0001:0000a3e4       sha256_init                000000000000a684 f   ShaLib:sha256.obj
+ 0001:0000a428       sha256_process             000000000000a6c8 f   ShaLib:sha256.obj
+ 0001:0000a508       sha256_done                000000000000a7a8 f   ShaLib:sha256.obj
+ 0001:0000a6a4       sha384_init                000000000000a944 f   ShaLib:sha384.obj
+ 0001:0000a728       sha384_done                000000000000a9c8 f   ShaLib:sha384.obj
+ 0001:0000ba9c       SHA1Init                   000000000000bd3c f   ShaLib:sha1.obj
+ 0001:0000bac8       SHA1Update                 000000000000bd68 f   ShaLib:sha1.obj
+ 0001:0000bba0       SHA1Final                  000000000000be40 f   ShaLib:sha1.obj
+ 0001:0000bcd8       TcgCommonCopyMem           000000000000bf78 f   TisLib20:TcgCommon20.obj
+ 0001:0000bd18       LocateATcgHob              000000000000bfb8 f   TisLib20:TcgCommon20.obj
+ 0001:0000be18       FixedDelay                 000000000000c0b8 f   TisLib20:TpmLib20.obj
+ 0001:0000bef0       TisRequestLocality         000000000000c190 f   TisLib20:TpmLib20.obj
+ 0001:0000bf68       TisReleaseLocality         000000000000c208 f   TisLib20:TpmLib20.obj
+ 0001:0000c008       TisPrepareSendCommand      000000000000c2a8 f   TisLib20:TpmLib20.obj
+ 0001:0000c0ac       TisSendCommand             000000000000c34c f   TisLib20:TpmLib20.obj
+ 0001:0000c194       TisReceiveResponse         000000000000c434 f   TisLib20:TpmLib20.obj
+ 0001:0000c254       TpmLibPassThrough          000000000000c4f4 f   TisLib20:TpmLib20.obj
+ 0001:0000c368       TcgLibGetDsdt              000000000000c608 f   TcgAslLib:TcgAslLib.obj
+ 0001:0000c53c       UpdateAslNameBuffer        000000000000c7dc f   TcgAslLib:TcgAslLib.obj
+ 0001:0000c654       TcgUpdateAslNameObject     000000000000c8f4 f   TcgAslLib:TcgAslLib.obj
+ 0001:0000c68c       IsTcmSupportType           000000000000c92c f   AmiTcmlib:AmiTcmlib.obj
+ 0001:0000c6c8       TpmDxeReportStatusCode     000000000000c968 f   TpmReportStatusCodeWrapperLibDxe:TpmReportStatusCodeWrapperLibDxe.obj
+ 0001:0000c6fc       TpmDxeReportStatusCodeEx   000000000000c99c f   TpmReportStatusCodeWrapperLibDxe:TpmReportStatusCodeWrapperLibDxe.obj
+ 0001:0000c778       MmioRead8                  000000000000ca18 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:0000c77c       MmioWrite8                 000000000000ca1c f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:0000c784       PttHciPresenceCheck        000000000000ca24 f   PttHciDeviceNullLib:PttHciLibNull.obj
+ 0001:0000c788       InternalReportStatusCode   000000000000ca28 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000c850       ReportStatusCodeEx         000000000000caf0 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000c9e0       InternalMemCompareMem      000000000000cc80     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:0000ca00       InternalMemCopyMem         000000000000cca0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000ca40       InternalMemSetMem          000000000000cce0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:0000ca60       InternalMemZeroMem         000000000000cd00     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:0000ca80       InternalMemSetMem32        000000000000cd20     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:0000caa0       InternalMemSetMem64        000000000000cd40     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:0000cab4       CrbMmioReadBuffer8         000000000000cd54 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cb30       CrbMmioWriteBuffer8        000000000000cdd0 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cbb0       IsPTP                      000000000000ce50 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cbe4       GetCurrentInterfaceType    000000000000ce84 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cc3c       CrbSupported               000000000000cedc f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cca4       isTpm20CrbPresent          000000000000cf44 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000ccdc       dTPMCrbLocality0Granted    000000000000cf7c f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cd44       dTPMCrbSetLocality         000000000000cfe4 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cdc0       dTPMCrbWaitStrtClr         000000000000d060 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000ce38       isTPMIdle                  000000000000d0d8 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000ce68       dTPMCrbSetReqReadyState    000000000000d108 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cf04       dTPMCrbSetReqIdleState     000000000000d1a4 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000cfa0       CrbSend                    000000000000d240 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000d0c4       CrbReceive                 000000000000d364 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000d238       CrbSubmitCmd               000000000000d4d8 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:0000d330       CpuPause                   000000000000d5d0     BaseLib:CpuPause.obj
+ 0001:0000d334       memcpy                     000000000000d5d4 f   TcgHashIntrinsicLib:CopyMem.obj
+ 0002:00000000       gEfiCallerIdGuid           000000000000d5e0     Tcg2Dxe:AutoGen.obj
+ 0002:00000010       gEfiImageSecurityDatabaseGuid 000000000000d5f0     Tcg2Dxe:AutoGen.obj
+ 0002:00000020       AmiValidBootImageCertTblGuid 000000000000d600     Tcg2Dxe:AutoGen.obj
+ 0002:00000030       gTpm20HobGuid              000000000000d610     Tcg2Dxe:AutoGen.obj
+ 0002:00000040       gTcg2FinalEventsTableGuid  000000000000d620     Tcg2Dxe:AutoGen.obj
+ 0002:00000050       gEfiMemoryOverwriteControlDataGuid 000000000000d630     Tcg2Dxe:AutoGen.obj
+ 0002:00000060       ExtendedDataGuid           000000000000d640     Tcg2Dxe:AutoGen.obj
+ 0002:00000070       gSetupVariableGuid         000000000000d650     Tcg2Dxe:AutoGen.obj
+ 0002:00000080       gEfiTcgTreeLogHobGuid      000000000000d660     Tcg2Dxe:AutoGen.obj
+ 0002:00000090       gTcgInternalflagGuid       000000000000d670     Tcg2Dxe:AutoGen.obj
+ 0002:000000a0       AmitcgefiOsVariableGuid    000000000000d680     Tcg2Dxe:AutoGen.obj
+ 0002:000000b0       gEfiAcpiTableGuid          000000000000d690     Tcg2Dxe:AutoGen.obj
+ 0002:000000c0       gAmiResetSystemEventGuid   000000000000d6a0     Tcg2Dxe:AutoGen.obj
+ 0002:000000d0       gEfiEventReadyToBootGuid   000000000000d6b0     Tcg2Dxe:AutoGen.obj
+ 0002:000000e0       gEfiHobListGuid            000000000000d6c0     Tcg2Dxe:AutoGen.obj
+ 0002:000000f0       gEfiStatusCodeSpecificDataGuid 000000000000d6d0     Tcg2Dxe:AutoGen.obj
+ 0002:00000100       gTcgPlatformSetupPolicyGuid 000000000000d6e0     Tcg2Dxe:AutoGen.obj
+ 0002:00000110       gEfiTrEEProtocolGuid       000000000000d6f0     Tcg2Dxe:AutoGen.obj
+ 0002:00000120       gEfiResetArchProtocolGuid  000000000000d700     Tcg2Dxe:AutoGen.obj
+ 0002:00000130       gEfiTcgPlatformProtocolGuid 000000000000d710     Tcg2Dxe:AutoGen.obj
+ 0002:00000140       AmiProtocolInternalHlxeGuid 000000000000d720     Tcg2Dxe:AutoGen.obj
+ 0002:00000150       gAmiDxeHashInterfaceguid   000000000000d730     Tcg2Dxe:AutoGen.obj
+ 0002:00000160       gEfiDevicePathProtocolGuid 000000000000d740     Tcg2Dxe:AutoGen.obj
+ 0002:00000170       gEfiDriverBindingProtocolGuid 000000000000d750     Tcg2Dxe:AutoGen.obj
+ 0002:00000180       gEfiComponentNameProtocolGuid 000000000000d760     Tcg2Dxe:AutoGen.obj
+ 0002:00000190       gEfiComponentName2ProtocolGuid 000000000000d770     Tcg2Dxe:AutoGen.obj
+ 0002:000001a0       gEfiStatusCodeRuntimeProtocolGuid 000000000000d780     Tcg2Dxe:AutoGen.obj
+ 0002:000001b0       TCMSupportedArray          000000000000d790     AmiTcmlib:AmiTcmlib.obj
+ 0002:000001f8       Tpm20DriverBinding         000000000000d7d8     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000238       mTreeProtocol              000000000000d818     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000270       InternalLogProtocol        000000000000d850     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000280       AmiHashAllInterface        000000000000d860     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000002a0       mTcgPlatformProtocol       000000000000d880     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000540       _gUefiDriverRevision       000000000000db20     Tcg2Dxe:AutoGen.obj
+ 0002:00000548       ??_C@_1BG@KNEPFNIO@?$AAT?$AAP?$AAM?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 000000000000db28     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000560       ??_C@_05JJLPJMLG@en?9US?$AA@ 000000000000db40     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000568       ??_C@_1DM@KHNCPJJB@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAO?$AAv?$AAe?$AAr?$AAw?$AAr?$AAi?$AAt?$AAe?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$AA@ 000000000000db48     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000005a8       ??_C@_1BE@DDBBKGGK@?$AAP?$AAC?$AAR?$AAB?$AAi?$AAt?$AAm?$AAa?$AAp?$AA?$AA@ 000000000000db88     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000005c0       ??_C@_1BK@FMMKMGLA@?$AAA?$AAM?$AAI?$AAT?$AAC?$AAG?$AAP?$AAP?$AAI?$AAV?$AAA?$AAR?$AA?$AA@ 000000000000dba0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000005e0       ??_C@_1BM@MMOAKFNN@?$AAA?$AAM?$AAI?$AAT?$AAC?$AAG?$AAP?$AAP?$AAI?$AAV?$AAA?$AAR?$AA2?$AA?$AA@ 000000000000dbc0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:000005fc       ??_C@_04KDIOGACK@TCMF?$AA@ 000000000000dbdc     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000604       ??_C@_04HNAJIBFE@TTDP?$AA@ 000000000000dbe4     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000610       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 000000000000dbf0     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:0000061c       ??_C@_04FJGJIEBG@PPIV?$AA@ 000000000000dbfc     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000624       ??_C@_04HKLODPCP@TTPF?$AA@ 000000000000dc04     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:0000062c       ??_C@_15EMHHCMJI@?$AAd?$AAb?$AA?$AA@ 000000000000dc0c     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000638       ??_C@_1CM@PJBGJKLI@?$AAT?$AAp?$AAm?$AA2?$AA0?$AAP?$AAC?$AAR?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AAR?$AAe?$AAs?$AAe?$AAt?$AA?$AA@ 000000000000dc18     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000664       mUefiDevicePathLibEndDevicePath 000000000000dc44     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00000668       ??_C@_01IFKFHFEL@?$IA?$AA@ 000000000000dc48     ShaLib:sha1.obj
+ 0002:0000066c       ??_C@_01LOCGONAA@?$AA?$AA@ 000000000000dc4c     ShaLib:sha1.obj
+ 0002:00000750       TpmSupport                 000000000000dd30     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:0000075c       ActiveBankBitMap           000000000000dd3c     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000760       TcgSupportedBankBitMap     000000000000dd40     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000764       gNumberOfPcrBanks          000000000000dd44     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000768       Tpm20FwVersion             000000000000dd48     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:0000076c       Tpm20Manufacturer          000000000000dd4c     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000770       TrEEProtocolInstance       000000000000dd50     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000780       InternalHLXE               000000000000dd60     Tcg2Dxe:Tcg2Dxe.obj
+ 0002:00000788       gImageHandle               000000000000dd68     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000790       gST                        000000000000dd70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000798       gBS                        000000000000dd78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000007a0       gRT                        000000000000dd80     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000007a8       mHobList                   000000000000dd88     DxeHobLib:HobLib.obj
+ 0002:000007c0       mReportStatusCodeLibStatusCodeProtocol 000000000000dda0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000007c8       AmiProtocolInstance        000000000000dda8     <common>
+ 0002:000007d0       Event                      000000000000ddb0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000029d0       CopyTcgLog                 0000000000002c70 f    CIL library: CIL module
+ 0001:00007458       InternalAcpiDelay          00000000000076f8 f    CIL library: CIL module
+ 0001:000074e8       sha512_compress            0000000000007788 f    CIL library: CIL module
+ 0001:00007ca8       sha256_compress            0000000000007f48 f    CIL library: CIL module
+ 0001:0000a778       SHA1Transform              000000000000aa18 f    CIL library: CIL module
+ 0001:0000be38       CheckStsBit                000000000000c0d8 f    CIL library: CIL module
+ 0001:0000be98       ReadBurstCount             000000000000c138 f    CIL library: CIL module

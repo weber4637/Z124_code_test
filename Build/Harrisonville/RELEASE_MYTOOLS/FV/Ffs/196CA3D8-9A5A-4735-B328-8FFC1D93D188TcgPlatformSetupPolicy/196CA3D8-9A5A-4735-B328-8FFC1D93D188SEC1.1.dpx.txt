@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\196CA3D8-9A5A-4735-B328-8FFC1D93D188TcgPlatformSetupPolicy\196CA3D8-9A5A-4735-B328-8FFC1D93D188SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\Build\TcgPlatformSetupPolicy\OUTPUT\TcgPlatformSetupPolicy.depex

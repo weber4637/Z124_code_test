@@ -1,0 +1,12 @@
+<component>
+	name = "NCT6776Setup"
+	category = ModulePart
+	LocalRoot = "AmiModulePkg\IO\NCT6776\"
+	RefName = "NCT6776Setup"
+[files]
+"NCT6776Setup.sd"
+"NCT6776Setup.uni"	
+"NCT6776Setup.c"	
+"NCT6776Setup.h"	
+<endComponent>
+

@@ -1,0 +1,45 @@
+ PchSmbusSmm
+
+ Timestamp is 6448e7f0 (Wed Apr 26 16:59:28 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000c03H .text                   CODE
+ 0002:00000000 00000020H .data                   DATA
+ 0002:00000020 00000004H .rdata                  DATA
+ 0002:00000030 00000128H .bss                    DATA
+ 0003:00000000 00000048H .pdata                  DATA
+ 0004:00000000 00000038H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000e8       SmbusExecute               0000000000000348 f   PchSmbusSmm:PchSmbusEntry.obj
+ 0001:00000160       InitializePchSmbusSmm      00000000000003c0 f   PchSmbusSmm:PchSmbusEntry.obj
+ 0001:00000230       SmbusNotify                0000000000000490 f   PchSmbusSmm:PchSmbusArpDisabled.obj
+ 0001:00000230       SmbusArpDevice             0000000000000490 f   PchSmbusSmm:PchSmbusArpDisabled.obj
+ 0001:00000230       SmbusGetArpMap             0000000000000490 f   PchSmbusSmm:PchSmbusArpDisabled.obj
+ 0001:0000023c       InternalAssertJumpBuffer   000000000000049c f   BaseLib:SetJump.obj
+ 0001:0000029c       SmbusIoRead                00000000000004fc f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:000002b0       SmbusIoWrite               0000000000000510 f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:000002d0       IoDone                     0000000000000530 f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:00000328       SmbusExec                  0000000000000588 f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:00000ad0       InternalMemZeroMem         0000000000000d30     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000af0       SetJump                    0000000000000d50     BaseLib:SetJump.obj
+ 0001:00000b80       InternalLongJump           0000000000000de0     BaseLib:LongJump.obj
+ 0001:00000c00       CpuPause                   0000000000000e60     BaseLib:CpuPause.obj
+ 0002:00000000       gEfiSmmSmbusProtocolGuid   0000000000000e80     PchSmbusSmm:AutoGen.obj
+ 0002:00000010       gEfiSmmBase2ProtocolGuid   0000000000000e90     PchSmbusSmm:AutoGen.obj
+ 0002:00000020       _gUefiDriverRevision       0000000000000ea0     PchSmbusSmm:AutoGen.obj
+ 0002:00000130       gImageHandle               0000000000000fb0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000138       gST                        0000000000000fb8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000140       gBS                        0000000000000fc0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000148       gSmst                      0000000000000fc8     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000150       mSmbusContext              0000000000000fd0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000240       InternalAcpiDelay          00000000000004a0 f    CIL library: CIL module

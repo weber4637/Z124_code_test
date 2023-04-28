@@ -1,0 +1,2 @@
+#define NB_OEM_SETUP_CALLBACK_LIST 
+

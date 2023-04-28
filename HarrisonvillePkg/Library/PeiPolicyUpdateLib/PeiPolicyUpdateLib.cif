@@ -1,0 +1,20 @@
+<component>
+	name = "PeiPolicyUpdateLib"
+	category = ModulePart
+	LocalRoot = "HarrisonvillePkg\Library\PeiPolicyUpdateLib\"
+	RefName = "HarrisonvillePkg.PeiPolicyUpdateLib"
+[INF]
+"PeiPolicyUpdateLib.inf"
+[files]
+"PeiCpuPolicyUpdate.c"	
+"PeiCpuPolicyUpdate.h"	
+"PeiFiaMuxPolicyUpdate.h"
+"PeiMePolicyUpdate.c"	
+"PeiMePolicyUpdate.h"	
+"PeiPchPolicyUpdate.h"	
+"PeiSaPolicyUpdate.h"	
+"PeiSiPolicyUpdate.h"
+"PeiIqatIpPolicyUpdate.h"
+"PeiPcieIpPolicyUpdate.h"	
+"PeiPolicyUpdateLib.sdl"	
+<endComponent>

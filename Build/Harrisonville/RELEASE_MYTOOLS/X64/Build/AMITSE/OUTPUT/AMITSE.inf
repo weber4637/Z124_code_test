@@ -1,0 +1,332 @@
+## @file
+#   The [Sources] section for this file is auto-generated from ELINKs:
+#   SETUP_DEFINITIONS, SETUP_FORMSETS, SetupStringFiles, and SetupCallbackFiles
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = AMITSE
+  FILE_GUID                  = B1DA0ADF-4F77-4070-A88E-BFFE1C60529A
+  MODULE_TYPE                = DXE_DRIVER
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = MiniSetupApplication
+  UEFI_HII_RESOURCE_SECTION  = TRUE
+
+[Packages.X64]
+  AmiTsePkg/AmiTsePkg.dec
+  AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  IntelFrameworkModulePkg/IntelFrameworkModulePkg.dec
+  IntelFrameworkPkg/IntelFrameworkPkg.dec
+  AmiModulePkg/AmiModulePkg.dec
+  AmiTcgPkg/AmiTcgPkg.dec
+
+[Binaries.X64]
+  PE32|AMITSE.efi
+  DXE_DEPEX|AMITSE.depex
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  gEfiConsoleControlProtocolGuid
+
+  gEfiFirmwareVolume2ProtocolGuid
+
+  #  gEfiLegacyBiosProtocolGuid
+  #  gEfiLegacyBiosProtocolGuid
+  gEfiUnicodeCollation2ProtocolGuid
+
+  gEfiUnicodeCollationProtocolGuid
+
+  gEfiOEMBadgingProtocolGuid
+
+  gEfiSimpleFileSystemProtocolGuid
+
+  gEfiBlockIoProtocolGuid
+
+  gEfiLegacyBiosProtocolGuid
+
+  gEfiFirmwareVolumeProtocolGuid
+
+  gEfiSimpleTextInProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+  gAmiPostManagerProtocolGuid
+
+  gTSEInvalidateBgrtStatusProtocolGuid
+
+  gEsaInterfacesForTseProtocolGuid
+
+  gTSEScreenMgmtProtocolGuid
+
+  gEfiHiiDatabaseProtocolGuid
+
+  gEfiHiiStringProtocolGuid
+
+  gEfiHiiConfigRoutingProtocolGuid
+
+  gEfiFormBrowser2ProtocolGuid
+
+  gTcgPlatformSetupPolicyGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdProtocolGuid
+
+  ## CONSUMES
+  gEfiPcdProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoProtocolGuid
+
+  ## CONSUMES
+  gAmiDebugServiceProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## UNDEFINED
+  gEfiDebugPortProtocolGuid
+
+  ## CONSUMES
+  gEfiStatusCodeRuntimeProtocolGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES # Consumes if gEfiGraphicsOutputProtocolGuid uninstalled
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnostics2ProtocolGuid
+
+  gEfiUsbIoProtocolGuid
+
+  gEfiDiskIoProtocolGuid
+
+  gEfiLoadFileProtocolGuid
+
+  gEfiDriverHealthProtocolGuid
+
+  gAmiSmmDebugServiceProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  gAmiTseSetupEnterGuid
+
+  gAmiTseAfterFirstBootOptionGuid
+
+  gAmiTseEventBeforeBootGuid
+
+  gAmiTseBootOrderChangeGuid
+
+  gAmiTseNVRAMUpdateGuid
+
+  gAmiTsePasswordPromptEnterGuid
+
+  gAmiTsePasswordPromptExitGuid
+
+  gAmiTseUserPasswordValidGuid
+
+  gAmiTseAdminPasswordValidGuid
+
+  gAmiTseInvalidPasswordGuid
+
+  gAmiTseBeforeTimeOutGuid
+
+  gAmiTseAfterTimeOutGuid
+
+  gAmiTseOemTSEVarGuid
+
+  gAmiTseOemPortingVar1Guid
+
+  gAmiTseOemPortingVar2Guid
+
+  gAmiTseOemPortingVar3Guid
+
+  gAmiTseOemPortingVar4Guid
+
+  gAmiTseOemPortingVar5Guid
+
+  gAmiTseOemPortingGuid1
+
+  gAmiTseOemPortingGuid2
+
+  gSetupCompleteRedrawGuid
+
+  gEvaluateDefaults4FirstBootGuid
+
+  gPlatformRecoveryOrderGuid
+
+  gTcgInternalflagGuid
+
+  gAmiPpiGuid
+
+  ## SOMETIMES_CONSUMES  ## Variable
+  gEfiGlobalVariableGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVTUTF8Guid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVT100Guid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVT100PlusGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPcAnsiGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiUartDevicePathGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiSasDevicePathGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVirtualDiskGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVirtualCdGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPersistentVirtualDiskGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPersistentVirtualCdGuid
+
+  ## SOMETIMES_CONSUMES ## UNDEFINED
+  gEfiStatusCodeSpecificDataGuid
+
+  ## SOMETIMES_CONSUMES ## UNDEFINED
+  gEfiStatusCodeDataTypeDebugGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## SOMETIMES_CONSUMES   ## UNDEFINED # Locate protocol
+  gPerformanceProtocolGuid
+
+  ## SOMETIMES_CONSUMES   ## UNDEFINED # Locate protocol
+  gPerformanceExProtocolGuid
+
+  gEfiConsoleOutDeviceGuid
+
+  gTcgEfiGlobalVariableGuid
+
+  TcgPasswordAuthenticationGuid
+
+  gAmiGlobalVariableGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdePkg/Library/DxePcdLib/DxePcdLib.inf
+#  AmiModulePkg/Library/DxeAmiDebugLib/DxeAmiDebugLib.inf
+#  MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+#  MdePkg/Library/BaseRngLib/BaseRngLib.inf
+#  MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+#  MdeModulePkg/Library/DxePerformanceLib/DxePerformanceLib.inf
+#  AmiTsePkg/EDK/MiniSetup/BootOnly/PasswordEncode/TsePasswordEncode.inf
+#  MdePkg/Library/BasePostCodeLibPort80/BasePostCodeLibPort80.inf
+#  CryptoPkg/Library/BaseCryptLib/CrtWrapperLib.inf
+#  CryptoPkg/Library/IntrinsicLib/IntrinsicLib.inf
+#  Build/OpensslLib.inf
+#  AmiTsePkg/Board/Em/AMITSEBoard/AMITSEBoard.inf
+#  AmiTsePkg/EDK/MiniSetup/TseAdvanced/TseAdvanced.inf
+#  AmiTsePkg/EDK/MiniSetup/TseAdvanced/AdvancedImages/AdvancedImages.inf
+#  AmiTsePkg/EDK/MiniSetup/BootOnly/Minisetup.inf
+#  AmiTsePkg/EDK/MiniSetup/BootOnly/PasswordEncode/PasswordEncode.inf
+#  AmiTsePkg/EDK/MiniSetup/TseLite/TseLite.inf
+#  AmiTsePkg/EDK/MiniSetup/TseOEM/TseOEM.inf
+#  AmiTsePkg/EDK/MiniSetup/uefi2.1/Uefi21.inf
+#  AmiTsePkg/EDK/MiniSetup/Ezport/Ezport.inf
+#  AmiModulePkg/TCG2/Common/Setup/TcgPwdTseHook.inf
+#  AmiTsePkg/EDK/MiniSetup/TseLite/StyleHook/StyleHook.inf
+#  AmiCompatibilityPkg/Library/AmiDxeLib.inf
+#  MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+#  CryptoPkg/Library/BaseCryptLib/BaseCryptLib.inf
+
+[Depex.X64]
+#  (TRUE) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiPcdProtocolGuid) AND (gEfiBdsArchProtocolGuid AND gEfiCpuArchProtocolGuid AND gEfiMetronomeArchProtocolGuid AND gEfiMonotonicCounterArchProtocolGuid AND gEfiRealTimeClockArchProtocolGuid AND gEfiResetArchProtocolGuid AND gEfiRuntimeArchProtocolGuid AND gEfiSecurityArchProtocolGuid AND gEfiTimerArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiWatchdogTimerArchProtocolGuid)
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+
+[BuildOptions.X64]
+## @AsBuilt
+##   MSFT:RELEASE_MYTOOLS_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:RELEASE_MYTOOLS_X64_CBINDLINK_FLAGS = /nologo /NODEFAULTLIB /NOENTRY /DLL /ALIGN:16 /IGNORE:4108
+##   MSFT:RELEASE_MYTOOLS_X64_ASLDLINK_FLAGS = /nologo /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER
+##   MSFT:RELEASE_MYTOOLS_X64_VFR_FLAGS = -n
+##   MSFT:RELEASE_MYTOOLS_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h $(FLAG_SIMIC) /D CRB_FLAG_ENABLE=TRUE /D WHEA_SUPPORT_FLAG /D ME_SUPPORT_FLAG=1 /D ME_TESTMENU_FLAG=1 /D SPS_SUPPORT=1 /D IE_SUPPORT=1 $(FLAG_TRACEHUB) /D NONVOLATILE_MEM_EN /D HARRISONVILLE /D DENVERTON /D EMMC_DRIVER_ENABLE=TRUE /D PERFORMANCE_ENABLE=FALSE /D S3_ENABLE=TRUE /D SERVER_BIOS_FLAG=TRUE /D PCH_SPT /D PO_FLAG /D PCH_PO_FLAG /D SA_PO_FLAG /D HSUART_MODE=0 /D DTS_SUPPORT=1 $(EDKII_SERIAL_DBG_MSG) /D PCIE_HOTPLUG_SUPPORT=0 /D MAX_EXTRA_BUS_RESERVED_VALUE=7 /D MAX_PCIE_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_PF_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_IO_RESERVED_VALUE=20 /D MEUD_SUPPORT=1 /D CAPSULE_RESERVED_MEMORY_REGION_SIZE=0x4000000 /D DISABLE_MEMTEST_MRC_FB=0 /wd4819
+##   MSFT:RELEASE_MYTOOLS_X64_GENFW_FLAGS = 
+##   MSFT:RELEASE_MYTOOLS_X64_DLINK_FLAGS = /Machine:AMD64 /NOLOGO /NODEFAULTLIB /IGNORE:4001 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /MERGE:.rdata=.data /IGNORE:4254
+##   MSFT:RELEASE_MYTOOLS_X64_SLINK_FLAGS = /LIB /nologo /LTCG
+##   MSFT:RELEASE_MYTOOLS_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd
+##   MSFT:RELEASE_MYTOOLS_X64_ASL_FLAGS = 
+##   MSFT:RELEASE_MYTOOLS_X64_CC_FLAGS = -DEFIx64 -DEFIX64 /nologo /c /WX /GS- /Gs32768 /Gy /D UNICODE /GL /FIAutoGen.h /EHs-c- /GR- /GF -D PI_SPECIFICATION_VERSION=0x10028 -D EFI_SPECIFICATION_VERSION=0x2003C /O1ib2  /W3 /wd4091 /wd4311 /wd4312  -DMDEPKG_NDEBUG  /DTSE_FOR_APTIO_4_50 -DOPENSSL_NO_STDIO -DOPENSSL_NO_FP_API -DOPENSSL_NO_TLS1_1 -DOPENSSL_NO_TLS1 -DOPENSSL_NO_TLS1_METHOD -DOPENSSL_NO_TLS1_1_METHOD -D__STDC_NO_ATOMICS__ $(FLAG_SIMIC) /D CRB_FLAG_ENABLE=TRUE /D WHEA_SUPPORT_FLAG /D ME_SUPPORT_FLAG=1 /D ME_TESTMENU_FLAG=1 /D SPS_SUPPORT=1 /D IE_SUPPORT=1 $(FLAG_TRACEHUB) /D NONVOLATILE_MEM_EN /D HARRISONVILLE /D DENVERTON /D EMMC_DRIVER_ENABLE=TRUE /D PERFORMANCE_ENABLE=FALSE /D S3_ENABLE=TRUE /D SERVER_BIOS_FLAG=TRUE /D PCH_SPT /D PO_FLAG /D PCH_PO_FLAG /D SA_PO_FLAG /D HSUART_MODE=0 /D DTS_SUPPORT=1 $(EDKII_SERIAL_DBG_MSG) /D PCIE_HOTPLUG_SUPPORT=0 /D MAX_EXTRA_BUS_RESERVED_VALUE=7 /D MAX_PCIE_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_PF_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_IO_RESERVED_VALUE=20 /D MEUD_SUPPORT=1 /D CAPSULE_RESERVED_MEMORY_REGION_SIZE=0x4000000 /D DISABLE_MEMTEST_MRC_FB=0 /wd4819
+##   MSFT:RELEASE_MYTOOLS_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h -D PI_SPECIFICATION_VERSION=0x10028 -D EFI_SPECIFICATION_VERSION=0x2003C /O1ib2  /W3 /wd4091 /wd4311 /wd4312  -DMDEPKG_NDEBUG  $(FLAG_SIMIC) /D CRB_FLAG_ENABLE=TRUE /D WHEA_SUPPORT_FLAG /D ME_SUPPORT_FLAG=1 /D ME_TESTMENU_FLAG=1 /D SPS_SUPPORT=1 /D IE_SUPPORT=1 $(FLAG_TRACEHUB) /D NONVOLATILE_MEM_EN /D HARRISONVILLE /D DENVERTON /D EMMC_DRIVER_ENABLE=TRUE /D PERFORMANCE_ENABLE=FALSE /D S3_ENABLE=TRUE /D SERVER_BIOS_FLAG=TRUE /D PCH_SPT /D PO_FLAG /D PCH_PO_FLAG /D SA_PO_FLAG /D HSUART_MODE=0 /D DTS_SUPPORT=1 $(EDKII_SERIAL_DBG_MSG) /D PCIE_HOTPLUG_SUPPORT=0 /D MAX_EXTRA_BUS_RESERVED_VALUE=7 /D MAX_PCIE_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_PF_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_IO_RESERVED_VALUE=20 /D MEUD_SUPPORT=1 /D CAPSULE_RESERVED_MEMORY_REGION_SIZE=0x4000000 /D DISABLE_MEMTEST_MRC_FB=0 /wd4819
+##   MSFT:RELEASE_MYTOOLS_X64_BUILD_FLAGS = -s
+##   MSFT:RELEASE_MYTOOLS_X64_ASLCC_FLAGS = /nologo /c /TC /FIAutoGen.h /Dmain=ReferenceAcpiTable
+##   MSFT:RELEASE_MYTOOLS_X64_CBINCC_FLAGS = /nologo /c /TC /Os /FIAutoGen.h
+##   MSFT:RELEASE_MYTOOLS_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:RELEASE_MYTOOLS_X64_OPTROM_FLAGS = -e
+##   MSFT:RELEASE_MYTOOLS_X64_NASMB_FLAGS = -f bin
+##   MSFT:RELEASE_MYTOOLS_X64_ASLPP_FLAGS = /nologo /E /TC -D SIO_PTS=\_SB.PCI0.SBRG.SIO1.SIOS -D SIO_WAK=\_SB.PCI0.SBRG.SIO1.SIOW /D LPC0=SBRG $(FLAG_SIMIC) /D CRB_FLAG_ENABLE=TRUE /D WHEA_SUPPORT_FLAG /D ME_SUPPORT_FLAG=1 /D ME_TESTMENU_FLAG=1 /D SPS_SUPPORT=1 /D IE_SUPPORT=1 $(FLAG_TRACEHUB) /D NONVOLATILE_MEM_EN /D HARRISONVILLE /D DENVERTON /D EMMC_DRIVER_ENABLE=TRUE /D PERFORMANCE_ENABLE=FALSE /D S3_ENABLE=TRUE /D SERVER_BIOS_FLAG=TRUE /D PCH_SPT /D PO_FLAG /D PCH_PO_FLAG /D SA_PO_FLAG /D HSUART_MODE=0 /D DTS_SUPPORT=1 $(EDKII_SERIAL_DBG_MSG) /D PCIE_HOTPLUG_SUPPORT=0 /D MAX_EXTRA_BUS_RESERVED_VALUE=7 /D MAX_PCIE_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_PF_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_IO_RESERVED_VALUE=20 /D MEUD_SUPPORT=1 /D CAPSULE_RESERVED_MEMORY_REGION_SIZE=0x4000000 /D DISABLE_MEMTEST_MRC_FB=0 /wd4819
+##   MSFT:RELEASE_MYTOOLS_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:RELEASE_MYTOOLS_X64_MAKE_FLAGS = /nologo -s
+##   MSFT:RELEASE_MYTOOLS_X64_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:RELEASE_MYTOOLS_X64_NASM_FLAGS = -Ox -f win64

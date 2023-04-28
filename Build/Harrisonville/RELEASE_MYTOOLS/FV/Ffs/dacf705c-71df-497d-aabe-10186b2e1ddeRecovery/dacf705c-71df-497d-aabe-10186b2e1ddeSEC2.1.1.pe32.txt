@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\dacf705c-71df-497d-aabe-10186b2e1ddeRecovery\dacf705c-71df-497d-aabe-10186b2e1ddeSEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\IA32\AmiModulePkg\Recovery\Recovery\OUTPUT\Recovery.efi

@@ -1,0 +1,22 @@
+ #include<AmiCompatibilityPkg/Setup/AmiBiosInfo.sd>
+ #include<AmiCompatibilityPkg/Setup/AmiTse.sd>
+ #include<AmiModulePkg/FixedBootOrder/DefaultFixedBootOrder/FboSetupPages.sd>
+ #include<AmiModulePkg/TCG2/Common/Setup/TcgSetup.sd>
+ #include<AmiModulePkg/ACPI/ACPI.sd>
+ #include<AmiModulePkg/BootSectorWriteProtect/BootSectorWriteProtect.sd>
+ #include<AmiModulePkg/IO/NCT6683D/NCT6683DSetup.sd>
+ #include<AmiModulePkg/IO/NCT6683D/NCT6683DHwmSetup.sd>
+ #include<AmiModulePkg/GenericSio/SioStaticSetup.sd>
+ #include<AmiModulePkg/RtcWake/RTCWakeup.sd>
+ #include<AmiModulePkg/Terminal/Terminal.sd>
+ #include<AmiChipsetModulePkg/NB/NbSetup/Nb.sd>
+ #include<AmiTsePkg/EDK/MiniSetup/TseAdvanced/AddDelBootDrvOpts.sd>
+ #include<AmiModulePkg/DbgTables/DebugPortTables.sd>
+ #include<AmiModulePkg/PCI/PciStaticSetup.sd>
+ #include<AmiNetworkPkg/UefiNetworkStack/Common/NetworkStackSetupScreen/NetworkStackSetupScreen.sd>
+ #include<AmiModulePkg/CSM/CsmPolicy/Csm.sd>
+ #include<AmiModulePkg/Nvme/NvmeDynamicSetup/NvmeDynamicSetup.sd>
+ #include<AmiModulePkg/Usb/Setup/Usb.sd>
+ #include<Build/DefaultFixedBootOrder.sd>
+ #include<AmiCompatibilityPkg/Setup/DynamicPages.sd>
+

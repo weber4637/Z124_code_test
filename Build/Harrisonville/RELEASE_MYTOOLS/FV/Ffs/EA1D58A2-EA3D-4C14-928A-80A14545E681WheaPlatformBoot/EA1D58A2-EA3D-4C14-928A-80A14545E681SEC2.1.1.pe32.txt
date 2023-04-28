@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\EA1D58A2-EA3D-4C14-928A-80A14545E681WheaPlatformBoot\EA1D58A2-EA3D-4C14-928A-80A14545E681SEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\ServerCommonPkg\Whea\WheaPlatformBoot\WheaPlatformBoot\OUTPUT\WheaPlatformBoot.efi

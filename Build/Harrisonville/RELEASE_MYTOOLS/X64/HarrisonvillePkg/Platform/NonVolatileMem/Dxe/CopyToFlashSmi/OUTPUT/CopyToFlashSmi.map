@@ -1,0 +1,58 @@
+ CopyToFlashSmi
+
+ Timestamp is 6448e7ef (Wed Apr 26 16:59:27 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000011c7H .text                   CODE
+ 0002:00000000 000002c8H .data                   DATA
+ 0002:000002c8 00000008H .rdata                  DATA
+ 0002:000002d0 00000148H .bss                    DATA
+ 0003:00000000 00000090H .pdata                  DATA
+ 0004:00000000 000000bcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000044       ProcessLibraryConstructorList 00000000000002a4 f   CopyToFlashSmi:AutoGen.obj
+ 0001:00000164       ProcessModuleEntryPointList 00000000000003c4 f   CopyToFlashSmi:AutoGen.obj
+ 0001:00000248       CopyToFlashSMIHandler      00000000000004a8 f   CopyToFlashSmi:CopyToFlashSmi.obj
+ 0001:000003e4       InternalAssertJumpBuffer   0000000000000644 f   BaseLib:SetJump.obj
+ 0001:000003e8       BufferInSmram              0000000000000648 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000042c       InternalAllocatePool       000000000000068c f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000045c       FreePool                   00000000000006bc f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000494       buildDMACommand            00000000000006f4 f   C2fAhciLib:C2fAhci.obj
+ 0001:0000060c       EnableMSI                  000000000000086c f   C2fAhciLib:C2fAhci.obj
+ 0001:000006e0       runCommands                0000000000000940 f   C2fAhciLib:C2fAhci.obj
+ 0001:00000898       transferData               0000000000000af8 f   C2fAhciLib:C2fAhci.obj
+ 0001:00000a38       find_storage_location      0000000000000c98 f   C2fAhciLib:C2fAhci.obj
+ 0001:00000cac       c2f_entry                  0000000000000f0c f   C2fAhciLib:C2fAhci.obj
+ 0001:00001010       SetJump                    0000000000001270     BaseLib:SetJump.obj
+ 0001:000010a0       InternalLongJump           0000000000001300     BaseLib:LongJump.obj
+ 0001:00001120       InternalMemCopyMem         0000000000001380     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001160       InternalMemZeroMem         00000000000013c0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001180       DisableInterrupts          00000000000013e0     BaseLib:DisableInterrupts.obj
+ 0001:00001190       EnableInterrupts           00000000000013f0     BaseLib:EnableInterrupts.obj
+ 0001:000011a0       AsmCpuid                   0000000000001400     BaseLib:CpuId.obj
+ 0002:00000000       gNonVolatileMemHobGuid     0000000000001440     CopyToFlashSmi:AutoGen.obj
+ 0002:00000010       gEfiHobListGuid            0000000000001450     CopyToFlashSmi:AutoGen.obj
+ 0002:00000020       gEfiSmmGpiDispatch2ProtocolGuid 0000000000001460     CopyToFlashSmi:AutoGen.obj
+ 0002:00000030       gEfiSmmBase2ProtocolGuid   0000000000001470     CopyToFlashSmi:AutoGen.obj
+ 0002:00000040       gEfiSmmAccess2ProtocolGuid 0000000000001480     CopyToFlashSmi:AutoGen.obj
+ 0002:00000050       gC2fPartitionGuid          0000000000001490     C2fAhciLib:C2fAhci.obj
+ 0002:000002c8       method                     0000000000001708     CopyToFlashSmi:CopyToFlashSmi.obj
+ 0002:000002cc       _gUefiDriverRevision       000000000000170c     CopyToFlashSmi:AutoGen.obj
+ 0002:000003d8       gImageHandle               0000000000001818     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000003e0       gST                        0000000000001820     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000003e8       gBS                        0000000000001828     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000003f0       gRT                        0000000000001830     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000003f8       gSmst                      0000000000001838     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000400       mHobList                   0000000000001840     DxeHobLib:HobLib.obj
+ 0002:00000408       mSmramRanges               0000000000001848     <common>
+ 0002:00000410       mSmramRangeCount           0000000000001850     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

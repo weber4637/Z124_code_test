@@ -1,0 +1,88 @@
+ SioDxeInit
+
+ Timestamp is 6448e7f2 (Wed Apr 26 16:59:30 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001893H .text                   CODE
+ 0002:00000000 00000c90H .data                   DATA
+ 0002:00000c90 00000031H .rdata                  DATA
+ 0002:00000cc8 00000090H .bss                    DATA
+ 0003:00000000 000000f0H .pdata                  DATA
+ 0004:00000000 000000f0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000078       Func0                      0000000000000318 f   SioDxeInit:SioDxeInit.obj
+ 0001:000000b0       Malloc                     0000000000000350 f   AmiDxeLib:EfiLib.obj
+ 0001:000000dc       MallocZ                    000000000000037c f   AmiDxeLib:EfiLib.obj
+ 0001:0000011c       RegisterProtocolCallback   00000000000003bc f   AmiDxeLib:EfiLib.obj
+ 0001:0000016c       Program_SmartFanCallback   000000000000040c f   NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0001:00000324       Program_NCT6776_GPIO_Callback 00000000000005c4 f   NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0001:00000368       SIO_BEEP_Callback          0000000000000608 f   NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0001:000004dc       NCT6683D_COM_Init          000000000000077c f   NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0001:000008a4       NCT6683D_ACPI_Init         0000000000000b44 f   NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0001:00000918       NCT6683D_HWM_Init          0000000000000bb8 f   NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0001:00000ad4       NCT6683D_GPIO_Init         0000000000000d74 f   NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0001:00000b54       AmiSioLibSetLpcGenericDecoding 0000000000000df4 f   AmiIoDecodeLib:AmiIoDecodeLib.obj
+ 0001:00000cf4       AmiSioLibSetLpcDeviceDecoding 0000000000000f94 f   AmiIoDecodeLib:AmiIoDecodeLib.obj
+ 0001:000010fc       GetPackageLen              000000000000139c f   AmiDxeLib:AcpiRes.obj
+ 0001:00001154       GetAslObj                  00000000000013f4 f   AmiDxeLib:AcpiRes.obj
+ 0001:00001340       UpdateAslNameBuffer        00000000000015e0 f   AmiDxeLib:AcpiRes.obj
+ 0001:000013b8       LibGetDsdt                 0000000000001658 f   AmiDxeLib:AcpiRes.obj
+ 0001:0000149c       ProgramIsaRegisterTable    000000000000173c f   AmiSioDxeLib:AmiSioDxeLib.obj
+ 0001:000014e4       SioLib_BootScriptIO        0000000000001784 f   AmiSioDxeLib:AmiSioDxeLib.obj
+ 0001:00001520       PciCf8Read16               00000000000017c0 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:0000159c       PciCf8Write16              000000000000183c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001624       PciCf8Read32               00000000000018c4 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001690       PciCf8Write32              0000000000001930 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00001710       GetCpuTimer                00000000000019b0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00001720       CPULib_CpuID               00000000000019c0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00001760       memset                     0000000000001a00     AmiDxeLib:MemSet.obj
+ 0001:0000176e       MemSetAsm                  0000000000001a0e f   AmiDxeLib:MemSet.obj
+ 0001:000017c0       memcpy                     0000000000001a60     AmiDxeLib:MemCpy.obj
+ 0001:000017c0       MemCpyAsm                  0000000000001a60 f   AmiDxeLib:MemCpy.obj
+ 0001:00001870       DisableInterrupts          0000000000001b10     BaseLib:DisableInterrupts.obj
+ 0001:00001880       EnableInterrupts           0000000000001b20     BaseLib:EnableInterrupts.obj
+ 0001:00001890       AsmReadEflags              0000000000001b30     BaseLib:ReadEflags.obj
+ 0002:00000000       gAmiBoardSioInitProtocolGuid 0000000000001b40     SioDxeInit:AutoGen.obj
+ 0002:00000040       DXE_COM_Mode_Init_Table    0000000000001b80     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000048       DXE_GPIO_Init_Table_After_Active 0000000000001b88     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000050       DXE_ACPI_Init_Table_Before_Active 0000000000001b90     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000054       DXE_EC_Init_Table_Before_Active 0000000000001b94     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000090       DXE_HWM_Init_Table_After_Active 0000000000001bd0     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000288       gBdsAllDriversConnectedProtocolGuid 0000000000001dc8     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000298       gSetupGuid                 0000000000001dd8     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:000002e0       DXE_HWM_Smart_Fan_Init_Table 0000000000001e20     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000590       DXE_NCT6683D_GPIO_Init_Table 00000000000020d0     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:000006e0       EfiErrorStatus             0000000000002220     AmiDxeLib:StdLibC.obj
+ 0002:00000a20       PiErrorStatus              0000000000002560     AmiDxeLib:StdLibC.obj
+ 0002:00000a70       AmiErrorStatus             00000000000025b0     AmiDxeLib:StdLibC.obj
+ 0002:00000ab0       EfiWarningStatus           00000000000025f0     AmiDxeLib:StdLibC.obj
+ 0002:00000b18       gDriverVersion             0000000000002658     SioDxeInit:SioDxeInit.obj
+ 0002:00000b20       PiWarningStatus            0000000000002660     AmiDxeLib:StdLibC.obj
+ 0002:00000b68       EfiUnknown                 00000000000026a8     AmiDxeLib:StdLibC.obj
+ 0002:00000c48       gSioName                   0000000000002788     SioDxeInit:SioDxeInit.obj
+ 0002:00000c50       SioInitLocalProtocol       0000000000002790     SioDxeInit:SioDxeInit.obj
+ 0002:00000c88       gSioInitProtocolPtr        00000000000027c8     SioDxeInit:SioDxeInit.obj
+ 0002:00000c90       _gUefiDriverRevision       00000000000027d0     SioDxeInit:AutoGen.obj
+ 0002:00000c98       ??_C@_0BD@HDBDENNN@Generic?5SIO?5Driver?$AA@ 00000000000027d8     SioDxeInit:SioDxeInit.obj
+ 0002:00000cb0       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 00000000000027f0     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000cbc       ??_C@_04DGGABMGE@_HID?$AA@ 00000000000027fc     NCT6683DDxeInit:NCT6683DDxeInit.obj
+ 0002:00000cc8       gSioInitHandle             0000000000002808     SioDxeInit:SioDxeInit.obj
+ 0002:00000cd0       gImageHandle               0000000000002810     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000cd8       gST                        0000000000002818     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000ce0       gBS                        0000000000002820     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000d30       pST                        0000000000002870     AmiDxeLib:EfiLib.obj
+ 0002:00000d38       pBS                        0000000000002878     AmiDxeLib:EfiLib.obj
+ 0002:00000d40       pRS                        0000000000002880     AmiDxeLib:EfiLib.obj
+ 0002:00000d48       TheImageHandle             0000000000002888     AmiDxeLib:EfiLib.obj
+ 0002:00000d50       gProtocolNotifyRegistration 0000000000002890     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000003ec       NCT6683D_SmmGpioRecordBootScript 000000000000068c f    CIL library: CIL module

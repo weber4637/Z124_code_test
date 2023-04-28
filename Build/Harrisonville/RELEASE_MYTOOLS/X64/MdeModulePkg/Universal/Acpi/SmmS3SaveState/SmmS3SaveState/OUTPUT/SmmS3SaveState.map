@@ -1,0 +1,110 @@
+ SmmS3SaveState
+
+ Timestamp is 6448e7f2 (Wed Apr 26 16:59:30 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000028edH .text                   CODE
+ 0002:00000000 00000100H .data                   DATA
+ 0002:00000100 00000004H .rdata                  DATA
+ 0002:00000110 000001b0H .bss                    DATA
+ 0003:00000000 00000204H .pdata                  DATA
+ 0004:00000000 000001bcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000b4       ProcessLibraryConstructorList 0000000000000354 f   SmmS3SaveState:AutoGen.obj
+ 0001:00000210       ProcessLibraryDestructorList 00000000000004b0 f   SmmS3SaveState:AutoGen.obj
+ 0001:00000340       BootScriptWriteIoWrite     00000000000005e0 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000420       BootScriptWriteIoReadWrite 00000000000006c0 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000514       BootScriptWriteMemWrite    00000000000007b4 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:000005f8       BootScriptWriteMemReadWrite 0000000000000898 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:000006f0       BootScriptWritePciCfgWrite 0000000000000990 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:000007f8       BootScriptWritePciCfgReadWrite 0000000000000a98 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000918       BootScriptWritePciCfg2Write 0000000000000bb8 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000a34       BootScriptWritePciCfg2ReadWrite 0000000000000cd4 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000b64       BootScriptWriteSmbusExecute 0000000000000e04 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000d2c       BootScriptWriteStall       0000000000000fcc f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000da8       BootScriptWriteDispatch    0000000000001048 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000e24       BootScriptWriteMemPoll     00000000000010c4 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000f5c       BootScriptWriteDispatch2   00000000000011fc f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00000fec       BootScriptWriteIoPoll      000000000000128c f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:000010ec       BootScriptWritePciConfigPoll 000000000000138c f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00001218       BootScriptWritePciConfig2Poll 00000000000014b8 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00001358       BootScriptWrite            00000000000015f8 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:000014d0       BootScriptInsert           0000000000001770 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00001658       BootScriptLabel            00000000000018f8 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:000017b8       BootScriptCompare          0000000000001a58 f   SmmS3SaveState:SmmS3SaveState.obj
+ 0001:00001858       InternalAssertJumpBuffer   0000000000001af8 f   BaseLib:SetJump.obj
+ 0001:0000185c       BufferInSmram              0000000000001afc f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000018a0       InternalAllocatePool       0000000000001b40 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000018d0       FreePool                   0000000000001b70 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001908       InternalGetSmmLockBoxContext 0000000000001ba8 f   SmmLockBoxSmmLib:SmmLockBoxSmmLib.obj
+ 0001:0000195c       InternalFindLockBoxByGuid  0000000000001bfc f   SmmLockBoxSmmLib:SmmLockBoxSmmLib.obj
+ 0001:000019a4       SaveLockBox                0000000000001c44 f   SmmLockBoxSmmLib:SmmLockBoxSmmLib.obj
+ 0001:00001b20       SetLockBoxAttributes       0000000000001dc0 f   SmmLockBoxSmmLib:SmmLockBoxSmmLib.obj
+ 0001:00001b5c       UpdateLockBox              0000000000001dfc f   SmmLockBoxSmmLib:SmmLockBoxSmmLib.obj
+ 0001:00001bec       RestoreLockBox             0000000000001e8c f   SmmLockBoxSmmLib:SmmLockBoxSmmLib.obj
+ 0001:00001c94       S3BootScriptInternalCloseTable 0000000000001f34 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001cfc       S3BootScriptEventCallBack  0000000000001f9c f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001d98       S3BootScriptSmmEventCallBack 0000000000002038 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001df8       S3BootScriptSmmAtRuntimeCallBack 0000000000002098 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001eac       S3BootScriptLibInitialize  000000000000214c f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:000020d0       S3BootScriptGetBootTimeEntryAddAddress 0000000000002370 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00002220       S3BootScriptGetEntryAddAddress 00000000000024c0 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:000022e8       SyncBootScript             0000000000002588 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:0000234c       S3BootScriptSaveInformation 00000000000025ec f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:000023ec       S3BootScriptCalculateInsertAddress 000000000000268c f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:000024c8       S3BootScriptMoveLastOpcode 0000000000002768 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00002670       S3BootScriptLabelInternal  0000000000002910 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00002728       GetPcdProtocol             00000000000029c8 f   DxePcdLib:DxePcdLib.obj
+ 0001:00002770       SetJump                    0000000000002a10     BaseLib:SetJump.obj
+ 0001:00002800       InternalLongJump           0000000000002aa0     BaseLib:LongJump.obj
+ 0001:00002880       CpuPause                   0000000000002b20     BaseLib:CpuPause.obj
+ 0001:00002890       InternalMemCopyMem         0000000000002b30     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000028d0       InternalMemZeroMem         0000000000002b70     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gEfiSmmLockBoxCommunicationGuid 0000000000002ba0     SmmS3SaveState:AutoGen.obj
+ 0002:00000010       gEfiS3SmmSaveStateProtocolGuid 0000000000002bb0     SmmS3SaveState:AutoGen.obj
+ 0002:00000020       gEfiSmmBase2ProtocolGuid   0000000000002bc0     SmmS3SaveState:AutoGen.obj
+ 0002:00000030       gPcdProtocolGuid           0000000000002bd0     SmmS3SaveState:AutoGen.obj
+ 0002:00000040       gEfiSmmAccess2ProtocolGuid 0000000000002be0     SmmS3SaveState:AutoGen.obj
+ 0002:00000050       gEfiDxeSmmReadyToLockProtocolGuid 0000000000002bf0     SmmS3SaveState:AutoGen.obj
+ 0002:00000060       gEfiSmmReadyToLockProtocolGuid 0000000000002c00     SmmS3SaveState:AutoGen.obj
+ 0002:00000070       gEdkiiSmmExitBootServicesProtocolGuid 0000000000002c10     SmmS3SaveState:AutoGen.obj
+ 0002:00000080       gEdkiiSmmLegacyBootProtocolGuid 0000000000002c20     SmmS3SaveState:AutoGen.obj
+ 0002:00000090       mBootScriptDataGuid        0000000000002c30     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:000000a0       mBootScriptDataBootTimeGuid 0000000000002c40     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:000000b0       mBootScriptTableBaseGuid   0000000000002c50     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:000000c0       mBootScriptSmmPrivateDataGuid 0000000000002c60     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:000000d0       mLockBoxQueue              0000000000002c70     SmmLockBoxSmmLib:SmmLockBoxSmmLib.obj
+ 0002:000000e0       mS3SmmSaveState            0000000000002c80     SmmS3SaveState:SmmS3SaveState.obj
+ 0002:00000100       _gUefiDriverRevision       0000000000002ca0     SmmS3SaveState:AutoGen.obj
+ 0002:00000210       gImageHandle               0000000000002db0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000218       gST                        0000000000002db8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000220       gBS                        0000000000002dc0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000228       gRT                        0000000000002dc8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000230       gSmst                      0000000000002dd0     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000238       mSmmConfigurationTableInstalled 0000000000002dd8     SmmLockBoxSmmLib:SmmLockBoxSmmLib.obj
+ 0002:00000239       mS3BootScriptTableAllocated 0000000000002dd9     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:0000023a       mS3BootScriptTableSmmAllocated 0000000000002dda     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000240       mEventDxeSmmReadyToLock    0000000000002de0     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000248       mRegistrationSmmExitBootServices 0000000000002de8     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000250       mRegistrationSmmLegacyBoot 0000000000002df0     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000258       mRegistrationSmmReadyToLock 0000000000002df8     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000260       mBootScriptSmst            0000000000002e00     DxeS3BootScriptLib:BootScriptSave.obj
+ 0002:00000268       mPcd                       0000000000002e08     DxePcdLib:DxePcdLib.obj
+ 0002:00000270       mPiPcd                     0000000000002e10     DxePcdLib:DxePcdLib.obj
+ 0002:00000278       mPcdInfo                   0000000000002e18     DxePcdLib:DxePcdLib.obj
+ 0002:00000280       mPiPcdInfo                 0000000000002e20     DxePcdLib:DxePcdLib.obj
+ 0002:00000288       mS3BootScriptTablePtr      0000000000002e28     <common>
+ 0002:00000290       mS3BootScriptTableSmmPtr   0000000000002e30     <common>
+ 0002:000002a0       mSmmLockBoxContext         0000000000002e40     <common>
+ 0002:000002b0       mSmramRanges               0000000000002e50     <common>
+ 0002:000002b8       mSmramRangeCount           0000000000002e58     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

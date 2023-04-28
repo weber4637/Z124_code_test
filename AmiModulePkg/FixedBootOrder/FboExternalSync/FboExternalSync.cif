@@ -1,0 +1,10 @@
+<component>
+    name = "FboExternalSync"
+    category = ModulePart
+    LocalRoot = "AmiModulePkg\FixedBootOrder\FboExternalSync\"
+    RefName = "FboExternalSync"
+[files]
+"FboExternalSync.sdl"  
+[parts]
+"FboSyncProtocol"
+<endComponent>

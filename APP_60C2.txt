@@ -1,0 +1,1260 @@
+			BIOS released notes for Forcepoint APP-60C2 (Technical Changes)
+
+Chipset:
+ Intel Denverton SOC(Harrisonville) + Nuvoton NCT6683D					HW:Walker
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+(No.44)
+Model Name : DNA1160		PCB Rev: A 		Author:	Brian Cheng
+Old Version: Z124-001
+New Version: Z124-002		BIOS CKS:0AFEh		Build Date: 04/11/2023
+
+Description of changes:
+        1. Sync Z123T013 solution
+
+Description of Technical Changes:
+   	1. upgrade fixedbootorder module to verion 25
+        2. upgrade SPS to v4.0.4.501
+
+--------------------------------------------------------------------------------------------------------------------------------
+(No.43)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: Z123-004
+New Version: Z124-001		BIOS CKS:A425h		Build Date: 08/09/2022
+
+Description of changes:
+        1. Add new model Forcepoint APP-60C2.
+        2. Modify BIOS setup menu.
+           a.Hide "MINI_PCIE Slot" item.
+        3. Change PXE port to x553 port3(Soc x553 Port1).
+
+Description of Technical Changes:
+        1. \Harrisonville.sdl                                                                   //Z124-001(1)
+        2. \AmiCompatibilityPkg\Setup\Setup.vfr                                                 //Z124-001(2)
+        3. \Harrisonville.sdl                                                                   //Z124-001(3)
+           \MdeModulePkg\Core\Dxe\Hand\DriverSupport.c                                          //Z124-001(3)
+           \ADDONS\LAN\15E503.LOM+
+--------------------------------------------------------------------------------------------------------------------------------
+(No.42)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: Z121-003
+New Version: Z123-004		BIOS CKS:1D7Eh		Build Date: 07/21/2022
+
+Description of changes:
+        1. Add compatible 5G and 4G LTE module workaround.
+           a.Disable USB 3.0 Port 2(HSIO 18) When detect 5G(PCIe) at CN7 slot.
+           b.CMOS 0x50 for 5G 4G LTE flag. 
+        2. Modify SPS setting to set "HSIO 18" is USB 3.0.
+
+Description of Technical Changes:
+        1. \AmiModulePkg\Bds\Bds.c                                                              //Z123-004(1)
+           \DenvertonPkg\SouthCluster\LibraryPrivate\PeiPchInitLib\PchUsb.c                     //Z123-004(1)
+           \AmiCompatibilityPkg\CmosManager\CmosBoard.ssp                                       //Z123-004(1)
+        2. \HarrisonvillePkg\Tools\FTool\Config\DTA1164W.xml(Modify)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.41)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: Z121-002
+New Version: Z123-003		BIOS CKS:6EF9h		Build Date: 04/12/2022
+
+Description of changes:
+        *** Update code base from "5.013_Denverton_0ACHI044" to "5.013_Denverton_0ACHI049". ***
+
+        1. Fix 2021.2 IPU intel security issue.
+        2. Modify some BIOS setup menu. 
+           a.Hide "Above 4G Decoding" item.
+           b.Hide "Port 2" at "USB SS Configuration" page.
+        3. Disable HSIO 18 to fix OS show fail message when insert 4G LTE card. 
+
+Description of Technical Changes:
+        1. 
+        2. \AmiModulePkg\PCI\PciStaticSetup.sd                                                  //Z123-003(2)
+           \HarrisonvillePkg\Platform\SetupDxe\UsbSetup\UsbSsController\UsbSsController.hfr     //Z123-003(2)
+        3. \HarrisonvillePkg\Tools\FTool\Config\N120.xml(modify)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.40)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: Z121-001
+New Version: Z123-002		BIOS CKS:2E24h		Build Date: 02/16/2022
+
+Description of changes:
+        1. Modify code to support Intel i210 and i211 UEFI PXE function.
+
+Description of Technical Changes:
+        1. \MdeModulePkg\Core\Dxe\Hand\DriverSupport.c                                          //Z123-002(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.39)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: Z121-003
+New Version: Z123-001		BIOS CKS:FB55h		Build Date: 03/09/2021
+
+Description of changes:
+        1. Add support new model Forcepoint APP-120.
+           a.Moidfy SOC GPIO_4,GPIO_7,GPIO_8 config.
+        2. Add notify MCU to turn off 5G power.
+           a.Fix SOC GPIO_7,GPIO_8 config abnormal.
+        3. Set system date year range is 2005~2099.
+        4. Add "GNSS Radio" item and set default value is "Disable".
+           a.Hide "GNSS Radio" item.
+        5. Modify BIOS setup menu.
+           a.Hide "Quiet Boot" item.         
+           b.Modify string from "M.2 LTE Slot" to "WWAN radio".
+           c.Modify bios item order in advanced page.
+
+Description of Technical Changes:
+        1. \Harrisonville.sdl                                                                   //Z123-001(1)
+           \Harcuvar.sdl                                                                        //Z123-001(1)
+        2. \AmiChipsetModulePkg\SB\SbInit\SleepSmi.c                                            //Z123-001(2)
+           \HarrisonvillePkg\Platform\NonVolatileMem\Library\AdrCfgLib\AdrCfgLib.c              //Z123-001(2)
+        3. \AmiChipsetModulePkg\Sb.sdl                                                          //Z123-001(3)
+        4. \AmiCRBPkg\CRB\Pei\CrbPei.c                                                          //Z123-001(4)
+           \AmiCompatibilityPkg\Setup\Setup.uni                                                 //Z123-001(4)
+           \AmiCompatibilityPkg\Setup\Setup.vfr                                                 //Z123-001(4)
+        5. \AmiCompatibilityPkg\Setup\AmiTse.sd                                                 //Z123-001(5)
+           \AmiCompatibilityPkg\Setup\Setup.uni                                                 //Z123-001(5)
+           \AmiCompatibilityPkg\Setup\Setup.vfr                                                 //Z123-001(5)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.38)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: Z121-002
+New Version: Z121-003		BIOS CKS:D3D0h		Build Date: 05/20/2020
+
+Description of changes:
+        1. Add SMBIOS type 17 memory information for "Innodisk" memory.         
+
+Description of Technical Changes:
+        1. \HarrisonvillePkg\Platform\MemorySubClassDxe\MemorySubClass.c                        //Z121-003(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.37)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: Z121-001
+New Version: Z121-002		BIOS CKS:C5C8h		Build Date: 05/11/2020
+
+Description of changes:
+        1. Modify some PCH GPIO setting for BIOS request.          
+
+Description of Technical Changes:
+        1. \Harcuvar.sdl                                                                        //Z121-002(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.36)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-035
+New Version: Z121-001		BIOS CKS:D30Fh		Build Date: 04/20/2020
+
+Description of changes:
+        *** Update code base from "5.012_Denverton_0ACHI030" to "5.013_Denverton_0ACHI044". ***
+
+        1. Add new model Forcepoint N120.
+           a.Disable ASPEED VGA.
+           b.Change pxe port.
+           c.Remove unused code for GPIO_128(BY44).
+           d.BIOS needs program unused GPIO as GPIO mode and output mode for Intel request.
+             (1).To configure 1.8v GPIO to be output with internal pull-down resistor enabled.
+             (2).To configure 3.3v GPIO to be output with internal pull-up resistor enabled.
+             (3).To configure 1.05v GPIO to be output with internal pull-down/pull-up resistor enabled.
+           e.Set GPIO_12 is SCI input event(Low active) to notify NCS0001(ACPI Device).
+           f.Remapping GPE assignment.
+        2. Modify BIOS setup menu.
+           a.Hide "SATA 0" item.
+           b.Show "SATA 1" item.
+           c.Show "Port 0" item.
+           d.Hide "Port 1" and "Port 3" at "SATA 1" page.
+           e.Show "Port 2" at "USB SS Configuration" page.
+           f.Modify string from "MINI_PCIE1 Slot" to "M.2 LTE Slot".
+           g.Modify string from "MINI_PCIE2 Slot" to "MINI_PCIE Slot".
+           h.Hide "System temperature 1" and "System temperature 2" and "CN5 Fan Speed" item.
+           i.Modify string from ""CN4 Fan Speed" to "CN1 Fan Speed".
+        3. Modify some item default value.
+           a.Set "State After G3" item default value is "Last State".
+        4. Set GPIO 0 group access by MCU for WDT function.
+        5. Fix two OS boot option under boot override item.
+        6. Add "NVMe_18" module.
+           a.Dynamic hide "NVMe Configuration" page.
+           b.Hide unuse item for NVMe module.
+        7. Modify some token value.
+           a.Set "SDIO_DRIVER_SUPPORT" token is "0".
+           b.Set "SETUP_PRINT_EVAL_MSG" token is "0".
+        8. Remove unused pxe rom.
+        9. Set Status,MGMT,HA,PoE,LTE,WLAN LED is off.
+           
+
+Description of Technical Changes:
+        1. \Harrisonville.sdl                                                                       //Z121-001(1)
+           \HarrisonvillePkg\BuildImage.bat                                                         //Z121-001(1)
+           \MdeModulePkg\Core\Dxe\Hand\DriverSupport.c                                              //Z121-001(1)
+           \AmiCRBPkg\CRB\Pei\CrbPei.c                                                              //Z121-001(1)
+           \Harcuvar.sdl                                                                            //Z121-001(1)
+           \AmiChipsetModulePkg\NB\NbInit\NbSmi.c                                                   //Z121-001(1)
+           \AmiChipsetModulePkg\SB\DigitalThermalSensor\Gpe.asl                                     //Z121-001(1)
+           \HarrisonvillePkg\Tools\FTool\Config\N120.xml+
+        2. \HarrisonvillePkg\Platform\SetupDxe\SataSetup\SataConfig.hfr                             //Z121-001(2)
+           \HarrisonvillePkg\Platform\SetupDxe\SataSetup\SataController\SataController.hfr          //Z121-001(2)
+           \HarrisonvillePkg\Platform\SetupDxe\UsbSetup\UsbSsController\UsbSsController.hfr         //Z121-001(2)
+           \AmiCompatibilityPkg\Setup\Setup.uni                                                     //Z121-001(2)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DHwmSetup.sd                                            //Z121-001(2)
+        3. \HarrisonvillePkg\Platform\SetupDxe\SouthBridge.hfr                                      //Z121-001(3)
+        4. \AmiModulePkg\IO\NCT6683D\NCT6683DDxeInit.c                                              //Z121-001(4)
+        5. \AmiModulePkg\EfiOsBootOptionNames\EfiOsBootOptionNames.sdl                              //Z121-001(5)
+        6. \AmiModulePkg\Nvme\Nvme.sd                                                               //Z121-001(6)
+           \AmiModulePkg\Nvme\NvmeDynamicSetup\NvmeDynamicSetup.sd                                  //Z121-001(6)
+        7. \AmiModulePkg\Sdio\SdioDriver.sdl                                                        //Z121-001(7)
+           \AmiCRBPkg\CRB\Crb.sdl                                                                   //Z121-001(7)
+        8. \AmiChipsetModulePkg\Sb.sdl                                                              //Z121-001(8)
+        9. \AmiChipsetModulePkg\SB\SbInit\SbPei.c                                                   //Z121-001(9)
+           \AmiChipsetModulePkg\SB\SbInit\SbPei.inf                                                 //Z121-001(9)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.35)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-034
+New Version: G160-035		BIOS CKS:6070h		Build Date: 05/17/2019
+
+Description of changes:
+        1. Update CPU microcode from "00000024" to "0000002E".
+           a.CVE-2018-12127 - Microarchitectural Load Port Data Sampling (MLPDS).
+           b.CVE-2018-12126 - Microarchitectural Store Buffer Data Sampling (MSBDS).
+           c.CVE-2018-12130 - Microarchitectural Fill Buffer Data Sampling (MFBDS).
+           d.CVE-2019-11091 - Microarchitectural Uncacheable DataSampling (MDSUM).
+        2. Correct fill SMBIOS memory information.
+           a.Fix "Total Width" is "8 bits".
+           b.Fix "Data Width" is "8 bits".
+
+Description of Technical Changes:
+        1. \AmiIntelCpuPkg\Microcode\ServWork\DenvertonServerUc.sdl                                 //G160-035(1)
+           \AmiIntelCpuPkg\Microcode\ServWork\M01506F1_0000002E.mcb+
+        2. \HarrisonvillePkg\Platform\MemorySubClassDxe\MemorySubClass.c(EIP#395347)                //G160-035(2)
+           \HarrisonvillePkg\Platform\MemorySubClassDxe\MemorySubClass.h(EIP#395347)                //G160-035(2)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.34)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-031
+New Version: G160-034		BIOS CKS:1795h		Build Date: 03/19/2019
+
+Description of changes:
+        1. Fix "State After G3 - Last State" function fail.
+
+Description of Technical Changes:
+        1. \HarrisonvillePkg\Platform\PlatformStage2Pei\PlatformStage2.c                                //G160-034(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.33)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-032
+New Version: G160-033		BIOS CKS:4791h		Build Date: 10/01/2018
+
+Description of changes:
+        1. [ODM]YOI, Modify SMBIOS information.
+           a.Set System manufacturer is "NEXCOM".
+        2. [ODM]YOI, Update SPS firmware from "4.0.4.172" to "4.0.4.177".
+           (Fix can't boot after pressing the power button off system power when change memory speed.)
+
+Description of Technical Changes:
+        1. \Harrisonville.sdl                                                                           //G160-033(1)
+        2. \HarrisonvillePkg\Tools\FTool\Config\DNA1160.xml
+--------------------------------------------------------------------------------------------------------------------------------
+(No.32)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-024
+New Version: G160-032		BIOS CKS:4F9Ah		Build Date: 09/21/2018
+
+Description of changes:
+        1. [ODM]YOI, Add workaround to patch some motherboard RTC time abnormal.
+        2. [ODM]YOI, Add FIT table inside FV_BB to fix random number generator function abnormal.
+
+Description of Technical Changes:
+        1. \Harrisonville.sdl                                                                           //G160-032(1)
+           \AmiCompatibilityPkg\CmosManager\CmosManagerPei.c                                            //G160-032(1)
+        2. \HarrisonvillePkg\Fit\+
+           \HarrisonvillePkg\HarrisonvillePkg.cif
+           \Harrisonville.veb
+           \Denverton\Denverton_036\AmiCRBPkg\CRB\Crb.sdl(EIP#361002)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.31)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-029
+New Version: G160-031		BIOS CKS:E64Eh		Build Date: 08/22/2018
+
+Description of changes:
+        1. Update CPU microcode from "00000020" to "00000024".
+           a.CVE-2018-3639 :Speculative Store Bypass.
+           b.CVE-2018-3640 :Rogue System Register Read.
+        2. BIOS needs program unused GPIO as GPIO mode and output mode for Intel request.
+           a.To configure 1.8v GPIO to be output with internal pull-down resistor enabled.
+           b.To configure 3.3v GPIO to be output with internal pull-up resistor enabled.
+           c.To configure 1.05v GPIO to be output with internal pull-down/pull-up resistor enabled.
+        3. Update SPS firmware from "4.0.4.172" to "4.0.4.177".
+           a.CVE-2018-3643: Power Management Controller (PMC) Security Vulnerability.
+        4. INTEL-SA-00159:Incorrect handling of memory types in Tianocore firmware potentially allows a local attacker to bypass SMM protections on memory.
+        5. Add FIT table inside FV_BB to fix random number generator function abnormal.
+
+Description of Technical Changes:
+        1. \AmiIntelCpuPkg\Microcode\ServWork\DenvertonServerUc.sdl                                     //G160-031(1)
+           \AmiIntelCpuPkg\Microcode\ServWork\M01506F1_00000024.mcb+
+        2. \Harcuvar.sdl                                                                                //G160-031(2)
+           \HarrisonvillePkg\Tools\FTool\Config\DNA1160.xml
+        3. \HarrisonvillePkg\Tools\FTool\Config\DNA1160.xml
+        4. \AmiModulePkg\Library\SmmCoreAmiBufferValidationLib\SmmCoreAmiBufferValidationLib.c(Update from AMI)
+           \AmiModulePkg\Library\SmmCoreAmiBufferValidationLib\SmmCoreAmiBufferValidationLib.inf(Update from AMI)
+           \MdeModulePkg\Core\Dxe\Misc\MemoryAttributesTable.c(Update from AMI)
+           \MdeModulePkg\Core\Dxe\Misc\PropertiesTable.c(Update from AMI)
+        5. \HarrisonvillePkg\Fit\+
+           \HarrisonvillePkg\HarrisonvillePkg.cif
+           \Harrisonville.veb
+           \Denverton\Denverton_036\AmiCRBPkg\CRB\Crb.sdl(EIP#361002)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.30)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-024
+New Version: G160-030		BIOS CKS:A2ACh		Build Date: 07/05/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Modify SMBIOS information.
+           a.Set System manufacturer is "NEXCOM".
+
+Description of Technical Changes:
+        1. \Harrisonville.sdl                                                                           //G160-030(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.29)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-020
+New Version: G160-029		BIOS CKS:2209h		Build Date: 06/22/2018
+
+Description of changes:
+        
+        1. Fix show doesn't exist boot device under UEFI mode.
+        2. Add workaround to fix sometime read dimm spd error.
+        3. Add workaround to patch some motherboard RTC time abnormal.
+        4. Update SPS firmware from "4.0.4.143" to "4.0.4.172".
+           a.Fix can't boot after pressing the power button off system power when change memory speed.
+           b.Add NVM image config to SPS xml config file to fix x553 Lan can't work when use SPSFITC tool command mode.
+
+Description of Technical Changes:
+        1. \AmiModulePkg\Bds\Bds.sdl                                                                    //G160-029(1)
+        2. \Harrisonville.sdl                                                                           //G160-029(2)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DPeiInit.c                                                  //G160-029(2)
+           \AmiModulePkg\IO\NCT6683D\NCT6683D.sdl                                                       //G160-029(2)
+        3. \Harrisonville.sdl                                                                           //G160-029(3)
+           \AmiCompatibilityPkg\CmosManager\CmosManagerPei.c                                            //G160-029(3)
+        4. \HarrisonvillePkg\Tools\FTool\Config\vDNA1160.xml
+--------------------------------------------------------------------------------------------------------------------------------
+(No.28)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-027
+New Version: G160-028		BIOS CKS:BE60h		Build Date: 06/20/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Add NVM image config to SPS xml config file to fix x553 Lan can't work when use SPSFITC tool command mode.
+
+Description of Technical Changes:
+        1. \HarrisonvillePkg\Tools\FTool\Config\DNA1160.xml
+--------------------------------------------------------------------------------------------------------------------------------
+(No.27)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-025
+New Version: G160-027		BIOS CKS:AD9Ah		Build Date: 05/28/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Use Intel SPSFITc tool rebuild BIOS to fix x553 NVM image abnormal.
+
+Description of Technical Changes:
+
+--------------------------------------------------------------------------------------------------------------------------------
+(No.26)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-025
+New Version: G160-026		BIOS CKS:D8D8h		Build Date: 05/15/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Update x553 LAN NVM image.
+           a.Update LAN0 NVM image from "1.16_0.06_80000878" to "1.16_0.07_80000883".
+           b.Update LAN1 NVM image from "1.16_0.06_8000087C" to "1.16_0.08_80000889".
+           (Fix x553 lan can't work.)
+
+Description of Technical Changes:
+        1. \HarrisonvillePkg\BuildImage.bat                                                             //G160-026(1)
+           \HarrisonvillePkg\Tools\FTool\DNV_LAN0_AMD_MRVL1543_phyadd4_6_noMNG_1.16_0.07_80000883.bin+
+           \HarrisonvillePkg\Tools\FTool\DNV_LAN1_AMD_MRVL1543_phyadd8_A_noMNG_1.16_0.08_80000889.bin+
+--------------------------------------------------------------------------------------------------------------------------------
+(No.25)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-024
+New Version: G160-025		BIOS CKS:ED43h		Build Date: 05/10/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Update SPS firmware from "4.0.4.143" to "4.0.4.172".
+           (Fix can't boot after pressing the power button off system power when change memory speed.)
+
+Description of Technical Changes:
+
+--------------------------------------------------------------------------------------------------------------------------------
+(No.24)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-023
+New Version: G160-024		BIOS CKS:DA85h		Build Date: 04/27/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Fix show doesn't exist boot device under UEFI mode.
+        2. Add workaround to fix sometime read dimm spd error.
+
+Description of Technical Changes:
+        1. \AmiModulePkg\EfiOsBootOptionNames\EfiOsBootOptionNames.sdl                                  //G160-024(1)
+           \AmiModulePkg\Bds\Bds.sdl                                                                    //G160-024(1)
+        2. \Harrisonville.sdl                                                                           //G160-024(2)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DPeiInit.c                                                  //G160-024(2)
+           \AmiModulePkg\IO\NCT6683D\NCT6683D.sdl                                                       //G160-024(2)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.23)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-022
+New Version: G160-023		BIOS CKS:E792h		Build Date: 04/03/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Set "RemoveBootOptionWithoutFile" token is "0" to fix show doesn't exist boot device under UEFI mode.
+
+Description of Technical Changes:
+        1. \AmiModulePkg\EfiOsBootOptionNames\EfiOsBootOptionNames.sdl                                  //G160-023(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.22)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-021
+New Version: G160-022		BIOS CKS:02E8h		Build Date: 03/22/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Modify some item default value.
+           a.Set "Boot mode select" item default value is "UEFI".
+           b.Set "VT-d" item default value is "Enabled".
+
+Description of Technical Changes:
+        1. \AmiModulePkg\FixedBootOrder\DefaultFixedBootOrder\DefaultFixedBootOrder.sd                  //G160-022(1)
+           \HarrisonvillePkg\Platform\SetupDxe\NorthBridgeConfig.hfr                                    //G160-022(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.21)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-020
+New Version: G160-021		BIOS CKS:F1FEh		Build Date: 03/07/2018
+
+Description of changes:
+        
+        1. [ODM]YOI, Modify SMBIOS information.
+           a.Set System manufacturer is "YOI SYSTEM".
+           b.Set System version is BIOS version.
+
+Description of Technical Changes:
+        1. \Harrisonville.sdl                                                                           //G160-021(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.20)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-019
+New Version: G160-020		BIOS CKS:B65Fh		Build Date: 03/06/2018
+
+Description of changes:
+        
+        1. Fix boot order option is disable after flash BIOS.
+           a.Update module from "FixedBootOrder_012" to "FixedBootOrder_013".
+
+Description of Technical Changes:
+        1. \AmiModulePkg\FixedBootOrder\FboSmiFlashLink\FboSmiFlashLink.c                               //G160-020(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.19)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-018
+New Version: G160-019		BIOS CKS:F1CBh		Build Date: 03/01/2018
+
+Description of changes:
+        
+        1. Fix Fedora os report "can't derive routing for PCI INT A" message.(Update from Intel.)
+
+Description of Technical Changes:
+        1. \AmiChipsetModulePkg\Sb.sdl                                                                 //G160-019(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.18)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-016
+New Version: G160-018		BIOS CKS:A904h		Build Date: 02/23/2018
+
+Description of changes:
+        
+        1. Fix Fedora os report "can't derive routing for PCI INT A" message.
+
+Description of Technical Changes:
+        1. \AmiChipsetModulePkg\Sb.sdl                                                                 //G160-018(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.17)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-016
+New Version: G160-017		BIOS CKS:F504h		Build Date: 01/29/2018
+
+Description of changes:
+        
+        1. [ODM]EIM, Modify SPS setting to disable HSIO port8(AST1300).
+
+Description of Technical Changes:
+        1. \HarrisonvillePkg\Tools\FTool\Config\DNA1160.xml
+--------------------------------------------------------------------------------------------------------------------------------
+(No.16)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-015
+New Version: G160-016		BIOS CKS:AE9Dh		Build Date: 01/24/2018
+
+Description of changes:
+        
+        1. EIP - 380568 : Analyze disabling IRQ7 on Denverton to prevent spurious IRQ 7 issue in DOS.
+           (Fix console port no output under DOS when use USB keyboard type a lot of text.)
+
+Description of Technical Changes:
+        1. \AmiCRBPkg\CRB\Crb.sdl                                                                       //G160-016(1)
+           \AmiChipsetModulePkg\Sb.sdl                                                                  //G160-016(1)
+           \AmiCRBPkg\CRB\Dxe\CrbDxe.c                                                                  //G160-016(1)
+           \AmiCRBPkg\CRB\Dxe\CrbDxe.inf                                                                //G160-016(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.15)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-014
+New Version: G160-015		BIOS CKS:19E4h		Build Date: 01/05/2018
+
+Description of changes:
+        
+        1. Fix side channel analysis security issue.
+           a.Update CPU microcode from "00000018" to "00000020".
+
+Description of Technical Changes:
+        1. \AmiIntelCpuPkg\Microcode\ServWork\DenvertonServerUc.sdl                                     //G160-015(1)
+           \AmiIntelCpuPkg\Microcode\ServWork\M01506F1_00000020.mcb+
+--------------------------------------------------------------------------------------------------------------------------------
+(No.14)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-013
+New Version: G160-014		BIOS CKS:C323h		Build Date: 12/04/2017
+
+Description of changes:
+        
+        1.Hide unused item.
+          a.Hide "Ipv4 HTTP Support" item.
+          b.Hide "Ipv6 HTTP Support" item.
+          c.Hide "IP6 Configuration Policy" item.
+        2.Set SIO GP30,31,32,33 is GPIO input.
+        3.Hide unused item.
+           a.Hide "Legacy Console Redirection Settings" item.
+           b.Hide "Console Redirection" item.
+           c.Hide "Console Redirection Settings" item.
+        4.Update SPS from "4.0.3.65" to "4.0.4.143" to fix Intel SPS security issue.
+
+Description of Technical Changes:
+        1. \AmiNetworkPkg\UefiNetworkStack\Common\NetworkStackSetupScreen\NetworkStackSetupScreen.sd    //G160-014(1)
+        2. \AmiModulePkg\IO\NCT6683D\NCT6683D.sdl                                                       //G160-014(2)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DDxeInit.c                                                  //G160-014(2)
+        3. \AmiModulePkg\Terminal\Terminal.sd                                                           //G160-014(3)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.13)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-012
+New Version: G160-013		BIOS CKS:3959h		Build Date: 11/14/2017
+
+Description of changes:
+        
+        1.Set BOOT_FLOW_NORMAL_LAUNCH_DEFAULT_BOOTIMAGE token to "1".
+        2.Set "Boot option filter" item default value is "UEFI and Legacy" and hide "Boot option filter" item.
+
+Description of Technical Changes:
+        1. \AmiTsePkg\Core\em\AMITSE\AMITSE.sdl                                                         //G160-013(1)
+        2. \AmiModulePkg\CSM\Csm.sdl                                                                    //G160-013(2)
+           \AmiModulePkg\CSM\CsmPolicy\Csm.sd                                                           //G160-013(2)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.12)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-010
+New Version: G160-012		BIOS CKS:C133h		Build Date: 10/30/2017
+
+Description of changes:
+        
+        1.Add decode 0xF0~0xFF for CPLD.
+        2.Remove SPD write disable.
+        3.Set BOOT_FLOW_NORMAL_LAUNCH_DEFAULT_BOOTIMAGE token to "0" to Fix run shell many times.
+
+Description of Technical Changes:
+        1. \AmiModulePkg\IO\NCT6683D\NCT6683DPeiIoTable.h                                               //G160-012(1)
+        2. \DenvertonPkg\SouthCluster\LibraryPrivate\PeiPchInitLib\PchSmbus.c                           //G160-012(2)
+           \DenvertonPkg\SystemAgent\Mrc\Mmrc\ProjectData\DNV\External\Source\ConfigMem.c               //G160-012(2)
+           \DenvertonPkg\SystemAgent\Mrc\Mmrc\ProjectData\DNV\External\Source\McFunc.c                  //G160-012(2)
+           \HarrisonvillePkg\Library\PeiPolicyUpdateLib\PeiSaPolicyUpdate.c                             //G160-012(2)
+           \HarrisonvillePkg\Library\PlatformSecLib\Ia32\Flat32.asm                                     //G160-012(2)
+           \HarrisonvillePkg\Platform\PlatformInfo\Pei\SysControllerCommunicationLib.c                  //G160-012(2)
+        3. \AmiTsePkg\Core\em\AMITSE\AMITSE.sdl                                                         //G160-012(3)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.11)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-010
+New Version: G160-011		BIOS CKS:2CC6h		Build Date: 10/11/2017
+
+Description of changes:
+        
+        1. [ODM]NCN,Set "VT-d" item default value is "Enable".
+
+Description of Technical Changes:
+        1. \HarrisonvillePkg\Platform\SetupDxe\NorthBridgeConfig.hfr                                   //G160-011(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.10)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-009
+New Version: G160-010		BIOS CKS:9920h		Build Date: 10/03/2017
+
+Description of changes:
+        
+        1. Add "EfiOsBootOptionNames_11" module to fix can't boot UEFI OS.
+
+Description of Technical Changes:
+
+--------------------------------------------------------------------------------------------------------------------------------
+(No.9)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-008
+New Version: G160-009		BIOS CKS:2396h		Build Date: 09/30/2017
+
+Description of changes:
+        
+        1. Fix no display when set "video" item is "UEFI".
+        2. Remove DMI write once limitation.
+
+Description of Technical Changes:
+        1.  \Harrisonville.sdl                                                                          //G160-009(1)
+            \AmiModulePkg\CSM\CsmPolicy\CsmPolicy.c                                                     //G160-009(1)
+        2.  \AmiCompatibilityPkg\Smbios\SmbiosDmiEdit\SmbiosDmiEditFunc.c                               //G160-009(2)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.8)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-007
+New Version: G160-008		BIOS CKS:D388h		Build Date: 09/13/2017
+
+Description of changes:
+        
+        1. Add BIOS version to SMBIOS type 0.
+        2. Update code to fix write status disable(WRSDIS) issue.
+
+Description of Technical Changes:
+        1.  \AmiCompatibilityPkg\Smbios\Smbios.c                                                        //G160-008(1)
+            \AmiCompatibilityPkg\Smbios\SmbiosBoard\SmbiosStaticData\SmbData.mac                        //G160-008(1)
+        2.  \DenvertonPkg\SouthCluster\Include\Register\PchRegsSpi.h
+            \DenvertonPkg\SouthCluster\LibraryPrivate\PeiPchInitLib\PchSpi.c
+            \DenvertonPkg\SouthCluster\LibraryPrivate\PeiPchInitLib\PchSpi.h
+            \DenvertonPkg\SouthCluster\PchInit\Dxe\PchInit.c
+            \DenvertonPkg\SouthCluster\PchInit\Dxe\PchInit.h
+--------------------------------------------------------------------------------------------------------------------------------
+(No.7)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-006
+New Version: G160-007		BIOS CKS:813Eh		Build Date: 09/12/2017
+
+Description of changes:
+        
+        1.Modify some item default value.
+          a.Set "Maximum Payload" item default value is "1024 Bytes".
+          b.Set "Maximum Read Request" item default value is "256 Bytes".
+          c.Set "Max Payload" item default value is "1024 Bytes".
+          d.Set "Max Read Request" item default value is "256 Bytes".
+          e.Set "Memory Thermal Throttling" item default value is "Disabled".
+          f.Set "MEMHOT Level" item default value is "Disabled".
+          g.Set "External PROCHOT Interrupt" item default value is "Disable".
+
+Description of Technical Changes:
+        1.  \AmiModulePkg\PCI\PciStaticSetup.sd                                                         //G160-007(1)
+            \HarrisonvillePkg\Platform\SetupDxe\PcieIpSetup\PcieIpRootPort\PcieIpRootPort.hfr           //G160-007(1)
+            \HarrisonvillePkg\Platform\SetupDxe\NorthBridgeConfig.hfr                                   //G160-007(1)
+            \HarrisonvillePkg\Platform\SetupDxe\ThermalConfig.hfr                                       //G160-007(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.6)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-005
+New Version: G160-006		BIOS CKS:EFF8h		Build Date: 09/01/2017
+
+Description of changes:
+        
+        1.Modify Marvell 1543 phy activity led config.
+          a.Link and no activity LED on.
+          b.Link and activeity LED blink.
+
+Description of Technical Changes:
+        1.  \AmiChipsetModulePkg\SB\SbInit\SbDxe.c                                                      //G160-006(1)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.5)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-004
+New Version: G160-005		BIOS CKS:A467h		Build Date: 08/24/2017
+
+Description of changes:
+        *** Update code base from "5.012_Denverton_0ACHI029" to "5.012_Denverton_0ACHI030". ***
+        
+        1.Modify "STR_HORIZONTAL_LINE" string.
+        2.Fix NCT6683D GPIO program fail.
+        3.Set System date year range is 2005~2099.
+        4.a.Show "EIST (GV3)"item.
+          b.Show "Extended APIC" item.
+          c.Show "Turbo" item.
+          d.Set "Fast Boot" item default value is "Enable".
+        5.Set "ASPM Support" item default value is "Disable".
+        6.Change i211 legacy pxe rom and add i211 UEFI pxe driver.
+        7.Ignore eth1~eth7 UEFI pxe driver.
+        8.Hide "Driver Health" item.
+        9.Fix some dimm hang POST code 0x63.
+           a.Set "Training CPGC exp_loop_cnt" item default value is "10".
+           b.Set "Training CPGC num_bursts" item default value is "8".
+        10.Program PCH GPIO for DNA1160.
+        11.Update TCG2 module and AmiTcgPkg module to fix bitlocker function fail.
+        12.Add program Marvell 1543 Phy led config.
+        13.Set "TM1" item default value is "Disabled".
+        14.Add show "Relax Security Configuration" item.
+        15. a.Update LAN0 NVM image from "1.15_0.01_80000700" to "1.16_0.06_80000878".
+            b.Update LAN1 NVM image from "1.15_0.01_8000071C" to "1.16_0.06_8000087C".
+        16.Update CPU microcode from "00000016" to "00000018".
+        17.Add one beep sound.
+        18.Fixed BIOS security password function fail.
+        19.Improve MRC fast boot function.
+        20.Correct program SATA driving value.
+
+Description of Technical Changes:
+        1.  \HarrisonvillePkg\Platform\SetupDxe\SetupStrings.uni                                        //G160-005(1)
+        2.  \AmiModulePkg\IO\NCT6683D\NCT6683DDxeInit.c                                                 //G160-005(2)
+            \AmiModulePkg\IO\NCT6683D\NCT6683DPeiIoTable.h                                              //G160-005(2)
+        3.  \AmiCRBPkg\CRB\Crb.sdl                                                                      //G160-005(3)
+            \PcAtChipsetPkg\PcAtChipsetPkg.dec                                                          //G160-005(3)
+        4.  \HarrisonvillePkg\Platform\SetupDxe\ProcessorSetup.hfr                                      //G160-005(4)
+        5.  \HarrisonvillePkg\Platform\SetupDxe\PcieIpSetup\PcieIpRootPort\PcieIpRootPort.hfr           //G160-005(5)
+        6.  \Harrisonville.sdl                                                                          //G160-005(6)
+            \ADDONS\LAN\i211_153903.LOM+
+            \ADDONS\LAN\E6413X3.EFI+
+        7.  \MdeModulePkg\Core\Dxe\DxeMain.inf                                                          //G160-005(7)
+            \MdeModulePkg\Core\Dxe\Hand\DriverSupport.c                                                 //G160-005(7)
+        8.  \AmiCompatibilityPkg\Setup\DynamicPages.sd                                                  //G160-005(8)
+        9.  \HarrisonvillePkg\Platform\SetupDxe\NorthBridgeConfig.hfr                                   //G160-005(9)
+        10. \HarrisonvillePkg\Library\PeiPlatformHookLib\GpioTableHarcuvar.h                            //G160-005(10)
+        11. \AmiChipsetModulePkg\SB\SbInit\SbDxe.c                                                      //G160-005(12)
+        12. \HarrisonvillePkg\Platform\SetupDxe\ProcessorSetup.hfr                                      //G160-005(13)
+            \HarrisonvillePkg\Platform\SetupDxe\ThermalConfig.hfr                                       //G160-005(13)
+        13. \HarrisonvillePkg\Platform\SetupDxe\IntelRcSetup.vfr                                        //G160-005(14)
+        14. \HarrisonvillePkg\Tools\FTool\DNV_LAN0_SGMII_MRVL_noMNG_1.16_0.06_80000878.bin+
+            \HarrisonvillePkg\Tools\FTool\DNV_LAN1_SGMII_MRVL_noMNG_1.16_0.06_8000087C.bin+
+            \HarrisonvillePkg\BuildImage.bat                                                            //G160-005(15)
+        15. \AmiIntelCpuPkg\Microcode\ServWork\DenvertonServerUc.sdl                                    //G160-005(16)
+            \AmiIntelCpuPkg\Microcode\ServWork\M01506F1_00000018.mcb+
+        16. \AmiModulePkg\IO\NCT6683D\NCT6683DDxeInit.c                                                 //G160-005(17)
+        17. \AmiTsePkg\Core\em\AMITSE\commonoem.c                                                       //G160-005(18)
+            \AmiTsePkg\EDK\MiniSetup\BootOnly\postmgmtext.c                                             //G160-005(18)
+        18. \DenvertonPkg\SystemAgent\Mrc\Mmrc\ProjectData\DNV\External\Source\MrcFunc.c                //G160-005(19)
+            \DenvertonPkg\SystemAgent\Mrc\Mmrc\ProjectIndependent\Include\MmrcData.h                    //G160-005(19)
+        19. \DenvertonPkg\SouthCluster\LibraryPrivate\PeiPchInitLib\PchHHsioAx.c                        //G160-005(20)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.4)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-003
+New Version: G160-004		BIOS CKS:DA7Ah		Build Date: 06/19/2017
+             (G160T021 Rebuild)
+
+Description of changes:
+        *** Update code base from "5.012_Denverton_0ACHI014" to "5.012_Denverton_0ACHI029". ***
+
+        1.Set "Terminal_SUPPORT" token is "1".
+        2.Set "FV_BB_SIZE" token is "0x190000" because AMI set "OPTIMIZATION" token is "1" to fix compiler error(FV_BB too small) when add "TCG2" module.
+        3.Remove "SataDevInfo_01" module.
+        4.Add show SATA device information at IntelRCSetup SATA Configuration page.
+        5.Fix CPLD device show yellow bang.
+        6.Modify string from "COption to Enable / Disable VT-d" to "Option to Enable / Disable VT-d".
+        7.Fix system hang when set "VT-d" item is disable.
+        8.Add "NCT6683D_03" module.
+        9.Set "NCT6776_SUPPORT" token is "0".
+        10. a.Update LAN0 NVM image from "0.83_0.01_8000014F" to "1.15_0.01_80000700".
+            b.Update LAN1 NVM image from "0.83_0.01_80000150" to "1.15_0.01_8000071C".
+        11.Config some setting for NCT6683D.
+            a.Set NCT6683D config port is "0x4E" and data port is "0x4F".
+            b.Disable NCT6683D serial port 2.
+            c.Disable NCT6683D LPT port.
+            d.Disable NCT6683D CIR function.
+            e.Disable NCT6683D keyboard function.
+            f.Disable NCT6683D mouse function.
+            g.Set NCT6683D GPIO34~37 is gpio output and GPIO40~43 is gpio input.
+            h.Set NCT6683D Pin111 is FAN1 PWM out,Pin112 is FAN2 PWM out,Pin113 is FAN1 Tachin,Pin114 is FAN2 Tachin.
+            i.Set NCT6683D Pin72 is MSDA1,Pin73 is MSCL1,Pin74 is MSDA0,Pin75 is MSCL0.
+            j.Correct show CN4 FAN speed and CN5 FAN speed.
+            k.Correct show CPU VCORE,PVDDR,P3V3,P5V,P12V
+            l.Modify string from "VIN0" to "CPU VCORE".
+            m.Modify string form "P3V3" to "PVDDR".
+            n.Modify string form "P5V" to "P3V3".
+            o.Modify string form "P12V" to "P5V".
+            p.Modify string form "VIN4" to "P12V".
+            r.Hide no use item under H/W monitor page.
+            s.Modify string form "System temperature" to "System temperature 1".
+            t.Modify string form "System temperature3" to "System temperature 2".
+            u.Correct show CPU and system temperature.
+            v.Add support smart fan.
+            w.Disable no use TIN and VIN and Fan In and Fan out.
+        12. Fix NCT6683D H/W monitor decode error.
+        13. Change ME setting.
+            a.Set "SPI -Quad Output Fast Read Enable" is "0x0 Quad Output Read is disabled".
+            b.Set "SPI -Dual Output Fast Read Enable" is "0x0 Dual Output Read is enabled".
+        14. Set "FIA Mux Configuration Override" item default value is "Disable".
+        15. Fix HSIO setting error becase Intel RC code read board id to setting HSIO.
+        16. Hide "S5 RTC Wake Settings" item.
+        17. Hide "4G LTE Module" item.
+        18. Correct set GPIO base address for NCT6683D.
+        19. Hide "HDD BootSector Write" item.
+        20. Set "VT-d" item default value is "Disable".
+        21. Modify Smart fan item default value.
+            a.Set "Smart Fan" item default value is "Enable".
+            b.Set "Fan Start Temperature" item default value is "55".
+            c.Set "Fan Full Speed Temperature" item default value is "75".
+            d.Set "Fan Start Duty" item default value is "125".
+        22. Adjust SATA driving value.
+        23. a.Hide "Smart Fan" item.
+            b.Hide "Fan Off Temperature" item.
+            c.Hide "Fan Start Temperature" item.
+            d.Hide "Fan Full Speed Temperature" item.
+            e.Hide "Fan Start Duty" item.
+        24. Improve system boot up time.
+            a.Set "Training CPGC exp_loop_cnt" item default value is "1".
+            b.Set "Training CPGC num_bursts" item default value is "1".
+            
+        
+Description of Technical Changes:
+        1. \AmiModulePkg\Terminal\Terminal.sdl                                                          //G160-004(1)
+        2. \AmiCRBPkg\CRB\Crb.sdl                                                                       //G160-004(2)
+        3. \HarrisonvillePkg\Platform\SetupDxe\SataSetup\SataController\SataController.hfr              //G160-004(4)
+           \HarrisonvillePkg\Platform\SetupDxe\SataSetup\SataController\Port\SataPortConfiguration.hfr  //G160-004(4)
+        4. \HarrisonvillePkg\Acpi\AcpiTables\Dsdt\Mother.asi                                            //G160-004(5)
+        5. \HarrisonvillePkg\Platform\SetupDxe\NorthBridgeStrings.uni                                   //G160-004(6)
+        6. \HarrisonvillePkg\Library\PeiPolicyUpdateLib\PeiSaPolicyUpdate.c                             //G160-004(7)
+           \DenvertonPkg\SystemAgent\Library\PeiSaPolicyLib\PeiSaPolicyLib.c                            //G160-004(7)
+           \HarrisonvillePkg\Cpu\Dxe\PlatformCpuPolicyForNativeCpu\PlatformCpuPolicy.c                  //G160-004(7)
+        7. \AmiModulePkg\IO\NCT6776\NCT6776.sdl                                                         //G160-004(9)
+        8. \HarrisonvillePkg\Tools\FTool\DNV_LAN0_SGMII_MRVL_noMNG_1.15_0.01_80000700.bin+
+           \HarrisonvillePkg\Tools\FTool\DNV_LAN1_SGMII_MRVL_noMNG_1.15_0.01_8000071C.bin+
+           \HarrisonvillePkg\BuildImage.bat                                                             //G160-004(10)
+        9. \AmiModulePkg\IO\NCT6683D\NCT6683D.sdl                                                       //G160-004(11)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DPeiIoTable.h                                               //G160-004(11)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DHwmSetup.c                                                 //G160-004(11)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DDxeIoTable.h                                               //G160-004(11)
+           \AmiModulePkg\GenericSio\SioStaticSetup.uni                                                  //G160-004(11)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DHwmSetup.sd                                                //G160-004(11)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DHwmSetup.uni                                               //G160-004(11)
+           \AmiModulePkg\Library\AmiSioDxeLib\AmiSioDxeLib.c                                            //G160-004(11)
+           \AmiModulePkg\Library\AmiSioPeiLib\AmiSioPeiLib.c                                            //G160-004(11)
+           \AmiModulePkg\Include\Library\AmiSioDxeLib.h                                                 //G160-004(11)
+           \AmiModulePkg\Include\Library\AmiSioPeiLib.h                                                 //G160-004(11)
+           \AmiModulePkg\IO\NCT6683D\NCT6683DDxeInit.c                                                  //G160-004(11)
+        10. \AmiModulePkg\IO\NCT6683D\NCT6683DPeiInit.c                                                 //G160-004(12)
+        11. \HarrisonvillePkg\Tools\FTool\Config\DNA1160.xml
+        12. \HarrisonvillePkg\Platform\SetupDxe\IntelRcSetup.vfr                                        //G160-004(14)
+        13. \HarrisonvillePkg\Platform\PlatformInfo\Pei\PlatformInfoPei.c                               //G160-004(15)
+        14. \AmiModulePkg\RtcWake\RTCWakeup.sd                                                          //G160-004(16)
+        15. \AmiCompatibilityPkg\Setup\Setup.vfr                                                        //G160-004(17)
+        16. \AmiModulePkg\IO\NCT6683D\NCT6683D.sdl                                                      //G160-004(18)
+        17. \AmiModulePkg\BootSectorWriteProtect\BootSectorWriteProtect.sd                              //G160-004(19)
+        18. \HarrisonvillePkg\Platform\SetupDxe\NorthBridgeConfig.hfr                                   //G160-004(20)
+        19. \AmiModulePkg\IO\NCT6683D\NCT6683DHwmSetup.sd                                               //G160-004(21)
+        20. \DenvertonPkg\SouthCluster\LibraryPrivate\PeiPchInitLib\PchHHsioAx.c                        //G160-004(22)
+            \DenvertonPkg\SouthCluster\LibraryPrivate\PeiPchInitLib\PchHsio.c                           //G160-004(22)
+            \DenvertonPkg\SouthCluster\IncludePrivate\PchHHsioAx.h                                      //G160-004(22)
+        21. \AmiModulePkg\IO\NCT6683D\NCT6683DHwmSetup.sd                                               //G160-004(23)
+        22. \HarrisonvillePkg\Platform\SetupDxe\NorthBridgeConfig.hfr                                   //G160-004(24)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.3)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-002
+New Version: G160-003		BIOS CKS:9884h		Build Date: 09/23/2016
+
+Description of changes:
+        1.Add load setup default value when clear CMOS.
+        2.Add show "State After G3" item.
+        3.Modify item string.
+          a.From "S0 State" to "Power On".
+          b.From "S5 State" to "Power Off".
+          c.From "Soft Strap" to "Last State".
+        4.Fix after G3 "Last State" function fail.
+        5.Set "State After G3" item default value is "Power On".
+        
+Description of Technical Changes:
+        1. \Harrisonville.sdl                                                           //G160-003(1)
+           \AmiChipsetModulePkg\Library\AmiCspLib\SbGeneric.c                           //G160-003(1)
+           \AmiChipsetModulePkg\Include\Library\SbCspLib.h                              //G160-003(1)
+           \AmiChipsetModulePkg\Include\Sb.h                                            //G160-003(1)
+        2. \HarrisonvillePkg\Platform\SetupDxe\SouthBridge.hfr                          //G160-003(2)
+        3. \HarrisonvillePkg\Platform\SetupDxe\SouthBridge.uni                          //G160-003(3)
+        4. \HarrisonvillePkg\Platform\PlatformStage2Pei\PlatformStage2.c                //G160-003(4)
+        5. \HarrisonvillePkg\Platform\SetupDxe\SouthBridge.hfr                          //G160-003(5)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.2)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: G160-001
+New Version: G160-002		BIOS CKS:6BFEh		Build Date: 09/20/2016
+
+Description of changes:
+        *** Update code base from "5.012_Denverton_0ACHI013" to "5.012_Denverton_0ACHI014". ***
+        
+        1.Update VBIOS to fix system some time hang VBIOS initialization phase(POST code 0xB2).
+          (VBIOS version from 0.93.08 to 1.00.07)
+        2.Change AST1300 EFI driver to fix can't display when "Video" item is "UEFI".
+        3.Fix can't disable PCH UART device.
+        4.Fix NCT6776 H/W monitor decode error.
+        5.Romove no need IO decode.
+        6.Set NCT6776 clkin is 24Mhz.
+        7.Set "ISA_IRQ_MASK" token is "0xE305".
+        8.Adjust H/W monitor page.
+                a.Fix H/W monitor voltage abnormal.
+                b.Hide "Fan3 Speed" item.
+                c.Hide "Fan4 Speed" item.
+                d.Hide "Fan5 Speed" item.
+                e.Hide "VACC" item.
+                f.Hide "VCC3V" item.
+                g.Hide "VSB3V" item.
+                h.Hide "VBAT" item.
+                i.Hide "System temperature3" item.
+                j.Hide "Agent0 Temperature" item.
+                k.Read TPM75 for CPU temperature and system temperature.
+                l.Modify string from "System temperature1" to "CPU temperature".
+                m.Modify string from "System temperature2" to "System temperature".
+                n.Modify string from "Fan1 Speed" to "CN4 Fan Speed".
+                o.Modify string from "Fan2 Speed" to "CN5 Fan Speed".
+                p.Modify string from "VCORE" to "CPU VCORE".
+                q.Modify string from "VIN0" to "PVDDR".
+                r.Modify string from "VIN1" to "P3V3".
+                s.Modify string from "VIN2" to "P5V".
+                t.Modify string from "VIN3" to "P12V".
+        9.Set SuperIO GPIO for H/W request.
+                a.Set GP03 is input.
+                b.Set GP04 is input.
+                c.Set GP05 is input.
+                d.Set GP06 is output high.
+                e.Set GP07 is output high.
+                f.Set GP32 is input.
+                g.Set GP76 is output high.
+                h.Set GP77 is output high.
+                i.Enable GPIO base address.
+        10.Set PCH GPIO for H/W request.
+                a.Set PCH GPIO41 is output low.
+                b.Set PCH GPIO42 is output high.
+                c.Set PCH GPIO43 is output low.
+                d.Set PCH GPIO44 is output low.
+                e.Set PCH GPIO126 is input.
+                f.Set PCH GPIO127 is input.
+        11.Add "MINI_PCIE1" and "MINI_PCIE2" item and "4G LTE Module" item.
+        12.Set "SMBIOS_DMIEDIT_DATA_LOC" token is "0".(SMBIOS data at Bootblock.)
+        13.Remove "TCG" module.
+        14.Add "TCG2_10" module.
+        15.Adjust FV_BB size to fix compiler error(FV_BB too small) when add "TCG2" module.
+        16.Hide some item.      (*** Intel RC item use HIDE_UNUSED_ITEMS define at \HarrisonvillePkg\Include\SetupVariable.h  ***)
+                (1).Hide "SyStem Language" item.
+                (2).Hide "Driver Health" item.
+                (3).Hide "Debug Port Table Configuration" item.
+                (4).Hide "Platform" item at "IntelRCSetup" page.
+                (5).Hide "RC Revision" item at "IntelRCSetup" page.
+                (6).Hide "Processor BSP Revision" item at "IntelRCSetup" page.
+                (7).Hide "Microcode Revision" item at "IntelRCSetup" page.
+                (8).Hide "Relax Security Configuration" item.
+                (9).Hide "Fia Mux Configuration".
+                (10).Hide "Cpu Thermal Configuration".
+                (11).Hide "CK420 Configuration" item.
+                (12).Hide "Miscellaneous Configuration" item.
+                (13).Hide "Wake On Lan Configuration" item at "IntelRCSetup" page.
+                (14).Hide "Server ME Debug Configuration" item at "IntelRCSetup" page.
+                (15).Hide "Server ME Debug Configuration" item at "IntelRCSetup" page.
+                (16).Set "Wake On Lan Configuration" item default value is "Disable".
+                (17).Set "EIST (GV3)" item default value is "Disable".
+                (18).Set "Turbo" item default value is "Disable".
+                (19).Set "CPU C State" item default value is "Disable".
+                (20).Set "Enhanced Halt State (C1E)" item default value is "Disable".
+                (21).Hide "EIST (GV3)" item.
+                (22).Hide "BIOS Request Frequency" item.
+                (23).Hide "Turbo" item.
+                (24).Hide "TM1" item.
+                (25).Hide "TM2 Mode" item.
+                (26).Hide "Dynamic Self Refresh" item.
+                (27).Hide "PMOP Levels" item.
+                (28).Hide "CPU C State" item.
+                (29).Hide "Package C State limit" item.
+                (30).Hide "Max Core C-State" item.
+                (31).Hide "Enhanced Halt State (C1E)" item.
+                (32).Hide "Monitor/Mwait" item.
+                (33).Set "System Errors" item default value is "Disable".
+                (34).Hide "System Event Log" item.
+                (35).Hide "MRC Version" string.
+                (36).Hide "Pass Gate Setup" item.
+                (37).Hide "Leaky Bucket Setup" item.
+                (38).Hide "NonVolatile Memory Setup" item.
+                (39).Hide "Fast Boot" item.
+                (40).Hide "Command Mode" item.
+                (41).Hide "Smm Size (MB)" item.
+                (42).Hide "Command Address Parity" item.
+                (43).Hide "32 bit bus enabled" item.
+                (44).Hide "Enable Parallel Training" item.
+                (45).Hide "Memory Channels" item.
+                (46).Hide "MRC Debug Messages" item.
+                (47).Hide "Memory Preservation" item.
+                (48).Hide "Fine Ddr Voltage" item.
+                (49).Hide "Read Per Bit Training" item.
+                (50).Hide "Write Per Bit Training" item.
+                (51).Hide "ECC Support" item.
+                (52).Hide "Faulty Part Tracking".
+                (53).Hide "On Correctable Faulty Part" item.
+                (54).Hide "Patrol Scrub Enable" item.
+                (55).Hide "Patrol Scrub Period" item.
+                (56).Hide "Demand Scrub Enable" item.
+                (57).Hide "Send Boot Vector to DRAM" item.
+                (58).Hide "AB Segment in DRAM" item.
+                (59).Hide "E Segment in DRAM" item.
+                (60).Hide "F Segment in DRAM" item.
+                (61).Hide "ZQ Calibration" item.
+                (62).Hide "Rank Margin Tool" item.
+                (63).Hide "RMT CPGC exp_loop_cnt" item.
+                (64).Hide "RMT CPGC num_bursts" item.
+                (65).Hide "Out of order memory processing" item.
+                (66).Hide "New request bypass" item.
+                (67).Hide "Select Refresh Rate" item.
+                (68).Hide "CKE Power Down" item.
+                (69).Hide "RAPL Time Window" item.
+                (70).Hide "RAPL Power Limit Enable" item.
+                (71).Hide "RAPL Power Limit" item.
+                (72).Hide "Lock MSR 618 DDR_RAPL_LIMIT" item.
+                (73).Hide "PMOP Value for PCO" item.
+                (74).Hide "PMOP Value for PCX" item.
+                (75).Hide "Open Page Policy Timer" item.
+                (76).Hide "Memory Thermal Throttling" item.
+                (77).Hide "MEMHOT Level" item.
+                (78).Hide "Rx Skew Control" item.
+                (79).Hide "Tx Skew Control" item.
+                (80).Hide "Performance Profile" item.
+                (81).Hide "Override Checkpoints" item.
+                (82).Hide "Scrambler" item.
+                (83).Hide "Slow Power Down Exit" item.
+                (84).Hide "Timing Configuration" item.
+                (85).Hide "Memory Config DFX Menu" item.
+                (86).Hide "VT-d Interrupt remapping" item.
+                (87).Hide "DFX SSA Config" item.
+                (88).Set "C-state POPUP" item default value is "Disabled".
+                (89).Hide "PCIE IP Configuration" item.
+                (90).Hide "PPM Config" item.
+                (91).Hide "State After G3" item.
+                (92).Hide "DCI Enable" item.
+                (93).Hide "SMBUS Controller" item.
+                (94).Hide "SMBusIOSFClockGating" item.
+                (94).Hide "SMBus Host Speed" item.
+                (95).Hide "IOAPIC 24-119 Entries" item.
+                (96).Hide "Serial IRQ Mode" item.
+                (97).Hide "GPIO Lockdown" item.
+                (98).Hide "SouthBridge DFX Configuration" item.
+                (99).Hide "USB Precondition" item.
+                (100).Hide "Inactivity Initiated L1" item.
+                (101).Hide "XHCI Initiated L1" item.
+                (102).Hide "XHCI Compliance Mode" item.
+                (103).Hide "Port 2" and "Port 3" at "USB SS Configuration" page.
+                (104).Hide "SATA 1" item.
+                (105).Hide "Port0~7" at "SATA 0" page.
+                (106).Set "Hot plug" item default value is "Disabled".
+                (107).Hide "SATA Testmode" item.
+                (108).Hide "LPM" item.
+                (109).Hide "Port Multiplier Support".
+                (110).Hide "Boot Sector write" item.
+                (111).Hide "Save Changes and Exit" ite.
+                (112).Hide "Discard Changes and Exit" item.
+                (113).Hide "Save Changes" item.
+                (114).Hide "Discard Changes" item.
+                (115).Hide "Save as User Defaults" item.
+                (116).Hide "Restore User Defaults" item.
+                (117).Set "Network" item default value is "Do not launch".
+                (118).Set "Storage" item default value is "Do not launch".
+                (119).Set "Other PCI devices" item default value is "Legacy".
+                (120).Hide "USB hardware delays and time-outs:" string.
+                (121).Hide "USB transfer time-out" item.
+                (122).Hide "Device reset time-out" item.
+                (123).Hide "Device power-up delay" item.
+                (124).Set "Enable Hibernation" item default value is "Disabled".
+                (125).Hide "ACPI Settings" item.
+                (126).Hide "PCI-X Latency Timer" item.
+                (127).Set "ASPM Support" item default value is "Disable".
+                (128).Hide "ARI Forwarding" item.
+                (129).Hide "Atomic0p Requester Enable" item.
+                (130).Hide "Atomic0p Egress Blocking" item.
+                (131).Hide "ID0 Request Enable" item.
+                (132).Hide "ID0 Completion Enable" item.
+                (133).Hide "LTR Mechanism Enable" item.
+                (134).Hide "End-End TLP Prefix Blocking" item.
+                (135).Hide "Clock Power Management" item.
+                (136).Hide "Compliance SOS" item.
+                (137).Hide "Hardware Autonomous Width" item.
+                (138).Hide "Hardware Autonomous Speed" item.
+                (139).Hide "User Password" item.
+                (140).Fix "Projcessor Version" string too long(Can't show all processor infomation).
+                (141).Hide "If ONLY the User's password is set, then this is a power on password and must be entered to boot or enter Setup. In setup the user will have Adminstrator rights." string.
+                (142).Hide show PCH Lan information at "Advanced" page.
+                (143).Hide "BIST Selection" item.
+                (144).Hide "Extended APIC" item.
+         17.Set "GpnvErrorLogging_SUPPORT" token is "0".
+         18.Set "TRACEHUB_SUPPORT" token is "0".
+         19.Add the TSE Sources.
+         20.Fix the ONLY administator's password is set,the user can enter setup directly by ENTER key.
+         21.Add "SataDecInfo_01" module to show SATA device information and hide no used item.
+         22.Add PXE rom support for PCI-e port0(Intel i211).
+         23.Set NCT6776 GP34 is watch dog output pin.
+        
+Description of Technical Changes:
+        1.  \ADDONS\ASTVBIOS.396(Replace)
+        2.  \ADDONS\uefi_2300_396.efi(Replace)
+        3.  \HarrisonvillePkg\Library\PeiPolicyUpdateLib\PeiPchPolicyUpdate.c                   //G160-002(3)
+        4.  \AmiModulePkg\IO\NCT6776\NCT6776PeiInit.c                                           //G160-002(4)
+        5.  \AmiModulePkg\IO\NCT6776\NCT6776PeiIoTable.h                                        //G160-002(5)
+        6.  \AmiModulePkg\IO\NCT6776\NCT6776PeiIoTable.h                                        //G160-002(6)
+        7.  \G160-002\AmiCRBPkg\CRB\Crb.sdl                                                     //G160-002(7)
+        8.  \AmiModulePkg\IO\NCT6776\NCT6776HwmSetup.c                                          //G160-002(8)
+            \Harrisonville.sdl                                                                  //G160-002(8)
+            \AmiModulePkg\GenericSio\SioStaticSetup.c                                           //G160-002(8)
+            \AmiModulePkg\IO\NCT6776\NCT6776HwmSetup.sd                                         //G160-002(8)
+            \AmiModulePkg\GenericSio\SioStaticSetup.uni                                         //G160-002(8)
+            \AmiModulePkg\IO\NCT6776\NCT6776HwmSetup.uni                                        //G160-002(8)
+        9.  \AmiModulePkg\IO\NCT6776\NCT6776PeiIoTable.h                                        //G160-002(9)
+            \AmiModulePkg\IO\NCT6776\NCT6776.sdl                                                //G160-002(9)
+        10. \HarrisonvillePkg\Library\PeiPlatformHookLib\GpioTableHarcuvar.h                    //G160-002(10)
+        11. \HarrisonvillePkg\Library\PeiPlatformHookLib\GpioTableHarcuvar.h                    //G160-002(11)
+        12. \AmiCompatibilityPkg\Setup\Setup.vfr                                                //G160-002(11)
+            \AmiCompatibilityPkg\AmiCompatibilityPkg.mak                                        //G160-002(11)
+            \HarrisonvillePkg\Library\PeiPlatformHookLib\GpioTableHarcuvar.h                    //G160-002(11)
+            \AmiCompatibilityPkg\Setup\Setup.uni                                                //G160-002(11)
+            \AmiCRBPkg\CRB\Pei\CrbPei.c                                                         //G160-002(11)
+            \AmiCRBPkg\CRB\Pei\CrbPei.inf                                                       //G160-002(11)
+        13. \AmiCompatibilityPkg\Smbios\SmbiosBoard\SmbiosBoard.sdl                             //G160-002(12)
+        14. \AmiCRBPkg\CRB\Crb.sdl                                                              //G160-002(15)
+        15. \AmiCompatibilityPkg\Setup\AmiTse.sd                                                //G160-002(16)
+            \AmiModulePkg\DbgTables\DebugPortTables.sd                                          //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\IntelRcSetup.vfr                                //G160-002(16)
+            \HarrisonvillePkg\Include\SetupVariable.h                                           //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\WakeFromSx.hfr                                  //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\ProcessorSetup.hfr                              //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\EventLogSetup.hfr                               //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\NorthBridgeConfig.hfr                           //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\SouthBridge.hfr                                 //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\UsbSetup\UsbConfig.hfr                          //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\UsbSetup\UsbSsController\UsbSsController.hfr    //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\SataSetup\SataConfig.hfr                        //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\SataSetup\SataController\Port\SataPortConfiguration.hfr         //G160-002(16)
+            \HarrisonvillePkg\Platform\SetupDxe\SataSetup\SataController\SataController.hfr     //G160-002(16)
+            \AmiModulePkg\BootSectorWriteProtect\BootSectorWriteProtect.sd                      //G160-002(16)
+            \AmiModulePkg\CSM\Csm.sdl                                                           //G160-002(16)
+            \AmiModulePkg\CSM\CsmPolicy\Csm.sd                                                  //G160-002(16)
+            \AmiModulePkg\Usb\Setup\Usb.sd                                                      //G160-002(16)
+            \AmiModulePkg\ACPI\ACPI.sdl                                                         //G160-002(16)
+            \AmiModulePkg\PCI\PciStaticSetup.sd                                                 //G160-002(16)
+        16. \AmiGpnvErrorLoggingPkg\Gpnv\GpnvErrorLogging.sdl                                   //G160-002(17)
+        17. \AmiCRBPkg\CRB\Crb.sdl                                                              //G160-002(18)
+        18. Add "TSESources_1256" Module.
+        19. \AmiTsePkg\Core\em\AMITSE\commonoem.c                                               //G160-002(20)
+        20. Add "SataDecInfo_01" module.
+            \AmiModulePkg\SataDevInfo\SataDevInfo.vfr                                           //G160-002(21)
+        21. \Harrisonville.sdl                                                                  //G160-002(22)
+            \ADDONS\LAN\BA1556L2_i211.LOM+
+        22. \AmiModulePkg\IO\NCT6776\NCT6776PeiIoTable.h                                        //G160-002(23)
+            \AmiModulePkg\IO\NCT6776\NCT6776.sdl                                                //G160-002(23)
+--------------------------------------------------------------------------------------------------------------------------------
+(No.1)
+Model Name : DNA1160		PCB Rev: A 		Author:	Rossi Wu
+Old Version: 
+New Version: G160-001		BIOS CKS:E017h		Build Date: 08/30/2016
+
+Description of changes:
+	1.Change the MakeFile to let the file name be built automatically.
+	2.Fix compile error when add "GenericSio" module.
+	3.Disable secure boot support.
+	4.Fix compile error when add "NCT6776" module.
+	5.Disable NCT6776F floppy,parallel,serial port 2,keyboard,mouse,CIR,CIRWAKE,VID,SVID support.
+	6.Set NCT6776F index port is 4Eh data port is 4Fh.
+	7.For H/W request config ME setting.
+                a.Set Lane#0 is PCIe.
+                b.Set Lane#2 is PCIe.
+                c.Set Lane#4 is PCIe.
+                d.Set Lane#6 is PCIe.
+                e.Set Lane#8 is PCIe.
+                f.Set Lane#10 is PCIe.
+                g.Set Lane#12 is PCIe.
+                h.Set Lane#5 is SATA.
+                i.Set Lane#7 is SATA.
+                j.Set Lane#16 is USB3.
+                k.Set Lane#17 is USB3.
+                l.Set Lane#1,3,,9,11,13,14,15,18,19 no used.
+                m.Set PCIe Root Port Cluster 1 - Root Port 5 Enable is "RP5 Enable".
+                n.Set PCIe Root Port Cluster 1 - Root Port 7 Enable is "RP7 Enable".
+                o.Set PCIe Root Cluster 1 - Root Port 4~7 x1 Link Width Enable is "x1".
+                p.Set PCIe Root Port Cluster 0 - Root Port 1 Enable is "RP1 Enable".
+                q.Set PCIe Root Port Cluster 0 - Root Port 2 Enable is "RP2 Enable".
+                r.Set PCIe Root Port Cluster 0 - Root Port 3 Enable is "RP3 Enable".
+                s.Set PCIe Root Cluster 1 - Root Port 0~3 x1 Link Width Enable is "x1".
+                t.Set eMMC Controller Disable is "eMMC Disable".
+                u.Set SATA Controller 0 Siable is "SATA Ctrl 0 Enable".
+                v.Set SATA Controller 1 Siable is "SATA Ctrl 1 Disable".
+                w.Change PCH LAN0 and LAN1 config bin file.
+        8.Add AST1300 EFI driver and VGA rom.
+        9.Set "Video" item default value is "Legacy".
+        10.Set "Boot option filter" item default is "Legacy only".
+        11.Set "SIO_SETUP_USE_APTIO_4_STYLE" token is "1".
+        12.Add support hot key "F7" popup menu.
+        13.Set channel A dimm 1 SPD address is 0xA4 and channel B dimm 0 SPD address is 0xA2.
+        14.Set "DEBUG_COM_PORT" token is "2".
+        15.Set "TOTAL_SIO_SERIAL_PORTS" token is "1" and set "TOTAL_PCI_SERIAL_PORTS" token is "0".
+        16.Fixed no debug message at early stage.
+        17.Fix console function fail.
+        18.Set PCH UART0~3 "HSUART MODE" item default value is "Hide".
+        19.Set "Bifurcation PCIE0" and "Bifurcation PCIE1" item default value is "x2x2x2x2".
+        20.Fix can't detect some pcie device.
+           a.Set "FIA Mux Configuration Override" item default value is "Enable".
+           b.Set "Lane 0" item default value is "PCIE Function".
+           c.Set "Lane 2" item default value is "PCIE Function".
+           d.Set "Lane 4" item default value is "PCIE Function".
+           e.Set "Lane 5" item default value is "SATA Function".
+           f.Set "Lane 6" item default value is "PCIE Function".
+           g.Set "Lane 7" item default value is "SATA Function".
+           h.Set "Lane 8" item default value is "PCIE Function".
+           i.Set "Lane 10" item default value is "PCIE Function".
+           j.Set "Lane 12" item default value is "PCIE Function".
+           k.Set "Lane 16" item default value is "XHCI Function".
+           l.Set "Lane 17" item default value is "XHCI Function".
+        21.Fix system hang post code "0x30".
+        22.Set "DEFAULT_YEAR" token is "2016".
+        23.Set "Terminal_SUPPORT" token is "0" because there are problems(System hang).
+
+Description of Technical Changes:
+	1.Add "SuperI/O - NCT6776" module.
+	2.Add "GenericSio" module.
+	3.  \Harrisonville.mak                                                                          //G160-001(1)
+            \Harrisonville.sdl                                                                          //G160-001(1)
+	4.  \AmiModulePkg\GenericSio\GenericSio.sdl                                                     //G160-001(2)
+	5.  \Harrisonville.sdl                                                                          //G160-001(3)
+	6.  \AmiModulePkg\IO\NCT6776\NCT6776.sdl                                                        //G160-001(4)
+	7.  \AmiModulePkg\IO\NCT6776\NCT6776.sdl                                                        //G160-001(5)
+	8.  \AmiModulePkg\IO\NCT6776\NCT6776.sdl                                                        //G160-001(6)
+	9.Add "FixedBootOrder" module.
+	10. \HarrisonvillePkg\Tools\FTool\Config\DNA1160.xml+
+	11. \HarrisonvillePkg\BuildImage.bat                                                            //G160-001(7)
+	    \HarrisonvillePkg\Tools\FTool\DNV_LAN0_SGMII_MRVL_noMNG_0.83_0.01_8000014F.bin+
+	    \HarrisonvillePkg\Tools\FTool\DNV_LAN1_SGMII_MRVL_noMNG_0.83_0.01_80000150.bin+
+	12. \Harrisonville.sdl                                                                          //G160-001(8)
+	13. \ADDONS\VGA\*.*+
+	14. \Harrisonville.sdl                                                                          //G160-001(9)
+	15. \AmiModulePkg\CSM\Csm.sdl                                                                   //G160-001(10)
+	16. \AmiModulePkg\GenericSio\GenericSio.sdl                                                     //G160-001(11)
+	17. \AmiTsePkg\Core\em\AMITSE\AMITSE.sdl                                                        //G160-001(12)
+	    \AmiTsePkg\Core\em\AMITSE\AmiTSEStr.uni                                                     //G160-001(12)
+            \AmiTsePkg\Core\em\AMITSE\commonoem.c                                                       //G160-001(12)
+        18. \DenvertonPkg\SystemAgent\Library\PeiSaPolicyLib\PeiSaPolicyLib.c                           //G160-001(13)
+            \DenvertonPkg\SystemAgent\Mrc\Mmrc\ProjectData\DNV\External\Source\OemHooks.c               //G160-001(13)
+        19. \AmiCRBPkg\CRB\Crb.sdl                                                                      //G160-001(14)
+        20. \Harrisonville.sdl                                                                          //G160-001(15)
+        21. \HarrisonvillePkg\Platform\PlatformStage2Pei\PlatformIchInit.c                              //G160-001(16)
+            \HarrisonvillePkg\Platform\PlatformStage1Pei\PlatformStage1.c                               //G160-001(16)
+        22. \Harrisonville.sdl                                                                          //G160-001(17)
+        23. \HarrisonvillePkg\Platform\SetupDxe\UartController\UartConfig.hfr                           //G160-001(18)
+        24. \HarrisonvillePkg\Platform\SetupDxe\PcieIpSetup\PcieIp.hfr                                  //G160-001(19)
+        25. \HarrisonvillePkg\Platform\SetupDxe\IntelRcSetup.vfr                                        //G160-001(20)
+        26. \HarrisonvillePkg\Platform\PlatformInfo\Pei\PlatformInfoPei.c                               //G160-001(21)
+        27. \AmiChipsetModulePkg\Sb.sdl                                                                 //G160-001(22)
+        28. \AmiModulePkg\Terminal\Terminal.sdl                                                         //G160-001(23)
+--------------------------------------------------------------------------------------------------------------------------------

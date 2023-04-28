@@ -1,0 +1,149 @@
+ TcgDxe
+
+ Timestamp is 6448e7fa (Wed Apr 26 16:59:38 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00004d8cH .text                   CODE
+ 0002:00000000 00000298H .data                   DATA
+ 0002:000002a0 000002e2H .rdata                  DATA
+ 0002:00000588 000000c8H .bss                    DATA
+ 0003:00000000 000002e8H .pdata                  DATA
+ 0004:00000000 000002a8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002c0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c0       MeasureTeImage             0000000000000380 f   TcgDxe:xTcgDxe.obj
+ 0001:00000200       MeasurePeImage             00000000000004c0 f   TcgDxe:xTcgDxe.obj
+ 0001:000004dc       TcgMeasurePeImage          000000000000079c f   TcgDxe:xTcgDxe.obj
+ 0001:000007f0       TcgMeasureGptTable         0000000000000ab0 f   TcgDxe:xTcgDxe.obj
+ 0001:00000cc4       TcgMeasureAction           0000000000000f84 f   TcgDxe:xTcgDxe.obj
+ 0001:00000dd0       TcgOnReadyToBoot           0000000000001090 f   TcgDxe:xTcgDxe.obj
+ 0001:00000dd8       CommonTcgDxEntryPoint      0000000000001098 f   TcgDxe:xTcgDxe.obj
+ 0001:00001114       EMpTcmDxeInit              00000000000013d4 f   TcgDxe:EMpTcmDxe.obj
+ 0001:00001158       EMpTcmDxeClose             0000000000001418 f   TcgDxe:EMpTcmDxe.obj
+ 0001:0000119c       EMpTcmDxeGetStatusInfo     000000000000145c f   TcgDxe:EMpTcmDxe.obj
+ 0001:000011e0       AllocateMemoryBelow4G      00000000000014a0 f   TcgDxe:EMpTcmDxe.obj
+ 0001:0000124c       EMpTcmDxeTransmit          000000000000150c f   TcgDxe:EMpTcmDxe.obj
+ 0001:0000145c       TpmDxeInit                 000000000000171c f   TcgDxe:TpmDxe.obj
+ 0001:000014e0       TpmDxeClose                00000000000017a0 f   TcgDxe:TpmDxe.obj
+ 0001:000014f4       TpmDxeGetStatusInfo        00000000000017b4 f   TcgDxe:TpmDxe.obj
+ 0001:00001500       TpmDxeTransmit             00000000000017c0 f   TcgDxe:TpmDxe.obj
+ 0001:00001620       TcmBootDone                00000000000018e0 f   TcgDxe:TcgDxe.obj
+ 0001:0000162c       TcgCommonPassThrough       00000000000018ec f   TcgDxe:TcgDxe.obj
+ 0001:000016ac       TcgDxePassThroughToTpm     000000000000196c f   TcgDxe:TcgDxe.obj
+ 0001:00001748       TcgDxeCommonExtend         0000000000001a08 f   TcgDxe:TcgDxe.obj
+ 0001:0000181c       TcgDxeStatusCheck          0000000000001adc f   TcgDxe:TcgDxe.obj
+ 0001:00001934       TcgTcmDxeStatusCheck       0000000000001bf4 f   TcgDxe:TcgDxe.obj
+ 0001:00001a68       TcgDxeHashAll              0000000000001d28 f   TcgDxe:TcgDxe.obj
+ 0001:00001b00       TcmDxeHashAll              0000000000001dc0 f   TcgDxe:TcgDxe.obj
+ 0001:00001bac       TcgDxeHashLogExtendEventTcm 0000000000001e6c f   TcgDxe:TcgDxe.obj
+ 0001:00001c98       TcgDxeLogEvent             0000000000001f58 f   TcgDxe:TcgDxe.obj
+ 0001:00001e6c       TcmDxeLogEvent             000000000000212c f   TcgDxe:TcgDxe.obj
+ 0001:00001f54       TcgDxePassThroughToTcm     0000000000002214 f   TcgDxe:TcgDxe.obj
+ 0001:00001fc4       TcgDxeHashLogExtendEvent   0000000000002284 f   TcgDxe:TcgDxe.obj
+ 0001:00002084       OverwriteSystemMemory      0000000000002344 f   TcgDxe:TcgDxe.obj
+ 0001:00002198       ReadMORValue               0000000000002458 f   TcgDxe:TcgDxe.obj
+ 0001:00002268       OnAcpiInstalled            0000000000002528 f   TcgDxe:TcgDxe.obj
+ 0001:0000235c       SetTcgAcpiTable            000000000000261c f   TcgDxe:TcgDxe.obj
+ 0001:00002554       TcgDxeEntry                0000000000002814 f   TcgDxe:TcgDxe.obj
+ 0001:00002700       CopyMem                    00000000000029c0 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00002720       GetPcdProtocol             00000000000029e0 f   DxePcdLib:DxePcdLib.obj
+ 0001:0000275c       InternalAllocatePool       0000000000002a1c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000278c       AllocateZeroPool           0000000000002a4c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000027b8       GetDevicePathSize          0000000000002a78 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00002800       IsDevicePathValid          0000000000002ac0 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:0000282c       InternalEmptyFunction      0000000000002aec f   UefiLib:UefiLib.obj
+ 0001:00002830       EfiCreateEventReadyToBootEx 0000000000002af0 f   UefiLib:UefiNotTiano.obj
+ 0001:000028d0       MicroSecondDelay           0000000000002b90 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:00003c28       SHA1Update                 0000000000003ee8 f   ShaLib:sha1.obj
+ 0001:00003d00       SHA1Final                  0000000000003fc0 f   ShaLib:sha1.obj
+ 0001:00003e38       TcgCommonCopyMem           00000000000040f8 f   TisLib12:TcgCommon12.obj
+ 0001:00003e78       TcgCommonSha1Start         0000000000004138 f   TisLib12:TcgCommon12.obj
+ 0001:00003f6c       TcgCommonSha1Update        000000000000422c f   TisLib12:TcgCommon12.obj
+ 0001:000040d0       TcmCommonSha1CompleteExtend 0000000000004390 f   TisLib12:TcgCommon12.obj
+ 0001:00004268       TcmCommonExtend            0000000000004528 f   TisLib12:TcgCommon12.obj
+ 0001:00004340       SHA1HashAll                0000000000004600 f   TisLib12:TcgCommon12.obj
+ 0001:000043c4       LocateATcgHob              0000000000004684 f   TisLib12:TcgCommon12.obj
+ 0001:000044c4       FixedDelay                 0000000000004784 f   TisLib12:TpmLib.obj
+ 0001:0000459c       TisReleaseLocality         000000000000485c f   TisLib12:TpmLib.obj
+ 0001:0000463c       TisPrepareSendCommand      00000000000048fc f   TisLib12:TpmLib.obj
+ 0001:000046e0       TisSendCommand             00000000000049a0 f   TisLib12:TpmLib.obj
+ 0001:000047c8       TisReceiveResponse         0000000000004a88 f   TisLib12:TpmLib.obj
+ 0001:00004888       IsTcmSupportType           0000000000004b48 f   AmiTcmlib:AmiTcmlib.obj
+ 0001:000048c4       TpmDxeReportStatusCode     0000000000004b84 f   TpmReportStatusCodeWrapperLibDxe:TpmReportStatusCodeWrapperLibDxe.obj
+ 0001:000048f8       PttHciPresenceCheck        0000000000004bb8 f   PttHciDeviceNullLib:PttHciLibNull.obj
+ 0001:000048fc       InternalReportStatusCode   0000000000004bbc f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000049b4       ReportStatusCodeEx         0000000000004c74 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00004b10       MpLoc                      0000000000004dd0     TcgDxe:EMpCallBin.obj
+ 0001:00004b16       TPMRTCSave                 0000000000004dd6     TcgDxe:EMpCallBin.obj
+ 0001:00004b18       Prepare2Thunkproc          0000000000004dd8 f   TcgDxe:EMpCallBin.obj
+ 0001:00004b2c       TpmDxeCallMPDriver         0000000000004dec f   TcgDxe:EMpCallBin.obj
+ 0001:00004b8a       TcmIoDelay                 0000000000004e4a f   TcgDxe:EMpCallBin.obj
+ 0001:00004b93       TcmDxeCallMPDriver         0000000000004e53 f   TcgDxe:EMpCallBin.obj
+ 0001:00004bb8       TcgThunkSwitchback         0000000000004e78 f   TcgDxe:EMpCallBin.obj
+ 0001:00004bb8       TcgThunk32                 0000000000004e78 f   TcgDxe:EMpCallBin.obj
+ 0001:00004bc0       InternalMemCompareMem      0000000000004e80     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00004be0       InternalMemCopyMem         0000000000004ea0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00004c20       InternalMemSetMem          0000000000004ee0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00004c40       InternalMemZeroMem         0000000000004f00     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00004c60       InternalMemSetMem32        0000000000004f20     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00004c80       InternalMemSetMem64        0000000000004f40     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00004ca0       InternalX86WriteGdtr       0000000000004f60     BaseLib:WriteGdtr.obj
+ 0001:00004cb0       InternalX86ReadGdtr        0000000000004f70     BaseLib:ReadGdtr.obj
+ 0001:00004cb4       IsPTP                      0000000000004f74 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:00004ce8       GetCurrentInterfaceType    0000000000004fa8 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:00004d40       isTpm20CrbPresent          0000000000005000 f   CrbLibDxe:Tpm20CRBLib.obj
+ 0001:00004d80       CpuPause                   0000000000005040     BaseLib:CpuPause.obj
+ 0001:00004d84       memcpy                     0000000000005044 f   TcgHashIntrinsicLib:CopyMem.obj
+ 0002:00000000       gEfiCallerIdGuid           0000000000005060     TcgDxe:AutoGen.obj
+ 0002:00000010       gEfiTcgMpDriverHobGuid     0000000000005070     TcgDxe:AutoGen.obj
+ 0002:00000020       ExtendedDataGuid           0000000000005080     TcgDxe:AutoGen.obj
+ 0002:00000030       AmiTcgResetVarHobGuid      0000000000005090     TcgDxe:AutoGen.obj
+ 0002:00000040       gEfiPeiTcgLogHobGuid       00000000000050a0     TcgDxe:AutoGen.obj
+ 0002:00000050       gEfiEventReadyToBootGuid   00000000000050b0     TcgDxe:AutoGen.obj
+ 0002:00000060       gEfiHobListGuid            00000000000050c0     TcgDxe:AutoGen.obj
+ 0002:00000070       gEfiTpmDeviceProtocolGuid  00000000000050d0     TcgDxe:AutoGen.obj
+ 0002:00000080       gEfiTcgProtocolGuid        00000000000050e0     TcgDxe:AutoGen.obj
+ 0002:00000090       gTcgPlatformSetupPolicyGuid 00000000000050f0     TcgDxe:AutoGen.obj
+ 0002:000000a0       gAmiTpmSupportTypeProtocolguid 0000000000005100     TcgDxe:AutoGen.obj
+ 0002:000000b0       gEfiBlockIoProtocolGuid    0000000000005110     TcgDxe:AutoGen.obj
+ 0002:000000c0       gEfiAcpiSupportGuid        0000000000005120     TcgDxe:AutoGen.obj
+ 0002:000000d0       gEfiDiskIoProtocolGuid     0000000000005130     TcgDxe:AutoGen.obj
+ 0002:000000e0       gEfiTcgPlatformProtocolGuid 0000000000005140     TcgDxe:AutoGen.obj
+ 0002:000000f0       gPcdProtocolGuid           0000000000005150     TcgDxe:AutoGen.obj
+ 0002:00000100       gEfiStatusCodeRuntimeProtocolGuid 0000000000005160     TcgDxe:AutoGen.obj
+ 0002:00000110       TCMSupportedArray          0000000000005170     AmiTcmlib:AmiTcmlib.obj
+ 0002:00000120       mTcgAcpiTableTemplate      0000000000005180     TcgDxe:TcgDxe.obj
+ 0002:00000250       mGdtEntries                00000000000052b0     TcgDxe:EMpTcmDxe.obj
+ 0002:00000520       _gUefiDriverRevision       0000000000005580     TcgDxe:AutoGen.obj
+ 0002:00000528       mGdt                       0000000000005588     TcgDxe:EMpTcmDxe.obj
+ 0002:00000538       ??_C@_1DM@KHNCPJJB@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAO?$AAv?$AAe?$AAr?$AAw?$AAr?$AAi?$AAt?$AAe?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$AA@ 0000000000005598     TcgDxe:TcgDxe.obj
+ 0002:00000574       ??_C@_06NBPDFJIL@ALASKA?$AA@ 00000000000055d4     TcgDxe:TcgDxe.obj
+ 0002:0000057c       ??_C@_01IFKFHFEL@?$IA?$AA@ 00000000000055dc     ShaLib:sha1.obj
+ 0002:00000580       ??_C@_01LOCGONAA@?$AA?$AA@ 00000000000055e0     ShaLib:sha1.obj
+ 0002:00000588       gEfiPartTypeUnusedGuid     00000000000055e8     TcgDxe:AutoGen.obj
+ 0002:000005f8       gImageHandle               0000000000005658     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000600       gST                        0000000000005660     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000608       gBS                        0000000000005668     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000610       gRT                        0000000000005670     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000618       mPcd                       0000000000005678     DxePcdLib:DxePcdLib.obj
+ 0002:00000620       mPiPcd                     0000000000005680     DxePcdLib:DxePcdLib.obj
+ 0002:00000628       mPcdInfo                   0000000000005688     DxePcdLib:DxePcdLib.obj
+ 0002:00000630       mPiPcdInfo                 0000000000005690     DxePcdLib:DxePcdLib.obj
+ 0002:00000638       mHobList                   0000000000005698     DxeHobLib:HobLib.obj
+ 0002:00000640       mReportStatusCodeLibStatusCodeProtocol 00000000000056a0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000648       ev1                        00000000000056a8     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00002468       CopyLogToAcpiNVS           0000000000002728 f    CIL library: CIL module
+ 0001:00002874       InternalAcpiDelay          0000000000002b34 f    CIL library: CIL module
+ 0001:00002904       SHA1Transform              0000000000002bc4 f    CIL library: CIL module
+ 0001:000044e4       CheckStsBit                00000000000047a4 f    CIL library: CIL module
+ 0001:00004544       ReadBurstCount             0000000000004804 f    CIL library: CIL module

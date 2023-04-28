@@ -1,0 +1,60 @@
+ PchSmbusDxe
+
+ Timestamp is 6448e7f0 (Wed Apr 26 16:59:28 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001863H .text                   CODE
+ 0002:00000000 0000006cH .data                   DATA
+ 0002:00000070 00000004H .rdata                  DATA
+ 0002:00000078 00000038H .bss                    DATA
+ 0003:00000000 000000c0H .pdata                  DATA
+ 0004:00000000 000000a0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000084       SmbusExecute               0000000000000304 f   PchSmbusDxe:PchSmbusEntry.obj
+ 0001:000000fc       InitializePchSmbus         000000000000037c f   PchSmbusDxe:PchSmbusEntry.obj
+ 0001:0000042c       SmbusArpDevice             00000000000006ac f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:000004b0       SmbusGetArpMap             0000000000000730 f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:000004d4       SmbusNotify                0000000000000754 f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:00000604       PollSmbusNotify            0000000000000884 f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:00000714       SmbusAssignAddress         0000000000000994 f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:000007d4       SmbusFullArp               0000000000000a54 f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:000009e8       SmbusDirectedArp           0000000000000c68 f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:00000aa8       GetNextAvailableAddress    0000000000000d28 f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:00000b08       IsAddressAvailable         0000000000000d88 f   PchSmbusDxe:PchSmbusArp.obj
+ 0001:00000d70       InternalAllocatePool       0000000000000ff0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000da0       EfiGetSystemConfigurationTable 0000000000001020 f   UefiLib:UefiLib.obj
+ 0001:00000e58       SmbusIoRead                00000000000010d8 f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:00000e6c       SmbusIoWrite               00000000000010ec f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:00000e8c       IoDone                     000000000000110c f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:00000ee4       SmbusExec                  0000000000001164 f   PeiDxeSmmPchSmbusCommonLib:PchSmbusExec.obj
+ 0001:00001684       GetPchSeries               0000000000001904 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:000017a0       InternalMemCopyMem         0000000000001a20     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000017e0       InternalMemSetMem          0000000000001a60     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001800       InternalMemZeroMem         0000000000001a80     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001820       InternalMemSetMem32        0000000000001aa0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001840       InternalMemSetMem64        0000000000001ac0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00001860       CpuPause                   0000000000001ae0     BaseLib:CpuPause.obj
+ 0002:00000000       gEfiSmbusArpMapGuid        0000000000001b00     PchSmbusDxe:AutoGen.obj
+ 0002:00000010       gEfiHobListGuid            0000000000001b10     PchSmbusDxe:AutoGen.obj
+ 0002:00000020       gPchPolicyHobGuid          0000000000001b20     PchSmbusDxe:AutoGen.obj
+ 0002:00000030       gEfiSmbusHcProtocolGuid    0000000000001b30     PchSmbusDxe:AutoGen.obj
+ 0002:00000068       mPchSeries                 0000000000001b68     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00000070       _gUefiDriverRevision       0000000000001b70     PchSmbusDxe:AutoGen.obj
+ 0002:00000078       gImageHandle               0000000000001b78     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000080       gST                        0000000000001b80     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000088       gBS                        0000000000001b88     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000090       gRT                        0000000000001b90     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000000a0       mHobList                   0000000000001ba0     DxeHobLib:HobLib.obj
+ 0002:000000a8       mSmbusContext              0000000000001ba8     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000ba8       PchPcrWrite                0000000000000e28 f    CIL library: CIL module
+ 0001:00000dfc       InternalAcpiDelay          000000000000107c f    CIL library: CIL module

@@ -1,0 +1,45 @@
+ PlatformCpuPolicy
+
+ Timestamp is 6448e7ee (Wed Apr 26 16:59:26 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000071dH .text                   CODE
+ 0002:00000000 00000088H .data                   DATA
+ 0002:00000088 0000001eH .rdata                  DATA
+ 0002:000000c0 00000118H .bss                    DATA
+ 0003:00000000 00000030H .pdata                  DATA
+ 0004:00000000 00000024H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000034       PlatformCpuPolicyEntryPoint 0000000000000294 f   PlatformCpuPolicy:PlatformCpuPolicy.obj
+ 0001:00000650       GetPcdProtocol             00000000000008b0 f   DxePcdLib:DxePcdLib.obj
+ 0001:0000068c       InternalAllocatePool       00000000000008ec f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000006c0       InternalMemCopyMem         0000000000000920     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000700       InternalMemZeroMem         0000000000000960     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gSetupVariableGuid         0000000000000980     PlatformCpuPolicy:AutoGen.obj
+ 0002:00000010       gEfiPlatformCpuProtocolGuid 0000000000000990     PlatformCpuPolicy:AutoGen.obj
+ 0002:00000020       gEfiPlatformTypeProtocolGuid 00000000000009a0     PlatformCpuPolicy:AutoGen.obj
+ 0002:00000030       gIntelCpuPcdsSetDoneProtocolGuid 00000000000009b0     PlatformCpuPolicy:AutoGen.obj
+ 0002:00000040       gPcdProtocolGuid           00000000000009c0     PlatformCpuPolicy:AutoGen.obj
+ 0002:00000050       mCpuSocketStr              00000000000009d0     PlatformCpuPolicy:PlatformCpuPolicy.obj
+ 0002:00000078       mCpuAssetTagStr            00000000000009f8     PlatformCpuPolicy:PlatformCpuPolicy.obj
+ 0002:00000088       _gUefiDriverRevision       0000000000000a08     PlatformCpuPolicy:AutoGen.obj
+ 0002:00000090       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000000a10     PlatformCpuPolicy:PlatformCpuPolicy.obj
+ 0002:000000c0       gImageHandle               0000000000000a40     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000c8       gST                        0000000000000a48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000d0       gBS                        0000000000000a50     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000d8       gRT                        0000000000000a58     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000000e0       mPcd                       0000000000000a60     DxePcdLib:DxePcdLib.obj
+ 0002:000000e8       mPiPcd                     0000000000000a68     DxePcdLib:DxePcdLib.obj
+ 0002:000000f0       mPcdInfo                   0000000000000a70     DxePcdLib:DxePcdLib.obj
+ 0002:000000f8       mPiPcdInfo                 0000000000000a78     DxePcdLib:DxePcdLib.obj
+ 0002:00000100       mPlatformCpuPrivateData    0000000000000a80     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

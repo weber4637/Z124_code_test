@@ -1,0 +1,223 @@
+ PlatformStage1Pei
+
+ Timestamp is 6448e819 (Wed Apr 26 17:00:09 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00005fa5H .text                   CODE
+ 0002:00000000 00007418H .data                   DATA
+ 0002:00007418 00000398H .rdata                  DATA
+ 0002:000077b0 00000008H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000067       _PeiInitPlatformStage1     000002a7 f   PlatformStage1Pei:PlatformStage1.obj
+ 0001:0000018a       _GetSleepTypeAfterWakeup   000003ca f   PlatformStage1Pei:PlatformStage1.obj
+ 0001:000001d9       _EarlyPlatformPchInit      00000419 f   PlatformStage1Pei:PlatformStage1.obj
+ 0001:000002dc       _IsBootWithNoChange        0000051c f   PlatformStage1Pei:BootMode.obj
+ 0001:00000352       _PlatformStage1InitBootMode 00000592 f   PlatformStage1Pei:BootMode.obj
+ 0001:00000465       _PlatformStage1UpdateBootMode 000006a5 f   PlatformStage1Pei:BootMode.obj
+ 0001:000004e4       _PrioritizeBootMode        00000724 f   PlatformStage1Pei:BootMode.obj
+ 0001:0000051c       _PchReset                  0000075c f   PlatformStage1Pei:Reset.obj
+ 0001:0000053d       _Stall                     0000077d f   PlatformStage1Pei:Stall.obj
+ 0001:000005ec       _BaseMemoryTest            0000082c f   PlatformStage1Pei:BaseMemoryTest.obj
+ 0001:000006c5       _InternalPeiCreateHob      00000905 f   PeiHobLib:HobLib.obj
+ 0001:000006ed       _BuildGuidHob              0000092d f   PeiHobLib:HobLib.obj
+ 0001:00000717       _CopyMem                   00000957 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:0000072f       _PchPwrmBaseSet            0000096f f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:00000793       _PchPwrmBaseGet            000009d3 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:000007c9       _PchTcoBaseSet             00000a09 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:00000834       _PchLpcIoEnableDecodingSet 00000a74 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:0000084e       _CpuDeadLoop               00000a8e f   BaseLib:CpuDeadLoop.obj
+ 0001:00000862       _RShiftU64                 00000aa2 f   BaseLib:RShiftU64.obj
+ 0001:0000087e       _LShiftU64                 00000abe f   BaseLib:LShiftU64.obj
+ 0001:0000089a       _PeiServicesInstallPpi     00000ada f   PeiServicesLib:PeiServicesLib.obj
+ 0001:000008ac       _PeiServicesLocatePpi      00000aec f   PeiServicesLib:PeiServicesLib.obj
+ 0001:0000093c       _MicroSecondDelay          00000b7c f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:0000095b       _GetPlatformInfo           00000b9b f   PeiPlatformHookLib:PeiPlatformHooklib.obj
+ 0001:000009da       _ConfigureGpio             00000c1a f   PeiPlatformHookLib:PeiPlatformHooklib.obj
+ 0001:00000a16       _GpioInit                  00000c56 f   PeiPlatformHookLib:PeiPlatformHooklib.obj
+ 0001:00001801       _PlatformInitStage1        00001a41 f   PeiPlatformHookLib:PeiPlatformHooklib.obj
+ 0001:00001868       _ForceRecovery             00001aa8 f   AmiCspLibPei:OemPort.obj
+ 0001:0000186b       _DetectBoardViaGpio        00001aab f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:00001915       _Enable_SMBUS              00001b55 f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:00001952       _Restore_SMBUS             00001b92 f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:0000197a       _I2CRead                   00001bba f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:00001a4b       _DetectBoard               00001c8b f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:00001ccc       _GetFiaHsioInfo            00001f0c f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:00001d18       _PlatformInfoPeiInit       00001f58 f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:000020bd       _DetectDebugMode           000022fd f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:00002129       _DetectMfgMode             00002369 f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:0000219a       _DetectNvClear             000023da f   PlatformInfoPei:PlatformInfoPei.obj
+ 0001:00002274       _TimerStall                000024b4 f   PlatformInfoPei:SysControllerCommunicationLib.obj
+ 0001:000022c7       _I2CSoftwareBusRelease     00002507 f   PlatformInfoPei:SysControllerCommunicationLib.obj
+ 0001:0000230d       _I2CSysCtrlRead            0000254d f   PlatformInfoPei:SysControllerCommunicationLib.obj
+ 0001:0000240b       _SysCtrlReadDwordRetries   0000264b f   PlatformInfoPei:SysControllerCommunicationLib.obj
+ 0001:0000248e       _SysCtrlReadDword          000026ce f   PlatformInfoPei:SysControllerCommunicationLib.obj
+ 0001:000024ac       _I2CSysCtrlWrite           000026ec f   PlatformInfoPei:SysControllerCommunicationLib.obj
+ 0001:00002574       _PeiPolicyInitPreMem       000027b4 f   PeiPolicyInit:PeiPolicyInitPreMem.obj
+ 0001:00002677       _PeiRasPolicyInit          000028b7 f   PeiPolicyInit:PeiRasPolicyInit.obj
+ 0001:00002700       _PeiFiaMuxPolicyInit       00002940 f   PeiPolicyInit:PeiFiaMuxPolicyInit.obj
+ 0001:000027a5       _PeiSiPolicyInit           000029e5 f   PeiPolicyInit:PeiSiPolicyInit.obj
+ 0001:00002838       _AllocatePool              00002a78 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000285e       _AllocateZeroPool          00002a9e f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002879       _GetPeiServicesTablePointer 00002ab9 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00002893       _PchRevealP2sb             00002ad3 f   PeiDxeSmmPchP2sbLib:PchP2sbLib.obj
+ 0001:000028b9       _PchStepping               00002af9 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00002a1b       _GetPchSeries              00002c5b f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00002b0a       _GetPchGeneration          00002d4a f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00002bf9       _GetPchMaxSataPortNum      00002e39 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00002c0d       _MultU64x32                00002e4d f   BaseLib:MultU64x32.obj
+ 0001:00002c27       _DivU64x32                 00002e67 f   BaseLib:DivU64x32.obj
+ 0001:00002c44       _InternalBaseLibAsciiToUpper 00002e84 f   BaseLib:String.obj
+ 0001:00002c55       _AsciiStriCmp              00002e95 f   BaseLib:String.obj
+ 0001:00002c8a       _AsciiStrnCmp              00002eca f   BaseLib:String.obj
+ 0001:00002cb4       _InternalSafeStringIsOverlap 00002ef4 f   BaseLib:SafeString.obj
+ 0001:00002ccf       _AsciiStrnLenS             00002f0f f   BaseLib:SafeString.obj
+ 0001:00002ce9       _AsciiStrCatS              00002f29 f   BaseLib:SafeString.obj
+ 0001:00003845       _GpioGetPadConfig          00003a85 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00003a17       _GpioSetPadConfig          00003c57 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00003cce       _GpioGetInputValue         00003f0e f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00003d28       _GpioGetPadOwnership       00003f68 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00003d94       _GpioGetMaxDwOffsetFromGroup 00003fd4 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00003db4       _GpioGetGroupInfoTable     00003ff4 f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:00003dd0       _GpioIsCorrectPadForThisChipset 00004010 f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:00003e01       _GpioGetLowestGroup        00004041 f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:00003e17       _GpioGetHighestGroup       00004057 f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:00003e2d       _MeFiaMuxConfigGet         0000406d f   MeFiaMuxLib:MeFiaMuxLib.obj
+ 0001:00003f91       _PcieIpPlatformInitDefault 000041d1 f   PcieIpPlatformLib:PeiPcieIpPlatformLib.obj
+ 0001:00004042       _FiaMuxCreateHob           00004282 f   PeiFiaMuxPolicyInitLib:PeiFiaMuxPolicyInitLib.obj
+ 0001:0000408f       _FiaMuxCreatePolicyDefaults 000042cf f   PeiFiaMuxPolicyInitLib:PeiFiaMuxPolicyInitLib.obj
+ 0001:0000412d       _CreateConfigBlocks        0000436d f   PeiSaPolicyLib:PeiSaPolicyLib.obj
+ 0001:0000429a       _SiSaInstallPolicyPpi      000044da f   PeiSaPolicyLib:PeiSaPolicyLib.obj
+ 0001:0000439d       _PchCreatePolicyDefaults   000045dd f   PeiPchPolicyLib:PeiPchPolicyLib.obj
+ 0001:000045ad       _PchPrintSataConfig        000047ed f   PeiPchPolicyLib:PchPrintPolicy.obj
+ 0001:000045c6       _UpdatePeiPchPlatformPolicySata 00004806 f   PlatformPolicyUpdatePeiLib:PeiPchPolicyUpdate.obj
+ 0001:000046cd       _FiaSataDisable            0000490d f   PlatformPolicyUpdatePeiLib:PeiPchPolicyUpdate.obj
+ 0001:00004753       _FiaXhciDisable            00004993 f   PlatformPolicyUpdatePeiLib:PeiPchPolicyUpdate.obj
+ 0001:000047da       _UpdatePeiPchPolicy        00004a1a f   PlatformPolicyUpdatePeiLib:PeiPchPolicyUpdate.obj
+ 0001:00004cf2       _UpdatePeiPcieIpPolicy     00004f32 f   PlatformPolicyUpdatePeiLib:PeiPcieIpPolicyUpdate.obj
+ 0001:00004f5d       _PeiUpdateRasPolicy        0000519d f   PlatformPolicyUpdatePeiLib:PeiRasPolicyUpdate.obj
+ 0001:00005022       _UpdatePeiIqatIpPolicy     00005262 f   PlatformPolicyUpdatePeiLib:PeiIqatIpPolicyUpdate.obj
+ 0001:000050bd       _SetupOverrideFiaMuxPolicy 000052fd f   PlatformPolicyUpdatePeiLib:PeiFiaMuxPolicyUpdate.obj
+ 0001:00005405       _UpdatePeiSaPolicy         00005645 f   PlatformPolicyUpdatePeiLib:PeiSaPolicyUpdate.obj
+ 0001:00005b9a       _UpdatePchUsbConfig        00005dda f   PlatformPolicyUpdatePeiLib:PchPolicyUpdateUsb.obj
+ 0001:00005c5a       _PchSbiExecutionEx         00005e9a f   PeiDxeSmmPchSbiAccessLib:PchSbiAccessLib.obj
+ 0001:00005d40       _GetOnBoardMeType          00005f80 f   MeTypeLib:MeTypeLib.obj
+ 0001:00005d89       _FiaMuxConfigLanesQuerySingleMatch 00005fc9 f   PeiFiaMuxHelperLib:PeiFiaMuxHelperLib.obj
+ 0001:00005df5       _FiaMuxConfigLaneQuery     00006035 f   PeiFiaMuxHelperLib:PeiFiaMuxHelperLib.obj
+ 0001:00005e43       _GetConfigBlock            00006083 f   BaseConfigBlockLib:BaseConfigBlockLib.obj
+ 0001:00005e80       _InternalMemCopyMem        000060c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00005ec0       _InternalMemZeroMem        00006100     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00005ee0       _InternalMemCompareMem     00006120     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00005f00       _InternalMemSetMem         00006140     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00005f20       _InternalMemSetMem32       00006160     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00005f40       _InternalMemSetMem64       00006180     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00005f60       _AsmRdRand16               000061a0     BaseLib:RdRand.obj
+ 0001:00005f75       _AsmRdRand32               000061b5     BaseLib:RdRand.obj
+ 0001:00005f89       _AsmRdRand64               000061c9     BaseLib:RdRand.obj
+ 0002:00000000       _gPlatformInfoHobGuid      00006200     PlatformStage1Pei:AutoGen.obj
+ 0002:00000010       _gEfiBootStateGuid         00006210     PlatformStage1Pei:AutoGen.obj
+ 0002:00000020       _gEfiFirmwarePerformanceGuid 00006220     PlatformStage1Pei:AutoGen.obj
+ 0002:00000030       _gSetupVariableGuid        00006230     PlatformStage1Pei:AutoGen.obj
+ 0002:00000040       _gPchSetupVariableGuid     00006240     PlatformStage1Pei:AutoGen.obj
+ 0002:00000050       _gFiaMuxPolicyHobGuid      00006250     PlatformStage1Pei:AutoGen.obj
+ 0002:00000060       _gSaDataHobGuid            00006260     PlatformStage1Pei:AutoGen.obj
+ 0002:00000070       _gEfiPeiStallPpiGuid       00006270     PlatformStage1Pei:AutoGen.obj
+ 0002:00000080       _gPeiBaseMemoryTestPpiGuid 00006280     PlatformStage1Pei:AutoGen.obj
+ 0002:00000090       _gEfiPeiResetPpiGuid       00006290     PlatformStage1Pei:AutoGen.obj
+ 0002:000000a0       _gPeiCapsulePpiGuid        000062a0     PlatformStage1Pei:AutoGen.obj
+ 0002:000000b0       _gEfiPeiMasterBootModePpiGuid 000062b0     PlatformStage1Pei:AutoGen.obj
+ 0002:000000c0       _gEfiPeiBootInRecoveryModePpiGuid 000062c0     PlatformStage1Pei:AutoGen.obj
+ 0002:000000d0       _gPeiSecPerformancePpiGuid 000062d0     PlatformStage1Pei:AutoGen.obj
+ 0002:000000e0       _gPchPolicyPpiGuid         000062e0     PlatformStage1Pei:AutoGen.obj
+ 0002:000000f0       _gFiaMuxPolicyPpiGuid      000062f0     PlatformStage1Pei:AutoGen.obj
+ 0002:00000100       _gPcieIpPolicyPpiGuid      00006300     PlatformStage1Pei:AutoGen.obj
+ 0002:00000110       _gHeciPpiGuid              00006310     PlatformStage1Pei:AutoGen.obj
+ 0002:00000120       _gRasPolicyPpiGuid         00006320     PlatformStage1Pei:AutoGen.obj
+ 0002:00000130       _gIqatIpPolicyPpiGuid      00006330     PlatformStage1Pei:AutoGen.obj
+ 0002:00000140       _gSiPolicyPpiGuid          00006340     PlatformStage1Pei:AutoGen.obj
+ 0002:00000150       _gSiSaPolicyPpiGuid        00006350     PlatformStage1Pei:AutoGen.obj
+ 0002:00000160       _gPchSpiPpiGuid            00006360     PlatformStage1Pei:AutoGen.obj
+ 0002:00000170       _gEfiPeiReadOnlyVariable2PpiGuid 00006370     PlatformStage1Pei:AutoGen.obj
+ 0002:00000190       _mCmosTable                00006390     PlatformCmosLib:PlatformCmosLib.obj
+ 0002:00000408       _mPchLpSataPortResetToGpioMap 00006608     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000420       _mPchHSataPortResetToGpioMap 00006620     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000460       _mPchLpSataDevSlpPinToGpioMap 00006660     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000478       _mPchHSataDevSlpPinToGpioMap 00006678     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000e58       _IsRecoveryList            00007058     AmiCspLibPei:OemPortList.obj
+ 0002:00000e70       _gPirqRegistersSave        00007070     AmiCspLibPei:SbGeneric.obj
+ 0002:00000e90       _RRegs                     00007090     AmiCspLibPei:SbGeneric.obj
+ 0002:000051c4       _mPpiListRecoveryBootMode  0000b3c4     PlatformStage1Pei:BootMode.obj
+ 0002:00006cac       _PchLpRprDidTable          0000ceac     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00006cc4       _PchHRprDidTable           0000cec4     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00006cec       _mBootModePriority         0000ceec     PlatformStage1Pei:BootMode.obj
+ 0002:00006d1c       _mPpiBootMode              0000cf1c     PlatformStage1Pei:BootMode.obj
+ 0002:00006d28       _mBootModeNotifyList       0000cf28     PlatformStage1Pei:BootMode.obj
+ 0002:00006d68       _mTridentInfo              0000cf68     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00006ef0       _mAspenCoveHsioConfig6     0000d0f0     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00006f28       _mAspenCoveHsioConfig8     0000d128     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00006f60       _mAspenCoveHsioConfig10    0000d160     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00006f98       _mAspenCoveHsioConfig20    0000d198     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00006fd0       _mAspenCoveHsioConfig12    0000d1d0     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007008       _mHarcuvarHsioConfig       0000d208     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007094       _mCarCreekModuleHsioConfig 0000d294     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000070b0       _mCarCreekModuleHsioConfig2 0000d2b0     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000070cc       _mDelphiModuleHsioConfig   0000d2cc     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000070e8       _mBigBugCreekHsioConfig    0000d2e8     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007108       _mCormorantLakeHsioConfig  0000d308     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007198       _mPineLakeHsioConfig       0000d398     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000071f0       _mNanoHsioConfig           0000d3f0     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:0000727c       _mPchStepping              0000d47c     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00007280       _mPchSeries                0000d480     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00007284       _mPchGeneration            0000d484     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00007288       _mPchHGpioGroupInfo        0000d488     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00007378       _SaIpBlocks                0000d578     PeiSaPolicyLib:PeiSaPolicyLib.obj
+ 0002:00007390       _mDevIntConfig             0000d590     PeiPchPolicyLib:PeiPchPolicyLib.obj
+ 0002:00007408       _mPxRcConfig               0000d608     PeiPchPolicyLib:PeiPchPolicyLib.obj
+ 0002:00007410       _mSmbusRsvdAddresses       0000d610     PeiPchPolicyLib:PeiPchPolicyLib.obj
+ 0002:00007414       _mSmbusSTPRsvdAddresses    0000d614     PlatformPolicyUpdatePeiLib:PeiPchPolicyUpdate.obj
+ 0002:00007418       ??_C@_1BE@GOINENOO@?$AAB?$AAo?$AAo?$AAt?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$AA@ 0000d618     PlatformStage1Pei:BootMode.obj
+ 0002:0000742c       ??_C@_00CNPNBAHC@?$AA@     0000d62c     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007430       ??_C@_0O@BCPGCJOI@OSTRICH?5BAY?9S?$AA@ 0000d630     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007440       ??_C@_0M@FGIDFHJH@Ostrich?5Bay?$AA@ 0000d640     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:0000744c       ??_C@_07FNKOKEG@Ostrich?$AA@ 0000d64c     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007454       ??_C@_0L@BOKNKHOP@Aspen?5Cove?$AA@ 0000d654     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007460       ??_C@_0L@OIDBLACK@ASPEN?5COVE?$AA@ 0000d660     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:0000746c       ??_C@_09NHODNGDD@AspenCove?$AA@ 0000d66c     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007478       ??_C@_08EDENMAIF@HARCUVAR?$AA@ 0000d678     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007484       ??_C@_08LOBAHMAB@Harcuvar?$AA@ 0000d684     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007490       ??_C@_0BB@IHGHKHOM@CAR?5CREEK?5MODULE?$AA@ 0000d690     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000074a4       ??_C@_0BB@IAAKNABN@Car?5Creek?5Module?$AA@ 0000d6a4     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000074b8       ??_C@_0BD@GPEEBPFN@CAR?5CREEK?5MODULE?52?$AA@ 0000d6b8     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000074cc       ??_C@_0BD@KMICCMFD@Car?5Creek?5Module?52?$AA@ 0000d6cc     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000074e0       ??_C@_0O@DKIKELMA@BIG?5BUG?5CREEK?$AA@ 0000d6e0     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:000074f0       ??_C@_0O@CGHINJEA@Big?5Bug?5Creek?$AA@ 0000d6f0     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007500       ??_C@_0O@ICHNGNME@CormorantLake?$AA@ 0000d700     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007510       ??_C@_0O@FOJOGAON@CORMORANTLAKE?$AA@ 0000d710     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007520       ??_C@_0L@MPNIFEOG@PINELAKE?9B?$AA@ 0000d720     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:0000752c       ??_C@_0L@JNFNDCMP@PineLake?9B?$AA@ 0000d72c     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007538       ??_C@_09KOHGGFAN@MINNEHAHA?$AA@ 0000d738     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007544       ??_C@_09NBNKFLCK@Minnehaha?$AA@ 0000d744     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007550       ??_C@_08FJLNLFGL@PINELAKE?$AA@ 0000d750     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:0000755c       ??_C@_08GFCBCGOL@PineLake?$AA@ 0000d75c     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007568       ??_C@_04PAFDCCJC@NANO?$AA@ 0000d768     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007570       ??_C@_04PNKIOPOO@Nano?$AA@ 0000d770     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007578       ??_C@_08PDJBMMEC@Bird?5Key?$AA@ 0000d778     PlatformInfoPei:PlatformInfoPei.obj
+ 0002:00007584       ??_C@_1BC@MHCGFAOM@?$AAP?$AAc?$AAh?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000d784     PeiPolicyDebugLib:PeiPchPolicyDebugLib.obj
+ 0002:00007598       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000d798     PlatformPolicyUpdatePeiLib:PeiPchPolicyUpdate.obj
+ 0002:000075b0       _MicronMemoryDownDevice    0000d7b0     PlatformPolicyUpdatePeiLib:PeiSaPolicyUpdate.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000008c7       _InternalAcpiDelay         00000b07 f    CIL library: CIL module
+ 0001:00002d59       _GpioConfigureSklPch       00002f99 f    CIL library: CIL module
+ 0001:00003513       _GpioClearAllGpioInterrupts 00003753 f    CIL library: CIL module
+ 0001:00003681       _GpioReadWritePadCfgReg    000038c1 f    CIL library: CIL module
+ 0001:000036fe       _GpioReadWriteReg          0000393e f    CIL library: CIL module
+ 0001:00003750       _GpioLockPadsUsingSbi      00003990 f    CIL library: CIL module
+ 0001:00005d70       _GetFiaMuxLaneConfig       00005fb0 f    CIL library: CIL module

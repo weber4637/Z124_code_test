@@ -1,0 +1,68 @@
+ PcRtcSmm
+
+ Timestamp is 6448e7ef (Wed Apr 26 16:59:27 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001493H .text                   CODE
+ 0002:00000000 00000050H .data                   DATA
+ 0002:00000050 00000022H .rdata                  DATA
+ 0002:00000080 00000180H .bss                    DATA
+ 0003:00000000 000000ccH .pdata                  DATA
+ 0004:00000000 000000a0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000044       ProcessLibraryConstructorList 00000000000002a4 f   PcRtcSmm:AutoGen.obj
+ 0001:00000134       ProcessModuleEntryPointList 0000000000000394 f   PcRtcSmm:AutoGen.obj
+ 0001:0000022c       PcRtcEfiGetTime            000000000000048c f   PcRtcSmm:PcRtcSmmEntry.obj
+ 0001:00000238       PcRtcEfiSetTime            0000000000000498 f   PcRtcSmm:PcRtcSmmEntry.obj
+ 0001:00000258       PcRtcEfiGetWakeupTime      00000000000004b8 f   PcRtcSmm:PcRtcSmmEntry.obj
+ 0001:00000264       PcRtcEfiSetWakeupTime      00000000000004c4 f   PcRtcSmm:PcRtcSmmEntry.obj
+ 0001:00000270       PcRtcInit                  00000000000004d0 f   PcRtcSmm:PcRtcSmm.obj
+ 0001:000005ac       PcRtcGetTime               000000000000080c f   PcRtcSmm:PcRtcSmm.obj
+ 0001:000006c0       PcRtcSetTime               0000000000000920 f   PcRtcSmm:PcRtcSmm.obj
+ 0001:00000858       PcRtcGetWakeupTime         0000000000000ab8 f   PcRtcSmm:PcRtcSmm.obj
+ 0001:00000a0c       PcRtcSetWakeupTime         0000000000000c6c f   PcRtcSmm:PcRtcSmm.obj
+ 0001:00000c2c       ConvertRtcTimeToEfiTime    0000000000000e8c f   PcRtcSmm:PcRtcSmm.obj
+ 0001:00000e04       RtcWaitToUpdate            0000000000001064 f   PcRtcSmm:PcRtcSmm.obj
+ 0001:00000e8c       RtcTimeFieldsValid         00000000000010ec f   PcRtcSmm:PcRtcSmm.obj
+ 0001:00000f94       IsLeapYear                 00000000000011f4 f   PcRtcSmm:PcRtcSmm.obj
+ 0001:00000fec       ConvertEfiTimeToRtcTime    000000000000124c f   PcRtcSmm:PcRtcSmm.obj
+ 0001:00001184       InternalAssertJumpBuffer   00000000000013e4 f   BaseLib:SetJump.obj
+ 0001:00001188       BufferInSmram              00000000000013e8 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000011cc       InternalAllocatePool       000000000000142c f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000011fc       FreePool                   000000000000145c f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001290       InternalReportStatusCode   00000000000014f0 f   SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001320       SetJump                    0000000000001580     BaseLib:SetJump.obj
+ 0001:000013b0       InternalLongJump           0000000000001610     BaseLib:LongJump.obj
+ 0001:00001430       InternalMemCopyMem         0000000000001690     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001470       InternalMemZeroMem         00000000000016d0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001490       CpuPause                   00000000000016f0     BaseLib:CpuPause.obj
+ 0002:00000000       gEfiCallerIdGuid           0000000000001700     PcRtcSmm:AutoGen.obj
+ 0002:00000010       SmmRsTableGuid             0000000000001710     PcRtcSmm:AutoGen.obj
+ 0002:00000020       gEfiSmmBase2ProtocolGuid   0000000000001720     PcRtcSmm:AutoGen.obj
+ 0002:00000030       gEfiSmmAccess2ProtocolGuid 0000000000001730     PcRtcSmm:AutoGen.obj
+ 0002:00000040       gEfiSmmStatusCodeProtocolGuid 0000000000001740     PcRtcSmm:AutoGen.obj
+ 0002:00000050       _gUefiDriverRevision       0000000000001750     PcRtcSmm:AutoGen.obj
+ 0002:00000058       ??_C@_17JDGAGJBP@?$AAR?$AAT?$AAC?$AA?$AA@ 0000000000001758     PcRtcSmm:PcRtcSmm.obj
+ 0002:00000060       ??_C@_1BC@MKOBNGFO@?$AAR?$AAT?$AAC?$AAA?$AAL?$AAA?$AAR?$AAM?$AA?$AA@ 0000000000001760     PcRtcSmm:PcRtcSmm.obj
+ 0002:00000180       gSmmRs                     0000000000001880     PcRtcSmm:PcRtcSmmEntry.obj
+ 0002:00000188       gImageHandle               0000000000001888     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000190       gST                        0000000000001890     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000198       gBS                        0000000000001898     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001a0       gRT                        00000000000018a0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000001a8       gSmst                      00000000000018a8     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:000001b0       mReportStatusCode          00000000000018b0     SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000001b8       mStatusCodeProtocol        00000000000018b8     SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000001c0       mSmramRanges               00000000000018c0     <common>
+ 0002:000001c8       mSmramRangeCount           00000000000018c8     <common>
+ 0002:000001e0       mModuleGlobal              00000000000018e0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00001234       InternalAcpiDelay          0000000000001494 f    CIL library: CIL module

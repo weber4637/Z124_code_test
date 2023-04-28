@@ -1,0 +1,40 @@
+ TcgDxeplatform
+
+ Timestamp is 6448e7f9 (Wed Apr 26 16:59:37 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000322H .text                   CODE
+ 0002:00000000 0000003cH .data                   DATA
+ 0002:00000040 00000284H .rdata                  DATA
+ 0002:000002c8 00000020H .bss                    DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 00000034H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000005c       ProcessModuleEntryPointList 00000000000002dc f   TcgDxeplatform:AutoGen.obj
+ 0001:00000158       TcgGetNextGuidHob          00000000000003d8 f   TisLib12:TcgCommon12.obj
+ 0001:00000240       InternalMemCompareMem      00000000000004c0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000260       InternalMemCopyMem         00000000000004e0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000002a0       CpuPause                   0000000000000520     BaseLib:CpuPause.obj
+ 0001:000002b0       InternalMemZeroMem         0000000000000530     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000002d0       InternalMemSetMem          0000000000000550     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000002f0       InternalMemSetMem32        0000000000000570     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000310       InternalMemSetMem64        0000000000000590     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       AmiTcgResetVarHobGuid      00000000000005c0     TcgDxeplatform:AutoGen.obj
+ 0002:00000010       gEfiHobListGuid            00000000000005d0     TcgDxeplatform:AutoGen.obj
+ 0002:00000020       gAmiTcgPlatformProtocolguid 00000000000005e0     TcgDxeplatform:AutoGen.obj
+ 0002:00000030       TCMSupportedArray          00000000000005f0     AmiTcmlib:AmiTcmlib.obj
+ 0002:000002c0       _gUefiDriverRevision       0000000000000880     TcgDxeplatform:AutoGen.obj
+ 0002:000002c8       gImageHandle               0000000000000888     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002d0       gST                        0000000000000890     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002d8       gBS                        0000000000000898     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002e0       gRT                        00000000000008a0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

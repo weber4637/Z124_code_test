@@ -1,0 +1,131 @@
+ NvmeDynamicSetup
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000300dH .text                   CODE
+ 0002:00000000 000007c0H .data                   DATA
+ 0002:000007c0 0000024eH .rdata                  DATA
+ 0002:00000a10 00000110H .bss                    DATA
+ 0003:00000000 000001b0H .pdata                  DATA
+ 0004:00000000 000001d8H .xdata                  DATA
+ 0005:00000000 00000060H .rsrc$01                DATA
+ 0005:00000060 00000280H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002c0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000002c       ProcessLibraryConstructorList 00000000000002ec f   NvmeDynamicSetup:AutoGen.obj
+ 0001:000000e4       NvmeHiiAddStringInternal   00000000000003a4 f   NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0001:0000029c       NvmeHiiCreateTextOpCode    000000000000055c f   NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0001:0000033c       GetNvmeControllerName      00000000000005fc f   NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0001:0000047c       GetNvmeDeviceDetails       000000000000073c f   NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0001:00000acc       NvmeInitDynamicSubFormContents 0000000000000d8c f   NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0001:00000c14       NvmeInitDynamicMainFormContents 0000000000000ed4 f   NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0001:00000eb4       NvmeCallback               0000000000001174 f   NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0001:00000ef4       NvmeDynamicSetupEntryPoint 00000000000011b4 f   NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0001:00001114       HiiAllocateOpCodeHandle    00000000000013d4 f   UefiHiiLib:HiiLib.obj
+ 0001:00001170       HiiFreeOpCodeHandle        0000000000001430 f   UefiHiiLib:HiiLib.obj
+ 0001:000011a0       InternalHiiGrowOpCodeHandle 0000000000001460 f   UefiHiiLib:HiiLib.obj
+ 0001:00001200       InternalHiiCreateOpCodeExtended 00000000000014c0 f   UefiHiiLib:HiiLib.obj
+ 0001:00001250       HiiCreateGuidOpCode        0000000000001510 f   UefiHiiLib:HiiLib.obj
+ 0001:000012ac       HiiCreateSubTitleOpCode    000000000000156c f   UefiHiiLib:HiiLib.obj
+ 0001:00001308       InternalHiiUpdateFormPackageData 00000000000015c8 f   UefiHiiLib:HiiLib.obj
+ 0001:000015e8       HiiUpdateForm              00000000000018a8 f   UefiHiiLib:HiiLib.obj
+ 0001:00001844       Malloc                     0000000000001b04 f   AmiDxeLib:EfiLib.obj
+ 0001:00001870       MallocZ                    0000000000001b30 f   AmiDxeLib:EfiLib.obj
+ 0001:000018b0       DPLength                   0000000000001b70 f   AmiDxeLib:EfiLib.obj
+ 0001:000018f4       DPAddNode                  0000000000001bb4 f   AmiDxeLib:EfiLib.obj
+ 0001:000019cc       DPCopy                     0000000000001c8c f   AmiDxeLib:EfiLib.obj
+ 0001:00001a14       GetEfiVariable             0000000000001cd4 f   AmiDxeLib:EfiLib.obj
+ 0001:00001ad4       StringToChar16             0000000000001d94 f   AmiDxeLib:HiiUtilities.obj
+ 0001:00001c80       StringToBlock              0000000000001f40 f   AmiDxeLib:HiiUtilities.obj
+ 0001:00002454       SetCallback                0000000000002714 f   AmiDxeLib:HiiUtilities.obj
+ 0001:00002600       ItoaHelper                 00000000000028c0 f   AmiDxeLib:StdLibC.obj
+ 0001:00002674       StrtolEx                   0000000000002934 f   AmiDxeLib:StdLibC.obj
+ 0001:0000273c       GetStatusCodeString        00000000000029fc f   AmiDxeLib:StdLibC.obj
+ 0001:00002824       Swprintf                   0000000000002ae4 f   AmiDxeLib:StdLibC.obj
+ 0001:0000284c       Swprintf_s_va_list         0000000000002b0c f   AmiDxeLib:StdLibC.obj
+ 0001:00002ca0       Swprintf_s                 0000000000002f60 f   AmiDxeLib:StdLibC.obj
+ 0001:00002cc0       MemCmp                     0000000000002f80 f   AmiDxeLib:Memory.obj
+ 0001:00002d38       InternalAllocatePool       0000000000002ff8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002d68       AllocateZeroPool           0000000000003028 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002d94       InternalReallocatePool     0000000000003054 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002e30       GetCpuTimer                00000000000030f0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00002e40       CPULib_CpuID               0000000000003100 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00002e80       memset                     0000000000003140     AmiDxeLib:MemSet.obj
+ 0001:00002e8e       MemSetAsm                  000000000000314e f   AmiDxeLib:MemSet.obj
+ 0001:00002ee0       memcpy                     00000000000031a0     AmiDxeLib:MemCpy.obj
+ 0001:00002ee0       MemCpyAsm                  00000000000031a0 f   AmiDxeLib:MemCpy.obj
+ 0001:00002f90       InternalMemCopyMem         0000000000003250     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00002fd0       InternalMemCompareMem      0000000000003290     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00002ff0       InternalMemZeroMem         00000000000032b0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gEfiIfrTianoGuid           00000000000032e0     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000010       gEfiHiiStringProtocolGuid  00000000000032f0     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000020       gAmiNvmeControllerProtocolGuid 0000000000003300     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000030       gEfiPciIoProtocolGuid      0000000000003310     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000040       gEfiDevicePathProtocolGuid 0000000000003320     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000050       gEfiHiiFontProtocolGuid    0000000000003330     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000060       gEfiHiiImageProtocolGuid   0000000000003340     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000070       gEfiHiiDatabaseProtocolGuid 0000000000003350     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000080       gEfiHiiConfigRoutingProtocolGuid 0000000000003360     NvmeDynamicSetup:AutoGen.obj
+ 0002:000000b0       EfiErrorStatus             0000000000003390     AmiDxeLib:StdLibC.obj
+ 0002:000003f0       PiErrorStatus              00000000000036d0     AmiDxeLib:StdLibC.obj
+ 0002:00000440       AmiErrorStatus             0000000000003720     AmiDxeLib:StdLibC.obj
+ 0002:00000480       EfiWarningStatus           0000000000003760     AmiDxeLib:StdLibC.obj
+ 0002:000004f0       PiWarningStatus            00000000000037d0     AmiDxeLib:StdLibC.obj
+ 0002:00000538       EfiUnknown                 0000000000003818     AmiDxeLib:StdLibC.obj
+ 0002:00000778       CallBack                   0000000000003a58     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:00000790       SetupCallBack              0000000000003a70     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:000007b0       guidDevicePath             0000000000003a90     AmiDxeLib:EfiLib.obj
+ 0002:000007c0       GuidPattern                0000000000003aa0     AmiDxeLib:HiiUtilities.obj
+ 0002:000007d0       NamePattern                0000000000003ab0     AmiDxeLib:HiiUtilities.obj
+ 0002:000007e0       PathPattern                0000000000003ac0     AmiDxeLib:HiiUtilities.obj
+ 0002:000007f0       OffsetPattern              0000000000003ad0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000800       ValuePattern               0000000000003ae0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000810       _gUefiDriverRevision       0000000000003af0     NvmeDynamicSetup:AutoGen.obj
+ 0002:00000814       ??_C@_15JKMGFKLP@?$AA?$CF?$AAa?$AA?$AA@ 0000000000003af4     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:00000820       ??_C@_1CI@FONICKEJ@?$AA?$CF?$AA0?$AA2?$AAX?$AA?3?$AA?$CF?$AA0?$AA2?$AAX?$AA?3?$AA?$CF?$AA0?$AA2?$AAX?$AA?3?$AA?$CF?$AA0?$AA2?$AAX?$AA?$AA@ 0000000000003b00     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:00000848       ??_C@_19KBJOGOJG@?$AA?$CF?$AA0?$AA4?$AAX?$AA?$AA@ 0000000000003b28     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:00000858       ??_C@_1BM@EGGIHGAI@?$AAN?$AAa?$AAm?$AAe?$AAs?$AAp?$AAa?$AAc?$AAe?$AA?3?$AA?5?$AA?$CF?$AAd?$AA?$AA@ 0000000000003b38     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:00000878       ??_C@_1BO@GJKGFINC@?$AAS?$AAi?$AAz?$AAe?$AA?3?$AA?5?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?5?$AAG?$AAB?$AA?$AA@ 0000000000003b58     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:00000898       ??_C@_1BC@EIHPMFOL@?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?5?$AAG?$AAB?$AA?$AA@ 0000000000003b78     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:000008b0       ??_C@_1CK@NAOHGDGJ@?$AAN?$AAo?$AA?5?$AAN?$AAV?$AAM?$AAE?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAF?$AAo?$AAu?$AAn?$AAd?$AA?$AA@ 0000000000003b90     NvmeDynamicSetup:NvmeDynamicSetup.obj
+ 0002:000008e0       ??_C@_1M@DPLGJLCD@?$AAG?$AAU?$AAI?$AAD?$AA?$DN?$AA?$AA@ 0000000000003bc0     UefiHiiLib:HiiLib.obj
+ 0002:000008f0       ??_C@_1M@PJAPFKED@?$AAP?$AAA?$AAT?$AAH?$AA?$DN?$AA?$AA@ 0000000000003bd0     UefiHiiLib:HiiLib.obj
+ 0002:00000900       ??_C@_1O@JONPFMKD@?$AAV?$AAA?$AAL?$AAU?$AAE?$AA?$DN?$AA?$AA@ 0000000000003be0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000910       ??_C@_1BA@HDPFBAGC@?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA?$AA@ 0000000000003bf0     AmiDxeLib:HiiUtilities.obj
+ 0002:00000920       ??_C@_1M@MDEMFNHP@?$AAN?$AAA?$AAM?$AAE?$AA?$DN?$AA?$AA@ 0000000000003c00     AmiDxeLib:HiiUtilities.obj
+ 0002:00000930       ??_C@_1CC@KHCIBBEI@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA0?$AA?$CG?$AAW?$AAI?$AAD?$AAT?$AAH?$AA?$DN?$AA?$AA@ 0000000000003c10     AmiDxeLib:HiiUtilities.obj
+ 0002:00000958       ??_C@_1CG@KPEBDNIC@?$AA?$CG?$AAO?$AAF?$AAF?$AAS?$AAE?$AAT?$AA?$DN?$AA0?$AA?$CG?$AAW?$AAI?$AAD?$AAT?$AAH?$AA?$DN?$AA?$CF?$AAx?$AA?$AA@ 0000000000003c38     AmiDxeLib:HiiUtilities.obj
+ 0002:00000980       ??_C@_0M@LCCONGAO@EFI_SUCCESS?$AA@ 0000000000003c60     AmiDxeLib:StdLibC.obj
+ 0002:00000990       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 0000000000003c70     AmiDxeLib:StdLibC.obj
+ 0002:000009f8       ??_C@_1O@PMJNFNEJ@?$AA?$CF?$AAS?$AA?$CI?$AA?$CF?$AAX?$AA?$CJ?$AA?$AA@ 0000000000003cd8     AmiDxeLib:StdLibC.obj
+ 0002:00000a08       ??_C@_15MAOEGKJF@?$AA?$CF?$AAS?$AA?$AA@ 0000000000003ce8     AmiDxeLib:StdLibC.obj
+ 0002:00000a28       gImageHandle               0000000000003d08     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000a30       gST                        0000000000003d10     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000a38       gBS                        0000000000003d18     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000a40       gRT                        0000000000003d20     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000a48       gHiiFont                   0000000000003d28     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a50       gHiiString                 0000000000003d30     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a58       gHiiImage                  0000000000003d38     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a60       gHiiDatabase               0000000000003d40     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a68       gHiiConfigRouting          0000000000003d48     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0002:00000a70       mUefiFormBrowser2          0000000000003d50     UefiHiiLib:HiiLib.obj
+ 0002:00000af0       pST                        0000000000003dd0     AmiDxeLib:EfiLib.obj
+ 0002:00000af8       pBS                        0000000000003dd8     AmiDxeLib:EfiLib.obj
+ 0002:00000b00       pRS                        0000000000003de0     AmiDxeLib:EfiLib.obj
+ 0002:00000b08       TheImageHandle             0000000000003de8     AmiDxeLib:EfiLib.obj
+ 0002:00000b10       gNvmeControllerList        0000000000003df0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00001d00       FindDeviceHandle           0000000000001fc0 f    CIL library: CIL module
+ 0001:00001e78       HiiAccessExtractConfig     0000000000002138 f    CIL library: CIL module
+ 0001:000021c0       HiiAccessRouteConfig       0000000000002480 f    CIL library: CIL module
+ 0001:00002448       HiiAccessFormCallback      0000000000002708 f    CIL library: CIL module

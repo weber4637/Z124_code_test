@@ -1,0 +1,161 @@
+ KbcEmul
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00003560H .text                   CODE
+ 0002:00000000 00000778H .data                   DATA
+ 0002:00000780 00000036H .rdata                  DATA
+ 0002:000007c0 000004c8H .bss                    DATA
+ 0003:00000000 00000324H .pdata                  DATA
+ 0004:00000000 00000120H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c4       EmulationEntryPoint        0000000000000364 f   KbcEmul:KbcEmul.obj
+ 0001:000002e8       Emulation_Init             0000000000000588 f   KbcEmul:KbcEmul.obj
+ 0001:0000074c       Get6064SmiTrapStatus       00000000000009ec f   KbcEmul:KbcEmul.obj
+ 0001:000007b4       Emulation6064TrapEnable    0000000000000a54 f   KbcEmul:KbcEmul.obj
+ 0001:00000864       Emulation6064TrapDisable   0000000000000b04 f   KbcEmul:KbcEmul.obj
+ 0001:00000914       KbcEmulationFeature        0000000000000bb4 f   KbcEmul:KbcEmul.obj
+ 0001:0000091c       FindSMICpu                 0000000000000bbc f   KbcEmul:Kbccore.obj
+ 0001:00000994       trap64w                    0000000000000c34 f   KbcEmul:Kbccore.obj
+ 0001:000009dc       trap60w                    0000000000000c7c f   KbcEmul:Kbccore.obj
+ 0001:00000a24       trap64r                    0000000000000cc4 f   KbcEmul:Kbccore.obj
+ 0001:00000a68       trap60r                    0000000000000d08 f   KbcEmul:Kbccore.obj
+ 0001:00000aac       KBC_WaitForInputBufferToBeFree 0000000000000d4c f   KbcEmul:Legacykbc.obj
+ 0001:00000ae0       KBC_ReadDataByte           0000000000000d80 f   KbcEmul:Legacykbc.obj
+ 0001:00000b10       KBC_WriteCommandByte       0000000000000db0 f   KbcEmul:Legacykbc.obj
+ 0001:00000b34       kegkbc_readCCB             0000000000000dd4 f   KbcEmul:Legacykbc.obj
+ 0001:00000cdc       kbc_mouse_wdata            0000000000000f7c f   KbcEmul:Legacykbc.obj
+ 0001:00000e48       kbc_kbd_wdata              00000000000010e8 f   KbcEmul:Legacykbc.obj
+ 0001:00000f54       kbc_kbd_wdata2             00000000000011f4 f   KbcEmul:Legacykbc.obj
+ 0001:00000f7c       kbc_wccb                   000000000000121c f   KbcEmul:Legacykbc.obj
+ 0001:00000fcc       on_kbc_write_command       000000000000126c f   KbcEmul:Legacykbc.obj
+ 0001:000010e0       kbc_passthrough_rstatus    0000000000001380 f   KbcEmul:Legacykbc.obj
+ 0001:000010ec       kbc_passthrough_rdata      000000000000138c f   KbcEmul:Legacykbc.obj
+ 0001:0000117c       legkbc_sendout             000000000000141c f   KbcEmul:Legacykbc.obj
+ 0001:0000123c       mouse_idle                 00000000000014dc f   KbcEmul:VirtualMouse.obj
+ 0001:00001410       mouse_echo                 00000000000016b0 f   KbcEmul:VirtualMouse.obj
+ 0001:00001454       mouse_reciev_option        00000000000016f4 f   KbcEmul:VirtualMouse.obj
+ 0001:00001488       msInput_Send               0000000000001728 f   KbcEmul:VirtualMouse.obj
+ 0001:000015e0       SendMouseBuffer            0000000000001880 f   KbcEmul:VirtualMouse.obj
+ 0001:000016dc       Legacymouse_send_resp      000000000000197c f   KbcEmul:LegacyMouse.obj
+ 0001:000016dc       vmouse_send_resp           000000000000197c f   KbcEmul:VirtualMouse.obj
+ 0001:00001754       InitVirtualMouse           00000000000019f4 f   KbcEmul:VirtualMouse.obj
+ 0001:00001824       Legacymouse_idle           0000000000001ac4 f   KbcEmul:LegacyMouse.obj
+ 0001:00001a60       Legacymouse_echo           0000000000001d00 f   KbcEmul:LegacyMouse.obj
+ 0001:00001aa4       Legacymouse_reciev_option  0000000000001d44 f   KbcEmul:LegacyMouse.obj
+ 0001:00001ad8       LegacymsInput_Send         0000000000001d78 f   KbcEmul:LegacyMouse.obj
+ 0001:00001bd4       SendLegacyMouseBuffer      0000000000001e74 f   KbcEmul:LegacyMouse.obj
+ 0001:00001d60       Legacymouse_pumpQueue      0000000000002000 f   KbcEmul:LegacyMouse.obj
+ 0001:00001d60       vmouse_pumpQueue           0000000000002000 f   KbcEmul:VirtualMouse.obj
+ 0001:00001da8       InitLegacyMouse            0000000000002048 f   KbcEmul:LegacyMouse.obj
+ 0001:00001e78       vkbc_write_command         0000000000002118 f   KbcEmul:VirtualKbc.obj
+ 0001:00002058       vkbc_read_status           00000000000022f8 f   KbcEmul:VirtualKbc.obj
+ 0001:000020c8       vkbc_write_data            0000000000002368 f   KbcEmul:VirtualKbc.obj
+ 0001:000021b4       vkbc_read_data             0000000000002454 f   KbcEmul:VirtualKbc.obj
+ 0001:0000224c       virtkbc_sendout            00000000000024ec f   KbcEmul:VirtualKbc.obj
+ 0001:0000233c       vkbc_readCCB               00000000000025dc f   KbcEmul:VirtualKbc.obj
+ 0001:00002344       kbd_scanning               00000000000025e4 f   KbcEmul:VirtualKbd.obj
+ 0001:000024dc       vkbd_read_codes            000000000000277c f   KbcEmul:VirtualKbd.obj
+ 0001:00002514       vkbd_read_option           00000000000027b4 f   KbcEmul:VirtualKbd.obj
+ 0001:00002574       vkbd_rw_scancode           0000000000002814 f   KbcEmul:VirtualKbd.obj
+ 0001:000025b4       vkbd_send_resp             0000000000002854 f   KbcEmul:VirtualKbd.obj
+ 0001:000025b4       LegacyKbd_send_resp        0000000000002854 f   KbcEmul:Legacykbd.obj
+ 0001:00002628       kbdInput_Send              00000000000028c8 f   KbcEmul:VirtualKbd.obj
+ 0001:00002704       kbdInput_GetTranslation    00000000000029a4 f   KbcEmul:VirtualKbd.obj
+ 0001:00002710       kbdInput_updateLED         00000000000029b0 f   KbcEmul:VirtualKbd.obj
+ 0001:00002714       InitVirtualKbd             00000000000029b4 f   KbcEmul:VirtualKbd.obj
+ 0001:000027c4       Legacykbd_scanning         0000000000002a64 f   KbcEmul:Legacykbd.obj
+ 0001:00002914       LegacyKbd_read_codes       0000000000002bb4 f   KbcEmul:Legacykbd.obj
+ 0001:0000294c       LegacyKbd_read_option      0000000000002bec f   KbcEmul:Legacykbd.obj
+ 0001:0000298c       LegacyKbd_rw_scancode      0000000000002c2c f   KbcEmul:Legacykbd.obj
+ 0001:000029cc       vkbd_pumpQueue             0000000000002c6c f   KbcEmul:VirtualKbd.obj
+ 0001:000029cc       LegacyKbd_pumpQueue        0000000000002c6c f   KbcEmul:Legacykbd.obj
+ 0001:00002a14       LegacykbdInput_Send        0000000000002cb4 f   KbcEmul:Legacykbd.obj
+ 0001:00002bb0       LegacykbdInput_GetTranslation 0000000000002e50 f   KbcEmul:Legacykbd.obj
+ 0001:00002bdc       LegacykbdInput_updateLED   0000000000002e7c f   KbcEmul:Legacykbd.obj
+ 0001:00002db0       ByteReadIO                 0000000000003050 f   KbcEmul:KbcEmulLib.obj
+ 0001:00002de0       ByteWriteIO                0000000000003080 f   KbcEmul:KbcEmulLib.obj
+ 0001:00002e10       DwordWriteIO               00000000000030b0 f   KbcEmul:KbcEmulLib.obj
+ 0001:00002e44       ReadPCIConfig              00000000000030e4 f   KbcEmul:KbcEmulLib.obj
+ 0001:00002ea8       WordWritePCIConfig         0000000000003148 f   KbcEmul:KbcEmulLib.obj
+ 0001:00002f1c       InternalAssertJumpBuffer   00000000000031bc f   BaseLib:SetJump.obj
+ 0001:00002f20       LibInitStatusCodePtr       00000000000031c0 f   AmiDxeLib:EfiLib.obj
+ 0001:00002f64       TraceGetAmiDebugServicesProtocolInstance 0000000000003204 f   AmiDxeLib:EfiLib.obj
+ 0001:00003048       GetSmstConfigurationTable  00000000000032e8 f   AmiDxeLib:EfiLib.obj
+ 0001:000030a0       MemCmp                     0000000000003340 f   AmiDxeLib:Memory.obj
+ 0001:00003114       ValidateUhc                00000000000033b4 f   KbcUhci:KbcUhci.obj
+ 0001:0000315c       WriteLegKeyReg             00000000000033fc f   KbcUhci:KbcUhci.obj
+ 0001:000031a4       Trap6064_Handler           0000000000003444 f   KbcUhci:KbcUhci.obj
+ 0001:000032f0       SetJump                    0000000000003590     BaseLib:SetJump.obj
+ 0001:00003380       InternalLongJump           0000000000003620     BaseLib:LongJump.obj
+ 0001:00003400       GetCpuTimer                00000000000036a0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00003410       CPULib_CpuID               00000000000036b0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00003450       memset                     00000000000036f0     AmiDxeLib:MemSet.obj
+ 0001:0000345e       MemSetAsm                  00000000000036fe f   AmiDxeLib:MemSet.obj
+ 0001:000034b0       MemCpyAsm                  0000000000003750 f   AmiDxeLib:MemCpy.obj
+ 0001:000034b0       memcpy                     0000000000003750     AmiDxeLib:MemCpy.obj
+ 0002:00000000       gEfiSmmBase2ProtocolGuid   0000000000003800     KbcEmul:AutoGen.obj
+ 0002:00000010       gEfiSmmCpuProtocolGuid     0000000000003810     KbcEmul:AutoGen.obj
+ 0002:00000020       gEfiSmmUsbDispatch2ProtocolGuid 0000000000003820     KbcEmul:AutoGen.obj
+ 0002:00000030       gEmul6064MsInputProtocolGuid 0000000000003830     KbcEmul:AutoGen.obj
+ 0002:00000040       gEmul6064TrapProtocolGuid  0000000000003840     KbcEmul:AutoGen.obj
+ 0002:00000050       gEmul6064KbdInputProtocolGuid 0000000000003850     KbcEmul:AutoGen.obj
+ 0002:00000060       gEfiUsbProtocolGuid        0000000000003860     KbcEmul:AutoGen.obj
+ 0002:00000070       gAmiSmmDebugServiceProtocolGuid 0000000000003870     KbcEmul:AutoGen.obj
+ 0002:00000080       gAmiDebugServiceProtocolGuid 0000000000003880     KbcEmul:AutoGen.obj
+ 0002:00000096       MouseIrq                   0000000000003896     KbcEmul:VirtualKbc.obj
+ 0002:00000097       KeyboardIrq                0000000000003897     KbcEmul:VirtualKbc.obj
+ 0002:00000098       Uhci_Hc_Array              0000000000003898     KbcUhci:KbcUhci.obj
+ 0002:000000a8       Uhci_Hc_Array_Size         00000000000038a8     KbcUhci:KbcUhci.obj
+ 0002:000000b0       trap_dispatcher_WithoutKBC 00000000000038b0     KbcUhci:KbcUhci.obj
+ 0002:000000f0       trap_dispatcher_WithKBC    00000000000038f0     KbcUhci:KbcUhci.obj
+ 0002:00000136       OutPortStatus              0000000000003936     KbcEmul:VirtualKbc.obj
+ 0002:00000158       AmiErrorStatus             0000000000003958     AmiDxeLib:StdLibC.obj
+ 0002:0000018b       gTrackPs2Mouse4ByteCheck   000000000000398b     KbcEmul:KbcEmul.obj
+ 0002:00000190       EfiErrorStatus             0000000000003990     AmiDxeLib:StdLibC.obj
+ 0002:000004d0       PiErrorStatus              0000000000003cd0     AmiDxeLib:StdLibC.obj
+ 0002:00000520       EfiWarningStatus           0000000000003d20     AmiDxeLib:StdLibC.obj
+ 0002:00000590       PiWarningStatus            0000000000003d90     AmiDxeLib:StdLibC.obj
+ 0002:000005d8       EfiUnknown                 0000000000003dd8     AmiDxeLib:StdLibC.obj
+ 0002:000006f8       MouseSequence              0000000000003ef8     KbcEmul:Legacykbc.obj
+ 0002:00000730       pMouseSequence             0000000000003f30     KbcEmul:Legacykbc.obj
+ 0002:00000738       gEfiSetupGuid              0000000000003f38     KbcEmul:KbcEmul.obj
+ 0002:00000748       Emulation6064Trap          0000000000003f48     KbcEmul:KbcEmul.obj
+ 0002:00000768       SmmRsTableGuid             0000000000003f68     AmiDxeLib:EfiLib.obj
+ 0002:00000780       _gUefiDriverRevision       0000000000003f80     KbcEmul:AutoGen.obj
+ 0002:00000788       ??_C@_1BG@LLAOJLM@?$AAU?$AAs?$AAb?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AA?$AA@ 0000000000003f88     KbcEmul:KbcEmul.obj
+ 0002:000007a0       ??_C@_1BG@KHOCGFE@?$AAI?$AAs?$AAa?$AAI?$AAr?$AAq?$AAM?$AAa?$AAs?$AAk?$AA?$AA@ 0000000000003fa0     AmiDxeLib:AcpiRes.obj
+ 0002:00000ba0       gVirtualKBC                00000000000043a0     KbcEmul:KbcEmul.obj
+ 0002:00000ba8       KbcPresent                 00000000000043a8     KbcEmul:KbcEmul.obj
+ 0002:00000ba9       AcpiEmulationDisable       00000000000043a9     KbcEmul:Kbccore.obj
+ 0002:00000baa       TrackPort60Read            00000000000043aa     KbcEmul:Legacykbc.obj
+ 0002:00000bab       PacketSize                 00000000000043ab     KbcEmul:VirtualKbc.obj
+ 0002:00000bb0       USBCfg                     00000000000043b0     KbcEmul:KbcEmul.obj
+ 0002:00000bb8       EmulationTrapHandle        00000000000043b8     KbcEmul:KbcEmul.obj
+ 0002:00000bc0       SmmCpuProtocol             00000000000043c0     KbcEmul:KbcEmul.obj
+ 0002:00000bc8       gSMM                       00000000000043c8     KbcEmul:KbcEmul.obj
+ 0002:00000bd0       gSmst1                     00000000000043d0     KbcEmul:KbcEmul.obj
+ 0002:00000bd8       gKbdProtocol               00000000000043d8     KbcEmul:VirtualKbd.obj
+ 0002:00000be0       gImageHandle               00000000000043e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000be8       gST                        00000000000043e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000bf0       gBS                        00000000000043f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000bf8       gSmst                      00000000000043f8     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000c48       pST                        0000000000004448     AmiDxeLib:EfiLib.obj
+ 0002:00000c50       pBS                        0000000000004450     AmiDxeLib:EfiLib.obj
+ 0002:00000c58       pRS                        0000000000004458     AmiDxeLib:EfiLib.obj
+ 0002:00000c60       pSmmBase                   0000000000004460     AmiDxeLib:EfiLib.obj
+ 0002:00000c68       pSmst                      0000000000004468     AmiDxeLib:EfiLib.obj
+ 0002:00000c70       TheImageHandle             0000000000004470     AmiDxeLib:EfiLib.obj
+ 0002:00000c78       mPerformanceMeasurementEnabled 0000000000004478     <common>
+ 0002:00000c80       gUsbDataPtr                0000000000004480     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

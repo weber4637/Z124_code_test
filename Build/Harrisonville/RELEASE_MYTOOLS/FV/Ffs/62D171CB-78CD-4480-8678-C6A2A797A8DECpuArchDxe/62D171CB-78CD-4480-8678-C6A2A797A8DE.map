@@ -1,0 +1,127 @@
+ CpuArchDxe
+
+ Timestamp is 6448e7ef (Wed Apr 26 16:59:27 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000027c7H .text                   CODE
+ 0002:00000000 00000558H .data                   DATA
+ 0002:00000560 00000088H .rdata                  DATA
+ 0002:00000600 000008a0H .bss                    DATA
+ 0003:00000000 000009f8H text                    DATA
+ 0004:00000000 000001bcH .pdata                  DATA
+ 0005:00000000 00000128H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c0       FlushCpuDataCache          00000000000003a0 f   CpuArchDxe:Cpu.obj
+ 0001:000000f0       EnableInterrupt            00000000000003d0 f   CpuArchDxe:Cpu.obj
+ 0001:00000100       DisableInterrupt           00000000000003e0 f   CpuArchDxe:Cpu.obj
+ 0001:00000110       GetInterruptStateInstance  00000000000003f0 f   CpuArchDxe:Cpu.obj
+ 0001:00000140       Init                       0000000000000420 f   CpuArchDxe:Cpu.obj
+ 0001:0000014c       RegisterInterruptHandler   000000000000042c f   CpuArchDxe:Cpu.obj
+ 0001:00000224       GetTimerValue              0000000000000504 f   CpuArchDxe:Cpu.obj
+ 0001:00000310       SetMemoryAttributes        00000000000005f0 f   CpuArchDxe:Cpu.obj
+ 0001:00000418       InitializeCpu              00000000000006f8 f   CpuArchDxe:Cpu.obj
+ 0001:000006e4       GetCpuBusRatio             00000000000009c4 f   CpuArchDxe:Cpu.obj
+ 0001:000007fc       LoadMtrrData               0000000000000adc f   CpuArchDxe:MtrrSync.obj
+ 0001:000008a4       GetMemorySpaceAttributeFromMtrrType 0000000000000b84 f   CpuArchDxe:MemoryAttribute.obj
+ 0001:000008fc       SetGcdMemorySpaceAttributes 0000000000000bdc f   CpuArchDxe:MemoryAttribute.obj
+ 0001:000009fc       RefreshGcdMemoryAttributes 0000000000000cdc f   CpuArchDxe:MemoryAttribute.obj
+ 0001:00000e0c       CommonExceptionHandler     00000000000010ec f   CpuArchDxe:Exception.obj
+ 0001:00000eb0       GetPcdProtocol             0000000000001190 f   DxePcdLib:DxePcdLib.obj
+ 0001:00000eec       InternalAllocatePool       00000000000011cc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000f1c       AllocateZeroPool           00000000000011fc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000f48       InternalAllocateCopyPool   0000000000001228 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000fe8       PreMtrrChange              00000000000012c8 f   MtrrLib:MtrrLib.obj
+ 0001:00001054       PostMtrrChange             0000000000001334 f   MtrrLib:MtrrLib.obj
+ 0001:000010a4       MtrrGetVariableMtrrWorker  0000000000001384 f   MtrrLib:MtrrLib.obj
+ 0001:00001118       MtrrGetMemoryAttributeInVariableMtrrWorker 00000000000013f8 f   MtrrLib:MtrrLib.obj
+ 0001:000011cc       CombineMemoryAttribute     00000000000014ac f   MtrrLib:MtrrLib.obj
+ 0001:000012f8       Power2MaxMemory            00000000000015d8 f   MtrrLib:MtrrLib.obj
+ 0001:00001354       GetMtrrNumberAndDirection  0000000000001634 f   MtrrLib:MtrrLib.obj
+ 0001:00001408       GetMemoryCacheTypeFromMtrrType 00000000000016e8 f   MtrrLib:MtrrLib.obj
+ 0001:00001460       MtrrLibInitializeMtrrMask  0000000000001740 f   MtrrLib:MtrrLib.obj
+ 0001:000014bc       MtrrGetMemoryAttributeByAddressWorker 000000000000179c f   MtrrLib:MtrrLib.obj
+ 0001:00001740       MtrrDebugPrintAllMtrrsWorker 0000000000001a20 f   MtrrLib:MtrrLib.obj
+ 0001:00001954       MtrrSetMemoryAttributeWorker 0000000000001c34 f   MtrrLib:MtrrLib.obj
+ 0001:00002154       MtrrSetVariableMtrrWorker  0000000000002434 f   MtrrLib:MtrrLib.obj
+ 0001:000021a8       MtrrGetAllMtrrs            0000000000002488 f   MtrrLib:MtrrLib.obj
+ 0001:00002224       IsMtrrSupported            0000000000002504 f   MtrrLib:MtrrLib.obj
+ 0001:00002270       InternalReportStatusCode   0000000000002550 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00002310       ReportStatusCodeEx         00000000000025f0 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00002450       LocalApicBaseAddressMsrSupported 0000000000002730 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00002494       GetLocalApicBaseAddress    0000000000002774 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:000024d8       ReadLocalApicReg           00000000000027b8 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00002510       WriteLocalApicReg          00000000000027f0 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:00002558       GetApicMode                0000000000002838 f   BaseXApicX2ApicLib:BaseXApicX2ApicLib.obj
+ 0001:000025a0       AsmReadTsc                 0000000000002880     BaseLib:ReadTsc.obj
+ 0001:000025b0       AsmInvd                    0000000000002890     BaseLib:Invd.obj
+ 0001:000025c0       DisableInterrupts          00000000000028a0     BaseLib:DisableInterrupts.obj
+ 0001:000025d0       EnableInterrupts           00000000000028b0     BaseLib:EnableInterrupts.obj
+ 0001:000025e0       AsmCpuid                   00000000000028c0     BaseLib:CpuId.obj
+ 0001:00002610       AsmWbinvd                  00000000000028f0     BaseLib:Wbinvd.obj
+ 0001:00002620       AsmReadCs                  0000000000002900     BaseLib:ReadCs.obj
+ 0001:00002630       AsmReadEflags              0000000000002910     BaseLib:ReadEflags.obj
+ 0001:00002640       InternalX86WriteIdtr       0000000000002920     BaseLib:WriteIdtr.obj
+ 0001:00002650       InternalX86ReadIdtr        0000000000002930     BaseLib:ReadIdtr.obj
+ 0001:00002660       InternalMemZeroMem         0000000000002940     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002680       InternalMemCopyMem         0000000000002960     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000026c0       CpuPause                   00000000000029a0     BaseLib:CpuPause.obj
+ 0001:000026d0       AsmDisableCache            00000000000029b0     BaseLib:DisableCache.obj
+ 0001:000026f0       AsmWriteCr4                00000000000029d0     BaseLib:WriteCr4.obj
+ 0001:00002700       AsmReadCr4                 00000000000029e0     BaseLib:ReadCr4.obj
+ 0001:00002710       AsmEnableCache             00000000000029f0     BaseLib:EnableCache.obj
+ 0001:00002730       AsmCpuidEx                 0000000000002a10     BaseLib:CpuIdEx.obj
+ 0001:00002760       InternalMemSetMem          0000000000002a40     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00002780       InternalMemSetMem32        0000000000002a60     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000027a0       InternalMemSetMem64        0000000000002a80     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000027c0       CpuFlushTlb                0000000000002aa0     BaseCpuLib:CpuFlushTlb.obj
+ 0002:00000000       gEfiCallerIdGuid           0000000000002ac0     CpuArchDxe:AutoGen.obj
+ 0002:00000010       gEfiDxeServicesTableGuid   0000000000002ad0     CpuArchDxe:AutoGen.obj
+ 0002:00000020       gEfiStatusCodeSpecificDataGuid 0000000000002ae0     CpuArchDxe:AutoGen.obj
+ 0002:00000030       gEfiMpServiceProtocolGuid  0000000000002af0     CpuArchDxe:AutoGen.obj
+ 0002:00000040       gEfiCpuArchProtocolGuid    0000000000002b00     CpuArchDxe:AutoGen.obj
+ 0002:00000050       gPcdProtocolGuid           0000000000002b10     CpuArchDxe:AutoGen.obj
+ 0002:00000060       gEfiStatusCodeRuntimeProtocolGuid 0000000000002b20     CpuArchDxe:AutoGen.obj
+ 0002:00000070       mErrorCodeFlag             0000000000002b30     CpuArchDxe:Exception.obj
+ 0002:00000080       mExceptionTable            0000000000002b40     CpuArchDxe:Exception.obj
+ 0002:00000100       mExceptionNumber           0000000000002bc0     CpuArchDxe:Exception.obj
+ 0002:00000110       mStatusCodeData            0000000000002bd0     CpuArchDxe:Exception.obj
+ 0002:00000480       mFixedMtrrTable            0000000000002f40     CpuArchDxe:MemoryAttribute.obj
+ 0002:00000510       mCpuArchProtocol           0000000000002fd0     CpuArchDxe:Cpu.obj
+ 0002:00000560       mMtrrLibFixedMtrrTable     0000000000003020     MtrrLib:MtrrLib.obj
+ 0002:000005e4       _gUefiDriverRevision       00000000000030a4     CpuArchDxe:AutoGen.obj
+ 0002:00000600       mHandle                    00000000000030c0     CpuArchDxe:Cpu.obj
+ 0002:00000608       mIdtTable                  00000000000030c8     CpuArchDxe:ArchSpecific.obj
+ 0002:00000610       mOrigIdtEntry              00000000000030d0     CpuArchDxe:ArchSpecific.obj
+ 0002:00000618       mOrigIdtEntryCount         00000000000030d8     CpuArchDxe:ArchSpecific.obj
+ 0002:00000620       gImageHandle               00000000000030e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000628       gST                        00000000000030e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000630       gBS                        00000000000030f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000638       gRT                        00000000000030f8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000640       mPcd                       0000000000003100     DxePcdLib:DxePcdLib.obj
+ 0002:00000648       mPiPcd                     0000000000003108     DxePcdLib:DxePcdLib.obj
+ 0002:00000650       mPcdInfo                   0000000000003110     DxePcdLib:DxePcdLib.obj
+ 0002:00000658       mPiPcdInfo                 0000000000003118     DxePcdLib:DxePcdLib.obj
+ 0002:00000660       gDS                        0000000000003120     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000668       mReportStatusCodeLibStatusCodeProtocol 0000000000003128     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000678       mValidMtrrAddressMask      0000000000003138     <common>
+ 0002:00000680       mValidMtrrBitsMask         0000000000003140     <common>
+ 0002:00000688       mMtrrTable                 0000000000003148     <common>
+ 0002:00000690       mIsFlushingGCD             0000000000003150     <common>
+ 0002:000006a0       mExternalVectorTable       0000000000003160     <common>
+ 0003:00000008       InitializeExternalVectorTablePtr 0000000000003968 f   CpuArchDxe:CpuAsm.obj
+ 0003:00000010       AsmIdtVector00             0000000000003970     CpuArchDxe:CpuAsm.obj
+ 0003:00000810       CommonInterruptEntry       0000000000004170 f   CpuArchDxe:CpuAsm.obj
+ 0003:00000973       InitializeGdt              00000000000042d3 f   CpuArchDxe:CpuAsm.obj
+ 0003:000009b0       GDT_BASE                   0000000000004310     CpuArchDxe:CpuAsm.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000f8c       InternalAcpiDelay          000000000000126c f    CIL library: CIL module

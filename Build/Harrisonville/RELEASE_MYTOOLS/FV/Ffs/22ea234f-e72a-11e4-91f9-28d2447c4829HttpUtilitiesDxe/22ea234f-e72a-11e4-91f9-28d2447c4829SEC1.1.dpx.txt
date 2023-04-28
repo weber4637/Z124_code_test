@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\22ea234f-e72a-11e4-91f9-28d2447c4829HttpUtilitiesDxe\22ea234f-e72a-11e4-91f9-28d2447c4829SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiNetworkPkg\UefiNetworkStack\Common\HttpUtilitiesDxe\HttpUtilitiesDxe\OUTPUT\HttpUtilitiesDxe.depex

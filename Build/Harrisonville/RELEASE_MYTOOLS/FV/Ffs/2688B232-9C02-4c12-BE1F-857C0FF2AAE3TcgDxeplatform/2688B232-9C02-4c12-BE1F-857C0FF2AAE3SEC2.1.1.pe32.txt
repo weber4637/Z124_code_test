@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\2688B232-9C02-4c12-BE1F-857C0FF2AAE3TcgDxeplatform\2688B232-9C02-4c12-BE1F-857C0FF2AAE3SEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\TCG2\Common\TcgDxeplatform\TcgDxeplatform\OUTPUT\TcgDxeplatform.efi

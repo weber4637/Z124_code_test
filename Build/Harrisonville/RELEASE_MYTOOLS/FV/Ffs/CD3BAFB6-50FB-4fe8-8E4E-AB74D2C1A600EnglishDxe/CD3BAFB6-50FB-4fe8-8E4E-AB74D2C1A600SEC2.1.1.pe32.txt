@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\CD3BAFB6-50FB-4fe8-8E4E-AB74D2C1A600EnglishDxe\CD3BAFB6-50FB-4fe8-8E4E-AB74D2C1A600SEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\MdeModulePkg\Universal\Disk\UnicodeCollation\EnglishDxe\EnglishDxe\OUTPUT\EnglishDxe.efi

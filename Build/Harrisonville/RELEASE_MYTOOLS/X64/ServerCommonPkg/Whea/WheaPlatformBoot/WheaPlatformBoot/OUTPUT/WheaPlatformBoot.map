@@ -1,0 +1,75 @@
+ WheaPlatformBoot
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000197cH .text                   CODE
+ 0002:00000000 00000180H .data                   DATA
+ 0002:00000180 00000004H .rdata                  DATA
+ 0002:00000190 00000170H .bss                    DATA
+ 0003:00000000 000000ccH .pdata                  DATA
+ 0004:00000000 00000044H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000090       ProcessLibraryConstructorList 0000000000000330 f   WheaPlatformBoot:AutoGen.obj
+ 0001:00000158       WheaBootStartElog          00000000000003f8 f   WheaPlatformBoot:WheaPlatformBoot.obj
+ 0001:00000180       WheaBootEndElog            0000000000000420 f   WheaPlatformBoot:WheaPlatformBoot.obj
+ 0001:00000184       WheaBootElogMemory         0000000000000424 f   WheaPlatformBoot:WheaPlatformBoot.obj
+ 0001:000001cc       WheaBootElogPcieRootDevBridge 000000000000046c f   WheaPlatformBoot:WheaPlatformBoot.obj
+ 0001:00000214       WheaBootElogPciDev         00000000000004b4 f   WheaPlatformBoot:WheaPlatformBoot.obj
+ 0001:0000025c       WheaBootElogProcessor      00000000000004fc f   WheaPlatformBoot:WheaPlatformBoot.obj
+ 0001:000002a4       WheaPlatformBootEntry      0000000000000544 f   WheaPlatformBoot:WheaPlatformBoot.obj
+ 0001:000003ac       InternalAssertJumpBuffer   000000000000064c f   BaseLib:SetJump.obj
+ 0001:000003b0       ZeroMem                    0000000000000650 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:000003b8       BufferInSmram              0000000000000658 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000003fc       InternalAllocatePool       000000000000069c f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000042c       FreePool                   00000000000006cc f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000464       WheaGenElogMemory          0000000000000704 f   WheaErrorLib:WheaErrorLib.obj
+ 0001:00000844       WheaGenElogPcieRootDevBridge 0000000000000ae4 f   WheaErrorLib:WheaErrorLib.obj
+ 0001:00001158       WheaGenElogPciDev          00000000000013f8 f   WheaErrorLib:WheaErrorLib.obj
+ 0001:000014c8       WheaGenElogProcessor       0000000000001768 f   WheaErrorLib:WheaErrorLib.obj
+ 0001:000016e0       CopyMem                    0000000000001980 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00001700       CompareGuid                00000000000019a0 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00001718       PciExpressRead8            00000000000019b8 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00001724       PciExpressRead16           00000000000019c4 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00001730       PciExpressRead32           00000000000019d0 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:0000173c       WheaGetMemoryFruInfo       00000000000019dc f   WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0001:00001810       SetJump                    0000000000001ab0     BaseLib:SetJump.obj
+ 0001:000018a0       InternalLongJump           0000000000001b40     BaseLib:LongJump.obj
+ 0001:00001920       InternalMemZeroMem         0000000000001bc0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001940       InternalMemCopyMem         0000000000001be0     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gEfiWheaPcieErrorSectionGuid 0000000000001c20     WheaPlatformBoot:AutoGen.obj
+ 0002:00000010       gEfiWheaPlatformMemoryErrorSectionGuid 0000000000001c30     WheaPlatformBoot:AutoGen.obj
+ 0002:00000020       gEfiWheaPciDevErrorSectionGuid 0000000000001c40     WheaPlatformBoot:AutoGen.obj
+ 0002:00000030       gEfiWheaProcessorGenericErrorSectionGuid 0000000000001c50     WheaPlatformBoot:AutoGen.obj
+ 0002:00000040       gEfiWheaSupportProtocolGuid 0000000000001c60     WheaPlatformBoot:AutoGen.obj
+ 0002:00000050       gEfiWheaBootProtocolGuid   0000000000001c70     WheaPlatformBoot:AutoGen.obj
+ 0002:00000060       gEfiSmmBase2ProtocolGuid   0000000000001c80     WheaPlatformBoot:AutoGen.obj
+ 0002:00000070       gEfiSmmAccess2ProtocolGuid 0000000000001c90     WheaPlatformBoot:AutoGen.obj
+ 0002:000000a0       PchLpRprDidTable           0000000000001cc0     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000000b8       PchHRprDidTable            0000000000001cd8     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000000e0       PlatformCeSrc              0000000000001d00     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:00000118       PlatformUeSrc              0000000000001d38     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:00000150       SysGenErrSources           0000000000001d70     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:00000180       _gUefiDriverRevision       0000000000001da0     WheaPlatformBoot:AutoGen.obj
+ 0002:00000290       gImageHandle               0000000000001eb0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000298       gST                        0000000000001eb8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002a0       gBS                        0000000000001ec0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000002a8       gRT                        0000000000001ec8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000002b0       gSmst                      0000000000001ed0     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:000002b8       ZeroGuid                   0000000000001ed8     WheaErrorLib:WheaErrorLib.obj
+ 0002:000002c8       SysNativeErrSources        0000000000001ee8     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:000002e8       mSmramRanges               0000000000001f08     <common>
+ 0002:000002f0       mSmramRangeCount           0000000000001f10     <common>
+ 0002:000002f8       mWheaBootInst              0000000000001f18     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000e00       PcieGetCapabilities        00000000000010a0 f    CIL library: CIL module
+ 0001:00000f2c       PcieGetAer                 00000000000011cc f    CIL library: CIL module

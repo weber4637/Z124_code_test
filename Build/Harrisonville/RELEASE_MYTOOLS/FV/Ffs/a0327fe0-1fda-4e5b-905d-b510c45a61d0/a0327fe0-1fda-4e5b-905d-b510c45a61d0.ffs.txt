@@ -1,0 +1,1 @@
+GenFfs -t EFI_FV_FILETYPE_DRIVER -g a0327fe0-1fda-4e5b-905d-b510c45a61d0 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\a0327fe0-1fda-4e5b-905d-b510c45a61d0\a0327fe0-1fda-4e5b-905d-b510c45a61d0.ffs -i d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\a0327fe0-1fda-4e5b-905d-b510c45a61d0\a0327fe0-1fda-4e5b-905d-b510c45a61d0SEC1.com

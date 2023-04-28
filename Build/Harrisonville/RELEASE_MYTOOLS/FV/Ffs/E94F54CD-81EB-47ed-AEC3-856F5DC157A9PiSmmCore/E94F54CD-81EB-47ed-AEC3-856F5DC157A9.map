@@ -1,0 +1,634 @@
+ PiSmmCore
+
+ Timestamp is 6448e7ee (Wed Apr 26 16:59:26 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000072e3H .text                   CODE
+ 0002:00000000 00002430H .data                   DATA
+ 0002:00002430 00002071H .rdata                  DATA
+ 0002:000044c0 000001f8H .bss                    DATA
+ 0003:00000000 00000330H .pdata                  DATA
+ 0004:00000000 000002e8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000004c       ProcessLibraryConstructorList 00000000000002ec f   PiSmmCore:AutoGen.obj
+ 0001:000003ac       ProcessLibraryDestructorList 000000000000064c f   PiSmmCore:AutoGen.obj
+ 0001:00000444       ProcessModuleEntryPointList 00000000000006e4 f   PiSmmCore:AutoGen.obj
+ 0001:000005b8       SmmEfiNotAvailableYetArg5  0000000000000858 f   PiSmmCore:PiSmmCore.obj
+ 0001:000005c4       SmmExitBootServicesHandler 0000000000000864 f   PiSmmCore:PiSmmCore.obj
+ 0001:0000071c       SmmReadyToBootHandler      00000000000009bc f   PiSmmCore:PiSmmCore.obj
+ 0001:00000874       SmmReadyToLockHandler      0000000000000b14 f   PiSmmCore:PiSmmCore.obj
+ 0001:00000ae0       SmmEndOfDxeHandler         0000000000000d80 f   PiSmmCore:PiSmmCore.obj
+ 0001:00000c24       SmmEntryPoint              0000000000000ec4 f   PiSmmCore:PiSmmCore.obj
+ 0001:00000f24       SmmGetNextLocateAllHandles 00000000000011c4 f   PiSmmCore:Locate.obj
+ 0001:00000f4c       SmmGetNextLocateByRegisterNotify 00000000000011ec f   PiSmmCore:Locate.obj
+ 0001:00000f84       SmmGetNextLocateByProtocol 0000000000001224 f   PiSmmCore:Locate.obj
+ 0001:00000fe4       SmmLocateProtocol          0000000000001284 f   PiSmmCore:Locate.obj
+ 0001:000010b0       SmmLocateHandle            0000000000001350 f   PiSmmCore:Locate.obj
+ 0001:00001208       SmmInstallConfigurationTable 00000000000014a8 f   PiSmmCore:InstallConfigurationTable.obj
+ 0001:00001380       SmmLoadImage               0000000000001620 f   PiSmmCore:Dispatcher.obj
+ 0001:000018f4       SmmGetDepexSectionAndPreProccess 0000000000001b94 f   PiSmmCore:Dispatcher.obj
+ 0001:000019b0       SmmDispatcher              0000000000001c50 f   PiSmmCore:Dispatcher.obj
+ 0001:00001e20       SmmInsertOnScheduledQueueWhileProcessingBeforeAndAfter 00000000000020c0 f   PiSmmCore:Dispatcher.obj
+ 0001:00001efc       SmmDriverDispatchHandler   000000000000219c f   PiSmmCore:Dispatcher.obj
+ 0001:000023cc       SmramProfileGetDataSize    000000000000266c f   PiSmmCore:SmramProfileRecord.obj
+ 0001:00002478       SmramProfileCopyData       0000000000002718 f   PiSmmCore:SmramProfileRecord.obj
+ 0001:00002850       SmramProfileProtocolGetData 0000000000002af0 f   PiSmmCore:SmramProfileRecord.obj
+ 0001:000028e0       SmramProfileProtocolRegisterImage 0000000000002b80 f   PiSmmCore:SmramProfileRecord.obj
+ 0001:000028e0       SmramProfileProtocolUnregisterImage 0000000000002b80 f   PiSmmCore:SmramProfileRecord.obj
+ 0001:0000295c       SmramProfileProtocolGetRecordingState 0000000000002bfc f   PiSmmCore:SmramProfileRecord.obj
+ 0001:0000298c       SmramProfileProtocolSetRecordingState 0000000000002c2c f   PiSmmCore:SmramProfileRecord.obj
+ 0001:000029ac       SmramProfileProtocolRecord 0000000000002c4c f   PiSmmCore:SmramProfileRecord.obj
+ 0001:000029b8       SmmCoreFindSmiEntry        0000000000002c58 f   PiSmmCore:Smi.obj
+ 0001:00002a74       SmiManage                  0000000000002d14 f   PiSmmCore:Smi.obj
+ 0001:00002b4c       SmiHandlerRegister         0000000000002dec f   PiSmmCore:Smi.obj
+ 0001:00002c0c       SmiHandlerUnRegister       0000000000002eac f   PiSmmCore:Smi.obj
+ 0001:00002c88       InternalAllocPoolByIndex   0000000000002f28 f   PiSmmCore:Pool.obj
+ 0001:00002dd0       SmmInternalAllocatePool    0000000000003070 f   PiSmmCore:Pool.obj
+ 0001:00002f00       SmmAllocatePool            00000000000031a0 f   PiSmmCore:Pool.obj
+ 0001:00002f08       SmmInternalFreePool        00000000000031a8 f   PiSmmCore:Pool.obj
+ 0001:00002f98       SmmFreePool                0000000000003238 f   PiSmmCore:Pool.obj
+ 0001:00002fa0       SmmValidateHandle          0000000000003240 f   PiSmmCore:Handle.obj
+ 0001:00002fd0       SmmFindProtocolEntry       0000000000003270 f   PiSmmCore:Handle.obj
+ 0001:00003098       SmmFindProtocolInterface   0000000000003338 f   PiSmmCore:Handle.obj
+ 0001:000030f8       SmmInstallProtocolInterface 0000000000003398 f   PiSmmCore:Handle.obj
+ 0001:0000310c       SmmInstallProtocolInterfaceNotify 00000000000033ac f   PiSmmCore:Handle.obj
+ 0001:000032c0       SmmUninstallProtocolInterface 0000000000003560 f   PiSmmCore:Handle.obj
+ 0001:000033e8       SmmHandleProtocol          0000000000003688 f   PiSmmCore:Handle.obj
+ 0001:00003478       InternalAllocPagesOnOneNode 0000000000003718 f   PiSmmCore:Page.obj
+ 0001:000034ec       SmmInternalAllocatePages   000000000000378c f   PiSmmCore:Page.obj
+ 0001:000035fc       SmmAllocatePages           000000000000389c f   PiSmmCore:Page.obj
+ 0001:00003604       SmmInternalFreePages       00000000000038a4 f   PiSmmCore:Page.obj
+ 0001:00003700       SmmFreePages               00000000000039a0 f   PiSmmCore:Page.obj
+ 0001:00003708       SmmRegisterProtocolNotify  00000000000039a8 f   PiSmmCore:Notify.obj
+ 0001:0000386c       GrowDepexStack             0000000000003b0c f   PiSmmCore:Dependency.obj
+ 0001:0000392c       PushBool                   0000000000003bcc f   PiSmmCore:Dependency.obj
+ 0001:0000396c       PopBool                    0000000000003c0c f   PiSmmCore:Dependency.obj
+ 0001:00003998       SmmIsSchedulable           0000000000003c38 f   PiSmmCore:Dependency.obj
+ 0001:00003bb0       AsciiStrnCpyS              0000000000003e50 f   BaseLib:SafeString.obj
+ 0001:00003c2c       AsciiSPrint                0000000000003ecc f   BasePrintLib:PrintLib.obj
+ 0001:00003c58       BasePrintLibFillBuffer     0000000000003ef8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003c8c       BasePrintLibSPrintMarker   0000000000003f2c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004b08       BasePrintLibSPrint         0000000000004da8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00004b2c       BufferInSmram              0000000000004dcc f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004b70       InternalAllocatePool       0000000000004e10 f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004ba0       AllocateZeroPool           0000000000004e40 f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004bcc       AllocateCopyPool           0000000000004e6c f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004c14       FreePool                   0000000000004eb4 f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004c40       GetDevicePathSize          0000000000004ee0 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00004ca0       AppendDevicePath           0000000000004f40 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00004de8       EfiGetSystemConfigurationTable 0000000000005088 f   UefiLib:UefiLib.obj
+ 0001:00004e4c       SmmAmiBufferValidationLibCheckBufferAgainstBlackList 00000000000050ec f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:00004ebc       SmmAmiBufferValidationLibCheckBufferAgainstWhiteList 000000000000515c f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:00004f28       SmmAmiBufferValidationLibAmiValidateMemoryBuffer 00000000000051c8 f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:00005060       SmmAmiBufferValidationLibAmiValidateMmioBuffer 0000000000005300 f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:000050a0       AmiValidateSmramBuffer     0000000000005340 f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:000050b4       SmmAmiBufferValidationLibGetMemMap 0000000000005354 f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:000052c4       SmmAmiBufferValidationLibGetMemoryAttributesTable 0000000000005564 f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:000053ac       SmmAmiBufferValidationLibReadyToLock 000000000000564c f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:000054d8       SmmAmiBufferValidationLibSetSmiStatus 0000000000005778 f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:00005514       SmmAmiBufferValidationLibSmmMailBoxHandler 00000000000057b4 f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:00005784       SmmAmiBufferValidationLibSwDispatch 0000000000005a24 f   SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0001:00005874       PeCoffLoaderGetPeHeader    0000000000005b14 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00005e54       PeCoffLoaderGetImageInfo   00000000000060f4 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00006208       PeCoffLoaderRelocateImage  00000000000064a8 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:000064d8       PeCoffLoaderLoadImage      0000000000006778 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00006ae4       PeCoffLoaderImageReadFromMemory 0000000000006d84 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00006b08       PeCoffLoaderGetPdbPointer  0000000000006da8 f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:00006c28       InternalReportStatusCode   0000000000006ec8 f   SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00006cc0       ReportStatusCodeWithExtendedData 0000000000006f60 f   SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00006d6c       StartGaugeEx               000000000000700c f   SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0001:00006ee4       EndGaugeEx                 0000000000007184 f   SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0001:00007084       GetGaugeEx                 0000000000007324 f   SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0001:000070c4       StartGauge                 0000000000007364 f   SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0001:000070d8       EndGauge                   0000000000007378 f   SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0001:000070ec       GetGauge                   000000000000738c f   SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0001:00007128       AcquireSpinLock            00000000000073c8 f   BaseSynchronizationLib:SynchronizationMsc.obj
+ 0001:000071a0       InternalMemCopyMem         0000000000007440     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000071e0       InternalMemZeroMem         0000000000007480     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00007200       InternalMemCompareMem      00000000000074a0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00007220       InternalMemSetMem          00000000000074c0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00007240       InternalMemSetMem32        00000000000074e0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00007260       InternalMemSetMem64        0000000000007500     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00007280       CpuPause                   0000000000007520     BaseLib:CpuPause.obj
+ 0001:00007290       AsmInvd                    0000000000007530     BaseLib:Invd.obj
+ 0001:000072a0       AsmFlushCacheLine          0000000000007540     BaseLib:FlushCacheLine.obj
+ 0001:000072b0       AsmCpuid                   0000000000007550     BaseLib:CpuId.obj
+ 0001:000072e0       AsmWbinvd                  0000000000007580     BaseLib:Wbinvd.obj
+ 0002:00000000       gEfiCallerIdGuid           00000000000075a0     PiSmmCore:AutoGen.obj
+ 0002:00000010       gAprioriGuid               00000000000075b0     PiSmmCore:AutoGen.obj
+ 0002:00000020       gEfiEventDxeDispatchGuid   00000000000075c0     PiSmmCore:AutoGen.obj
+ 0002:00000030       gEfiEventExitBootServicesGuid 00000000000075d0     PiSmmCore:AutoGen.obj
+ 0002:00000040       gEfiEventReadyToBootGuid   00000000000075e0     PiSmmCore:AutoGen.obj
+ 0002:00000050       gEfiEndOfDxeEventGroupGuid 00000000000075f0     PiSmmCore:AutoGen.obj
+ 0002:00000060       gEfiDxeServicesTableGuid   0000000000007600     PiSmmCore:AutoGen.obj
+ 0002:00000070       gEfiMemoryAttributesTableGuid 0000000000007610     PiSmmCore:AutoGen.obj
+ 0002:00000080       gEfiStatusCodeSpecificDataGuid 0000000000007620     PiSmmCore:AutoGen.obj
+ 0002:00000090       gEfiHobListGuid            0000000000007630     PiSmmCore:AutoGen.obj
+ 0002:000000a0       gEfiDxeSmmReadyToLockProtocolGuid 0000000000007640     PiSmmCore:AutoGen.obj
+ 0002:000000b0       gEfiSmmReadyToLockProtocolGuid 0000000000007650     PiSmmCore:AutoGen.obj
+ 0002:000000c0       gEfiSmmCpuIo2ProtocolGuid  0000000000007660     PiSmmCore:AutoGen.obj
+ 0002:000000d0       gEfiFirmwareVolume2ProtocolGuid 0000000000007670     PiSmmCore:AutoGen.obj
+ 0002:000000e0       gEfiSmmEndOfDxeProtocolGuid 0000000000007680     PiSmmCore:AutoGen.obj
+ 0002:000000f0       gEfiSecurityArchProtocolGuid 0000000000007690     PiSmmCore:AutoGen.obj
+ 0002:00000100       gEfiSecurity2ArchProtocolGuid 00000000000076a0     PiSmmCore:AutoGen.obj
+ 0002:00000110       gEfiLoadedImageProtocolGuid 00000000000076b0     PiSmmCore:AutoGen.obj
+ 0002:00000120       gEfiDevicePathProtocolGuid 00000000000076c0     PiSmmCore:AutoGen.obj
+ 0002:00000130       gEdkiiSmmExitBootServicesProtocolGuid 00000000000076d0     PiSmmCore:AutoGen.obj
+ 0002:00000140       gEdkiiSmmReadyToBootProtocolGuid 00000000000076e0     PiSmmCore:AutoGen.obj
+ 0002:00000150       gEfiSmmAccess2ProtocolGuid 00000000000076f0     PiSmmCore:AutoGen.obj
+ 0002:00000160       gEfiLegacyBiosProtocolGuid 0000000000007700     PiSmmCore:AutoGen.obj
+ 0002:00000170       gAmiSmmBufferValidationProtocolGuid 0000000000007710     PiSmmCore:AutoGen.obj
+ 0002:00000180       gEfiSmmSwDispatch2ProtocolGuid 0000000000007720     PiSmmCore:AutoGen.obj
+ 0002:00000190       gEfiSmmCpuProtocolGuid     0000000000007730     PiSmmCore:AutoGen.obj
+ 0002:000001a0       gEfiSmmStatusCodeProtocolGuid 0000000000007740     PiSmmCore:AutoGen.obj
+ 0002:000001b0       mPerformanceInterface      0000000000007750     SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0002:000001c8       mPerformanceExInterface    0000000000007768     SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0002:000001e0       SmmAmiBufferValidationLibValidationProtocol 0000000000007780     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000001f8       mSmmMemoryMap              0000000000007798     PiSmmCore:Page.obj
+ 0002:00000208       mProtocolDatabase          00000000000077a8     PiSmmCore:Handle.obj
+ 0002:00000218       gHandleList                00000000000077b8     PiSmmCore:Handle.obj
+ 0002:00000228       mRootSmiHandlerList        00000000000077c8     PiSmmCore:Smi.obj
+ 0002:00000238       mSmiEntryList              00000000000077d8     PiSmmCore:Smi.obj
+ 0002:00000248       mSmmProfileProtocol        00000000000077e8     PiSmmCore:SmramProfileRecord.obj
+ 0002:00000278       mSmmFileTypes              0000000000007818     PiSmmCore:Dispatcher.obj
+ 0002:00000280       mExtActionString           0000000000007820     PiSmmCore:SmramProfileRecord.obj
+ 0002:000003d0       mDiscoveredList            0000000000007970     PiSmmCore:Dispatcher.obj
+ 0002:000003e0       mScheduledQueue            0000000000007980     PiSmmCore:Dispatcher.obj
+ 0002:000003f0       mFvHandleList              0000000000007990     PiSmmCore:Dispatcher.obj
+ 0002:00000400       gSmmCoreSmst               00000000000079a0     PiSmmCore:PiSmmCore.obj
+ 0002:000004f0       mSmmCoreSmiHandlers        0000000000007a90     PiSmmCore:PiSmmCore.obj
+ 0002:000005b0       _gPcd_BinaryPatch_PcdSerialRegisterBase 0000000000007b50     PiSmmCore:AutoGen.obj
+ 0002:000005b8       mSmramFreeMemory           0000000000007b58     PiSmmCore:SmramProfileRecord.obj
+ 0002:000005d0       BuildToolGeneratedProtocolTable 0000000000007b70     PiSmmCore:Handle.obj
+ 0002:00002430       _gUefiDriverRevision       00000000000099d0     PiSmmCore:AutoGen.obj
+ 0002:00002434       ??_C@_03DKJGKPHE@SMM?$AA@  00000000000099d4     PiSmmCore:PiSmmCore.obj
+ 0002:00002438       ??_C@_0L@HLJAMLLL@LoadImage?3?$AA@ 00000000000099d8     PiSmmCore:Dispatcher.obj
+ 0002:00002444       ??_C@_04DEAGFDMC@?4pdb?$AA@ 00000000000099e4     PiSmmCore:Dispatcher.obj
+ 0002:0000244c       ??_C@_04HLONOPDM@?4dll?$AA@ 00000000000099ec     PiSmmCore:Dispatcher.obj
+ 0002:00002454       ??_C@_04KDHPFHII@?$FL?$CFg?$FN?$AA@ 00000000000099f4     PiSmmCore:Dispatcher.obj
+ 0002:00002460       ??_C@_07NBCGADJA@Unknown?$AA@ 0000000000009a00     PiSmmCore:Dispatcher.obj
+ 0002:00002468       ??_C@_0M@EFLBOBLB@StartImage?3?$AA@ 0000000000009a08     PiSmmCore:Dispatcher.obj
+ 0002:00002478       ??_C@_0BL@ODEDFOED@Lib?3ReallocateReservedPool?$AA@ 0000000000009a18     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002498       ??_C@_0BK@DAIAKEGB@Lib?3ReallocateRuntimePool?$AA@ 0000000000009a38     PiSmmCore:SmramProfileRecord.obj
+ 0002:000024b8       ??_C@_0BD@HHNGBIGO@Lib?3ReallocatePool?$AA@ 0000000000009a58     PiSmmCore:SmramProfileRecord.obj
+ 0002:000024d0       ??_C@_0BN@HLBJFMAH@Lib?3AllocateReservedCopyPool?$AA@ 0000000000009a70     PiSmmCore:SmramProfileRecord.obj
+ 0002:000024f0       ??_C@_0BM@FBPBPBDO@Lib?3AllocateRuntimeCopyPool?$AA@ 0000000000009a90     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002510       ??_C@_0BF@MLAPAEIG@Lib?3AllocateCopyPool?$AA@ 0000000000009ab0     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002528       ??_C@_0BN@KIKKEEEK@Lib?3AllocateReservedZeroPool?$AA@ 0000000000009ac8     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002548       ??_C@_0BM@ICECOJHD@Lib?3AllocateRuntimeZeroPool?$AA@ 0000000000009ae8     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002568       ??_C@_0BF@BILMBMML@Lib?3AllocateZeroPool?$AA@ 0000000000009b08     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002580       ??_C@_0N@GPBGLFP@Lib?3FreePool?$AA@ 0000000000009b20     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002590       ??_C@_0BJ@DFIGALLL@Lib?3AllocateReservedPool?$AA@ 0000000000009b30     PiSmmCore:SmramProfileRecord.obj
+ 0002:000025b0       ??_C@_0BI@CDHGLEMB@Lib?3AllocateRuntimePool?$AA@ 0000000000009b50     PiSmmCore:SmramProfileRecord.obj
+ 0002:000025c8       ??_C@_0BB@FGGICPPL@Lib?3AllocatePool?$AA@ 0000000000009b68     PiSmmCore:SmramProfileRecord.obj
+ 0002:000025e0       ??_C@_0BF@GNBDHMCD@Lib?3FreeAlignedPages?$AA@ 0000000000009b80     PiSmmCore:SmramProfileRecord.obj
+ 0002:000025f8       ??_C@_0CB@MENLBGDC@Lib?3AllocateAlignedReservedPages@ 0000000000009b98     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002620       ??_C@_0CA@OENPDPKA@Lib?3AllocateAlignedRuntimePages?$AA@ 0000000000009bc0     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002640       ??_C@_0BJ@PBCKEMHP@Lib?3AllocateAlignedPages?$AA@ 0000000000009be0     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002660       ??_C@_0O@IKJFDKDK@Lib?3FreePages?$AA@ 0000000000009c00     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002670       ??_C@_0BK@CNMBGLDL@Lib?3AllocateReservedPages?$AA@ 0000000000009c10     PiSmmCore:SmramProfileRecord.obj
+ 0002:00002690       ??_C@_0BJ@JNAHADKG@Lib?3AllocateRuntimePages?$AA@ 0000000000009c30     PiSmmCore:SmramProfileRecord.obj
+ 0002:000026b0       ??_C@_0BC@FLHOMEIP@Lib?3AllocatePages?$AA@ 0000000000009c50     PiSmmCore:SmramProfileRecord.obj
+ 0002:000026c8       ??_C@_0N@OBBCDFPL@EfiAcpiTable?$AA@ 0000000000009c68     PiSmmCore:Handle.obj
+ 0002:000026d8       ??_C@_0M@KDEIAICN@AmiHddSmart?$AA@ 0000000000009c78     PiSmmCore:Handle.obj
+ 0002:000026e8       ??_C@_0BF@CCDGEOGI@EfiBootManagerPolicy?$AA@ 0000000000009c88     PiSmmCore:Handle.obj
+ 0002:00002700       ??_C@_0O@MJHJIPDP@EfiGetPcdInfo?$AA@ 0000000000009ca0     PiSmmCore:Handle.obj
+ 0002:00002710       ??_C@_0BA@BJAHNOEB@AmiNvramControl?$AA@ 0000000000009cb0     PiSmmCore:Handle.obj
+ 0002:00002720       ??_C@_06BKGNJDMI@EfiTcg?$AA@ 0000000000009cc0     PiSmmCore:Handle.obj
+ 0002:00002728       ??_C@_08MGBONFNM@EfiUsbHc?$AA@ 0000000000009cc8     PiSmmCore:Handle.obj
+ 0002:00002738       ??_C@_0P@LNFPODIE@AmiHddSecurity?$AA@ 0000000000009cd8     PiSmmCore:Handle.obj
+ 0002:00002748       ??_C@_0M@GPANMIBP@EfiSmmBase2?$AA@ 0000000000009ce8     PiSmmCore:Handle.obj
+ 0002:00002754       ??_C@_06GFMNHJLE@EfiArp?$AA@ 0000000000009cf4     PiSmmCore:Handle.obj
+ 0002:00002760       ??_C@_0BF@GHBJDAJG@EfiArpServiceBinding?$AA@ 0000000000009d00     PiSmmCore:Handle.obj
+ 0002:00002778       ??_C@_0BC@OBMALODG@EfiConsoleControl?$AA@ 0000000000009d18     PiSmmCore:Handle.obj
+ 0002:00002790       ??_C@_0N@EIKEJHAM@AmiExtPciBus?$AA@ 0000000000009d30     PiSmmCore:Handle.obj
+ 0002:000027a0       ??_C@_0CA@FCIGCICO@EfiManagedNetworkServiceBinding?$AA@ 0000000000009d40     PiSmmCore:Handle.obj
+ 0002:000027c0       ??_C@_0BG@FJPONDIL@FrameworkEfiMpService?$AA@ 0000000000009d60     PiSmmCore:Handle.obj
+ 0002:000027d8       ??_C@_0BC@EGFMBGEN@AmiSmmNvramUpdate?$AA@ 0000000000009d78     PiSmmCore:Handle.obj
+ 0002:000027f0       ??_C@_0O@EHHHOECF@OpromStartEnd?$AA@ 0000000000009d90     PiSmmCore:Handle.obj
+ 0002:00002800       ??_C@_0P@HGMIEMIH@EfiHiiDatabase?$AA@ 0000000000009da0     PiSmmCore:Handle.obj
+ 0002:00002810       ??_C@_0P@BKGBLCNE@EfiWheaSupport?$AA@ 0000000000009db0     PiSmmCore:Handle.obj
+ 0002:00002820       ??_C@_0BD@GCCFGGBJ@EfiSmmUsbDispatch2?$AA@ 0000000000009dc0     PiSmmCore:Handle.obj
+ 0002:00002838       ??_C@_0P@PNKKDKFO@EfiSmmVariable?$AA@ 0000000000009dd8     PiSmmCore:Handle.obj
+ 0002:00002848       ??_C@_08HDOLMNEP@FlashSmm?$AA@ 0000000000009de8     PiSmmCore:Handle.obj
+ 0002:00002858       ??_C@_0M@IOMEAHIL@AmiSmmFlash?$AA@ 0000000000009df8     PiSmmCore:Handle.obj
+ 0002:00002868       ??_C@_0BF@NJJLJBED@EfiIp6ServiceBinding?$AA@ 0000000000009e08     PiSmmCore:Handle.obj
+ 0002:00002880       ??_C@_0BA@KIFLICFC@AmiBoardPciInit?$AA@ 0000000000009e20     PiSmmCore:Handle.obj
+ 0002:00002890       ??_C@_0BG@GMBGEGKL@EfiTcp6ServiceBinding?$AA@ 0000000000009e30     PiSmmCore:Handle.obj
+ 0002:000028a8       ??_C@_0L@CACELMC@EfiAcpiSdt?$AA@ 0000000000009e48     PiSmmCore:Handle.obj
+ 0002:000028b8       ??_C@_09MMNGFGLB@EfiSmmCpu?$AA@ 0000000000009e58     PiSmmCore:Handle.obj
+ 0002:000028c8       ??_C@_0CA@DAJBNNM@EfiIncompatiblePciDeviceSupport?$AA@ 0000000000009e68     PiSmmCore:Handle.obj
+ 0002:000028e8       ??_C@_0BF@MBPAGKDD@EfiEmmcBootPartition?$AA@ 0000000000009e88     PiSmmCore:Handle.obj
+ 0002:00002900       ??_C@_0BI@HAHNEHIG@AmiPciPortCompatibility?$AA@ 0000000000009ea0     PiSmmCore:Handle.obj
+ 0002:00002918       ??_C@_0L@GJBPCGOO@EfiHiiFont?$AA@ 0000000000009eb8     PiSmmCore:Handle.obj
+ 0002:00002928       ??_C@_0BG@HMAPBNFA@AmiOemCsm16BinaryGuid?$AA@ 0000000000009ec8     PiSmmCore:Handle.obj
+ 0002:00002940       ??_C@_0P@DCGOCIIB@EfiS3SaveState?$AA@ 0000000000009ee0     PiSmmCore:Handle.obj
+ 0002:00002950       ??_C@_0BG@FCJJHILA@EfiAdapterInformation?$AA@ 0000000000009ef0     PiSmmCore:Handle.obj
+ 0002:00002968       ??_C@_0O@DMAMFKMM@AmiEfiCrbInfo?$AA@ 0000000000009f08     PiSmmCore:Handle.obj
+ 0002:00002978       ??_C@_0L@BDELELPG@EfiSmbusHc?$AA@ 0000000000009f18     PiSmmCore:Handle.obj
+ 0002:00002988       ??_C@_0L@GOLIDJPM@AmiTextOut?$AA@ 0000000000009f28     PiSmmCore:Handle.obj
+ 0002:00002998       ??_C@_0O@LHDKIIKL@AmiIdeBusInit?$AA@ 0000000000009f38     PiSmmCore:Handle.obj
+ 0002:000029a8       ??_C@_0N@DNLHCCOD@EfiTpmDevice?$AA@ 0000000000009f48     PiSmmCore:Handle.obj
+ 0002:000029b8       ??_C@_0BD@DCDOIPDO@AmiSmbiosFlashData?$AA@ 0000000000009f58     PiSmmCore:Handle.obj
+ 0002:000029d0       ??_C@_0P@KHHCPGL@AmiNvramUpdate?$AA@ 0000000000009f70     PiSmmCore:Handle.obj
+ 0002:000029e0       ??_C@_0BC@PNCMMCIF@PpmPlatformPolicy?$AA@ 0000000000009f80     PiSmmCore:Handle.obj
+ 0002:000029f8       ??_C@_0BF@MCAHNBNJ@EfiSimpleTextInputEx?$AA@ 0000000000009f98     PiSmmCore:Handle.obj
+ 0002:00002a10       ??_C@_0BC@LOKHKJDP@AmiCsmOpromPolicy?$AA@ 0000000000009fb0     PiSmmCore:Handle.obj
+ 0002:00002a28       ??_C@_0BD@MNJNFNDP@EfiAcpiSupportGuid?$AA@ 0000000000009fc8     PiSmmCore:Handle.obj
+ 0002:00002a40       ??_C@_0P@KADKJFDI@EfiAcpiSupport?$AA@ 0000000000009fe0     PiSmmCore:Handle.obj
+ 0002:00002a50       ??_C@_0BH@CBIICDML@BdsAllDriversConnected?$AA@ 0000000000009ff0     PiSmmCore:Handle.obj
+ 0002:00002a68       ??_C@_0O@IKJLFLBD@EfiLegacyBios?$AA@ 000000000000a008     PiSmmCore:Handle.obj
+ 0002:00002a78       ??_C@_08OBMIOEHH@PchReset?$AA@ 000000000000a018     PiSmmCore:Handle.obj
+ 0002:00002a88       ??_C@_0BI@DPNFGCOB@EfiMtftp6ServiceBinding?$AA@ 000000000000a028     PiSmmCore:Handle.obj
+ 0002:00002aa0       ??_C@_0O@PBMFIONH@EfiDecompress?$AA@ 000000000000a040     PiSmmCore:Handle.obj
+ 0002:00002ab0       ??_C@_0O@HHAPKCJA@TSEScreenMgmt?$AA@ 000000000000a050     PiSmmCore:Handle.obj
+ 0002:00002ac0       ??_C@_0L@IJJJBBBB@SmmCpuSync?$AA@ 000000000000a060     PiSmmCore:Handle.obj
+ 0002:00002ad0       ??_C@_0BD@JDMMGIGH@PchAcpiSmiDispatch?$AA@ 000000000000a070     PiSmmCore:Handle.obj
+ 0002:00002ae8       ??_C@_0O@IDOOHOAF@AmiNvmeLegacy?$AA@ 000000000000a088     PiSmmCore:Handle.obj
+ 0002:00002af8       ??_C@_0M@GKDFCMPH@EfiDiskInfo?$AA@ 000000000000a098     PiSmmCore:Handle.obj
+ 0002:00002b08       ??_C@_0BK@JBBKBAIP@EfiSmmFirmwareVolumeBlock?$AA@ 000000000000a0a8     PiSmmCore:Handle.obj
+ 0002:00002b28       ??_C@_0BF@BEDNHIB@EfiStatusCodeRuntime?$AA@ 000000000000a0c8     PiSmmCore:Handle.obj
+ 0002:00002b40       ??_C@_0CD@CFJJDLEA@EfiPciHostBridgeResourceAllocati@ 000000000000a0e0     PiSmmCore:Handle.obj
+ 0002:00002b68       ??_C@_0BD@MDCDDHGK@AmiHddSecurityInit?$AA@ 000000000000a108     PiSmmCore:Handle.obj
+ 0002:00002b80       ??_C@_09NEPPDMBB@EfiDiskIo?$AA@ 000000000000a120     PiSmmCore:Handle.obj
+ 0002:00002b90       ??_C@_0BC@NNCAMGDJ@EdkiiVariableLock?$AA@ 000000000000a130     PiSmmCore:Handle.obj
+ 0002:00002ba8       ??_C@_07JFBMPCJH@EfiDns6?$AA@ 000000000000a148     PiSmmCore:Handle.obj
+ 0002:00002bb0       ??_C@_0BD@DJPLLKP@PchEspiSmiDispatch?$AA@ 000000000000a150     PiSmmCore:Handle.obj
+ 0002:00002bc8       ??_C@_0BK@CIPDBOKD@EfiStorageSecurityCommand?$AA@ 000000000000a168     PiSmmCore:Handle.obj
+ 0002:00002be8       ??_C@_0P@OLNOCAGG@EfiVgaMiniPort?$AA@ 000000000000a188     PiSmmCore:Handle.obj
+ 0002:00002bf8       ??_C@_0BE@GJIKHAAC@EfiSmmCommunication?$AA@ 000000000000a198     PiSmmCore:Handle.obj
+ 0002:00002c10       ??_C@_0BD@OKOOCFFN@AmiAtaPassThruInit?$AA@ 000000000000a1b0     PiSmmCore:Handle.obj
+ 0002:00002c28       ??_C@_0BF@FODLLECA@EfiIp4ServiceBinding?$AA@ 000000000000a1c8     PiSmmCore:Handle.obj
+ 0002:00002c40       ??_C@_0O@NKEMICGA@EfiSmmAccess2?$AA@ 000000000000a1e0     PiSmmCore:Handle.obj
+ 0002:00002c50       ??_C@_09BOJGAPLO@EfiMtftp6?$AA@ 000000000000a1f0     PiSmmCore:Handle.obj
+ 0002:00002c60       ??_C@_0BG@FOPHIDGL@EfiHttpServiceBinding?$AA@ 000000000000a200     PiSmmCore:Handle.obj
+ 0002:00002c78       ??_C@_0O@EFFHLCBI@EfiEdidActive?$AA@ 000000000000a218     PiSmmCore:Handle.obj
+ 0002:00002c88       ??_C@_0BC@CPDIDAHC@EfiAcpiEnDispatch?$AA@ 000000000000a228     PiSmmCore:Handle.obj
+ 0002:00002ca0       ??_C@_0L@OJGAIHCF@EfiLockBox?$AA@ 000000000000a240     PiSmmCore:Handle.obj
+ 0002:00002cb0       ??_C@_0P@BKNMBGJF@EfiPlatformCpu?$AA@ 000000000000a250     PiSmmCore:Handle.obj
+ 0002:00002cc0       ??_C@_0BJ@OJNENKIJ@EfiLoadedImageDevicePath?$AA@ 000000000000a260     PiSmmCore:Handle.obj
+ 0002:00002ce0       ??_C@_0BL@LAHGFINM@TcgPlatformSetupPolicyGuid?$AA@ 000000000000a280     PiSmmCore:Handle.obj
+ 0002:00002d00       ??_C@_0M@HGCNBBCM@EfiSerialIo?$AA@ 000000000000a2a0     PiSmmCore:Handle.obj
+ 0002:00002d10       ??_C@_0BA@LNJCGOLL@EfiFormBrowser2?$AA@ 000000000000a2b0     PiSmmCore:Handle.obj
+ 0002:00002d20       ??_C@_0BD@PFCDEEGH@AmiSmmNvmePassThru?$AA@ 000000000000a2c0     PiSmmCore:Handle.obj
+ 0002:00002d38       ??_C@_0L@BBJLOHIH@EfiSpsSiEn?$AA@ 000000000000a2d8     PiSmmCore:Handle.obj
+ 0002:00002d48       ??_C@_0P@CPJBDEJL@EfiRuntimeArch?$AA@ 000000000000a2e8     PiSmmCore:Handle.obj
+ 0002:00002d58       ??_C@_0M@OPEALDCB@EfiSdHostIo?$AA@ 000000000000a2f8     PiSmmCore:Handle.obj
+ 0002:00002d68       ??_C@_0BG@FIMFMMKN@EfiDns4ServiceBinding?$AA@ 000000000000a308     PiSmmCore:Handle.obj
+ 0002:00002d80       ??_C@_0P@JCIOMEDJ@EfiPciOverride?$AA@ 000000000000a320     PiSmmCore:Handle.obj
+ 0002:00002d90       ??_C@_0L@FJKPHFOP@AmiAhciSmm?$AA@ 000000000000a330     PiSmmCore:Handle.obj
+ 0002:00002da0       ??_C@_0L@HHHOIIAC@AmiAhciBus?$AA@ 000000000000a340     PiSmmCore:Handle.obj
+ 0002:00002db0       ??_C@_0BE@MPAGOHID@AmiMultiLangSupport?$AA@ 000000000000a350     PiSmmCore:Handle.obj
+ 0002:00002dc8       ??_C@_0BI@OJKBCNJL@EfiDriverFamilyOverride?$AA@ 000000000000a368     PiSmmCore:Handle.obj
+ 0002:00002de0       ??_C@_08DEIIAEJH@EfiCpuIo?$AA@ 000000000000a380     PiSmmCore:Handle.obj
+ 0002:00002df0       ??_C@_0N@DMOLFPG@EfiTimestamp?$AA@ 000000000000a390     PiSmmCore:Handle.obj
+ 0002:00002e00       ??_C@_0BC@KLNOOCDP@AmiNvmeController?$AA@ 000000000000a3a0     PiSmmCore:Handle.obj
+ 0002:00002e18       ??_C@_0L@PAPIPBFG@EfiDataHub?$AA@ 000000000000a3b8     PiSmmCore:Handle.obj
+ 0002:00002e28       ??_C@_07KHCKJABF@EfiDns4?$AA@ 000000000000a3c8     PiSmmCore:Handle.obj
+ 0002:00002e30       ??_C@_0BE@GNELCHOE@IntelCpuPcdsSetDone?$AA@ 000000000000a3d0     PiSmmCore:Handle.obj
+ 0002:00002e48       ??_C@_0BC@IHKJLPCN@AmiHddSecurityEnd?$AA@ 000000000000a3e8     PiSmmCore:Handle.obj
+ 0002:00002e60       ??_C@_09IDCPNKJC@EfiCpuIo2?$AA@ 000000000000a400     PiSmmCore:Handle.obj
+ 0002:00002e70       ??_C@_0L@KKBFDFHN@EfiRamDisk?$AA@ 000000000000a410     PiSmmCore:Handle.obj
+ 0002:00002e80       ??_C@_0N@MAFNPMMG@EfiEbcVmTest?$AA@ 000000000000a420     PiSmmCore:Handle.obj
+ 0002:00002e90       ??_C@_0N@LGMMCJDC@AmiRomLayout?$AA@ 000000000000a430     PiSmmCore:Handle.obj
+ 0002:00002ea0       ??_C@_0BC@NHCCJILH@EfiPciHotPlugInit?$AA@ 000000000000a440     PiSmmCore:Handle.obj
+ 0002:00002eb8       ??_C@_0BF@DFCGKMNL@AmiSmmNvmeController?$AA@ 000000000000a458     PiSmmCore:Handle.obj
+ 0002:00002ed0       ??_C@_0BC@JPOLCMAE@AmiMemoryInfoGuid?$AA@ 000000000000a470     PiSmmCore:Handle.obj
+ 0002:00002ee8       ??_C@_0M@JLMCNMLL@EfiBlockIo2?$AA@ 000000000000a488     PiSmmCore:Handle.obj
+ 0002:00002ef8       ??_C@_0BA@KMILFDNB@EfiScsiPassThru?$AA@ 000000000000a498     PiSmmCore:Handle.obj
+ 0002:00002f08       ??_C@_0O@BBIOECKC@EfiSmmRuntime?$AA@ 000000000000a4a8     PiSmmCore:Handle.obj
+ 0002:00002f18       ??_C@_0BF@DPDGOLKB@EfiUnicodeCollation2?$AA@ 000000000000a4b8     PiSmmCore:Handle.obj
+ 0002:00002f30       ??_C@_0BA@LOCAPFLG@EfiSecurityArch?$AA@ 000000000000a4d0     PiSmmCore:Handle.obj
+ 0002:00002f40       ??_C@_0CE@LJCEFMNL@EfiGenericElogSmmProtocolInstall@ 000000000000a4e0     PiSmmCore:Handle.obj
+ 0002:00002f68       ??_C@_09IKCALGJK@EfiIpSec2?$AA@ 000000000000a508     PiSmmCore:Handle.obj
+ 0002:00002f78       ??_C@_0P@GDMLBPBG@EsrtManagement?$AA@ 000000000000a518     PiSmmCore:Handle.obj
+ 0002:00002f88       ??_C@_0BF@KMKGNOLM@EfiIdeControllerInit?$AA@ 000000000000a528     PiSmmCore:Handle.obj
+ 0002:00002fa0       ??_C@_0BB@KHJDJLH@EfiSimpleNetwork?$AA@ 000000000000a540     PiSmmCore:Handle.obj
+ 0002:00002fb8       ??_C@_0BA@OIJPLKAL@EfiLegacySredir?$AA@ 000000000000a558     PiSmmCore:Handle.obj
+ 0002:00002fc8       ??_C@_0BH@KMCKDKAK@EfiDhcp6ServiceBinding?$AA@ 000000000000a568     PiSmmCore:Handle.obj
+ 0002:00002fe0       ??_C@_0BC@HLKIIJDF@PchTcoSmiDispatch?$AA@ 000000000000a580     PiSmmCore:Handle.obj
+ 0002:00002ff8       ??_C@_0O@PMKOCGBO@EfiVlanConfig?$AA@ 000000000000a598     PiSmmCore:Handle.obj
+ 0002:00003008       ??_C@_0M@IHEJONJC@SmmCpuSync2?$AA@ 000000000000a5a8     PiSmmCore:Handle.obj
+ 0002:00003018       ??_C@_0BH@CLIKBPGJ@EfiDhcp4ServiceBinding?$AA@ 000000000000a5b8     PiSmmCore:Handle.obj
+ 0002:00003030       ??_C@_0BA@FEPNDJOC@AmiBoardSioInit?$AA@ 000000000000a5d0     PiSmmCore:Handle.obj
+ 0002:00003040       ??_C@_0BI@EHPHGFMG@AmiDxeHashInterfaceguid?$AA@ 000000000000a5e0     PiSmmCore:Handle.obj
+ 0002:00003058       ??_C@_0BD@CFINBCKD@EfiAcpiDisDispatch?$AA@ 000000000000a5f8     PiSmmCore:Handle.obj
+ 0002:00003070       ??_C@_0BB@FHBAALND@AmiCmosAccessDxe?$AA@ 000000000000a610     PiSmmCore:Handle.obj
+ 0002:00003088       ??_C@_07LBCHHCON@PchInfo?$AA@ 000000000000a628     PiSmmCore:Handle.obj
+ 0002:00003090       ??_C@_0BE@EBLDLDAF@EfiSimpleFileSystem?$AA@ 000000000000a630     PiSmmCore:Handle.obj
+ 0002:000030a8       ??_C@_0L@GOMJFKEA@EfiBlockIo?$AA@ 000000000000a648     PiSmmCore:Handle.obj
+ 0002:000030b8       ??_C@_0O@KENGNNAL@EfiEraseBlock?$AA@ 000000000000a658     PiSmmCore:Handle.obj
+ 0002:000030c8       ??_C@_0M@FLPLIGDP@SdioBusInit?$AA@ 000000000000a668     PiSmmCore:Handle.obj
+ 0002:000030d8       ??_C@_0BB@FPLFMB@EfiSecurity2Arch?$AA@ 000000000000a678     PiSmmCore:Handle.obj
+ 0002:000030f0       ??_C@_0BA@KJHLOHFB@AmiHddSmartInit?$AA@ 000000000000a690     PiSmmCore:Handle.obj
+ 0002:00003100       ??_C@_0BF@HMHLFNHH@AmiPciIrqProgramGuid?$AA@ 000000000000a6a0     PiSmmCore:Handle.obj
+ 0002:00003118       ??_C@_0N@LEMFPBIC@EfiIp6Config?$AA@ 000000000000a6b8     PiSmmCore:Handle.obj
+ 0002:00003128       ??_C@_0BD@DMAFALBK@AmiOptionRomPolicy?$AA@ 000000000000a6c8     PiSmmCore:Handle.obj
+ 0002:00003140       ??_C@_09HNBEHFLM@EfiScsiIo?$AA@ 000000000000a6e0     PiSmmCore:Handle.obj
+ 0002:00003150       ??_C@_0BH@JFLIFFEP@AmiSmmDigitalSignature?$AA@ 000000000000a6f0     PiSmmCore:Handle.obj
+ 0002:00003168       ??_C@_0BC@EMNANJCH@EfiGraphicsOutput?$AA@ 000000000000a708     PiSmmCore:Handle.obj
+ 0002:00003180       ??_C@_0BE@JALFCDBG@DxePlatformMePolicy?$AA@ 000000000000a720     PiSmmCore:Handle.obj
+ 0002:00003198       ??_C@_0L@GDIMHGDB@AmiReflash?$AA@ 000000000000a738     PiSmmCore:Handle.obj
+ 0002:000031a8       ??_C@_0BH@NAIFECIL@EfiFirmwareVolumeBlock?$AA@ 000000000000a748     PiSmmCore:Handle.obj
+ 0002:000031c0       ??_C@_0BB@JNIJPOOF@EfiLegacyBiosExt?$AA@ 000000000000a760     PiSmmCore:Handle.obj
+ 0002:000031d8       ??_C@_0BD@KFKALJNJ@EfiAbsolutePointer?$AA@ 000000000000a778     PiSmmCore:Handle.obj
+ 0002:000031f0       ??_C@_0BL@MGIMDMCJ@AmiTcgPlatformProtocolguid?$AA@ 000000000000a790     PiSmmCore:Handle.obj
+ 0002:00003210       ??_C@_0P@FDCMJDOM@EfiTcgPlatform?$AA@ 000000000000a7b0     PiSmmCore:Handle.obj
+ 0002:00003220       ??_C@_0BG@IDALHNKH@EfiSmmPciRootBridgeIo?$AA@ 000000000000a7c0     PiSmmCore:Handle.obj
+ 0002:00003238       ??_C@_0BE@HJELJEEK@EfiDevicePathToText?$AA@ 000000000000a7d8     PiSmmCore:Handle.obj
+ 0002:00003250       ??_C@_0P@FKBKJKEG@AmiPostManager?$AA@ 000000000000a7f0     PiSmmCore:Handle.obj
+ 0002:00003260       ??_C@_08HOJKLKKP@EfiDhcp4?$AA@ 000000000000a800     PiSmmCore:Handle.obj
+ 0002:00003270       ??_C@_0BA@CLNEJHNN@UsbTimingPolicy?$AA@ 000000000000a810     PiSmmCore:Handle.obj
+ 0002:00003280       ??_C@_08EMKMNICN@EfiDhcp6?$AA@ 000000000000a820     PiSmmCore:Handle.obj
+ 0002:00003290       ??_C@_0BG@OEIFOGOO@EfiFirmwareManagement?$AA@ 000000000000a830     PiSmmCore:Handle.obj
+ 0002:000032a8       ??_C@_0O@DOBNAAL@EfiRscHandler?$AA@ 000000000000a848     PiSmmCore:Handle.obj
+ 0002:000032b8       ??_C@_0BD@BIEFDNKD@EdkiiSmmLegacyBoot?$AA@ 000000000000a858     PiSmmCore:Handle.obj
+ 0002:000032d0       ??_C@_0P@DBJBDGLB@EfiSmmControl2?$AA@ 000000000000a870     PiSmmCore:Handle.obj
+ 0002:000032e0       ??_C@_0BG@NNHKOJPE@EfiUdp4ServiceBinding?$AA@ 000000000000a880     PiSmmCore:Handle.obj
+ 0002:000032f8       ??_C@_0BJ@BJKKJKJL@PchGpioUnlockSmiDispatch?$AA@ 000000000000a898     PiSmmCore:Handle.obj
+ 0002:00003318       ??_C@_0BG@FAGEKLGN@AmiPeriodicSmiControl?$AA@ 000000000000a8b8     PiSmmCore:Handle.obj
+ 0002:00003330       ??_C@_0BK@KAEMINNG@AmiBlockIoWriteProtection?$AA@ 000000000000a8d0     PiSmmCore:Handle.obj
+ 0002:00003350       ??_C@_0BG@NPGFOJMO@EfiDns6ServiceBinding?$AA@ 000000000000a8f0     PiSmmCore:Handle.obj
+ 0002:00003368       ??_C@_08NMIJNOJ@EfiIsaIo?$AA@ 000000000000a908     PiSmmCore:Handle.obj
+ 0002:00003378       ??_C@_0BC@FFPCGGHI@EfiManagedNetwork?$AA@ 000000000000a918     PiSmmCore:Handle.obj
+ 0002:00003390       ??_C@_07MMCEFGGL@EfiHttp?$AA@ 000000000000a930     PiSmmCore:Handle.obj
+ 0002:00003398       ??_C@_07IFKKFEDM@SmmHeci?$AA@ 000000000000a938     PiSmmCore:Handle.obj
+ 0002:000033a0       ??_C@_0BG@OFGEPFFO@EfiLegacyBiosPlatform?$AA@ 000000000000a940     PiSmmCore:Handle.obj
+ 0002:000033b8       ??_C@_09CMKAGNDM@EfiMtftp4?$AA@ 000000000000a958     PiSmmCore:Handle.obj
+ 0002:000033c8       ??_C@_0BM@GLDBPOFA@AmiProtocolInternalHlxeGuid?$AA@ 000000000000a968     PiSmmCore:Handle.obj
+ 0002:000033e8       ??_C@_0P@GIECMMK@AmiSbHddPolicy?$AA@ 000000000000a988     PiSmmCore:Handle.obj
+ 0002:000033f8       ??_C@_0BA@NFIDJEKK@Emul6064MsInput?$AA@ 000000000000a998     PiSmmCore:Handle.obj
+ 0002:00003408       ??_C@_0BB@JNFJBPHA@AmiSioSmmHandoff?$AA@ 000000000000a9a8     PiSmmCore:Handle.obj
+ 0002:0000341c       ??_C@_05LDPHIKKB@Flash?$AA@ 000000000000a9bc     PiSmmCore:Handle.obj
+ 0002:00003428       ??_C@_08HIBFJELE@AmiFlash?$AA@ 000000000000a9c8     PiSmmCore:Handle.obj
+ 0002:00003438       ??_C@_08CFEMCNNH@EfiSpsNm?$AA@ 000000000000a9d8     PiSmmCore:Handle.obj
+ 0002:00003448       ??_C@_0BI@MELJJFDB@TSEInvalidateBgrtStatus?$AA@ 000000000000a9e8     PiSmmCore:Handle.obj
+ 0002:00003460       ??_C@_0M@HPJGBJOO@EfiSmmSmbus?$AA@ 000000000000aa00     PiSmmCore:Handle.obj
+ 0002:00003470       ??_C@_0BJ@CJEHOJPA@EfiIsPlatformSupportWhea?$AA@ 000000000000aa10     PiSmmCore:Handle.obj
+ 0002:00003490       ??_C@_0BB@JBJGNAOP@EfiLegacyRegion2?$AA@ 000000000000aa30     PiSmmCore:Handle.obj
+ 0002:000034a8       ??_C@_0BB@DEFKPJGN@AmiPciSmmHandoff?$AA@ 000000000000aa48     PiSmmCore:Handle.obj
+ 0002:000034c0       ??_C@_0M@FKKMJPKD@EfiSmiFlash?$AA@ 000000000000aa60     PiSmmCore:Handle.obj
+ 0002:000034d0       ??_C@_0N@EEELAKGH@Emul6064Trap?$AA@ 000000000000aa70     PiSmmCore:Handle.obj
+ 0002:000034e0       ??_C@_0BE@HHDFMEAE@EdkiiSmmReadyToBoot?$AA@ 000000000000aa80     PiSmmCore:Handle.obj
+ 0002:000034f8       ??_C@_0BH@EMAKFKDK@EfiWheaPlatformSupport?$AA@ 000000000000aa98     PiSmmCore:Handle.obj
+ 0002:00003510       ??_C@_0BK@LHDKMAFL@EfiPlatformDriverOverride?$AA@ 000000000000aab0     PiSmmCore:Handle.obj
+ 0002:00003530       ??_C@_0BB@HECFCO@EfiSmmStatusCode?$AA@ 000000000000aad0     PiSmmCore:Handle.obj
+ 0002:00003548       ??_C@_0BC@KGLCMAIH@EfiComponentName2?$AA@ 000000000000aae8     PiSmmCore:Handle.obj
+ 0002:00003560       ??_C@_0BC@NNIAMNCM@EfiHiiPackageList?$AA@ 000000000000ab00     PiSmmCore:Handle.obj
+ 0002:00003578       ??_C@_0BP@NJKPLNMK@PchSmmPeriodicTimerControlGuid?$AA@ 000000000000ab18     PiSmmCore:Handle.obj
+ 0002:00003598       ??_C@_0BD@PLBAIJP@NonSmmEmul6064Trap?$AA@ 000000000000ab38     PiSmmCore:Handle.obj
+ 0002:000035ac       ??_C@_06LMIJBEKO@Aint13?$AA@ 000000000000ab4c     PiSmmCore:Handle.obj
+ 0002:000035b8       ??_C@_0P@OBMILBIC@AmiPlatformIde?$AA@ 000000000000ab58     PiSmmCore:Handle.obj
+ 0002:000035c8       ??_C@_0BG@FKNKMMJH@EfiUdp6ServiceBinding?$AA@ 000000000000ab68     PiSmmCore:Handle.obj
+ 0002:000035e0       ??_C@_0L@MFLJOHEH@EfiBdsArch?$AA@ 000000000000ab80     PiSmmCore:Handle.obj
+ 0002:000035f0       ??_C@_0BF@IFMEEHNO@EfiWatchdogTimerArch?$AA@ 000000000000ab90     PiSmmCore:Handle.obj
+ 0002:00003608       ??_C@_07DHOGGBBD@EfiTcp4?$AA@ 000000000000aba8     PiSmmCore:Handle.obj
+ 0002:00003610       ??_C@_0BF@OBNLGCGN@EfiVariableWriteArch?$AA@ 000000000000abb0     PiSmmCore:Handle.obj
+ 0002:00003628       ??_C@_0N@OCGJLIAI@EfiLpcPolicy?$AA@ 000000000000abc8     PiSmmCore:Handle.obj
+ 0002:00003638       ??_C@_0BB@ODIBODJL@Emul6064KbdInput?$AA@ 000000000000abd8     PiSmmCore:Handle.obj
+ 0002:00003650       ??_C@_0BF@CFMEAJBN@EfiDxeSmmReadyToLock?$AA@ 000000000000abf0     PiSmmCore:Handle.obj
+ 0002:00003668       ??_C@_07MLMHDOCF@EfiTrEE?$AA@ 000000000000ac08     PiSmmCore:Handle.obj
+ 0002:00003670       ??_C@_0BE@DOMOJBMI@AmiDigitalSignature?$AA@ 000000000000ac10     PiSmmCore:Handle.obj
+ 0002:00003688       ??_C@_09ELJHPDFG@AmiSmbios?$AA@ 000000000000ac28     PiSmmCore:Handle.obj
+ 0002:00003698       ??_C@_0P@PGBDKAFD@EfiLoadPeImage?$AA@ 000000000000ac38     PiSmmCore:Handle.obj
+ 0002:000036a8       ??_C@_0L@KNLCINJC@GetPcdInfo?$AA@ 000000000000ac48     PiSmmCore:Handle.obj
+ 0002:000036b8       ??_C@_0O@MAIEFLAK@EfiIp4Config2?$AA@ 000000000000ac58     PiSmmCore:Handle.obj
+ 0002:000036c8       ??_C@_0P@JNEJPGPO@EfiLoadedImage?$AA@ 000000000000ac68     PiSmmCore:Handle.obj
+ 0002:000036d8       ??_C@_0P@GGGELFDK@EfiGenericElog?$AA@ 000000000000ac78     PiSmmCore:Handle.obj
+ 0002:000036e8       ??_C@_0BC@CALMPNDM@AmiHddOpalSecInit?$AA@ 000000000000ac88     PiSmmCore:Handle.obj
+ 0002:00003700       ??_C@_0BG@LEAIBDDM@EfiSmmIoTrapDispatch2?$AA@ 000000000000aca0     PiSmmCore:Handle.obj
+ 0002:00003718       ??_C@_0BE@HNCOCKE@EfiHiiConfigRouting?$AA@ 000000000000acb8     PiSmmCore:Handle.obj
+ 0002:00003730       ??_C@_0N@MMPFCOHB@EfiUsbPolicy?$AA@ 000000000000acd0     PiSmmCore:Handle.obj
+ 0002:00003740       ??_C@_0M@POGKHKGO@EfiLoadFile?$AA@ 000000000000ace0     PiSmmCore:Handle.obj
+ 0002:00003750       ??_C@_0P@BLMHGGLK@AmiOpromPolicy?$AA@ 000000000000acf0     PiSmmCore:Handle.obj
+ 0002:00003760       ??_C@_0BG@IEOEEJKN@EfiNvmExpressPassThru?$AA@ 000000000000ad00     PiSmmCore:Handle.obj
+ 0002:00003778       ??_C@_09DKNEEICN@EfiAmiSio?$AA@ 000000000000ad18     PiSmmCore:Handle.obj
+ 0002:00003788       ??_C@_09OAMFCN@AmiSerial?$AA@ 000000000000ad28     PiSmmCore:Handle.obj
+ 0002:00003798       ??_C@_0P@HGGGNBAD@EfiCapsuleArch?$AA@ 000000000000ad38     PiSmmCore:Handle.obj
+ 0002:000037a8       ??_C@_0O@MEGJAKBC@AmiBoardInfo2?$AA@ 000000000000ad48     PiSmmCore:Handle.obj
+ 0002:000037b8       ??_C@_07KFGHBCJI@EfiUdp6?$AA@ 000000000000ad58     PiSmmCore:Handle.obj
+ 0002:000037c0       ??_C@_08IMEFHBNH@EfiPciIo?$AA@ 000000000000ad60     PiSmmCore:Handle.obj
+ 0002:000037d0       ??_C@_0BN@BAIAMMLM@EfiSmmPeriodicTimerDispatch2?$AA@ 000000000000ad70     PiSmmCore:Handle.obj
+ 0002:000037f0       ??_C@_0BA@CHGCOKKD@AmiNvmePassThru?$AA@ 000000000000ad90     PiSmmCore:Handle.obj
+ 0002:00003800       ??_C@_0M@PPMMHOCO@EfiWheaBoot?$AA@ 000000000000ada0     PiSmmCore:Handle.obj
+ 0002:00003810       ??_C@_0BA@BLFHGLDH@EfiEdidOverride?$AA@ 000000000000adb0     PiSmmCore:Handle.obj
+ 0002:00003820       ??_C@_06DAHIBMHK@EfiDpc?$AA@ 000000000000adc0     PiSmmCore:Handle.obj
+ 0002:00003828       ??_C@_0BC@HKPEKHOE@EfiSmmReadyToLock?$AA@ 000000000000adc8     PiSmmCore:Handle.obj
+ 0002:00003840       ??_C@_0BG@HDLEBHNB@EfiBootScriptSaveGuid?$AA@ 000000000000ade0     PiSmmCore:Handle.obj
+ 0002:00003858       ??_C@_07FNAADJB@EfiTcp6?$AA@ 000000000000adf8     PiSmmCore:Handle.obj
+ 0002:00003860       ??_C@_0BC@PAJLGILA@EfiSmmSxDispatch2?$AA@ 000000000000ae00     PiSmmCore:Handle.obj
+ 0002:00003878       ??_C@_0P@MCGMBEJO@PchSmiDispatch?$AA@ 000000000000ae18     PiSmmCore:Handle.obj
+ 0002:00003888       ??_C@_0BD@BGNNCLDO@AmiSmmDebugService?$AA@ 000000000000ae28     PiSmmCore:Handle.obj
+ 0002:000038a0       ??_C@_0BI@MBKKGOEI@AmiSioPortCompatibility?$AA@ 000000000000ae40     PiSmmCore:Handle.obj
+ 0002:000038b8       ??_C@_06DHOIAPDE@EfiIp4?$AA@ 000000000000ae58     PiSmmCore:Handle.obj
+ 0002:000038c0       ??_C@_0N@EHIEHCFE@EfiLoadFile2?$AA@ 000000000000ae60     PiSmmCore:Handle.obj
+ 0002:000038d0       ??_C@_0N@BFCMJIF@EfiMpService?$AA@ 000000000000ae70     PiSmmCore:Handle.obj
+ 0002:000038e0       ??_C@_09FJMIFGPD@AmiUsbSmm?$AA@ 000000000000ae80     PiSmmCore:Handle.obj
+ 0002:000038f0       ??_C@_0O@NJMKKEGO@AmiCsmStarted?$AA@ 000000000000ae90     PiSmmCore:Handle.obj
+ 0002:00003900       ??_C@_0BD@IJNNLNLP@PchPcieSmiDispatch?$AA@ 000000000000aea0     PiSmmCore:Handle.obj
+ 0002:00003918       ??_C@_09PBOJFBLH@EfiUsb2Hc?$AA@ 000000000000aeb8     PiSmmCore:Handle.obj
+ 0002:00003928       ??_C@_0BB@EOOOOHEG@EfiHttpUtilities?$AA@ 000000000000aec8     PiSmmCore:Handle.obj
+ 0002:0000393c       ??_C@_04KDAILJMM@Heci?$AA@ 000000000000aedc     PiSmmCore:Handle.obj
+ 0002:00003948       ??_C@_0BN@GMEILLLO@EfiBusSpecificDriverOverride?$AA@ 000000000000aee8     PiSmmCore:Handle.obj
+ 0002:00003968       ??_C@_07JHFBHABK@EfiUdp4?$AA@ 000000000000af08     PiSmmCore:Handle.obj
+ 0002:00003970       ??_C@_0BC@HBGPIFA@AmiCsmVideoPolicy?$AA@ 000000000000af10     PiSmmCore:Handle.obj
+ 0002:00003988       ??_C@_0BB@NNPLGNDC@PchResetCallback?$AA@ 000000000000af28     PiSmmCore:Handle.obj
+ 0002:000039a0       ??_C@_0BE@EJKGFCBH@AmiBdsConnectPolicy?$AA@ 000000000000af40     PiSmmCore:Handle.obj
+ 0002:000039b8       ??_C@_0BC@BOMEDIGG@EfiFirmwareVolume?$AA@ 000000000000af58     PiSmmCore:Handle.obj
+ 0002:000039d0       ??_C@_0BB@LPEHBJNK@EfiSimpleTextOut?$AA@ 000000000000af70     PiSmmCore:Handle.obj
+ 0002:000039e8       ??_C@_0BA@GNKLMODO@EfiSimpleTextIn?$AA@ 000000000000af88     PiSmmCore:Handle.obj
+ 0002:000039f8       ??_C@_0O@EOEICHDH@EfiLegacy8259?$AA@ 000000000000af98     PiSmmCore:Handle.obj
+ 0002:00003a08       ??_C@_0BA@MEJMIFPK@AmiDebugService?$AA@ 000000000000afa8     PiSmmCore:Handle.obj
+ 0002:00003a18       ??_C@_0BD@KENMBHLF@EfiHiiConfigAccess?$AA@ 000000000000afb8     PiSmmCore:Handle.obj
+ 0002:00003a30       ??_C@_0N@PCKNGAD@EfiSmmCpuIo2?$AA@ 000000000000afd0     PiSmmCore:Handle.obj
+ 0002:00003a40       ??_C@_0BO@FHMHJOPL@AmiTpmSupportTypeProtocolguid?$AA@ 000000000000afe0     PiSmmCore:Handle.obj
+ 0002:00003a60       ??_C@_0BC@MDPMOAIP@EfiS3SmmSaveState?$AA@ 000000000000b000     PiSmmCore:Handle.obj
+ 0002:00003a78       ??_C@_0BD@DEIDMLPP@EfiLegacyInterrupt?$AA@ 000000000000b018     PiSmmCore:Handle.obj
+ 0002:00003a90       ??_C@_0M@JCMEKDHB@EfiHiiImage?$AA@ 000000000000b030     PiSmmCore:Handle.obj
+ 0002:00003aa0       ??_C@_0BB@BAPBGNCF@EfiSimplePointer?$AA@ 000000000000b040     PiSmmCore:Handle.obj
+ 0002:00003ab4       ??_C@_06DHNOFPEH@EfiRng?$AA@ 000000000000b054     PiSmmCore:Handle.obj
+ 0002:00003ac0       ??_C@_0BK@JCJLECPM@EfiPciEnumerationComplete?$AA@ 000000000000b060     PiSmmCore:Handle.obj
+ 0002:00003ae0       ??_C@_0BC@GLJMPGN@EfiGenericMemTest?$AA@ 000000000000b080     PiSmmCore:Handle.obj
+ 0002:00003af8       ??_C@_0BB@JGHOJEOA@EfiSmmRscHandler?$AA@ 000000000000b098     PiSmmCore:Handle.obj
+ 0002:00003b10       ??_C@_0BI@LIHFEHIC@EfiMtftp4ServiceBinding?$AA@ 000000000000b0b0     PiSmmCore:Handle.obj
+ 0002:00003b28       ??_C@_0BD@DCAAMFJB@EfiPciRootBridgeIo?$AA@ 000000000000b0c8     PiSmmCore:Handle.obj
+ 0002:00003b40       ??_C@_0L@JJOLAPJK@PchNvsArea?$AA@ 000000000000b0e0     PiSmmCore:Handle.obj
+ 0002:00003b4c       ??_C@_06FNOGNLG@EfiIp6?$AA@ 000000000000b0ec     PiSmmCore:Handle.obj
+ 0002:00003b58       ??_C@_08GLGJPAOH@EfiUsbIo?$AA@ 000000000000b0f8     PiSmmCore:Handle.obj
+ 0002:00003b64       ??_C@_06MDIAKDJI@EfiUsb?$AA@ 000000000000b104     PiSmmCore:Handle.obj
+ 0002:00003b70       ??_C@_0BF@PEJDALN@EfiEbcSimpleDebugger?$AA@ 000000000000b110     PiSmmCore:Handle.obj
+ 0002:00003b88       ??_C@_0BC@FDCBJNII@EfiPlatformPolicy?$AA@ 000000000000b128     PiSmmCore:Handle.obj
+ 0002:00003ba0       ??_C@_0BJ@MPNDNGPP@EdkiiSmmExitBootServices?$AA@ 000000000000b140     PiSmmCore:Handle.obj
+ 0002:00003bc0       ??_C@_0N@DPDIFPNA@EfiResetArch?$AA@ 000000000000b160     PiSmmCore:Handle.obj
+ 0002:00003bd0       ??_C@_0BF@CCFBANJA@EfiRealTimeClockArch?$AA@ 000000000000b170     PiSmmCore:Handle.obj
+ 0002:00003be8       ??_C@_0BA@FJBCGN@EfiDebugSupport?$AA@ 000000000000b188     PiSmmCore:Handle.obj
+ 0002:00003bf8       ??_C@_0BE@EGLJEBJF@EfiSmmConfiguration?$AA@ 000000000000b198     PiSmmCore:Handle.obj
+ 0002:00003c10       ??_C@_0N@GLHKBMIH@EfiTimerArch?$AA@ 000000000000b1b0     PiSmmCore:Handle.obj
+ 0002:00003c20       ??_C@_0BB@OJDHAHKD@EfiMetronomeArch?$AA@ 000000000000b1c0     PiSmmCore:Handle.obj
+ 0002:00003c38       ??_C@_0L@EMNLLMBJ@EfiCpuArch?$AA@ 000000000000b1d8     PiSmmCore:Handle.obj
+ 0002:00003c48       ??_C@_0BD@OCMBCADM@EfiSmmGpiDispatch2?$AA@ 000000000000b1e8     PiSmmCore:Handle.obj
+ 0002:00003c60       ??_C@_0P@EIGKDOMH@EfiSmmEndOfDxe?$AA@ 000000000000b200     PiSmmCore:Handle.obj
+ 0002:00003c70       ??_C@_0BH@LFDLAHJB@EfiPxeBaseCodeCallback?$AA@ 000000000000b210     PiSmmCore:Handle.obj
+ 0002:00003c88       ??_C@_0BD@EJLPFECE@EfiFirmwareVolume2?$AA@ 000000000000b228     PiSmmCore:Handle.obj
+ 0002:00003ca0       ??_C@_0BD@IGEFGGII@EfiSmmCpuSaveState?$AA@ 000000000000b240     PiSmmCore:Handle.obj
+ 0002:00003cb4       ??_C@_06ECPEKEKP@EfiSio?$AA@ 000000000000b254     PiSmmCore:Handle.obj
+ 0002:00003cc0       ??_C@_0BA@IBAKDMHH@EfiEmmcCardInfo?$AA@ 000000000000b260     PiSmmCore:Handle.obj
+ 0002:00003cd0       ??_C@_0BA@BKOBHFBM@EfiVariableArch?$AA@ 000000000000b270     PiSmmCore:Handle.obj
+ 0002:00003ce0       ??_C@_0BI@BPOGFFKI@EfiMonotonicCounterArch?$AA@ 000000000000b280     PiSmmCore:Handle.obj
+ 0002:00003cf8       ??_C@_0BE@ELDKCNCG@EfiUnicodeCollation?$AA@ 000000000000b298     PiSmmCore:Handle.obj
+ 0002:00003d10       ??_C@_0P@PPCIELIH@EfiAtaPassThru?$AA@ 000000000000b2b0     PiSmmCore:Handle.obj
+ 0002:00003d20       ??_C@_0BB@EAJBAIGJ@EfiSmmCpuService?$AA@ 000000000000b2c0     PiSmmCore:Handle.obj
+ 0002:00003d38       ??_C@_0BC@JLICPIGC@EfiEdidDiscovered?$AA@ 000000000000b2d8     PiSmmCore:Handle.obj
+ 0002:00003d50       ??_C@_0BL@FHHBPACM@EfiSmmPowerButtonDispatch2?$AA@ 000000000000b2f0     PiSmmCore:Handle.obj
+ 0002:00003d70       ??_C@_0CN@MKIJAFKA@EfiNetworkInterfaceIdentifierPro@ 000000000000b310     PiSmmCore:Handle.obj
+ 0002:00003da0       ??_C@_0BC@GDGDJMHG@EfiSmmSwDispatch2?$AA@ 000000000000b340     PiSmmCore:Handle.obj
+ 0002:00003db8       ??_C@_0BB@MCPLKHM@EfiDriverBinding?$AA@ 000000000000b358     PiSmmCore:Handle.obj
+ 0002:00003dd0       ??_C@_0BG@JNJMKIJG@AmiAhciPlatformPolicy?$AA@ 000000000000b370     PiSmmCore:Handle.obj
+ 0002:00003de8       ??_C@_0BA@DBPGOCMM@EfiPlatformType?$AA@ 000000000000b388     PiSmmCore:Handle.obj
+ 0002:00003df8       ??_C@_0O@DCJIEODA@EfiOEMBadging?$AA@ 000000000000b398     PiSmmCore:Handle.obj
+ 0002:00003e08       ??_C@_0N@JDHLINEM@EfiRedirElog?$AA@ 000000000000b3a8     PiSmmCore:Handle.obj
+ 0002:00003e18       ??_C@_0L@IHBEILLP@EfiDiskIo2?$AA@ 000000000000b3b8     PiSmmCore:Handle.obj
+ 0002:00003e28       ??_C@_0BD@GKAHNMHC@EfiExtScsiPassThru?$AA@ 000000000000b3c8     PiSmmCore:Handle.obj
+ 0002:00003e3c       ??_C@_06JHGGAMAB@EfiEbc?$AA@ 000000000000b3dc     PiSmmCore:Handle.obj
+ 0002:00003e44       ??_C@_06LOCCFHFM@EfiPcd?$AA@ 000000000000b3e4     PiSmmCore:Handle.obj
+ 0002:00003e50       ??_C@_0O@MGKOGFPD@EfiAcpiS3Save?$AA@ 000000000000b3f0     PiSmmCore:Handle.obj
+ 0002:00003e60       ??_C@_0O@BONEKCLA@AmiLegacyBoot?$AA@ 000000000000b400     PiSmmCore:Handle.obj
+ 0002:00003e70       ??_C@_09NJPLOIHB@EfiMeInfo?$AA@ 000000000000b410     PiSmmCore:Handle.obj
+ 0002:00003e7c       ??_C@_03FOLGPEJL@Pcd?$AA@  000000000000b41c     PiSmmCore:Handle.obj
+ 0002:00003e80       ??_C@_0BE@EJGLLCJC@EsaInterfacesForTse?$AA@ 000000000000b420     PiSmmCore:Handle.obj
+ 0002:00003e98       ??_C@_0BB@MGEALBCF@EfiComponentName?$AA@ 000000000000b438     PiSmmCore:Handle.obj
+ 0002:00003eb0       ??_C@_0N@CBJBJNDK@EfiHiiString?$AA@ 000000000000b450     PiSmmCore:Handle.obj
+ 0002:00003ec0       ??_C@_0BE@JBFAGGHG@AmiScsiPassThruInit?$AA@ 000000000000b460     PiSmmCore:Handle.obj
+ 0002:00003ed8       ??_C@_0O@PMDDEOGM@PchPcieIoTrap?$AA@ 000000000000b478     PiSmmCore:Handle.obj
+ 0002:00003ee8       ??_C@_0O@OOCHHNEF@AmiEfiKeycode?$AA@ 000000000000b488     PiSmmCore:Handle.obj
+ 0002:00003ef8       ??_C@_0BI@GCJKAPPN@EfiConfigKeywordHandler?$AA@ 000000000000b498     PiSmmCore:Handle.obj
+ 0002:00003f10       ??_C@_0O@EKMDFODH@EfiDevicePath?$AA@ 000000000000b4b0     PiSmmCore:Handle.obj
+ 0002:00003f20       ??_C@_0P@EENNHCJJ@AmiSmbiosBoard?$AA@ 000000000000b4c0     PiSmmCore:Handle.obj
+ 0002:00003f30       ??_C@_0P@EOODJICA@EfiPciPlatform?$AA@ 000000000000b4d0     PiSmmCore:Handle.obj
+ 0002:00003f40       ??_C@_0BB@PBDMOFN@EfiGlobalNvsArea?$AA@ 000000000000b4e0     PiSmmCore:Handle.obj
+ 0002:00003f58       ??_C@_0BG@CDGOMDLE@EfiDevicePathFromText?$AA@ 000000000000b4f8     PiSmmCore:Handle.obj
+ 0002:00003f70       ??_C@_0P@CBKDONGA@EfiPxeBaseCode?$AA@ 000000000000b510     PiSmmCore:Handle.obj
+ 0002:00003f80       ??_C@_0BK@OGPFDGBG@EfiWindowsInt10Workaround?$AA@ 000000000000b520     PiSmmCore:Handle.obj
+ 0002:00003fa0       ??_C@_0BH@HIDCBMN@EfiDevicePathUtilities?$AA@ 000000000000b540     PiSmmCore:Handle.obj
+ 0002:00003fb8       ??_C@_09MACJMNPB@EfiSmbios?$AA@ 000000000000b558     PiSmmCore:Handle.obj
+ 0002:00003fc8       ??_C@_0M@MPACCPJH@AmiTcg2Info?$AA@ 000000000000b568     PiSmmCore:Handle.obj
+ 0002:00003fd8       ??_C@_0BG@OLLGGDMI@EfiTcp4ServiceBinding?$AA@ 000000000000b578     PiSmmCore:Handle.obj
+ 0002:00003ff0       ??_C@_0BB@MFGDFIJM@Compromised?5Data?$AA@ 000000000000b590     BasePrintLib:PrintLibInternal.obj
+ 0002:00004008       ??_C@_0BB@KFJAMCOC@Invalid?5Language?$AA@ 000000000000b5a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004020       ??_C@_0M@FKGOBENP@End?5of?5File?$AA@ 000000000000b5c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00004030       ??_C@_0O@GLPDOMCP@Reserved?5?$CI30?$CJ?$AA@ 000000000000b5d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00004040       ??_C@_0O@NMJOLAMF@Reserved?5?$CI29?$CJ?$AA@ 000000000000b5e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00004050       ??_C@_0N@JEJDHPO@End?5of?5Media?$AA@ 000000000000b5f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00004060       ??_C@_09BOMAGJEG@CRC?5Error?$AA@ 000000000000b600     BasePrintLib:PrintLibInternal.obj
+ 0002:00004070       ??_C@_0BD@KHMPCIOG@Security?5Violation?$AA@ 000000000000b610     BasePrintLib:PrintLibInternal.obj
+ 0002:00004088       ??_C@_0BF@EHOBGFMI@Incompatible?5Version?$AA@ 000000000000b628     BasePrintLib:PrintLibInternal.obj
+ 0002:000040a0       ??_C@_0P@NCJHBCLM@Protocol?5Error?$AA@ 000000000000b640     BasePrintLib:PrintLibInternal.obj
+ 0002:000040b0       ??_C@_0L@DJKNJKHM@TFTP?5Error?$AA@ 000000000000b650     BasePrintLib:PrintLibInternal.obj
+ 0002:000040c0       ??_C@_0L@LKIFCMNO@ICMP?5Error?$AA@ 000000000000b660     BasePrintLib:PrintLibInternal.obj
+ 0002:000040d0       ??_C@_07LCKDCBKK@Aborted?$AA@ 000000000000b670     BasePrintLib:PrintLibInternal.obj
+ 0002:000040d8       ??_C@_0BA@IGIBFFPH@Already?5started?$AA@ 000000000000b678     BasePrintLib:PrintLibInternal.obj
+ 0002:000040e8       ??_C@_0M@DCJFAFHJ@Not?5started?$AA@ 000000000000b688     BasePrintLib:PrintLibInternal.obj
+ 0002:000040f8       ??_C@_08PAFJCNGP@Time?5out?$AA@ 000000000000b698     BasePrintLib:PrintLibInternal.obj
+ 0002:00004108       ??_C@_0L@IFPBNFC@No?5mapping?$AA@ 000000000000b6a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004118       ??_C@_0M@ENKCBFEP@No?5Response?$AA@ 000000000000b6b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004128       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 000000000000b6c8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004138       ??_C@_09CFCBFJND@Not?5Found?$AA@ 000000000000b6d8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004148       ??_C@_0O@JNCJKCCD@Media?5changed?$AA@ 000000000000b6e8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004158       ??_C@_08KEGAJDNN@No?5Media?$AA@ 000000000000b6f8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004168       ??_C@_0M@HDLEPOFA@Volume?5Full?$AA@ 000000000000b708     BasePrintLib:PrintLibInternal.obj
+ 0002:00004178       ??_C@_0P@EIOJGIF@Volume?5Corrupt?$AA@ 000000000000b718     BasePrintLib:PrintLibInternal.obj
+ 0002:00004188       ??_C@_0BB@GOILNEAA@Out?5of?5Resources?$AA@ 000000000000b728     BasePrintLib:PrintLibInternal.obj
+ 0002:000041a0       ??_C@_0BA@LNEDDFNB@Write?5Protected?$AA@ 000000000000b740     BasePrintLib:PrintLibInternal.obj
+ 0002:000041b0       ??_C@_0N@HHEABDHO@Device?5Error?$AA@ 000000000000b750     BasePrintLib:PrintLibInternal.obj
+ 0002:000041c0       ??_C@_09NKFGCIPN@Not?5Ready?$AA@ 000000000000b760     BasePrintLib:PrintLibInternal.obj
+ 0002:000041d0       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small?$AA@ 000000000000b770     BasePrintLib:PrintLibInternal.obj
+ 0002:000041e8       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size?$AA@ 000000000000b788     BasePrintLib:PrintLibInternal.obj
+ 0002:000041f8       ??_C@_0M@BEECMOIL@Unsupported?$AA@ 000000000000b798     BasePrintLib:PrintLibInternal.obj
+ 0002:00004208       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter?$AA@ 000000000000b7a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004220       ??_C@_0L@PLPBEPPC@Load?5Error?$AA@ 000000000000b7c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00004230       ??_C@_0BD@IFJNJCCO@Warning?5Stale?5Data?$AA@ 000000000000b7d0     BasePrintLib:PrintLibInternal.obj
+ 0002:00004248       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small?$AA@ 000000000000b7e8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004268       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure?$AA@ 000000000000b808     BasePrintLib:PrintLibInternal.obj
+ 0002:00004280       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure?$AA@ 000000000000b820     BasePrintLib:PrintLibInternal.obj
+ 0002:00004298       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph?$AA@ 000000000000b838     BasePrintLib:PrintLibInternal.obj
+ 0002:000042b0       ??_C@_07PBILKAFL@Success?$AA@ 000000000000b850     BasePrintLib:PrintLibInternal.obj
+ 0002:000042b8       mHexStr                    000000000000b858     BasePrintLib:PrintLibInternal.obj
+ 0002:000042d0       mStatusString              000000000000b870     BasePrintLib:PrintLibInternal.obj
+ 0002:00004408       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO?$AA@ 000000000000b9a8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004418       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO?$AA@ 000000000000b9b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004428       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 000000000000b9c8     BasePrintLib:PrintLibInternal.obj
+ 0002:00004460       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO?$AA@ 000000000000ba00     BasePrintLib:PrintLibInternal.obj
+ 0002:00004470       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d?$AA@ 000000000000ba10     BasePrintLib:PrintLibInternal.obj
+ 0002:0000448c       ??_C@_04JIMNDDED@?$CF08X?$AA@ 000000000000ba2c     BasePrintLib:PrintLibInternal.obj
+ 0002:00004494       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 000000000000ba34     BasePrintLib:PrintLibInternal.obj
+ 0002:00004498       ??_C@_01LIIJDEN@?$AN?$AA@  000000000000ba38     BasePrintLib:PrintLibInternal.obj
+ 0002:0000449c       mUefiDevicePathLibEndDevicePath 000000000000ba3c     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:000044a0       ??_C@_00CNPNBAHC@?$AA@     000000000000ba40     SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0002:000044c0       _gPcd_BinaryPatch_PcdLoadFixAddressSmmCodePageNumber 000000000000ba60     PiSmmCore:AutoGen.obj
+ 0002:000044c4       mInLegacyBoot              000000000000ba64     PiSmmCore:PiSmmCore.obj
+ 0002:000044c5       gDispatcherRunning         000000000000ba65     PiSmmCore:Dispatcher.obj
+ 0002:000044c6       gRequestDispatch           000000000000ba66     PiSmmCore:Dispatcher.obj
+ 0002:000044c7       mSmramProfileGettingStatus 000000000000ba67     PiSmmCore:SmramProfileRecord.obj
+ 0002:000044c8       mEfiLocateHandleRequest    000000000000ba68     PiSmmCore:Locate.obj
+ 0002:000044d0       mSmmSystemTableAllocateSize 000000000000ba70     PiSmmCore:InstallConfigurationTable.obj
+ 0002:000044d8       mSecurity                  000000000000ba78     PiSmmCore:Dispatcher.obj
+ 0002:000044e0       mSecurity2                 000000000000ba80     PiSmmCore:Dispatcher.obj
+ 0002:000044e8       mSmramProfileRecordingEnable 000000000000ba88     PiSmmCore:SmramProfileRecord.obj
+ 0002:000044e9       SmmAmiBufferValidationLibSmmIsLocked 000000000000ba89     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000044ea       SmmAmiBufferValidationLibCsmEnabled 000000000000ba8a     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000044eb       SmmAmiBufferValidationLibBufferLocked 000000000000ba8b     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000044ec       SmmAmiBufferValidationLibCommunicationBufferSize 000000000000ba8c     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000044f0       mDepexEvaluationStack      000000000000ba90     PiSmmCore:Dependency.obj
+ 0002:000044f8       mDepexEvaluationStackEnd   000000000000ba98     PiSmmCore:Dependency.obj
+ 0002:00004500       mDepexEvaluationStackPointer 000000000000baa0     PiSmmCore:Dependency.obj
+ 0002:00004508       gImageHandle               000000000000baa8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00004510       gST                        000000000000bab0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00004518       gBS                        000000000000bab8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00004520       gRT                        000000000000bac0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00004528       gSmst                      000000000000bac8     PiSmmCoreSmmServicesTableLib:PiSmmCoreSmmServicesTableLib.obj
+ 0002:00004530       mSmmCoreMemoryAllocLibSmramRanges 000000000000bad0     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00004538       mSmmCoreMemoryAllocLibSmramRangeCount 000000000000bad8     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00004540       gDS                        000000000000bae0     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00004548       SmmAmiBufferValidationLibSmramRanges 000000000000bae8     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004550       SmmAmiBufferValidationLibNumberOfSmramRanges 000000000000baf0     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004558       SmmAmiBufferValidationLibMemoryRanges 000000000000baf8     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004560       SmmAmiBufferValidationLibNumberOfMemoryRanges 000000000000bb00     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004568       SmmAmiBufferValidationLibMmioRanges 000000000000bb08     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004570       SmmAmiBufferValidationLibNumberOfMmioRanges 000000000000bb10     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004578       SmmAmiBufferValidationLibRoRanges 000000000000bb18     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004580       SmmAmiBufferValidationLibNumberOfRoRanges 000000000000bb20     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004588       SmmAmiBufferValidationLibReadyToLockRegistration 000000000000bb28     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004590       SmmAmiBufferValidationLibSwDispatchRegistration 000000000000bb30     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:00004598       SmmAmiBufferValidationLibValidationProtocolHandle 000000000000bb38     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000045a0       SmmAmiBufferValidationLibSmmMailBox 000000000000bb40     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000045a8       SmmAmiBufferValidationLibCommunicationBuffer 000000000000bb48     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000045b0       SmmAmiBufferValidationLibTransactionId 000000000000bb50     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000045b8       SmmAmiBufferValidationLibSmmCpu 000000000000bb58     SmmCoreAmiBufferValidationLib:SmmCoreAmiBufferValidationLib.obj
+ 0002:000045c0       mReportStatusCode          000000000000bb60     SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000045c8       mStatusCodeProtocol        000000000000bb68     SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000045d0       mHandle                    000000000000bb70     SmmCorePerformanceLib:SmmCorePerformanceLib.obj
+ 0002:000045d8       mHobList                   000000000000bb78     DxeHobLib:HobLib.obj
+ 0002:000045e0       mSmramProfileContextPtr    000000000000bb80     PiSmmCore:SmramProfileRecord.obj
+ 0002:000045e8       mGaugeData                 000000000000bb88     <common>
+ 0002:000045f0       mMaxGaugeRecords           000000000000bb90     <common>
+ 0002:000045f8       mSmmPerfLock               000000000000bb98     <common>
+ 0002:00004600       mPerformanceMeasurementEnabled 000000000000bba0     <common>
+ 0002:00004604       gCf8                       000000000000bba4     <common>
+ 0002:00004610       gSbiRegs                   000000000000bbb0     <common>
+ 0002:00004620       mSmmPoolLists              000000000000bbc0     <common>
+ 0002:00004680       mFvDevicePath              000000000000bc20     <common>
+ 0002:00004698       mFullSmramRanges           000000000000bc38     <common>
+ 0002:000046a0       mSmmCoreLoadedImage        000000000000bc40     <common>
+ 0002:000046a8       mFullSmramRangeCount       000000000000bc48     <common>
+ 0002:000046b0       gSmmCorePrivate            000000000000bc50     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

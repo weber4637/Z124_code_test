@@ -1,0 +1,80 @@
+ AmiTcgPlatformPeiAfterMem
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000123fH .text                   CODE
+ 0002:00000000 00000170H .data                   DATA
+ 0002:00000170 00000280H .rdata                  DATA
+ 0002:000003f0 00000008H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000032       _GetRomArea                00000272 f   AmiTcgPlatformPeiAfterMem:AmiTcgPlatformPeiAfterMem.obj
+ 0001:00000066       _FindAndMeasureDxeCore     000002a6 f   AmiTcgPlatformPeiAfterMem:AmiTcgPlatformPeiAfterMem.obj
+ 0001:0000021e       _VerifyTcgVariables        0000045e f   AmiTcgPlatformPeiAfterMem:AmiTcgPlatformPeiAfterMem.obj
+ 0001:0000024d       _Set_TPMPhysicalPresence   0000048d f   AmiTcgPlatformPeiAfterMem:AmiTcgPlatformPeiAfterMem.obj
+ 0001:00000408       _TcgPeiGetRawImage         00000648 f   AmiTcgPlatformPeiAfterMem:AmiTcgPlatformPeiAfterMem.obj
+ 0001:000004cf       _MeasureFVOnMemAvail       0000070f f   AmiTcgPlatformPeiAfterMem:AmiTcgPlatformPeiAfterMem.obj
+ 0001:000004d8       _MemoryPresentEntry        00000718 f   AmiTcgPlatformPeiAfterMem:AmiTcgPlatformPeiAfterMem.obj
+ 0001:0000077d       _CompareMem                000009bd f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:00000798       _CopyMem                   000009d8 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000007ba       _TpmPeiReportStatusCode    000009fa f   TpmReportStatusCodeWrapperLibPei:TpmReportStatusCodeWrapperLibPei.obj
+ 0001:000007ce       _TcgPeiBuildHobGuid        00000a0e f   AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0001:000007f8       _TcgPeiTpmStartup          00000a38 f   AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0001:000009e6       _ContinueTPMSelfTest       00000c26 f   AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0001:00000a97       _ContinueTCMSelfTest       00000cd7 f   AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0001:00000b33       _SendStartupandSelftest    00000d73 f   AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0001:00000c31       _INTTCGPEI_GETCAP          00000e71 f   AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0001:00000ceb       _MeasureCRTMVersion        00000f2b f   AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0001:00000dd9       _MeasureTcmCRTMVersion     00001019 f   AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0001:00000f66       _AmiGetFirstRomArea        000011a6 f   PeiAmiRomLayoutLib:PeiAmiRomLayoutLib.obj
+ 0001:00000f87       _AmiGetNextRomArea         000011c7 f   PeiAmiRomLayoutLib:PeiAmiRomLayoutLib.obj
+ 0001:00000fc7       _IsTcmSupportType          00001207 f   AmiTcmlib:AmiTcmlib.obj
+ 0001:00000ff7       _GetHobList                00001237 f   PeiHobLib:HobLib.obj
+ 0001:00001011       _GetNextHob                00001251 f   PeiHobLib:HobLib.obj
+ 0001:0000103e       _GetFirstGuidHob           0000127e f   PeiHobLib:HobLib.obj
+ 0001:0000106c       _InternalPeiCreateHob      000012ac f   PeiHobLib:HobLib.obj
+ 0001:00001094       _BuildGuidHob              000012d4 f   PeiHobLib:HobLib.obj
+ 0001:000010b1       _GetPeiServicesTablePointer 000012f1 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:000010cb       _CopyGuid                  0000130b f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000010ef       _CompareGuid               0000132f f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00001113       _InternalReportStatusCode  00001353 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00001160       _InternalMemCompareMem     000013a0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00001180       _InternalMemCopyMem        000013c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000011c0       _InternalMemSetMem         00001400     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000011e0       _InternalMemZeroMem        00001420     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001200       _InternalMemSetMem32       00001440     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001220       _InternalMemSetMem64       00001460     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gEfiCallerIdGuid          00001480     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000010       _gAmiTcmSignalguid         00001490     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000020       _gAmiLegacyTpmguid         000014a0     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000030       _gEfiTcgMpDriverHobGuid    000014b0     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000040       _gEfiPeiTcgLogHobGuid      000014c0     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000050       _gEfiTcgWakeEventDataHobGuid 000014d0     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000060       _AmiMemoryPresentFunctionOverrideGuid 000014e0     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000070       _AmiSetPhysicalPresenceGuid 000014f0     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000080       _AmiVerifyTcgVariablesGuid 00001500     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000090       _amiFVhoblistguid          00001510     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:000000a0       _gMpTcmFileGuid            00001520     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:000000b0       _gSkipTpmStartupGuid       00001530     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:000000c0       _gAmiRomLayoutFfsFileGuid  00001540     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:000000d0       _gAmiRomLayoutGuid         00001550     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:000000e0       _gAmiTcgPlatformPpiAfterMem 00001560     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:000000f0       _gEfiEndOfPeiSignalPpiGuid 00001570     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000100       _gTcgPeiPolicyGuid         00001580     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000110       _gPeiTcgPpiGuid            00001590     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000120       _gPeiTpmPpiGuid            000015a0     AmiTcgPlatformPeiAfterMem:AutoGen.obj
+ 0002:00000130       _TCMSupportedArray         000015b0     AmiTcmlib:AmiTcmlib.obj
+ 0002:0000013c       _MeasureCRTMVersionFuncPtr 000015bc     AmiTcgLibPei:AmiTcgPlatformPeiLib.obj
+ 0002:000003f4       _FvMemCallback             00001874     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000008fc       _TcmPeiStartup             00000b3c f    CIL library: CIL module
+ 0001:00000e87       _GetAmiRomLayoutHeader     000010c7 f    CIL library: CIL module

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PEI_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\E03E6451-297A-4FE9-B1F7-639B70327C52EnhancePeiVariable\E03E6451-297A-4FE9-B1F7-639B70327C52SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\IA32\Build\EnhancePeiVariable\OUTPUT\EnhancePeiVariable.depex

@@ -1,0 +1,36 @@
+ IePolicyInitPei
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000037dH .text                   CODE
+ 0002:00000000 00000050H .data                   DATA
+ 0002:00000050 00000016H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000071       _AllocatePool              000002b1 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000097       _AllocateZeroPool          000002d7 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000000b2       _CompareGuid               000002f2 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000000e3       _IeIsEnabled               00000323 f   IePeiPolicyUpdateLib:IePeiPlatformPolicyUpdate.obj
+ 0001:00000130       _CreateIePolicyHob         00000370 f   IePeiPolicyUpdateLib:IePeiPlatformPolicyUpdate.obj
+ 0001:000001ac       _UpdatePeiIePlatformPolicy 000003ec f   IePeiPolicyUpdateLib:IePeiPlatformPolicyUpdate.obj
+ 0001:000002b8       _GetHobList                000004f8 f   PeiHobLib:HobLib.obj
+ 0001:000002d2       _GetNextHob                00000512 f   PeiHobLib:HobLib.obj
+ 0001:000002ff       _GetPeiServicesTablePointer 0000053f f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000320       _InternalMemCopyMem        00000560     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000360       _InternalMemZeroMem        000005a0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gIeHobGuid                000005c0     IePolicyInitPei:AutoGen.obj
+ 0002:00000010       _gSetupVariableGuid        000005d0     IePolicyInitPei:AutoGen.obj
+ 0002:00000020       _gPeiIePlatformPolicyPpiGuid 000005e0     IePolicyInitPei:AutoGen.obj
+ 0002:00000030       _gEfiPeiReadOnlyVariable2PpiGuid 000005f0     IePolicyInitPei:AutoGen.obj
+ 0002:00000040       _gPchSpiPpiGuid            00000600     IePolicyInitPei:AutoGen.obj
+ 0002:00000050       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 00000610     IePeiPolicyUpdateLib:IePeiPlatformPolicyUpdate.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

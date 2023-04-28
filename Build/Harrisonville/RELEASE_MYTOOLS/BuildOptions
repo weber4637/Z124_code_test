@@ -1,0 +1,4 @@
+gCommandLineDefines: {'ARCH': ''}
+BuildOptionPcd: None
+Active Platform: d:\bios\z124-002\z124-002\Build\Platform.dsc
+Flash Image Definition: d:\bios\z124-002\z124-002\Build\Platform.fdf

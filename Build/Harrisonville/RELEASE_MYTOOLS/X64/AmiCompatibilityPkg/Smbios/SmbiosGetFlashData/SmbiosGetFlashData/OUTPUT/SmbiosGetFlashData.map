@@ -1,0 +1,50 @@
+ SmbiosGetFlashData
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000400H .text                   CODE
+ 0002:00000000 00000598H .data                   DATA
+ 0002:000005a0 00000004H .rdata                  DATA
+ 0002:000005a8 00000090H .bss                    DATA
+ 0003:00000000 00000018H .pdata                  DATA
+ 0004:00000000 00000014H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000084       GetFlashTableInfo          0000000000000324 f   SmbiosGetFlashData:SmbiosGetFlashData.obj
+ 0001:0000009c       GetField                   000000000000033c f   SmbiosGetFlashData:SmbiosGetFlashData.obj
+ 0001:000000e4       GetDataLocation            0000000000000384 f   SmbiosGetFlashData:SmbiosGetFlashData.obj
+ 0001:000002a0       GetCpuTimer                0000000000000540 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:000002b0       CPULib_CpuID               0000000000000550 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000002f0       memset                     0000000000000590     AmiDxeLib:MemSet.obj
+ 0001:000002fe       MemSetAsm                  000000000000059e f   AmiDxeLib:MemSet.obj
+ 0001:00000350       memcpy                     00000000000005f0     AmiDxeLib:MemCpy.obj
+ 0001:00000350       MemCpyAsm                  00000000000005f0 f   AmiDxeLib:MemCpy.obj
+ 0002:00000000       gAmiSmbiosFlashDataProtocolGuid 00000000000006a0     SmbiosGetFlashData:AutoGen.obj
+ 0002:00000010       EfiErrorStatus             00000000000006b0     AmiDxeLib:StdLibC.obj
+ 0002:00000350       PiErrorStatus              00000000000009f0     AmiDxeLib:StdLibC.obj
+ 0002:000003a0       AmiErrorStatus             0000000000000a40     AmiDxeLib:StdLibC.obj
+ 0002:000003e0       EfiWarningStatus           0000000000000a80     AmiDxeLib:StdLibC.obj
+ 0002:00000450       PiWarningStatus            0000000000000af0     AmiDxeLib:StdLibC.obj
+ 0002:00000498       EfiUnknown                 0000000000000b38     AmiDxeLib:StdLibC.obj
+ 0002:00000578       FlashDataFile              0000000000000c18     SmbiosGetFlashData:SmbiosGetFlashData.obj
+ 0002:00000588       gSmbiosFlashDataProtocol   0000000000000c28     SmbiosGetFlashData:SmbiosGetFlashData.obj
+ 0002:000005a0       _gUefiDriverRevision       0000000000000c40     SmbiosGetFlashData:AutoGen.obj
+ 0002:000005a8       gImageHandle               0000000000000c48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005b0       gST                        0000000000000c50     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005b8       gBS                        0000000000000c58     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000608       pST                        0000000000000ca8     AmiDxeLib:EfiLib.obj
+ 0002:00000610       pBS                        0000000000000cb0     AmiDxeLib:EfiLib.obj
+ 0002:00000618       pRS                        0000000000000cb8     AmiDxeLib:EfiLib.obj
+ 0002:00000620       TheImageHandle             0000000000000cc0     AmiDxeLib:EfiLib.obj
+ 0002:00000628       gRomData                   0000000000000cc8     <common>
+ 0002:00000630       gRomInfo                   0000000000000cd0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

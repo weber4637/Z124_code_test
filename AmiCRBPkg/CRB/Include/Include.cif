@@ -1,0 +1,10 @@
+<component>
+	name = "Include"
+	category = ModulePart
+	LocalRoot = "AmiCRBPkg\CRB\Include"
+	RefName = "CRB.Include"
+[files]
+"Ppi\CrbInfo.h"
+"Protocol\CrbInfo.h"
+"UpdateSmbiosTableTemplate.h"
+<endComponent>

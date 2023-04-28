@@ -1,0 +1,82 @@
+#**********************************************************************
+#**********************************************************************
+#**                                                                  **
+#*        (C)Copyright 1985-2013, American Megatrends, Inc.          **
+#**                                                                  **
+#**                       All Rights Reserved.                       **
+#**                                                                  **
+#**      5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093        **
+#**                                                                  **
+#**                       Phone: (770)-246-8600                      **
+#**                                                                  **
+#**********************************************************************
+#**********************************************************************
+#**********************************************************************
+#<AMI_FHDR_START>
+#
+# Name:  <NCT6683DHwmSetup.sdl>
+#
+# Description:     SDL file to define SIO setup functions
+#
+#
+#<AMI_FHDR_END>
+#**********************************************************************
+
+TOKEN
+    Name  = "NCT6683D_Hardware_monitor_SUPPORT"
+    Value  = "1"
+    Help  = "Main switch to enable NCT6683D hardware monitor support in Project"
+    TokenType = Boolean
+    TargetEQU = Yes
+    TargetH = Yes
+    Master = Yes
+End
+
+PATH
+    Name  = "NCT6683D_HWM_DIR"
+End
+
+#==============================================================================
+#elink Setup Source file and table
+#==============================================================================
+ELINK
+    Name  = "$(NCT6683D_HWM_DIR)/NCT6683DHwmSetup.sd"
+    Parent  = "SETUP_DEFINITIONS"
+    Priority  = 40
+    InvokeOrder = AfterParent
+End
+
+ELINK
+    Name  = "$(NCT6683D_HWM_DIR)/NCT6683DHwmSetup.uni"
+    Parent  = "SetupStringFiles"
+    InvokeOrder = AfterParent
+End
+
+ELINK
+    Name  = "$(NCT6683D_HWM_DIR)/NCT6683DHwmSetup.c"
+    Parent  = "SetupCallbackFiles"
+    InvokeOrder = AfterParent
+End
+
+#==============================================================================
+#Below elink will be linked into Setup INF component
+#==============================================================================
+ELINK
+    Name  = "ITEM_CALLBACK(ADVANCED_FORM_SET_CLASS,0,NCT6683D_INTERACTIVE_KEY,NCT6683D_HWM_CallBack),"
+    Parent  = "SetupItemCallbacks"
+    InvokeOrder = AfterParent
+End
+
+#**********************************************************************
+#**********************************************************************
+#**                                                                  **
+#*        (C)Copyright 1985-2013, American Megatrends, Inc.         **
+#**                                                                  **
+#**                       All Rights Reserved.                       **
+#**                                                                  **
+#**      5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093        **
+#**                                                                  **
+#**                       Phone: (770)-246-8600                      **
+#**                                                                  **
+#**********************************************************************
+#**********************************************************************

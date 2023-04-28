@@ -1,0 +1,26 @@
+ SetupDefaults
+
+ Timestamp is 6448e7f2 (Wed Apr 26 16:59:30 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000001cH .text                   CODE
+ 0002:00000000 00000000H .data                   DATA
+ 0002:00000000 00000004H .rdata                  DATA
+ 0002:00000008 00000018H .bss                    DATA
+ 0003:00000000 00000060H .rsrc$01                DATA
+ 0003:00000060 000106b8H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000240 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000000       _gUefiDriverRevision       0000000000000260     SetupDefaults:AutoGen.obj
+ 0002:00000008       gImageHandle               0000000000000268     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000010       gST                        0000000000000270     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000018       gBS                        0000000000000278     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

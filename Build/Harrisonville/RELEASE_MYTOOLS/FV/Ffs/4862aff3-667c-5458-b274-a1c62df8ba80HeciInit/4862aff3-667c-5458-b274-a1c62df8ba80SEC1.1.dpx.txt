@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PEI_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\4862aff3-667c-5458-b274-a1c62df8ba80HeciInit\4862aff3-667c-5458-b274-a1c62df8ba80SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\IA32\DenvertonPkg\Me\Heci\Pei\HeciInit\OUTPUT\HeciInit.depex

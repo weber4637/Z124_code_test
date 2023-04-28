@@ -1,0 +1,7 @@
+typedef struct {
+  UINT8 IpVersion;
+  UINT8 Padding;
+  UINT16 Description[75];
+  UINT16 Uri[255];
+} HTTP_BOOT_CONFIG_IFR_NVDATA;  // ADDED FROM GENERIC DEFINITIONS
+

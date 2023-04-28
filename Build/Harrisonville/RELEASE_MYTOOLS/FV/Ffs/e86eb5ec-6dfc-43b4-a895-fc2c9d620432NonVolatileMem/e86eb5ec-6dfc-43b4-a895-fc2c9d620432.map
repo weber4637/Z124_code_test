@@ -1,0 +1,79 @@
+ NonVolatileMem
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000159fH .text                   CODE
+ 0002:00000000 0000693cH .data                   DATA
+ 0002:00006940 00000000H .rdata                  DATA
+ 0002:00006940 00000000H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000012c       _ConfigureCacheFlush       0000036c f   NonVolatileMem:NonVolatileMemPei.obj
+ 0001:000001e3       _PassCkeLatchGpioToMrc     00000423 f   NonVolatileMem:NonVolatileMemPei.obj
+ 0001:000002a8       _NonVolatileMemPeiInit     000004e8 f   NonVolatileMem:NonVolatileMemPei.obj
+ 0001:00000395       _shutdown_platform         000005d5 f   NonVolatileMem:C2f.obj
+ 0001:000003ac       _DetermineDataSaveRanges   000005ec f   NonVolatileMem:C2f.obj
+ 0001:0000047b       _C2FCallback               000006bb f   NonVolatileMem:C2f.obj
+ 0001:000005b2       _PchPwrmBaseSet            000007f2 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:00000616       _PchPwrmBaseGet            00000856 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:0000064c       _InternalPeiCreateHob      0000088c f   PeiHobLib:HobLib.obj
+ 0001:00000674       _LShiftU64                 000008b4 f   BaseLib:LShiftU64.obj
+ 0001:00000690       _RShiftU64                 000008d0 f   BaseLib:RShiftU64.obj
+ 0001:000006ac       _gpioPadCfgBaseOf          000008ec f   GpioCtrlrLib:GpioCtrlrLib.obj
+ 0001:000006dd       _spinloop                  0000091d f   C2fAhciLib:C2fAhci.obj
+ 0001:000006f7       _memclear                  00000937 f   C2fAhciLib:C2fAhci.obj
+ 0001:00000718       _buildIdentifyCommand      00000958 f   C2fAhciLib:C2fAhci.obj
+ 0001:0000079c       _buildSetDMACommand        000009dc f   C2fAhciLib:C2fAhci.obj
+ 0001:000007fe       _buildDMACommand           00000a3e f   C2fAhciLib:C2fAhci.obj
+ 0001:0000099f       _GetApicID                 00000bdf f   C2fAhciLib:C2fAhci.obj
+ 0001:000009fa       _EnableMSI                 00000c3a f   C2fAhciLib:C2fAhci.obj
+ 0001:00000a6e       _configureAHCI             00000cae f   C2fAhciLib:C2fAhci.obj
+ 0001:00000b6e       _StartDriveComms           00000dae f   C2fAhciLib:C2fAhci.obj
+ 0001:00000bc6       _runCommands               00000e06 f   C2fAhciLib:C2fAhci.obj
+ 0001:00000d62       _transferData              00000fa2 f   C2fAhciLib:C2fAhci.obj
+ 0001:00000eb3       _find_storage_location     000010f3 f   C2fAhciLib:C2fAhci.obj
+ 0001:00000f85       _c2f_entry                 000011c5 f   C2fAhciLib:C2fAhci.obj
+ 0001:00001290       _AdrCfg_Deactivate         000014d0 f   AdrCfgLib:AdrCfgLib.obj
+ 0001:000012c0       _GetConfigBlock            00001500 f   BaseConfigBlockLib:BaseConfigBlockLib.obj
+ 0001:000012f0       _GetPlatformInfo           00001530 f   PeiPlatformHookLib:PeiPlatformHooklib.obj
+ 0001:00001373       _GetPchSeries              000015b3 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00001462       _CopyGuid                  000016a2 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00001486       _CopyMem                   000016c6 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:0000149c       _GetPeiServicesTablePointer 000016dc f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:000014c0       _InternalMemZeroMem        00001700     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000014e0       _InternalMemCopyMem        00001720     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001520       _InternalMemCompareMem     00001760     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00001540       _InternalMemSetMem         00001780     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001560       _InternalMemSetMem32       000017a0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001580       _InternalMemSetMem64       000017c0     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gNonVolatileMemHobGuid    000017e0     NonVolatileMem:AutoGen.obj
+ 0002:00000010       _gPlatformInfoHobGuid      000017f0     NonVolatileMem:AutoGen.obj
+ 0002:00000020       _gEfiPeiMemoryDiscoveredPpiGuid 00001800     NonVolatileMem:AutoGen.obj
+ 0002:00000030       _gNonVolatileMemPpiGuid    00001810     NonVolatileMem:AutoGen.obj
+ 0002:00000040       _gSiSaPolicyPpiGuid        00001820     NonVolatileMem:AutoGen.obj
+ 0002:00000050       _gEfiEndOfPeiSignalPpiGuid 00001830     NonVolatileMem:AutoGen.obj
+ 0002:000002c8       _mPchLpSataPortResetToGpioMap 00001aa8     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000002e0       _mPchHSataPortResetToGpioMap 00001ac0     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000320       _mPchLpSataDevSlpPinToGpioMap 00001b00     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000338       _mPchHSataDevSlpPinToGpioMap 00001b18     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000068bc       _gC2fPartitionGuid         0000809c     C2fAhciLib:C2fAhci.obj
+ 0002:000068cc       _PchLpRprDidTable          000080ac     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000068e4       _PchHRprDidTable           000080c4     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00006938       _mPchSeries                00008118     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000000c       _AdrCallback               0000024c f    CIL library: CIL module
+ 0001:00000070       _PublishNonVolatileMemHob  000002b0 f    CIL library: CIL module
+ 0001:0000021e       _UpdateAdrRecoveryDetected 0000045e f    CIL library: CIL module
+ 0001:000010f0       _loadData                  00001330 f    CIL library: CIL module
+ 0001:0000112c       _loadCmd                   0000136c f    CIL library: CIL module
+ 0001:0000115d       _CPLDread                  0000139d f    CIL library: CIL module
+ 0001:00001215       _CPLDwrite                 00001455 f    CIL library: CIL module

@@ -1,0 +1,13 @@
+<component>
+    name = "Protocol"
+    category = ModulePart
+    LocalRoot = "DenvertonPkg\Me\Include\Protocol\"
+    RefName = "DenvertonPkg.Me.Include.Protocol"
+[files]
+"HeciProtocol.h"	
+"HeciSmm.h"	
+"MeHeci3Smm.h"	
+"SpsNm.h"	
+"SpsSien.h"	
+"SpsFspHmrfpoProtocol.h"	
+<endComponent>

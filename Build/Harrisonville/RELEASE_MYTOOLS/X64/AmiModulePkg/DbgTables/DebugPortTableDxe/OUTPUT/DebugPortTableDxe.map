@@ -1,0 +1,42 @@
+ DebugPortTableDxe
+
+ Timestamp is 6448e7f2 (Wed Apr 26 16:59:30 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000078dH .text                   CODE
+ 0002:00000000 00000048H .data                   DATA
+ 0002:00000048 00000016H .rdata                  DATA
+ 0002:00000060 00000068H .bss                    DATA
+ 0003:00000000 00000048H .pdata                  DATA
+ 0004:00000000 00000048H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000034       DbgpTableInstallCallback   00000000000002b4 f   DebugPortTableDxe:DebugPortTableDxe.obj
+ 0001:00000080       DebugPortTableDxeEntryPoint 0000000000000300 f   DebugPortTableDxe:DebugPortTableDxe.obj
+ 0001:000002b0       Dbg2TableInstallCallback   0000000000000530 f   DebugPortTableDxe:DebugPortTable2Dxe.obj
+ 0001:000003e0       GetCapRegBar               0000000000000660 f   DxeDebugPortTablesLib:Dbg2Board.obj
+ 0001:00000558       SetupDebugDeviceInformationData 00000000000007d8 f   DxeDebugPortTablesLib:Dbg2Board.obj
+ 0001:00000770       InternalMemZeroMem         00000000000009f0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gEfiAcpiSupportProtocolGuid 0000000000000a20     DebugPortTableDxe:AutoGen.obj
+ 0002:00000010       gEfiConsoleControlProtocolGuid 0000000000000a30     DebugPortTableDxe:AutoGen.obj
+ 0002:00000020       gEfiPciIoProtocolGuid      0000000000000a40     DebugPortTableDxe:AutoGen.obj
+ 0002:00000030       gAcpiOemId                 0000000000000a50     DebugPortTableDxe:DebugPortTableDxe.obj
+ 0002:00000038       gAcpiOemTblId              0000000000000a58     DebugPortTableDxe:DebugPortTableDxe.obj
+ 0002:00000040       _gPcd_BinaryPatch_PcdSerialRegisterBase 0000000000000a60     DebugPortTableDxe:AutoGen.obj
+ 0002:00000048       _gUefiDriverRevision       0000000000000a68     DebugPortTableDxe:AutoGen.obj
+ 0002:00000050       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000000a70     DebugPortTableDxe:DebugPortTableDxe.obj
+ 0002:0000005c       ??_C@_01LFCBOECM@?4?$AA@   0000000000000a7c     DxeDebugPortTablesLib:Dbg2Board.obj
+ 0002:000000a0       gAcpiSupport               0000000000000ac0     DebugPortTableDxe:DebugPortTableDxe.obj
+ 0002:000000a8       gImageHandle               0000000000000ac8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000b0       gST                        0000000000000ad0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000b8       gBS                        0000000000000ad8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000c0       gRT                        0000000000000ae0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

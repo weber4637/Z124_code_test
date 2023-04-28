@@ -1,0 +1,325 @@
+
+_SetupGUIDInfo_0	label	byte 
+
+;Guid
+	dd	0B4909CF3h
+	dw	07B93h
+	dw	04751h
+	db	09Bh, 0D8h, 05Bh, 0A8h, 022h, 0Bh, 09Bh, 0B2h
+
+	dw	'B','o','o','t','M','a','n','a','g','e','r'
+	dw	29 dup (0)
+	dd 	01h 	;var attributes
+	dd 	01h 	;var ID
+
+_SetupGUIDInfo_1	label	byte 
+
+;Guid
+	dd	052E6EB0h
+	dw	0F240h
+	dw	042C5h
+	db	083h, 09h, 045h, 087h, 045h, 045h, 0C6h, 0B4h
+
+	dw	'B','o','o','t','N','o','w','C','o','u','n','t'
+	dw	28 dup (0)
+	dd 	01h 	;var attributes
+	dd 	01h 	;var ID
+
+_SetupGUIDInfo_2	label	byte 
+
+;Guid
+	dd	0A56074DBh
+	dw	065FEh
+	dw	045F7h
+	db	0BDh, 021h, 02Dh, 02Bh, 0DDh, 08Eh, 096h, 052h
+
+	dw	'L','e','g','a','c','y','D','e','v','O','r','d','e','r'
+	dw	26 dup (0)
+	dd 	01h 	;var attributes
+	dd 	07h 	;var ID
+
+_SetupGUIDInfo_3	label	byte 
+
+;Guid
+	dd	09CF0F18Eh
+	dw	07C7Dh
+	dw	049DEh
+	db	0B5h, 0AAh, 0BBh, 0BAh, 0D6h, 0B2h, 010h, 07h
+
+	dw	'A','M','I','C','a','l','l','b','a','c','k'
+	dw	29 dup (0)
+	dd 	01h 	;var attributes
+	dd 	02h 	;var ID
+
+_SetupGUIDInfo_4	label	byte 
+
+;Guid
+	dd	0ADDEBF82h
+	dw	0A560h
+	dw	046B9h
+	db	0A2h, 080h, 078h, 0C6h, 0ABh, 061h, 0AEh, 0DAh
+
+	dw	'E','r','r','o','r','M','a','n','a','g','e','r'
+	dw	28 dup (0)
+	dd 	09h 	;var attributes
+	dd 	03h 	;var ID
+
+_SetupGUIDInfo_5	label	byte 
+
+;Guid
+	dd	08BE4DF61h
+	dw	093CAh
+	dw	011D2h
+	db	0AAh, 0Dh, 00h, 0E0h, 098h, 03h, 02Bh, 08Ch
+
+	dw	'P','l','a','t','f','o','r','m','L','a','n','g','C','o','d','e','s'
+	dw	23 dup (0)
+	dd 	07h 	;var attributes
+	dd 	05h 	;var ID
+
+_SetupGUIDInfo_6	label	byte 
+
+;Guid
+	dd	0C57AD6B7h
+	dw	0515h
+	dw	040A8h
+	db	09Dh, 021h, 055h, 016h, 052h, 085h, 04Eh, 037h
+
+	dw	's','h','e','l','l','.','e','f','i','|','s','h','e','l','l','x','6','4','.','e','f','i','|','s','h','e','l','l','i','a','6','4','.','e','f','i','|','s','h'
+	dw	1 dup (0)
+	dd 	04h 	;var attributes
+	dd 	00h 	;var ID
+
+_SetupGUIDInfo_7	label	byte 
+
+;Guid
+	dd	050064C83h
+	dw	0F3D9h
+	dw	04270h
+	db	0B9h, 07Bh, 0BAh, 0C4h, 07Bh, 061h, 0E8h, 0DBh
+
+	dw	's','h','e','l','l','p','b','m','.','e','f','i'
+	dw	28 dup (0)
+	dd 	06h 	;var attributes
+	dd 	00h 	;var ID
+
+_SetupGUIDInfo_8	label	byte 
+
+;Guid
+	dd	03DD0DE67h
+	dw	02D7h
+	dw	04129h
+	db	091h, 04Ah, 09Fh, 037h, 07Ch, 0C3h, 04Bh, 0Dh
+
+	dw	'I','D','E','S','e','c','D','e','v'
+	dw	31 dup (0)
+	dd 	01h 	;var attributes
+	dd 	08h 	;var ID
+
+_SetupGUIDInfo_9	label	byte 
+
+;Guid
+	dd	019D96D3Fh
+	dw	06A6Ah
+	dw	047D2h
+	db	0B1h, 095h, 07Bh, 024h, 032h, 0DAh, 03Bh, 0E2h
+
+	dw	'A','d','d','B','o','o','t','O','p','t','i','o','n'
+	dw	27 dup (0)
+	dd 	00h 	;var attributes
+	dd 	09h 	;var ID
+
+_SetupGUIDInfo_10	label	byte 
+
+;Guid
+	dd	0F4B2C007h
+	dw	094A1h
+	dw	04CD5h
+	db	0A7h, 010h, 0F4h, 014h, 01Fh, 0CEh, 0BCh, 0A0h
+
+	dw	'O','e','m','T','S','E','V','a','r'
+	dw	31 dup (0)
+	dd 	01h 	;var attributes
+	dd 	0Ah 	;var ID
+
+_SetupGUIDInfo_11	label	byte 
+
+;Guid
+	dd	0B63BF800h
+	dw	0F267h
+	dw	04F55h
+	db	092h, 017h, 0E9h, 07Fh, 0B3h, 0B6h, 098h, 046h
+
+	dw	'D','y','n','a','m','i','c','P','a','g','e','C','o','u','n','t'
+	dw	24 dup (0)
+	dd 	00h 	;var attributes
+	dd 	0Eh 	;var ID
+
+_SetupGUIDInfo_12	label	byte 
+
+;Guid
+	dd	0885F288h
+	dw	0418Ch
+	dw	04BE1h
+	db	0A6h, 0AFh, 08Bh, 0ADh, 061h, 0DAh, 08h, 0FEh
+
+	dw	'D','r','i','v','e','r','H','l','t','h','E','n','a','b','l','e'
+	dw	24 dup (0)
+	dd 	01h 	;var attributes
+	dd 	0Fh 	;var ID
+
+_SetupGUIDInfo_13	label	byte 
+
+;Guid
+	dd	07459A7D4h
+	dw	06533h
+	dw	04480h
+	db	0BBh, 0A7h, 079h, 0E2h, 05Ah, 044h, 043h, 0C9h
+
+	dw	'D','r','i','v','e','r','H','e','a','l','t','h','C','o','u','n','t'
+	dw	23 dup (0)
+	dd 	01h 	;var attributes
+	dd 	010h 	;var ID
+
+_SetupGUIDInfo_14	label	byte 
+
+;Guid
+	dd	058279C2Dh
+	dw	0FB19h
+	dw	0466Eh
+	db	0B4h, 02Eh, 0CDh, 043h, 070h, 016h, 0DCh, 025h
+
+	dw	'D','r','v','H','e','a','l','t','h','C','t','r','l','C','n','t'
+	dw	24 dup (0)
+	dd 	01h 	;var attributes
+	dd 	011h 	;var ID
+
+_SetupGUIDInfo_15	label	byte 
+
+;Guid
+	dd	0C0B4FB05h
+	dw	015E5h
+	dw	04588h
+	db	09Fh, 0E9h, 0B3h, 0D3h, 09Ch, 06h, 077h, 015h
+
+	dw	'D','r','i','v','e','r','M','a','n','a','g','e','r'
+	dw	27 dup (0)
+	dd 	00h 	;var attributes
+	dd 	012h 	;var ID
+
+_SetupGUIDInfo_16	label	byte 
+
+;Guid
+	dd	0ECFD4BCEh
+	dw	04279h
+	dw	040F8h
+	db	0BAh, 0F2h, 0DCh, 0B7h, 096h, 038h, 0D4h, 01Eh
+
+	dw	'O','e','m','P','o','r','t','G','u','i','d','1'
+	dw	28 dup (0)
+	dd 	00h 	;var attributes
+	dd 	013h 	;var ID
+
+_SetupGUIDInfo_17	label	byte 
+
+;Guid
+	dd	023F69CD0h
+	dw	0FF46h
+	dw	04DB6h
+	db	0B9h, 082h, 063h, 0EDh, 0F1h, 0A9h, 01h, 0FFh
+
+	dw	'O','e','m','P','o','r','t','G','u','i','d','2'
+	dw	28 dup (0)
+	dd 	00h 	;var attributes
+	dd 	014h 	;var ID
+
+_SetupGUIDInfo_18	label	byte 
+
+;Guid
+	dd	08BDDF24Bh
+	dw	02C8Ah
+	dw	04360h
+	db	0A3h, 0BBh, 0AEh, 0F0h, 094h, 098h, 03Bh, 0EAh
+
+	dw	'A','M','I','D','i','a','g'
+	dw	33 dup (0)
+	dd 	02h 	;var attributes
+	dd 	015h 	;var ID
+
+_SetupGUIDInfo_19	label	byte 
+
+;Guid
+	dd	05B4C6B7Eh
+	dw	0352Ah
+	dw	04B3Eh
+	db	09Ah, 04h, 074h, 08h, 0ADh, 0BDh, 098h, 0C1h
+
+	dw	'A','M','I','R','e','s','c','u','e'
+	dw	31 dup (0)
+	dd 	02h 	;var attributes
+	dd 	0F080h 	;var ID
+
+_SetupGUIDInfo_20	label	byte 
+
+;Guid
+	dd	01DE64B8Eh
+	dw	0138Bh
+	dw	04258h
+	db	0B7h, 0DDh, 0F2h, 0D8h, 0ECh, 014h, 02Ah, 09Eh
+
+	dw	'A','M','I','F','W','U','p','d','a','t','e'
+	dw	29 dup (0)
+	dd 	02h 	;var attributes
+	dd 	0F081h 	;var ID
+
+_SetupGUIDInfo_21	label	byte 
+
+;Guid
+	dd	09EF7A7E5h
+	dw	0957Ch
+	dw	04410h
+	db	0B5h, 01Ah, 0D0h, 0DDh, 0FFh, 037h, 0C8h, 07Ch
+
+	dw	'A','M','I','D','i','a','g','G','U','I'
+	dw	30 dup (0)
+	dd 	02h 	;var attributes
+	dd 	0F082h 	;var ID
+
+_SetupGUIDInfo_22	label	byte 
+
+;Guid
+	dd	0537F1F99h
+	dw	06FC4h
+	dw	040B5h
+	db	080h, 0B2h, 039h, 0Bh, 07h, 053h, 0C4h, 0D0h
+
+	dw	'D','y','n','a','m','i','c','P','a','g','e','G','r','o','u','p','C','o','u','n','t'
+	dw	19 dup (0)
+	dd 	01h 	;var attributes
+	dd 	016h 	;var ID
+
+_SetupGUIDInfo_23	label	byte 
+
+;Guid
+	dd	0DD616C5Ch
+	dw	07CFCh
+	dw	041DCh
+	db	0B8h, 0D9h, 0CDh, 024h, 0F6h, 0BBh, 03Ah, 05Dh
+
+	dw	'D','y','n','a','m','i','c','P','a','g','e','D','e','v','i','c','e','C','o','u','n','t'
+	dw	18 dup (0)
+	dd 	01h 	;var attributes
+	dd 	017h 	;var ID
+
+_SetupGUIDInfo_24	label	byte 
+
+;Guid
+	dd	0551941E5h
+	dw	011h
+	dw	04D7Fh
+	db	083h, 0EDh, 0E4h, 062h, 0CBh, 0ABh, 0CCh, 0C9h
+
+	dw	'D','y','n','a','m','i','c','P','a','g','e','G','r','o','u','p','C','l','a','s','s'
+	dw	19 dup (0)
+	dd 	01h 	;var attributes
+	dd 	018h 	;var ID

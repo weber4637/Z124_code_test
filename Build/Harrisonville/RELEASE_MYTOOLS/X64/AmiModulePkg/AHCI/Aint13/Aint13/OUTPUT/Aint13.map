@@ -1,0 +1,68 @@
+ Aint13
+
+ Timestamp is 6448e7f1 (Wed Apr 26 16:59:29 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001200H .text                   CODE
+ 0002:00000000 000005a8H .data                   DATA
+ 0002:000005b0 00000009H .rdata                  DATA
+ 0002:000005c0 000000e8H .bss                    DATA
+ 0003:00000000 00000078H .pdata                  DATA
+ 0004:00000000 000000bcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000008c       CountDrives                000000000000030c f   Aint13:AInt13.obj
+ 0001:00000140       SetEbdaAddressForPort      00000000000003c0 f   Aint13:AInt13.obj
+ 0001:00000220       InitAhciInt13Support       00000000000004a0 f   Aint13:AInt13.obj
+ 0001:00000338       TranslateHdSec             00000000000005b8 f   Aint13:AInt13.obj
+ 0001:00000414       ConfigureHddParameter      0000000000000694 f   Aint13:AInt13.obj
+ 0001:00000600       InitAhciHddDev             0000000000000880 f   Aint13:AInt13.obj
+ 0001:00000760       InitAhciDev                00000000000009e0 f   Aint13:AInt13.obj
+ 0001:00000a08       CreateBbsEntry             0000000000000c88 f   Aint13:AInt13.obj
+ 0001:00000c14       InitDrivesInformation      0000000000000e94 f   Aint13:AInt13.obj
+ 0001:00001094       DummyFunction              0000000000001314 f   AmiDxeLib:EfiLib.obj
+ 0001:000010a0       GetCpuTimer                0000000000001320 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:000010b0       CPULib_CpuID               0000000000001330 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000010f0       memset                     0000000000001370     AmiDxeLib:MemSet.obj
+ 0001:000010fe       MemSetAsm                  000000000000137e f   AmiDxeLib:MemSet.obj
+ 0001:00001150       MemCpyAsm                  00000000000013d0 f   AmiDxeLib:MemCpy.obj
+ 0001:00001150       memcpy                     00000000000013d0     AmiDxeLib:MemCpy.obj
+ 0002:00000000       gAint13ProtocolGuid        0000000000001480     Aint13:AutoGen.obj
+ 0002:00000010       gAmiAhciBusProtocolGuid    0000000000001490     Aint13:AutoGen.obj
+ 0002:00000020       gEfiLegacyBiosProtocolGuid 00000000000014a0     Aint13:AutoGen.obj
+ 0002:00000030       gEfiLegacyBiosExtProtocolGuid 00000000000014b0     Aint13:AutoGen.obj
+ 0002:00000040       EfiErrorStatus             00000000000014c0     AmiDxeLib:StdLibC.obj
+ 0002:00000380       PiErrorStatus              0000000000001800     AmiDxeLib:StdLibC.obj
+ 0002:000003d0       AmiErrorStatus             0000000000001850     AmiDxeLib:StdLibC.obj
+ 0002:00000410       EfiWarningStatus           0000000000001890     AmiDxeLib:StdLibC.obj
+ 0002:00000480       PiWarningStatus            0000000000001900     AmiDxeLib:StdLibC.obj
+ 0002:000004c8       EfiUnknown                 0000000000001948     AmiDxeLib:StdLibC.obj
+ 0002:000005b0       _gUefiDriverRevision       0000000000001a30     Aint13:AutoGen.obj
+ 0002:000005b4       ??_C@_04CGJGDENH@xP?5?3?$AA@ 0000000000001a34     Aint13:AInt13.obj
+ 0002:000005c0       gAint13InstallationExecuted 0000000000001a40     Aint13:AInt13.obj
+ 0002:000005c1       gController                0000000000001a41     Aint13:AInt13.obj
+ 0002:000005c8       gLegacy16Data              0000000000001a48     Aint13:AInt13.obj
+ 0002:000005d0       gPciIo                     0000000000001a50     Aint13:AInt13.obj
+ 0002:000005d8       gBiosExtensions            0000000000001a58     Aint13:AInt13.obj
+ 0002:000005e0       gImageHandle               0000000000001a60     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005e8       gST                        0000000000001a68     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005f0       gBS                        0000000000001a70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000638       pST                        0000000000001ab8     AmiDxeLib:EfiLib.obj
+ 0002:00000640       pBS                        0000000000001ac0     AmiDxeLib:EfiLib.obj
+ 0002:00000648       pRS                        0000000000001ac8     AmiDxeLib:EfiLib.obj
+ 0002:00000650       TheImageHandle             0000000000001ad0     AmiDxeLib:EfiLib.obj
+ 0002:00000658       gHddReadData               0000000000001ad8     <common>
+ 0002:00000660       gLegacyMemoryAddress       0000000000001ae0     <common>
+ 0002:00000668       gAint13                    0000000000001ae8     <common>
+ 0002:00000680       ControllerInfo             0000000000001b00     <common>
+ 0002:00000698       EbdaStartOffset            0000000000001b18     <common>
+ 0002:000006a0       gImage                     0000000000001b20     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

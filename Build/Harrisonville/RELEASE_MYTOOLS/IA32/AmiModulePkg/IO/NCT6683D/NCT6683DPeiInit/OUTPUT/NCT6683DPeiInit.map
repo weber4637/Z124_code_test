@@ -1,0 +1,25 @@
+ NCT6683DPeiInit
+
+ Timestamp is 6448e7cf (Wed Apr 26 16:58:55 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000340H .text                   CODE
+ 0002:00000000 00000124H .data                   DATA
+ 0002:00000124 00000000H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000005       _NCT6683DPeiInitEntryPoint 00000245 f   NCT6683DPeiInit:NCT6683DPeiInit.obj
+ 0001:0000016f       _AmiSioLibSetLpcGenericDecoding 000003af f   AmiIoDecodeLib:AmiIoDecodeLib.obj
+ 0001:000002ac       _PciCf8Read32              000004ec f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:000002f3       _PciCf8Write32             00000533 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0002:00000000       _NCT6683DPeiDecodeTable    00000580     NCT6683DPeiInit:NCT6683DPeiInit.obj
+ 0002:00000020       _NCT6683DPeiInitTable      000005a0     NCT6683DPeiInit:NCT6683DPeiInit.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

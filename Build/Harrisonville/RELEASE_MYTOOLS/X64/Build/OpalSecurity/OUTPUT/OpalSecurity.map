@@ -1,0 +1,50 @@
+ OpalSecurity
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000007d0H .text                   CODE
+ 0002:00000000 00000588H .data                   DATA
+ 0002:00000590 00000004H .rdata                  DATA
+ 0002:00000598 00000090H .bss                    DATA
+ 0003:00000000 0000003cH .pdata                  DATA
+ 0004:00000000 00000060H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c0       InstallOpalSecurityInterface 0000000000000320 f   OpalSecurity:OpalSecurity.obj
+ 0001:00000200       UnInstallOpalSecurityInterface 0000000000000460 f   OpalSecurity:OpalSecurity.obj
+ 0001:00000260       AhciSendData               00000000000004c0 f   OpalSecurity:AHCIOpalSec.obj
+ 0001:0000043c       AhciReceiveData            000000000000069c f   OpalSecurity:AHCIOpalSec.obj
+ 0001:00000670       GetCpuTimer                00000000000008d0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000680       CPULib_CpuID               00000000000008e0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000006c0       memset                     0000000000000920     AmiDxeLib:MemSet.obj
+ 0001:000006ce       MemSetAsm                  000000000000092e f   AmiDxeLib:MemSet.obj
+ 0001:00000720       memcpy                     0000000000000980     AmiDxeLib:MemCpy.obj
+ 0001:00000720       MemCpyAsm                  0000000000000980 f   AmiDxeLib:MemCpy.obj
+ 0002:00000000       gAmiHddOpalSecInitProtocolGuid 0000000000000a40     OpalSecurity:AutoGen.obj
+ 0002:00000010       gEfiStorageSecurityCommandProtocolGuid 0000000000000a50     OpalSecurity:AutoGen.obj
+ 0002:00000020       EfiErrorStatus             0000000000000a60     AmiDxeLib:StdLibC.obj
+ 0002:00000360       PiErrorStatus              0000000000000da0     AmiDxeLib:StdLibC.obj
+ 0002:000003b0       AmiErrorStatus             0000000000000df0     AmiDxeLib:StdLibC.obj
+ 0002:000003f0       EfiWarningStatus           0000000000000e30     AmiDxeLib:StdLibC.obj
+ 0002:00000460       PiWarningStatus            0000000000000ea0     AmiDxeLib:StdLibC.obj
+ 0002:000004a8       EfiUnknown                 0000000000000ee8     AmiDxeLib:StdLibC.obj
+ 0002:00000590       _gUefiDriverRevision       0000000000000fd0     OpalSecurity:AutoGen.obj
+ 0002:00000598       gImageHandle               0000000000000fd8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005a0       gST                        0000000000000fe0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005a8       gBS                        0000000000000fe8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005f8       pST                        0000000000001038     AmiDxeLib:EfiLib.obj
+ 0002:00000600       pBS                        0000000000001040     AmiDxeLib:EfiLib.obj
+ 0002:00000608       pRS                        0000000000001048     AmiDxeLib:EfiLib.obj
+ 0002:00000610       TheImageHandle             0000000000001050     AmiDxeLib:EfiLib.obj
+ 0002:00000618       gStorageSecurityProtocol   0000000000001058     <common>
+ 0002:00000620       gOpalSecInitProtocol       0000000000001060     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

@@ -1,0 +1,52 @@
+ OA3
+
+ Timestamp is 6448e7f2 (Wed Apr 26 16:59:30 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000693H .text                   CODE
+ 0002:00000000 00000578H .data                   DATA
+ 0002:00000580 00000038H .rdata                  DATA
+ 0002:000005b8 00000080H .bss                    DATA
+ 0003:00000000 00000030H .pdata                  DATA
+ 0004:00000000 00000030H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000054       PreserveProductKey         00000000000002d4 f   OA3:OA3.obj
+ 0001:000001c8       OA3_EntryPoint             0000000000000448 f   OA3:OA3.obj
+ 0001:00000468       MemCmp                     00000000000006e8 f   AmiDxeLib:Memory.obj
+ 0001:000004dc       GetEfiConfigurationTable   000000000000075c f   AmiDxeLib:EfiLib.obj
+ 0001:00000530       CPULib_CpuID               00000000000007b0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000570       memset                     00000000000007f0     AmiDxeLib:MemSet.obj
+ 0001:0000057e       MemSetAsm                  00000000000007fe f   AmiDxeLib:MemSet.obj
+ 0001:000005d0       MemCpyAsm                  0000000000000850 f   AmiDxeLib:MemCpy.obj
+ 0001:000005d0       memcpy                     0000000000000850     AmiDxeLib:MemCpy.obj
+ 0001:00000680       GetCpuTimer                0000000000000900 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000690       CpuPause                   0000000000000910     BaseLib:CpuPause.obj
+ 0002:00000000       gEfiAcpiTableProtocolGuid  0000000000000920     OA3:AutoGen.obj
+ 0002:00000010       EfiErrorStatus             0000000000000930     AmiDxeLib:StdLibC.obj
+ 0002:00000350       PiErrorStatus              0000000000000c70     AmiDxeLib:StdLibC.obj
+ 0002:000003a0       AmiErrorStatus             0000000000000cc0     AmiDxeLib:StdLibC.obj
+ 0002:000003e0       EfiWarningStatus           0000000000000d00     AmiDxeLib:StdLibC.obj
+ 0002:00000450       PiWarningStatus            0000000000000d70     AmiDxeLib:StdLibC.obj
+ 0002:00000498       EfiUnknown                 0000000000000db8     AmiDxeLib:StdLibC.obj
+ 0002:00000580       _gUefiDriverRevision       0000000000000ea0     OA3:AutoGen.obj
+ 0002:00000584       ??_C@_05EIDOHKKE@ALASKA@   0000000000000ea4     OA3:OA3.obj
+ 0002:0000058c       ??_C@_06GNNNPKFB@A?5M?5I?5?$AA@ 0000000000000eac     OA3:OA3.obj
+ 0002:00000598       ??_C@_1CA@LKPJACBJ@?$AAO?$AAA?$AA3?$AAM?$AAS?$AAD?$AAM?$AAv?$AAa?$AAr?$AAi?$AAa?$AAb?$AAl?$AAe?$AA?$AA@ 0000000000000eb8     OA3:OA3.obj
+ 0002:000005b8       gImageHandle               0000000000000ed8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005c0       gST                        0000000000000ee0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005c8       gBS                        0000000000000ee8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000618       pST                        0000000000000f38     AmiDxeLib:EfiLib.obj
+ 0002:00000620       pBS                        0000000000000f40     AmiDxeLib:EfiLib.obj
+ 0002:00000628       pRS                        0000000000000f48     AmiDxeLib:EfiLib.obj
+ 0002:00000630       TheImageHandle             0000000000000f50     AmiDxeLib:EfiLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

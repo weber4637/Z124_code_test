@@ -1,0 +1,23 @@
+TOKEN
+    Name  = "FboExternalSync_SUPPORT"
+    Value  = "1"
+    Help  = "Main switch to enable module part support in Project"
+    TokenType = Boolean
+    TargetEQU = Yes
+    TargetMAK = Yes
+    TargetH = Yes
+    Master = Yes
+End
+
+PATH
+    Name  = "FboExternalSync_DIR"
+End
+
+TOKEN
+    Name  = "FBO_sync_ver"
+    Value  = "0x1"
+    Help  = "Protocol version number"
+    TokenType = Expression
+    TargetMAK = Yes
+    TargetH = Yes
+End

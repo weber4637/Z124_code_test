@@ -1,0 +1,227 @@
+ TerminalSrc
+
+ Timestamp is 6448e7f4 (Wed Apr 26 16:59:32 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000045caH .text                   CODE
+ 0002:00000000 000019a8H .data                   DATA
+ 0002:000019b0 0000011eH .rdata                  DATA
+ 0002:00001ae0 000026c0H .bss                    DATA
+ 0003:00000000 00000234H .pdata                  DATA
+ 0004:00000000 00000224H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       TerminalEntryPoint         00000000000002c8 f   TerminalSrc:Terminal.obj
+ 0001:000001dc       TerminalSupported          000000000000047c f   TerminalSrc:Terminal.obj
+ 0001:00000368       TerminalStart              0000000000000608 f   TerminalSrc:Terminal.obj
+ 0001:00000b78       TerminalStop               0000000000000e18 f   TerminalSrc:Terminal.obj
+ 0001:00000d98       GetComPortNumber           0000000000001038 f   TerminalSrc:Terminal.obj
+ 0001:00001150       SetComSuperIoSpcrTableValues 00000000000013f0 f   TerminalSrc:Terminal.obj
+ 0001:00001300       SetPciSerialSpcrTableValues 00000000000015a0 f   TerminalSrc:Terminal.obj
+ 0001:000014ac       CreateSpcrAcpiTable        000000000000174c f   TerminalSrc:Terminal.obj
+ 0001:0000163c       CreateSpcrAcpiTableWrapper 00000000000018dc f   TerminalSrc:Terminal.obj
+ 0001:00001698       AcpiSpcrTable              0000000000001938 f   TerminalSrc:Terminal.obj
+ 0001:00001a38       ClearFiFoBuffers           0000000000001cd8 f   TerminalSrc:Terminal.obj
+ 0001:00001a98       SetSerialPortsEnabledVar_Sio 0000000000001d38 f   TerminalSrc:TerminalSetup.obj
+ 0001:00001b10       GetSetupValuesForSerialIoMode 0000000000001db0 f   TerminalSrc:TerminalSetup.obj
+ 0001:00001be8       ReadSerialPort             0000000000001e88 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00001c58       RemoveCharFromRawBuffer    0000000000001ef8 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00001c90       AddCharToUnicodeBuffer     0000000000001f30 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00001d00       ExtractUtf8CharFromRawBuffer 0000000000001fa0 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00001e14       FillUnicodeBufferFromSerial 00000000000020b4 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:0000200c       RemoveCharFromUnicodeBuffer 00000000000022ac f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002064       WaitForEsc                 0000000000002304 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:000020b0       GetKeyFromSerial           0000000000002350 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:000022ec       GetKeyData                 000000000000258c f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002394       CheckKeyboardDataFromSerial 0000000000002634 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002750       WaitForKey                 00000000000029f0 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:000027cc       TerminalInputReset         0000000000002a6c f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:0000280c       TerminalInputReadKey       0000000000002aac f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002830       TerminalInputResetEx       0000000000002ad0 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002870       TerminalInputReadKeyEx     0000000000002b10 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002898       TerminalInputSetState      0000000000002b38 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:000028c8       PollingTerminalKey         0000000000002b68 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002914       TerminalInputRegisterKeyNotify 0000000000002bb4 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002a34       TerminalInputUnRegisterKeyNotify 0000000000002cd4 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002adc       TerminalInputReadEfiKey    0000000000002d7c f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002b04       RemoveKeyCode              0000000000002da4 f   TerminalSrc:TerminalSimpleTextIn.obj
+ 0001:00002b80       TerminalGetDriverName      0000000000002e20 f   TerminalSrc:TerminalName.obj
+ 0001:00002c08       TerminalGetControllerName  0000000000002ea8 f   TerminalSrc:TerminalName.obj
+ 0001:00002c14       TranslateToAnsi            0000000000002eb4 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00002c6c       WriteToSerialPort          0000000000002f0c f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00002cd0       TerminalReset              0000000000002f70 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00002d7c       UnicodeToUtf8              000000000000301c f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00002dd8       TerminalOutputStringHelper 0000000000003078 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:0000347c       RefreshScreen              000000000000371c f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:000035f8       TerminalOutputString       0000000000003898 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00003600       TerminalTestString         00000000000038a0 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00003708       TerminalQueryMode          00000000000039a8 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00003750       TerminalSetMode            00000000000039f0 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:000037e0       TerminalSetAttribute       0000000000003a80 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00003900       TerminalClearScreen        0000000000003ba0 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:000039f4       TerminalSetCursorPosition  0000000000003c94 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00003aa8       TerminalEnableCursor       0000000000003d48 f   TerminalSrc:TerminalSimpleTextOut.obj
+ 0001:00003ac0       MemCmp                     0000000000003d60 f   AmiDxeLib:Memory.obj
+ 0001:00003b34       Malloc                     0000000000003dd4 f   AmiDxeLib:EfiLib.obj
+ 0001:00003b60       MallocZ                    0000000000003e00 f   AmiDxeLib:EfiLib.obj
+ 0001:00003ba0       DPLength                   0000000000003e40 f   AmiDxeLib:EfiLib.obj
+ 0001:00003be4       DPAddNode                  0000000000003e84 f   AmiDxeLib:EfiLib.obj
+ 0001:00003cbc       DPCopy                     0000000000003f5c f   AmiDxeLib:EfiLib.obj
+ 0001:00003d0c       DPGetLastNode              0000000000003fac f   AmiDxeLib:EfiLib.obj
+ 0001:00003d40       DPCut                      0000000000003fe0 f   AmiDxeLib:EfiLib.obj
+ 0001:00003da8       DummyFunction              0000000000004048 f   AmiDxeLib:EfiLib.obj
+ 0001:00003dac       ItoaHelper                 000000000000404c f   AmiDxeLib:StdLibC.obj
+ 0001:00003e20       StrtolEx                   00000000000040c0 f   AmiDxeLib:StdLibC.obj
+ 0001:00003ee8       GetStatusCodeString        0000000000004188 f   AmiDxeLib:StdLibC.obj
+ 0001:00003fd0       Swprintf                   0000000000004270 f   AmiDxeLib:StdLibC.obj
+ 0001:00003ff8       Swprintf_s_va_list         0000000000004298 f   AmiDxeLib:StdLibC.obj
+ 0001:0000444c       Swprintf_s                 00000000000046ec f   AmiDxeLib:StdLibC.obj
+ 0001:00004470       CPULib_CpuID               0000000000004710 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000044b0       memset                     0000000000004750     AmiDxeLib:MemSet.obj
+ 0001:000044be       MemSetAsm                  000000000000475e f   AmiDxeLib:MemSet.obj
+ 0001:00004510       memcpy                     00000000000047b0     AmiDxeLib:MemCpy.obj
+ 0001:00004510       MemCpyAsm                  00000000000047b0 f   AmiDxeLib:MemCpy.obj
+ 0001:000045c0       GetCpuTimer                0000000000004860 f   AmiDxeLib:GetCpuTimer.obj
+ 0002:00000000       gEfiPcAnsiGuid             0000000000004880     TerminalSrc:AutoGen.obj
+ 0002:00000010       gEfiVT100Guid              0000000000004890     TerminalSrc:AutoGen.obj
+ 0002:00000020       gEfiVT100PlusGuid          00000000000048a0     TerminalSrc:AutoGen.obj
+ 0002:00000030       gEfiVTUTF8Guid             00000000000048b0     TerminalSrc:AutoGen.obj
+ 0002:00000040       gEfiUartDevicePathGuid     00000000000048c0     TerminalSrc:AutoGen.obj
+ 0002:00000050       gEfiAcpiTableProtocolGuid  00000000000048d0     TerminalSrc:AutoGen.obj
+ 0002:00000060       gEfiAmiSioProtocolGuid     00000000000048e0     TerminalSrc:AutoGen.obj
+ 0002:00000070       gEfiSimpleTextInProtocolGuid 00000000000048f0     TerminalSrc:AutoGen.obj
+ 0002:00000080       gEfiSimpleTextInputExProtocolGuid 0000000000004900     TerminalSrc:AutoGen.obj
+ 0002:00000090       gEfiComponentName2ProtocolGuid 0000000000004910     TerminalSrc:AutoGen.obj
+ 0002:000000a0       gEfiSimpleTextOutProtocolGuid 0000000000004920     TerminalSrc:AutoGen.obj
+ 0002:000000b0       gEfiSerialIoProtocolGuid   0000000000004930     TerminalSrc:AutoGen.obj
+ 0002:000000c0       gAmiEfiKeycodeProtocolGuid 0000000000004940     TerminalSrc:AutoGen.obj
+ 0002:000000d0       gEfiDriverBindingProtocolGuid 0000000000004950     TerminalSrc:AutoGen.obj
+ 0002:000000e0       gEfiPciIoProtocolGuid      0000000000004960     TerminalSrc:AutoGen.obj
+ 0002:000000f0       gAmiSerialProtocolGuid     0000000000004970     TerminalSrc:AutoGen.obj
+ 0002:00000100       gEfiDevicePathProtocolGuid 0000000000004980     TerminalSrc:AutoGen.obj
+ 0002:0000012e       ASCIIControlCodeSupport    00000000000049ae     TerminalSrc:TerminalSetup.obj
+ 0002:0000012f       gUidOrderDisplayList       00000000000049af     TerminalSrc:TerminalSetup.obj
+ 0002:00000130       EfiErrorStatus             00000000000049b0     AmiDxeLib:StdLibC.obj
+ 0002:00000469       SpcrAddrSpcId              0000000000004ce9     TerminalSrc:TerminalSetup.obj
+ 0002:0000046a       SpcrAddrBitWidth           0000000000004cea     TerminalSrc:TerminalSetup.obj
+ 0002:0000046b       SpcrInterruptType          0000000000004ceb     TerminalSrc:TerminalSetup.obj
+ 0002:00000470       PiErrorStatus              0000000000004cf0     AmiDxeLib:StdLibC.obj
+ 0002:000004bb       SpcrStopBits               0000000000004d3b     TerminalSrc:TerminalSetup.obj
+ 0002:000004bc       TimeoutForDeterminingLoneEscChar 0000000000004d3c     TerminalSrc:TerminalSetup.obj
+ 0002:000004c0       AmiErrorStatus             0000000000004d40     AmiDxeLib:StdLibC.obj
+ 0002:00000500       EfiWarningStatus           0000000000004d80     AmiDxeLib:StdLibC.obj
+ 0002:00000570       PiWarningStatus            0000000000004df0     AmiDxeLib:StdLibC.obj
+ 0002:000005b8       EfiUnknown                 0000000000004e38     AmiDxeLib:StdLibC.obj
+ 0002:000005c4       EscSequenceCheckingIntervel 0000000000004e44     TerminalSrc:TerminalSetup.obj
+ 0002:00000680       gUnicodeToAscii            0000000000004f00     TerminalSrc:TerminalSimpleTextOut.obj
+ 0002:00000748       gClearScreenEscapeSequence 0000000000004fc8     TerminalSrc:TerminalSimpleTextOut.obj
+ 0002:00000758       gSetModeEscapeSequence     0000000000004fd8     TerminalSrc:TerminalSimpleTextOut.obj
+ 0002:00000768       gForegroundColors          0000000000004fe8     TerminalSrc:TerminalSimpleTextOut.obj
+ 0002:00000770       gBackgroundColors          0000000000004ff0     TerminalSrc:TerminalSimpleTextOut.obj
+ 0002:00000778       gName                      0000000000004ff8     TerminalSrc:TerminalName.obj
+ 0002:000007a0       gComponentName             0000000000005020     TerminalSrc:TerminalName.obj
+ 0002:000007b8       EscSeqStateArrayEndMarkerPtr 0000000000005038     TerminalSrc:TerminalSetup.obj
+ 0002:000007c0       ASCIIControlCodeTable      0000000000005040     TerminalSrc:TerminalSimpleTextIn.obj
+ 0002:00000978       RefreshScreenKey           00000000000051f8     TerminalSrc:TerminalSetup.obj
+ 0002:00000980       PuttyLinuxEscSeq           0000000000005200     TerminalSrc:TerminalSetup.obj
+ 0002:00000a10       PuttyLinuxF6               0000000000005290     TerminalSrc:TerminalSetup.obj
+ 0002:00000a40       PuttyLinuxF7               00000000000052c0     TerminalSrc:TerminalSetup.obj
+ 0002:00000a70       PuttyLinuxF8               00000000000052f0     TerminalSrc:TerminalSetup.obj
+ 0002:00000aa0       PuttyLinuxF9               0000000000005320     TerminalSrc:TerminalSetup.obj
+ 0002:00000ad0       PuttyLinuxF10              0000000000005350     TerminalSrc:TerminalSetup.obj
+ 0002:00000b00       PuttyLinuxF11              0000000000005380     TerminalSrc:TerminalSetup.obj
+ 0002:00000b30       PuttyLinuxF12              00000000000053b0     TerminalSrc:TerminalSetup.obj
+ 0002:00000b60       PuttyXterm86F5             00000000000053e0     TerminalSrc:TerminalSetup.obj
+ 0002:00000b90       PuttyEscNF1                0000000000005410     TerminalSrc:TerminalSetup.obj
+ 0002:00000bc0       PuttyEscNF2                0000000000005440     TerminalSrc:TerminalSetup.obj
+ 0002:00000bf0       PuttyEscNF3                0000000000005470     TerminalSrc:TerminalSetup.obj
+ 0002:00000c20       PuttyEscNF4                00000000000054a0     TerminalSrc:TerminalSetup.obj
+ 0002:00000c50       PuttyVt100EscSeq1          00000000000054d0     TerminalSrc:TerminalSetup.obj
+ 0002:00000d58       SPCR_OEM_ID                00000000000055d8     TerminalSrc:TerminalSetup.obj
+ 0002:00000d60       PuttyVt100EscSeq2          00000000000055e0     TerminalSrc:TerminalSetup.obj
+ 0002:00000e08       PuttyVt100EscSeq3          0000000000005688     TerminalSrc:TerminalSetup.obj
+ 0002:00000e38       PuttyVt100EscSeq4          00000000000056b8     TerminalSrc:TerminalSetup.obj
+ 0002:00000e68       PuttyVt100EscSeq5          00000000000056e8     TerminalSrc:TerminalSetup.obj
+ 0002:00000e98       PuttyVt100EscSeq6          0000000000005718     TerminalSrc:TerminalSetup.obj
+ 0002:00000ec8       PuttyVt400EscSeq3          0000000000005748     TerminalSrc:TerminalSetup.obj
+ 0002:00000ef8       PuttyVt400EscSeq4          0000000000005778     TerminalSrc:TerminalSetup.obj
+ 0002:00000f28       PuttyVt400EscSeq5          00000000000057a8     TerminalSrc:TerminalSetup.obj
+ 0002:00000f58       PuttyVt400EscSeq6          00000000000057d8     TerminalSrc:TerminalSetup.obj
+ 0002:00000f88       SPCR_OEM_TBL_ID            0000000000005808     TerminalSrc:TerminalSetup.obj
+ 0002:00000f90       OemEscSeqStateArray        0000000000005810     TerminalSrc:TerminalSetup.obj
+ 0002:00001098       gTotalSioSerialPorts       0000000000005918     TerminalSrc:TerminalSetup.obj
+ 0002:0000109c       Uart_Fifo_Size             000000000000591c     TerminalSrc:TerminalSetup.obj
+ 0002:000010a0       CursorPositionEscSeqStateArray 0000000000005920     TerminalSrc:TerminalSetup.obj
+ 0002:000013e8       TotalTerminalDev           0000000000005c68     TerminalSrc:TerminalSetup.obj
+ 0002:000013f0       FunctionKeyEscSeqStateArray 0000000000005c70     TerminalSrc:TerminalSetup.obj
+ 0002:00001528       ResetSequenceState5        0000000000005da8     TerminalSrc:TerminalSetup.obj
+ 0002:00001558       ResetSequenceState4        0000000000005dd8     TerminalSrc:TerminalSetup.obj
+ 0002:00001588       ResetSequenceState3        0000000000005e08     TerminalSrc:TerminalSetup.obj
+ 0002:000015b8       ResetSequenceState2        0000000000005e38     TerminalSrc:TerminalSetup.obj
+ 0002:000015e8       gTerminalSerialSupportVarSize 0000000000005e68     TerminalSrc:TerminalSetup.obj
+ 0002:000015f0       EscSeqStateArray           0000000000005e70     TerminalSrc:TerminalSetup.obj
+ 0002:00001668       SpcrPciDeviceId            0000000000005ee8     TerminalSrc:TerminalSetup.obj
+ 0002:00001670       Vtutf8EscSeqStateArray     0000000000005ef0     TerminalSrc:TerminalSetup.obj
+ 0002:00001898       gTerminalVarGuid           0000000000006118     TerminalSrc:TerminalSetup.obj
+ 0002:000018a8       gSetupGuid                 0000000000006128     TerminalSrc:TerminalSetup.obj
+ 0002:000018b8       SpcrPciVendorId            0000000000006138     TerminalSrc:TerminalSetup.obj
+ 0002:000018c0       gAcpiSpcrTableComBaudRates 0000000000006140     TerminalSrc:TerminalSetup.obj
+ 0002:00001900       AcpiOemRev                 0000000000006180     TerminalSrc:TerminalSetup.obj
+ 0002:00001908       CoreRevision               0000000000006188     TerminalSrc:TerminalSetup.obj
+ 0002:0000190c       SupportedLanguages         000000000000618c     TerminalSrc:TerminalSetup.obj
+ 0002:00001918       gPcAnsiDevicePath          0000000000006198     TerminalSrc:Terminal.obj
+ 0002:00001930       gVt100DevicePath           00000000000061b0     TerminalSrc:Terminal.obj
+ 0002:00001948       gVt100PlusDevicePath       00000000000061c8     TerminalSrc:Terminal.obj
+ 0002:00001960       gVtUtf8DevicePath          00000000000061e0     TerminalSrc:Terminal.obj
+ 0002:00001978       gTerminalDriverBinding     00000000000061f8     TerminalSrc:Terminal.obj
+ 0002:000019b0       _gUefiDriverRevision       0000000000006230     TerminalSrc:AutoGen.obj
+ 0002:000019b8       ??_C@_1CE@BAGJHINC@?$AAT?$AAe?$AAr?$AAm?$AAi?$AAn?$AAa?$AAl?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AAV?$AAa?$AAr?$AA?$AA@ 0000000000006238     TerminalSrc:TerminalSetup.obj
+ 0002:000019e0       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000006260     TerminalSrc:TerminalSetup.obj
+ 0002:000019f0       ??_C@_1O@JCAEFNGK@?$AA?$CF?$AAc?$AA?$FL?$AA?$CF?$AAd?$AAm?$AA?$AA@ 0000000000006270     TerminalSrc:TerminalSimpleTextOut.obj
+ 0002:00001a00       ??_C@_1BK@BODAEJKF@?$AA?$CF?$AAc?$AA?$FL?$AA?$CF?$AAd?$AA?$DL?$AA?$CF?$AAd?$AA?$DL?$AA?$CF?$AAd?$AAm?$AA?$AA@ 0000000000006280     TerminalSrc:TerminalSimpleTextOut.obj
+ 0002:00001a20       ??_C@_1BE@NAEAHLCM@?$AA?$CF?$AAc?$AA?$FL?$AA?$CF?$AAd?$AA?$DL?$AA?$CF?$AAd?$AAH?$AA?$AA@ 00000000000062a0     TerminalSrc:TerminalSimpleTextOut.obj
+ 0002:00001a38       ??_C@_0M@LCCONGAO@EFI_SUCCESS?$AA@ 00000000000062b8     AmiDxeLib:StdLibC.obj
+ 0002:00001a50       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 00000000000062d0     AmiDxeLib:StdLibC.obj
+ 0002:00001ab8       ??_C@_1O@PMJNFNEJ@?$AA?$CF?$AAS?$AA?$CI?$AA?$CF?$AAX?$AA?$CJ?$AA?$AA@ 0000000000006338     AmiDxeLib:StdLibC.obj
+ 0002:00001ac8       ??_C@_15MAOEGKJF@?$AA?$CF?$AAS?$AA?$AA@ 0000000000006348     AmiDxeLib:StdLibC.obj
+ 0002:00001b28       gAcpiSupportRegistration   00000000000063a8     TerminalSrc:Terminal.obj
+ 0002:00001b30       gStartedTerminalDevCount   00000000000063b0     TerminalSrc:Terminal.obj
+ 0002:00001b31       ClearTerminalKBBufferReadyToBoot 00000000000063b1     TerminalSrc:TerminalSetup.obj
+ 0002:00001b32       Dont_Send_Ascii_Control_Printable_Characters 00000000000063b2     TerminalSrc:TerminalSetup.obj
+ 0002:00001b33       SpcrInterfaceType          00000000000063b3     TerminalSrc:TerminalSetup.obj
+ 0002:00001b34       SpcrAddrBitOffset          00000000000063b4     TerminalSrc:TerminalSetup.obj
+ 0002:00001b35       SpcrAccessSize             00000000000063b5     TerminalSrc:TerminalSetup.obj
+ 0002:00001b36       SpcrParity                 00000000000063b6     TerminalSrc:TerminalSetup.obj
+ 0002:00001b37       SpcrPciBusNumber           00000000000063b7     TerminalSrc:TerminalSetup.obj
+ 0002:00001b38       EscSeqStateArrayEndMarker  00000000000063b8     TerminalSrc:TerminalSetup.obj
+ 0002:00001b50       SpcrPciDeviceNumber        00000000000063d0     TerminalSrc:TerminalSetup.obj
+ 0002:00001b51       SpcrPciFunctionNumber      00000000000063d1     TerminalSrc:TerminalSetup.obj
+ 0002:00001b52       SpcrPciFlags               00000000000063d2     TerminalSrc:TerminalSetup.obj
+ 0002:00001b53       SpcrPciSegment             00000000000063d3     TerminalSrc:TerminalSetup.obj
+ 0002:00001b58       gImageHandle               00000000000063d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001b60       gST                        00000000000063e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001b68       gBS                        00000000000063e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001bb0       pST                        0000000000006430     AmiDxeLib:EfiLib.obj
+ 0002:00001bb8       pBS                        0000000000006438     AmiDxeLib:EfiLib.obj
+ 0002:00001bc0       pRS                        0000000000006440     AmiDxeLib:EfiLib.obj
+ 0002:00001bc8       TheImageHandle             0000000000006448     AmiDxeLib:EfiLib.obj
+ 0002:00001be0       CurrentAttribute           0000000000006460     <common>
+ 0002:00002800       CurrentText                0000000000007080     <common>
+ 0002:00004040       LineLength                 00000000000088c0     <common>
+ 0002:000040c0       mTerminalKeyboardData      0000000000008940     <common>
+ 0002:000040d8       mTerminalKeyboardRecord    0000000000008958     <common>
+ 0002:000040e0       gTerminalSerialSupport     0000000000008960     <common>
+ 0002:00004100       gSetupData                 0000000000008980     <common>
+ 0002:00004188       gStartedTerminalDev        0000000000008a08     <common>
+ 0002:00004190       gTerminalDev               0000000000008a10     <common>
+ 0002:00004198       gAcpiSupportEvent          0000000000008a18     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

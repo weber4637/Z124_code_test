@@ -1,0 +1,173 @@
+ Dhcp6Dxe
+
+ Timestamp is 6448e7f6 (Wed Apr 26 16:59:34 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00006ba2H .text                   CODE
+ 0002:00000000 00000248H .data                   DATA
+ 0002:00000250 000002acH .rdata                  DATA
+ 0002:00000500 00000038H .bss                    DATA
+ 0003:00000000 00000444H .pdata                  DATA
+ 0004:00000000 00000330H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _DriverUnloadHandler       00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000018c       _ModuleEntryPoint          000000000000042c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000021c       ProcessModuleEntryPointList 00000000000004bc f   Dhcp6Dxe:AutoGen.obj
+ 0001:000002d4       Dhcp6ConfigureUdpIo        0000000000000574 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:0000033c       Dhcp6CreateService         00000000000005dc f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000498       Dhcp6DestroyInstance       0000000000000738 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000544       Dhcp6CreateInstance        00000000000007e4 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000634       Dhcp6DestroyChildEntry     00000000000008d4 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000660       Dhcp6DriverBindingSupported 0000000000000900 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000698       Dhcp6DriverBindingStart    0000000000000938 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000770       Dhcp6DriverBindingStop     0000000000000a10 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000904       Dhcp6ServiceBindingCreateChild 0000000000000ba4 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000a58       Dhcp6ServiceBindingDestroyChild 0000000000000cf8 f   Dhcp6Dxe:Dhcp6Driver.obj
+ 0001:00000bf4       Dhcp6GenerateClientId      0000000000000e94 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00000da4       Dhcp6CopyConfigData        0000000000001044 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00000eac       Dhcp6CleanupConfigData     000000000000114c f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00000f24       Dhcp6CalculateExpireTime   00000000000011c4 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00001020       Dhcp6CheckAddress          00000000000012c0 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:000010b4       Dhcp6DepriveAddress        0000000000001354 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00001214       Dhcp6DummyExtFree          00000000000014b4 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00001218       Dhcp6OnTransmitted         00000000000014b8 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00001220       Dhcp6AppendOption          00000000000014c0 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00001268       Dhcp6AppendIaOption        0000000000001508 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:000013ec       SetElapsedTime             000000000000168c f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:000014ac       Dhcp6SeekOption            000000000000174c f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:000014ec       Dhcp6SeekIaOption          000000000000178c f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:0000155c       Dhcp6ParseAddrOption       00000000000017fc f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00001688       Dhcp6GenerateIaCb          0000000000001928 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:00001854       Dhcp6AppendCacheIa         0000000000001af4 f   Dhcp6Dxe:Dhcp6Utility.obj
+ 0001:0000196c       Dhcp6ComponentNameGetDriverName 0000000000001c0c f   Dhcp6Dxe:ComponentName.obj
+ 0001:000019a0       UpdateName                 0000000000001c40 f   Dhcp6Dxe:ComponentName.obj
+ 0001:00001ae4       Dhcp6ComponentNameGetControllerName 0000000000001d84 f   Dhcp6Dxe:ComponentName.obj
+ 0001:00001c10       Dhcp6EnqueueRetry          0000000000001eb0 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00001e1c       Dhcp6DequeueRetry          00000000000020bc f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00001f18       Dhcp6CleanupRetry          00000000000021b8 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00002064       Dhcp6CleanupSession        0000000000002304 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:000021bc       Dhcp6CallbackUser          000000000000245c f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:0000225c       Dhcp6UpdateIaInfo          00000000000024fc f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00002378       Dhcp6SeekStsOption         0000000000002618 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00002444       Dhcp6TransmitPacket        00000000000026e4 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00002560       Dhcp6SendSolicitMsg        0000000000002800 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:0000274c       Dhcp6SendRequestMsg        00000000000029ec f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00002978       Dhcp6SendDeclineMsg        0000000000002c18 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00002b24       Dhcp6SendReleaseMsg        0000000000002dc4 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00002ccc       Dhcp6SendRenewRebindMsg    0000000000002f6c f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00002f2c       Dhcp6StartInfoRequest      00000000000031cc f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:000030a4       Dhcp6SendInfoRequestMsg    0000000000003344 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:0000324c       Dhcp6SendConfirmMsg        00000000000034ec f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00003438       Dhcp6HandleReplyMsg        00000000000036d8 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:0000378c       Dhcp6SelectAdvertiseMsg    0000000000003a2c f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:0000385c       Dhcp6HandleAdvertiseMsg    0000000000003afc f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00003a48       Dhcp6HandleStateful        0000000000003ce8 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00003b64       Dhcp6HandleStateless       0000000000003e04 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00003cd4       Dhcp6ReceivePacket         0000000000003f74 f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:00003e2c       Dhcp6OnTimerTick           00000000000040cc f   Dhcp6Dxe:Dhcp6Io.obj
+ 0001:000040d0       EfiDhcp6Start              0000000000004370 f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:00004268       EfiDhcp6Stop               0000000000004508 f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:00004394       EfiDhcp6GetModeData        0000000000004634 f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:00004598       EfiDhcp6Configure          0000000000004838 f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:0000479c       EfiDhcp6InfoRequest        0000000000004a3c f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:00004a40       EfiDhcp6RenewRebind        0000000000004ce0 f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:00004b94       EfiDhcp6Decline            0000000000004e34 f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:00004d24       EfiDhcp6Release            0000000000004fc4 f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:00004eb0       EfiDhcp6Parse              0000000000005150 f   Dhcp6Dxe:Dhcp6Impl.obj
+ 0001:00004f8c       UdpIoFreeRxToken           000000000000522c f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00004fc8       UdpIoOnDgramSentDpc        0000000000005268 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00005030       UdpIoOnDgramSent           00000000000052d0 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:0000504c       UdpIoRecycleDgram          00000000000052ec f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00005088       UdpIoOnDgramRcvdDpc        0000000000005328 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000052fc       UdpIoOnDgramRcvd           000000000000559c f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00005318       UdpIoCreateRxToken         00000000000055b8 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000053c8       UdpIoCreateTxToken         0000000000005668 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:0000560c       UdpIoCreateIo              00000000000058ac f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:0000579c       UdpIoCancelDgrams          0000000000005a3c f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000057f4       UdpIoFreeIo                0000000000005a94 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000058e0       UdpIoSendDatagram          0000000000005b80 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:000059c8       UdpIoRecvDatagram          0000000000005c68 f   DxeUpdIoLib:DxeUdpIoLib.obj
+ 0001:00005a64       InternalAllocatePool       0000000000005d04 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005a94       AllocateZeroPool           0000000000005d34 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005ac0       InternalAllocateCopyPool   0000000000005d60 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005b04       EfiGetSystemConfigurationTable 0000000000005da4 f   UefiLib:UefiLib.obj
+ 0001:00005b68       LookupUnicodeString2       0000000000005e08 f   UefiLib:UefiLib.obj
+ 0001:00005cf4       AddUnicodeString2          0000000000005f94 f   UefiLib:UefiLib.obj
+ 0001:00005fcc       GetVariable2               000000000000626c f   UefiLib:UefiLib.obj
+ 0001:0000608c       Ip6Swap128                 000000000000632c f   DxeNetLib:DxeNetLib.obj
+ 0001:000061c8       NetRandomInitSeed          0000000000006468 f   DxeNetLib:DxeNetLib.obj
+ 0001:00006270       NetDestroyLinkList         0000000000006510 f   DxeNetLib:DxeNetLib.obj
+ 0001:00006320       NetLibDestroyServiceChild  00000000000065c0 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000636c       NetLibGetSnpHandle         000000000000660c f   DxeNetLib:DxeNetLib.obj
+ 0001:00006434       NetLibGetSystemGuid        00000000000066d4 f   DxeNetLib:DxeNetLib.obj
+ 0001:000064f8       NetbufAllocStruct          0000000000006798 f   DxeNetLib:NetBuffer.obj
+ 0001:0000659c       NetbufFreeVector           000000000000683c f   DxeNetLib:NetBuffer.obj
+ 0001:0000661c       NetbufFree                 00000000000068bc f   DxeNetLib:NetBuffer.obj
+ 0001:00006648       NetbufFromExt              00000000000068e8 f   DxeNetLib:NetBuffer.obj
+ 0001:000068dc       NetbufBuildExt             0000000000006b7c f   DxeNetLib:NetBuffer.obj
+ 0001:00006934       NetbufCopy                 0000000000006bd4 f   DxeNetLib:NetBuffer.obj
+ 0001:00006a9c       DevicePathFromHandle       0000000000006d3c f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00006ad0       InternalMemCopyMem         0000000000006d70     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00006b10       InternalMemZeroMem         0000000000006db0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00006b30       InternalMemCompareMem      0000000000006dd0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00006b50       InternalMemSetMem          0000000000006df0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00006b70       InternalMemSetMem32        0000000000006e10     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00006b90       InternalMemSetMem64        0000000000006e30     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiNetworkStackSetupGuid  0000000000006e60     Dhcp6Dxe:AutoGen.obj
+ 0002:00000010       gEfiSmbiosTableGuid        0000000000006e70     Dhcp6Dxe:AutoGen.obj
+ 0002:00000020       gEfiSmbios3TableGuid       0000000000006e80     Dhcp6Dxe:AutoGen.obj
+ 0002:00000030       gEfiUdp6ServiceBindingProtocolGuid 0000000000006e90     Dhcp6Dxe:AutoGen.obj
+ 0002:00000040       gEfiUdp6ProtocolGuid       0000000000006ea0     Dhcp6Dxe:AutoGen.obj
+ 0002:00000050       gEfiDhcp6ServiceBindingProtocolGuid 0000000000006eb0     Dhcp6Dxe:AutoGen.obj
+ 0002:00000060       gEfiDhcp6ProtocolGuid      0000000000006ec0     Dhcp6Dxe:AutoGen.obj
+ 0002:00000070       gEfiIp6ConfigProtocolGuid  0000000000006ed0     Dhcp6Dxe:AutoGen.obj
+ 0002:00000080       gEfiUdp4ServiceBindingProtocolGuid 0000000000006ee0     Dhcp6Dxe:AutoGen.obj
+ 0002:00000090       gEfiUdp4ProtocolGuid       0000000000006ef0     Dhcp6Dxe:AutoGen.obj
+ 0002:000000a0       gEfiDpcProtocolGuid        0000000000006f00     Dhcp6Dxe:AutoGen.obj
+ 0002:000000b0       gEfiDevicePathProtocolGuid 0000000000006f10     Dhcp6Dxe:AutoGen.obj
+ 0002:000000c0       gEfiDriverBindingProtocolGuid 0000000000006f20     Dhcp6Dxe:AutoGen.obj
+ 0002:000000d0       gEfiComponentNameProtocolGuid 0000000000006f30     Dhcp6Dxe:AutoGen.obj
+ 0002:000000e0       gEfiComponentName2ProtocolGuid 0000000000006f40     Dhcp6Dxe:AutoGen.obj
+ 0002:000000f0       gEfiLoadedImageProtocolGuid 0000000000006f50     Dhcp6Dxe:AutoGen.obj
+ 0002:00000100       gEfiSimpleNetworkProtocolGuid 0000000000006f60     Dhcp6Dxe:AutoGen.obj
+ 0002:00000110       mAllDhcpRelayAndServersAddress 0000000000006f70     Dhcp6Dxe:Dhcp6Impl.obj
+ 0002:00000120       gDhcp6ProtocolTemplate     0000000000006f80     Dhcp6Dxe:Dhcp6Impl.obj
+ 0002:00000170       mDhcp6ControllerName       0000000000006fd0     Dhcp6Dxe:ComponentName.obj
+ 0002:000001b8       gDhcp6DriverBinding        0000000000007018     Dhcp6Dxe:Dhcp6Driver.obj
+ 0002:000001e8       gDhcp6ServiceBindingTemplate 0000000000007048     Dhcp6Dxe:Dhcp6Driver.obj
+ 0002:000001f8       gDhcp6ComponentName        0000000000007058     Dhcp6Dxe:ComponentName.obj
+ 0002:00000210       gDhcp6ComponentName2       0000000000007070     Dhcp6Dxe:ComponentName.obj
+ 0002:00000228       mDhcp6DriverNameTable      0000000000007088     Dhcp6Dxe:ComponentName.obj
+ 0002:00000250       _gUefiDriverRevision       00000000000070b0     Dhcp6Dxe:AutoGen.obj
+ 0002:00000258       ??_C@_1CA@BCMJNMNL@?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AAS?$AAt?$AAa?$AAc?$AAk?$AAV?$AAa?$AAr?$AA?$AA@ 00000000000070b8     Dhcp6Dxe:Dhcp6Driver.obj
+ 0002:00000278       ??_C@_1BC@LPNBDINH@?$AAC?$AAl?$AAi?$AAe?$AAn?$AAt?$AAI?$AAd?$AA?$AA@ 00000000000070d8     Dhcp6Dxe:Dhcp6Utility.obj
+ 0002:00000290       ??_C@_1DI@DAIIPMNN@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA8?$AA?0?$AA?5?$AAR?$AAe?$AAb?$AAi?$AAn?$AAd?$AAi?$AAn?$AAg?$AA?$CJ?$AA?$AA@ 00000000000070f0     Dhcp6Dxe:ComponentName.obj
+ 0002:000002c8       ??_C@_1DG@KNJEJIPD@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA7?$AA?0?$AA?5?$AAR?$AAe?$AAn?$AAe?$AAw?$AAi?$AAn?$AAg?$AA?$CJ?$AA?$AA@ 0000000000007128     Dhcp6Dxe:ComponentName.obj
+ 0002:00000300       ??_C@_1DA@HLCPELOO@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA6?$AA?0?$AA?5?$AAB?$AAo?$AAu?$AAn?$AAd?$AA?$CJ?$AA?$AA@ 0000000000007160     Dhcp6Dxe:ComponentName.obj
+ 0002:00000330       ??_C@_1DI@KKFOGMJI@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA5?$AA?0?$AA?5?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAi?$AAn?$AAg?$AA?$CJ?$AA?$AA@ 0000000000007190     Dhcp6Dxe:ComponentName.obj
+ 0002:00000368       ??_C@_1DK@HAAIPEPP@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA4?$AA?0?$AA?5?$AAC?$AAo?$AAn?$AAf?$AAi?$AAr?$AAm?$AAi?$AAn?$AAg?$AA?$CJ?$AA?$AA@ 00000000000071c8     Dhcp6Dxe:ComponentName.obj
+ 0002:000003a8       ??_C@_1DI@POAOCKIF@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA3?$AA?0?$AA?5?$AAD?$AAe?$AAc?$AAl?$AAi?$AAn?$AAi?$AAn?$AAg?$AA?$CJ?$AA?$AA@ 0000000000007208     Dhcp6Dxe:ComponentName.obj
+ 0002:000003e0       ??_C@_1DK@GDPHPEPI@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA2?$AA?0?$AA?5?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AAi?$AAn?$AAg?$AA?$CJ?$AA?$AA@ 0000000000007240     Dhcp6Dxe:ComponentName.obj
+ 0002:00000420       ??_C@_1DI@COFHNBAO@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA1?$AA?0?$AA?5?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAi?$AAn?$AAg?$AA?$CJ?$AA?$AA@ 0000000000007280     Dhcp6Dxe:ComponentName.obj
+ 0002:00000458       ??_C@_1CO@DAJIAACA@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?$DN?$AA0?$AA?0?$AA?5?$AAI?$AAn?$AAi?$AAt?$AA?$CJ?$AA?$AA@ 00000000000072b8     Dhcp6Dxe:ComponentName.obj
+ 0002:00000488       ??_C@_1CM@JBIOAOGL@?$AAD?$AAH?$AAC?$AAP?$AA6?$AA?5?$AAP?$AAr?$AAo?$AAt?$AAo?$AAc?$AAo?$AAl?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 00000000000072e8     Dhcp6Dxe:ComponentName.obj
+ 0002:000004b4       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000007314     Dhcp6Dxe:ComponentName.obj
+ 0002:000004bc       ??_C@_02LFNMGJAP@en?$AA@   000000000000731c     Dhcp6Dxe:ComponentName.obj
+ 0002:000004c0       ??_C@_03LKLGDMJI@eng?$AA@  0000000000007320     Dhcp6Dxe:ComponentName.obj
+ 0002:000004c8       ??_C@_1DE@GEDHDJFO@?$AAD?$AAH?$AAC?$AAP?$AAv?$AA6?$AA?5?$AA?$CI?$AAN?$AAo?$AA?5?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAe?$AAd?$AA?5?$AAI?$AAA?$AA?$CJ?$AA?$AA@ 0000000000007328     Dhcp6Dxe:ComponentName.obj
+ 0002:00000500       gDhcp6ControllerNameTable  0000000000007360     Dhcp6Dxe:ComponentName.obj
+ 0002:00000508       gImageHandle               0000000000007368     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000510       gST                        0000000000007370     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000518       gBS                        0000000000007378     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000520       gRT                        0000000000007380     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000530       mDpc                       0000000000007390     <common>
+
+ entry point at        0001:0000018c
+
+ Static symbols
+

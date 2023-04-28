@@ -1,0 +1,97 @@
+ SbRun
+
+ Timestamp is 6448e7ee (Wed Apr 26 16:59:26 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000bcdH .text                   CODE
+ 0002:00000000 00000618H .data                   DATA
+ 0002:00000620 00000004H .rdata                  DATA
+ 0002:00000628 00000138H .bss                    DATA
+ 0003:00000000 0000009cH .pdata                  DATA
+ 0004:00000000 00000064H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000001000 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000004c       ProcessLibraryConstructorList 000000000000104c f   SbRun:AutoGen.obj
+ 0001:00000240       ProcessLibraryDestructorList 0000000000001240 f   SbRun:AutoGen.obj
+ 0001:000002b4       ProcessModuleEntryPointList 00000000000012b4 f   SbRun:AutoGen.obj
+ 0001:00000438       AmiChipsetRuntimeResetSystem 0000000000001438 f   SbRun:SbRun.obj
+ 0001:0000056c       SbRunDummyFunction         000000000000156c f   SbRun:SbRun.obj
+ 0001:00000570       SbExitBs                   0000000000001570 f   SbRun:SbRun.obj
+ 0001:00000578       AmiDebugLibExitBsNotifyEvent 0000000000001578 f   RuntimeAmiDebugLib:RuntimeAmiDebugLib.obj
+ 0001:00000584       AmiDebugLibVirtualNotifyEvent 0000000000001584 f   RuntimeAmiDebugLib:RuntimeAmiDebugLib.obj
+ 0001:000005ac       RuntimeLibExitBootServicesEvent 00000000000015ac f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000005b4       RuntimeLibVirtualNotifyEvent 00000000000015b4 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:000005d8       DxeRuntimePciExpressLibVirtualNotify 00000000000015d8 f   DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0001:00000644       GetPciExpressAddress       0000000000001644 f   DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0001:000006c0       LibInitStatusCodePtr       00000000000016c0 f   AmiDxeLib:EfiLib.obj
+ 0001:00000744       LibReportStatusCode        0000000000001744 f   AmiDxeLib:EfiLib.obj
+ 0001:000007b8       TraceGetAmiDebugServicesProtocolInstance 00000000000017b8 f   AmiDxeLib:EfiLib.obj
+ 0001:00000960       GetCpuTimer                0000000000001960 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000970       CPULib_CpuID               0000000000001970 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000009b0       memset                     00000000000019b0     AmiDxeLib:MemSet.obj
+ 0001:000009be       MemSetAsm                  00000000000019be f   AmiDxeLib:MemSet.obj
+ 0001:00000a10       MemCpyAsm                  0000000000001a10 f   AmiDxeLib:MemCpy.obj
+ 0001:00000a10       memcpy                     0000000000001a10     AmiDxeLib:MemCpy.obj
+ 0001:00000ac0       InternalMemSetMem          0000000000001ac0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000ae0       InternalMemCopyMem         0000000000001ae0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000b20       InternalMemSetMem32        0000000000001b20     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000b40       InternalMemSetMem64        0000000000001b40     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000b60       AsmWbinvd                  0000000000001b60     BaseLib:Wbinvd.obj
+ 0001:00000b70       CPULib_GetInterruptState   0000000000001b70 f   AmiDxeLib:CpuLib_GetInterruptState.obj
+ 0001:00000b90       CPULib_DisableInterrupt    0000000000001b90 f   AmiDxeLib:CpuLib_DisableInterrupt.obj
+ 0001:00000ba0       CPULib_EnableInterrupt     0000000000001ba0 f   AmiDxeLib:CpuLib_EnableInterrupt.obj
+ 0001:00000bb0       InternalMemZeroMem         0000000000001bb0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gAmiResetSystemEventGuid   0000000000002000     SbRun:AutoGen.obj
+ 0002:00000010       gEfiEventExitBootServicesGuid 0000000000002010     SbRun:AutoGen.obj
+ 0002:00000020       gEfiEventVirtualAddressChangeGuid 0000000000002020     SbRun:AutoGen.obj
+ 0002:00000030       gEfiDxeServicesTableGuid   0000000000002030     SbRun:AutoGen.obj
+ 0002:00000040       gEfiResetArchProtocolGuid  0000000000002040     SbRun:AutoGen.obj
+ 0002:00000050       gAmiDebugServiceProtocolGuid 0000000000002050     SbRun:AutoGen.obj
+ 0002:00000060       gAmiSmmDebugServiceProtocolGuid 0000000000002060     SbRun:AutoGen.obj
+ 0002:00000070       gPirqRegistersSave         0000000000002070     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000090       RRegs                      0000000000002090     AmiCspLibDxe:SbGeneric.obj
+ 0002:000000a0       DaysInMonth                00000000000020a0     SbRuntimeServiceLib:SbRuntimeServiceLib.obj
+ 0002:000000b0       EfiErrorStatus             00000000000020b0     AmiDxeLib:StdLibC.obj
+ 0002:000003f0       PiErrorStatus              00000000000023f0     AmiDxeLib:StdLibC.obj
+ 0002:00000440       AmiErrorStatus             0000000000002440     AmiDxeLib:StdLibC.obj
+ 0002:00000480       EfiWarningStatus           0000000000002480     AmiDxeLib:StdLibC.obj
+ 0002:000004f0       PiWarningStatus            00000000000024f0     AmiDxeLib:StdLibC.obj
+ 0002:00000538       EfiUnknown                 0000000000002538     AmiDxeLib:StdLibC.obj
+ 0002:00000620       _gUefiDriverRevision       0000000000002620     SbRun:AutoGen.obj
+ 0002:00000629       mEfiGoneVirtual            0000000000002629     UefiRuntimeLib:RuntimeLib.obj
+ 0002:0000062a       mEfiAtRuntime              000000000000262a     UefiRuntimeLib:RuntimeLib.obj
+ 0002:00000630       gImageHandle               0000000000002630     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000638       gST                        0000000000002638     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000640       gBS                        0000000000002640     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000648       gRT                        0000000000002648     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000678       gDS                        0000000000002678     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000680       mDxeRuntimePciExpressLibVirtualNotifyEvent 0000000000002680     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:00000688       mDxeRuntimePciExpressLibPciExpressBaseAddress 0000000000002688     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:00000690       mDxeRuntimePciExpressLibNumberOfRuntimeRanges 0000000000002690     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:00000698       mDxeRuntimePciExpressLibRegistrationTable 0000000000002698     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:000006a0       mDxeRuntimePciExpressLibLastRuntimeRange 00000000000026a0     DxeRuntimePciExpressLib:PciExpressLib.obj
+ 0002:000006e8       SbResetCallbackList        00000000000026e8     SbRuntimeServiceLib:SbRuntimeServiceLib.obj
+ 0002:000006f8       mPcd                       00000000000026f8     DxePcdLib:DxePcdLib.obj
+ 0002:00000700       mPiPcd                     0000000000002700     DxePcdLib:DxePcdLib.obj
+ 0002:00000708       mPcdInfo                   0000000000002708     DxePcdLib:DxePcdLib.obj
+ 0002:00000710       mPiPcdInfo                 0000000000002710     DxePcdLib:DxePcdLib.obj
+ 0002:00000718       pST                        0000000000002718     AmiDxeLib:EfiLib.obj
+ 0002:00000720       pBS                        0000000000002720     AmiDxeLib:EfiLib.obj
+ 0002:00000728       pRS                        0000000000002728     AmiDxeLib:EfiLib.obj
+ 0002:00000730       pSmst                      0000000000002730     AmiDxeLib:EfiLib.obj
+ 0002:00000738       TheImageHandle             0000000000002738     AmiDxeLib:EfiLib.obj
+ 0002:00000740       mInternalRT                0000000000002740     <common>
+ 0002:00000748       mEfiVirtualNotifyEvent     0000000000002748     <common>
+ 0002:00000750       mEfiExitBootServicesEvent  0000000000002750     <common>
+ 0002:00000758       gAmiSystemResetEvent       0000000000002758     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000089c       AmiLibExitBs               000000000000189c f    CIL library: CIL module
+ 0001:000008d8       AmiLibGoVirtual            00000000000018d8 f    CIL library: CIL module

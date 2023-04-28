@@ -1,0 +1,149 @@
+ Nvme
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000066acH .text                   CODE
+ 0002:00000000 00000250H .data                   DATA
+ 0002:00000250 000000dcH .rdata                  DATA
+ 0002:00000330 00000078H .bss                    DATA
+ 0003:00000000 00000258H .pdata                  DATA
+ 0004:00000000 0000030cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000005c       NvmeBusEntryPoint          00000000000002fc f   Nvme:NvmeBus.obj
+ 0001:0000028c       NvmeBusSupported           000000000000052c f   Nvme:NvmeBus.obj
+ 0001:00000470       NvmeBusStart               0000000000000710 f   Nvme:NvmeBus.obj
+ 0001:00000cf0       NvmeBusStop                0000000000000f90 f   Nvme:NvmeBus.obj
+ 0001:00000e84       UninstallNvmeControllerProtocols 0000000000001124 f   Nvme:NvmeBus.obj
+ 0001:00001388       UninstallNvmeDeviceProtocols 0000000000001628 f   Nvme:NvmeBus.obj
+ 0001:000015b0       InitializeNvmeController   0000000000001850 f   Nvme:NvmeBus.obj
+ 0001:00001ddc       GetIdentifyData            000000000000207c f   Nvme:NvmeBus.obj
+ 0001:00001f04       EnumerateActiveNameSpace   00000000000021a4 f   Nvme:NvmeBus.obj
+ 0001:00002030       InstallBlockIoDiskInfo     00000000000022d0 f   Nvme:NvmeBus.obj
+ 0001:000024dc       IssueLockOnResetCommand    000000000000277c f   Nvme:NvmeBus.obj
+ 0001:00002638       TransferNvmeDataToSmram    00000000000028d8 f   Nvme:NvmeBus.obj
+ 0001:000026b8       InstallNvmeLegacyDevice    0000000000002958 f   Nvme:NvmeBus.obj
+ 0001:00002968       GetNvmeGeometryData        0000000000002c08 f   Nvme:NvmeBus.obj
+ 0001:00002b44       NvmeSetDefaultGeometry     0000000000002de4 f   Nvme:NvmeBus.obj
+ 0001:00002bac       NvmeUpdateCHSFromBootRecord 0000000000002e4c f   Nvme:NvmeBus.obj
+ 0001:00002c7c       NvmeReadBlocks             0000000000002f1c f   Nvme:NvmeBus.obj
+ 0001:00002ca8       NvmeWriteBlocks            0000000000002f48 f   Nvme:NvmeBus.obj
+ 0001:00002d34       NvmeReset                  0000000000002fd4 f   Nvme:NvmeBus.obj
+ 0001:00002d38       NvmeFlushBlocks            0000000000002fd8 f   Nvme:NvmeBus.obj
+ 0001:00002dcc       NvmeDiskInfoIdentify       000000000000306c f   Nvme:NvmeBus.obj
+ 0001:00002e18       NvmeDiskInfoSenseData      00000000000030b8 f   Nvme:NvmeBus.obj
+ 0001:00002e18       NvmeDiskInfoInquiry        00000000000030b8 f   Nvme:NvmeBus.obj
+ 0001:00002e24       NvmeDiskInfoWhichIde       00000000000030c4 f   Nvme:NvmeBus.obj
+ 0001:00002e30       GetNvmeUnicodeStringName   00000000000030d0 f   Nvme:NvmeBus.obj
+ 0001:00002fd0       NvmeSendSecurityFreezeLock 0000000000003270 f   Nvme:NvmeBus.obj
+ 0001:000032dc       NvmeUpdateLevel0DiscoveryData 000000000000357c f   Nvme:NvmeBus.obj
+ 0001:000033a0       NvmeGetLevel0DiscoveryData 0000000000003640 f   Nvme:NvmeBus.obj
+ 0001:0000348c       GetNvmeDeviceLockStatus    000000000000372c f   Nvme:NvmeBus.obj
+ 0001:000036ec       NvmeFreezeLockDevice       000000000000398c f   Nvme:NvmeBus.obj
+ 0001:00003794       NvmeSendData               0000000000003a34 f   Nvme:NvmeBus.obj
+ 0001:00003968       NvmeReceiveData            0000000000003c08 f   Nvme:NvmeBus.obj
+ 0001:00003b6c       NvmeShutdown               0000000000003e0c f   Nvme:NvmeBus.obj
+ 0001:00003dfc       InstallSwSmiHandlerForLegacy 000000000000409c f   Nvme:NvmeBus.obj
+ 0001:00003ef0       NvmeAllDriverConnectedCallback 0000000000004190 f   Nvme:NvmeBus.obj
+ 0001:00004168       NvmeFreeAllocatedMemoryCallback 0000000000004408 f   Nvme:NvmeBus.obj
+ 0001:000041b8       NvmePassThru               0000000000004458 f   Nvme:NvmePassthru.obj
+ 0001:00004abc       GetNextNamespace           0000000000004d5c f   Nvme:NvmePassthru.obj
+ 0001:00004b34       BuildDevicePath            0000000000004dd4 f   Nvme:NvmePassthru.obj
+ 0001:00004c44       GetNamespace               0000000000004ee4 f   Nvme:NvmePassthru.obj
+ 0001:00004cc4       NvmeBusCtlDriverName       0000000000004f64 f   Nvme:NvmeComponentName.obj
+ 0001:00004d14       NvmeBusCtlGetControllerName 0000000000004fb4 f   Nvme:NvmeComponentName.obj
+ 0001:00004e18       IsDevicePathValid          00000000000050b8 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00004e44       GetDevicePathSize          00000000000050e4 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00004e8c       AppendDevicePath           000000000000512c f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00004f9c       AppendDevicePathNode       000000000000523c f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000050e0       MicroSecondDelay           0000000000005380 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:00005114       InternalReportStatusCode   00000000000053b4 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000519c       CreateAdditionalSubmissionCompletionQueue 000000000000543c f   NvmeControllerLib:NvmeController.obj
+ 0001:000054cc       IsPrp2ListSupported        000000000000576c f   NvmeControllerLib:NvmeController.obj
+ 0001:00005578       ProgramPRPEntry            0000000000005818 f   NvmeControllerLib:NvmeController.obj
+ 0001:00005710       NvmeReadWriteBlocks        00000000000059b0 f   NvmeControllerLib:NvmeController.obj
+ 0001:00005d8c       ExecuteNvmeCmd             000000000000602c f   NvmeControllerLib:NvmeController.obj
+ 0001:00005f4c       WaitForCompletionQueueUpdate 00000000000061ec f   NvmeControllerLib:NvmeController.obj
+ 0001:00006150       RecreateAllQueues          00000000000063f0 f   NvmeControllerLib:NvmeController.obj
+ 0001:000062ec       RecreateQueue1             000000000000658c f   NvmeControllerLib:NvmeController.obj
+ 0001:000064b4       ReadDataDword              0000000000006754 f   NvmeControllerLib:NvmeController.obj
+ 0001:0000650c       WriteDataDword             00000000000067ac f   NvmeControllerLib:NvmeController.obj
+ 0001:00006560       InternalAllocatePool       0000000000006800 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006590       InternalAllocateCopyPool   0000000000006830 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000065e0       InternalMemSetMem          0000000000006880     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00006600       InternalMemZeroMem         00000000000068a0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00006620       InternalMemSetMem32        00000000000068c0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00006640       InternalMemSetMem64        00000000000068e0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00006660       CpuPause                   0000000000006900     BaseLib:CpuPause.obj
+ 0001:00006670       InternalMemCopyMem         0000000000006910     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gEfiCallerIdGuid           0000000000006960     Nvme:AutoGen.obj
+ 0002:00000010       gEfiEventReadyToBootGuid   0000000000006970     Nvme:AutoGen.obj
+ 0002:00000020       gAmiSmmNvmeCommunicationGuid 0000000000006980     Nvme:AutoGen.obj
+ 0002:00000030       gEfiDiskInfoNvmeInterfaceGuid 0000000000006990     Nvme:AutoGen.obj
+ 0002:00000040       gAmiResetSystemEventGuid   00000000000069a0     Nvme:AutoGen.obj
+ 0002:00000050       gEfiPciIoProtocolGuid      00000000000069b0     Nvme:AutoGen.obj
+ 0002:00000060       gEfiDriverBindingProtocolGuid 00000000000069c0     Nvme:AutoGen.obj
+ 0002:00000070       gEfiBlockIoProtocolGuid    00000000000069d0     Nvme:AutoGen.obj
+ 0002:00000080       gAmiNvmeControllerProtocolGuid 00000000000069e0     Nvme:AutoGen.obj
+ 0002:00000090       gAmiNvmePassThruProtocolGuid 00000000000069f0     Nvme:AutoGen.obj
+ 0002:000000a0       gEfiDevicePathProtocolGuid 0000000000006a00     Nvme:AutoGen.obj
+ 0002:000000b0       gEfiComponentName2ProtocolGuid 0000000000006a10     Nvme:AutoGen.obj
+ 0002:000000c0       gAmiNvmeLegacyProtocolGuid 0000000000006a20     Nvme:AutoGen.obj
+ 0002:000000d0       gEfiSmmCommunicationProtocolGuid 0000000000006a30     Nvme:AutoGen.obj
+ 0002:000000e0       gEfiNvmExpressPassThruProtocolGuid 0000000000006a40     Nvme:AutoGen.obj
+ 0002:000000f0       gEfiDiskInfoProtocolGuid   0000000000006a50     Nvme:AutoGen.obj
+ 0002:00000100       gAmiHddSecurityInitProtocolGuid 0000000000006a60     Nvme:AutoGen.obj
+ 0002:00000110       gAmiHddSecurityEndProtocolGuid 0000000000006a70     Nvme:AutoGen.obj
+ 0002:00000120       gAmiHddSecurityProtocolGuid 0000000000006a80     Nvme:AutoGen.obj
+ 0002:00000130       gAmiHddSmartInitProtocolGuid 0000000000006a90     Nvme:AutoGen.obj
+ 0002:00000140       gAmiHddSmartProtocolGuid   0000000000006aa0     Nvme:AutoGen.obj
+ 0002:00000150       gEfiStorageSecurityCommandProtocolGuid 0000000000006ab0     Nvme:AutoGen.obj
+ 0002:00000160       gAmiBlockIoWriteProtectionProtocolGuid 0000000000006ac0     Nvme:AutoGen.obj
+ 0002:00000170       gEfiLegacyBiosProtocolGuid 0000000000006ad0     Nvme:AutoGen.obj
+ 0002:00000180       gBdsAllDriversConnectedProtocolGuid 0000000000006ae0     Nvme:AutoGen.obj
+ 0002:00000190       gEfiTrEEProtocolGuid       0000000000006af0     Nvme:AutoGen.obj
+ 0002:000001a0       gEfiSmmControl2ProtocolGuid 0000000000006b00     Nvme:AutoGen.obj
+ 0002:000001b0       gEfiStatusCodeRuntimeProtocolGuid 0000000000006b10     Nvme:AutoGen.obj
+ 0002:000001c0       gNvmeBusDriverName         0000000000006b20     Nvme:NvmeComponentName.obj
+ 0002:000001c8       gNvmeBusControllerName     0000000000006b28     Nvme:NvmeComponentName.obj
+ 0002:000001d0       gNvmeBusControllerDriverName 0000000000006b30     Nvme:NvmeComponentName.obj
+ 0002:000001e8       gMorValue                  0000000000006b48     Nvme:NvmeBus.obj
+ 0002:000001e9       gInt13DeviceAddress        0000000000006b49     Nvme:NvmeBus.obj
+ 0002:000001f0       gAmiTcgStorageSecurityInitProtocolGuid 0000000000006b50     Nvme:NvmeBus.obj
+ 0002:00000200       gAmiTcgStorageSecurityProtocolGuid 0000000000006b60     Nvme:NvmeBus.obj
+ 0002:00000210       gBdsConnectDriversProtocolGuid 0000000000006b70     Nvme:NvmeBus.obj
+ 0002:00000220       gNvmeBusDriverBinding      0000000000006b80     Nvme:NvmeBus.obj
+ 0002:00000250       _gUefiDriverRevision       0000000000006bb0     Nvme:AutoGen.obj
+ 0002:00000258       ??_C@_1DM@KHNCPJJB@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAO?$AAv?$AAe?$AAr?$AAw?$AAr?$AAi?$AAt?$AAe?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$AA@ 0000000000006bb8     Nvme:NvmeBus.obj
+ 0002:00000294       ??_C@_05JJLPJMLG@en?9US?$AA@ 0000000000006bf4     Nvme:NvmeBus.obj
+ 0002:000002a0       ??_C@_1BK@FEAHBHOC@?$AAT?$AAp?$AAm?$AAS?$AAe?$AAr?$AAv?$AAF?$AAl?$AAa?$AAg?$AAs?$AA?$AA@ 0000000000006c00     Nvme:NvmeBus.obj
+ 0002:000002c0       ??_C@_1DK@PHOMBGEK@?$AAN?$AAV?$AAM?$AAe?$AA?5?$AAM?$AAa?$AAs?$AAs?$AA?5?$AAS?$AAt?$AAo?$AAr?$AAa?$AAg?$AAe?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AA?$AA@ 0000000000006c20     Nvme:NvmeComponentName.obj
+ 0002:00000300       ??_C@_1CI@IHFLIHDO@?$AAA?$AAM?$AAI?$AA?5?$AAN?$AAV?$AAM?$AAe?$AA?5?$AAB?$AAU?$AAS?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000006c60     Nvme:NvmeComponentName.obj
+ 0002:00000328       mUefiDevicePathLibEndDevicePath 0000000000006c88     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00000330       gNvmeCommunicateBuffer     0000000000006c90     Nvme:NvmeBus.obj
+ 0002:00000338       gNvmeIdentifyControllerData 0000000000006c98     Nvme:NvmeBus.obj
+ 0002:00000340       gNvmeActiveNsBlkMedia      0000000000006ca0     Nvme:NvmeBus.obj
+ 0002:00000348       gNvmeHddSecurityInitProtocol 0000000000006ca8     Nvme:NvmeBus.obj
+ 0002:00000350       gAmiTcgStorageSecurityInitProtocol 0000000000006cb0     Nvme:NvmeBus.obj
+ 0002:00000358       NvmeShutdownEvent          0000000000006cb8     Nvme:NvmeBus.obj
+ 0002:00000360       NvmeReadyToBootEvent       0000000000006cc0     Nvme:NvmeBus.obj
+ 0002:00000368       HddSmartInitProtocol       0000000000006cc8     Nvme:NvmeBus.obj
+ 0002:00000370       AmiBlkWriteProtection      0000000000006cd0     Nvme:NvmeBus.obj
+ 0002:00000378       gLegacyNvmeBuffer          0000000000006cd8     Nvme:NvmeBus.obj
+ 0002:00000380       gImageHandle               0000000000006ce0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000388       gST                        0000000000006ce8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000390       gBS                        0000000000006cf0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000398       gRT                        0000000000006cf8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000003a0       mReportStatusCodeLibStatusCodeProtocol 0000000000006d00     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00005084       InternalAcpiDelay          0000000000005324 f    CIL library: CIL module

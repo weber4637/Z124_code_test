@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_TE -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\4862aff3-667c-5458-b274-a1c62df8ba80HeciInit\4862aff3-667c-5458-b274-a1c62df8ba80SEC2.1.te d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\4862aff3-667c-5458-b274-a1c62df8ba80HeciInit\4862aff3-667c-5458-b274-a1c62df8ba80Te.raw

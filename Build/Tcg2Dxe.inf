@@ -1,0 +1,81 @@
+## @file
+#   The [Sources] section for this file is auto-generated from ELINKs:
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Tcg2Dxe
+  FILE_GUID                      = 39045756-FCA3-49bd-8DAE-C7BAE8389AFF
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = TreeDxeEntry
+
+[Sources]
+../AmiModulePkg\TCG2\Common\TcgDxe/Tcg2Dxe.c
+../AmiModulePkg\TCG2\Common\TcgDxe/Tcg2Dxe.h
+../AmiModulePkg\TCG2\Common\TcgDxe/Tpm2Sequences.c
+
+
+[Packages]
+  MdePkg/MdePkg.dec
+  UefiCpuPkg/UefiCpuPkg.dec
+  AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+  AmiModulePkg/AmiModulePkg.dec
+  AmiTcgPkg/AmiTcgPkg.dec
+
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  BaseTisLib20
+  ShaLib
+  BaseCrbLibDxe
+  BaseLib
+  BaseMemoryLib
+  UefiLib
+  TcgAslLib
+  BaseAmiTcmlib
+  PeCoffLib
+  TpmReportStatusCodeWrapperLibDxe
+
+
+[Protocols]
+  gTcgPlatformSetupPolicyGuid    	## CONSUMES
+  gAmiTpmSupportTypeProtocolguid    	## CONSUMES
+  gEfiBlockIoProtocolGuid    		## CONSUMES
+  gEfiFirmwareVolume2ProtocolGuid 	## CONSUMES
+  gEfiAcpiSupportGuid            	## CONSUMES
+  gEfiDiskIoProtocolGuid  	    	## PRODUCES
+  gEfiTrEEProtocolGuid			## CONSUMES
+  gEfiResetArchProtocolGuid    		## CONSUMES
+  gEfiSmmSwDispatch2ProtocolGuid      	## CONSUMES
+  gEfiTcgPlatformProtocolGuid		   ## CONSUMES
+  AmiProtocolInternalHlxeGuid		   ## CONSUMES
+  gAmiDxeHashInterfaceguid		   ## CONSUMES
+  gEfiSmmBase2ProtocolGuid      	## CONSUMES
+  gBdsAllDriversConnectedProtocolGuid	## CONSUMES
+
+[Guids]
+  gEfiImageSecurityDatabaseGuid    ## CONSUMES
+  gEfiSmbiosTableGuid		   ## CONSUMES
+  AmiValidBootImageCertTblGuid		   ## CONSUMES
+  gTpm20HobGuid		   ## CONSUMES
+  gTcg2FinalEventsTableGuid		   ## CONSUMES
+  gEfiMemoryOverwriteControlDataGuid		   ## CONSUMES
+  ExtendedDataGuid		   ## CONSUMES
+  gSetupVariableGuid		   ## CONSUMES
+  gEfiTcgTreeLogHobGuid		   ## CONSUMES
+  gTcgInternalflagGuid		   ## CONSUMES
+  AmitcgefiOsVariableGuid		   ## CONSUMES
+  gEfiAcpiTableGuid     	## CONSUMES
+  
+gAmiResetSystemEventGuid       	## CONSUMES
+
+
+#//>>>
+[Depex]
+  gTcgPlatformSetupPolicyGuid
+#//<<<
+
+[BuildOptions]
+  *_*_*_BUILD_FLAGS=-s
+

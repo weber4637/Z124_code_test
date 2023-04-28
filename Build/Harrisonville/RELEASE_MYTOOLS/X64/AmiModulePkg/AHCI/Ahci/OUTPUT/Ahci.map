@@ -1,0 +1,158 @@
+ Ahci
+
+ Timestamp is 6448e7f1 (Wed Apr 26 16:59:29 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00006cf0H .text                   CODE
+ 0002:00000000 0000076aH .data                   DATA
+ 0002:00000770 000000b0H .rdata                  DATA
+ 0002:00000820 00000128H .bss                    DATA
+ 0003:00000000 000002d0H .pdata                  DATA
+ 0004:00000000 000003d8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000b4       AhciBusSupported           0000000000000354 f   Ahci:AhciBus.obj
+ 0001:00000308       AhciBusStart               00000000000005a8 f   Ahci:AhciBus.obj
+ 0001:000008f4       DetectAndConfigureDevice   0000000000000b94 f   Ahci:AhciBus.obj
+ 0001:00000c78       InstallOtherOptionalFeatures 0000000000000f18 f   Ahci:AhciBus.obj
+ 0001:00000ebc       AhciBusStop                000000000000115c f   Ahci:AhciBus.obj
+ 0001:000015e4       InstallAhciBusProtocol     0000000000001884 f   Ahci:AhciBus.obj
+ 0001:00001738       AllocateMemoryForCommandListAndFis 00000000000019d8 f   Ahci:AhciBus.obj
+ 0001:000019a4       AhciInitController         0000000000001c44 f   Ahci:AhciBus.obj
+ 0001:00001bc4       AhciDetectDevice           0000000000001e64 f   Ahci:AhciBus.obj
+ 0001:00001e74       CheckDevicePresence        0000000000002114 f   Ahci:AhciBus.obj
+ 0001:00002320       CheckPMDevicePresence      00000000000025c0 f   Ahci:AhciBus.obj
+ 0001:000024dc       ConfigureSataPort          000000000000277c f   Ahci:AhciBus.obj
+ 0001:00002590       ConfigureDevice            0000000000002830 f   Ahci:AhciBus.obj
+ 0001:00002ae4       ConfigureController        0000000000002d84 f   Ahci:AhciBus.obj
+ 0001:00002c70       InitializeDipm             0000000000002f10 f   Ahci:AhciBus.obj
+ 0001:00002d1c       InitializeDeviceSleep      0000000000002fbc f   Ahci:AhciBus.obj
+ 0001:00003008       WaitForMemSet              00000000000032a8 f   Ahci:AhciBus.obj
+ 0001:0000309c       WaitForMemClear            000000000000333c f   Ahci:AhciBus.obj
+ 0001:00003130       InitSataBlockIO            00000000000033d0 f   Ahci:AhciBus.obj
+ 0001:000035f4       GetEnumOddType             0000000000003894 f   Ahci:AhciBus.obj
+ 0001:00003724       CreateSataDevicePath       00000000000039c4 f   Ahci:AhciBus.obj
+ 0001:0000385c       DiskInfoInquiry            0000000000003afc f   Ahci:AhciBus.obj
+ 0001:000038d0       DiskInfoIdentify           0000000000003b70 f   Ahci:AhciBus.obj
+ 0001:0000394c       DiskInfoSenseData          0000000000003bec f   Ahci:AhciBus.obj
+ 0001:00003958       DiskInfoWhichIDE           0000000000003bf8 f   Ahci:AhciBus.obj
+ 0001:0000397c       AhciFreezeLockDevice       0000000000003c1c f   Ahci:AhciBus.obj
+ 0001:00003b60       SataBlkRead                0000000000003e00 f   Ahci:AhciController.obj
+ 0001:00003b80       SataBlkWrite               0000000000003e20 f   Ahci:AhciController.obj
+ 0001:00003bfc       SataAtaBlkReadWrite        0000000000003e9c f   Ahci:AhciController.obj
+ 0001:00003cbc       SataAtapiBlkRead           0000000000003f5c f   Ahci:AhciController.obj
+ 0001:00003cdc       SataAtapiBlkWrite          0000000000003f7c f   Ahci:AhciController.obj
+ 0001:00003cfc       SataAtapiBlkReadWrite      0000000000003f9c f   Ahci:AhciController.obj
+ 0001:00003f4c       SataReset                  00000000000041ec f   Ahci:AhciController.obj
+ 0001:00003f50       SataBlkFlush               00000000000041f0 f   Ahci:AhciController.obj
+ 0001:00003ffc       SataReadWritePio           000000000000429c f   Ahci:AhciController.obj
+ 0001:000041c8       SataPioDataOut             0000000000004468 f   Ahci:AhciController.obj
+ 0001:000042f8       ExecuteNonDataCommand      0000000000004598 f   Ahci:AhciController.obj
+ 0001:000043e8       ExecutePioDataCommand      0000000000004688 f   Ahci:AhciController.obj
+ 0001:000046a8       ExecuteDmaDataCommand      0000000000004948 f   Ahci:AhciController.obj
+ 0001:0000491c       ExecutePacketCommand       0000000000004bbc f   Ahci:AhciController.obj
+ 0001:00004bdc       HandleAtapiError           0000000000004e7c f   Ahci:AhciController.obj
+ 0001:00004dc0       ReadWritePMPort            0000000000005060 f   Ahci:AhciController.obj
+ 0001:00004f7c       GetIdentifyData            000000000000521c f   Ahci:AhciController.obj
+ 0001:0000502c       DetectAtapiMedia           00000000000052cc f   Ahci:AhciController.obj
+ 0001:000053d0       SataGetOddType             0000000000005670 f   Ahci:AhciController.obj
+ 0001:00005488       TestUnitReady              0000000000005728 f   Ahci:AhciController.obj
+ 0001:00005548       BuildCommandList           00000000000057e8 f   Ahci:AhciController.obj
+ 0001:000055bc       BuildCommandFIS            000000000000585c f   Ahci:AhciController.obj
+ 0001:0000567c       BuildPRDT                  000000000000591c f   Ahci:AhciController.obj
+ 0001:00005750       StartController            00000000000059f0 f   Ahci:AhciController.obj
+ 0001:00005810       WaitforCommandComplete     0000000000005ab0 f   Ahci:AhciController.obj
+ 0001:000059fc       StopController             0000000000005c9c f   Ahci:AhciController.obj
+ 0001:00005cb8       ReadytoAcceptCmd           0000000000005f58 f   Ahci:AhciController.obj
+ 0001:00005ea8       GeneratePortReset          0000000000006148 f   Ahci:AhciController.obj
+ 0001:000061a8       GenerateSoftReset          0000000000006448 f   Ahci:AhciController.obj
+ 0001:00006414       HandlePortComReset         00000000000066b4 f   Ahci:AhciController.obj
+ 0001:000066b4       ReadSCRRegister            0000000000006954 f   Ahci:AhciController.obj
+ 0001:00006720       WriteSCRRegister           00000000000069c0 f   Ahci:AhciController.obj
+ 0001:00006784       AhciBusCtlDriverName       0000000000006a24 f   Ahci:AhciComponentName.obj
+ 0001:000067d4       AhciBusCtlGetControllerName 0000000000006a74 f   Ahci:AhciComponentName.obj
+ 0001:00006978       LibInitStatusCodePtr       0000000000006c18 f   AmiDxeLib:EfiLib.obj
+ 0001:000069fc       LibReportStatusCode        0000000000006c9c f   AmiDxeLib:EfiLib.obj
+ 0001:00006a74       Malloc                     0000000000006d14 f   AmiDxeLib:EfiLib.obj
+ 0001:00006aa0       MallocZ                    0000000000006d40 f   AmiDxeLib:EfiLib.obj
+ 0001:00006ae0       DPLength                   0000000000006d80 f   AmiDxeLib:EfiLib.obj
+ 0001:00006b24       DummyFunction              0000000000006dc4 f   AmiDxeLib:EfiLib.obj
+ 0001:00006b28       LanguageCodesEqual         0000000000006dc8 f   AmiDxeLib:EfiLib.obj
+ 0001:00006b90       GetCpuTimer                0000000000006e30 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00006ba0       CPULib_CpuID               0000000000006e40 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00006be0       memset                     0000000000006e80     AmiDxeLib:MemSet.obj
+ 0001:00006bee       MemSetAsm                  0000000000006e8e f   AmiDxeLib:MemSet.obj
+ 0001:00006c40       MemCpyAsm                  0000000000006ee0 f   AmiDxeLib:MemCpy.obj
+ 0001:00006c40       memcpy                     0000000000006ee0     AmiDxeLib:MemCpy.obj
+ 0002:00000000       gEfiDiskInfoAhciInterfaceGuid 0000000000006fa0     Ahci:AutoGen.obj
+ 0002:00000010       gAmiGlobalVariableGuid     0000000000006fb0     Ahci:AutoGen.obj
+ 0002:00000020       gEfiPciIoProtocolGuid      0000000000006fc0     Ahci:AutoGen.obj
+ 0002:00000030       gEfiDevicePathProtocolGuid 0000000000006fd0     Ahci:AutoGen.obj
+ 0002:00000040       gEfiIdeControllerInitProtocolGuid 0000000000006fe0     Ahci:AutoGen.obj
+ 0002:00000050       gEfiDriverBindingProtocolGuid 0000000000006ff0     Ahci:AutoGen.obj
+ 0002:00000060       gEfiBlockIoProtocolGuid    0000000000007000     Ahci:AutoGen.obj
+ 0002:00000070       gEfiDiskInfoProtocolGuid   0000000000007010     Ahci:AutoGen.obj
+ 0002:00000080       gAmiAhciBusProtocolGuid    0000000000007020     Ahci:AutoGen.obj
+ 0002:00000090       gAmiAhciPlatformPolicyProtocolGuid 0000000000007030     Ahci:AutoGen.obj
+ 0002:000000a0       gAmiIdeBusInitProtocolGuid 0000000000007040     Ahci:AutoGen.obj
+ 0002:000000b0       gEfiStorageSecurityCommandProtocolGuid 0000000000007050     Ahci:AutoGen.obj
+ 0002:000000c0       gAmiHddSecurityProtocolGuid 0000000000007060     Ahci:AutoGen.obj
+ 0002:000000d0       gAmiHddSecurityInitProtocolGuid 0000000000007070     Ahci:AutoGen.obj
+ 0002:000000e0       gAmiHddSecurityEndProtocolGuid 0000000000007080     Ahci:AutoGen.obj
+ 0002:000000f0       gAmiHddSmartProtocolGuid   0000000000007090     Ahci:AutoGen.obj
+ 0002:00000100       gAmiHddSmartInitProtocolGuid 00000000000070a0     Ahci:AutoGen.obj
+ 0002:00000110       gAmiHddOpalSecInitProtocolGuid 00000000000070b0     Ahci:AutoGen.obj
+ 0002:00000120       gAmiAtaPassThruInitProtocolGuid 00000000000070c0     Ahci:AutoGen.obj
+ 0002:00000130       gAmiScsiPassThruInitProtocolGuid 00000000000070d0     Ahci:AutoGen.obj
+ 0002:00000140       gAmiBlockIoWriteProtectionProtocolGuid 00000000000070e0     Ahci:AutoGen.obj
+ 0002:00000150       EfiErrorStatus             00000000000070f0     AmiDxeLib:StdLibC.obj
+ 0002:00000490       PiErrorStatus              0000000000007430     AmiDxeLib:StdLibC.obj
+ 0002:000004e0       AmiErrorStatus             0000000000007480     AmiDxeLib:StdLibC.obj
+ 0002:00000520       EfiWarningStatus           00000000000074c0     AmiDxeLib:StdLibC.obj
+ 0002:00000590       PiWarningStatus            0000000000007530     AmiDxeLib:StdLibC.obj
+ 0002:000005d8       EfiUnknown                 0000000000007578     AmiDxeLib:StdLibC.obj
+ 0002:000006b8       gAhciBusDriverName         0000000000007658     Ahci:AhciComponentName.obj
+ 0002:000006c0       gAhciBusControllerName     0000000000007660     Ahci:AhciComponentName.obj
+ 0002:000006c8       gAhciBusControllerDriverName 0000000000007668     Ahci:AhciComponentName.obj
+ 0002:000006e0       gComponentNameProtocolGuid 0000000000007680     Ahci:AhciBus.obj
+ 0002:00000710       gAmiTcgStorageSecurityInitProtocolGuid 00000000000076b0     Ahci:AhciBus.obj
+ 0002:00000720       gAmiTcgStorageSecurityProtocolGuid 00000000000076c0     Ahci:AhciBus.obj
+ 0002:00000730       gAhciBusDriverBinding      00000000000076d0     Ahci:AhciBus.obj
+ 0002:00000760       gDefaultAhciPlatformPolicy 0000000000007700     Ahci:AhciBus.obj
+ 0002:00000770       _gUefiDriverRevision       0000000000007710     Ahci:AutoGen.obj
+ 0002:00000778       ??_C@_1DC@OCIJFMF@?$AAR?$AAa?$AAi?$AAd?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAB?$AAl?$AAo?$AAc?$AAk?$AAi?$AAn?$AAg?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?$AA@ 0000000000007718     Ahci:AhciBus.obj
+ 0002:000007ac       ??_C@_05JJLPJMLG@en?9US?$AA@ 000000000000774c     Ahci:AhciComponentName.obj
+ 0002:000007b8       ??_C@_1DK@JIFHJIGD@?$AAA?$AAH?$AAC?$AAI?$AA?5?$AAM?$AAa?$AAs?$AAs?$AA?5?$AAS?$AAt?$AAo?$AAr?$AAa?$AAg?$AAe?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AA?$AA@ 0000000000007758     Ahci:AhciComponentName.obj
+ 0002:000007f8       ??_C@_1CI@OFHJCELJ@?$AAA?$AAM?$AAI?$AA?5?$AAA?$AAH?$AAC?$AAI?$AA?5?$AAB?$AAU?$AAS?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000007798     Ahci:AhciComponentName.obj
+ 0002:00000820       AmiBlkWriteProtection      00000000000077c0     Ahci:AhciBus.obj
+ 0002:00000828       HddSecurityInitProtocol    00000000000077c8     Ahci:AhciBus.obj
+ 0002:00000830       TcgStorageSecurityInitProtocol 00000000000077d0     Ahci:AhciBus.obj
+ 0002:00000838       HddSmartInitProtocol       00000000000077d8     Ahci:AhciBus.obj
+ 0002:00000840       OpalSecInitProtocol        00000000000077e0     Ahci:AhciBus.obj
+ 0002:00000848       AtaPassThruInitProtocol    00000000000077e8     Ahci:AhciBus.obj
+ 0002:00000850       gScsiPassThruInitProtocol  00000000000077f0     Ahci:AhciBus.obj
+ 0002:00000858       AhciPlatformPolicy         00000000000077f8     Ahci:AhciBus.obj
+ 0002:00000860       AhciReadyToBootEvent       0000000000007800     Ahci:AhciBus.obj
+ 0002:00000868       gPortReset                 0000000000007808     Ahci:AhciController.obj
+ 0002:00000869       gSoftReset                 0000000000007809     Ahci:AhciController.obj
+ 0002:00000870       gCommandListBaseAddress    0000000000007810     Ahci:AhciController.obj
+ 0002:00000878       gImageHandle               0000000000007818     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000880       gST                        0000000000007820     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000888       gBS                        0000000000007828     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000008d0       pST                        0000000000007870     AmiDxeLib:EfiLib.obj
+ 0002:000008d8       pBS                        0000000000007878     AmiDxeLib:EfiLib.obj
+ 0002:000008e0       pRS                        0000000000007880     AmiDxeLib:EfiLib.obj
+ 0002:000008e8       pSmst                      0000000000007888     AmiDxeLib:EfiLib.obj
+ 0002:000008f0       TheImageHandle             0000000000007890     AmiDxeLib:EfiLib.obj
+ 0002:000008f8       gFisBaseAddress            0000000000007898     <common>
+ 0002:00000900       TempHddSecurityProtocolPtr 00000000000078a0     <common>
+ 0002:00000920       AhciControllerLinkedList   00000000000078c0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

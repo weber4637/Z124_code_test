@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PEI_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\dacf705c-71df-497d-aabe-10186b2e1ddeRecovery\dacf705c-71df-497d-aabe-10186b2e1ddeSEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\IA32\AmiModulePkg\Recovery\Recovery\OUTPUT\Recovery.depex

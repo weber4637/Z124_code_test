@@ -1,0 +1,52 @@
+ WdatDxe
+
+ Timestamp is 6448e7f9 (Wed Apr 26 16:59:37 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000400H .text                   CODE
+ 0002:00000000 00000718H .data                   DATA
+ 0002:00000720 00000004H .rdata                  DATA
+ 0002:00000728 00000088H .bss                    DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 0000001cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       ProcessModuleEntryPointList 00000000000002a8 f   WdatDxe:AutoGen.obj
+ 0001:00000100       SetupAcpiHeaderData        0000000000000380 f   WdatDxe:WdatDxe.obj
+ 0001:000001a4       WdatHeaderAndActionTableOverride 0000000000000424 f   WdatDxe:WdatBoard.obj
+ 0001:000002a0       GetCpuTimer                0000000000000520 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:000002b0       CPULib_CpuID               0000000000000530 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000002f0       memset                     0000000000000570     AmiDxeLib:MemSet.obj
+ 0001:000002fe       MemSetAsm                  000000000000057e f   AmiDxeLib:MemSet.obj
+ 0001:00000350       MemCpyAsm                  00000000000005d0 f   AmiDxeLib:MemCpy.obj
+ 0001:00000350       memcpy                     00000000000005d0     AmiDxeLib:MemCpy.obj
+ 0002:00000000       EfiErrorStatus             0000000000000680     AmiDxeLib:StdLibC.obj
+ 0002:00000340       PiErrorStatus              00000000000009c0     AmiDxeLib:StdLibC.obj
+ 0002:00000390       AmiErrorStatus             0000000000000a10     AmiDxeLib:StdLibC.obj
+ 0002:000003d0       EfiWarningStatus           0000000000000a50     AmiDxeLib:StdLibC.obj
+ 0002:00000440       PiWarningStatus            0000000000000ac0     AmiDxeLib:StdLibC.obj
+ 0002:00000488       EfiUnknown                 0000000000000b08     AmiDxeLib:StdLibC.obj
+ 0002:00000568       WdatHdr                    0000000000000be8     WdatDxe:WdatBoard.obj
+ 0002:00000588       ActionTableLen             0000000000000c08     WdatDxe:WdatBoard.obj
+ 0002:00000590       ActionTable                0000000000000c10     WdatDxe:WdatBoard.obj
+ 0002:000006f8       ACPI_OEM_ID                0000000000000d78     WdatDxe:WdatDxe.obj
+ 0002:00000700       ACPI_OEM_TBL_ID            0000000000000d80     WdatDxe:WdatDxe.obj
+ 0002:00000708       gAcpiSupportGuid           0000000000000d88     WdatDxe:WdatDxe.obj
+ 0002:00000720       _gUefiDriverRevision       0000000000000da0     WdatDxe:AutoGen.obj
+ 0002:00000730       gImageHandle               0000000000000db0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000738       gST                        0000000000000db8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000740       gBS                        0000000000000dc0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000790       pST                        0000000000000e10     AmiDxeLib:EfiLib.obj
+ 0002:00000798       pBS                        0000000000000e18     AmiDxeLib:EfiLib.obj
+ 0002:000007a0       pRS                        0000000000000e20     AmiDxeLib:EfiLib.obj
+ 0002:000007a8       TheImageHandle             0000000000000e28     AmiDxeLib:EfiLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

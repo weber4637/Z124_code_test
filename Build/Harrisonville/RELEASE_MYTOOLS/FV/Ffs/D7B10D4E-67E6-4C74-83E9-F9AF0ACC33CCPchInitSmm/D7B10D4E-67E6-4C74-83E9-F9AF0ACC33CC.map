@@ -1,0 +1,72 @@
+ PchInitSmm
+
+ Timestamp is 6448e7f1 (Wed Apr 26 16:59:29 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000007f3H .text                   CODE
+ 0002:00000000 00000110H .data                   DATA
+ 0002:00000110 00000004H .rdata                  DATA
+ 0002:00000120 000001a8H .bss                    DATA
+ 0003:00000000 00000054H .pdata                  DATA
+ 0004:00000000 00000034H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000090       ProcessLibraryConstructorList 0000000000000310 f   PchInitSmm:AutoGen.obj
+ 0001:000001c4       PchSxHandler               0000000000000444 f   PchInitSmm:PchInitSmm.obj
+ 0001:00000264       PchInitSmmEntryPoint       00000000000004e4 f   PchInitSmm:PchInitSmm.obj
+ 0001:0000054c       PchSpiBiosWpCallback       00000000000007cc f   PchInitSmm:PchBiosWriteProtect.obj
+ 0001:00000564       InternalAssertJumpBuffer   00000000000007e4 f   BaseLib:SetJump.obj
+ 0001:00000564       PchSpiAsyncCallback        00000000000007e4 f   PchInitSmm:PchSpiAsync.obj
+ 0001:00000568       BufferInSmram              00000000000007e8 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000005ac       InternalAllocatePool       000000000000082c f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000005dc       FreePool                   000000000000085c f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000614       EfiGetSystemConfigurationTable 0000000000000894 f   UefiLib:UefiLib.obj
+ 0001:00000680       SetJump                    0000000000000900     BaseLib:SetJump.obj
+ 0001:00000710       InternalLongJump           0000000000000990     BaseLib:LongJump.obj
+ 0001:00000790       InternalMemCopyMem         0000000000000a10     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000007d0       InternalMemZeroMem         0000000000000a50     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000007f0       CpuPause                   0000000000000a70     BaseLib:CpuPause.obj
+ 0002:00000000       gSiPolicyHobGuid           0000000000000a80     PchInitSmm:AutoGen.obj
+ 0002:00000010       gPchPolicyHobGuid          0000000000000a90     PchInitSmm:AutoGen.obj
+ 0002:00000020       gEfiHobListGuid            0000000000000aa0     PchInitSmm:AutoGen.obj
+ 0002:00000030       gEfiDxeServicesTableGuid   0000000000000ab0     PchInitSmm:AutoGen.obj
+ 0002:00000040       gEfiSmmSxDispatch2ProtocolGuid 0000000000000ac0     PchInitSmm:AutoGen.obj
+ 0002:00000050       gPchNvsAreaProtocolGuid    0000000000000ad0     PchInitSmm:AutoGen.obj
+ 0002:00000060       gPchTcoSmiDispatchProtocolGuid 0000000000000ae0     PchInitSmm:AutoGen.obj
+ 0002:00000070       gPchSmiDispatchProtocolGuid 0000000000000af0     PchInitSmm:AutoGen.obj
+ 0002:00000080       gEfiSmmBase2ProtocolGuid   0000000000000b00     PchInitSmm:AutoGen.obj
+ 0002:00000090       gEfiSmmAccess2ProtocolGuid 0000000000000b10     PchInitSmm:AutoGen.obj
+ 0002:000000a0       gEfiS3SmmSaveStateProtocolGuid 0000000000000b20     PchInitSmm:AutoGen.obj
+ 0002:000000d0       PchLpRprDidTable           0000000000000b50     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000000e8       PchHRprDidTable            0000000000000b68     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000110       _gUefiDriverRevision       0000000000000b90     PchInitSmm:AutoGen.obj
+ 0002:00000220       gImageHandle               0000000000000ca0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000228       gST                        0000000000000ca8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000230       gBS                        0000000000000cb0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000238       gRT                        0000000000000cb8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000240       gSmst                      0000000000000cc0     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000248       mHobList                   0000000000000cc8     DxeHobLib:HobLib.obj
+ 0002:00000250       gDS                        0000000000000cd0     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000258       S3SaveState                0000000000000cd8     SmmS3BootScriptLibS3SmmSaveStateProtocol:S3BootScriptLibS3SaveStateProtocol.obj
+ 0002:00000260       mSmramRanges               0000000000000ce0     <common>
+ 0002:00000268       mSmramRangeCount           0000000000000ce8     <common>
+ 0002:00000270       mPchSmiDispatchProtocol    0000000000000cf0     <common>
+ 0002:00000278       mPchTcoSmiDispatchProtocol 0000000000000cf8     <common>
+ 0002:00000280       mSpiRegBase                0000000000000d00     <common>
+ 0002:00000288       mAcpiBaseAddr              0000000000000d08     <common>
+ 0002:00000290       mSxDispatch                0000000000000d10     <common>
+ 0002:00000298       mSiPolicyHob               0000000000000d18     <common>
+ 0002:000002a0       mPchPolicyHob              0000000000000d20     <common>
+ 0002:000002a8       mXhciMmioBaseAddr          0000000000000d28     <common>
+ 0002:000002b0       mResvMmioSize              0000000000000d30     <common>
+ 0002:000002b8       mPchNvsArea                0000000000000d38     <common>
+ 0002:000002c0       mResvMmioBaseAddr          0000000000000d40     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

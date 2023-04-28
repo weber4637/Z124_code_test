@@ -1,0 +1,61 @@
+ DigitalThermalSensor
+
+ Timestamp is 6448e7f6 (Wed Apr 26 16:59:34 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000009aaH .text                   CODE
+ 0002:00000000 00000598H .data                   DATA
+ 0002:000005a0 00000004H .rdata                  DATA
+ 0002:000005b0 0000019aH .bss                    DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 00000030H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000c4       DigitalThermalSensorUpdateTemperature 0000000000000344 f   DigitalThermalSensor:DigitalThermalSensor.obj
+ 0001:000000e8       DtsSmiCallback             0000000000000368 f   DigitalThermalSensor:DigitalThermalSensor.obj
+ 0001:000004a8       DigitalThermalSensorEventCheckMsr 0000000000000728 f   DigitalThermalSensor:DigitalThermalSensor.obj
+ 0001:000004e0       DigitalThermalSensorEnableSmi 0000000000000760 f   DigitalThermalSensor:DigitalThermalSensor.obj
+ 0001:0000055c       DigitalThermalSensorDisableSmi 00000000000007dc f   DigitalThermalSensor:DigitalThermalSensor.obj
+ 0001:000005bc       InstallDigitalThermalSensor 000000000000083c f   DigitalThermalSensor:DigitalThermalSensor.obj
+ 0001:000006bc       InternalAssertJumpBuffer   000000000000093c f   BaseLib:SetJump.obj
+ 0001:000006c0       MemCmp                     0000000000000940 f   AmiDxeLib:Memory.obj
+ 0001:00000740       SetJump                    00000000000009c0     BaseLib:SetJump.obj
+ 0001:000007d0       InternalLongJump           0000000000000a50     BaseLib:LongJump.obj
+ 0001:00000850       CPULib_CpuID               0000000000000ad0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000890       memset                     0000000000000b10     AmiDxeLib:MemSet.obj
+ 0001:0000089e       MemSetAsm                  0000000000000b1e f   AmiDxeLib:MemSet.obj
+ 0001:000008f0       memcpy                     0000000000000b70     AmiDxeLib:MemCpy.obj
+ 0001:000008f0       MemCpyAsm                  0000000000000b70 f   AmiDxeLib:MemCpy.obj
+ 0001:000009a0       GetCpuTimer                0000000000000c20 f   AmiDxeLib:GetCpuTimer.obj
+ 0002:00000000       SmmRsTableGuid             0000000000000c40     DigitalThermalSensor:AutoGen.obj
+ 0002:00000010       gEfiGlobalNvsAreaProtocolGuid 0000000000000c50     DigitalThermalSensor:AutoGen.obj
+ 0002:00000020       gEfiSmmBase2ProtocolGuid   0000000000000c60     DigitalThermalSensor:AutoGen.obj
+ 0002:00000030       EfiErrorStatus             0000000000000c70     AmiDxeLib:StdLibC.obj
+ 0002:00000370       PiErrorStatus              0000000000000fb0     AmiDxeLib:StdLibC.obj
+ 0002:000003c0       AmiErrorStatus             0000000000001000     AmiDxeLib:StdLibC.obj
+ 0002:00000400       EfiWarningStatus           0000000000001040     AmiDxeLib:StdLibC.obj
+ 0002:00000470       PiWarningStatus            00000000000010b0     AmiDxeLib:StdLibC.obj
+ 0002:000004b8       EfiUnknown                 00000000000010f8     AmiDxeLib:StdLibC.obj
+ 0002:000005a0       _gUefiDriverRevision       00000000000011e0     DigitalThermalSensor:AutoGen.obj
+ 0002:000006b0       mGlobalNvsAreaPtr          00000000000012f0     DigitalThermalSensor:DigitalThermalSensor.obj
+ 0002:000006b8       mBspDigitalThermalSensorThermalEvent 00000000000012f8     DigitalThermalSensor:DigitalThermalSensor.obj
+ 0002:000006bc       mApDigitalThermalSensorThermalEvent 00000000000012fc     DigitalThermalSensor:DigitalThermalSensor.obj
+ 0002:000006c0       gImageHandle               0000000000001300     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006c8       gST                        0000000000001308     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006d0       gBS                        0000000000001310     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006d8       gSmst                      0000000000001318     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000728       pST                        0000000000001368     AmiDxeLib:EfiLib.obj
+ 0002:00000730       pBS                        0000000000001370     AmiDxeLib:EfiLib.obj
+ 0002:00000738       pRS                        0000000000001378     AmiDxeLib:EfiLib.obj
+ 0002:00000740       TheImageHandle             0000000000001380     AmiDxeLib:EfiLib.obj
+ 0002:00000748       mPerformanceMeasurementEnabled 0000000000001388     <common>
+ 0002:00000749       mDtsTjMax                  0000000000001389     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

@@ -1,0 +1,73 @@
+ SbRunSmm
+
+ Timestamp is 6448e7ee (Wed Apr 26 16:59:26 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000008fcH .text                   CODE
+ 0002:00000000 000005e8H .data                   DATA
+ 0002:000005f0 00000004H .rdata                  DATA
+ 0002:00000600 000001c9H .bss                    DATA
+ 0003:00000000 00000054H .pdata                  DATA
+ 0004:00000000 00000050H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f0       SmmRtResetSystem           0000000000000370 f   SbRunSmm:SbRunSmm.obj
+ 0001:000001d0       SbRuntimeServiceInit       0000000000000450 f   SbRunSmm:SbRunSmm.obj
+ 0001:000002f0       SbRuntimeSmmInitEntryPoint 0000000000000570 f   SbRunSmm:SbRunSmm.obj
+ 0001:000003fc       InternalAssertJumpBuffer   000000000000067c f   BaseLib:SetJump.obj
+ 0001:00000400       MemCmp                     0000000000000680 f   AmiDxeLib:Memory.obj
+ 0001:00000474       LibInitStatusCodePtr       00000000000006f4 f   AmiDxeLib:EfiLib.obj
+ 0001:000004b8       TraceGetAmiDebugServicesProtocolInstance 0000000000000738 f   AmiDxeLib:EfiLib.obj
+ 0001:0000059c       GetSmstConfigurationTable  000000000000081c f   AmiDxeLib:EfiLib.obj
+ 0001:00000600       SetJump                    0000000000000880     BaseLib:SetJump.obj
+ 0001:00000690       InternalLongJump           0000000000000910     BaseLib:LongJump.obj
+ 0001:00000710       CPULib_CpuID               0000000000000990 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000750       memset                     00000000000009d0     AmiDxeLib:MemSet.obj
+ 0001:0000075e       MemSetAsm                  00000000000009de f   AmiDxeLib:MemSet.obj
+ 0001:000007b0       memcpy                     0000000000000a30     AmiDxeLib:MemCpy.obj
+ 0001:000007b0       MemCpyAsm                  0000000000000a30 f   AmiDxeLib:MemCpy.obj
+ 0001:00000860       GetCpuTimer                0000000000000ae0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000870       AsmWbinvd                  0000000000000af0     BaseLib:Wbinvd.obj
+ 0001:00000880       CPULib_GetInterruptState   0000000000000b00 f   AmiDxeLib:CpuLib_GetInterruptState.obj
+ 0001:000008a0       CPULib_DisableInterrupt    0000000000000b20 f   AmiDxeLib:CpuLib_DisableInterrupt.obj
+ 0001:000008b0       CPULib_EnableInterrupt     0000000000000b30 f   AmiDxeLib:CpuLib_EnableInterrupt.obj
+ 0001:000008c0       InternalMemCopyMem         0000000000000b40     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gEfiSmmBase2ProtocolGuid   0000000000000b80     SbRunSmm:AutoGen.obj
+ 0002:00000010       gAmiSmmDebugServiceProtocolGuid 0000000000000b90     SbRunSmm:AutoGen.obj
+ 0002:00000020       gAmiDebugServiceProtocolGuid 0000000000000ba0     SbRunSmm:AutoGen.obj
+ 0002:00000030       gPirqRegistersSave         0000000000000bb0     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000050       RRegs                      0000000000000bd0     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000060       DaysInMonth                0000000000000be0     SbRuntimeServiceLib:SbRuntimeServiceLib.obj
+ 0002:00000070       EfiErrorStatus             0000000000000bf0     AmiDxeLib:StdLibC.obj
+ 0002:000003b0       PiErrorStatus              0000000000000f30     AmiDxeLib:StdLibC.obj
+ 0002:00000400       AmiErrorStatus             0000000000000f80     AmiDxeLib:StdLibC.obj
+ 0002:00000440       EfiWarningStatus           0000000000000fc0     AmiDxeLib:StdLibC.obj
+ 0002:000004b0       PiWarningStatus            0000000000001030     AmiDxeLib:StdLibC.obj
+ 0002:000004f8       EfiUnknown                 0000000000001078     AmiDxeLib:StdLibC.obj
+ 0002:000005d8       SmmRsTableGuid             0000000000001158     AmiDxeLib:EfiLib.obj
+ 0002:000005f0       _gUefiDriverRevision       0000000000001170     SbRunSmm:AutoGen.obj
+ 0002:00000700       gImageHandle               0000000000001280     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000708       gST                        0000000000001288     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000710       gBS                        0000000000001290     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000718       gSmst                      0000000000001298     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000768       SbResetCallbackList        00000000000012e8     SbRuntimeServiceLib:SbRuntimeServiceLib.obj
+ 0002:00000778       mPcd                       00000000000012f8     DxePcdLib:DxePcdLib.obj
+ 0002:00000780       mPiPcd                     0000000000001300     DxePcdLib:DxePcdLib.obj
+ 0002:00000788       mPcdInfo                   0000000000001308     DxePcdLib:DxePcdLib.obj
+ 0002:00000790       mPiPcdInfo                 0000000000001310     DxePcdLib:DxePcdLib.obj
+ 0002:00000798       pST                        0000000000001318     AmiDxeLib:EfiLib.obj
+ 0002:000007a0       pBS                        0000000000001320     AmiDxeLib:EfiLib.obj
+ 0002:000007a8       pRS                        0000000000001328     AmiDxeLib:EfiLib.obj
+ 0002:000007b0       pSmmBase                   0000000000001330     AmiDxeLib:EfiLib.obj
+ 0002:000007b8       pSmst                      0000000000001338     AmiDxeLib:EfiLib.obj
+ 0002:000007c0       TheImageHandle             0000000000001340     AmiDxeLib:EfiLib.obj
+ 0002:000007c8       mPerformanceMeasurementEnabled 0000000000001348     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

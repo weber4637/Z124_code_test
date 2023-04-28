@@ -1,0 +1,12 @@
+<component>
+	name = "NCT6776HwMonitor"
+	category = ModulePart
+	LocalRoot = "AmiModulePkg\IO\NCT6776\"
+	RefName = "NCT6776HwMonitor"
+[files]
+"NCT6776HwmSetup.sdl"
+"NCT6776HwmSetup.c"	
+"NCT6776HwmSetup.sd"	
+"NCT6776HwmSetup.uni"	
+<endComponent>
+

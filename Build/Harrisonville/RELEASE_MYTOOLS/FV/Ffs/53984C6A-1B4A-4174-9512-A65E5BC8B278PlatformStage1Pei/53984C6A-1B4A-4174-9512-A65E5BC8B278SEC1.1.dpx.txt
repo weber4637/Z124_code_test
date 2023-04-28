@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PEI_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\53984C6A-1B4A-4174-9512-A65E5BC8B278PlatformStage1Pei\53984C6A-1B4A-4174-9512-A65E5BC8B278SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\IA32\HarrisonvillePkg\Platform\PlatformStage1Pei\PlatformStage1Pei\OUTPUT\PlatformStage1Pei.depex

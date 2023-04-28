@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\e90a7b5e-37b2-43e4-b281-4c8e349045e9ReFlashSmm\e90a7b5e-37b2-43e4-b281-4c8e349045e9SEC2.3.ver

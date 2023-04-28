@@ -1,0 +1,11 @@
+typedef struct {
+  UINT8 IfType;
+  UINT8 Padding[3];
+  UINT32 Policy;
+  UINT32 DadTransmitCount;
+  UINT16 InterfaceId[25];
+  UINT16 ManualAddress[255];
+  UINT16 GatewayAddress[255];
+  UINT16 DnsAddress[255];
+} IP6_CONFIG_IFR_NVDATA;  // ADDED FROM GENERIC DEFINITIONS
+

@@ -1,0 +1,94 @@
+ PartitionDxe
+
+ Timestamp is 6448e7ed (Wed Apr 26 16:59:25 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00002bf2H .text                   CODE
+ 0002:00000000 00000130H .data                   DATA
+ 0002:00000130 0000008cH .rdata                  DATA
+ 0002:000001c0 00000680H .bss                    DATA
+ 0003:00000000 00000174H .pdata                  DATA
+ 0004:00000000 000001a8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000088       PartitionDriverBindingSupported 0000000000000328 f   PartitionDxe:Partition.obj
+ 0001:000001d0       PartitionDriverBindingStart 0000000000000470 f   PartitionDxe:Partition.obj
+ 0001:000004fc       PartitionDriverBindingStop 000000000000079c f   PartitionDxe:Partition.obj
+ 0001:0000085c       PartitionReset             0000000000000afc f   PartitionDxe:Partition.obj
+ 0001:0000086c       ProbeMediaStatus           0000000000000b0c f   PartitionDxe:Partition.obj
+ 0001:000008b8       PartitionReadBlocks        0000000000000b58 f   PartitionDxe:Partition.obj
+ 0001:00000934       PartitionWriteBlocks       0000000000000bd4 f   PartitionDxe:Partition.obj
+ 0001:000009b0       PartitionFlushBlocks       0000000000000c50 f   PartitionDxe:Partition.obj
+ 0001:000009c0       ProbeMediaStatusEx         0000000000000c60 f   PartitionDxe:Partition.obj
+ 0001:00000a0c       PartitionResetEx           0000000000000cac f   PartitionDxe:Partition.obj
+ 0001:00000a1c       PartitionOnAccessComplete  0000000000000cbc f   PartitionDxe:Partition.obj
+ 0001:00000a60       PartitionCreateAccessTask  0000000000000d00 f   PartitionDxe:Partition.obj
+ 0001:00000ad0       PartitionReadBlocksEx      0000000000000d70 f   PartitionDxe:Partition.obj
+ 0001:00000c00       PartitionWriteBlocksEx     0000000000000ea0 f   PartitionDxe:Partition.obj
+ 0001:00000d30       PartitionFlushBlocksEx     0000000000000fd0 f   PartitionDxe:Partition.obj
+ 0001:00000db8       PartitionInstallChildHandle 0000000000001058 f   PartitionDxe:Partition.obj
+ 0001:00001118       check_part                 00000000000013b8 f   PartitionDxe:Mbr.obj
+ 0001:000011ac       add_part                   000000000000144c f   PartitionDxe:Mbr.obj
+ 0001:00001220       remove_part                00000000000014c0 f   PartitionDxe:Mbr.obj
+ 0001:000012cc       PartitionValidMbr          000000000000156c f   PartitionDxe:Mbr.obj
+ 0001:0000140c       PartitionInstallMbrChildHandles 00000000000016ac f   PartitionDxe:Mbr.obj
+ 0001:000019a0       PartitionComponentNameGetDriverName 0000000000001c40 f   PartitionDxe:ComponentName.obj
+ 0001:00001b74       PartitionComponentNameGetControllerName 0000000000001e14 f   PartitionDxe:ComponentName.obj
+ 0001:00001b80       PartitionInstallGptChildHandles 0000000000001e20 f   PartitionDxe:Gpt.obj
+ 0001:00001fac       PartitionValidGptTable     000000000000224c f   PartitionDxe:Gpt.obj
+ 0001:000020f4       PartitionCheckGptEntryArrayCRC 0000000000002394 f   PartitionDxe:Gpt.obj
+ 0001:000021ac       PartitionRestoreGptTable   000000000000244c f   PartitionDxe:Gpt.obj
+ 0001:00002328       PartitionCheckGptEntry     00000000000025c8 f   PartitionDxe:Gpt.obj
+ 0001:0000242c       PartitionInstallElToritoChildHandles 00000000000026cc f   PartitionDxe:ElTorito.obj
+ 0001:00002810       InternalAllocatePool       0000000000002ab0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002840       AllocateZeroPool           0000000000002ae0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000286c       InternalAllocateCopyPool   0000000000002b0c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000028b0       IsDevicePathValid          0000000000002b50 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:000028dc       GetDevicePathSize          0000000000002b7c f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00002924       AppendDevicePath           0000000000002bc4 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00002a34       AppendDevicePathNode       0000000000002cd4 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:00002b20       InternalMemCopyMem         0000000000002dc0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00002b60       InternalMemZeroMem         0000000000002e00     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002b80       InternalMemCompareMem      0000000000002e20     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00002ba0       InternalMemSetMem          0000000000002e40     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00002bc0       InternalMemSetMem32        0000000000002e60     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00002be0       InternalMemSetMem64        0000000000002e80     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiPartTypeSystemPartGuid 0000000000002ea0     PartitionDxe:AutoGen.obj
+ 0002:00000010       gEfiBlockIoProtocolGuid    0000000000002eb0     PartitionDxe:AutoGen.obj
+ 0002:00000020       gEfiBlockIo2ProtocolGuid   0000000000002ec0     PartitionDxe:AutoGen.obj
+ 0002:00000030       gEfiDevicePathProtocolGuid 0000000000002ed0     PartitionDxe:AutoGen.obj
+ 0002:00000040       gEfiDiskIoProtocolGuid     0000000000002ee0     PartitionDxe:AutoGen.obj
+ 0002:00000050       gEfiDiskIo2ProtocolGuid    0000000000002ef0     PartitionDxe:AutoGen.obj
+ 0002:00000060       gEfiDriverBindingProtocolGuid 0000000000002f00     PartitionDxe:AutoGen.obj
+ 0002:00000070       gEfiComponentNameProtocolGuid 0000000000002f10     PartitionDxe:AutoGen.obj
+ 0002:00000080       gEfiComponentName2ProtocolGuid 0000000000002f20     PartitionDxe:AutoGen.obj
+ 0002:00000090       gPartitionDriverBinding    0000000000002f30     PartitionDxe:Partition.obj
+ 0002:000000c0       mPartitionDetectRoutineTable 0000000000002f60     PartitionDxe:Partition.obj
+ 0002:000000e0       gPartitionComponentName    0000000000002f80     PartitionDxe:ComponentName.obj
+ 0002:000000f8       gPartitionComponentName2   0000000000002f98     PartitionDxe:ComponentName.obj
+ 0002:00000110       mPartitionDriverNameTable  0000000000002fb0     PartitionDxe:ComponentName.obj
+ 0002:00000130       _gUefiDriverRevision       0000000000002fd0     PartitionDxe:AutoGen.obj
+ 0002:00000140       ??_C@_1EI@LABKKDBA@?$AAP?$AAa?$AAr?$AAt?$AAi?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$CI?$AAM?$AAB?$AAR?$AA?1?$AAG?$AAP?$AAT?$AA?1?$AAE?$AAl?$AA?5?$AAT?$AAo?$AAr?$AAi@ 0000000000002fe0     PartitionDxe:ComponentName.obj
+ 0002:00000188       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000003028     PartitionDxe:ComponentName.obj
+ 0002:00000190       ??_C@_02LFNMGJAP@en?$AA@   0000000000003030     PartitionDxe:ComponentName.obj
+ 0002:00000194       ??_C@_03LKLGDMJI@eng?$AA@  0000000000003034     PartitionDxe:ComponentName.obj
+ 0002:00000198       ??_C@_05HIJPMCJE@CD001?$AA@ 0000000000003038     PartitionDxe:ElTorito.obj
+ 0002:000001a0       ??_C@_0BI@EBPPJCHM@EL?5TORITO?5SPECIFICATION?$AA@ 0000000000003040     PartitionDxe:ElTorito.obj
+ 0002:000001b8       mUefiDevicePathLibEndDevicePath 0000000000003058     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:000001c0       gEfiPartTypeUnusedGuid     0000000000003060     PartitionDxe:AutoGen.obj
+ 0002:000001d0       parts_no                   0000000000003070     PartitionDxe:Mbr.obj
+ 0002:000001d8       gImageHandle               0000000000003078     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001e0       gST                        0000000000003080     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001e8       gBS                        0000000000003088     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000001f0       gRT                        0000000000003090     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000200       parts                      00000000000030a0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

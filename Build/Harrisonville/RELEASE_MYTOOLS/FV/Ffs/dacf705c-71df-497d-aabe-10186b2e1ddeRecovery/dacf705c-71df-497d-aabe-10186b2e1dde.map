@@ -1,0 +1,51 @@
+ Recovery
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000078dH .text                   CODE
+ 0002:00000000 0000007cH .data                   DATA
+ 0002:0000007c 00000010H .rdata                  DATA
+ 0002:00000090 00000034H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000012       _ReadCapsule               00000252 f   Recovery:Recovery.obj
+ 0001:000000b4       _FindRecoveryDevice        000002f4 f   Recovery:Recovery.obj
+ 0001:0000017b       _UnknownType               000003bb f   Recovery:Recovery.obj
+ 0001:000001af       _LoadRecoveryCapsule       000003ef f   Recovery:Recovery.obj
+ 0001:000002dc       _FindFWCapsuleHOB          0000051c f   Recovery:UpdateCapsule.obj
+ 0001:000003ec       _LoadUpdateCapsule         0000062c f   Recovery:UpdateCapsule.obj
+ 0001:00000449       _ProcessUpdateCapsule      00000689 f   Recovery:UpdateCapsule.obj
+ 0001:0000048b       _CompareGuid               000006cb f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000004b7       _MemCmp                    000006f7 f   AmiPeiLib:Memory.obj
+ 0001:00000512       _FindNextHobByType         00000752 f   AmiPeiLib:Misc.obj
+ 0001:0000054f       _InternalReportStatusCode  0000078f f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000059a       _GetPeiServicesTablePointer 000007da f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:000005c0       _memset                    00000800     AmiPeiLib:MemSet.obj
+ 0001:000005ca       _MemSetAsm                 0000080a f   AmiPeiLib:MemSet.obj
+ 0001:00000620       _MemCpy32                  00000860     AmiPeiLib:MemCpy.obj
+ 0001:00000620       _MemCpyAsm                 00000860 f   AmiPeiLib:MemCpy.obj
+ 0001:00000620       _memcpy                    00000860     AmiPeiLib:MemCpy.obj
+ 0001:000006c0       _EnableLongMode            00000900 f   AmiPeiLib:EnableLongMode.obj
+ 0001:00000730       _InternalMemCopyMem        00000970     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000770       _InternalMemZeroMem        000009b0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gEfiCallerIdGuid          000009e0     Recovery:AutoGen.obj
+ 0002:00000010       _gAmiRecoveryImageHobGuid  000009f0     Recovery:AutoGen.obj
+ 0002:00000020       _gSerialCapsuleGuid        00000a00     Recovery:AutoGen.obj
+ 0002:00000030       _gBlockDeviceCapsuleGuid   00000a10     Recovery:AutoGen.obj
+ 0002:00000040       _gEfiPeiRecoveryModulePpiGuid 00000a20     Recovery:AutoGen.obj
+ 0002:00000050       _gEfiPeiDeviceRecoveryModulePpiGuid 00000a30     Recovery:AutoGen.obj
+ 0002:00000060       _RecoveryDeviceOrder       00000a40     Recovery:Recovery.obj
+ 0002:0000006c       _RecoveryModule            00000a4c     Recovery:Recovery.obj
+ 0002:00000090       _RecoveryBuffer            00000a70     Recovery:Recovery.obj
+ 0002:00000098       _RecoveryBufferSize        00000a78     Recovery:Recovery.obj
+ 0002:000000c0       _pRecoveryHob              00000aa0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

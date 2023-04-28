@@ -1,0 +1,80 @@
+ TpmClearOnRollbackSmm
+
+ Timestamp is 6448e7f9 (Wed Apr 26 16:59:37 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000010a3H .text                   CODE
+ 0002:00000000 000005d8H .data                   DATA
+ 0002:000005e0 00000004H .rdata                  DATA
+ 0002:000005f0 00000228H .bss                    DATA
+ 0003:00000000 000000e4H .pdata                  DATA
+ 0004:00000000 000000bcH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000090       ProcessLibraryConstructorList 0000000000000310 f   TpmClearOnRollbackSmm:AutoGen.obj
+ 0001:00000188       SmiFlashClearTpmBeforeFlash 0000000000000408 f   TpmClearOnRollbackSmm:TpmClearOnRollbackSmiFlash.obj
+ 0001:00000198       TpmClearRollBackSmmInit    0000000000000418 f   TpmClearOnRollbackSmm:TpmClearOnRollbackSmiFlash.obj
+ 0001:00000248       InternalAssertJumpBuffer   00000000000004c8 f   BaseLib:SetJump.obj
+ 0001:000002a8       BufferInSmram              0000000000000528 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000002ec       InternalAllocatePool       000000000000056c f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000031c       FreePool                   000000000000059c f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000354       InitAmiLib                 00000000000005d4 f   AmiDxeLib:EfiLib.obj
+ 0001:00000384       TpmRecoveryGetFidFromFv    0000000000000604 f   TpmClearOnRollbackWrapperLib:TpmClearOnRollbackWrapperLib.obj
+ 0001:000004d0       SendTpmCommandRecovery     0000000000000750 f   TpmClearOnRollbackWrapperLib:TpmClearOnRollbackWrapperLib.obj
+ 0001:000005d8       RecoverySetPhysicalPresence 0000000000000858 f   TpmClearOnRollbackWrapperLib:TpmClearOnRollbackWrapperLib.obj
+ 0001:0000067c       RecoveryEnableActivate     00000000000008fc f   TpmClearOnRollbackWrapperLib:TpmClearOnRollbackWrapperLib.obj
+ 0001:00000734       ClearTpmBeforeFlash        00000000000009b4 f   TpmClearOnRollbackWrapperLib:TpmClearOnRollbackWrapperLib.obj
+ 0001:00000998       FixedDelay                 0000000000000c18 f   TisLib12:TpmLib.obj
+ 0001:00000a68       TisReleaseLocality         0000000000000ce8 f   TisLib12:TpmLib.obj
+ 0001:00000b08       TisPrepareSendCommand      0000000000000d88 f   TisLib12:TpmLib.obj
+ 0001:00000bac       TisSendCommand             0000000000000e2c f   TisLib12:TpmLib.obj
+ 0001:00000cc0       TisReceiveResponse         0000000000000f40 f   TisLib12:TpmLib.obj
+ 0001:00000d8c       IsTcmSupportType           000000000000100c f   AmiTcmlib:AmiTcmlib.obj
+ 0001:00000dd0       SetJump                    0000000000001050     BaseLib:SetJump.obj
+ 0001:00000e60       InternalLongJump           00000000000010e0     BaseLib:LongJump.obj
+ 0001:00000ee0       GetCpuTimer                0000000000001160 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000ef0       CPULib_CpuID               0000000000001170 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000f30       memset                     00000000000011b0     AmiDxeLib:MemSet.obj
+ 0001:00000f3e       MemSetAsm                  00000000000011be f   AmiDxeLib:MemSet.obj
+ 0001:00000f90       MemCpyAsm                  0000000000001210 f   AmiDxeLib:MemCpy.obj
+ 0001:00000f90       memcpy                     0000000000001210     AmiDxeLib:MemCpy.obj
+ 0001:00001040       InternalMemCopyMem         00000000000012c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001080       InternalMemZeroMem         0000000000001300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000010a0       CpuPause                   0000000000001320     BaseLib:CpuPause.obj
+ 0002:00000000       gAmiTpmRollbackSmmProtocolGuid 0000000000001340     TpmClearOnRollbackSmm:AutoGen.obj
+ 0002:00000010       gEfiSmmBase2ProtocolGuid   0000000000001350     TpmClearOnRollbackSmm:AutoGen.obj
+ 0002:00000020       gEfiSmmAccess2ProtocolGuid 0000000000001360     TpmClearOnRollbackSmm:AutoGen.obj
+ 0002:00000030       gEfiFirmwareVolume2ProtocolGuid 0000000000001370     TpmClearOnRollbackSmm:AutoGen.obj
+ 0002:00000040       TCMSupportedArray          0000000000001380     AmiTcmlib:AmiTcmlib.obj
+ 0002:00000070       EfiErrorStatus             00000000000013b0     AmiDxeLib:StdLibC.obj
+ 0002:000003b0       PiErrorStatus              00000000000016f0     AmiDxeLib:StdLibC.obj
+ 0002:00000400       AmiErrorStatus             0000000000001740     AmiDxeLib:StdLibC.obj
+ 0002:00000440       EfiWarningStatus           0000000000001780     AmiDxeLib:StdLibC.obj
+ 0002:000004b0       PiWarningStatus            00000000000017f0     AmiDxeLib:StdLibC.obj
+ 0002:000004f8       EfiUnknown                 0000000000001838     AmiDxeLib:StdLibC.obj
+ 0002:000005e0       _gUefiDriverRevision       0000000000001920     TpmClearOnRollbackSmm:AutoGen.obj
+ 0002:00000768       gImageHandle               0000000000001aa8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000770       gST                        0000000000001ab0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000778       gBS                        0000000000001ab8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000780       gRT                        0000000000001ac0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000788       gSmst                      0000000000001ac8     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:000007d8       pST                        0000000000001b18     AmiDxeLib:EfiLib.obj
+ 0002:000007e0       pBS                        0000000000001b20     AmiDxeLib:EfiLib.obj
+ 0002:000007e8       pRS                        0000000000001b28     AmiDxeLib:EfiLib.obj
+ 0002:000007f0       TheImageHandle             0000000000001b30     AmiDxeLib:EfiLib.obj
+ 0002:000007f8       mSmramRanges               0000000000001b38     <common>
+ 0002:00000800       mSmramRangeCount           0000000000001b40     <common>
+ 0002:00000808       mPerformanceMeasurementEnabled 0000000000001b48     <common>
+ 0002:00000810       PrivateProtocol            0000000000001b50     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:0000024c       InternalAcpiDelay          00000000000004cc f    CIL library: CIL module
+ 0001:000009b8       CheckStsBit                0000000000000c38 f    CIL library: CIL module
+ 0001:00000a18       ReadBurstCount             0000000000000c98 f    CIL library: CIL module

@@ -1,0 +1,62 @@
+ SmbiosBoard
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000333H .text                   CODE
+ 0002:00000000 00000618H .data                   DATA
+ 0002:00000620 00000096H .rdata                  DATA
+ 0002:000006b8 00000090H .bss                    DATA
+ 0003:00000000 00000030H .pdata                  DATA
+ 0004:00000000 00000020H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000b0       OemUpdate                  0000000000000350 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000000e0       EnableSmbusController      0000000000000380 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:00000148       RestoreSmbusController     00000000000003e8 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:00000154       GetSpdByte                 00000000000003f4 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000001a4       CreateSlotDataForSMBios    0000000000000444 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000001b0       CreateBaseBoardDataForSMBios 0000000000000450 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000001b0       CreateCPUDataForSMBios     0000000000000450 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000001b0       CreateChassisDataForSMBios 0000000000000450 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000001b0       CreateBatteryDataForSMBios 0000000000000450 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000001b4       CreateOnBoardDevDataForSMBios 0000000000000454 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000001c0       CreateOnBoardDevExtInfoForSMBios 0000000000000460 f   SmbiosBoard:SmbiosBoard.obj
+ 0001:000001d0       GetCpuTimer                0000000000000470 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:000001e0       CPULib_CpuID               0000000000000480 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000220       memset                     00000000000004c0     AmiDxeLib:MemSet.obj
+ 0001:0000022e       MemSetAsm                  00000000000004ce f   AmiDxeLib:MemSet.obj
+ 0001:00000280       memcpy                     0000000000000520     AmiDxeLib:MemCpy.obj
+ 0001:00000280       MemCpyAsm                  0000000000000520 f   AmiDxeLib:MemCpy.obj
+ 0001:00000330       CpuPause                   00000000000005d0     BaseLib:CpuPause.obj
+ 0002:00000000       gAmiSmbiosBoardProtocolGuid 00000000000005e0     SmbiosBoard:AutoGen.obj
+ 0002:00000010       EfiErrorStatus             00000000000005f0     AmiDxeLib:StdLibC.obj
+ 0002:00000350       PiErrorStatus              0000000000000930     AmiDxeLib:StdLibC.obj
+ 0002:000003a0       AmiErrorStatus             0000000000000980     AmiDxeLib:StdLibC.obj
+ 0002:000003e0       EfiWarningStatus           00000000000009c0     AmiDxeLib:StdLibC.obj
+ 0002:00000450       PiWarningStatus            0000000000000a30     AmiDxeLib:StdLibC.obj
+ 0002:00000498       EfiUnknown                 0000000000000a78     AmiDxeLib:StdLibC.obj
+ 0002:000005a0       SmbiosBoardProtocol        0000000000000b80     SmbiosBoard:SmbiosBoard.obj
+ 0002:00000620       _gUefiDriverRevision       0000000000000c00     SmbiosBoard:AutoGen.obj
+ 0002:00000628       ??_C@_1DE@LMKOKLIC@?$AAO?$AAN?$AAB?$AAO?$AAA?$AAR?$AAD?$AA?5?$AAD?$AAE?$AAV?$AA?5?$AAE?$AAX?$AAT?$AAE?$AAN?$AAD?$AAE?$AAD?$AA?5?$AAD?$AAA?$AAT?$AAA?$AA?$AA@ 0000000000000c08     SmbiosBoard:SmbiosBoard.obj
+ 0002:00000660       ??_C@_1BI@BGBELMCK@?$AAM?$AAE?$AAM?$AAO?$AAR?$AAY?$AA?5?$AAD?$AAA?$AAT?$AAA?$AA?$AA@ 0000000000000c40     SmbiosBoard:SmbiosBoard.obj
+ 0002:00000678       ??_C@_1CC@DICOJGPB@?$AAO?$AAN?$AAB?$AAO?$AAA?$AAR?$AAD?$AA?5?$AAD?$AAE?$AAV?$AA?5?$AAD?$AAA?$AAT?$AAA?$AA?$AA@ 0000000000000c58     SmbiosBoard:SmbiosBoard.obj
+ 0002:000006a0       ??_C@_1BG@DOMJGCGB@?$AAS?$AAL?$AAO?$AAT?$AAS?$AA?5?$AAD?$AAA?$AAT?$AAA?$AA?$AA@ 0000000000000c80     SmbiosBoard:SmbiosBoard.obj
+ 0002:000006b8       gSMBus                     0000000000000c98     SmbiosBoard:SmbiosBoard.obj
+ 0002:000006c0       SmbiosOemUpdate            0000000000000ca0     SmbiosBoard:SmbiosBoard.obj
+ 0002:000006c8       gImageHandle               0000000000000ca8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006d0       gST                        0000000000000cb0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006d8       gBS                        0000000000000cb8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000728       pST                        0000000000000d08     AmiDxeLib:EfiLib.obj
+ 0002:00000730       pBS                        0000000000000d10     AmiDxeLib:EfiLib.obj
+ 0002:00000738       pRS                        0000000000000d18     AmiDxeLib:EfiLib.obj
+ 0002:00000740       TheImageHandle             0000000000000d20     AmiDxeLib:EfiLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

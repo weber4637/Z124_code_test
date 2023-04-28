@@ -1,0 +1,78 @@
+ ScsiBus
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001992H .text                   CODE
+ 0002:00000000 00000120H .data                   DATA
+ 0002:00000120 0000003cH .rdata                  DATA
+ 0002:00000160 00000030H .bss                    DATA
+ 0003:00000000 000000fcH .pdata                  DATA
+ 0004:00000000 0000013cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000088       SCSIBusDriverBindingSupported 0000000000000328 f   ScsiBus:ScsiBus.obj
+ 0001:00000224       SCSIBusDriverBindingStart  00000000000004c4 f   ScsiBus:ScsiBus.obj
+ 0001:00000614       SCSIBusDriverBindingStop   00000000000008b4 f   ScsiBus:ScsiBus.obj
+ 0001:00000840       ScsiGetDeviceType          0000000000000ae0 f   ScsiBus:ScsiBus.obj
+ 0001:00000858       ScsiGetDeviceLocation      0000000000000af8 f   ScsiBus:ScsiBus.obj
+ 0001:000008ac       ScsiResetBus               0000000000000b4c f   ScsiBus:ScsiBus.obj
+ 0001:000008e8       ScsiResetDevice            0000000000000b88 f   ScsiBus:ScsiBus.obj
+ 0001:00000960       ScsiExecuteSCSICommand     0000000000000c00 f   ScsiBus:ScsiBus.obj
+ 0001:00000bf0       ScsiScanCreateDevice       0000000000000e90 f   ScsiBus:ScsiBus.obj
+ 0001:00000e78       DiscoverScsiDevice         0000000000001118 f   ScsiBus:ScsiBus.obj
+ 0001:0000101c       PassThruToScsiioPacket     00000000000012bc f   ScsiBus:ScsiBus.obj
+ 0001:00001080       NotifyFunction             0000000000001320 f   ScsiBus:ScsiBus.obj
+ 0001:000010d4       ScsiBusComponentNameGetDriverName 0000000000001374 f   ScsiBus:ComponentName.obj
+ 0001:000012a8       ScsiBusComponentNameGetControllerName 0000000000001548 f   ScsiBus:ComponentName.obj
+ 0001:000012b4       InternalAllocateAlignedPages 0000000000001554 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000013b4       InternalAllocatePool       0000000000001654 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000013e4       AllocateZeroPool           0000000000001684 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001410       InternalAllocateCopyPool   00000000000016b0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001454       IsDevicePathValid          00000000000016f4 f   UefiDevicePathLib:DevicePathUtilities.obj
+ 0001:00001480       GetDevicePathSize          0000000000001720 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000014c8       AppendDevicePath           0000000000001768 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000015d8       AppendDevicePathNode       0000000000001878 f   UefiDevicePathLib:UefiDevicePathLib.obj
+ 0001:000016c0       InternalReportStatusCode   0000000000001960 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000175c       ReportStatusCodeWithDevicePath 00000000000019fc f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000018e0       InternalMemCopyMem         0000000000001b80     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001920       InternalMemZeroMem         0000000000001bc0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001940       InternalMemSetMem          0000000000001be0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001960       InternalMemSetMem32        0000000000001c00     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001980       InternalMemSetMem64        0000000000001c20     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiCallerIdGuid           0000000000001c40     ScsiBus:AutoGen.obj
+ 0002:00000010       gEfiStatusCodeSpecificDataGuid 0000000000001c50     ScsiBus:AutoGen.obj
+ 0002:00000020       gEfiScsiIoProtocolGuid     0000000000001c60     ScsiBus:AutoGen.obj
+ 0002:00000030       gEfiDevicePathProtocolGuid 0000000000001c70     ScsiBus:AutoGen.obj
+ 0002:00000040       gEfiScsiPassThruProtocolGuid 0000000000001c80     ScsiBus:AutoGen.obj
+ 0002:00000050       gEfiExtScsiPassThruProtocolGuid 0000000000001c90     ScsiBus:AutoGen.obj
+ 0002:00000060       gEfiDriverBindingProtocolGuid 0000000000001ca0     ScsiBus:AutoGen.obj
+ 0002:00000070       gEfiComponentNameProtocolGuid 0000000000001cb0     ScsiBus:AutoGen.obj
+ 0002:00000080       gEfiComponentName2ProtocolGuid 0000000000001cc0     ScsiBus:AutoGen.obj
+ 0002:00000090       gEfiStatusCodeRuntimeProtocolGuid 0000000000001cd0     ScsiBus:AutoGen.obj
+ 0002:000000a0       gSCSIBusDriverBinding      0000000000001ce0     ScsiBus:ScsiBus.obj
+ 0002:000000d0       gScsiBusComponentName      0000000000001d10     ScsiBus:ComponentName.obj
+ 0002:000000e8       gScsiBusComponentName2     0000000000001d28     ScsiBus:ComponentName.obj
+ 0002:00000100       mScsiBusDriverNameTable    0000000000001d40     ScsiBus:ComponentName.obj
+ 0002:00000120       _gUefiDriverRevision       0000000000001d60     ScsiBus:AutoGen.obj
+ 0002:00000128       ??_C@_1CA@JNFBFCNB@?$AAS?$AAC?$AAS?$AAI?$AA?5?$AAB?$AAu?$AAs?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000001d68     ScsiBus:ComponentName.obj
+ 0002:00000148       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000001d88     ScsiBus:ComponentName.obj
+ 0002:00000150       ??_C@_02LFNMGJAP@en?$AA@   0000000000001d90     ScsiBus:ComponentName.obj
+ 0002:00000154       ??_C@_03LKLGDMJI@eng?$AA@  0000000000001d94     ScsiBus:ComponentName.obj
+ 0002:00000158       mUefiDevicePathLibEndDevicePath 0000000000001d98     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00000160       gImageHandle               0000000000001da0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000168       gST                        0000000000001da8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000170       gBS                        0000000000001db0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000178       gRT                        0000000000001db8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000180       mReportStatusCodeLibStatusCodeProtocol 0000000000001dc0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00000188       mWorkingBuffer             0000000000001dc8     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

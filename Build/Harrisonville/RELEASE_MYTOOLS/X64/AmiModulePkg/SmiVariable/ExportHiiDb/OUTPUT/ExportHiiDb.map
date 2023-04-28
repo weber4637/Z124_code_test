@@ -1,0 +1,45 @@
+ ExportHiiDb
+
+ Timestamp is 6448e7f3 (Wed Apr 26 16:59:31 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000003b0H .text                   CODE
+ 0002:00000000 00000568H .data                   DATA
+ 0002:00000570 00000014H .rdata                  DATA
+ 0002:00000588 00000080H .bss                    DATA
+ 0003:00000000 00000018H .pdata                  DATA
+ 0004:00000000 00000014H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000098       SaveHiiDBBufferAddress     00000000000002f8 f   ExportHiiDb:ExportHiiDb.obj
+ 0001:00000244       DummyFunction              00000000000004a4 f   AmiDxeLib:EfiLib.obj
+ 0001:00000250       GetCpuTimer                00000000000004b0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00000260       CPULib_CpuID               00000000000004c0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000002a0       memset                     0000000000000500     AmiDxeLib:MemSet.obj
+ 0001:000002ae       MemSetAsm                  000000000000050e f   AmiDxeLib:MemSet.obj
+ 0001:00000300       memcpy                     0000000000000560     AmiDxeLib:MemCpy.obj
+ 0001:00000300       MemCpyAsm                  0000000000000560 f   AmiDxeLib:MemCpy.obj
+ 0002:00000000       EfiErrorStatus             0000000000000620     AmiDxeLib:StdLibC.obj
+ 0002:00000340       PiErrorStatus              0000000000000960     AmiDxeLib:StdLibC.obj
+ 0002:00000390       AmiErrorStatus             00000000000009b0     AmiDxeLib:StdLibC.obj
+ 0002:000003d0       EfiWarningStatus           00000000000009f0     AmiDxeLib:StdLibC.obj
+ 0002:00000440       PiWarningStatus            0000000000000a60     AmiDxeLib:StdLibC.obj
+ 0002:00000488       EfiUnknown                 0000000000000aa8     AmiDxeLib:StdLibC.obj
+ 0002:00000570       _gUefiDriverRevision       0000000000000b90     ExportHiiDb:AutoGen.obj
+ 0002:00000578       ??_C@_1M@PFMHLEHI@?$AAH?$AAi?$AAi?$AAD?$AAB?$AA?$AA@ 0000000000000b98     ExportHiiDb:ExportHiiDb.obj
+ 0002:00000588       gImageHandle               0000000000000ba8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000590       gST                        0000000000000bb0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000598       gBS                        0000000000000bb8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000005e8       pST                        0000000000000c08     AmiDxeLib:EfiLib.obj
+ 0002:000005f0       pBS                        0000000000000c10     AmiDxeLib:EfiLib.obj
+ 0002:000005f8       pRS                        0000000000000c18     AmiDxeLib:EfiLib.obj
+ 0002:00000600       TheImageHandle             0000000000000c20     AmiDxeLib:EfiLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

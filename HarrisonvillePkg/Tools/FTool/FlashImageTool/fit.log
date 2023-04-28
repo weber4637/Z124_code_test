@@ -1,0 +1,54 @@
+
+===============================================================================
+Intel (R) Flash Image Tool. Version: 4.0.4.501
+SPS version: 4.0.4.501
+Copyright (c) 2013 - 2022, Intel Corporation. All rights reserved.
+4/12/2022 - 4:08:18 ¤U¤È
+===============================================================================
+
+
+Command Line: F:\CODE\Z123\Z123-003\HarrisonvillePkg\Tools\FTool\FlashImageTool\spsFITc.exe 
+
+Log file written to fit.log
+
+
+Command Line: F:\CODE\Z123\Z123-003\HarrisonvillePkg\Tools\FTool\FlashImageTool\spsFITc.exe 
+
+Log file written to fit.log
+
+Opening F:\CODE\Z123\Z123-003\HarrisonvillePkg\Tools\FTool\Config\N120.xml
+The SkuType is not specified in the XML file.
+Loading XML file: F:\CODE\Z123\Z123-003\HarrisonvillePkg\Tools\FTool\Config\N120.xml
+Warning: Field "Recovery" has wrong value "..\..\spsRecovery.bin" (F:\CODE\Z123\Z123-003\HarrisonvillePkg\Tools\spsRecovery.bin). Given value is not a valid path or file does not exists (It's possible to override xml values for Operational and Recovery with -opr and -rcv flags).
+Warning: Field "Operational" has wrong value "..\..\spsOperational.bin" (F:\CODE\Z123\Z123-003\HarrisonvillePkg\Tools\spsOperational.bin). Given value is not a valid path or file does not exists (It's possible to override xml values for Operational and Recovery with -opr and -rcv flags).
+Loaded file: F:\CODE\Z123\Z123-003\HarrisonvillePkg\Tools\FTool\Config\N120.xml
+Saving XML ...
+
+XML file written to F:\CODE\Z123\Z123-003\HarrisonvillePkg\Tools\FTool\Config\N120.xml
+
+===============================================================================
+Intel (R) Flash Image Tool. Version: 4.0.4.501
+SPS version: 4.0.4.501
+Copyright (c) 2013 - 2022, Intel Corporation. All rights reserved.
+7/20/2022 - 6:18:34 ¤U¤È
+===============================================================================
+
+
+Command Line: F:\CODE\Z123\Z123-004\HarrisonvillePkg\Tools\FTool\FlashImageTool\spsFITc.exe 
+
+Log file written to fit.log
+
+
+Command Line: F:\CODE\Z123\Z123-004\HarrisonvillePkg\Tools\FTool\FlashImageTool\spsFITc.exe 
+
+Log file written to fit.log
+
+Opening F:\CODE\Z123\Z123-004\HarrisonvillePkg\Tools\FTool\Config\N120.xml
+The SkuType is not specified in the XML file.
+Loading XML file: F:\CODE\Z123\Z123-004\HarrisonvillePkg\Tools\FTool\Config\N120.xml
+Warning: Field "Recovery" has wrong value "..\..\spsRecovery.bin" (F:\CODE\Z123\Z123-004\HarrisonvillePkg\Tools\spsRecovery.bin). Given value is not a valid path or file does not exists (It's possible to override xml values for Operational and Recovery with -opr and -rcv flags).
+Warning: Field "Operational" has wrong value "..\..\spsOperational.bin" (F:\CODE\Z123\Z123-004\HarrisonvillePkg\Tools\spsOperational.bin). Given value is not a valid path or file does not exists (It's possible to override xml values for Operational and Recovery with -opr and -rcv flags).
+Loaded file: F:\CODE\Z123\Z123-004\HarrisonvillePkg\Tools\FTool\Config\N120.xml
+Saving XML ...
+
+XML file written to F:\CODE\Z123\Z123-004\HarrisonvillePkg\Tools\FTool\Config\N120.xml

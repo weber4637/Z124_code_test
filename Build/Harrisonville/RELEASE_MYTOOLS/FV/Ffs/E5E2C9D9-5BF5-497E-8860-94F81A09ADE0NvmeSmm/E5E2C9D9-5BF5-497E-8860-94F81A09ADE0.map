@@ -1,0 +1,75 @@
+ NvmeSmm
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00002203H .text                   CODE
+ 0002:00000000 000000c0H .data                   DATA
+ 0002:000000c0 00000004H .rdata                  DATA
+ 0002:000000d0 000001d0H .bss                    DATA
+ 0003:00000000 000000e4H .pdata                  DATA
+ 0004:00000000 00000118H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000007c       ProcessLibraryConstructorList 000000000000031c f   NvmeSmm:AutoGen.obj
+ 0001:0000012c       GetDevEntry                00000000000003cc f   NvmeSmm:NvmeSmm.obj
+ 0001:00000184       NvmeMassAPIGetDeviceGeometry 0000000000000424 f   NvmeSmm:NvmeSmm.obj
+ 0001:00000184       NvmeMassAPIGetDeviceInformation 0000000000000424 f   NvmeSmm:NvmeSmm.obj
+ 0001:00000184       NvmeMassAPINotSupported    0000000000000424 f   NvmeSmm:NvmeSmm.obj
+ 0001:00000184       NvmeMassAPIResetDevice     0000000000000424 f   NvmeSmm:NvmeSmm.obj
+ 0001:0000018c       NvmeMassAPIReadDevice      000000000000042c f   NvmeSmm:NvmeSmm.obj
+ 0001:000002ec       NvmeMassAPIWriteDevice     000000000000058c f   NvmeSmm:NvmeSmm.obj
+ 0001:00000448       NvmeMassAPIPass            00000000000006e8 f   NvmeSmm:NvmeSmm.obj
+ 0001:00000450       NvmeInitController         00000000000006f0 f   NvmeSmm:NvmeSmm.obj
+ 0001:000006e0       NvmeInitSmmData            0000000000000980 f   NvmeSmm:NvmeSmm.obj
+ 0001:00000ab0       NvmeSwSmiHandler           0000000000000d50 f   NvmeSmm:NvmeSmm.obj
+ 0001:00000b30       NvmeSmmDriverEntryPoint    0000000000000dd0 f   NvmeSmm:NvmeSmm.obj
+ 0001:00000c00       InternalAssertJumpBuffer   0000000000000ea0 f   BaseLib:SetJump.obj
+ 0001:00000c60       MicroSecondDelay           0000000000000f00 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:00000c94       CreateAdditionalSubmissionCompletionQueue 0000000000000f34 f   NvmeControllerLib:NvmeController.obj
+ 0001:00000fc4       IsPrp2ListSupported        0000000000001264 f   NvmeControllerLib:NvmeController.obj
+ 0001:00001070       ProgramPRPEntry            0000000000001310 f   NvmeControllerLib:NvmeController.obj
+ 0001:00001200       NvmeReadWriteBlocks        00000000000014a0 f   NvmeControllerLib:NvmeController.obj
+ 0001:00001854       ExecuteNvmeCmd             0000000000001af4 f   NvmeControllerLib:NvmeController.obj
+ 0001:00001a14       WaitForCompletionQueueUpdate 0000000000001cb4 f   NvmeControllerLib:NvmeController.obj
+ 0001:00001c18       RecreateAllQueues          0000000000001eb8 f   NvmeControllerLib:NvmeController.obj
+ 0001:00001db4       RecreateQueue1             0000000000002054 f   NvmeControllerLib:NvmeController.obj
+ 0001:00001f7c       ReadDataDword              000000000000221c f   NvmeControllerLib:NvmeController.obj
+ 0001:00001fd4       WriteDataDword             0000000000002274 f   NvmeControllerLib:NvmeController.obj
+ 0001:00002030       InternalMemCopyMem         00000000000022d0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00002070       InternalMemZeroMem         0000000000002310     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002090       SetJump                    0000000000002330     BaseLib:SetJump.obj
+ 0001:00002120       InternalLongJump           00000000000023c0     BaseLib:LongJump.obj
+ 0001:000021a0       InternalMemSetMem          0000000000002440     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000021c0       InternalMemSetMem32        0000000000002460     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000021e0       InternalMemSetMem64        0000000000002480     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00002200       CpuPause                   00000000000024a0     BaseLib:CpuPause.obj
+ 0002:00000000       gAmiSmmNvmeCommunicationGuid 00000000000024c0     NvmeSmm:AutoGen.obj
+ 0002:00000010       gEfiSmmBase2ProtocolGuid   00000000000024d0     NvmeSmm:AutoGen.obj
+ 0002:00000020       gEfiSmmSwDispatch2ProtocolGuid 00000000000024e0     NvmeSmm:AutoGen.obj
+ 0002:00000030       gAmiSmmNvmePassThruProtocolGuid 00000000000024f0     NvmeSmm:AutoGen.obj
+ 0002:00000040       gAmiSmmNvmeControllerProtocolGuid 0000000000002500     NvmeSmm:AutoGen.obj
+ 0002:00000050       gAmiSmmBufferValidationProtocolGuid 0000000000002510     NvmeSmm:AutoGen.obj
+ 0002:00000060       NvmeMassApiTable           0000000000002520     NvmeSmm:NvmeSmm.obj
+ 0002:000000c0       _gUefiDriverRevision       0000000000002580     NvmeSmm:AutoGen.obj
+ 0002:000001d0       gNvmeController            0000000000002690     NvmeSmm:NvmeSmm.obj
+ 0002:00000250       gFirstAPICall              0000000000002710     NvmeSmm:NvmeSmm.obj
+ 0002:00000258       gImageHandle               0000000000002718     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000260       gST                        0000000000002720     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000268       gBS                        0000000000002728     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000270       gSmst                      0000000000002730     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000278       SmmAmiBufferValidationLibValidationProtocol 0000000000002738     SmmAmiBufferValidationLib:SmmAmiBufferValidationLib.obj
+ 0002:00000280       gAmiSmmNvmePassThru        0000000000002740     <common>
+ 0002:00000288       gSmmBase2                  0000000000002748     <common>
+ 0002:00000290       pSmst2                     0000000000002750     <common>
+ 0002:00000298       gNvmeData                  0000000000002758     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000c04       InternalAcpiDelay          0000000000000ea4 f    CIL library: CIL module

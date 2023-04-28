@@ -1,0 +1,37 @@
+ SmbiosPeim
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000028dH .text                   CODE
+ 0002:00000000 00000130H .data                   DATA
+ 0002:00000130 00000016H .rdata                  DATA
+ 0002:00000148 00000010H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000025       _UpdateSmbiosWakeupType    00000265 f   SmbiosPeim:SmbiosPei.obj
+ 0001:000000c3       _NbRuntimeShadowRamWrite   00000303 f   AmiCspLibPei:NbGeneric.obj
+ 0001:000001be       _GetPcdPpiPointer          000003fe f   PeiPcdLib:PeiPcdLib.obj
+ 0001:000001d1       _LShiftU64                 00000411 f   BaseLib:LShiftU64.obj
+ 0001:000001f5       _PeiServicesLocatePpi      00000435 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:00000211       _GetPeiServicesTablePointer 00000451 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000230       _InternalMemCopyMem        00000470     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000270       _InternalMemZeroMem        000004b0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gAmiSmbiosNvramGuid       000004e0     SmbiosPeim:AutoGen.obj
+ 0002:00000010       _gEfiPeiReadOnlyVariable2PpiGuid 000004f0     SmbiosPeim:AutoGen.obj
+ 0002:00000020       _gPcdPpiGuid               00000500     SmbiosPeim:AutoGen.obj
+ 0002:00000030       _gPirqRegistersSave        00000510     AmiCspLibPei:SbGeneric.obj
+ 0002:00000050       _RRegs                     00000530     AmiCspLibPei:SbGeneric.obj
+ 0002:00000060       _gPamStruct                00000540     AmiCspLibPei:NbGeneric.obj
+ 0002:00000100       _gPciRegistersSave         000005e0     AmiCspLibPei:NbGeneric.obj
+ 0002:00000130       ??_C@_1BG@MBAJLLFA@?$AAW?$AAa?$AAk?$AAe?$AAU?$AAp?$AAT?$AAy?$AAp?$AAe?$AA?$AA@ 00000610     SmbiosPeim:SmbiosPei.obj
+ 0002:00000148       _RbMap                     00000628     AmiCspLibPei:NbGeneric.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

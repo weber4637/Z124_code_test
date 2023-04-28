@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_SMM_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\0C375A90-4C4C-4428-8EA0-531BE8959BF7FlashDriverSmm\0C375A90-4C4C-4428-8EA0-531BE8959BF7SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\FlashDriver\FlashDriverSmm\OUTPUT\FlashDriverSmm.depex

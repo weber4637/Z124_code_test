@@ -1,0 +1,306 @@
+ Smbios
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00004b1cH .text                   CODE
+ 0002:00000000 00000ef0H .data                   DATA
+ 0002:00000ef0 00000647H .rdata                  DATA
+ 0002:00001540 000015e2H .bss                    DATA
+ 0003:00000000 000001ecH .pdata                  DATA
+ 0004:00000000 000001e4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       NotifyEventFunction        00000000000002c8 f   Smbios:Smbios.obj
+ 0001:00000028       DummyFunction              00000000000002c8 f   AmiDxeLib:EfiLib.obj
+ 0001:0000002c       GetInstanceByTypeHandle    00000000000002cc f   Smbios:Smbios.obj
+ 0001:00000074       FindStructureType          0000000000000314 f   Smbios:Smbios.obj
+ 0001:0000012c       FindStructureHandle        00000000000003cc f   Smbios:Smbios.obj
+ 0001:0000016c       GetStrIndex                000000000000040c f   Smbios:Smbios.obj
+ 0001:000001d0       FindString                 0000000000000470 f   Smbios:Smbios.obj
+ 0001:00000234       DeleteString               00000000000004d4 f   Smbios:Smbios.obj
+ 0001:000002c8       UpdateStrings              0000000000000568 f   Smbios:Smbios.obj
+ 0001:000004dc       UpdateStructuresWithNvramType2 000000000000077c f   Smbios:Smbios.obj
+ 0001:0000053c       UpdateStructuresWithNvramType3 00000000000007dc f   Smbios:Smbios.obj
+ 0001:000005cc       LoadRealModeFileSection    000000000000086c f   Smbios:Smbios.obj
+ 0001:000006b0       UpdateStructuresWithNvramData 0000000000000950 f   Smbios:Smbios.obj
+ 0001:000013b8       DynamicUpdateSlotsData     0000000000001658 f   Smbios:Smbios.obj
+ 0001:000014b4       DynamicUpdateOnboardDevData 0000000000001754 f   Smbios:Smbios.obj
+ 0001:000015b8       ReplaceString              0000000000001858 f   Smbios:Smbios.obj
+ 0001:0000167c       DynamicUpdateOnboardDevExt 000000000000191c f   Smbios:Smbios.obj
+ 0001:0000177c       UpdateBiosVersion          0000000000001a1c f   Smbios:Smbios.obj
+ 0001:000019d8       GetSmbiosTableEntryPoint   0000000000001c78 f   Smbios:Smbios.obj
+ 0001:000019e0       GetScratchBufferPtr        0000000000001c80 f   Smbios:Smbios.obj
+ 0001:000019e8       GetBufferMaxSize           0000000000001c88 f   Smbios:Smbios.obj
+ 0001:000019f0       GetTotalStructureSize      0000000000001c90 f   Smbios:Smbios.obj
+ 0001:00001a34       UpdateSmbiosTableHeader    0000000000001cd4 f   Smbios:Smbios.obj
+ 0001:00001bf8       UpdateSmbiosTable          0000000000001e98 f   Smbios:Smbios.obj
+ 0001:00002164       GetFreeHandle              0000000000002404 f   Smbios:Smbios.obj
+ 0001:000021a8       AddType4WithDmiEditData    0000000000002448 f   Smbios:Smbios.obj
+ 0001:0000228c       AddStructure               000000000000252c f   Smbios:Smbios.obj
+ 0001:000022d8       AddStructureByIndex        0000000000002578 f   Smbios:Smbios.obj
+ 0001:0000232c       AddStructureByHandle       00000000000025cc f   Smbios:Smbios.obj
+ 0001:00002370       DeleteStructureByHandle    0000000000002610 f   Smbios:Smbios.obj
+ 0001:000023c0       ReadStructureByHandle      0000000000002660 f   Smbios:Smbios.obj
+ 0001:00002478       ReadStructureByType        0000000000002718 f   Smbios:Smbios.obj
+ 0001:00002538       WriteStructureByHandle     00000000000027d8 f   Smbios:Smbios.obj
+ 0001:000027bc       AddUpdateType13            0000000000002a5c f   Smbios:Smbios.obj
+ 0001:00003004       SmbiosEndOfDxe             00000000000032a4 f   Smbios:Smbios.obj
+ 0001:00003440       SmbiosDynamicUpdate        00000000000036e0 f   Smbios:Smbios.obj
+ 0001:0000368c       AddProducerHandle          000000000000392c f   Smbios:Smbios.obj
+ 0001:000036d4       SmbiosPiAddStructure       0000000000003974 f   Smbios:Smbios.obj
+ 0001:00003788       SmbiosPiUpdateString       0000000000003a28 f   Smbios:Smbios.obj
+ 0001:00003910       SmbiosPiRemoveStructure    0000000000003bb0 f   Smbios:Smbios.obj
+ 0001:000039b8       SmbiosPiGetNextStructure   0000000000003c58 f   Smbios:Smbios.obj
+ 0001:00003b1c       SmbiosDriverEntryPoint     0000000000003dbc f   Smbios:Smbios.obj
+ 0001:000040a8       MemCmp                     0000000000004348 f   AmiDxeLib:Memory.obj
+ 0001:00004124       ItoaHelper                 00000000000043c4 f   AmiDxeLib:StdLibC.obj
+ 0001:00004198       StrtolEx                   0000000000004438 f   AmiDxeLib:StdLibC.obj
+ 0001:00004260       Sprintf                    0000000000004500 f   AmiDxeLib:StdLibC.obj
+ 0001:00004288       GetStatusCodeString        0000000000004528 f   AmiDxeLib:StdLibC.obj
+ 0001:00004370       Sprintf_s_va_list          0000000000004610 f   AmiDxeLib:StdLibC.obj
+ 0001:00004758       Sprintf_s                  00000000000049f8 f   AmiDxeLib:StdLibC.obj
+ 0001:00004778       GetEfiConfigurationTable   0000000000004a18 f   AmiDxeLib:EfiLib.obj
+ 0001:000047c4       Malloc                     0000000000004a64 f   AmiDxeLib:EfiLib.obj
+ 0001:000047f0       GetEfiVariable             0000000000004a90 f   AmiDxeLib:EfiLib.obj
+ 0001:000048a4       NbRuntimeShadowRamWrite    0000000000004b44 f   AmiCspLibDxe:NbGeneric.obj
+ 0001:00004930       GetPcdProtocol             0000000000004bd0 f   DxePcdLib:DxePcdLib.obj
+ 0001:00004970       CPULib_CpuID               0000000000004c10 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:000049b0       memset                     0000000000004c50     AmiDxeLib:MemSet.obj
+ 0001:000049be       MemSetAsm                  0000000000004c5e f   AmiDxeLib:MemSet.obj
+ 0001:00004a10       MemCpyAsm                  0000000000004cb0 f   AmiDxeLib:MemCpy.obj
+ 0001:00004a10       memcpy                     0000000000004cb0     AmiDxeLib:MemCpy.obj
+ 0001:00004ac0       GetCpuTimer                0000000000004d60 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00004ad0       AsmWbinvd                  0000000000004d70     BaseLib:Wbinvd.obj
+ 0001:00004ae0       InternalMemCopyMem         0000000000004d80     BaseMemoryLibRepStr:CopyMem.obj
+ 0002:00000000       gAmiSmbiosStaticDataGuid   0000000000004dc0     Smbios:AutoGen.obj
+ 0002:00000010       gAmiSmbiosNvramGuid        0000000000004dd0     Smbios:AutoGen.obj
+ 0002:00000020       gAmiSmbiosDynamicDataGuid  0000000000004de0     Smbios:AutoGen.obj
+ 0002:00000030       gEfiGlobalVariableGuid     0000000000004df0     Smbios:AutoGen.obj
+ 0002:00000040       gEfiEndOfDxeEventGroupGuid 0000000000004e00     Smbios:AutoGen.obj
+ 0002:00000050       gEfiLegacyRegion2ProtocolGuid 0000000000004e10     Smbios:AutoGen.obj
+ 0002:00000060       gEfiLegacyBiosProtocolGuid 0000000000004e20     Smbios:AutoGen.obj
+ 0002:00000070       gEfiLegacyBiosExtProtocolGuid 0000000000004e30     Smbios:AutoGen.obj
+ 0002:00000080       gEfiFirmwareVolume2ProtocolGuid 0000000000004e40     Smbios:AutoGen.obj
+ 0002:00000090       gEfiSmbiosProtocolGuid     0000000000004e50     Smbios:AutoGen.obj
+ 0002:000000a0       gAmiSmbiosBoardProtocolGuid 0000000000004e60     Smbios:AutoGen.obj
+ 0002:000000b0       gAmiSmbiosProtocolGuid     0000000000004e70     Smbios:AutoGen.obj
+ 0002:000000c0       gEdkiiVariableLockProtocolGuid 0000000000004e80     Smbios:AutoGen.obj
+ 0002:000000d0       gPcdProtocolGuid           0000000000004e90     Smbios:AutoGen.obj
+ 0002:000000e0       gPirqRegistersSave         0000000000004ea0     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000100       RRegs                      0000000000004ec0     AmiCspLibDxe:SbGeneric.obj
+ 0002:00000110       gPamStruct                 0000000000004ed0     AmiCspLibDxe:NbGeneric.obj
+ 0002:000001b0       gPciRegistersSave          0000000000004f70     AmiCspLibDxe:NbGeneric.obj
+ 0002:000001fe       BeforeEndofDxe             0000000000004fbe     Smbios:Smbios.obj
+ 0002:000002b8       AmiErrorStatus             0000000000005078     AmiDxeLib:StdLibC.obj
+ 0002:000002f0       EfiErrorStatus             00000000000050b0     AmiDxeLib:StdLibC.obj
+ 0002:00000630       PiErrorStatus              00000000000053f0     AmiDxeLib:StdLibC.obj
+ 0002:00000680       EfiWarningStatus           0000000000005440     AmiDxeLib:StdLibC.obj
+ 0002:000006f0       PiWarningStatus            00000000000054b0     AmiDxeLib:StdLibC.obj
+ 0002:00000738       EfiUnknown                 00000000000054f8     AmiDxeLib:StdLibC.obj
+ 0002:00000744       StringType_5               0000000000005504     Smbios:Smbios.obj
+ 0002:00000760       EfiSmbiosPointerGuid       0000000000005520     Smbios:Smbios.obj
+ 0002:00000770       StringType_0               0000000000005530     Smbios:Smbios.obj
+ 0002:0000077c       StringType_10              000000000000553c     Smbios:Smbios.obj
+ 0002:00000780       StringType_1               0000000000005540     Smbios:Smbios.obj
+ 0002:00000798       StringType_2               0000000000005558     Smbios:Smbios.obj
+ 0002:000007b0       StringType_3               0000000000005570     Smbios:Smbios.obj
+ 0002:000007c8       StringType_4               0000000000005588     Smbios:Smbios.obj
+ 0002:000007e0       StringType_6               00000000000055a0     Smbios:Smbios.obj
+ 0002:000007e8       StringType_7               00000000000055a8     Smbios:Smbios.obj
+ 0002:000007f0       StringType_8               00000000000055b0     Smbios:Smbios.obj
+ 0002:000007fc       StringType_9               00000000000055bc     Smbios:Smbios.obj
+ 0002:00000804       StringType_11              00000000000055c4     Smbios:Smbios.obj
+ 0002:00000808       StringType_12              00000000000055c8     Smbios:Smbios.obj
+ 0002:0000080c       StringType_13              00000000000055cc     Smbios:Smbios.obj
+ 0002:00000814       StringType_14              00000000000055d4     Smbios:Smbios.obj
+ 0002:0000081c       StringType_15              00000000000055dc     Smbios:Smbios.obj
+ 0002:00000820       StringType_16              00000000000055e0     Smbios:Smbios.obj
+ 0002:00000828       StringType_17              00000000000055e8     Smbios:Smbios.obj
+ 0002:00000840       StringType_18              0000000000005600     Smbios:Smbios.obj
+ 0002:00000844       StringType_19              0000000000005604     Smbios:Smbios.obj
+ 0002:00000848       StringType_20              0000000000005608     Smbios:Smbios.obj
+ 0002:0000084c       StringType_21              000000000000560c     Smbios:Smbios.obj
+ 0002:00000850       StringType_22              0000000000005610     Smbios:Smbios.obj
+ 0002:00000868       StringType_23              0000000000005628     Smbios:Smbios.obj
+ 0002:0000086c       StringType_24              000000000000562c     Smbios:Smbios.obj
+ 0002:00000870       StringType_25              0000000000005630     Smbios:Smbios.obj
+ 0002:00000874       StringType_26              0000000000005634     Smbios:Smbios.obj
+ 0002:0000087c       StringType_27              000000000000563c     Smbios:Smbios.obj
+ 0002:00000884       StringType_28              0000000000005644     Smbios:Smbios.obj
+ 0002:0000088c       StringType_29              000000000000564c     Smbios:Smbios.obj
+ 0002:00000894       StringType_30              0000000000005654     Smbios:Smbios.obj
+ 0002:0000089c       StringType_31              000000000000565c     Smbios:Smbios.obj
+ 0002:000008a0       StringType_32              0000000000005660     Smbios:Smbios.obj
+ 0002:000008a4       StringType_33              0000000000005664     Smbios:Smbios.obj
+ 0002:000008a8       StringType_34              0000000000005668     Smbios:Smbios.obj
+ 0002:000008b0       StringType_35              0000000000005670     Smbios:Smbios.obj
+ 0002:000008b8       StringType_36              0000000000005678     Smbios:Smbios.obj
+ 0002:000008bc       StringType_37              000000000000567c     Smbios:Smbios.obj
+ 0002:000008c0       StringType_38              0000000000005680     Smbios:Smbios.obj
+ 0002:000008c8       StringType_39              0000000000005688     Smbios:Smbios.obj
+ 0002:000008e0       StringType_40              00000000000056a0     Smbios:Smbios.obj
+ 0002:000008e4       StringType_41              00000000000056a4     Smbios:Smbios.obj
+ 0002:000008ec       StringType_42              00000000000056ac     Smbios:Smbios.obj
+ 0002:000008f0       StringTable                00000000000056b0     Smbios:Smbios.obj
+ 0002:00000a48       pSmbiosTableEntryPoint     0000000000005808     Smbios:Smbios.obj
+ 0002:00000a50       Bank0Table                 0000000000005810     Smbios:Smbios.obj
+ 0002:00000bf0       Bank1Table                 00000000000059b0     Smbios:Smbios.obj
+ 0002:00000c40       Bank2Table                 0000000000005a00     Smbios:Smbios.obj
+ 0002:00000c70       Bank3Table                 0000000000005a30     Smbios:Smbios.obj
+ 0002:00000cb0       Bank4Table                 0000000000005a70     Smbios:Smbios.obj
+ 0002:00000d00       Bank5Table                 0000000000005ac0     Smbios:Smbios.obj
+ 0002:00000d60       Bank6Table                 0000000000005b20     Smbios:Smbios.obj
+ 0002:00000d90       Bank7Table                 0000000000005b50     Smbios:Smbios.obj
+ 0002:00000da0       ManufacturerJedecIdBankTable 0000000000005b60     Smbios:Smbios.obj
+ 0002:00000de0       ManufacturerTable          0000000000005ba0     Smbios:Smbios.obj
+ 0002:00000e00       SmbiosEntryPointTable      0000000000005bc0     Smbios:Smbios.obj
+ 0002:00000e20       SmbiosV3EntryPointTable    0000000000005be0     Smbios:Smbios.obj
+ 0002:00000e38       pSmbiosV3TableEntryPoint   0000000000005bf8     Smbios:Smbios.obj
+ 0002:00000e40       MaximumTableSize           0000000000005c00     Smbios:Smbios.obj
+ 0002:00000e50       AmiSmbiosProtocol          0000000000005c10     Smbios:Smbios.obj
+ 0002:00000eb8       EfiSmbiosProtocol          0000000000005c78     Smbios:Smbios.obj
+ 0002:00000ee0       guidFV                     0000000000005ca0     AmiDxeLib:EfiLib.obj
+ 0002:00000ef0       _gUefiDriverRevision       0000000000005cb0     Smbios:AutoGen.obj
+ 0002:00000ef8       ??_C@_0BF@EAJGCCNF@InnoDisk?5Corporation?$AA@ 0000000000005cb8     Smbios:Smbios.obj
+ 0002:00000f10       ??_C@_0O@PLEOCJBO@Silicon?5Power?$AA@ 0000000000005cd0     Smbios:Smbios.obj
+ 0002:00000f20       ??_C@_0N@FLPPNGBK@Super?5Talent?$AA@ 0000000000005ce0     Smbios:Smbios.obj
+ 0002:00000f30       ??_C@_05HGCLFIEE@Avant?$AA@ 0000000000005cf0     Smbios:Smbios.obj
+ 0002:00000f38       ??_C@_06IBEPCDMC@AENEON?$AA@ 0000000000005cf8     Smbios:Smbios.obj
+ 0002:00000f40       ??_C@_07FKLGJPMK@Qimonda?$AA@ 0000000000005d00     Smbios:Smbios.obj
+ 0002:00000f48       ??_C@_07FDGIIEA@Crucial?$AA@ 0000000000005d08     Smbios:Smbios.obj
+ 0002:00000f50       ??_C@_07LPGNOABP@Patriot?$AA@ 0000000000005d10     Smbios:Smbios.obj
+ 0002:00000f58       ??_C@_04GBPANCCF@Team?$AA@ 0000000000005d18     Smbios:Smbios.obj
+ 0002:00000f60       ??_C@_07NMGLEAJN@G?5Skill?$AA@ 0000000000005d20     Smbios:Smbios.obj
+ 0002:00000f68       ??_C@_06DHNBHBFN@A?9DATA?$AA@ 0000000000005d28     Smbios:Smbios.obj
+ 0002:00000f70       ??_C@_03CPEEOOMP@OCZ?$AA@  0000000000005d30     Smbios:Smbios.obj
+ 0002:00000f78       ??_C@_07IOFHEPFL@Kingmax?$AA@ 0000000000005d38     Smbios:Smbios.obj
+ 0002:00000f80       ??_C@_07OCLOINEB@Mushkin?$AA@ 0000000000005d40     Smbios:Smbios.obj
+ 0002:00000f88       ??_C@_05CDACOCLE@Nanya?$AA@ 0000000000005d48     Smbios:Smbios.obj
+ 0002:00000f90       ??_C@_06IHFCNECC@Elpida?$AA@ 0000000000005d50     Smbios:Smbios.obj
+ 0002:00000f98       ??_C@_07GBDMJEPM@Corsair?$AA@ 0000000000005d58     Smbios:Smbios.obj
+ 0002:00000fa0       ??_C@_06FFBJEHCC@Apacer?$AA@ 0000000000005d60     Smbios:Smbios.obj
+ 0002:00000fa8       ??_C@_09KJBDPADP@Transcend?$AA@ 0000000000005d68     Smbios:Smbios.obj
+ 0002:00000fb4       ??_C@_03EMLGJJG@PNY?$AA@   0000000000005d74     Smbios:Smbios.obj
+ 0002:00000fb8       ??_C@_08KGDHKCKB@Kingston?$AA@ 0000000000005d78     Smbios:Smbios.obj
+ 0002:00000fc8       ??_C@_09IEDNJDJD@Undefined?$AA@ 0000000000005d88     Smbios:Smbios.obj
+ 0002:00000fd4       ??_C@_05CMJNOHP@Sanyo?$AA@ 0000000000005d94     Smbios:Smbios.obj
+ 0002:00000fe0       ??_C@_07OFJEIDEC@LG?5Semi?$AA@ 0000000000005da0     Smbios:Smbios.obj
+ 0002:00000fe8       ??_C@_07CKIBDGKE@Winbond?$AA@ 0000000000005da8     Smbios:Smbios.obj
+ 0002:00000ff0       ??_C@_07FCLJFOJN@Samsung?$AA@ 0000000000005db0     Smbios:Smbios.obj
+ 0002:00000ff8       ??_C@_07GFKINPKN@SanDisk?$AA@ 0000000000005db8     Smbios:Smbios.obj
+ 0002:00001000       ??_C@_08LGKFDGGL@Macronix?$AA@ 0000000000005dc0     Smbios:Smbios.obj
+ 0002:00001010       ??_C@_08PLDEMPOA@Infineon?$AA@ 0000000000005dd0     Smbios:Smbios.obj
+ 0002:00001020       ??_C@_0N@FHJCDFMG@ProMos?1Mosel?$AA@ 0000000000005de0     Smbios:Smbios.obj
+ 0002:00001030       ??_C@_03LHCOIIBG@SST?$AA@  0000000000005df0     Smbios:Smbios.obj
+ 0002:00001034       ??_C@_06ECLMCCGN@Oracle?$AA@ 0000000000005df4     Smbios:Smbios.obj
+ 0002:0000103c       ??_C@_03JBODIKBI@IDT?$AA@  0000000000005dfc     Smbios:Smbios.obj
+ 0002:00001040       ??_C@_05JGLFENCH@Sharp?$AA@ 0000000000005e00     Smbios:Smbios.obj
+ 0002:00001048       ??_C@_08IFLDPIBL@SK?5Hynix?$AA@ 0000000000005e08     Smbios:Smbios.obj
+ 0002:00001058       ??_C@_0BC@HMCPLHKC@Micron?5Technology?$AA@ 0000000000005e18     Smbios:Smbios.obj
+ 0002:0000106c       ??_C@_03OGOFPLC@IBM?$AA@   0000000000005e2c     Smbios:Smbios.obj
+ 0002:00001070       ??_C@_0BD@KBJBCOHP@STMicroelectronics?$AA@ 0000000000005e30     Smbios:Smbios.obj
+ 0002:00001084       ??_C@_05MIHDMDCE@Atmel?$AA@ 0000000000005e44     Smbios:Smbios.obj
+ 0002:00001090       ??_C@_0L@MPPJDAAO@Mitsubishi?$AA@ 0000000000005e50     Smbios:Smbios.obj
+ 0002:000010a0       ??_C@_07GDCAFPGE@Toshiba?$AA@ 0000000000005e60     Smbios:Smbios.obj
+ 0002:000010a8       ??_C@_0BB@EMFIPGOF@Texas?5Instrument?$AA@ 0000000000005e68     Smbios:Smbios.obj
+ 0002:000010bc       ??_C@_03IHFFMAA@NEC?$AA@   0000000000005e7c     Smbios:Smbios.obj
+ 0002:000010c0       ??_C@_05CDGBNGHP@Intel?$AA@ 0000000000005e80     Smbios:Smbios.obj
+ 0002:000010c8       ??_C@_07JBACPDEJ@Hitachi?$AA@ 0000000000005e88     Smbios:Smbios.obj
+ 0002:000010d0       ??_C@_07BGJAEBAB@Fujitsu?$AA@ 0000000000005e90     Smbios:Smbios.obj
+ 0002:000010d8       ??_C@_03BBEEILCJ@AMD?$AA@  0000000000005e98     Smbios:Smbios.obj
+ 0002:000010e0       ??_C@_1DE@LMKOKLIC@?$AAO?$AAN?$AAB?$AAO?$AAA?$AAR?$AAD?$AA?5?$AAD?$AAE?$AAV?$AA?5?$AAE?$AAX?$AAT?$AAE?$AAN?$AAD?$AAE?$AAD?$AA?5?$AAD?$AAA?$AAT?$AAA?$AA?$AA@ 0000000000005ea0     Smbios:Smbios.obj
+ 0002:00001118       ??_C@_1CC@DICOJGPB@?$AAO?$AAN?$AAB?$AAO?$AAA?$AAR?$AAD?$AA?5?$AAD?$AAE?$AAV?$AA?5?$AAD?$AAA?$AAT?$AAA?$AA?$AA@ 0000000000005ed8     Smbios:Smbios.obj
+ 0002:00001140       ??_C@_1BG@DOMJGCGB@?$AAS?$AAL?$AAO?$AAT?$AAS?$AA?5?$AAD?$AAA?$AAT?$AAA?$AA?$AA@ 0000000000005f00     Smbios:Smbios.obj
+ 0002:00001158       ??_C@_0BF@CJBCKMGP@?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$AA@ 0000000000005f18     Smbios:Smbios.obj
+ 0002:00001170       ??_C@_08BHJLCAGP@Z124?9002?$AA@ 0000000000005f30     Smbios:Smbios.obj
+ 0002:00001180       ??_C@_0L@CLOINLLF@?$CFs?4?$CFs?5?$CI?$CFs?$CJ?$AA@ 0000000000005f40     Smbios:Smbios.obj
+ 0002:00001190       ??_C@_1BG@MBAJLLFA@?$AAW?$AAa?$AAk?$AAe?$AAU?$AAp?$AAT?$AAy?$AAp?$AAe?$AA?$AA@ 0000000000005f50     Smbios:Smbios.obj
+ 0002:000011a8       ??_C@_05JJLPJMLG@en?9US?$AA@ 0000000000005f68     Smbios:Smbios.obj
+ 0002:000011b0       ??_C@_05LNEALIPD@fr?9FR?$AA@ 0000000000005f70     Smbios:Smbios.obj
+ 0002:000011b8       ??_C@_05BNOJGMPF@es?9ES?$AA@ 0000000000005f78     Smbios:Smbios.obj
+ 0002:000011c0       ??_C@_05CEEPACJC@de?9DE?$AA@ 0000000000005f80     Smbios:Smbios.obj
+ 0002:000011c8       ??_C@_05MDEJLJAF@ru?9RU?$AA@ 0000000000005f88     Smbios:Smbios.obj
+ 0002:000011d0       ??_C@_05JBHGGLEN@ko?9KR?$AA@ 0000000000005f90     Smbios:Smbios.obj
+ 0002:000011d8       ??_C@_05JOFABPDN@it?9IT?$AA@ 0000000000005f98     Smbios:Smbios.obj
+ 0002:000011e0       ??_C@_05EPEMIJNM@da?9DK?$AA@ 0000000000005fa0     Smbios:Smbios.obj
+ 0002:000011e8       ??_C@_05DEGNFPK@fi?9FI?$AA@ 0000000000005fa8     Smbios:Smbios.obj
+ 0002:000011f0       ??_C@_05FEJBHNBK@nl?9NL?$AA@ 0000000000005fb0     Smbios:Smbios.obj
+ 0002:000011f8       ??_C@_05MAIMJALI@nb?9NO?$AA@ 0000000000005fb8     Smbios:Smbios.obj
+ 0002:00001200       ??_C@_05FHMHNLJ@nn?9NO?$AA@ 0000000000005fc0     Smbios:Smbios.obj
+ 0002:00001208       ??_C@_05KJHONEJB@pt?9PT?$AA@ 0000000000005fc8     Smbios:Smbios.obj
+ 0002:00001210       ??_C@_05OAIGAEAJ@pt?9BR?$AA@ 0000000000005fd0     Smbios:Smbios.obj
+ 0002:00001218       ??_C@_05ELFGIBG@sv?9SE?$AA@ 0000000000005fd8     Smbios:Smbios.obj
+ 0002:00001220       ??_C@_05NGOOAODM@ja?9JP?$AA@ 0000000000005fe0     Smbios:Smbios.obj
+ 0002:00001228       ??_C@_06JMDICBCG@zh?9chs?$AA@ 0000000000005fe8     Smbios:Smbios.obj
+ 0002:00001230       ??_C@_06NDHJLHOB@zh?9cht?$AA@ 0000000000005ff0     Smbios:Smbios.obj
+ 0002:00001238       ??_C@_0BA@BIGLAJPL@en?$HMUS?$HMiso8859?91?$AA@ 0000000000005ff8     Smbios:Smbios.obj
+ 0002:00001250       ??_C@_0BA@KCFMANNJ@fr?$HMFR?$HMiso8859?91?$AA@ 0000000000006010     Smbios:Smbios.obj
+ 0002:00001268       ??_C@_0BA@BEAAECGC@es?$HMES?$HMiso8859?91?$AA@ 0000000000006028     Smbios:Smbios.obj
+ 0002:00001280       ??_C@_0BA@OCEDAJNH@de?$HMDE?$HMiso8859?91?$AA@ 0000000000006040     Smbios:Smbios.obj
+ 0002:00001298       ??_C@_0BA@GPABJABN@ru?$HMRU?$HMiso8859?95?$AA@ 0000000000006058     Smbios:Smbios.obj
+ 0002:000012b0       ??_C@_0P@MNJGDKHK@ko?$HMKR?$HMunicode?$AA?$AA@ 0000000000006070     Smbios:Smbios.obj
+ 0002:000012c0       ??_C@_0BA@MGABMOME@it?$HMIT?$HMiso8859?91?$AA@ 0000000000006080     Smbios:Smbios.obj
+ 0002:000012d8       ??_C@_0BA@IBAOLPKK@da?$HMDK?$HMiso8859?91?$AA@ 0000000000006098     Smbios:Smbios.obj
+ 0002:000012f0       ??_C@_0BA@EFEAHNJK@fi?$HMFI?$HMiso8859?91?$AA@ 00000000000060b0     Smbios:Smbios.obj
+ 0002:00001308       ??_C@_0BA@MHHEPICD@nl?$HMNL?$HMiso8859?91?$AA@ 00000000000060c8     Smbios:Smbios.obj
+ 0002:00001320       ??_C@_0BA@FNJJDCKG@nb?$HMNO?$HMiso8859?91?$AA@ 00000000000060e0     Smbios:Smbios.obj
+ 0002:00001338       ??_C@_0BA@BIGMJLEC@nn?$HMNO?$HMiso8859?91?$AA@ 00000000000060f8     Smbios:Smbios.obj
+ 0002:00001350       ??_C@_0BA@MOMPFCLG@pt?$HMPT?$HMiso8859?91?$AA@ 0000000000006110     Smbios:Smbios.obj
+ 0002:00001368       ??_C@_0BA@PFKJOEMH@pt?$HMBR?$HMiso8859?91?$AA@ 0000000000006128     Smbios:Smbios.obj
+ 0002:00001380       ??_C@_0BA@GFPGJKII@sv?$HMSE?$HMiso8859?91?$AA@ 0000000000006140     Smbios:Smbios.obj
+ 0002:00001398       ??_C@_0P@HMDPEBLM@ja?$HMJP?$HMunicode?$AA?$AA@ 0000000000006158     Smbios:Smbios.obj
+ 0002:000013a8       ??_C@_0P@PHCCPEOP@zh?$HMCN?$HMunicode?$AA?$AA@ 0000000000006168     Smbios:Smbios.obj
+ 0002:000013b8       ??_C@_0P@FKBJAKNC@zh?$HMTW?$HMunicode?$AA?$AA@ 0000000000006178     Smbios:Smbios.obj
+ 0002:000013c8       ??_C@_1CE@GLBFGNOF@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AAC?$AAo?$AAd?$AAe?$AAs?$AA?$AA@ 0000000000006188     Smbios:Smbios.obj
+ 0002:000013f0       ??_C@_1BK@GGGENMOA@?$AAP?$AAl?$AAa?$AAt?$AAf?$AAo?$AAr?$AAm?$AAL?$AAa?$AAn?$AAg?$AA?$AA@ 00000000000061b0     Smbios:Smbios.obj
+ 0002:00001410       ??_C@_1CM@MCNBJDGN@?$AAS?$AAm?$AAb?$AAi?$AAo?$AAs?$AAE?$AAn?$AAt?$AAr?$AAy?$AAP?$AAo?$AAi?$AAn?$AAt?$AAT?$AAa?$AAb?$AAl?$AAe?$AA?$AA@ 00000000000061d0     Smbios:Smbios.obj
+ 0002:00001440       ??_C@_1DA@DDGMOLMD@?$AAS?$AAm?$AAb?$AAi?$AAo?$AAs?$AAV?$AA3?$AAE?$AAn?$AAt?$AAr?$AAy?$AAP?$AAo?$AAi?$AAn?$AAt?$AAT?$AAa?$AAb?$AAl?$AAe?$AA?$AA@ 0000000000006200     Smbios:Smbios.obj
+ 0002:00001470       ??_C@_1CI@KMIJILCO@?$AAS?$AAm?$AAb?$AAi?$AAo?$AAs?$AAS?$AAc?$AAr?$AAa?$AAt?$AAc?$AAh?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?$AA@ 0000000000006230     Smbios:Smbios.obj
+ 0002:00001498       ??_C@_1CC@BFKIOHIG@?$AAM?$AAa?$AAx?$AAi?$AAm?$AAu?$AAm?$AAT?$AAa?$AAb?$AAl?$AAe?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 0000000000006258     Smbios:Smbios.obj
+ 0002:000014c0       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000006280     Smbios:Smbios.obj
+ 0002:000014d0       ??_C@_1BG@JEGAFCNI@?$AAS?$AAe?$AAc?$AAu?$AAr?$AAe?$AAB?$AAo?$AAo?$AAt?$AA?$AA@ 0000000000006290     Smbios:Smbios.obj
+ 0002:000014e8       ??_C@_0M@LCCONGAO@EFI_SUCCESS?$AA@ 00000000000062a8     AmiDxeLib:StdLibC.obj
+ 0002:000014f8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 00000000000062b8     AmiDxeLib:StdLibC.obj
+ 0002:0000152c       ??_C@_06DCBEJCPP@?$CFs?$CI?$CFX?$CJ?$AA@ 00000000000062ec     AmiDxeLib:StdLibC.obj
+ 0002:00001534       ??_C@_02DKCKIIND@?$CFs?$AA@ 00000000000062f4     AmiDxeLib:StdLibC.obj
+ 0002:00001540       LegacyRegionProtocol       0000000000006300     Smbios:Smbios.obj
+ 0002:00001548       LegacyBiosProtocol         0000000000006308     Smbios:Smbios.obj
+ 0002:00001550       SmbiosTableAtE000          0000000000006310     Smbios:Smbios.obj
+ 0002:00001551       VersionUpdated             0000000000006311     Smbios:Smbios.obj
+ 0002:00001552       ReleaseDateUpdated         0000000000006312     Smbios:Smbios.obj
+ 0002:00001553       SecureData                 0000000000006313     Smbios:Smbios.obj
+ 0002:00001558       pSmbiosTableEntryPointF000 0000000000006318     Smbios:Smbios.obj
+ 0002:00001560       pSmbiosV3TableEntryPointF000 0000000000006320     Smbios:Smbios.obj
+ 0002:00001568       SmbiosDataTable            0000000000006328     Smbios:Smbios.obj
+ 0002:00001570       ScratchBufferPtr           0000000000006330     Smbios:Smbios.obj
+ 0002:00001578       gSmbiosBoardProtocol       0000000000006338     Smbios:Smbios.obj
+ 0002:00001580       gImageHandle               0000000000006340     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001588       gST                        0000000000006348     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001590       gBS                        0000000000006350     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000015d8       RbMap                      0000000000006398     AmiCspLibDxe:NbGeneric.obj
+ 0002:000015e8       mPcd                       00000000000063a8     DxePcdLib:DxePcdLib.obj
+ 0002:000015f0       mPiPcd                     00000000000063b0     DxePcdLib:DxePcdLib.obj
+ 0002:000015f8       mPcdInfo                   00000000000063b8     DxePcdLib:DxePcdLib.obj
+ 0002:00001600       mPiPcdInfo                 00000000000063c0     DxePcdLib:DxePcdLib.obj
+ 0002:00001608       pST                        00000000000063c8     AmiDxeLib:EfiLib.obj
+ 0002:00001610       pBS                        00000000000063d0     AmiDxeLib:EfiLib.obj
+ 0002:00001618       pRS                        00000000000063d8     AmiDxeLib:EfiLib.obj
+ 0002:00001620       TheImageHandle             00000000000063e0     AmiDxeLib:EfiLib.obj
+ 0002:00001628       SmbiosPointerEvent         00000000000063e8     <common>
+ 0002:00001640       SetupData                  0000000000006400     <common>
+ 0002:000016c8       Legacy16Data               0000000000006488     <common>
+ 0002:000016e0       NvramType4                 00000000000064a0     <common>
+ 0002:00001714       UpdateCpuStructure         00000000000064d4     <common>
+ 0002:00001720       ProducerHandleTable        00000000000064e0     <common>
+ 0002:00002b20       LastHandle                 00000000000078e0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

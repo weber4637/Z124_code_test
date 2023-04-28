@@ -1,0 +1,80 @@
+ SpsDxe
+
+ Timestamp is 6448e7f1 (Wed Apr 26 16:59:29 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000013e3H .text                   CODE
+ 0002:00000000 000000e0H .data                   DATA
+ 0002:000000e0 0000001eH .rdata                  DATA
+ 0002:00000100 00000088H .bss                    DATA
+ 0003:00000000 000000c0H .pdata                  DATA
+ 0004:00000000 0000009cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000002c       ProcessLibraryConstructorList 00000000000002cc f   SpsDxe:AutoGen.obj
+ 0001:000000d8       GetSpsConfiguration        0000000000000378 f   SpsDxe:SpsDxe.obj
+ 0001:00000210       SpsDxeEntryPoint           00000000000004b0 f   SpsDxe:SpsDxe.obj
+ 0001:00000530       GatherCPUInfoData          00000000000007d0 f   SpsDxe:CpuInfoData.obj
+ 0001:000007c4       SpsEndOfDxeCallback        0000000000000a64 f   SpsDxe:Callbacks.obj
+ 0001:00000b90       SpsReadyToBootCallback     0000000000000e30 f   SpsDxe:Callbacks.obj
+ 0001:00000e74       EfiGetSystemConfigurationTable 0000000000001114 f   UefiLib:UefiLib.obj
+ 0001:00000ed8       InternalEmptyFunction      0000000000001178 f   UefiLib:UefiLib.obj
+ 0001:00000edc       EfiCreateEventReadyToBootEx 000000000000117c f   UefiLib:UefiNotTiano.obj
+ 0001:00000f4c       GetOnBoardMeType           00000000000011ec f   MeTypeLib:MeTypeLib.obj
+ 0001:00000f8c       HeciCoreBiosDoneMsg        000000000000122c f   HeciMsgDxeLib:HeciMsgDxeLib.obj
+ 0001:0000104c       saveMePolicyToSetupConfiguration 00000000000012ec f   MePolicyUpdateDxeLib:MePlatformPolicySaveDxe.obj
+ 0001:00001124       MePolicyLibInit            00000000000013c4 f   MePolicyUpdateDxeLib:MePolicyLib.obj
+ 0001:00001158       MeIsAfterEndOfPost         00000000000013f8 f   MePolicyUpdateDxeLib:MePolicyLib.obj
+ 0001:0000118c       GetPcdProtocol             000000000000142c f   DxePcdLib:DxePcdLib.obj
+ 0001:000011c8       GetMeSetupConfig           0000000000001468 f   MeDxeSetupLib:MeDxeSetupLib.obj
+ 0001:00001244       SetMeSetupConfig           00000000000014e4 f   MeDxeSetupLib:MeDxeSetupLib.obj
+ 0001:000012f0       InternalMemCopyMem         0000000000001590     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001330       InternalMemSetMem          00000000000015d0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001350       InternalMemSetMem32        00000000000015f0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001370       InternalMemSetMem64        0000000000001610     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00001390       AsmCpuidEx                 0000000000001630     BaseLib:CpuIdEx.obj
+ 0001:000013c0       InternalMemZeroMem         0000000000001660     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000013e0       CpuPause                   0000000000001680     BaseLib:CpuPause.obj
+ 0002:00000000       gEfiSpsInfoHobGuid         00000000000016a0     SpsDxe:AutoGen.obj
+ 0002:00000010       gPchGlobalResetGuid        00000000000016b0     SpsDxe:AutoGen.obj
+ 0002:00000020       gEfiEndOfDxeEventGroupGuid 00000000000016c0     SpsDxe:AutoGen.obj
+ 0002:00000030       gEfiEventReadyToBootGuid   00000000000016d0     SpsDxe:AutoGen.obj
+ 0002:00000040       gEfiHobListGuid            00000000000016e0     SpsDxe:AutoGen.obj
+ 0002:00000050       gSetupVariableGuid         00000000000016f0     SpsDxe:AutoGen.obj
+ 0002:00000060       gEfiDxeServicesTableGuid   0000000000001700     SpsDxe:AutoGen.obj
+ 0002:00000070       gHeciProtocolGuid          0000000000001710     SpsDxe:AutoGen.obj
+ 0002:00000080       gEfiSpsNmProtocolGuid      0000000000001720     SpsDxe:AutoGen.obj
+ 0002:00000090       gEfiSpsSiEnProtocolGuid    0000000000001730     SpsDxe:AutoGen.obj
+ 0002:000000a0       gDxePlatformMePolicyProtocolGuid 0000000000001740     SpsDxe:AutoGen.obj
+ 0002:000000b0       gPcdProtocolGuid           0000000000001750     SpsDxe:AutoGen.obj
+ 0002:000000c0       gPchResetProtocolGuid      0000000000001760     SpsDxe:AutoGen.obj
+ 0002:000000d0       gEfiS3SaveStateProtocolGuid 0000000000001770     SpsDxe:AutoGen.obj
+ 0002:000000e0       _gUefiDriverRevision       0000000000001780     SpsDxe:AutoGen.obj
+ 0002:000000e8       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000001788     MeDxeSetupLib:MeDxeSetupLib.obj
+ 0002:00000100       mSpsEndOfDxeEvent          00000000000017a0     SpsDxe:SpsDxe.obj
+ 0002:00000108       mSpsReadyToBootEvent       00000000000017a8     SpsDxe:SpsDxe.obj
+ 0002:00000110       mpSpsContext               00000000000017b0     SpsDxe:SpsDxe.obj
+ 0002:00000118       mNonce                     00000000000017b8     SpsDxe:Callbacks.obj
+ 0002:00000120       gImageHandle               00000000000017c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000128       gST                        00000000000017c8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000130       gBS                        00000000000017d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000138       gRT                        00000000000017d8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000140       mHobList                   00000000000017e0     DxeHobLib:HobLib.obj
+ 0002:00000148       gDS                        00000000000017e8     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000150       S3SaveState                00000000000017f0     DxeS3BootScriptLibS3SaveStateProtocol:S3BootScriptLibS3SaveStateProtocol.obj
+ 0002:00000158       mDxePlatformMePolicy       00000000000017f8     MePolicyUpdateDxeLib:MePolicyLib.obj
+ 0002:00000160       mPcd                       0000000000001800     DxePcdLib:DxePcdLib.obj
+ 0002:00000168       mPiPcd                     0000000000001808     DxePcdLib:DxePcdLib.obj
+ 0002:00000170       mPcdInfo                   0000000000001810     DxePcdLib:DxePcdLib.obj
+ 0002:00000178       mPiPcdInfo                 0000000000001818     DxePcdLib:DxePcdLib.obj
+ 0002:00000180       mCpuConfigLibConfigContextBuffer 0000000000001820     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

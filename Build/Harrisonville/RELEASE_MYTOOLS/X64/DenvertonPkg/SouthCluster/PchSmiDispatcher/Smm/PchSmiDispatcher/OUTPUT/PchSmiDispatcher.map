@@ -1,0 +1,226 @@
+ PchSmiDispatcher
+
+ Timestamp is 6448e7f2 (Wed Apr 26 16:59:30 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00004b70H .text                   CODE
+ 0002:00000000 00001c28H .data                   DATA
+ 0002:00001c30 00000320H .rdata                  DATA
+ 0002:00001f60 000001ddH .bss                    DATA
+ 0003:00000000 0000039cH .pdata                  DATA
+ 0004:00000000 000001acH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000090       ProcessLibraryConstructorList 0000000000000330 f   PchSmiDispatcher:AutoGen.obj
+ 0001:000001a4       SmmReadyToLockCallback     0000000000000444 f   PchSmiDispatcher:PchSmmCore.obj
+ 0001:000001a8       InitializePchSmmDispatcher 0000000000000448 f   PchSmiDispatcher:PchSmmCore.obj
+ 0001:000003d8       PchSmmCoreRegister         0000000000000678 f   PchSmiDispatcher:PchSmmCore.obj
+ 0001:0000092c       PchSmmCoreUnRegister       0000000000000bcc f   PchSmiDispatcher:PchSmmCore.obj
+ 0001:00000a40       PchSmmCoreDispatcher       0000000000000ce0 f   PchSmiDispatcher:PchSmmCore.obj
+ 0001:00000f8c       CompareSources             000000000000122c f   PchSmiDispatcher:PchSmmHelpers.obj
+ 0001:00001020       PchSmmEnableSource         00000000000012c0 f   PchSmiDispatcher:PchSmmHelpers.obj
+ 0001:0000107c       PchSmmDisableSource        000000000000131c f   PchSmiDispatcher:PchSmmHelpers.obj
+ 0001:000010b8       SxGetContext               0000000000001358 f   PchSmiDispatcher:PchSmmSx.obj
+ 0001:00001118       SxCmpContext               00000000000013b8 f   PchSmiDispatcher:PchSmmSx.obj
+ 0001:00001118       PowerButtonCmpContext      00000000000013b8 f   PchSmiDispatcher:PchSmmPowerButton.obj
+ 0001:00001120       PchSmmSxGoToSleep          00000000000013c0 f   PchSmiDispatcher:PchSmmSx.obj
+ 0001:00001244       PchSmiRecordInsert         00000000000014e4 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001404       PchTcoSmiClearSourceAndBlock 00000000000016a4 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001450       PchTcoSmiClearSource       00000000000016f0 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001488       PchTcoSmiMchRegister       0000000000001728 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001504       PchTcoSmiTcoTimeoutRegister 00000000000017a4 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001584       PchTcoSmiOsTcoRegister     0000000000001824 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001604       PchTcoSmiNmiRegister       00000000000018a4 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001684       PchTcoSmiIntruderDetRegister 0000000000001924 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001704       PchTcoSpiWpClearSource     00000000000019a4 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001740       PchTcoSmiSpiBiosWpRegister 00000000000019e0 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:000017c4       PchTcoSmiLpcBiosWpRegister 0000000000001a64 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001880       PchTcoClearNewCenturySts   0000000000001b20 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:000018d8       PchTcoSmiNewCenturyRegister 0000000000001b78 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001948       PchTcoSmiUnRegister        0000000000001be8 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:000019c8       PchAcpiSmiPmeRegister      0000000000001c68 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001a2c       PchAcpiSmiPmeB0Register    0000000000001ccc f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001a90       PchAcpiSmiRtcAlarmRegister 0000000000001d30 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001af4       PchAcpiSmiTmrOverflowRegister 0000000000001d94 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001b58       PchGpioUnlockSmiRegister   0000000000001df8 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001bbc       PchAcpiSmiUnRegister       0000000000001e5c f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001bbc       PchGpioUnlockSmiUnRegister 0000000000001e5c f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001bc4       PchSmiSerialIrqRegister    0000000000001e64 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001c28       PchSmiMcSmiRegister        0000000000001ec8 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001c8c       PchSmiSmbusRegister        0000000000001f2c f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001cf0       PchSmiSpiAsyncClearSource  0000000000001f90 f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001d0c       PchSmiSpiAsyncRegister     0000000000001fac f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001dac       PchSmiUnRegister           000000000000204c f   PchSmiDispatcher:PchSmiDispatch.obj
+ 0001:00001e04       SwGetContext               00000000000020a4 f   PchSmiDispatcher:PchSmmSw.obj
+ 0001:00001e14       SwCmpContext               00000000000020b4 f   PchSmiDispatcher:PchSmmSw.obj
+ 0001:00001e20       SwGetCommBuffer            00000000000020c0 f   PchSmiDispatcher:PchSmmSw.obj
+ 0001:00001ee0       ContextToTimerInterval     0000000000002180 f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:00001f1c       PeriodicTimerGetContext    00000000000021bc f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:00001f54       PeriodicTimerCmpContext    00000000000021f4 f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:00001f60       PeriodicTimerGetCommBuffer 0000000000002200 f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:00001f88       PchSmmPeriodicTimerProgramTimers 0000000000002228 f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:000021ac       PchSmmPeriodicTimerDispatchGetNextShorterInterval 000000000000244c f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:000021fc       PchSmmPeriodicTimerClearSource 000000000000249c f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:00002204       PchSmmPeriodicTimerControlPause 00000000000024a4 f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:0000226c       PchSmmPeriodicTimerControlResume 000000000000250c f   PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0001:000022d4       PchSmmClearSmi             0000000000002574 f   PchSmiDispatcher:PchxSmmHelpers.obj
+ 0001:000024bc       ReadBitDesc                000000000000275c f   PchSmiDispatcher:PchxSmmHelpers.obj
+ 0001:000026cc       WriteBitDesc               000000000000296c f   PchSmiDispatcher:PchxSmmHelpers.obj
+ 0001:000029d8       MapUsbToSrcDesc            0000000000002c78 f   PchSmiDispatcher:PchSmmUsb.obj
+ 0001:00002a90       PowerButtonGetContext      0000000000002d30 f   PchSmiDispatcher:PchSmmPowerButton.obj
+ 0001:00002aa0       PchSmmPowerButtonSleep     0000000000002d40 f   PchSmiDispatcher:PchSmmPowerButton.obj
+ 0001:00002db4       EspiSmiCallback            0000000000003054 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:00002f40       BiosWrProtectRegister      00000000000031e0 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:00002fc8       BiosWrReportRegister       0000000000003268 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:00003014       PcNonFatalErrRegister      00000000000032b4 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:00003060       PcFatalErrRegister         0000000000003300 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:000030ac       VwNonFatalErrRegister      000000000000334c f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:000030f8       VwFatalErrRegister         0000000000003398 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:00003144       FlashNonFatalErrRegister   00000000000033e4 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:00003190       FlashFatalErrRegister      0000000000003430 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:000031dc       LnkType1ErrRegister        000000000000347c f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:00003228       EspiSlaveSmiRegister       00000000000034c8 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:000032c4       EspiSmiUnRegister          0000000000003564 f   PchSmiDispatcher:PchSmmEspi.obj
+ 0001:0000371c       PchPcrAndThenOr32          00000000000039bc f   PeiDxeSmmPchPcrLib:PchPcrLib.obj
+ 0001:00003770       InternalAssertJumpBuffer   0000000000003a10 f   BaseLib:SetJump.obj
+ 0001:00003774       BufferInSmram              0000000000003a14 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000037b8       InternalAllocatePool       0000000000003a58 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000037e8       FreePool                   0000000000003a88 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000381c       EfiGetSystemConfigurationTable 0000000000003abc f   UefiLib:UefiLib.obj
+ 0001:00003b60       GpioGetPadConfig           0000000000003e00 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00003d98       GpioSetPadConfig           0000000000004038 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:000040a8       GpioGetPadOwnership        0000000000004348 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00004134       GpioGetGroupInfoTable      00000000000043d4 f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:00004268       GpioIsCorrectPadForThisChipset 0000000000004508 f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:000042a4       GetPerformanceProtocol     0000000000004544 f   SmmPerformanceLib:SmmPerformanceLib.obj
+ 0001:0000432c       StartPerformanceMeasurementEx 00000000000045cc f   SmmPerformanceLib:SmmPerformanceLib.obj
+ 0001:00004398       EndPerformanceMeasurementEx 0000000000004638 f   SmmPerformanceLib:SmmPerformanceLib.obj
+ 0001:00004408       InternalReportStatusCode   00000000000046a8 f   SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00004494       GpioGetPadAndSmiRegs       0000000000004734 f   PeiDxeSmmGpioPrivateLib:GpioPrivateLib.obj
+ 0001:000045e4       GetPchSeries               0000000000004884 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00004700       PchSbiExecution            00000000000049a0 f   PeiDxeSmmPchSbiAccessLib:PchSbiAccessLib.obj
+ 0001:00004830       InternalMemCopyMem         0000000000004ad0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00004870       InternalMemZeroMem         0000000000004b10     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00004890       InternalMemSetMem          0000000000004b30     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000048b0       InternalMemSetMem32        0000000000004b50     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000048d0       InternalMemSetMem64        0000000000004b70     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000048f0       SetJump                    0000000000004b90     BaseLib:SetJump.obj
+ 0001:00004980       AsmReadTsc                 0000000000004c20     BaseLib:ReadTsc.obj
+ 0001:00004990       AsmWbinvd                  0000000000004c30     BaseLib:Wbinvd.obj
+ 0001:000049a0       InternalLongJump           0000000000004c40     BaseLib:LongJump.obj
+ 0001:00004a20       CPULib_CpuID               0000000000004cc0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00004a60       memset                     0000000000004d00     AmiDxeLib:MemSet.obj
+ 0001:00004a6e       MemSetAsm                  0000000000004d0e f   AmiDxeLib:MemSet.obj
+ 0001:00004ac0       MemCpyAsm                  0000000000004d60 f   AmiDxeLib:MemCpy.obj
+ 0001:00004ac0       memcpy                     0000000000004d60     AmiDxeLib:MemCpy.obj
+ 0002:00000000       gEfiCallerIdGuid           0000000000004e20     PchSmiDispatcher:AutoGen.obj
+ 0002:00000010       SmmRsTableGuid             0000000000004e30     PchSmiDispatcher:AutoGen.obj
+ 0002:00000020       gEfiHobListGuid            0000000000004e40     PchSmiDispatcher:AutoGen.obj
+ 0002:00000030       gSmmPerformanceProtocolGuid 0000000000004e50     PchSmiDispatcher:AutoGen.obj
+ 0002:00000040       gSmmPerformanceExProtocolGuid 0000000000004e60     PchSmiDispatcher:AutoGen.obj
+ 0002:00000050       gEfiDxeServicesTableGuid   0000000000004e70     PchSmiDispatcher:AutoGen.obj
+ 0002:00000060       gEfiSmmGpiDispatch2ProtocolGuid 0000000000004e80     PchSmiDispatcher:AutoGen.obj
+ 0002:00000070       gEfiSmmSxDispatch2ProtocolGuid 0000000000004e90     PchSmiDispatcher:AutoGen.obj
+ 0002:00000080       gEfiSmmSwDispatch2ProtocolGuid 0000000000004ea0     PchSmiDispatcher:AutoGen.obj
+ 0002:00000090       gEfiSmmUsbDispatch2ProtocolGuid 0000000000004eb0     PchSmiDispatcher:AutoGen.obj
+ 0002:000000a0       gEfiSmmPowerButtonDispatch2ProtocolGuid 0000000000004ec0     PchSmiDispatcher:AutoGen.obj
+ 0002:000000b0       gEfiSmmPeriodicTimerDispatch2ProtocolGuid 0000000000004ed0     PchSmiDispatcher:AutoGen.obj
+ 0002:000000c0       gEfiSmmCpuProtocolGuid     0000000000004ee0     PchSmiDispatcher:AutoGen.obj
+ 0002:000000d0       gEfiSmmReadyToLockProtocolGuid 0000000000004ef0     PchSmiDispatcher:AutoGen.obj
+ 0002:000000e0       gPchTcoSmiDispatchProtocolGuid 0000000000004f00     PchSmiDispatcher:AutoGen.obj
+ 0002:000000f0       gPchAcpiSmiDispatchProtocolGuid 0000000000004f10     PchSmiDispatcher:AutoGen.obj
+ 0002:00000100       gPchGpioUnlockSmiDispatchProtocolGuid 0000000000004f20     PchSmiDispatcher:AutoGen.obj
+ 0002:00000110       gPchSmiDispatchProtocolGuid 0000000000004f30     PchSmiDispatcher:AutoGen.obj
+ 0002:00000120       gPchEspiSmiDispatchProtocolGuid 0000000000004f40     PchSmiDispatcher:AutoGen.obj
+ 0002:00000130       gPchSmmPeriodicTimerControlGuid 0000000000004f50     PchSmiDispatcher:AutoGen.obj
+ 0002:00000140       gEfiSmmBase2ProtocolGuid   0000000000004f60     PchSmiDispatcher:AutoGen.obj
+ 0002:00000150       gEfiSmmAccess2ProtocolGuid 0000000000004f70     PchSmiDispatcher:AutoGen.obj
+ 0002:00000160       gEfiSmmStatusCodeProtocolGuid 0000000000004f80     PchSmiDispatcher:AutoGen.obj
+ 0002:00000170       gEfiS3SmmSaveStateProtocolGuid 0000000000004f90     PchSmiDispatcher:AutoGen.obj
+ 0002:00000180       mPrivateData               0000000000004fa0     PchSmiDispatcher:PchSmmCore.obj
+ 0002:000002f0       mContextFunctions          0000000000005110     PchSmiDispatcher:PchSmmCore.obj
+ 0002:000005e8       mPchLpSataPortResetToGpioMap 0000000000005408     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000868       mPchLpSataDevSlpPinToGpioMap 0000000000005688     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000880       mPchHSataPortResetToGpioMap 00000000000056a0     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000008c0       mPchHSataDevSlpPinToGpioMap 00000000000056e0     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000b68       PchLpRprDidTable           0000000000005988     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000e08       PchHRprDidTable            0000000000005c28     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000e30       mSrcDescEspiSlave          0000000000005c50     PchSmiDispatcher:PchSmmEspi.obj
+ 0002:00000f20       mDescSrcTcoSts             0000000000005d40     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00000f90       mSrcDescMch                0000000000005db0     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001000       mSrcDescTcoTimeout         0000000000005e20     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001070       mSrcDescOsTco              0000000000005e90     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:000010e0       mSrcDescNmi                0000000000005f00     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001150       mSrcDescIntruderDet        0000000000005f70     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:000011c0       mSrcDescSpiBiosWp          0000000000005fe0     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001230       mSrcDescLpcBiosWp          0000000000006050     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:000012a0       mSrcDescNewCentury         00000000000060c0     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001310       mSrcDescPme                0000000000006130     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001380       mSrcDescPmeB0              00000000000061a0     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:000013f0       mSrcDescRtcAlarm           0000000000006210     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001460       mSrcDescTmrOverflow        0000000000006280     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:000014d0       mSrcDescGpioUnlock         00000000000062f0     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001540       mSrcDescSerialIrq          0000000000006360     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:000015b0       mSrcDescMcSmi              00000000000063d0     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001620       mSrcDescSmbus              0000000000006440     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001690       mSrcDescSpiAsyncSmi        00000000000064b0     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001700       mPchTcoSmiDispatchProtocol 0000000000006520     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001750       mPchAcpiSmiDispatchProtocol 0000000000006570     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001780       mPchGpioUnlockSmiDispatchProtocol 00000000000065a0     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:00001798       mPchSmiDispatchProtocol    00000000000065b8     PchSmiDispatcher:PchSmiDispatch.obj
+ 0002:000017d0       mTIMER_SOURCE_DESCS        00000000000065f0     PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0002:000018a0       mPchSmmPeriodicTimerControlProtocol 00000000000066c0     PchSmiDispatcher:PchSmmPeriodicTimer.obj
+ 0002:000018b0       mUSB1_LEGACY               00000000000066d0     PchSmiDispatcher:PchSmmUsb.obj
+ 0002:00001920       mUSB3_LEGACY               0000000000006740     PchSmiDispatcher:PchSmmUsb.obj
+ 0002:00001988       mUsbControllersMap         00000000000067a8     PchSmiDispatcher:PchSmmUsb.obj
+ 0002:000019a0       mEspiSmiInstance           00000000000067c0     PchSmiDispatcher:PchSmmEspi.obj
+ 0002:00001b30       mPchHGpioGroupInfo         0000000000006950     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00001c20       mPchSeries                 0000000000006a40     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00001c24       mPchGeneration             0000000000006a44     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00001c30       _gUefiDriverRevision       0000000000006a50     PchSmiDispatcher:AutoGen.obj
+ 0002:00001c38       ??_C@_0M@JOMOHOBE@SmmFunction?$AA@ 0000000000006a58     PchSmiDispatcher:PchSmmCore.obj
+ 0002:00001c50       SX_SOURCE_DESC             0000000000006a70     PchSmiDispatcher:PchSmmSx.obj
+ 0002:00001cc0       SW_SOURCE_DESC             0000000000006ae0     PchSmiDispatcher:PchSmmSw.obj
+ 0002:00001d30       PCH_GPI_SOURCE_DESC_TEMPLATE 0000000000006b50     PchSmiDispatcher:PchSmmGpi.obj
+ 0002:00001da0       POWER_BUTTON_SOURCE_DESC   0000000000006bc0     PchSmiDispatcher:PchSmmPowerButton.obj
+ 0002:00001e10       mEspiDescriptor            0000000000006c30     PchSmiDispatcher:PchSmmEspi.obj
+ 0002:00002060       gImageHandle               0000000000006e80     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002068       gST                        0000000000006e88     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002070       gBS                        0000000000006e90     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00002078       gRT                        0000000000006e98     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00002080       gSmst                      0000000000006ea0     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00002090       mHobList                   0000000000006eb0     DxeHobLib:HobLib.obj
+ 0002:00002098       mPerformance               0000000000006eb8     SmmPerformanceLib:SmmPerformanceLib.obj
+ 0002:000020a0       mPerformanceEx             0000000000006ec0     SmmPerformanceLib:SmmPerformanceLib.obj
+ 0002:000020a8       mReportStatusCode          0000000000006ec8     SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000020b0       mStatusCodeProtocol        0000000000006ed0     SmmReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000020b8       gDS                        0000000000006ed8     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:000020c0       S3SaveState                0000000000006ee0     SmmS3BootScriptLibS3SmmSaveStateProtocol:S3BootScriptLibS3SaveStateProtocol.obj
+ 0002:000020c8       mPerformanceMeasurementEnabled 0000000000006ee8     <common>
+ 0002:000020d0       mSmramRanges               0000000000006ef0     <common>
+ 0002:000020d8       mSmramRangeCount           0000000000006ef8     <common>
+ 0002:000020e0       mTimers                    0000000000006f00     <common>
+ 0002:00002110       mPchPeriodicTimerCommBuffer 0000000000006f30     <common>
+ 0002:00002120       mPchSwCommBuffer           0000000000006f40     <common>
+ 0002:00002130       mSmmCpuProtocol            0000000000006f50     <common>
+ 0002:00002138       mAcpiBaseAddr              0000000000006f58     <common>
+ 0002:0000213a       mTcoBaseAddr               0000000000006f5a     <common>
+ 0002:0000213c       mReadyToLock               0000000000006f5c     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00002ba0       EspiSmiEnableSource        0000000000002e40 f    CIL library: CIL module
+ 0001:00002c70       EspiSmiClearStatus         0000000000002f10 f    CIL library: CIL module
+ 0001:00002cec       InsertEspiRecord           0000000000002f8c f    CIL library: CIL module
+ 0001:00002f04       RegisterSerialIrqIfNull    00000000000031a4 f    CIL library: CIL module
+ 0001:00003494       PchPcrRead                 0000000000003734 f    CIL library: CIL module
+ 0001:0000350c       PchPcrWrite                00000000000037ac f    CIL library: CIL module
+ 0001:00003880       GpioReadWriteReg           0000000000003b20 f    CIL library: CIL module
+ 0001:00003a10       GpioLockPadsUsingSbi       0000000000003cb0 f    CIL library: CIL module

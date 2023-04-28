@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\CEF68C66-06AB-4fb3-A3ED-5FFA885B5725SmbiosBoard\CEF68C66-06AB-4fb3-A3ED-5FFA885B5725SEC2.1.1.pe32 d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiCompatibilityPkg\Smbios\SmbiosBoard\SmbiosBoard\OUTPUT\SmbiosBoard.efi

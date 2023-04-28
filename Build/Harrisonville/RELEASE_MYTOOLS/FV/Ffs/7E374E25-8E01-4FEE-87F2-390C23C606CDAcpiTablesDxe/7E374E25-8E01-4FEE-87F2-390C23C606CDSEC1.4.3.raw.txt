@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\7E374E25-8E01-4FEE-87F2-390C23C606CDAcpiTablesDxe\7E374E25-8E01-4FEE-87F2-390C23C606CDSEC1.4.3.raw d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\HarrisonvillePkg\Acpi\AcpiTables\AcpiTables\OUTPUT\Hpet\Hpet.acpi

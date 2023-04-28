@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_SMM_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\4a6d890f-93c3-4b6d-a67d-5f2c4dce347bRuntimeSmm\4a6d890f-93c3-4b6d-a67d-5f2c4dce347bSEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\RuntimeSmm\RuntimeSmm\OUTPUT\RuntimeSmm.depex

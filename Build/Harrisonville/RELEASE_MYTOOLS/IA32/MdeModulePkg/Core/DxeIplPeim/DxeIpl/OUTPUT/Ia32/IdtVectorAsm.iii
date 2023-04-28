@@ -1,0 +1,77 @@
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    SECTION .text
+
+;
+;------------------------------------------------------------------------------
+;  Generic IDT Vector Handlers for the Host.
+;
+;------------------------------------------------------------------------------
+
+ALIGN   8
+global _AsmGetVectorTemplatInfo
+global _AsmVectorFixup
+
+@VectorTemplateBase:
+        push  eax
+        db    0x6a       ; push #VectorNumber
+@VectorNum:
+        db    0
+        mov   eax, CommonInterruptEntry
+        jmp   eax
+@VectorTemplateEnd:
+
+global _AsmGetVectorTemplatInfo
+_AsmGetVectorTemplatInfo:
+        mov   ecx, [esp + 4]
+        mov   dword [ecx], @VectorTemplateBase
+        mov   eax, (@VectorTemplateEnd - @VectorTemplateBase)
+        ret
+
+global _AsmVectorFixup
+_AsmVectorFixup:
+        mov   eax, dword [esp + 8]
+        mov   ecx, [esp + 4]
+        mov   [ecx + (@VectorNum - @VectorTemplateBase)], al
+        ret
+
+;---------------------------------------;
+; CommonInterruptEntry                  ;
+;---------------------------------------;
+; The follow algorithm is used for the common interrupt routine.
+
+;
+; +---------------------+ <-- 16-byte aligned ensured by processor
+; +    Old SS           +
+; +---------------------+
+; +    Old RSP          +
+; +---------------------+
+; +    RFlags           +
+; +---------------------+
+; +    CS               +
+; +---------------------+
+; +    RIP              +
+; +---------------------+
+; +    Error Code       +
+; +---------------------+
+; +    Vector Number    +
+; +---------------------+
+
+CommonInterruptEntry:
+  cli
+
+  jmp $
+

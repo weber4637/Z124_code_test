@@ -1,0 +1,36 @@
+ PowerButtonSmm
+
+ Timestamp is 6448e7ee (Wed Apr 26 16:59:26 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000020cH .text                   CODE
+ 0002:00000000 00000020H .data                   DATA
+ 0002:00000020 00000004H .rdata                  DATA
+ 0002:00000030 00000131H .bss                    DATA
+ 0003:00000000 0000000cH .pdata                  DATA
+ 0004:00000000 00000008H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f0       PowerButtonActivated       0000000000000370 f   PowerButtonSmm:PowerButtonSmm.obj
+ 0001:000000f4       InternalAssertJumpBuffer   0000000000000374 f   BaseLib:SetJump.obj
+ 0001:00000100       SetJump                    0000000000000380     BaseLib:SetJump.obj
+ 0001:00000190       InternalLongJump           0000000000000410     BaseLib:LongJump.obj
+ 0002:00000000       gEfiSmmPowerButtonDispatch2ProtocolGuid 00000000000004a0     PowerButtonSmm:AutoGen.obj
+ 0002:00000010       gEfiSmmBase2ProtocolGuid   00000000000004b0     PowerButtonSmm:AutoGen.obj
+ 0002:00000020       _gUefiDriverRevision       00000000000004c0     PowerButtonSmm:AutoGen.obj
+ 0002:00000130       mRegisterContext           00000000000005d0     PowerButtonSmm:PowerButtonSmm.obj
+ 0002:00000138       gImageHandle               00000000000005d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000140       gST                        00000000000005e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000148       gBS                        00000000000005e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000150       gRT                        00000000000005f0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000158       gSmst                      00000000000005f8     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000160       mPerformanceMeasurementEnabled 0000000000000600     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

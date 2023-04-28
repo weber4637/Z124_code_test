@@ -1,0 +1,45 @@
+ MePolicyInitPei
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000058fH .text                   CODE
+ 0002:00000000 000068dcH .data                   DATA
+ 0002:000068e0 00000016H .rdata                  DATA
+ 0002:000068f8 00000000H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000054       _AllocatePool              00000294 f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000007a       _AllocateZeroPool          000002ba f   PeiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000095       _PeiServicesLocatePpi      000002d5 f   PeiServicesLib:PeiServicesLib.obj
+ 0001:000000b1       _UpdatePeiMePlatformPolicy 000002f1 f   MePeiPolicyUpdateLib:MePeiPlatformPolicyUpdate.obj
+ 0001:0000037a       _GetPeiServicesTablePointer 000005ba f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000394       _GetPlatformInfo           000005d4 f   PeiPlatformHookLib:PeiPlatformHooklib.obj
+ 0001:00000413       _GetMeSetupConfig          00000653 f   MePeiSetupLib:MePeiSetupLib.obj
+ 0001:00000474       _GetOnBoardMeType          000006b4 f   MeTypeLib:MeTypeLib.obj
+ 0001:000004b0       _InternalMemCopyMem        000006f0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000004f0       _InternalMemZeroMem        00000730     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000510       _InternalMemCompareMem     00000750     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000530       _InternalMemSetMem         00000770     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000550       _InternalMemSetMem32       00000790     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000570       _InternalMemSetMem64       000007b0     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gPlatformInfoHobGuid      000007e0     MePolicyInitPei:AutoGen.obj
+ 0002:00000010       _gSetupVariableGuid        000007f0     MePolicyInitPei:AutoGen.obj
+ 0002:00000020       _gPeiMePlatformPolicyPpiGuid 00000800     MePolicyInitPei:AutoGen.obj
+ 0002:00000030       _gEfiPeiReadOnlyVariable2PpiGuid 00000810     MePolicyInitPei:AutoGen.obj
+ 0002:00000058       _PchLpRprDidTable          00000838     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000070       _PchHRprDidTable           00000850     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000300       _mPchLpSataPortResetToGpioMap 00000ae0     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000318       _mPchHSataPortResetToGpioMap 00000af8     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000358       _mPchLpSataDevSlpPinToGpioMap 00000b38     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000370       _mPchHSataDevSlpPinToGpioMap 00000b50     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000068e0       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 000070c0     MePeiSetupLib:MePeiSetupLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

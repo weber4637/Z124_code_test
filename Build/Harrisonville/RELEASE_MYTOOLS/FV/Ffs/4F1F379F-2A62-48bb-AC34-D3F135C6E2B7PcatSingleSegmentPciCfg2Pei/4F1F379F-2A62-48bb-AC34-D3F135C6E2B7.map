@@ -1,0 +1,29 @@
+ PcatSingleSegmentPciCfg2Pei
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000006adH .text                   CODE
+ 0002:00000000 0000002cH .data                   DATA
+ 0002:00000030 00000000H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000020       _PciCfgAddressConvert      00000260 f   PcatSingleSegmentPciCfg2Pei:PciCfg2.obj
+ 0001:00000075       _PciCfg2Read               000002b5 f   PcatSingleSegmentPciCfg2Pei:PciCfg2.obj
+ 0001:000001de       _PciCfg2Write              0000041e f   PcatSingleSegmentPciCfg2Pei:PciCfg2.obj
+ 0001:00000338       _PciCfg2Modify             00000578 f   PcatSingleSegmentPciCfg2Pei:PciCfg2.obj
+ 0001:00000635       _GetPeiServicesTablePointer 00000875 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000650       _InternalMemCopyMem        00000890     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000690       _InternalMemZeroMem        000008d0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gEfiPciCfg2PpiGuid        00000900     PcatSingleSegmentPciCfg2Pei:AutoGen.obj
+ 0002:00000010       _gPciCfg2Ppi               00000910     PcatSingleSegmentPciCfg2Pei:PciCfg2.obj
+ 0002:00000020       _gPciCfg2PpiList           00000920     PcatSingleSegmentPciCfg2Pei:PciCfg2.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

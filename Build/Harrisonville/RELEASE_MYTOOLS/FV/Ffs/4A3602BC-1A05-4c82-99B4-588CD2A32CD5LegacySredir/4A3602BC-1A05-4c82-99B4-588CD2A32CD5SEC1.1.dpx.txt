@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\4A3602BC-1A05-4c82-99B4-588CD2A32CD5LegacySredir\4A3602BC-1A05-4c82-99B4-588CD2A32CD5SEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\LegacySerialRedirection\LegacySredir\OUTPUT\LegacySredir.depex

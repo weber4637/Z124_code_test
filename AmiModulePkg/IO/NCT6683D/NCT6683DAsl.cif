@@ -1,0 +1,10 @@
+<component>
+	name = "NCT6683DAsl"
+	category = ModulePart
+	LocalRoot = "AmiModulePkg\IO\NCT6683D\"
+	RefName = "NCT6683DAsl"
+[files]
+"CIR.asl"
+"NCT6683DEVT.asl"
+"NCT6683DDEV.asl"
+<endComponent>

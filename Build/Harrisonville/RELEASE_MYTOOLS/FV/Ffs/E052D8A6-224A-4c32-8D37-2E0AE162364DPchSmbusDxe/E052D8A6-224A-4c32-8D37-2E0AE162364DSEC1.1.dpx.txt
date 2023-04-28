@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\E052D8A6-224A-4c32-8D37-2E0AE162364DPchSmbusDxe\E052D8A6-224A-4c32-8D37-2E0AE162364DSEC1.1.dpx d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\DenvertonPkg\SouthCluster\Smbus\Dxe\PchSmbusDxe\OUTPUT\PchSmbusDxe.depex

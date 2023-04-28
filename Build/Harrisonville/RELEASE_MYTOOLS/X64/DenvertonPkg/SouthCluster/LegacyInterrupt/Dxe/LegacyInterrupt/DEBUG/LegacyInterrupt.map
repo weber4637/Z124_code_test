@@ -1,0 +1,39 @@
+ LegacyInterrupt
+
+ Timestamp is 6448e7f0 (Wed Apr 26 16:59:28 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000272H .text                   CODE
+ 0002:00000000 00000034H .data                   DATA
+ 0002:00000038 00000004H .rdata                  DATA
+ 0002:00000040 00000028H .bss                    DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 00000008H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000040       GetNumberPirqs             00000000000002e0 f   LegacyInterrupt:LegacyInterrupt.obj
+ 0001:00000048       GetLocation                00000000000002e8 f   LegacyInterrupt:LegacyInterrupt.obj
+ 0001:00000058       ReadPirq                   00000000000002f8 f   LegacyInterrupt:LegacyInterrupt.obj
+ 0001:00000088       WritePirq                  0000000000000328 f   LegacyInterrupt:LegacyInterrupt.obj
+ 0001:000000fc       GetPchSeries               000000000000039c f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00000220       InternalMemSetMem          00000000000004c0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000240       InternalMemSetMem32        00000000000004e0     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000260       InternalMemSetMem64        0000000000000500     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       gEfiLegacyInterruptProtocolGuid 0000000000000520     LegacyInterrupt:AutoGen.obj
+ 0002:00000010       mLegacyInterrupt           0000000000000530     LegacyInterrupt:LegacyInterrupt.obj
+ 0002:00000030       mPchSeries                 0000000000000550     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00000038       _gUefiDriverRevision       0000000000000558     LegacyInterrupt:AutoGen.obj
+ 0002:00000040       mLegacyInterruptHandle     0000000000000560     LegacyInterrupt:LegacyInterrupt.obj
+ 0002:00000048       gImageHandle               0000000000000568     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000050       gST                        0000000000000570     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000058       gBS                        0000000000000578     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000000c4       PchPcrWrite                0000000000000364 f    CIL library: CIL module

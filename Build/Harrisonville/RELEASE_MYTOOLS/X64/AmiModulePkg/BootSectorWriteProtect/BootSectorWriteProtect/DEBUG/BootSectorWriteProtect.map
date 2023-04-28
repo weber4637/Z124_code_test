@@ -1,0 +1,71 @@
+ BootSectorWriteProtect
+
+ Timestamp is 6448e7f6 (Wed Apr 26 16:59:34 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000ffaH .text                   CODE
+ 0002:00000000 000005d8H .data                   DATA
+ 0002:000005e0 00000081H .rdata                  DATA
+ 0002:00000680 000000b8H .bss                    DATA
+ 0003:00000000 0000006cH .pdata                  DATA
+ 0004:00000000 00000078H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       BootSectorWriteProtectEntryPoint 00000000000002c8 f   BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0001:00000254       GptProtectionEnable        00000000000004f4 f   BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0001:00000268       LegacyBootSectorWriteProtectEnable 0000000000000508 f   BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0001:00000398       BlockIoWriteProtectionCheck 0000000000000638 f   BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0001:000007f8       ValidateGptHeader          0000000000000a98 f   BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0001:00000940       VerifyPartionTables        0000000000000be0 f   BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0001:00000b60       FindGptInBlockIO           0000000000000e00 f   BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0001:00000d20       MemCmp                     0000000000000fc0 f   AmiDxeLib:Memory.obj
+ 0001:00000d98       LibInitStatusCodePtr       0000000000001038 f   AmiDxeLib:EfiLib.obj
+ 0001:00000e1c       LibReportStatusCode        00000000000010bc f   AmiDxeLib:EfiLib.obj
+ 0001:00000e90       DummyFunction              0000000000001130 f   AmiDxeLib:EfiLib.obj
+ 0001:00000ea0       CPULib_CpuID               0000000000001140 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000ee0       memset                     0000000000001180     AmiDxeLib:MemSet.obj
+ 0001:00000eee       MemSetAsm                  000000000000118e f   AmiDxeLib:MemSet.obj
+ 0001:00000f40       MemCpyAsm                  00000000000011e0 f   AmiDxeLib:MemCpy.obj
+ 0001:00000f40       memcpy                     00000000000011e0     AmiDxeLib:MemCpy.obj
+ 0001:00000ff0       GetCpuTimer                0000000000001290 f   AmiDxeLib:GetCpuTimer.obj
+ 0002:00000000       gEfiBlockIoProtocolGuid    00000000000012a0     BootSectorWriteProtect:AutoGen.obj
+ 0002:00000010       gEfiLegacyBiosProtocolGuid 00000000000012b0     BootSectorWriteProtect:AutoGen.obj
+ 0002:00000020       gEfiLegacyBiosExtProtocolGuid 00000000000012c0     BootSectorWriteProtect:AutoGen.obj
+ 0002:00000030       gEfiGraphicsOutputProtocolGuid 00000000000012d0     BootSectorWriteProtect:AutoGen.obj
+ 0002:00000040       gEfiConsoleControlProtocolGuid 00000000000012e0     BootSectorWriteProtect:AutoGen.obj
+ 0002:00000050       gAmiBlockIoWriteProtectionProtocolGuid 00000000000012f0     BootSectorWriteProtect:AutoGen.obj
+ 0002:00000060       EfiErrorStatus             0000000000001300     AmiDxeLib:StdLibC.obj
+ 0002:000003a0       PiErrorStatus              0000000000001640     AmiDxeLib:StdLibC.obj
+ 0002:000003f0       AmiErrorStatus             0000000000001690     AmiDxeLib:StdLibC.obj
+ 0002:00000430       EfiWarningStatus           00000000000016d0     AmiDxeLib:StdLibC.obj
+ 0002:000004a0       PiWarningStatus            0000000000001740     AmiDxeLib:StdLibC.obj
+ 0002:000004e8       EfiUnknown                 0000000000001788     AmiDxeLib:StdLibC.obj
+ 0002:000005c8       MsgLine1                   0000000000001868     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:000005d0       MsgLine2                   0000000000001870     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:000005e0       _gUefiDriverRevision       0000000000001880     BootSectorWriteProtect:AutoGen.obj
+ 0002:000005e8       ??_C@_1CE@GDDBCDOL@?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAi?$AAn?$AAu?$AAe?$AA?5?$AA?$CI?$AAY?$AA?1?$AAN?$AA?$CJ?$AA?$DP?$AA?5?$AA?$AA@ 0000000000001888     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:00000610       ??_C@_1DA@MGEHJFJJ@?$AAB?$AAo?$AAo?$AAt?$AAS?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAW?$AAr?$AAi?$AAt?$AAe?$AA?5?$AA?$CB?$AA?$CB?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$AA@ 00000000000018b0     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:00000640       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 00000000000018e0     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:0000064c       ??_C@_04FPEIDNCA@$PV$?$AA@ 00000000000018ec     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:00000658       ??_C@_08BOGKMBPC@EFI?5PART?$AA@ 00000000000018f8     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:00000680       gGptWriteNotifyReg         0000000000001920     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:00000688       GptProtectionEnabled       0000000000001928     BootSectorWriteProtect:BootSectorWriteProtect.obj
+ 0002:00000690       gImageHandle               0000000000001930     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000698       gST                        0000000000001938     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006a0       gBS                        0000000000001940     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006e8       pST                        0000000000001988     AmiDxeLib:EfiLib.obj
+ 0002:000006f0       pBS                        0000000000001990     AmiDxeLib:EfiLib.obj
+ 0002:000006f8       pRS                        0000000000001998     AmiDxeLib:EfiLib.obj
+ 0002:00000700       pSmst                      00000000000019a0     AmiDxeLib:EfiLib.obj
+ 0002:00000708       TheImageHandle             00000000000019a8     AmiDxeLib:EfiLib.obj
+ 0002:00000710       AmiBlockIoWriteProtectionProtocol 00000000000019b0     <common>
+ 0002:00000720       GptBlockIOList             00000000000019c0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

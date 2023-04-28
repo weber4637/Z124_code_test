@@ -1,0 +1,57 @@
+ EsrtDxe
+
+ Timestamp is 6448e7f7 (Wed Apr 26 16:59:35 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000011ddH .text                   CODE
+ 0002:00000000 000000a0H .data                   DATA
+ 0002:000000a0 0000002eH .rdata                  DATA
+ 0002:000000e0 00000080H .bss                    DATA
+ 0003:00000000 000000c0H .pdata                  DATA
+ 0004:00000000 000000c0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000110       EsrtDxeGetEsrtEntry        00000000000003b0 f   EsrtDxe:EsrtDxe.obj
+ 0001:000001e0       EsrtDxeUpdateEsrtEntry     0000000000000480 f   EsrtDxe:EsrtDxe.obj
+ 0001:0000029c       EsrtDxeUnRegisterEsrtEntry 000000000000053c f   EsrtDxe:EsrtDxe.obj
+ 0001:000002fc       EsrtDxeRegisterEsrtEntry   000000000000059c f   EsrtDxe:EsrtDxe.obj
+ 0001:00000388       EsrtDxeSyncFmp             0000000000000628 f   EsrtDxe:EsrtDxe.obj
+ 0001:00000834       EsrtDxeLockEsrtRepository  0000000000000ad4 f   EsrtDxe:EsrtDxe.obj
+ 0001:00000890       EsrtReadyToBootEventNotify 0000000000000b30 f   EsrtDxe:EsrtDxe.obj
+ 0001:00000a94       GetEsrtEntry               0000000000000d34 f   EsrtDxe:EsrtImpl.obj
+ 0001:00000b8c       InsertEsrtEntry            0000000000000e2c f   EsrtDxe:EsrtImpl.obj
+ 0001:00000d44       DeleteEsrtEntry            0000000000000fe4 f   EsrtDxe:EsrtImpl.obj
+ 0001:00000e70       UpdateEsrtEntry            0000000000001110 f   EsrtDxe:EsrtImpl.obj
+ 0001:00000fb0       SetEsrtEntryFromFmpInfo    0000000000001250 f   EsrtDxe:EsrtImpl.obj
+ 0001:00001008       InternalAllocatePool       00000000000012a8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001038       AllocateZeroPool           00000000000012d8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001064       EfiAcquireLockOrFail       0000000000001304 f   UefiLib:UefiLib.obj
+ 0001:000010a0       GetVariable2               0000000000001340 f   UefiLib:UefiLib.obj
+ 0001:00001180       InternalMemCopyMem         0000000000001420     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000011c0       InternalMemZeroMem         0000000000001460     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gEfiCallerIdGuid           0000000000001480     EsrtDxe:AutoGen.obj
+ 0002:00000010       gEfiSystemResourceTableGuid 0000000000001490     EsrtDxe:AutoGen.obj
+ 0002:00000020       gEfiEventReadyToBootGuid   00000000000014a0     EsrtDxe:AutoGen.obj
+ 0002:00000030       gEfiDxeServicesTableGuid   00000000000014b0     EsrtDxe:AutoGen.obj
+ 0002:00000040       gEfiFirmwareManagementProtocolGuid 00000000000014c0     EsrtDxe:AutoGen.obj
+ 0002:00000050       gEsrtManagementProtocolGuid 00000000000014d0     EsrtDxe:AutoGen.obj
+ 0002:00000060       gEdkiiVariableLockProtocolGuid 00000000000014e0     EsrtDxe:AutoGen.obj
+ 0002:00000070       mEsrtManagementProtocolTemplate 00000000000014f0     EsrtDxe:EsrtDxe.obj
+ 0002:000000a0       _gUefiDriverRevision       0000000000001520     EsrtDxe:AutoGen.obj
+ 0002:000000a8       ??_C@_1BA@NGBJEECD@?$AAE?$AAs?$AAr?$AAt?$AAF?$AAm?$AAp?$AA?$AA@ 0000000000001528     EsrtDxe:EsrtDxe.obj
+ 0002:000000b8       ??_C@_1BG@FOPMJOAG@?$AAE?$AAs?$AAr?$AAt?$AAN?$AAo?$AAn?$AAF?$AAm?$AAp?$AA?$AA@ 0000000000001538     EsrtDxe:EsrtDxe.obj
+ 0002:000000e0       gImageHandle               0000000000001560     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000e8       gST                        0000000000001568     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000f0       gBS                        0000000000001570     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000000f8       gRT                        0000000000001578     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000100       gDS                        0000000000001580     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000120       mPrivate                   00000000000015a0     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

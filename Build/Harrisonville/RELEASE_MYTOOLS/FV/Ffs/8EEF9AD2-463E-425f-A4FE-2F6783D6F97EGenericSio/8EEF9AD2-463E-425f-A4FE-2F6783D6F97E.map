@@ -1,0 +1,182 @@
+ GenericSio
+
+ Timestamp is 6448e7f2 (Wed Apr 26 16:59:30 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00005270H .text                   CODE
+ 0002:00000000 00000720H .data                   DATA
+ 0002:00000720 00000181H .rdata                  DATA
+ 0002:000008a8 00000118H .bss                    DATA
+ 0003:00000000 00000384H .pdata                  DATA
+ 0004:00000000 0000034cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000028       UpdateIsaMask              00000000000002c8 f   GenericSio:GenericSio.obj
+ 0001:000001bc       CountCreateIncludeReg      000000000000045c f   GenericSio:GenericSio.obj
+ 0001:00000298       ProcessCompSioData         0000000000000538 f   GenericSio:GenericSio.obj
+ 0001:00000368       InitSioDataStructure       0000000000000608 f   GenericSio:GenericSio.obj
+ 0001:0000082c       GetDsdt                    0000000000000acc f   GenericSio:GenericSio.obj
+ 0001:000009e0       SioSetupData               0000000000000c80 f   GenericSio:GenericSio.obj
+ 0001:00000b9c       SioCfgMode                 0000000000000e3c f   GenericSio:GenericSio.obj
+ 0001:00000cb8       SaveSioRegs                0000000000000f58 f   GenericSio:GenericSio.obj
+ 0001:00000d40       AmiSioComponentNameGetControllerName 0000000000000fe0 f   GenericSio:GenericSio.obj
+ 0001:00000d4c       AmiSioComponentNameGetDriverName 0000000000000fec f   GenericSio:GenericSio.obj
+ 0001:00000dd8       AmiSioSupported            0000000000001078 f   GenericSio:GenericSio.obj
+ 0001:00001074       SioRegister                0000000000001314 f   GenericSio:GenericSio.obj
+ 0001:000010b8       DevSelect                  0000000000001358 f   GenericSio:GenericSio.obj
+ 0001:000010f4       DevEnable                  0000000000001394 f   GenericSio:GenericSio.obj
+ 0001:00001158       GetPriResources            00000000000013f8 f   GenericSio:GenericSio.obj
+ 0001:000011b8       AssignIo                   0000000000001458 f   GenericSio:GenericSio.obj
+ 0001:00001220       ApplyDmaRes                00000000000014c0 f   GenericSio:GenericSio.obj
+ 0001:000013f8       ApplyIrqRes                0000000000001698 f   GenericSio:GenericSio.obj
+ 0001:00001660       ApplyFixedIoRes            0000000000001900 f   GenericSio:GenericSio.obj
+ 0001:000017b0       ApplyIoRes                 0000000000001a50 f   GenericSio:GenericSio.obj
+ 0001:0000195c       FreeIrq                    0000000000001bfc f   GenericSio:GenericSio.obj
+ 0001:00001a00       FreeDma                    0000000000001ca0 f   GenericSio:GenericSio.obj
+ 0001:00001aa0       FreeIo                     0000000000001d40 f   GenericSio:GenericSio.obj
+ 0001:00001ba4       FreeResources              0000000000001e44 f   GenericSio:GenericSio.obj
+ 0001:00001d04       ApplyResources             0000000000001fa4 f   GenericSio:GenericSio.obj
+ 0001:00001ed0       AssignSharedResources      0000000000002170 f   GenericSio:GenericSio.obj
+ 0001:00001ffc       AssignResources            000000000000229c f   GenericSio:GenericSio.obj
+ 0001:00002140       StartSioChildDevice        00000000000023e0 f   GenericSio:GenericSio.obj
+ 0001:00002208       ReserveIrq                 00000000000024a8 f   GenericSio:GenericSio.obj
+ 0001:00002328       InitSioDevice              00000000000025c8 f   GenericSio:GenericSio.obj
+ 0001:0000258c       AmiSioStart                000000000000282c f   GenericSio:GenericSio.obj
+ 0001:00002998       StopSioDevice              0000000000002c38 f   GenericSio:GenericSio.obj
+ 0001:00002a6c       AmiSioStop                 0000000000002d0c f   GenericSio:GenericSio.obj
+ 0001:00002bc8       AmiSioRegister             0000000000002e68 f   GenericSio:GenericSio.obj
+ 0001:00002c68       AmiSioCRS                  0000000000002f08 f   GenericSio:GenericSio.obj
+ 0001:00002cd8       EfiSioRegisterAccess       0000000000002f78 f   GenericSio:GenericSio.obj
+ 0001:00002d08       EfiSioGetRes               0000000000002fa8 f   GenericSio:GenericSio.obj
+ 0001:00002de4       EfiSioGetResourcces        0000000000003084 f   GenericSio:GenericSio.obj
+ 0001:00002e34       EfiSioSetResources         00000000000030d4 f   GenericSio:GenericSio.obj
+ 0001:00002ee8       EfiSioPrs                  0000000000003188 f   GenericSio:GenericSio.obj
+ 0001:00003034       EfiSioPossibleResources    00000000000032d4 f   GenericSio:GenericSio.obj
+ 0001:00003080       EfiSioModify               0000000000003320 f   GenericSio:GenericSio.obj
+ 0001:00003148       AmiSioPRS                  00000000000033e8 f   GenericSio:GenericSio.obj
+ 0001:00003170       CallbackReadyToBoot        0000000000003410 f   GenericSio:GenericSio.obj
+ 0001:0000324c       CreateSioDevStatusVar      00000000000034ec f   GenericSio:GenericSio.obj
+ 0001:000034a8       DisableDevInSioDevStatusVar 0000000000003748 f   GenericSio:GenericSio.obj
+ 0001:000035c4       GenericSioEntryPoint       0000000000003864 f   GenericSio:GenericSio.obj
+ 0001:00003804       ASLM_IRQ                   0000000000003aa4 f   AmiDxeLib:AcpiRes.obj
+ 0001:000038ac       ASLM_IRQNoFlags            0000000000003b4c f   AmiDxeLib:AcpiRes.obj
+ 0001:0000392c       ASLM_DMA                   0000000000003bcc f   AmiDxeLib:AcpiRes.obj
+ 0001:000039d4       ASLM_StartDependentFn      0000000000003c74 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003aa4       ASLM_FixedIO               0000000000003d44 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003ad8       reallocItemLst             0000000000003d78 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003b80       AppendItemLst              0000000000003e20 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003bc4       ClearItemLst               0000000000003e64 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003c28       CopyItemLst                0000000000003ec8 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003d04       GetPackageLen              0000000000003fa4 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003d74       GetAslObj                  0000000000004014 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003f60       AmiIsaIrqMask              0000000000004200 f   AmiDxeLib:AcpiRes.obj
+ 0001:00003fb8       AmiIsaDmaMask              0000000000004258 f   AmiDxeLib:AcpiRes.obj
+ 0001:00004008       LibGetDsdt                 00000000000042a8 f   AmiDxeLib:AcpiRes.obj
+ 0001:000040ec       GetEfiConfigurationTable   000000000000438c f   AmiDxeLib:EfiLib.obj
+ 0001:00004134       LibInitStatusCodePtr       00000000000043d4 f   AmiDxeLib:EfiLib.obj
+ 0001:000041b8       LibReportStatusCode        0000000000004458 f   AmiDxeLib:EfiLib.obj
+ 0001:0000422c       Malloc                     00000000000044cc f   AmiDxeLib:EfiLib.obj
+ 0001:00004258       MallocZ                    00000000000044f8 f   AmiDxeLib:EfiLib.obj
+ 0001:00004298       DPLength                   0000000000004538 f   AmiDxeLib:EfiLib.obj
+ 0001:000042dc       DPAddNode                  000000000000457c f   AmiDxeLib:EfiLib.obj
+ 0001:000043b4       DPCopy                     0000000000004654 f   AmiDxeLib:EfiLib.obj
+ 0001:000043fc       DummyFunction              000000000000469c f   AmiDxeLib:EfiLib.obj
+ 0001:00004400       MemCmp                     00000000000046a0 f   AmiDxeLib:Memory.obj
+ 0001:0000447c       ItoaHelper                 000000000000471c f   AmiDxeLib:StdLibC.obj
+ 0001:000044f0       StrtolEx                   0000000000004790 f   AmiDxeLib:StdLibC.obj
+ 0001:000045b8       GetStatusCodeString        0000000000004858 f   AmiDxeLib:StdLibC.obj
+ 0001:000046a0       Swprintf                   0000000000004940 f   AmiDxeLib:StdLibC.obj
+ 0001:000046c8       Swprintf_s_va_list         0000000000004968 f   AmiDxeLib:StdLibC.obj
+ 0001:00004b1c       Swprintf_s                 0000000000004dbc f   AmiDxeLib:StdLibC.obj
+ 0001:00004b3c       GetSioLdVarName            0000000000004ddc f   AmiSioDxeLib:AmiSioDxeLib.obj
+ 0001:00004bc0       GetPrsFromTable            0000000000004e60 f   AmiSioDxeLib:AmiSioDxeLib.obj
+ 0001:00004d34       SioDxeLibGetPrsFromAml     0000000000004fd4 f   AmiSioDxeLib:AmiSioDxeLib.obj
+ 0001:00004f60       SioLibLaunchCompRoutine    0000000000005200 f   AmiSioDxeLib:AmiSioDxeLib.obj
+ 0001:00004f98       SioLibLaunchInitRoutine    0000000000005238 f   AmiSioDxeLib:AmiSioDxeLib.obj
+ 0001:00005020       SioLibLaunchResourceRoutine 00000000000052c0 f   AmiSioDxeLib:AmiSioDxeLib.obj
+ 0001:000050b4       AmiSdlInitBoardInfo        0000000000005354 f   AmiSdlLib:AmiSdlLib.obj
+ 0001:00005110       GetCpuTimer                00000000000053b0 f   AmiDxeLib:GetCpuTimer.obj
+ 0001:00005120       CPULib_CpuID               00000000000053c0 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00005160       memset                     0000000000005400     AmiDxeLib:MemSet.obj
+ 0001:0000516e       MemSetAsm                  000000000000540e f   AmiDxeLib:MemSet.obj
+ 0001:000051c0       MemCpyAsm                  0000000000005460 f   AmiDxeLib:MemCpy.obj
+ 0001:000051c0       memcpy                     0000000000005460     AmiDxeLib:MemCpy.obj
+ 0002:00000000       gEfiDxeServicesTableGuid   0000000000005520     GenericSio:AutoGen.obj
+ 0002:00000010       gEfiAcpiTableGuid          0000000000005530     GenericSio:AutoGen.obj
+ 0002:00000020       gAmiBoardSioInitProtocolGuid 0000000000005540     GenericSio:AutoGen.obj
+ 0002:00000030       gEfiSioProtocolGuid        0000000000005550     GenericSio:AutoGen.obj
+ 0002:00000040       gAmiSioPortCompatibilityProtocolGuid 0000000000005560     GenericSio:AutoGen.obj
+ 0002:00000050       gAmiSioSmmHandoffProtocolGuid 0000000000005570     GenericSio:AutoGen.obj
+ 0002:00000060       gEfiComponentName2ProtocolGuid 0000000000005580     GenericSio:AutoGen.obj
+ 0002:00000070       gEfiSmmCommunicationProtocolGuid 0000000000005590     GenericSio:AutoGen.obj
+ 0002:00000080       gEfiAmiSioProtocolGuid     00000000000055a0     GenericSio:AutoGen.obj
+ 0002:00000090       gEfiDriverBindingProtocolGuid 00000000000055b0     GenericSio:AutoGen.obj
+ 0002:000000a0       gEfiDevicePathProtocolGuid 00000000000055c0     GenericSio:AutoGen.obj
+ 0002:000000b0       gEfiPciIoProtocolGuid      00000000000055d0     GenericSio:AutoGen.obj
+ 0002:000000c0       gEfiVariableWriteArchProtocolGuid 00000000000055e0     GenericSio:AutoGen.obj
+ 0002:000000d0       gAmiBoardInfo2ProtocolGuid 00000000000055f0     GenericSio:AutoGen.obj
+ 0002:00000100       EfiErrorStatus             0000000000005620     AmiDxeLib:StdLibC.obj
+ 0002:00000440       PiErrorStatus              0000000000005960     AmiDxeLib:StdLibC.obj
+ 0002:00000490       AmiErrorStatus             00000000000059b0     AmiDxeLib:StdLibC.obj
+ 0002:000004d0       EfiWarningStatus           00000000000059f0     AmiDxeLib:StdLibC.obj
+ 0002:00000540       PiWarningStatus            0000000000005a60     AmiDxeLib:StdLibC.obj
+ 0002:00000588       EfiUnknown                 0000000000005aa8     AmiDxeLib:StdLibC.obj
+ 0002:00000680       gSioDevStatusVarGuid       0000000000005ba0     GenericSio:GenericSio.obj
+ 0002:00000690       gDriverName                0000000000005bb0     GenericSio:GenericSio.obj
+ 0002:00000698       gAmiSioDriverBinding       0000000000005bb8     GenericSio:GenericSio.obj
+ 0002:000006c8       gAmiSioComponentName       0000000000005be8     GenericSio:GenericSio.obj
+ 0002:000006e0       gAmiSioProtocol            0000000000005c00     GenericSio:GenericSio.obj
+ 0002:000006f8       gEfiSioProtocol            0000000000005c18     GenericSio:GenericSio.obj
+ 0002:00000720       CompatibleSioDeviceOrder   0000000000005c40     GenericSio:GenericSio.obj
+ 0002:00000724       _gUefiDriverRevision       0000000000005c44     GenericSio:AutoGen.obj
+ 0002:00000728       ??_C@_05JJLPJMLG@en?9US?$AA@ 0000000000005c48     GenericSio:GenericSio.obj
+ 0002:00000730       ??_C@_1EC@OPONOCLP@?$AAA?$AAM?$AAI?$AA?5?$AAG?$AAe?$AAn?$AAe?$AAr?$AAi?$AAc?$AA?5?$AAL?$AAP?$AAC?$AA?5?$AAS?$AAu?$AAp?$AAe?$AAr?$AA?5?$AAI?$AA?1?$AAO?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr@ 0000000000005c50     GenericSio:GenericSio.obj
+ 0002:00000778       ??_C@_1CG@CBKPDEEG@?$AAS?$AAI?$AAO?$AA_?$AAD?$AAE?$AAV?$AA_?$AAS?$AAT?$AAA?$AAT?$AAU?$AAS?$AA_?$AAV?$AAA?$AAR?$AA?$AA@ 0000000000005c98     GenericSio:GenericSio.obj
+ 0002:000007a0       ??_C@_1BG@KHOCGFE@?$AAI?$AAs?$AAa?$AAI?$AAr?$AAq?$AAM?$AAa?$AAs?$AAk?$AA?$AA@ 0000000000005cc0     AmiDxeLib:AcpiRes.obj
+ 0002:000007b8       ??_C@_1BG@DPAKABGL@?$AAI?$AAs?$AAa?$AAD?$AAm?$AAa?$AAM?$AAa?$AAs?$AAk?$AA?$AA@ 0000000000005cd8     AmiDxeLib:AcpiRes.obj
+ 0002:000007d0       ??_C@_0M@LCCONGAO@EFI_SUCCESS?$AA@ 0000000000005cf0     AmiDxeLib:StdLibC.obj
+ 0002:000007e0       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 0000000000005d00     AmiDxeLib:StdLibC.obj
+ 0002:00000848       ??_C@_1O@PMJNFNEJ@?$AA?$CF?$AAS?$AA?$CI?$AA?$CF?$AAX?$AA?$CJ?$AA?$AA@ 0000000000005d68     AmiDxeLib:StdLibC.obj
+ 0002:00000858       ??_C@_15MAOEGKJF@?$AA?$CF?$AAS?$AA?$AA@ 0000000000005d78     AmiDxeLib:StdLibC.obj
+ 0002:00000860       ??_C@_1BM@OHGHLJMJ@?$AAP?$AAN?$AAP?$AA?$CF?$AA0?$AA4?$AAX?$AA_?$AA?$CF?$AAX?$AA_?$AAV?$AAV?$AA?$AA@ 0000000000005d80     AmiSioDxeLib:AmiSioDxeLib.obj
+ 0002:00000880       ??_C@_1BM@IOCDJDP@?$AAP?$AAN?$AAP?$AA?$CF?$AA0?$AA4?$AAX?$AA_?$AA?$CF?$AAX?$AA_?$AAN?$AAV?$AA?$AA@ 0000000000005da0     AmiSioDxeLib:AmiSioDxeLib.obj
+ 0002:0000089c       ??_C@_04LGDNKLBD@_PRS?$AA@ 0000000000005dbc     AmiSioDxeLib:AmiSioDxeLib.obj
+ 0002:000008a8       gPDsdt                     0000000000005dc8     GenericSio:GenericSio.obj
+ 0002:000008b0       mAcpiEvent                 0000000000005dd0     GenericSio:GenericSio.obj
+ 0002:000008b8       mVarWrite                  0000000000005dd8     GenericSio:GenericSio.obj
+ 0002:000008b9       gAvailableDmaChnl          0000000000005dd9     GenericSio:GenericSio.obj
+ 0002:000008bc       gAvailableIsaIrq           0000000000005ddc     GenericSio:GenericSio.obj
+ 0002:000008c0       gSpio                      0000000000005de0     GenericSio:GenericSio.obj
+ 0002:000008c8       gSpioCount                 0000000000005de8     GenericSio:GenericSio.obj
+ 0002:000008d0       gSioInitProtocol           0000000000005df0     GenericSio:GenericSio.obj
+ 0002:000008d8       mIsaEvent                  0000000000005df8     GenericSio:GenericSio.obj
+ 0002:000008e0       gDxeSvcTbl                 0000000000005e00     GenericSio:GenericSio.obj
+ 0002:000008e8       gUsedSioIrq                0000000000005e08     GenericSio:GenericSio.obj
+ 0002:000008ec       gReservedIrq               0000000000005e0c     GenericSio:GenericSio.obj
+ 0002:000008f0       gEvtReadyToBoot            0000000000005e10     GenericSio:GenericSio.obj
+ 0002:000008f8       gSioCompProtocol           0000000000005e18     GenericSio:GenericSio.obj
+ 0002:00000900       gAmiSioSmmHandoff          0000000000005e20     GenericSio:GenericSio.obj
+ 0002:00000910       gImageHandle               0000000000005e30     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000918       gST                        0000000000005e38     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000920       gBS                        0000000000005e40     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000968       gDsdtPtr                   0000000000005e88     AmiSioDxeLib:AmiSioDxeLib.obj
+ 0002:00000970       gAmiBoardInfo2Protocol     0000000000005e90     AmiSdlLib:AmiSdlLib.obj
+ 0002:00000978       gSdlPciData                0000000000005e98     AmiSdlLib:AmiSdlLib.obj
+ 0002:00000980       gSdlSioData                0000000000005ea0     AmiSdlLib:AmiSdlLib.obj
+ 0002:00000988       pST                        0000000000005ea8     AmiDxeLib:EfiLib.obj
+ 0002:00000990       pBS                        0000000000005eb0     AmiDxeLib:EfiLib.obj
+ 0002:00000998       pRS                        0000000000005eb8     AmiDxeLib:EfiLib.obj
+ 0002:000009a0       pSmst                      0000000000005ec0     AmiDxeLib:EfiLib.obj
+ 0002:000009a8       TheImageHandle             0000000000005ec8     AmiDxeLib:EfiLib.obj
+ 0002:000009b0       gSmmCommunicationBuffer    0000000000005ed0     <common>
+ 0002:000009b8       mIsaReg                    0000000000005ed8     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

@@ -1,0 +1,38 @@
+ IPMIPlatformID
+
+ Timestamp is 6448e7cf (Wed Apr 26 16:58:55 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000024fH .text                   CODE
+ 0002:00000000 000068bcH .data                   DATA
+ 0002:000068c0 00000000H .rdata                  DATA
+ 0002:000068c0 00000000H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000026       _IPMIPlatformID_entry      00000266 f   IPMIPlatformID:IPMIPlatformID.obj
+ 0001:000000ac       _PeiServicesLocatePpi      000002ec f   PeiServicesLib:PeiServicesLib.obj
+ 0001:000000c8       _GetPlatformInfo           00000308 f   PeiPlatformHookLib:PeiPlatformHooklib.obj
+ 0001:00000147       _GetPeiServicesTablePointer 00000387 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000170       _InternalMemCopyMem        000003b0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000001b0       _InternalMemZeroMem        000003f0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000001d0       _InternalMemCompareMem     00000410     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000001f0       _InternalMemSetMem         00000430     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000210       _InternalMemSetMem32       00000450     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000230       _InternalMemSetMem64       00000470     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gPlatformInfoHobGuid      000004a0     IPMIPlatformID:AutoGen.obj
+ 0002:00000010       _gEfiPeiIpmiTransportPpiGuid 000004b0     IPMIPlatformID:AutoGen.obj
+ 0002:00000038       _PchLpRprDidTable          000004d8     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000050       _PchHRprDidTable           000004f0     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000002e0       _mPchLpSataPortResetToGpioMap 00000780     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000002f8       _mPchHSataPortResetToGpioMap 00000798     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000338       _mPchLpSataDevSlpPinToGpioMap 000007d8     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00000350       _mPchHSataDevSlpPinToGpioMap 000007f0     PeiDxeSmmGpioLib:PchSklGpioData.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

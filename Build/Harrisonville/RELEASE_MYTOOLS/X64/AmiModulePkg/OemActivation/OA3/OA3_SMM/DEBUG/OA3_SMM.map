@@ -1,0 +1,64 @@
+ OA3_SMM
+
+ Timestamp is 6448e7f2 (Wed Apr 26 16:59:30 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000a2aH .text                   CODE
+ 0002:00000000 000005b8H .data                   DATA
+ 0002:000005c0 00000028H .rdata                  DATA
+ 0002:000005f0 000001a1H .bss                    DATA
+ 0003:00000000 00000060H .pdata                  DATA
+ 0004:00000000 0000005cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000fc       Oa3UpdateAcpiTable         000000000000037c f   OA3_SMM:OA3_SMM.obj
+ 0001:00000330       SwSmiOa3Function           00000000000005b0 f   OA3_SMM:OA3_SMM.obj
+ 0001:000003e0       InSmmFunction              0000000000000660 f   OA3_SMM:OA3_SMM.obj
+ 0001:0000047c       OA3_SMM_EntryPoint         00000000000006fc f   OA3_SMM:OA3_SMM.obj
+ 0001:000005b4       InternalAssertJumpBuffer   0000000000000834 f   BaseLib:SetJump.obj
+ 0001:000005b8       MemCmp                     0000000000000838 f   AmiDxeLib:Memory.obj
+ 0001:00000634       LibInitStatusCodePtr       00000000000008b4 f   AmiDxeLib:EfiLib.obj
+ 0001:00000678       TraceGetAmiDebugServicesProtocolInstance 00000000000008f8 f   AmiDxeLib:EfiLib.obj
+ 0001:0000075c       GetSmstConfigurationTable  00000000000009dc f   AmiDxeLib:EfiLib.obj
+ 0001:000007c0       SetJump                    0000000000000a40     BaseLib:SetJump.obj
+ 0001:00000850       InternalLongJump           0000000000000ad0     BaseLib:LongJump.obj
+ 0001:000008d0       CPULib_CpuID               0000000000000b50 f   AmiDxeLib:CpuLib_CpuId.obj
+ 0001:00000910       memset                     0000000000000b90     AmiDxeLib:MemSet.obj
+ 0001:0000091e       MemSetAsm                  0000000000000b9e f   AmiDxeLib:MemSet.obj
+ 0001:00000970       MemCpyAsm                  0000000000000bf0 f   AmiDxeLib:MemCpy.obj
+ 0001:00000970       memcpy                     0000000000000bf0     AmiDxeLib:MemCpy.obj
+ 0001:00000a20       GetCpuTimer                0000000000000ca0 f   AmiDxeLib:GetCpuTimer.obj
+ 0002:00000000       gEfiSmmBase2ProtocolGuid   0000000000000cc0     OA3_SMM:AutoGen.obj
+ 0002:00000010       gAmiSmmDebugServiceProtocolGuid 0000000000000cd0     OA3_SMM:AutoGen.obj
+ 0002:00000020       gAmiDebugServiceProtocolGuid 0000000000000ce0     OA3_SMM:AutoGen.obj
+ 0002:00000030       gAmiSmmBufferValidationProtocolGuid 0000000000000cf0     OA3_SMM:AutoGen.obj
+ 0002:00000040       EfiErrorStatus             0000000000000d00     AmiDxeLib:StdLibC.obj
+ 0002:00000380       PiErrorStatus              0000000000001040     AmiDxeLib:StdLibC.obj
+ 0002:000003d0       AmiErrorStatus             0000000000001090     AmiDxeLib:StdLibC.obj
+ 0002:00000410       EfiWarningStatus           00000000000010d0     AmiDxeLib:StdLibC.obj
+ 0002:00000480       PiWarningStatus            0000000000001140     AmiDxeLib:StdLibC.obj
+ 0002:000004c8       EfiUnknown                 0000000000001188     AmiDxeLib:StdLibC.obj
+ 0002:000005a8       SmmRsTableGuid             0000000000001268     AmiDxeLib:EfiLib.obj
+ 0002:000005c0       _gUefiDriverRevision       0000000000001280     OA3_SMM:AutoGen.obj
+ 0002:000005c8       ??_C@_1CA@LKPJACBJ@?$AAO?$AAA?$AA3?$AAM?$AAS?$AAD?$AAM?$AAv?$AAa?$AAr?$AAi?$AAa?$AAb?$AAl?$AAe?$AA?$AA@ 0000000000001288     OA3_SMM:OA3_SMM.obj
+ 0002:000006f0       gImageHandle               00000000000013b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006f8       gST                        00000000000013b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000700       gBS                        00000000000013c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000708       gSmst                      00000000000013c8     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000758       SmmAmiBufferValidationLibValidationProtocol 0000000000001418     SmmAmiBufferValidationLib:SmmAmiBufferValidationLib.obj
+ 0002:00000760       pST                        0000000000001420     AmiDxeLib:EfiLib.obj
+ 0002:00000768       pBS                        0000000000001428     AmiDxeLib:EfiLib.obj
+ 0002:00000770       pRS                        0000000000001430     AmiDxeLib:EfiLib.obj
+ 0002:00000778       pSmmBase                   0000000000001438     AmiDxeLib:EfiLib.obj
+ 0002:00000780       pSmst                      0000000000001440     AmiDxeLib:EfiLib.obj
+ 0002:00000788       TheImageHandle             0000000000001448     AmiDxeLib:EfiLib.obj
+ 0002:00000790       mPerformanceMeasurementEnabled 0000000000001450     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

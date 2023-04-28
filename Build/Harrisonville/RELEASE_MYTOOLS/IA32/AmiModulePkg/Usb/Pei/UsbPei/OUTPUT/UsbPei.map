@@ -1,0 +1,156 @@
+ UsbPei
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000656dH .text                   CODE
+ 0002:00000000 0000031cH .data                   DATA
+ 0002:0000031c 000000b3H .rdata                  DATA
+ 0002:000003d0 00000008H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000014       _InitializeUsbMassDevice   00000254 f   UsbPei:UsbPei.obj
+ 0001:000000e9       _InitializeUsbHostDevice   00000329 f   UsbPei:UsbPei.obj
+ 0001:00000155       _NotifyOnRecoveryCapsuleLoaded 00000395 f   UsbPei:UsbPei.obj
+ 0001:000001e3       _PeimInitializeUsb         00000423 f   UsbPei:UsbPeim.obj
+ 0001:00000227       _PeiHubEnumeration         00000467 f   UsbPei:UsbPeim.obj
+ 0001:00000928       _ResetRootPort             00000b68 f   UsbPei:UsbPeim.obj
+ 0001:000009a6       _GetMaxLun                 00000be6 f   UsbPei:UsbBotPeim.obj
+ 0001:000009f4       _InitUsbBot                00000c34 f   UsbPei:UsbBotPeim.obj
+ 0001:00000b2e       _BotGetNumberOfBlockDevices 00000d6e f   UsbPei:UsbBotPeim.obj
+ 0001:00000b3b       _BotGetMediaInfo           00000d7b f   UsbPei:UsbBotPeim.obj
+ 0001:00000b61       _PeiBotDetectMedia         00000da1 f   UsbPei:UsbBotPeim.obj
+ 0001:00000c69       _BotReadBlocks             00000ea9 f   UsbPei:UsbBotPeim.obj
+ 0001:00000d98       _BotCheckDeviceReady       00000fd8 f   UsbPei:UsbBotPeim.obj
+ 0001:00000e87       _XhciPeiUsbEntryPoint      000010c7 f   UsbPei:PeiXhci.obj
+ 0001:000017a0       _XhciAllocateScratchpadBuffers 000019e0 f   UsbPei:PeiXhci.obj
+ 0001:00001914       _XhciInitHC                00001b54 f   UsbPei:PeiXhci.obj
+ 0001:00001f24       _XhciAddressDevice         00002164 f   UsbPei:PeiXhci.obj
+ 0001:00002462       _XhciHcPreConfigureDevice  000026a2 f   UsbPei:PeiXhci.obj
+ 0001:00002578       _UpdateDeviceMap           000027b8 f   UsbPei:PeiXhci.obj
+ 0001:00002605       _GetSlotId                 00002845 f   UsbPei:PeiXhci.obj
+ 0001:00002656       _XhciResetEndpoint         00002896 f   UsbPei:PeiXhci.obj
+ 0001:000026b9       _XhciClearStalledEp        000028f9 f   UsbPei:PeiXhci.obj
+ 0001:000027ad       _XhciClearEndpointState    000029ed f   UsbPei:PeiXhci.obj
+ 0001:000028c3       _XhciUpdateEp0MaxPacket    00002b03 f   UsbPei:PeiXhci.obj
+ 0001:000029c2       _XhciRingDoorbell          00002c02 f   UsbPei:PeiXhci.obj
+ 0001:00002a7f       _XhciHcControlTransfer     00002cbf f   UsbPei:PeiXhci.obj
+ 0001:00002ef3       _XhciHcBulkTransfer        00003133 f   UsbPei:PeiXhci.obj
+ 0001:00003343       _XhciHcSyncInterruptTransfer 00003583 f   UsbPei:PeiXhci.obj
+ 0001:0000347a       _XhciHcGetRootHubPortNumber 000036ba f   UsbPei:PeiXhci.obj
+ 0001:000034a3       _UpdatePortStatusSpeed     000036e3 f   UsbPei:PeiXhci.obj
+ 0001:00003515       _XhciHcGetRootHubPortStatus 00003755 f   UsbPei:PeiXhci.obj
+ 0001:00003887       _XhciHcSetRootHubPortFeature 00003ac7 f   UsbPei:PeiXhci.obj
+ 0001:0000393c       _XhciHcClearRootHubPortFeature 00003b7c f   UsbPei:PeiXhci.obj
+ 0001:00003b2f       _XhciHcReset               00003d6f f   UsbPei:PeiXhci.obj
+ 0001:00004032       _XhciMmio64Read            00004272 f   UsbPei:PeiXhci.obj
+ 0001:0000405f       _XhciMmio64Write           0000429f f   UsbPei:PeiXhci.obj
+ 0001:00004084       _XhciInitRing              000042c4 f   UsbPei:PeiXhci.obj
+ 0001:00004134       _XhciAdvanceEnqueuePtr     00004374 f   UsbPei:PeiXhci.obj
+ 0001:000041f4       _XhciProcessXferEvt        00004434 f   UsbPei:PeiXhci.obj
+ 0001:000042ee       _XhciProcessInterrupt      0000452e f   UsbPei:PeiXhci.obj
+ 0001:000044ae       _XhciWaitForEvent          000046ee f   UsbPei:PeiXhci.obj
+ 0001:0000470c       _XhciExecuteCommand        0000494c f   UsbPei:PeiXhci.obj
+ 0001:00004a0d       _XhciInitXfrRing           00004c4d f   UsbPei:PeiXhci.obj
+ 0001:00004a6b       _XhciTranslateInterval     00004cab f   UsbPei:PeiXhci.obj
+ 0001:00004aee       _XhciEnableEndpoints       00004d2e f   UsbPei:PeiXhci.obj
+ 0001:00004f63       _XhciHcActivatePolling     000051a3 f   UsbPei:PeiXhci.obj
+ 0001:0000505d       _XhciGetXfrRing            0000529d f   UsbPei:PeiXhci.obj
+ 0001:00005081       _XhciGetTheDoorbellOffset  000052c1 f   UsbPei:PeiXhci.obj
+ 0001:00005096       _XhciGetDeviceContext      000052d6 f   UsbPei:PeiXhci.obj
+ 0001:000050be       _XhciGetContextEntry       000052fe f   UsbPei:PeiXhci.obj
+ 0001:000050d7       _XhciIsUsb3Port            00005317 f   UsbPei:PeiXhci.obj
+ 0001:00005190       _XhciResetUsb2Port         000053d0 f   UsbPei:PeiXhci.obj
+ 0001:000052cc       _XhciExtCapParser          0000550c f   UsbPei:PeiXhci.obj
+ 0001:0000541f       _XhciReadHcMem             0000565f f   UsbPei:PeiXhci.obj
+ 0001:00005531       _XhciWriteHcMem            00005771 f   UsbPei:PeiXhci.obj
+ 0001:00005643       _XhciSetHcMem              00005883 f   UsbPei:PeiXhci.obj
+ 0001:0000567e       _XhciClearHcMem            000058be f   UsbPei:PeiXhci.obj
+ 0001:000056bb       _XhciReadOpReg             000058fb f   UsbPei:PeiXhci.obj
+ 0001:000056e5       _XhciWriteOpReg            00005925 f   UsbPei:PeiXhci.obj
+ 0001:0000570b       _XhciSetOpReg              0000594b f   UsbPei:PeiXhci.obj
+ 0001:00005735       _XhciClearOpReg            00005975 f   UsbPei:PeiXhci.obj
+ 0001:00005763       _PeiUsbFindEndpoint        000059a3 f   UsbPei:UsbIoPeim.obj
+ 0001:000057b2       _PeiUsbControlTransfer     000059f2 f   UsbPei:UsbIoPeim.obj
+ 0001:000057f0       _PeiUsbBulkTransfer        00005a30 f   UsbPei:UsbIoPeim.obj
+ 0001:00005878       _PeiUsbSyncInterruptTransfer 00005ab8 f   UsbPei:UsbIoPeim.obj
+ 0001:00005902       _PeiUsbGetInterfaceDescriptor 00005b42 f   UsbPei:UsbIoPeim.obj
+ 0001:00005912       _PeiUsbGetEndpointDescriptor 00005b52 f   UsbPei:UsbIoPeim.obj
+ 0001:00005938       _PeiUsbPortReset           00005b78 f   UsbPei:UsbIoPeim.obj
+ 0001:00005976       _PeiHubGetPortStatus       00005bb6 f   UsbPei:HubPeim.obj
+ 0001:00005a10       _PeiHubSetPortFeature      00005c50 f   UsbPei:HubPeim.obj
+ 0001:00005a5f       _PeiHubClearPortFeature    00005c9f f   UsbPei:HubPeim.obj
+ 0001:00005aae       _PeiHubGetHubStatus        00005cee f   UsbPei:HubPeim.obj
+ 0001:00005af7       _PeiHubClearHubFeature     00005d37 f   UsbPei:HubPeim.obj
+ 0001:00005b41       _PeiGetHubDescriptor       00005d81 f   UsbPei:HubPeim.obj
+ 0001:00005ba2       _PeiDoHubConfig            00005de2 f   UsbPei:HubPeim.obj
+ 0001:00005cfb       _PeiResetHubPort           00005f3b f   UsbPei:HubPeim.obj
+ 0001:00005d74       _PeiUsbGetDescriptor       00005fb4 f   UsbPei:PeiUsbLib.obj
+ 0001:00005dbc       _PeiUsbSetDeviceAddress    00005ffc f   UsbPei:PeiUsbLib.obj
+ 0001:00005e00       _PeiUsbClearDeviceFeature  00006040 f   UsbPei:PeiUsbLib.obj
+ 0001:00005e4b       _PeiUsbSetConfiguration    0000608b f   UsbPei:PeiUsbLib.obj
+ 0001:00005e93       _PeiUsbClearEndpointHalt   000060d3 f   UsbPei:PeiUsbLib.obj
+ 0001:00005f06       _PeiUsbInquiry             00006146 f   UsbPei:PeiAtapi.obj
+ 0001:00005f89       _PeiUsbRequestSense        000061c9 f   UsbPei:PeiAtapi.obj
+ 0001:00005fd4       _PeiUsbReadCapacity        00006214 f   UsbPei:PeiAtapi.obj
+ 0001:000060a4       _PeiUsbValidatePartitionTable 000062e4 f   UsbPei:PeiAtapi.obj
+ 0001:0000611b       _PeiUsbRead10              0000635b f   UsbPei:PeiAtapi.obj
+ 0001:00006393       _BotStatusPhase            000065d3 f   UsbPei:BotPeim.obj
+ 0001:00006457       _PeiAtapiCommand           00006697 f   UsbPei:BotPeim.obj
+ 0001:000064e2       _RShiftU64                 00006722 f   BaseLib:RShiftU64.obj
+ 0001:000064fe       _LShiftU64                 0000673e f   BaseLib:LShiftU64.obj
+ 0001:0000651a       _ZeroMem                   0000675a f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:0000651f       _MmioRead8                 0000675f f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00006522       _MmioWrite8                00006762 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00006525       _MmioRead16                00006765 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:0000652c       _MmioWrite16               0000676c f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00006530       _MmioRead32                00006770 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00006533       _MmioWrite32               00006773 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00006536       _MmioRead64                00006776 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:0000653e       _MmioWrite64               0000677e f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00006550       _InternalMemZeroMem        00006790     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gPeiUsbIoPpiGuid          000067c0     UsbPei:AutoGen.obj
+ 0002:00000010       _gEfiEndOfPeiSignalPpiGuid 000067d0     UsbPei:AutoGen.obj
+ 0002:00000020       _gEfiPeiVirtualBlockIoPpiGuid 000067e0     UsbPei:AutoGen.obj
+ 0002:00000030       _gEfiPeiStallPpiGuid       000067f0     UsbPei:AutoGen.obj
+ 0002:00000040       _gEfiPeiBootInRecoveryModePpiGuid 00006800     UsbPei:AutoGen.obj
+ 0002:000000e0       _HubPortStatusMap          000068a0     UsbPei:HubPeim.obj
+ 0002:00000148       _SsHubPortStatusMap        00006908     UsbPei:HubPeim.obj
+ 0002:000001e0       _gLoadXhcFirmwarePpiGuid   000069a0     UsbPei:PeiXhci.obj
+ 0002:000001f0       _gXhciControllerPciTable   000069b0     UsbPei:PeiXhci.obj
+ 0002:000001f8       _gXhciControllerCount      000069b8     UsbPei:PeiXhci.obj
+ 0002:000001fc       _gPeiXhciInitPciTable      000069bc     UsbPei:PeiXhci.obj
+ 0002:0000021c       _gPeiXhciInitPciTableCount 000069dc     UsbPei:PeiXhci.obj
+ 0002:00000244       _mRecoveryBlkIoPpi         00006a04     UsbPei:UsbBotPeim.obj
+ 0002:00000250       _mPpiList                  00006a10     UsbPei:UsbBotPeim.obj
+ 0002:000002d4       _gPeiChipUsbRecoveryInitPpiGuid 00006a94     UsbPei:UsbPei.obj
+ 0002:000002e4       _gAmiPeiUsbHostControllerPpiGuid 00006aa4     UsbPei:UsbPei.obj
+ 0002:000002f4       _gAmiPeiUsbIoPpiGuid       00006ab4     UsbPei:UsbPei.obj
+ 0002:00000304       _gUsbPeiNotifyList         00006ac4     UsbPei:UsbPei.obj
+ 0002:00000310       _gUsbBootInRecoveryNotifyList 00006ad0     UsbPei:UsbPei.obj
+ 0002:0000031c       ??_C@_0BD@BGDHBCCI@EFI_USB_ERR_SYSTEM?$AA@ 00006adc     UsbPei:UsbPei.obj
+ 0002:00000330       ??_C@_0BF@KLFPHIEJ@EFI_USB_ERR_BITSTUFF?$AA@ 00006af0     UsbPei:UsbPei.obj
+ 0002:00000348       ??_C@_0BE@JPLLFNBK@EFI_USB_ERR_TIMEOUT?$AA@ 00006b08     UsbPei:UsbPei.obj
+ 0002:0000035c       ??_C@_0BA@PKIMBAF@EFI_USB_ERR_CRC?$AA@ 00006b1c     UsbPei:UsbPei.obj
+ 0002:0000036c       ??_C@_0BA@CLHLIOPJ@EFI_USB_ERR_NAK?$AA@ 00006b2c     UsbPei:UsbPei.obj
+ 0002:0000037c       ??_C@_0BD@NHOBACFC@EFI_USB_ERR_BABBLE?$AA@ 00006b3c     UsbPei:UsbPei.obj
+ 0002:00000390       ??_C@_0BD@DPBGMMFB@EFI_USB_ERR_BUFFER?$AA@ 00006b50     UsbPei:UsbPei.obj
+ 0002:000003a4       ??_C@_0BC@JCMHECNG@EFI_USB_ERR_STALL?$AA@ 00006b64     UsbPei:UsbPei.obj
+ 0002:000003b8       ??_C@_0BH@GKDEFOPD@EFI_USB_ERR_NOTEXECUTE?$AA@ 00006b78     UsbPei:UsbPei.obj
+ 0002:000003d0       _gUsbBootInRecoveryNotifyFlag 00006b90     UsbPei:UsbPei.obj
+ 0002:000003d1       _gUsbKeybaordBootNotifyFlag 00006b91     UsbPei:UsbPei.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000004a8       _PeiUsbEnumeration         000006e8 f    CIL library: CIL module
+ 0001:000006d9       _PeiConfigureUsbDevice     00000919 f    CIL library: CIL module
+ 0001:00000822       _PeiUsbGetAllConfiguration 00000a62 f    CIL library: CIL module
+ 0001:000061d8       _BotRecoveryReset          00006418 f    CIL library: CIL module
+ 0001:0000624b       _BotCommandPhase           0000648b f    CIL library: CIL module
+ 0001:000062ea       _BotDataPhase              0000652a f    CIL library: CIL module

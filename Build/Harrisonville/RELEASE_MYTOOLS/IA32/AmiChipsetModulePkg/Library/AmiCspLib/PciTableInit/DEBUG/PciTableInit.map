@@ -1,0 +1,36 @@
+ PciTableInit
+
+ Timestamp is 6448e7cf (Wed Apr 26 16:58:55 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000026eH .text                   CODE
+ 0002:00000000 000004e0H .data                   DATA
+ 0002:000004e0 00000000H .rdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000012       _PciTableInit              00000252 f   PciTableInit:CspLibPei.obj
+ 0001:00000068       _PciTableInit2             000002a8 f   PciTableInit:CspLibPei.obj
+ 0001:000000c3       _PciCfgModify              00000303 f   AmiPeiLib:PeiLib.obj
+ 0001:00000100       _memset                    00000340     AmiPeiLib:MemSet.obj
+ 0001:0000010a       _MemSetAsm                 0000034a f   AmiPeiLib:MemSet.obj
+ 0001:00000160       _memcpy                    000003a0     AmiPeiLib:MemCpy.obj
+ 0001:00000160       _MemCpy32                  000003a0     AmiPeiLib:MemCpy.obj
+ 0001:00000160       _MemCpyAsm                 000003a0 f   AmiPeiLib:MemCpy.obj
+ 0001:00000200       _EnableLongMode            00000440 f   AmiPeiLib:EnableLongMode.obj
+ 0002:00000000       _gAmiPeiPciTableInitPpiGuid 000004c0     PciTableInit:AutoGen.obj
+ 0002:00000010       _EfiErrorStatus            000004d0     AmiPeiLib:StdLibC.obj
+ 0002:00000350       _PiErrorStatus             00000810     AmiPeiLib:StdLibC.obj
+ 0002:0000039c       _AmiErrorStatus            0000085c     AmiPeiLib:StdLibC.obj
+ 0002:000003d0       _EfiWarningStatus          00000890     AmiPeiLib:StdLibC.obj
+ 0002:00000438       _PiWarningStatus           000008f8     AmiPeiLib:StdLibC.obj
+ 0002:00000480       _EfiUnknown                00000940     AmiPeiLib:StdLibC.obj
+ 0002:000004cc       _mPciTableInitPpi          0000098c     PciTableInit:CspLibPei.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

@@ -1,0 +1,36 @@
+ IePolicyInitDxe
+
+ Timestamp is 6448e7ef (Wed Apr 26 16:59:27 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000022dH .text                   CODE
+ 0002:00000000 00000030H .data                   DATA
+ 0002:00000030 0000001eH .rdata                  DATA
+ 0002:00000050 00000028H .bss                    DATA
+ 0003:00000000 00000018H .pdata                  DATA
+ 0004:00000000 00000014H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000088       ProcessModuleEntryPointList 0000000000000308 f   IePolicyInitDxe:AutoGen.obj
+ 0001:0000017c       GetFirstGuidHob            00000000000003fc f   DxeHobLib:HobLib.obj
+ 0001:000001d0       InternalMemCopyMem         0000000000000450     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000210       InternalMemZeroMem         0000000000000490     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gIeHobGuid                 00000000000004c0     IePolicyInitDxe:AutoGen.obj
+ 0002:00000010       gSetupVariableGuid         00000000000004d0     IePolicyInitDxe:AutoGen.obj
+ 0002:00000020       gEfiHobListGuid            00000000000004e0     IePolicyInitDxe:AutoGen.obj
+ 0002:00000030       _gUefiDriverRevision       00000000000004f0     IePolicyInitDxe:AutoGen.obj
+ 0002:00000038       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 00000000000004f8     IePolicyInitDxe:IePolicyInitDxe.obj
+ 0002:00000050       gImageHandle               0000000000000510     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000058       gST                        0000000000000518     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000060       gBS                        0000000000000520     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000068       gRT                        0000000000000528     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000070       mHobList                   0000000000000530     DxeHobLib:HobLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

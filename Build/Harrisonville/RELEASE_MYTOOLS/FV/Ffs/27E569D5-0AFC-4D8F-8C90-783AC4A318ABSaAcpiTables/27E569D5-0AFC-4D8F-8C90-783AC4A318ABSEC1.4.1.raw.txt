@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\FV\Ffs\27E569D5-0AFC-4D8F-8C90-783AC4A318ABSaAcpiTables\27E569D5-0AFC-4D8F-8C90-783AC4A318ABSEC1.4.1.raw d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\DenvertonPkg\SystemAgent\AcpiTables\SaAcpiTables\OUTPUT\Dmar\Dmar.acpi

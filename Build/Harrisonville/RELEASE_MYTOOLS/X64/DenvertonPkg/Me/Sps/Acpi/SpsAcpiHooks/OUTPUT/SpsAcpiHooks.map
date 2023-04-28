@@ -1,0 +1,38 @@
+ SpsAcpiHooks
+
+ Timestamp is 6448e7ef (Wed Apr 26 16:59:27 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000004bdH .text                   CODE
+ 0002:00000000 00000050H .data                   DATA
+ 0002:00000050 00000004H .rdata                  DATA
+ 0002:00000058 00000030H .bss                    DATA
+ 0003:00000000 00000024H .pdata                  DATA
+ 0004:00000000 00000028H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000280 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000070       SpsUpdateAslForMe          00000000000002f0 f   SpsAcpiHooks:SpsUpdateAsl.obj
+ 0001:000003f8       EfiGetSystemConfigurationTable 0000000000000678 f   UefiLib:UefiLib.obj
+ 0001:00000460       InternalMemCopyMem         00000000000006e0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000004a0       InternalMemZeroMem         0000000000000720     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gEfiSpsAcpiTableLocatorGuid 0000000000000740     SpsAcpiHooks:AutoGen.obj
+ 0002:00000010       gEfiDxeServicesTableGuid   0000000000000750     SpsAcpiHooks:AutoGen.obj
+ 0002:00000020       gEfiHobListGuid            0000000000000760     SpsAcpiHooks:AutoGen.obj
+ 0002:00000030       gEfiFirmwareVolume2ProtocolGuid 0000000000000770     SpsAcpiHooks:AutoGen.obj
+ 0002:00000040       gEfiAcpiTableProtocolGuid  0000000000000780     SpsAcpiHooks:AutoGen.obj
+ 0002:00000050       _gUefiDriverRevision       0000000000000790     SpsAcpiHooks:AutoGen.obj
+ 0002:00000058       gImageHandle               0000000000000798     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000060       gST                        00000000000007a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000068       gBS                        00000000000007a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000070       gRT                        00000000000007b0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000078       gDS                        00000000000007b8     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000080       mHobList                   00000000000007c0     DxeHobLib:HobLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

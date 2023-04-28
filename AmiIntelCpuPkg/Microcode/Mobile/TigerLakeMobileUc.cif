@@ -1,0 +1,12 @@
+<component>
+	name = "Mobile TigerLake uCode Patches (806CX)"
+	category = ModulePart
+	LocalRoot = "AmiIntelCpuPkg\Microcode\Mobile\"
+	RefName = "TigerLakeMobileUc"
+[files]
+"TigerLakeMobileUc.sdl"
+"M80806C0_00000068.pdb" = "MOBILE MICROCODE UPDATES"
+"M80806C1_0000003A.pdb" = "MOBILE MICROCODE UPDATES"
+"M80806C1_00000038.pdb" = "MOBILE MICROCODE UPDATES"
+"MC2806D0_00000024.pdb" = "MOBILE MICROCODE UPDATES"
+<endComponent>

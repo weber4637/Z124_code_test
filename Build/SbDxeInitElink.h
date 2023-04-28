@@ -1,0 +1,3 @@
+#define OEM_HDA_VERB_TABLE 
+#define SAVE_RESTORE_CALLBACK_LIST 
+

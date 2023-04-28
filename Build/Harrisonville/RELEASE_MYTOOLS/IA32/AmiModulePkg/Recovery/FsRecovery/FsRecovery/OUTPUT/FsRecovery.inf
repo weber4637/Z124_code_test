@@ -1,0 +1,156 @@
+#**********************************************************************
+#**********************************************************************
+#**                                                                  **
+#**        (C)Copyright 1985-2014, American Megatrends, Inc.         **
+#**                                                                  **
+#**                       All Rights Reserved.                       **
+#**                                                                  **
+#**      5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093        **
+#**                                                                  **
+#**                       Phone: (770)-246-8600                      **
+#**                                                                  **
+#**********************************************************************
+#**********************************************************************
+## @file
+#   This driver Handles the File System for the Boot Block Recovery
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = FsRecovery
+  FILE_GUID                  = 7ecd9c20-68b9-4a6f-b515-d64ff500b109
+  MODULE_TYPE                = PEIM
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = FsRecoveryPeimEntry
+
+[Packages.IA32]
+  AmiModulePkg/AmiModulePkg.dec
+  MdePkg/MdePkg.dec
+
+[Binaries.IA32]
+  PE32|FsRecovery.efi
+  PEI_DEPEX|FsRecovery.depex
+
+[PatchPcd.IA32]
+
+[Protocols.IA32]
+
+[Ppis.IA32]
+  ## PRODUCES
+  gEfiPeiDeviceRecoveryModulePpiGuid
+
+  ## CONSUMES
+  gEfiPeiVirtualBlockIoPpiGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiPeiFirmwareVolumeInfoPpiGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiPeiFirmwareVolumeInfo2PpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gPcdPpiGuid
+
+  ## CONSUMES
+  gEfiPeiPcdPpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoPpiGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoPpiGuid
+
+  ## CONSUMES
+  gAmiDebugServicePpiGuid
+
+
+[Guids.IA32]
+  gBlockDeviceCapsuleGuid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation StackHob
+  gEfiHobMemoryAllocStackGuid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation BspStoreHob
+  gEfiHobMemoryAllocBspStoreGuid
+
+  ## SOMETIMES_PRODUCES ## HOB # MemoryAllocation ModuleHob
+  gEfiHobMemoryAllocModuleGuid
+
+  ## SOMETIMES_PRODUCES ## GUID # FV File System Guid.
+  gEfiFirmwareFileSystem2Guid
+
+  gAmiGlobalVariableGuid
+
+
+[PcdEx.IA32]
+
+[LibraryClasses.IA32]
+## @LIB_INSTANCES
+#  MdePkg/Library/PeiHobLib/PeiHobLib.inf
+#  MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib.inf
+#  MdePkg/Library/PeiServicesLib/PeiServicesLib.inf
+#  MdePkg/Library/PeiPcdLib/PeiPcdLib.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  AmiModulePkg/Library/PeiAmiDebugLib/PeiAmiDebugLib.inf
+#  MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr.inf
+#  MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic.inf
+#  MdePkg/Library/BasePostCodeLibPort80/BasePostCodeLibPort80.inf
+#  AmiCompatibilityPkg/Library/AmiPeiLib.inf
+#  MdePkg/Library/PeimEntryPoint/PeimEntryPoint.inf
+#  AmiModulePkg/Recovery/FsRecovery/NtfsRecovery.inf
+#  AmiModulePkg/Recovery/FsRecovery/ExtRecovery.inf
+#  AmiModulePkg/Recovery/FsRecovery/ExFatRecovery.inf
+
+[Depex.IA32]
+#  (gEfiPeiBootInRecoveryModePpiGuid AND gEfiPeiMemoryDiscoveredPpiGuid AND gEfiPeiDecompressPpiGuid) AND (gEfiPeiPcdPpiGuid)
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+#**********************************************************************
+#**********************************************************************
+#**                                                                  **
+#**        (C)Copyright 1985-2014, American Megatrends, Inc.         **
+#**                                                                  **
+#**                       All Rights Reserved.                       **
+#**                                                                  **
+#**      5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093        **
+#**                                                                  **
+#**                       Phone: (770)-246-8600                      **
+#**                                                                  **
+#**********************************************************************
+#**********************************************************************
+
+[BuildOptions.IA32]
+## @AsBuilt
+##   MSFT:RELEASE_MYTOOLS_IA32_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:RELEASE_MYTOOLS_IA32_CBINDLINK_FLAGS = /nologo /NODEFAULTLIB /NOENTRY /DLL /ALIGN:16 /IGNORE:4108
+##   MSFT:RELEASE_MYTOOLS_IA32_ASLDLINK_FLAGS = /nologo /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER
+##   MSFT:RELEASE_MYTOOLS_IA32_VFR_FLAGS = -n
+##   MSFT:RELEASE_MYTOOLS_IA32_PP_FLAGS = /nologo /E /TC /FIAutoGen.h $(FLAG_SIMIC) /D CRB_FLAG_ENABLE=TRUE /D WHEA_SUPPORT_FLAG /D ME_SUPPORT_FLAG=1 /D ME_TESTMENU_FLAG=1 /D SPS_SUPPORT=1 /D IE_SUPPORT=1 $(FLAG_TRACEHUB) /D NONVOLATILE_MEM_EN /D HARRISONVILLE /D DENVERTON /D EMMC_DRIVER_ENABLE=TRUE /D PERFORMANCE_ENABLE=FALSE /D S3_ENABLE=TRUE /D SERVER_BIOS_FLAG=TRUE /D PCH_SPT /D PO_FLAG /D PCH_PO_FLAG /D SA_PO_FLAG /D HSUART_MODE=0 /D DTS_SUPPORT=1 $(EDKII_SERIAL_DBG_MSG) /D PCIE_HOTPLUG_SUPPORT=0 /D MAX_EXTRA_BUS_RESERVED_VALUE=7 /D MAX_PCIE_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_PF_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_IO_RESERVED_VALUE=20 /D MEUD_SUPPORT=1 /D CAPSULE_RESERVED_MEMORY_REGION_SIZE=0x4000000 /D DISABLE_MEMTEST_MRC_FB=0 /wd4819
+##   MSFT:RELEASE_MYTOOLS_IA32_GENFW_FLAGS = 
+##   MSFT:RELEASE_MYTOOLS_IA32_DLINK_FLAGS = /MACHINE:I386 /NOLOGO /NODEFAULTLIB /IGNORE:4001 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /MERGE:.rdata=.data /IGNORE:4254 /PDB:$(DEBUG_DIR)/$(BASE_NAME).pdb
+##   MSFT:RELEASE_MYTOOLS_IA32_SLINK_FLAGS = /LIB /nologo /LTCG
+##   MSFT:RELEASE_MYTOOLS_IA32_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd /coff
+##   MSFT:RELEASE_MYTOOLS_IA32_ASL_FLAGS = 
+##   MSFT:RELEASE_MYTOOLS_IA32_NASMB_FLAGS = -f bin
+##   MSFT:RELEASE_MYTOOLS_IA32_CC_FLAGS = /nologo /c /WX /GS- /Gs32768 /Gy /D UNICODE /GL /FIAutoGen.h /EHs-c- /GR- /GF -D PI_SPECIFICATION_VERSION=0x10028 -D EFI_SPECIFICATION_VERSION=0x2003C /O1ib2  /W3 /wd4091 /wd4311 /wd4312  -DMDEPKG_NDEBUG  -DOPENSSL_NO_STDIO -DOPENSSL_NO_FP_API -DOPENSSL_NO_TLS1_1 -DOPENSSL_NO_TLS1 -DOPENSSL_NO_TLS1_METHOD -DOPENSSL_NO_TLS1_1_METHOD -D__STDC_NO_ATOMICS__ $(FLAG_SIMIC) /D CRB_FLAG_ENABLE=TRUE /D WHEA_SUPPORT_FLAG /D ME_SUPPORT_FLAG=1 /D ME_TESTMENU_FLAG=1 /D SPS_SUPPORT=1 /D IE_SUPPORT=1 $(FLAG_TRACEHUB) /D NONVOLATILE_MEM_EN /D HARRISONVILLE /D DENVERTON /D EMMC_DRIVER_ENABLE=TRUE /D PERFORMANCE_ENABLE=FALSE /D S3_ENABLE=TRUE /D SERVER_BIOS_FLAG=TRUE /D PCH_SPT /D PO_FLAG /D PCH_PO_FLAG /D SA_PO_FLAG /D HSUART_MODE=0 /D DTS_SUPPORT=1 $(EDKII_SERIAL_DBG_MSG) /D PCIE_HOTPLUG_SUPPORT=0 /D MAX_EXTRA_BUS_RESERVED_VALUE=7 /D MAX_PCIE_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_PF_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_IO_RESERVED_VALUE=20 /D MEUD_SUPPORT=1 /D CAPSULE_RESERVED_MEMORY_REGION_SIZE=0x4000000 /D DISABLE_MEMTEST_MRC_FB=0 /wd4819
+##   MSFT:RELEASE_MYTOOLS_IA32_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h -D PI_SPECIFICATION_VERSION=0x10028 -D EFI_SPECIFICATION_VERSION=0x2003C /O1ib2  /W3 /wd4091 /wd4311 /wd4312  -DMDEPKG_NDEBUG  $(FLAG_SIMIC) /D CRB_FLAG_ENABLE=TRUE /D WHEA_SUPPORT_FLAG /D ME_SUPPORT_FLAG=1 /D ME_TESTMENU_FLAG=1 /D SPS_SUPPORT=1 /D IE_SUPPORT=1 $(FLAG_TRACEHUB) /D NONVOLATILE_MEM_EN /D HARRISONVILLE /D DENVERTON /D EMMC_DRIVER_ENABLE=TRUE /D PERFORMANCE_ENABLE=FALSE /D S3_ENABLE=TRUE /D SERVER_BIOS_FLAG=TRUE /D PCH_SPT /D PO_FLAG /D PCH_PO_FLAG /D SA_PO_FLAG /D HSUART_MODE=0 /D DTS_SUPPORT=1 $(EDKII_SERIAL_DBG_MSG) /D PCIE_HOTPLUG_SUPPORT=0 /D MAX_EXTRA_BUS_RESERVED_VALUE=7 /D MAX_PCIE_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_PF_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_IO_RESERVED_VALUE=20 /D MEUD_SUPPORT=1 /D CAPSULE_RESERVED_MEMORY_REGION_SIZE=0x4000000 /D DISABLE_MEMTEST_MRC_FB=0 /wd4819
+##   MSFT:RELEASE_MYTOOLS_IA32_ASLCC_FLAGS = /nologo /c /TC /FIAutoGen.h /Dmain=ReferenceAcpiTable
+##   MSFT:RELEASE_MYTOOLS_IA32_CBINCC_FLAGS = /nologo /c /TC /Os /FIAutoGen.h
+##   MSFT:RELEASE_MYTOOLS_IA32_APP_FLAGS = /nologo /E /TC
+##   MSFT:RELEASE_MYTOOLS_IA32_OPTROM_FLAGS = -e
+##   MSFT:RELEASE_MYTOOLS_IA32_ASLPP_FLAGS = /nologo /E /TC -D SIO_PTS=\_SB.PCI0.SBRG.SIO1.SIOS -D SIO_WAK=\_SB.PCI0.SBRG.SIO1.SIOW /D LPC0=SBRG $(FLAG_SIMIC) /D CRB_FLAG_ENABLE=TRUE /D WHEA_SUPPORT_FLAG /D ME_SUPPORT_FLAG=1 /D ME_TESTMENU_FLAG=1 /D SPS_SUPPORT=1 /D IE_SUPPORT=1 $(FLAG_TRACEHUB) /D NONVOLATILE_MEM_EN /D HARRISONVILLE /D DENVERTON /D EMMC_DRIVER_ENABLE=TRUE /D PERFORMANCE_ENABLE=FALSE /D S3_ENABLE=TRUE /D SERVER_BIOS_FLAG=TRUE /D PCH_SPT /D PO_FLAG /D PCH_PO_FLAG /D SA_PO_FLAG /D HSUART_MODE=0 /D DTS_SUPPORT=1 $(EDKII_SERIAL_DBG_MSG) /D PCIE_HOTPLUG_SUPPORT=0 /D MAX_EXTRA_BUS_RESERVED_VALUE=7 /D MAX_PCIE_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_PF_MEM_RESERVED_VALUE=1200 /D MAX_PCIE_IO_RESERVED_VALUE=20 /D MEUD_SUPPORT=1 /D CAPSULE_RESERVED_MEMORY_REGION_SIZE=0x4000000 /D DISABLE_MEMTEST_MRC_FB=0 /wd4819
+##   MSFT:RELEASE_MYTOOLS_IA32_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:RELEASE_MYTOOLS_IA32_MAKE_FLAGS = /nologo -s
+##   MSFT:RELEASE_MYTOOLS_IA32_ASMLINK_FLAGS = /nologo /tiny
+##   MSFT:RELEASE_MYTOOLS_IA32_NASM_FLAGS = -Ox -f win32

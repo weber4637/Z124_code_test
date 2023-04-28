@@ -1,0 +1,3591 @@
+;;
+;;   !!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\Build\Setup\OUTPUT\AmiCompatibilityPkg\Setup\Setup.hpk !!!!
+;;
+_SetupPageInfo_1	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02710h	; Form ID
+	dw	00h	; Title
+	dw	07h	; subtitle 
+	dw	01h	; PageID
+	dw	00h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_1 - $) / 4) - 1
+dd offset _SetupControlInfo_1_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_1_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_1_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_1_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_1_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_1_6 - _SetupControlInfo_N_N
+_End_SetupPageInfo_1 label byte
+
+_SetupPageInfo_2	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02711h	; Form ID
+	dw	00h	; Title
+	dw	09h	; subtitle 
+	dw	02h	; PageID
+	dw	01h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_2 - $) / 4) - 1
+dd offset _SetupControlInfo_2_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_2_16 - _SetupControlInfo_N_N
+_End_SetupPageInfo_2 label byte
+
+_SetupPageInfo_3	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02712h	; Form ID
+	dw	00h	; Title
+	dw	01Eh	; subtitle 
+	dw	03h	; PageID
+	dw	01h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_3 - $) / 4) - 1
+dd offset _SetupControlInfo_3_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_3_22 - _SetupControlInfo_N_N
+_End_SetupPageInfo_3 label byte
+
+_SetupPageInfo_4	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02717h	; Form ID
+	dw	00h	; Title
+	dw	02C0h	; subtitle 
+	dw	04h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_4 - $) / 4) - 1
+dd offset _SetupControlInfo_4_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_4_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_4_3 - _SetupControlInfo_N_N
+_End_SetupPageInfo_4 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_5	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02718h	; Form ID
+	dw	00h	; Title
+	dw	02C0h	; subtitle 
+	dw	05h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_5 - $) / 4) - 1
+dd offset _SetupControlInfo_5_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_5_17 - _SetupControlInfo_N_N
+_End_SetupPageInfo_5 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_6	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02719h	; Form ID
+	dw	00h	; Title
+	dw	02C0h	; subtitle 
+	dw	06h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_6 - $) / 4) - 1
+dd offset _SetupControlInfo_6_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_6_23 - _SetupControlInfo_N_N
+_End_SetupPageInfo_6 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_7	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0271Ah	; Form ID
+	dw	00h	; Title
+	dw	0C3h	; subtitle 
+	dw	07h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_7 - $) / 4) - 1
+dd offset _SetupControlInfo_7_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_7_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_7_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_7_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_7_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_7_6 - _SetupControlInfo_N_N
+_End_SetupPageInfo_7 label byte
+
+_SetupPageInfo_8	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02723h	; Form ID
+	dw	00h	; Title
+	dw	069h	; subtitle 
+	dw	08h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_8 - $) / 4) - 1
+dd offset _SetupControlInfo_8_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_8_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_8_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_8_4 - _SetupControlInfo_N_N
+_End_SetupPageInfo_8 label byte
+
+_SetupPageInfo_9	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02724h	; Form ID
+	dw	00h	; Title
+	dw	0E3h	; subtitle 
+	dw	09h	; PageID
+	dw	08h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_9 - $) / 4) - 1
+dd offset _SetupControlInfo_9_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_9_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_9_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_9_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_9_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_9_6 - _SetupControlInfo_N_N
+_End_SetupPageInfo_9 label byte
+
+_SetupPageInfo_10	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02728h	; Form ID
+	dw	00h	; Title
+	dw	088h	; subtitle 
+	dw	0Ah	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_10 - $) / 4) - 1
+dd offset _SetupControlInfo_10_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_10_35 - _SetupControlInfo_N_N
+_End_SetupPageInfo_10 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_11	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0272Ah	; Form ID
+	dw	00h	; Title
+	dw	02B2h	; subtitle 
+	dw	0Bh	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_11 - $) / 4) - 1
+dd offset _SetupControlInfo_11_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_11_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_11_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_11_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_11_5 - _SetupControlInfo_N_N
+_End_SetupPageInfo_11 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_12	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0272Ch	; Form ID
+	dw	00h	; Title
+	dw	0215h	; subtitle 
+	dw	0Ch	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_12 - $) / 4) - 1
+dd offset _SetupControlInfo_12_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_12_13 - _SetupControlInfo_N_N
+_End_SetupPageInfo_12 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_13	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0272Dh	; Form ID
+	dw	00h	; Title
+	dw	0216h	; subtitle 
+	dw	0Dh	; PageID
+	dw	0Ch	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_13 - $) / 4) - 1
+dd offset _SetupControlInfo_13_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_13_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_13_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_13_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_13_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_13_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_13_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_13_8 - _SetupControlInfo_N_N
+_End_SetupPageInfo_13 label byte
+
+_SetupPageInfo_14	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0272Eh	; Form ID
+	dw	00h	; Title
+	dw	0268h	; subtitle 
+	dw	0Eh	; PageID
+	dw	0Ch	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_14 - $) / 4) - 1
+dd offset _SetupControlInfo_14_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_14_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_14_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_14_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_14_5 - _SetupControlInfo_N_N
+_End_SetupPageInfo_14 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_15	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0272Fh	; Form ID
+	dw	00h	; Title
+	dw	021Ch	; subtitle 
+	dw	0Fh	; PageID
+	dw	0Ch	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_15 - $) / 4) - 1
+dd offset _SetupControlInfo_15_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_15_14 - _SetupControlInfo_N_N
+_End_SetupPageInfo_15 label byte
+
+_SetupPageInfo_16	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0273Fh	; Form ID
+	dw	00h	; Title
+	dw	0D8h	; subtitle 
+	dw	010h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_16 - $) / 4) - 1
+dd offset _SetupControlInfo_16_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_16_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_16_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_16_4 - _SetupControlInfo_N_N
+_End_SetupPageInfo_16 label byte
+
+_SetupPageInfo_17	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02740h	; Form ID
+	dw	00h	; Title
+	dw	0183h	; subtitle 
+	dw	011h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_17 - $) / 4) - 1
+dd offset _SetupControlInfo_17_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_17_16 - _SetupControlInfo_N_N
+_End_SetupPageInfo_17 label byte
+
+_SetupPageInfo_18	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02741h	; Form ID
+	dw	00h	; Title
+	dw	0185h	; subtitle 
+	dw	012h	; PageID
+	dw	011h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_18 - $) / 4) - 1
+dd offset _SetupControlInfo_18_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_18_17 - _SetupControlInfo_N_N
+_End_SetupPageInfo_18 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_19	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02742h	; Form ID
+	dw	00h	; Title
+	dw	0186h	; subtitle 
+	dw	013h	; PageID
+	dw	011h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_19 - $) / 4) - 1
+dd offset _SetupControlInfo_19_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_19_16 - _SetupControlInfo_N_N
+_End_SetupPageInfo_19 label byte
+
+_SetupPageInfo_20	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02745h	; Form ID
+	dw	00h	; Title
+	dw	026Dh	; subtitle 
+	dw	014h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_20 - $) / 4) - 1
+dd offset _SetupControlInfo_20_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_20_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_20_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_20_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_20_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_20_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_20_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_20_8 - _SetupControlInfo_N_N
+_End_SetupPageInfo_20 label byte
+
+_SetupPageInfo_21	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02747h	; Form ID
+	dw	00h	; Title
+	dw	0285h	; subtitle 
+	dw	015h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_21 - $) / 4) - 1
+dd offset _SetupControlInfo_21_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_21_18 - _SetupControlInfo_N_N
+_End_SetupPageInfo_21 label byte
+
+_SetupPageInfo_22	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0274Ch	; Form ID
+	dw	00h	; Title
+	dw	0318h	; subtitle 
+	dw	016h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_22 - $) / 4) - 1
+dd offset _SetupControlInfo_22_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_36 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_37 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_38 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_39 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_40 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_41 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_42 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_22_43 - _SetupControlInfo_N_N
+_End_SetupPageInfo_22 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_23	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0278Fh	; Form ID
+	dw	00h	; Title
+	dw	061h	; subtitle 
+	dw	017h	; PageID
+	dw	03h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_23 - $) / 4) - 1
+dd offset _SetupControlInfo_23_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_23 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_24	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02790h	; Form ID
+	dw	00h	; Title
+	dw	061h	; subtitle 
+	dw	018h	; PageID
+	dw	017h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_24 - $) / 4) - 1
+dd offset _SetupControlInfo_24_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_24 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_25	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02713h	; Form ID
+	dw	00h	; Title
+	dw	01Fh	; subtitle 
+	dw	019h	; PageID
+	dw	01h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_25 - $) / 4) - 1
+dd offset _SetupControlInfo_25_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_25 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_26	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	0273Dh	; Form ID
+	dw	00h	; Title
+	dw	0A3h	; subtitle 
+	dw	01Ah	; PageID
+	dw	019h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_26 - $) / 4) - 1
+dd offset _SetupControlInfo_26_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_26_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_26_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_26_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_26_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_26_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_26_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_26_8 - _SetupControlInfo_N_N
+_End_SetupPageInfo_26 label byte
+
+_SetupPageInfo_27	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02714h	; Form ID
+	dw	00h	; Title
+	dw	034h	; subtitle 
+	dw	01Bh	; PageID
+	dw	01h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_27 - $) / 4) - 1
+dd offset _SetupControlInfo_27_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_27_16 - _SetupControlInfo_N_N
+_End_SetupPageInfo_27 label byte
+
+_SetupPageInfo_28	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02715h	; Form ID
+	dw	00h	; Title
+	dw	020h	; subtitle 
+	dw	01Ch	; PageID
+	dw	01h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_28 - $) / 4) - 1
+dd offset _SetupControlInfo_28_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_36 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_37 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_38 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_39 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_40 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_41 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_42 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_43 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_44 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_45 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_46 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_47 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_48 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_49 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_50 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_51 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_52 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_53 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_28_54 - _SetupControlInfo_N_N
+_End_SetupPageInfo_28 label byte
+
+_SetupPageInfo_29	label	byte
+	dq	00h	; HII page handle
+	dw	01h	; Page ID Index
+	dw	02716h	; Form ID
+	dw	00h	; Title
+	dw	047h	; subtitle 
+	dw	01Dh	; PageID
+	dw	01h	; ParentPageID
+	dd	00h	; Flags
+	dd	03Ah	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_29 - $) / 4) - 1
+dd offset _SetupControlInfo_29_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_36 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_37 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_38 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_39 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_40 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_41 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_42 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_43 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_44 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_45 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_46 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_47 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_48 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_49 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_50 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_51 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_52 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_53 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_54 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_55 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_56 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_57 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_58 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_59 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_60 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_61 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_62 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_63 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_64 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_65 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_66 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_67 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_68 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_69 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_70 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_71 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_72 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_73 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_74 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_75 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_76 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_77 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_78 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_79 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_80 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_81 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_82 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_83 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_84 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_85 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_86 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_87 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_88 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_89 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_90 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_91 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_92 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_93 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_94 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_95 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_96 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_97 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_98 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_99 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_100 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_101 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_102 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_29_103 - _SetupControlInfo_N_N
+_End_SetupPageInfo_29 label byte
+db	4	dup(0)	;padding
+;;
+;;   !!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\Nvme\NvmeDynamicSetup\NvmeDynamicSetup\OUTPUT\.\NvmeDynamicSetup.hpk !!!!
+;;
+_SetupPageInfo_30	label	byte
+	dq	00h	; HII page handle
+	dw	02h	; Page ID Index
+	dw	01h	; Form ID
+	dw	00h	; Title
+	dw	03h	; subtitle 
+	dw	01Eh	; PageID
+	dw	00h	; ParentPageID
+	dd	00h	; Flags
+	dd	04Fh	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_30 - $) / 4) - 1
+dd offset _SetupControlInfo_30_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_30_2 - _SetupControlInfo_N_N
+_End_SetupPageInfo_30 label byte
+
+_SetupPageInfo_31	label	byte
+	dq	00h	; HII page handle
+	dw	02h	; Page ID Index
+	dw	02h	; Form ID
+	dw	00h	; Title
+	dw	03h	; subtitle 
+	dw	01Fh	; PageID
+	dw	01Eh	; ParentPageID
+	dd	00h	; Flags
+	dd	04Fh	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_31 - $) / 4) - 1
+_End_SetupPageInfo_31 label byte
+;;
+;; !!!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\Nvme\NvmeDynamicSetup\NvmeDynamicSetup\OUTPUT\.\NvmeDynamicSetupStrDefs.hpk !!!! 
+;;;;
+;;   !!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\Recovery\ReFlash\ReFlash\OUTPUT\.\ReFlash.hpk !!!!
+;;
+_SetupPageInfo_32	label	byte
+	dq	00h	; HII page handle
+	dw	03h	; Page ID Index
+	dw	01h	; Form ID
+	dw	00h	; Title
+	dw	03h	; subtitle 
+	dw	020h	; PageID
+	dw	00h	; ParentPageID
+	dd	00h	; Flags
+	dd	050h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_32 - $) / 4) - 1
+dd offset _SetupControlInfo_32_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_32_12 - _SetupControlInfo_N_N
+_End_SetupPageInfo_32 label byte
+
+_SetupPageInfo_33	label	byte
+	dq	00h	; HII page handle
+	dw	03h	; Page ID Index
+	dw	02h	; Form ID
+	dw	00h	; Title
+	dw	0Eh	; subtitle 
+	dw	021h	; PageID
+	dw	020h	; ParentPageID
+	dd	00h	; Flags
+	dd	050h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_33 - $) / 4) - 1
+dd offset _SetupControlInfo_33_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_33_16 - _SetupControlInfo_N_N
+_End_SetupPageInfo_33 label byte
+;;
+;; !!!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\AmiModulePkg\Recovery\ReFlash\ReFlash\OUTPUT\.\ReFlashStrDefs.hpk !!!! 
+;;;;
+;;   !!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\Build\FboGroupForm\OUTPUT\.\FboGroupForm.hpk !!!!
+;;
+_SetupPageInfo_34	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0277Bh	; Form ID
+	dw	00h	; Title
+	dw	0Fh	; subtitle 
+	dw	022h	; PageID
+	dw	00h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_34 - $) / 4) - 1
+_End_SetupPageInfo_34 label byte
+
+_SetupPageInfo_35	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0277Ch	; Form ID
+	dw	00h	; Title
+	dw	010h	; subtitle 
+	dw	023h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_35 - $) / 4) - 1
+_End_SetupPageInfo_35 label byte
+
+_SetupPageInfo_36	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0277Dh	; Form ID
+	dw	00h	; Title
+	dw	011h	; subtitle 
+	dw	024h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_36 - $) / 4) - 1
+_End_SetupPageInfo_36 label byte
+
+_SetupPageInfo_37	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0277Eh	; Form ID
+	dw	00h	; Title
+	dw	012h	; subtitle 
+	dw	025h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_37 - $) / 4) - 1
+_End_SetupPageInfo_37 label byte
+
+_SetupPageInfo_38	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0277Fh	; Form ID
+	dw	00h	; Title
+	dw	014h	; subtitle 
+	dw	026h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_38 - $) / 4) - 1
+_End_SetupPageInfo_38 label byte
+
+_SetupPageInfo_39	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02780h	; Form ID
+	dw	00h	; Title
+	dw	015h	; subtitle 
+	dw	027h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_39 - $) / 4) - 1
+_End_SetupPageInfo_39 label byte
+
+_SetupPageInfo_40	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02781h	; Form ID
+	dw	00h	; Title
+	dw	016h	; subtitle 
+	dw	028h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_40 - $) / 4) - 1
+_End_SetupPageInfo_40 label byte
+
+_SetupPageInfo_41	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02782h	; Form ID
+	dw	00h	; Title
+	dw	017h	; subtitle 
+	dw	029h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_41 - $) / 4) - 1
+_End_SetupPageInfo_41 label byte
+
+_SetupPageInfo_42	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02783h	; Form ID
+	dw	00h	; Title
+	dw	018h	; subtitle 
+	dw	02Ah	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_42 - $) / 4) - 1
+_End_SetupPageInfo_42 label byte
+
+_SetupPageInfo_43	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02784h	; Form ID
+	dw	00h	; Title
+	dw	013h	; subtitle 
+	dw	02Bh	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_43 - $) / 4) - 1
+_End_SetupPageInfo_43 label byte
+
+_SetupPageInfo_44	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02785h	; Form ID
+	dw	00h	; Title
+	dw	05h	; subtitle 
+	dw	02Ch	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_44 - $) / 4) - 1
+_End_SetupPageInfo_44 label byte
+
+_SetupPageInfo_45	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02786h	; Form ID
+	dw	00h	; Title
+	dw	06h	; subtitle 
+	dw	02Dh	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_45 - $) / 4) - 1
+_End_SetupPageInfo_45 label byte
+
+_SetupPageInfo_46	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02787h	; Form ID
+	dw	00h	; Title
+	dw	07h	; subtitle 
+	dw	02Eh	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_46 - $) / 4) - 1
+_End_SetupPageInfo_46 label byte
+
+_SetupPageInfo_47	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02788h	; Form ID
+	dw	00h	; Title
+	dw	08h	; subtitle 
+	dw	02Fh	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_47 - $) / 4) - 1
+_End_SetupPageInfo_47 label byte
+
+_SetupPageInfo_48	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	02789h	; Form ID
+	dw	00h	; Title
+	dw	0Ah	; subtitle 
+	dw	030h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_48 - $) / 4) - 1
+_End_SetupPageInfo_48 label byte
+
+_SetupPageInfo_49	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0278Ah	; Form ID
+	dw	00h	; Title
+	dw	0Ch	; subtitle 
+	dw	031h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_49 - $) / 4) - 1
+_End_SetupPageInfo_49 label byte
+
+_SetupPageInfo_50	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0278Bh	; Form ID
+	dw	00h	; Title
+	dw	0Bh	; subtitle 
+	dw	032h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_50 - $) / 4) - 1
+_End_SetupPageInfo_50 label byte
+
+_SetupPageInfo_51	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0278Ch	; Form ID
+	dw	00h	; Title
+	dw	0Dh	; subtitle 
+	dw	033h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_51 - $) / 4) - 1
+_End_SetupPageInfo_51 label byte
+
+_SetupPageInfo_52	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0278Dh	; Form ID
+	dw	00h	; Title
+	dw	0Eh	; subtitle 
+	dw	034h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_52 - $) / 4) - 1
+_End_SetupPageInfo_52 label byte
+
+_SetupPageInfo_53	label	byte
+	dq	00h	; HII page handle
+	dw	04h	; Page ID Index
+	dw	0278Eh	; Form ID
+	dw	00h	; Title
+	dw	09h	; subtitle 
+	dw	035h	; PageID
+	dw	022h	; ParentPageID
+	dd	00h	; Flags
+	dd	051h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_53 - $) / 4) - 1
+_End_SetupPageInfo_53 label byte
+;;
+;; !!!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\Build\FboGroupForm\OUTPUT\.\FboGroupFormStrDefs.hpk !!!! 
+;;;;
+;;   !!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\Build\SetupDefaults\OUTPUT\AmiCompatibilityPkg\Setup\SetupDefaults.hpk !!!!
+;;
+_SetupPageInfo_54	label	byte
+	dq	00h	; HII page handle
+	dw	05h	; Page ID Index
+	dw	02710h	; Form ID
+	dw	00h	; Title
+	dw	07h	; subtitle 
+	dw	036h	; PageID
+	dw	00h	; ParentPageID
+	dd	00h	; Flags
+	dd	053h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_54 - $) / 4) - 1
+dd offset _SetupControlInfo_54_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_36 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_37 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_38 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_39 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_40 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_41 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_42 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_43 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_44 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_45 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_46 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_47 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_48 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_49 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_50 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_51 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_52 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_53 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_54 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_55 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_56 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_57 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_58 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_59 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_60 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_61 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_62 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_63 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_64 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_65 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_66 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_67 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_68 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_69 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_70 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_71 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_72 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_73 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_74 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_75 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_76 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_77 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_78 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_79 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_80 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_81 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_82 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_83 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_84 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_85 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_86 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_87 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_88 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_89 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_90 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_91 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_92 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_93 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_94 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_95 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_96 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_97 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_98 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_99 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_100 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_101 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_102 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_103 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_104 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_105 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_106 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_107 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_108 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_109 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_110 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_111 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_112 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_113 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_114 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_115 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_116 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_117 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_118 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_119 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_120 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_121 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_122 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_123 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_54_124 - _SetupControlInfo_N_N
+_End_SetupPageInfo_54 label byte
+;;
+;;   !!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\HarrisonvillePkg\Platform\SetupDxe\SetupDxe\OUTPUT\.\IntelRcSetup.hpk !!!!
+;;
+_SetupPageInfo_55	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	01h	; Form ID
+	dw	00h	; Title
+	dw	0E1h	; subtitle 
+	dw	037h	; PageID
+	dw	00h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_55 - $) / 4) - 1
+dd offset _SetupControlInfo_55_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_55_18 - _SetupControlInfo_N_N
+_End_SetupPageInfo_55 label byte
+
+_SetupPageInfo_56	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0Ah	; Form ID
+	dw	00h	; Title
+	dw	0123h	; subtitle 
+	dw	038h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_56 - $) / 4) - 1
+dd offset _SetupControlInfo_56_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_56_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_56_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_56_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_56_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_56_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_56_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_56_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_56_9 - _SetupControlInfo_N_N
+_End_SetupPageInfo_56 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_57	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0411h	; Form ID
+	dw	00h	; Title
+	dw	015Eh	; subtitle 
+	dw	039h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_57 - $) / 4) - 1
+dd offset _SetupControlInfo_57_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_57_33 - _SetupControlInfo_N_N
+_End_SetupPageInfo_57 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_58	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	02h	; Form ID
+	dw	00h	; Title
+	dw	02h	; subtitle 
+	dw	03Ah	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_58 - $) / 4) - 1
+dd offset _SetupControlInfo_58_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_36 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_37 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_38 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_39 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_40 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_41 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_42 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_43 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_44 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_45 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_46 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_47 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_48 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_58_49 - _SetupControlInfo_N_N
+_End_SetupPageInfo_58 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_59	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0414h	; Form ID
+	dw	00h	; Title
+	dw	04h	; subtitle 
+	dw	03Bh	; PageID
+	dw	03Ah	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_59 - $) / 4) - 1
+dd offset _SetupControlInfo_59_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_59_10 - _SetupControlInfo_N_N
+_End_SetupPageInfo_59 label byte
+
+_SetupPageInfo_60	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	031Fh	; Form ID
+	dw	00h	; Title
+	dw	088h	; subtitle 
+	dw	03Ch	; PageID
+	dw	03Ah	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_60 - $) / 4) - 1
+dd offset _SetupControlInfo_60_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_60_19 - _SetupControlInfo_N_N
+_End_SetupPageInfo_60 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_61	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	07h	; Form ID
+	dw	00h	; Title
+	dw	0AAh	; subtitle 
+	dw	03Dh	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_61 - $) / 4) - 1
+dd offset _SetupControlInfo_61_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_61_10 - _SetupControlInfo_N_N
+_End_SetupPageInfo_61 label byte
+
+_SetupPageInfo_62	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0416h	; Form ID
+	dw	00h	; Title
+	dw	0ACh	; subtitle 
+	dw	03Eh	; PageID
+	dw	03Dh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_62 - $) / 4) - 1
+dd offset _SetupControlInfo_62_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_62_14 - _SetupControlInfo_N_N
+_End_SetupPageInfo_62 label byte
+
+_SetupPageInfo_63	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	09h	; Form ID
+	dw	00h	; Title
+	dw	01C2h	; subtitle 
+	dw	03Fh	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_63 - $) / 4) - 1
+dd offset _SetupControlInfo_63_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_63_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_63_3 - _SetupControlInfo_N_N
+_End_SetupPageInfo_63 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_64	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	01A8h	; Form ID
+	dw	00h	; Title
+	dw	0125h	; subtitle 
+	dw	040h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_64 - $) / 4) - 1
+dd offset _SetupControlInfo_64_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_64_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_64_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_64_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_64_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_64_6 - _SetupControlInfo_N_N
+_End_SetupPageInfo_64 label byte
+
+_SetupPageInfo_65	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	01Bh	; Form ID
+	dw	00h	; Title
+	dw	02B2h	; subtitle 
+	dw	041h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_65 - $) / 4) - 1
+dd offset _SetupControlInfo_65_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_65_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_65_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_65_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_65_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_65_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_65_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_65 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_66	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	01Ch	; Form ID
+	dw	00h	; Title
+	dw	02B6h	; subtitle 
+	dw	042h	; PageID
+	dw	041h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_66 - $) / 4) - 1
+dd offset _SetupControlInfo_66_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_66_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_66_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_66_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_66_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_66_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_66_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_66_8 - _SetupControlInfo_N_N
+_End_SetupPageInfo_66 label byte
+
+_SetupPageInfo_67	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	01Dh	; Form ID
+	dw	00h	; Title
+	dw	02B8h	; subtitle 
+	dw	043h	; PageID
+	dw	041h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_67 - $) / 4) - 1
+dd offset _SetupControlInfo_67_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_67_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_67_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_67_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_67_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_67_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_67_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_67_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_67_9 - _SetupControlInfo_N_N
+_End_SetupPageInfo_67 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_68	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	01Ah	; Form ID
+	dw	00h	; Title
+	dw	02BAh	; subtitle 
+	dw	044h	; PageID
+	dw	041h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_68 - $) / 4) - 1
+dd offset _SetupControlInfo_68_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_68_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_68_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_68_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_68_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_68_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_68_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_68 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_69	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0400h	; Form ID
+	dw	00h	; Title
+	dw	01D4h	; subtitle 
+	dw	045h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_69 - $) / 4) - 1
+dd offset _SetupControlInfo_69_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_69_18 - _SetupControlInfo_N_N
+_End_SetupPageInfo_69 label byte
+
+_SetupPageInfo_70	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0401h	; Form ID
+	dw	00h	; Title
+	dw	01D6h	; subtitle 
+	dw	046h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_70 - $) / 4) - 1
+dd offset _SetupControlInfo_70_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_70_2 - _SetupControlInfo_N_N
+_End_SetupPageInfo_70 label byte
+
+_SetupPageInfo_71	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	011h	; Form ID
+	dw	00h	; Title
+	dw	0572h	; subtitle 
+	dw	047h	; PageID
+	dw	046h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_71 - $) / 4) - 1
+dd offset _SetupControlInfo_71_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_71_20 - _SetupControlInfo_N_N
+_End_SetupPageInfo_71 label byte
+
+_SetupPageInfo_72	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	012h	; Form ID
+	dw	00h	; Title
+	dw	01DEh	; subtitle 
+	dw	048h	; PageID
+	dw	046h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_72 - $) / 4) - 1
+dd offset _SetupControlInfo_72_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_72_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_72_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_72_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_72_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_72_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_72_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_72_8 - _SetupControlInfo_N_N
+_End_SetupPageInfo_72 label byte
+
+_SetupPageInfo_73	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0410h	; Form ID
+	dw	00h	; Title
+	dw	0597h	; subtitle 
+	dw	049h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_73 - $) / 4) - 1
+dd offset _SetupControlInfo_73_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_73_17 - _SetupControlInfo_N_N
+_End_SetupPageInfo_73 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_74	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0339h	; Form ID
+	dw	00h	; Title
+	dw	05F7h	; subtitle 
+	dw	04Ah	; PageID
+	dw	073h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_74 - $) / 4) - 1
+dd offset _SetupControlInfo_74_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_74_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_74_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_74_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_74_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_74_6 - _SetupControlInfo_N_N
+_End_SetupPageInfo_74 label byte
+
+_SetupPageInfo_75	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0642h	; Form ID
+	dw	00h	; Title
+	dw	05FEh	; subtitle 
+	dw	04Bh	; PageID
+	dw	04Ah	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_75 - $) / 4) - 1
+dd offset _SetupControlInfo_75_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_75_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_75_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_75_4 - _SetupControlInfo_N_N
+_End_SetupPageInfo_75 label byte
+
+_SetupPageInfo_76	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0648h	; Form ID
+	dw	00h	; Title
+	dw	05F9h	; subtitle 
+	dw	04Ch	; PageID
+	dw	04Bh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_76 - $) / 4) - 1
+dd offset _SetupControlInfo_76_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_76 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_77	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0649h	; Form ID
+	dw	00h	; Title
+	dw	05FAh	; subtitle 
+	dw	04Dh	; PageID
+	dw	04Bh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_77 - $) / 4) - 1
+dd offset _SetupControlInfo_77_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_77 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_78	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	064Ah	; Form ID
+	dw	00h	; Title
+	dw	05FBh	; subtitle 
+	dw	04Eh	; PageID
+	dw	04Bh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_78 - $) / 4) - 1
+dd offset _SetupControlInfo_78_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_78 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_79	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	064Bh	; Form ID
+	dw	00h	; Title
+	dw	05FCh	; subtitle 
+	dw	04Fh	; PageID
+	dw	04Bh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_79 - $) / 4) - 1
+dd offset _SetupControlInfo_79_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_79 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_80	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0643h	; Form ID
+	dw	00h	; Title
+	dw	0600h	; subtitle 
+	dw	050h	; PageID
+	dw	04Ah	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_80 - $) / 4) - 1
+dd offset _SetupControlInfo_80_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_80_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_80_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_80_4 - _SetupControlInfo_N_N
+_End_SetupPageInfo_80 label byte
+
+_SetupPageInfo_81	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0644h	; Form ID
+	dw	00h	; Title
+	dw	05F9h	; subtitle 
+	dw	051h	; PageID
+	dw	050h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_81 - $) / 4) - 1
+dd offset _SetupControlInfo_81_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_81 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_82	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0645h	; Form ID
+	dw	00h	; Title
+	dw	05FAh	; subtitle 
+	dw	052h	; PageID
+	dw	050h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_82 - $) / 4) - 1
+dd offset _SetupControlInfo_82_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_82 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_83	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0646h	; Form ID
+	dw	00h	; Title
+	dw	05FBh	; subtitle 
+	dw	053h	; PageID
+	dw	050h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_83 - $) / 4) - 1
+dd offset _SetupControlInfo_83_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_83 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_84	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0647h	; Form ID
+	dw	00h	; Title
+	dw	05FCh	; subtitle 
+	dw	054h	; PageID
+	dw	050h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_84 - $) / 4) - 1
+dd offset _SetupControlInfo_84_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_84 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_85	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	031Ch	; Form ID
+	dw	00h	; Title
+	dw	0290h	; subtitle 
+	dw	055h	; PageID
+	dw	073h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_85 - $) / 4) - 1
+dd offset _SetupControlInfo_85_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_85_2 - _SetupControlInfo_N_N
+_End_SetupPageInfo_85 label byte
+
+_SetupPageInfo_86	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0630h	; Form ID
+	dw	00h	; Title
+	dw	05DDh	; subtitle 
+	dw	056h	; PageID
+	dw	055h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_86 - $) / 4) - 1
+dd offset _SetupControlInfo_86_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_86_14 - _SetupControlInfo_N_N
+_End_SetupPageInfo_86 label byte
+
+_SetupPageInfo_87	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0632h	; Form ID
+	dw	00h	; Title
+	dw	05DFh	; subtitle 
+	dw	057h	; PageID
+	dw	056h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_87 - $) / 4) - 1
+dd offset _SetupControlInfo_87_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_87_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_87_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_87_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_87_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_87_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_87_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_87 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_88	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0633h	; Form ID
+	dw	00h	; Title
+	dw	05E0h	; subtitle 
+	dw	058h	; PageID
+	dw	056h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_88 - $) / 4) - 1
+dd offset _SetupControlInfo_88_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_88_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_88_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_88_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_88_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_88_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_88_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_88 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_89	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0634h	; Form ID
+	dw	00h	; Title
+	dw	05E1h	; subtitle 
+	dw	059h	; PageID
+	dw	056h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_89 - $) / 4) - 1
+dd offset _SetupControlInfo_89_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_89_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_89_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_89_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_89_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_89_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_89_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_89 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_90	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0635h	; Form ID
+	dw	00h	; Title
+	dw	05E2h	; subtitle 
+	dw	05Ah	; PageID
+	dw	056h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_90 - $) / 4) - 1
+dd offset _SetupControlInfo_90_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_90_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_90_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_90_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_90_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_90_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_90_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_90 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_91	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0636h	; Form ID
+	dw	00h	; Title
+	dw	05E3h	; subtitle 
+	dw	05Bh	; PageID
+	dw	056h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_91 - $) / 4) - 1
+dd offset _SetupControlInfo_91_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_91_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_91_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_91_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_91_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_91_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_91_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_91 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_92	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0637h	; Form ID
+	dw	00h	; Title
+	dw	05E4h	; subtitle 
+	dw	05Ch	; PageID
+	dw	056h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_92 - $) / 4) - 1
+dd offset _SetupControlInfo_92_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_92_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_92_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_92_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_92_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_92_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_92_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_92 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_93	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0638h	; Form ID
+	dw	00h	; Title
+	dw	05E5h	; subtitle 
+	dw	05Dh	; PageID
+	dw	056h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_93 - $) / 4) - 1
+dd offset _SetupControlInfo_93_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_93_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_93_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_93_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_93_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_93_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_93_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_93 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_94	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0639h	; Form ID
+	dw	00h	; Title
+	dw	05E6h	; subtitle 
+	dw	05Eh	; PageID
+	dw	056h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_94 - $) / 4) - 1
+dd offset _SetupControlInfo_94_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_94_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_94_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_94_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_94_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_94_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_94_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_94 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_95	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0631h	; Form ID
+	dw	00h	; Title
+	dw	05DEh	; subtitle 
+	dw	05Fh	; PageID
+	dw	055h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_95 - $) / 4) - 1
+dd offset _SetupControlInfo_95_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_95_14 - _SetupControlInfo_N_N
+_End_SetupPageInfo_95 label byte
+
+_SetupPageInfo_96	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	063Ah	; Form ID
+	dw	00h	; Title
+	dw	05DFh	; subtitle 
+	dw	060h	; PageID
+	dw	05Fh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_96 - $) / 4) - 1
+dd offset _SetupControlInfo_96_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_96_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_96_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_96_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_96_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_96_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_96_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_96 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_97	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	063Bh	; Form ID
+	dw	00h	; Title
+	dw	05E0h	; subtitle 
+	dw	061h	; PageID
+	dw	05Fh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_97 - $) / 4) - 1
+dd offset _SetupControlInfo_97_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_97_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_97_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_97_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_97_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_97_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_97_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_97 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_98	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	063Ch	; Form ID
+	dw	00h	; Title
+	dw	05E1h	; subtitle 
+	dw	062h	; PageID
+	dw	05Fh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_98 - $) / 4) - 1
+dd offset _SetupControlInfo_98_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_98_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_98_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_98_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_98_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_98_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_98_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_98 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_99	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	063Dh	; Form ID
+	dw	00h	; Title
+	dw	05E2h	; subtitle 
+	dw	063h	; PageID
+	dw	05Fh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_99 - $) / 4) - 1
+dd offset _SetupControlInfo_99_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_99_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_99_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_99_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_99_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_99_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_99_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_99 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_100	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	063Eh	; Form ID
+	dw	00h	; Title
+	dw	05E3h	; subtitle 
+	dw	064h	; PageID
+	dw	05Fh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_100 - $) / 4) - 1
+dd offset _SetupControlInfo_100_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_100_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_100_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_100_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_100_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_100_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_100_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_100 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_101	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	063Fh	; Form ID
+	dw	00h	; Title
+	dw	05E4h	; subtitle 
+	dw	065h	; PageID
+	dw	05Fh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_101 - $) / 4) - 1
+dd offset _SetupControlInfo_101_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_101_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_101_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_101_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_101_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_101_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_101_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_101 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_102	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0640h	; Form ID
+	dw	00h	; Title
+	dw	05E5h	; subtitle 
+	dw	066h	; PageID
+	dw	05Fh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_102 - $) / 4) - 1
+dd offset _SetupControlInfo_102_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_102_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_102_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_102_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_102_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_102_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_102_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_102 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_103	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0641h	; Form ID
+	dw	00h	; Title
+	dw	05E6h	; subtitle 
+	dw	067h	; PageID
+	dw	05Fh	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_103 - $) / 4) - 1
+dd offset _SetupControlInfo_103_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_103_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_103_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_103_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_103_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_103_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_103_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_103 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_104	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	087h	; Form ID
+	dw	00h	; Title
+	dw	05D4h	; subtitle 
+	dw	068h	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_104 - $) / 4) - 1
+dd offset _SetupControlInfo_104_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_104_16 - _SetupControlInfo_N_N
+_End_SetupPageInfo_104 label byte
+
+_SetupPageInfo_105	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	052h	; Form ID
+	dw	00h	; Title
+	dw	05A7h	; subtitle 
+	dw	069h	; PageID
+	dw	073h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_105 - $) / 4) - 1
+dd offset _SetupControlInfo_105_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_105_13 - _SetupControlInfo_N_N
+_End_SetupPageInfo_105 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_106	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	062h	; Form ID
+	dw	00h	; Title
+	dw	05B9h	; subtitle 
+	dw	06Ah	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_106 - $) / 4) - 1
+dd offset _SetupControlInfo_106_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_106_15 - _SetupControlInfo_N_N
+_End_SetupPageInfo_106 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_107	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	063h	; Form ID
+	dw	00h	; Title
+	dw	05BAh	; subtitle 
+	dw	06Bh	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_107 - $) / 4) - 1
+dd offset _SetupControlInfo_107_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_107_15 - _SetupControlInfo_N_N
+_End_SetupPageInfo_107 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_108	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	064h	; Form ID
+	dw	00h	; Title
+	dw	05BBh	; subtitle 
+	dw	06Ch	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_108 - $) / 4) - 1
+dd offset _SetupControlInfo_108_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_108_15 - _SetupControlInfo_N_N
+_End_SetupPageInfo_108 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_109	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	065h	; Form ID
+	dw	00h	; Title
+	dw	05BCh	; subtitle 
+	dw	06Dh	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_109 - $) / 4) - 1
+dd offset _SetupControlInfo_109_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_109_15 - _SetupControlInfo_N_N
+_End_SetupPageInfo_109 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_110	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	066h	; Form ID
+	dw	00h	; Title
+	dw	05BDh	; subtitle 
+	dw	06Eh	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_110 - $) / 4) - 1
+dd offset _SetupControlInfo_110_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_110_15 - _SetupControlInfo_N_N
+_End_SetupPageInfo_110 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_111	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	067h	; Form ID
+	dw	00h	; Title
+	dw	05BEh	; subtitle 
+	dw	06Fh	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_111 - $) / 4) - 1
+dd offset _SetupControlInfo_111_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_111_15 - _SetupControlInfo_N_N
+_End_SetupPageInfo_111 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_112	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0102h	; Form ID
+	dw	00h	; Title
+	dw	05BFh	; subtitle 
+	dw	070h	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_112 - $) / 4) - 1
+dd offset _SetupControlInfo_112_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_112_15 - _SetupControlInfo_N_N
+_End_SetupPageInfo_112 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_113	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0103h	; Form ID
+	dw	00h	; Title
+	dw	05C0h	; subtitle 
+	dw	071h	; PageID
+	dw	069h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_113 - $) / 4) - 1
+dd offset _SetupControlInfo_113_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_113_15 - _SetupControlInfo_N_N
+_End_SetupPageInfo_113 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_114	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	01Eh	; Form ID
+	dw	00h	; Title
+	dw	0603h	; subtitle 
+	dw	072h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_114 - $) / 4) - 1
+dd offset _SetupControlInfo_114_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_114_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_114_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_114_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_114_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_114_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_114_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_114_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_114_9 - _SetupControlInfo_N_N
+_End_SetupPageInfo_114 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_115	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	022h	; Form ID
+	dw	00h	; Title
+	dw	01C6h	; subtitle 
+	dw	073h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_115 - $) / 4) - 1
+dd offset _SetupControlInfo_115_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_115_20 - _SetupControlInfo_N_N
+_End_SetupPageInfo_115 label byte
+
+_SetupPageInfo_116	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0415h	; Form ID
+	dw	00h	; Title
+	dw	0413h	; subtitle 
+	dw	074h	; PageID
+	dw	073h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_116 - $) / 4) - 1
+dd offset _SetupControlInfo_116_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_116_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_116_3 - _SetupControlInfo_N_N
+_End_SetupPageInfo_116 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_117	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	024h	; Form ID
+	dw	00h	; Title
+	dw	0292h	; subtitle 
+	dw	075h	; PageID
+	dw	073h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_117 - $) / 4) - 1
+dd offset _SetupControlInfo_117_1 - _SetupControlInfo_N_N
+_End_SetupPageInfo_117 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_118	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	031Dh	; Form ID
+	dw	00h	; Title
+	dw	028Ah	; subtitle 
+	dw	076h	; PageID
+	dw	074h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_118 - $) / 4) - 1
+dd offset _SetupControlInfo_118_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_118_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_118_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_118_4 - _SetupControlInfo_N_N
+_End_SetupPageInfo_118 label byte
+
+_SetupPageInfo_119	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0176h	; Form ID
+	dw	00h	; Title
+	dw	0447h	; subtitle 
+	dw	077h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_119 - $) / 4) - 1
+dd offset _SetupControlInfo_119_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_119_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_119_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_119_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_119_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_119_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_119_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_119_8 - _SetupControlInfo_N_N
+_End_SetupPageInfo_119 label byte
+
+_SetupPageInfo_120	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0305h	; Form ID
+	dw	00h	; Title
+	dw	01C5h	; subtitle 
+	dw	078h	; PageID
+	dw	037h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_120 - $) / 4) - 1
+dd offset _SetupControlInfo_120_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_36 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_37 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_38 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_39 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_40 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_41 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_42 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_43 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_44 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_45 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_46 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_47 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_48 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_49 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_50 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_51 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_52 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_53 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_54 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_55 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_56 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_57 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_58 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_59 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_60 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_61 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_62 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_63 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_64 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_65 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_66 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_67 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_68 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_69 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_70 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_71 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_72 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_73 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_74 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_75 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_76 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_77 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_78 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_120_79 - _SetupControlInfo_N_N
+_End_SetupPageInfo_120 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_121	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0412h	; Form ID
+	dw	00h	; Title
+	dw	050Eh	; subtitle 
+	dw	079h	; PageID
+	dw	078h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_121 - $) / 4) - 1
+dd offset _SetupControlInfo_121_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_36 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_37 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_38 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_121_39 - _SetupControlInfo_N_N
+_End_SetupPageInfo_121 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_122	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0331h	; Form ID
+	dw	00h	; Title
+	dw	047Eh	; subtitle 
+	dw	07Ah	; PageID
+	dw	079h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_122 - $) / 4) - 1
+dd offset _SetupControlInfo_122_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_122_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_122_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_122_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_122_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_122_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_122_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_122 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_123	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0332h	; Form ID
+	dw	00h	; Title
+	dw	047Fh	; subtitle 
+	dw	07Bh	; PageID
+	dw	079h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_123 - $) / 4) - 1
+dd offset _SetupControlInfo_123_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_123_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_123_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_123_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_123_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_123_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_123_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_123 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_124	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0333h	; Form ID
+	dw	00h	; Title
+	dw	0480h	; subtitle 
+	dw	07Ch	; PageID
+	dw	079h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_124 - $) / 4) - 1
+dd offset _SetupControlInfo_124_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_124_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_124_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_124_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_124_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_124_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_124_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_124 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_125	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0334h	; Form ID
+	dw	00h	; Title
+	dw	0481h	; subtitle 
+	dw	07Dh	; PageID
+	dw	079h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_125 - $) / 4) - 1
+dd offset _SetupControlInfo_125_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_125_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_125_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_125_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_125_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_125_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_125_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_125 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_126	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0335h	; Form ID
+	dw	00h	; Title
+	dw	0482h	; subtitle 
+	dw	07Eh	; PageID
+	dw	079h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_126 - $) / 4) - 1
+dd offset _SetupControlInfo_126_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_126_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_126_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_126_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_126_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_126_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_126_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_126 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_127	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0336h	; Form ID
+	dw	00h	; Title
+	dw	0483h	; subtitle 
+	dw	07Fh	; PageID
+	dw	079h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_127 - $) / 4) - 1
+dd offset _SetupControlInfo_127_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_127_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_127_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_127_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_127_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_127_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_127_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_127 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_128	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0337h	; Form ID
+	dw	00h	; Title
+	dw	0484h	; subtitle 
+	dw	080h	; PageID
+	dw	079h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_128 - $) / 4) - 1
+dd offset _SetupControlInfo_128_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_128_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_128_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_128_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_128_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_128_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_128_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_128 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_129	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0338h	; Form ID
+	dw	00h	; Title
+	dw	0485h	; subtitle 
+	dw	081h	; PageID
+	dw	079h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_129 - $) / 4) - 1
+dd offset _SetupControlInfo_129_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_129_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_129_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_129_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_129_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_129_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_129_7 - _SetupControlInfo_N_N
+_End_SetupPageInfo_129 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_130	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	031Bh	; Form ID
+	dw	00h	; Title
+	dw	0256h	; subtitle 
+	dw	082h	; PageID
+	dw	078h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_130 - $) / 4) - 1
+dd offset _SetupControlInfo_130_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_130_13 - _SetupControlInfo_N_N
+_End_SetupPageInfo_130 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_131	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	032Ah	; Form ID
+	dw	00h	; Title
+	dw	04ACh	; subtitle 
+	dw	083h	; PageID
+	dw	078h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_131 - $) / 4) - 1
+dd offset _SetupControlInfo_131_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_131_29 - _SetupControlInfo_N_N
+_End_SetupPageInfo_131 label byte
+db	4	dup(0)	;padding
+
+_SetupPageInfo_132	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0324h	; Form ID
+	dw	00h	; Title
+	dw	02D0h	; subtitle 
+	dw	084h	; PageID
+	dw	078h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_132 - $) / 4) - 1
+dd offset _SetupControlInfo_132_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_132_36 - _SetupControlInfo_N_N
+_End_SetupPageInfo_132 label byte
+
+_SetupPageInfo_133	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0325h	; Form ID
+	dw	00h	; Title
+	dw	04B4h	; subtitle 
+	dw	085h	; PageID
+	dw	078h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_133 - $) / 4) - 1
+dd offset _SetupControlInfo_133_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_133_16 - _SetupControlInfo_N_N
+_End_SetupPageInfo_133 label byte
+
+_SetupPageInfo_134	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0330h	; Form ID
+	dw	00h	; Title
+	dw	04D0h	; subtitle 
+	dw	086h	; PageID
+	dw	085h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_134 - $) / 4) - 1
+dd offset _SetupControlInfo_134_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_134_12 - _SetupControlInfo_N_N
+_End_SetupPageInfo_134 label byte
+
+_SetupPageInfo_135	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0323h	; Form ID
+	dw	00h	; Title
+	dw	02F1h	; subtitle 
+	dw	087h	; PageID
+	dw	078h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_135 - $) / 4) - 1
+dd offset _SetupControlInfo_135_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_135_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_135_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_135_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_135_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_135_6 - _SetupControlInfo_N_N
+_End_SetupPageInfo_135 label byte
+
+_SetupPageInfo_136	label	byte
+	dq	00h	; HII page handle
+	dw	06h	; Page ID Index
+	dw	0417h	; Form ID
+	dw	00h	; Title
+	dw	050Bh	; subtitle 
+	dw	088h	; PageID
+	dw	087h	; ParentPageID
+	dd	00h	; Flags
+	dd	054h	; Page Variable
+;; Control offsets
+dd	((_End_SetupPageInfo_136 - $) / 4) - 1
+dd offset _SetupControlInfo_136_1 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_2 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_3 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_4 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_5 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_6 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_7 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_8 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_9 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_10 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_11 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_12 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_13 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_14 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_15 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_16 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_17 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_18 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_19 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_20 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_21 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_22 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_23 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_24 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_25 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_26 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_27 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_28 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_29 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_30 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_31 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_32 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_33 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_34 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_35 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_36 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_37 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_38 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_39 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_40 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_41 - _SetupControlInfo_N_N
+dd offset _SetupControlInfo_136_42 - _SetupControlInfo_N_N
+_End_SetupPageInfo_136 label byte
+;;
+;; !!!!! d:\bios\z124-002\z124-002\Build\Harrisonville\RELEASE_MYTOOLS\X64\HarrisonvillePkg\Platform\SetupDxe\SetupDxe\OUTPUT\.\SetupDxeStrDefs.hpk !!!! 
+;;

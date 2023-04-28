@@ -1,0 +1,99 @@
+ WheaErrorInj
+
+ Timestamp is 6448e7ef (Wed Apr 26 16:59:27 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00002d8dH .text                   CODE
+ 0002:00000000 00000618H .data                   DATA
+ 0002:00000618 00000026H .rdata                  DATA
+ 0002:00000640 000001b0H .bss                    DATA
+ 0003:00000000 00000114H .pdata                  DATA
+ 0004:00000000 000000c8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000090       ProcessLibraryConstructorList 0000000000000330 f   WheaErrorInj:AutoGen.obj
+ 0001:000001b0       InjectPciExError           0000000000000450 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:00000494       ValidateRootPortForInjection 0000000000000734 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:000005b8       GetRootPortForInjection    0000000000000858 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:00000634       ByteEnableToUint64         00000000000008d4 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:000006fc       GetRegisterAccessInfo      000000000000099c f   WheaErrorInj:WheaErrorInj.obj
+ 0001:000009c4       MemRegRead                 0000000000000c64 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:00000da0       MemRegWrite                0000000000001040 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:00001384       SeedMemError               0000000000001624 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:000013bc       FlushCache                 000000000000165c f   WheaErrorInj:WheaErrorInj.obj
+ 0001:000013d0       FlushCacheOnAllAps         0000000000001670 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:00001440       InjectMemError             00000000000016e0 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:00001b6c       SimulatePcieErrorInj       0000000000001e0c f   WheaErrorInj:WheaErrorInj.obj
+ 0001:00002148       WheaPlatformCallback       00000000000023e8 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:00002180       UpdateEinjTable            0000000000002420 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:000025a0       InitWheaErrorInj           0000000000002840 f   WheaErrorInj:WheaErrorInj.obj
+ 0001:000026f0       RShiftU64                  0000000000002990 f   BaseLib:RShiftU64.obj
+ 0001:000026fc       LShiftU64                  000000000000299c f   BaseLib:LShiftU64.obj
+ 0001:00002708       InternalAssertJumpBuffer   00000000000029a8 f   BaseLib:SetJump.obj
+ 0001:0000270c       MmioRead32                 00000000000029ac f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00002710       MmioWrite32                00000000000029b0 f   BaseIoLibIntrinsic:IoLib.obj
+ 0001:00002718       CopyMem                    00000000000029b8 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00002748       ZeroMem                    00000000000029e8 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00002750       BufferInSmram              00000000000029f0 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002794       InternalAllocatePool       0000000000002a34 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000027c4       FreePool                   0000000000002a64 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000027fc       PciExpressRead16           0000000000002a9c f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00002808       PciExpressWrite16          0000000000002aa8 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00002818       PciExpressRead32           0000000000002ab8 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00002824       PciExpressWrite32          0000000000002ac4 f   BasePciExpressLib:PciExpressLib.obj
+ 0001:00002830       TriggerWheaSci             0000000000002ad0 f   WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0001:00002934       TriggerWheaNmi             0000000000002bd4 f   WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0001:00002ba4       GetFirstGuidHob            0000000000002e44 f   DxeHobLib:HobLib.obj
+ 0001:00002bf0       AsmWbinvd                  0000000000002e90 f   WheaErrorInj:Einj.obj
+ 0001:00002bf3       AsmNop                     0000000000002e93 f   WheaErrorInj:Einj.obj
+ 0001:00002bf6       AsmFlushCacheLine          0000000000002e96 f   WheaErrorInj:Einj.obj
+ 0001:00002c03       AsmCommitLine              0000000000002ea3 f   WheaErrorInj:Einj.obj
+ 0001:00002c20       SetJump                    0000000000002ec0     BaseLib:SetJump.obj
+ 0001:00002cb0       InternalLongJump           0000000000002f50     BaseLib:LongJump.obj
+ 0001:00002d30       InternalMemCopyMem         0000000000002fd0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00002d70       InternalMemZeroMem         0000000000003010     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gRasPolicyHobGuid          0000000000003040     WheaErrorInj:AutoGen.obj
+ 0002:00000010       gEfiHobListGuid            0000000000003050     WheaErrorInj:AutoGen.obj
+ 0002:00000020       gEfiWheaPlatformSupportProtocolGuid 0000000000003060     WheaErrorInj:AutoGen.obj
+ 0002:00000030       gEfiSmmSwDispatch2ProtocolGuid 0000000000003070     WheaErrorInj:AutoGen.obj
+ 0002:00000040       gEfiWheaSupportProtocolGuid 0000000000003080     WheaErrorInj:AutoGen.obj
+ 0002:00000050       gEfiSmmBase2ProtocolGuid   0000000000003090     WheaErrorInj:AutoGen.obj
+ 0002:00000060       gEfiSmmAccess2ProtocolGuid 00000000000030a0     WheaErrorInj:AutoGen.obj
+ 0002:00000090       PchLpRprDidTable           00000000000030d0     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000000a8       PchHRprDidTable            00000000000030e8     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000000d0       PlatformCeSrc              0000000000003110     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:00000108       PlatformUeSrc              0000000000003148     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:00000140       SysGenErrSources           0000000000003180     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:00000320       InstancePortMap            0000000000003360     WheaErrorInj:WheaErrorInj.obj
+ 0002:00000500       InstancePortOffset         0000000000003540     WheaErrorInj:WheaErrorInj.obj
+ 0002:000005e8       ChannelToInstanceMap       0000000000003628     WheaErrorInj:WheaErrorInj.obj
+ 0002:00000618       _gPcd_FixedAtBuild_PcdPciExpressBaseAddress 0000000000003658     WheaErrorInj:AutoGen.obj
+ 0002:00000620       _gUefiDriverRevision       0000000000003660     WheaErrorInj:AutoGen.obj
+ 0002:00000628       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 0000000000003668     WheaErrorInj:WheaErrorInj.obj
+ 0002:00000748       mAcpi5Support              0000000000003788     WheaErrorInj:WheaErrorInj.obj
+ 0002:00000749       mPcieErrInjActionTable     0000000000003789     WheaErrorInj:WheaErrorInj.obj
+ 0002:0000074a       mMemErrInjSimulated        000000000000378a     WheaErrorInj:WheaErrorInj.obj
+ 0002:0000074b       mPCIeErrInjSimulated       000000000000378b     WheaErrorInj:WheaErrorInj.obj
+ 0002:00000750       mSmmBase                   0000000000003790     WheaErrorInj:WheaErrorInj.obj
+ 0002:00000758       mSmst                      0000000000003798     WheaErrorInj:WheaErrorInj.obj
+ 0002:00000780       gImageHandle               00000000000037c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000788       gST                        00000000000037c8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000790       gBS                        00000000000037d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000798       gRT                        00000000000037d8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000007a0       gSmst                      00000000000037e0     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:000007a8       SysNativeErrSources        00000000000037e8     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:000007c8       mHobList                   0000000000003808     DxeHobLib:HobLib.obj
+ 0002:000007d0       mSmramRanges               0000000000003810     <common>
+ 0002:000007d8       mSmramRangeCount           0000000000003818     <common>
+ 0002:000007e0       mBiosRsvdInjAddr           0000000000003820     <common>
+ 0002:000007e8       mBiosRsvdInjAddrBase       0000000000003828     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00001d58       WheaEinjHandler            0000000000001ff8 f    CIL library: CIL module

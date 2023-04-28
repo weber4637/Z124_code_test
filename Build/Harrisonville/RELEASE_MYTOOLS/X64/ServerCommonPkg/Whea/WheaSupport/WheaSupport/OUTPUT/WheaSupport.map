@@ -1,0 +1,54 @@
+ WheaSupport
+
+ Timestamp is 6448e7f8 (Wed Apr 26 16:59:36 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000009bdH .text                   CODE
+ 0002:00000000 000001e0H .data                   DATA
+ 0002:000001e0 00000004H .rdata                  DATA
+ 0002:000001e8 00000052H .bss                    DATA
+ 0003:00000000 0000006cH .pdata                  DATA
+ 0004:00000000 00000040H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000004f8       CheckInstallTables         0000000000000798 f   WheaSupport:WheaSupport.obj
+ 0001:00000508       InstallWheaSupport         00000000000007a8 f   WheaSupport:WheaSupport.obj
+ 0001:000008ac       InternalAllocatePool       0000000000000b4c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000008dc       AllocateZeroPool           0000000000000b7c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000908       InternalEmptyFunction      0000000000000ba8 f   UefiLib:UefiLib.obj
+ 0001:0000090c       EfiCreateEventReadyToBootEx 0000000000000bac f   UefiLib:UefiNotTiano.obj
+ 0001:00000960       InternalMemCopyMem         0000000000000c00     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000009a0       InternalMemZeroMem         0000000000000c40     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       gEfiEventReadyToBootGuid   0000000000000c60     WheaSupport:AutoGen.obj
+ 0002:00000010       gEfiIsPlatformSupportWheaProtocolGuid 0000000000000c70     WheaSupport:AutoGen.obj
+ 0002:00000020       gEfiAcpiTableProtocolGuid  0000000000000c80     WheaSupport:AutoGen.obj
+ 0002:00000030       gEfiWheaSupportProtocolGuid 0000000000000c90     WheaSupport:AutoGen.obj
+ 0002:00000060       PchLpRprDidTable           0000000000000cc0     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00000078       PchHRprDidTable            0000000000000cd8     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:000000a0       PlatformCeSrc              0000000000000d00     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:000000d8       PlatformUeSrc              0000000000000d38     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:00000110       SysGenErrSources           0000000000000d70     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+ 0002:000001e0       _gUefiDriverRevision       0000000000000e40     WheaSupport:AutoGen.obj
+ 0002:000001f9       mEinjEntries               0000000000000e59     WheaSupport:WheaSupport.obj
+ 0002:00000200       gImageHandle               0000000000000e60     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000208       gST                        0000000000000e68     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000210       gBS                        0000000000000e70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000218       gRT                        0000000000000e78     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000220       SysNativeErrSources        0000000000000e80     WheaPlatformHooksLib:WheaPlatformHooksLib.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000034       AddErrorSource             00000000000002d4 f    CIL library: CIL module
+ 0001:000002d8       AddBootErrorLog            0000000000000578 f    CIL library: CIL module
+ 0001:000002dc       InstallErrorInjectionMethod 000000000000057c f    CIL library: CIL module
+ 0001:0000034c       GetErrorInjectionCapability 00000000000005ec f    CIL library: CIL module
+ 0001:00000368       GetElar                    0000000000000608 f    CIL library: CIL module
+ 0001:000003a4       InstallErrorRecordMethod   0000000000000644 f    CIL library: CIL module
+ 0001:000003fc       InstallWheaTables          000000000000069c f    CIL library: CIL module

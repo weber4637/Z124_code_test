@@ -1,0 +1,81 @@
+ PlatformStage2Pei
+
+ Timestamp is 6448e7d0 (Wed Apr 26 16:58:56 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000e2fH .text                   CODE
+ 0002:00000000 00006b18H .data                   DATA
+ 0002:00006b18 00000044H .rdata                  DATA
+ 0002:00006b5c 00000000H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:00000009       _PeiInitPlatformStage2     00000249 f   PlatformStage2Pei:PlatformStage2.obj
+ 0001:00000115       _ClearIchSmiAndWake        00000355 f   PlatformStage2Pei:PlatformStage2.obj
+ 0001:00000278       _SetTheStateToGoAfterG3    000004b8 f   PlatformStage2Pei:PlatformStage2.obj
+ 0001:000002cf       _ConfigureIoExpander       0000050f f   PlatformStage2Pei:PlatformStage2.obj
+ 0001:00000323       _InitIoExpander            00000563 f   PlatformStage2Pei:PlatformStage2.obj
+ 0001:000003aa       _PlatformPchInit           000005ea f   PlatformStage2Pei:PlatformIchInit.obj
+ 0001:000004a5       _MemoryDiscoveredPpiNotifyCallback 000006e5 f   PlatformStage2Pei:MemoryCallback.obj
+ 0001:00000534       _SetCacheMtrr              00000774 f   PlatformStage2Pei:MemoryCallback.obj
+ 0001:00000674       _EndOfPeiCallback          000008b4 f   PlatformStage2Pei:MemoryCallback.obj
+ 0001:0000076b       _ChoosePlatformMemoryRange 000009ab f   PlatformStage2Pei:Memory.obj
+ 0001:0000076e       _GetPlatformMemorySize     000009ae f   PlatformStage2Pei:Memory.obj
+ 0001:0000086f       _CopyMem                   00000aaf f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:0000088e       _CopyGuid                  00000ace f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000008b2       _CompareGuid               00000af2 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:000008e3       _PchAcpiBaseGet            00000b23 f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:0000091e       _PchPwrmBaseGet            00000b5e f   PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0001:00000954       _GetPchSeries              00000b94 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00000a43       _GetPchGeneration          00000c83 f   PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0001:00000b32       _GetHobList                00000d72 f   PeiHobLib:HobLib.obj
+ 0001:00000b4c       _GetNextHob                00000d8c f   PeiHobLib:HobLib.obj
+ 0001:00000b79       _GetNextGuidHob            00000db9 f   PeiHobLib:HobLib.obj
+ 0001:00000b9d       _InternalPeiCreateHob      00000ddd f   PeiHobLib:HobLib.obj
+ 0001:00000bc6       _AsmCpuid                  00000e06 f   BaseLib:CpuId.obj
+ 0001:00000c01       _GpioClearAllGpiSmiSts     00000e41 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00000c68       _GpioGetMaxDwOffsetFromGroup 00000ea8 f   PeiDxeSmmGpioLib:GpioLib.obj
+ 0001:00000c88       _GpioGetGroupInfoTable     00000ec8 f   PeiDxeSmmGpioLib:GpioNativeLib.obj
+ 0001:00000ca4       _GetPlatformInfo           00000ee4 f   PeiPlatformHookLib:PeiPlatformHooklib.obj
+ 0001:00000d23       _GetPeiServicesTablePointer 00000f63 f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00000d3d       _ZeroMem                   00000f7d f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00000d50       _InternalMemCopyMem        00000f90     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000d90       _InternalMemZeroMem        00000fd0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000db0       _InternalMemCompareMem     00000ff0     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000dd0       _InternalMemSetMem         00001010     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000df0       _InternalMemSetMem32       00001030     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000e10       _InternalMemSetMem64       00001050     BaseMemoryLibRepStr:SetMem64.obj
+ 0002:00000000       _gEfiMemoryConfigDataGuid  00001080     PlatformStage2Pei:AutoGen.obj
+ 0002:00000010       _gEfiMemoryTypeInformationGuid 00001090     PlatformStage2Pei:AutoGen.obj
+ 0002:00000020       _gPlatformInfoHobGuid      000010a0     PlatformStage2Pei:AutoGen.obj
+ 0002:00000030       _gPeiPlatformMemorySizePpiGuid 000010b0     PlatformStage2Pei:AutoGen.obj
+ 0002:00000040       _gPeiPlatformMemoryRangePpiGuid 000010c0     PlatformStage2Pei:AutoGen.obj
+ 0002:00000050       _gEfiPeiMemoryDiscoveredPpiGuid 000010d0     PlatformStage2Pei:AutoGen.obj
+ 0002:00000060       _gEfiPeiSmbusPpiGuid       000010e0     PlatformStage2Pei:AutoGen.obj
+ 0002:00000070       _gEfiPeiReadOnlyVariable2PpiGuid 000010f0     PlatformStage2Pei:AutoGen.obj
+ 0002:00000080       _gEfiPeiStallPpiGuid       00001100     PlatformStage2Pei:AutoGen.obj
+ 0002:00000090       _gEfiEndOfPeiSignalPpiGuid 00001110     PlatformStage2Pei:AutoGen.obj
+ 0002:000000a0       _gPeiCachePpiGuid          00001120     PlatformStage2Pei:AutoGen.obj
+ 0002:000000b0       _gPchPolicyPpiGuid         00001130     PlatformStage2Pei:AutoGen.obj
+ 0002:000000c0       _gEfiPeiFirmwareVolumeInfoPpiGuid 00001140     PlatformStage2Pei:AutoGen.obj
+ 0002:000063b8       _mPchLpSataPortResetToGpioMap 00007438     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:000063d0       _mPchHSataPortResetToGpioMap 00007450     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00006410       _mPchLpSataDevSlpPinToGpioMap 00007490     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00006428       _mPchHSataDevSlpPinToGpioMap 000074a8     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00006938       _PchLpRprDidTable          000079b8     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00006950       _PchHRprDidTable           000079d0     PeiDxeSmmPchCycleDecodingLib:PchCycleDecodingLib.obj
+ 0002:00006978       _mDefaultMemoryTypeInformation 000079f8     PlatformStage2Pei:Memory.obj
+ 0002:00006a0c       _mSystemConfigurationGuid  00007a8c     PlatformStage2Pei:PlatformStage2.obj
+ 0002:00006a1c       _mPchSeries                00007a9c     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00006a20       _mPchGeneration            00007aa0     PeiDxeSmmPchInfoLib:PchInfoLib.obj
+ 0002:00006a28       _mPchHGpioGroupInfo        00007aa8     PeiDxeSmmGpioLib:PchSklGpioData.obj
+ 0002:00006b18       ??_C@_1BG@EGBOHNPF@?$AAI?$AAn?$AAt?$AAe?$AAl?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 00007b98     PlatformStage2Pei:PlatformIchInit.obj
+ 0002:00006b30       ??_C@_1CM@OLBNONPD@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAT?$AAy?$AAp?$AAe?$AAI?$AAn?$AAf?$AAo?$AAr?$AAm?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 00007bb0     PlatformStage2Pei:Memory.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

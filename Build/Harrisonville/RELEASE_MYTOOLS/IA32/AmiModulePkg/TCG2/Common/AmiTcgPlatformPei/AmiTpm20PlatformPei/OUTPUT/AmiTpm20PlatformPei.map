@@ -1,0 +1,89 @@
+ AmiTpm20PlatformPei
+
+ Timestamp is 6448e7d1 (Wed Apr 26 16:58:57 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000b18dH .text                   CODE
+ 0002:00000000 000000b4H .data                   DATA
+ 0002:000000b8 000002bcH .rdata                  DATA
+ 0002:00000380 00000114H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0001:00000000       __ModuleEntryPoint         00000240 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:0000002c       _InternalPeiBuildHobGuid   0000026c f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:00000056       _MeasureLogDxeFwVol        00000296 f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:00000354       _Tpm20MeasureCRTMVersion   00000594 f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:0000041f       _Tpm2PeiGetCapability      0000065f f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:000004e0       _Tpm2GetPeiCapabilityFwVersion 00000720 f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:0000055a       _Tpm20PeiSelfTest          0000079a f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:00000668       _Tpm20PeiSendStartup       000008a8 f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:0000086f       _FirstBootCheck            00000aaf f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:000008e0       _MeasureTCGPcClientSpecID  00000b20 f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:00000ac3       _GetRomArea                00000d03 f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:00000af7       _FindAndMeasureDxeCore     00000d37 f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:00000cca       _AmiTpm20PlatformPeiEntry  00000f0a f   AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0001:00000d7f       _CopyMem                   00000fbf f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00000da1       _SetMem                    00000fe1 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00000db5       _SwapBytes32               00000ff5 f   BaseLib:SwapBytes32.obj
+ 0001:00000dce       _IsPTP                     0000100e f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00000df9       _GetCurrentInterfaceType   00001039 f   CrbLibPei:Tpm20CRBLib.obj
+ 0001:00000f24       _AmiGetFirstRomArea        00001164 f   PeiAmiRomLayoutLib:PeiAmiRomLayoutLib.obj
+ 0001:00000f45       _AmiGetNextRomArea         00001185 f   PeiAmiRomLayoutLib:PeiAmiRomLayoutLib.obj
+ 0001:00000f83       _GetHobList                000011c3 f   PeiHobLib:HobLib.obj
+ 0001:00000f9d       _GetNextHob                000011dd f   PeiHobLib:HobLib.obj
+ 0001:00000fca       _GetFirstGuidHob           0000120a f   PeiHobLib:HobLib.obj
+ 0001:00000ff8       _InternalPeiCreateHob      00001238 f   PeiHobLib:HobLib.obj
+ 0001:00001020       _BuildGuidHob              00001260 f   PeiHobLib:HobLib.obj
+ 0001:0000103d       _GetPeiServicesTablePointer 0000127d f   PeiServicesTablePointerLibIdt:PeiServicesTablePointer.obj
+ 0001:00001057       _CopyGuid                  00001297 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:0000107b       _CompareGuid               000012bb f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:0000109f       _PttHciPresenceCheck       000012df f   PttHciDeviceNullLib:PttHciLibNull.obj
+ 0001:000010a2       _InternalReportStatusCode  000012e2 f   PeiReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:000010f0       _InternalMemCopyMem        00001330     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001130       _InternalMemSetMem         00001370     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001150       _InternalMemSetMem32       00001390     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00001170       _InternalMemSetMem64       000013b0     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00001190       _sha512_init               000013d0 f   ShaLib:sha512.obj
+ 0001:00001250       _sha512_process            00001490 f   ShaLib:sha512.obj
+ 0001:00002ae0       _sha512_done               00002d20 f   ShaLib:sha512.obj
+ 0001:00002e30       _sha256_init               00003070 f   ShaLib:sha256.obj
+ 0001:00002ea0       _sha256_process            000030e0 f   ShaLib:sha256.obj
+ 0001:00008270       _sha256_done               000084b0 f   ShaLib:sha256.obj
+ 0001:000086a0       _sha384_init               000088e0 f   ShaLib:sha384.obj
+ 0001:00008760       _sha384_done               000089a0 f   ShaLib:sha384.obj
+ 0001:000087c0       _SHA1Init                  00008a00 f   ShaLib:sha1.obj
+ 0001:00008810       _SHA1Update                00008a50 f   ShaLib:sha1.obj
+ 0001:0000aff0       _SHA1Final                 0000b230 f   ShaLib:sha1.obj
+ 0001:0000b130       __aullshr                  0000b370 f   ShaLib:IA32math.obj
+ 0001:0000b150       __allshl                   0000b390 f   ShaLib:IA32math.obj
+ 0001:0000b170       _InternalMemZeroMem        0000b3b0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       _gEfiCallerIdGuid          0000b3e0     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000010       _gAmiGlobalVariableGuid    0000b3f0     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000020       _gSkipTpmStartupGuid       0000b400     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000030       _gTpm20HobGuid             0000b410     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000040       _amiFVhoblistguid          0000b420     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000050       _gAmiRomLayoutFfsFileGuid  0000b430     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000060       _gAmiRomLayoutGuid         0000b440     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000070       _gAmiTreePpiGuid           0000b450     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000080       _gEfiPeiReadOnlyVariable2PpiGuid 0000b460     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:00000090       _gAmiHashLogExtendExGuid   0000b470     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:000000a0       _gTcgPeiPolicyGuid         0000b480     AmiTpm20PlatformPei:AutoGen.obj
+ 0002:000000b0       _Tpm20MeasureCRTMVersionFuncPtr 0000b490     AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0002:00000338       ??_C@_01LOCGONAA@?$AA?$AA@ 0000b718     ShaLib:sha1.obj
+ 0002:0000033c       ??_C@_01IFKFHFEL@?$IA?$AA@ 0000b71c     ShaLib:sha1.obj
+ 0002:00000340       ??_C@_1CC@NDMOAINP@?$AAM?$AAo?$AAn?$AAo?$AAt?$AAo?$AAn?$AAi?$AAc?$AAC?$AAo?$AAu?$AAn?$AAt?$AAe?$AAr?$AA?$AA@ 0000b720     AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0002:00000364       ??_C@_0BA@ELPJFFJJ@Spec?5ID?5Event03?$AA@ 0000b744     AmiTpm20PlatformPei:AmiTpm20PlatformPei.obj
+ 0002:000003a0       _TpmDigest                 0000b780     <common>
+ 0002:00000480       _Sha1Digest                0000b860     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000e45       _GetAmiRomLayoutHeader     00001085 f    CIL library: CIL module
+ 0001:000013c0       _sha512_compress           00001600 f   ShaLib:sha512.obj
+ 0001:00002fe0       _sha256_compress           00003220 f   ShaLib:sha256.obj
+ 0001:00008910       _SHA1Transform             00008b50 f   ShaLib:sha1.obj

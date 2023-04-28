@@ -1,0 +1,67 @@
+ TcgSmm
+
+ Timestamp is 6448e7f9 (Wed Apr 26 16:59:37 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000f5dH .text                   CODE
+ 0002:00000000 00000090H .data                   DATA
+ 0002:00000090 000000b4H .rdata                  DATA
+ 0002:00000150 00000160H .bss                    DATA
+ 0003:00000000 0000009cH .pdata                  DATA
+ 0004:00000000 00000058H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          0000000000000260 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000090       ProcessLibraryConstructorList 00000000000002f0 f   TcgSmm:AutoGen.obj
+ 0001:00000158       TcgGetSmstConfigurationTablePi 00000000000003b8 f   TcgSmm:TCGSmm.obj
+ 0001:000001ec       NVOSRead_PPI_request       000000000000044c f   TcgSmm:TCGSmm.obj
+ 0001:000002ac       NVOSWrite_PPI_request      000000000000050c f   TcgSmm:TCGSmm.obj
+ 0001:000004d8       Read_User_Confirmation_Status 0000000000000738 f   TcgSmm:TCGSmm.obj
+ 0001:00000950       NVOSWrite_MOR_request      0000000000000bb0 f   TcgSmm:TCGSmm.obj
+ 0001:00000a30       GetTpmNVSFlags             0000000000000c90 f   TcgSmm:TCGSmm.obj
+ 0001:00000a88       TcgSmiCommonHandler        0000000000000ce8 f   TcgSmm:TCGSmm.obj
+ 0001:00000ba8       TCGSmmInit                 0000000000000e08 f   TcgSmm:TCGSmm.obj
+ 0001:00000d04       CompareMem                 0000000000000f64 f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:00000d20       InternalAssertJumpBuffer   0000000000000f80 f   BaseLib:SetJump.obj
+ 0001:00000d24       BufferInSmram              0000000000000f84 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d68       InternalAllocatePool       0000000000000fc8 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d98       FreePool                   0000000000000ff8 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000dd0       InternalMemCompareMem      0000000000001030     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000df0       SetJump                    0000000000001050     BaseLib:SetJump.obj
+ 0001:00000e80       InternalLongJump           00000000000010e0     BaseLib:LongJump.obj
+ 0001:00000f00       InternalMemCopyMem         0000000000001160     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000f40       InternalMemZeroMem         00000000000011a0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0002:00000000       SmmRsTableGuid             00000000000011c0     TcgSmm:AutoGen.obj
+ 0002:00000010       FlagsStatusguid            00000000000011d0     TcgSmm:AutoGen.obj
+ 0002:00000020       gEfiMemoryOverwriteControlDataGuid 00000000000011e0     TcgSmm:AutoGen.obj
+ 0002:00000030       gSetupVariableGuid         00000000000011f0     TcgSmm:AutoGen.obj
+ 0002:00000040       AmitcgefiOsVariableGuid    0000000000001200     TcgSmm:AutoGen.obj
+ 0002:00000050       gEfiSmmBase2ProtocolGuid   0000000000001210     TcgSmm:AutoGen.obj
+ 0002:00000060       gEfiSmmSwDispatch2ProtocolGuid 0000000000001220     TcgSmm:AutoGen.obj
+ 0002:00000070       gEfiSmmVariableProtocolGuid 0000000000001230     TcgSmm:AutoGen.obj
+ 0002:00000080       gEfiSmmAccess2ProtocolGuid 0000000000001240     TcgSmm:AutoGen.obj
+ 0002:00000090       _gUefiDriverRevision       0000000000001250     TcgSmm:AutoGen.obj
+ 0002:00000098       ??_C@_1BK@FMMKMGLA@?$AAA?$AAM?$AAI?$AAT?$AAC?$AAG?$AAP?$AAP?$AAI?$AAV?$AAA?$AAR?$AA?$AA@ 0000000000001258     TcgSmm:TCGSmm.obj
+ 0002:000000b8       ??_C@_1CA@COAOPIGL@?$AAT?$AAP?$AAM?$AAP?$AAE?$AAR?$AAB?$AAI?$AAO?$AAS?$AAF?$AAL?$AAA?$AAG?$AAS?$AA?$AA@ 0000000000001278     TcgSmm:TCGSmm.obj
+ 0002:000000d8       ??_C@_1DM@KHNCPJJB@?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AAO?$AAv?$AAe?$AAr?$AAw?$AAr?$AAi?$AAt?$AAe?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$AA@ 0000000000001298     TcgSmm:TCGSmm.obj
+ 0002:00000118       ??_C@_1BK@FEAHBHOC@?$AAT?$AAp?$AAm?$AAS?$AAe?$AAr?$AAv?$AAF?$AAl?$AAa?$AAg?$AAs?$AA?$AA@ 00000000000012d8     TcgSmm:TCGSmm.obj
+ 0002:00000138       ??_C@_1M@OAMLNNNM@?$AAS?$AAe?$AAt?$AAu?$AAp?$AA?$AA@ 00000000000012f8     TcgSmm:TCGSmm.obj
+ 0002:00000250       ptrRuntimeServices         0000000000001410     TcgSmm:TCGSmm.obj
+ 0002:00000260       gImageHandle               0000000000001420     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000268       gST                        0000000000001428     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000270       gBS                        0000000000001430     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000278       gRT                        0000000000001438     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000280       gSmst                      0000000000001440     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000288       mSmramRanges               0000000000001448     <common>
+ 0002:00000290       mSmramRangeCount           0000000000001450     <common>
+ 0002:00000298       SmmVarProtocol             0000000000001458     <common>
+ 0002:000002a0       TpmAcpiNvsFlags            0000000000001460     <common>
+ 0002:000002a8       NvsMemoryAddress           0000000000001468     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
